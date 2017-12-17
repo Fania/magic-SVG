@@ -1,0 +1,17 @@
+#order-6 {
+  /* set both to 100% for full screen responsive few */
+  width: 500px;
+  height: 500px;
+}
+
+#settings {
+  padding: 1em 0;
+}
+
+#grid {
+  margin: 1em 0;
+}
+#grid, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
