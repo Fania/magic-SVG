@@ -13,6 +13,10 @@ function createGrid(e){
   let values = valuesString.value;
   // let values = "22 21 24 25 06 07 20 23 27 26 05 04 03 00 17 16 35 34 01 02 19 18 33 32 31 30 08 09 12 15 28 29 10 11 14 13";
   let valuesArray = values.split(" ").map(Number);
+  // valuesArray.includes(0) has no IE support
+  if (valuesArray.indexOf(0) === -1) {
+    valuesArray = valuesArray.map((x) => x-1);
+  }
   let size = Math.sqrt(valuesArray.length);
   const coordsArray = {};
   table.innerHTML = "";
