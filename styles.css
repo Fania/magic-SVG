@@ -10,8 +10,13 @@
 
 #grid {
   margin: 1em 0;
+  font-family: monospace;
 }
 #grid, tr, td {
-  border: 1px solid black;
+  border: 2px solid #ccc;
   border-collapse: collapse;
+}
+#grid td {
+  text-align: right;
+  padding: 2px;
 }
