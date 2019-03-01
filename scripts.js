@@ -1,5 +1,4 @@
 "use strict";
-console.log(order5);
 (function(){
   const svgbox = document.getElementById("order-x");
   const table = document.getElementById("grid");
@@ -8,52 +7,45 @@ console.log(order5);
   const valuesString = document.getElementById("values");
   const lineGrid = document.getElementById("lines");
 
-  settings.addEventListener("submit", createGrid, false);
+  settings.addEventListener("submit", setup, false);
 
-  function createGrid(e){
-    let values = valuesString.value;
-    // let values = "22 21 24 25 06 07 20 23 27 26 05 04 03 00 17 16 35 34 01 02 19 18 33 32 31 30 08 09 12 15 28 29 10 11 14 13";
-    let valuesArray = values.split(" ").map(Number);
-    // valuesArray.includes(0) has no IE support
-    if (valuesArray.indexOf(0) === -1) {
-      valuesArray = valuesArray.map((x) => x-1);
-    }
+  function createCoords(valuesArray) {
     let size = Math.sqrt(valuesArray.length);
     const coordsArray = {};
-    // table.innerHTML = "";
     let offset = 0;
     for (let r=0; r<size; r++) {
-      // let row = document.createElement("tr");
       for (let c=0; c<size; c++) {
-        // let cell = document.createElement("td");
-        // let content = document.createTextNode(`${valuesArray[c+offset]}`);
         coordsArray[valuesArray[c+offset]] = [r,c];
-        // cell.appendChild(content);
-        // row.appendChild(cell);
       }
-      // table.appendChild(row);
       offset += size;
     }
+    event.preventDefault();
     createPolyline(size, coordsArray);
-    e.preventDefault();
+  }
+
+  function setup(e){
+    let valuesArray = [];
+    let line;
+    for (line in order5) {
+      valuesArray = order5[line].split(" ").map(Number);
+      if (valuesArray.includes(0)) {
+        valuesArray = valuesArray.map((x) => x-1);
+      }
+      createCoords(valuesArray);
+      valuesArray = [];
+    }
   }
 
   function createPolyline(size, arr) {
-    let sizeinc = 100;
-    let w = size * sizeinc;
-    // svgbox.setAttribute('viewBox', `0 0 ${w} ${w}`);
-    svgbox.setAttribute('viewBox', `0 0 100% 100%`);
+    let sizeInc = 100;
+    let pad = 1;
+    let w = size * sizeInc;
     let coords = "";
     for (let i in arr) {
-      coords += `${arr[i][1] * sizeinc},${arr[i][0] * sizeinc} `;
+      coords += `${arr[i][1] * sizeInc},${arr[i][0] * sizeInc} `;
     }
-    coords += `${arr[0][1] * sizeinc},${arr[0][0] * sizeinc} `;
-    lineGrid.setAttribute('points', coords);
+    coords += `${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
+    let svgCode = `<svg id="order-x" class="order-x" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline id="lines" fill="none" points="${coords}"/></svg>`;
+    document.getElementById('svgGrid').innerHTML += svgCode;
   }
-
-  /*
-  order 6
-  20 17 24 27 7 10 14 23 33 30 4 1 9 0 16 13 35 32 3 6 22 19 29 26 34 31 2 5 12 21 25 28 8 11 18 15 
-  22 21 24 25 06 07 20 23 27 26 05 04 03 00 17 16 35 34 01 02 19 18 33 32 31 30 08 09 12 15 28 29 10 11 14 13
-  */
 })();
