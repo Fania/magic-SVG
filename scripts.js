@@ -1,4 +1,5 @@
 "use strict";
+console.log(order5);
 (function(){
   const svgbox = document.getElementById("order-x");
   const table = document.getElementById("grid");
@@ -19,18 +20,18 @@
     }
     let size = Math.sqrt(valuesArray.length);
     const coordsArray = {};
-    table.innerHTML = "";
+    // table.innerHTML = "";
     let offset = 0;
     for (let r=0; r<size; r++) {
-      let row = document.createElement("tr");
+      // let row = document.createElement("tr");
       for (let c=0; c<size; c++) {
-        let cell = document.createElement("td");
-        let content = document.createTextNode(`${valuesArray[c+offset]}`);
+        // let cell = document.createElement("td");
+        // let content = document.createTextNode(`${valuesArray[c+offset]}`);
         coordsArray[valuesArray[c+offset]] = [r,c];
-        cell.appendChild(content);
-        row.appendChild(cell);
+        // cell.appendChild(content);
+        // row.appendChild(cell);
       }
-      table.appendChild(row);
+      // table.appendChild(row);
       offset += size;
     }
     createPolyline(size, coordsArray);
@@ -38,13 +39,15 @@
   }
 
   function createPolyline(size, arr) {
-    let w = size * 100;
-    svgbox.setAttribute('viewBox', `0 0 ${w} ${w}`);
+    let sizeinc = 100;
+    let w = size * sizeinc;
+    // svgbox.setAttribute('viewBox', `0 0 ${w} ${w}`);
+    svgbox.setAttribute('viewBox', `0 0 100% 100%`);
     let coords = "";
     for (let i in arr) {
-      coords += `${arr[i][1] * 100},${arr[i][0] * 100} `;
+      coords += `${arr[i][1] * sizeinc},${arr[i][0] * sizeinc} `;
     }
-    coords += `${arr[0][1] * 100},${arr[0][0] * 100} `;
+    coords += `${arr[0][1] * sizeinc},${arr[0][0] * sizeinc} `;
     lineGrid.setAttribute('points', coords);
   }
 
