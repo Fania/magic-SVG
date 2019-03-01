@@ -5,7 +5,7 @@ Uses SVG to draw the magic line traced by joining the integers of a magic square
 - accepts a string of numbers only if separated by **single spaces** (not double)
 - accepts magic square strings where the lowest integer is either `0` or `1`
 
-## Further development
+## TO DO
 
 Fix errors caused by strings without a single space separating numbers:
 
