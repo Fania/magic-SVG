@@ -7,6 +7,8 @@
   const valuesString = document.getElementById("values");
   const lineGrid = document.getElementById("lines");
 
+  let squareOrder = order6;
+
   settings.addEventListener("submit", setup, false);
 
   function createCoords(valuesArray) {
@@ -26,8 +28,8 @@
   function setup(e){
     let valuesArray = [];
     let line;
-    for (line in order4) {
-      valuesArray = order4[line].split(" ").map(Number);
+    for (line in squareOrder) {
+      valuesArray = squareOrder[line].split(" ").map(Number);
       if (valuesArray.includes(0)) {
         valuesArray = valuesArray.map((x) => x-1);
       }
