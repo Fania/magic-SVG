@@ -10,7 +10,7 @@
 /* preferences */
   let squareOrder = order6;
   let pad = 1; // 1 is adjacent, 40 gives a good separation
-  let sizeInc = 100; // 100 is optimal
+  let sizeInc = 100; // line weight, 100 is optimal
 /* ----------- */
 
   settings.addEventListener("submit", setup, false);
