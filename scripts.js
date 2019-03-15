@@ -7,7 +7,11 @@
   const valuesString = document.getElementById("values");
   const lineGrid = document.getElementById("lines");
 
+/* preferences */
   let squareOrder = order6;
+  let pad = 1; // 1 is adjacent, 40 gives a good separation
+  let sizeInc = 100; // 100 is optimal
+/* ----------- */
 
   settings.addEventListener("submit", setup, false);
 
@@ -39,8 +43,6 @@
   }
 
   function createPolyline(size, arr) {
-    let sizeInc = 100;
-    let pad = 1;
     let w = size * sizeInc;
     let coords = "";
     for (let i in arr) {
