@@ -1,16 +1,17 @@
 "use strict";
 (function(){
-  const svgbox = document.getElementById("order-x");
+  // const svgbox = document.getElementById("order-x");
   const table = document.getElementById("grid");
   const settings = document.getElementById("settings");
   // const options = document.getElementById("order-options");
   const valuesString = document.getElementById("values");
   const lineGrid = document.getElementById("lines");
+  const svgGrid = document.getElementById('svgGrid')
 
 /* preferences */
   let squareOrder = order6;
   let pad = 1; // 1 is adjacent, 40 gives a good separation
-  let sizeInc = 100; // line weight, 100 is optimal
+  let sizeInc = 100; // scale (fakes line weight) 100 is optimal
 /* ----------- */
 
   settings.addEventListener("submit", setup, false);
@@ -29,7 +30,7 @@
     createPolyline(size, coordsArray);
   }
 
-  function setup(e){
+  function setup() {
     let valuesArray = [];
     let line;
     for (line in squareOrder) {
@@ -45,11 +46,12 @@
   function createPolyline(size, arr) {
     let w = size * sizeInc;
     let coords = "";
-    for (let i in arr) {
+    let i;
+    for (i in arr) {
       coords += `${arr[i][1] * sizeInc},${arr[i][0] * sizeInc} `;
     }
     coords += `${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
     let svgCode = `<svg id="order-x" class="order-x" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline id="lines" fill="none" points="${coords}"/></svg>`;
-    document.getElementById('svgGrid').innerHTML += svgCode;
+    svgGrid.innerHTML += svgCode;
   }
 })();
