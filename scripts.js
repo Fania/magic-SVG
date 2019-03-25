@@ -1,15 +1,15 @@
 "use strict";
 (function(){
   // const svgbox = document.getElementById("order-x");
-  const table = document.getElementById("grid");
-  const settings = document.getElementById("settings");
+  // const table = document.getElementById("grid");
+  // const valuesString = document.getElementById("values");
   // const options = document.getElementById("order-options");
-  const valuesString = document.getElementById("values");
-  const lineGrid = document.getElementById("lines");
+  // const lineGrid = document.getElementById("lines");
+  const settings = document.getElementById("settings");
   const svgGrid = document.getElementById('svgGrid')
 
-/* preferences */
-  let squareOrder = order6;
+/* preferences TODO: swap between multi and single square */
+  let squareOrder = orders6;
   let pad = 1; // 1 is adjacent, 40 gives a good separation
   let sizeInc = 100; // scale (fakes line weight) 100 is optimal
 /* ----------- */
