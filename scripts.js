@@ -3,14 +3,19 @@
   // const svgbox = document.getElementById("order-x");
   // const table = document.getElementById("grid");
   // const valuesString = document.getElementById("values");
-  // const options = document.getElementById("order-options");
   // const lineGrid = document.getElementById("lines");
+  const orderOptions = document.getElementById("order-options");
   const settings = document.getElementById("settings");
   const svgGrid = document.getElementById('svgGrid')
-
+console.log(orderOptions[orderOptions.selectedIndex].value);
 /* preferences TODO: swap between multi and single square */
-  let squareOrder = orders6;
-  let pad = 1; // 1 is adjacent, 40 gives a good separation
+  // let squareOrder = orders6;
+  const squareOrder = {
+    "4": orders4,
+    "5": orders5,
+    "6": orders6
+  }
+  let pad = 30; // 1 is adjacent, 40 gives a good separation
   let sizeInc = 100; // scale (fakes line weight) 100 is optimal
 /* ----------- */
 
@@ -31,10 +36,17 @@
   }
 
   function setup() {
+    let order = '';
+    order = orderOptions[orderOptions.selectedIndex].value;
+    // console.log(orderOptions.);
+    // console.log(squareOrder[order]);
+    // let order = "6";
     let valuesArray = [];
     let line;
-    for (line in squareOrder) {
-      valuesArray = squareOrder[line].split(" ").map(Number);
+    svgGrid.innerHTML = '';
+    for (line in squareOrder[order]) {
+      valuesArray = squareOrder[order][line].split(" ").map(Number);
+      console.log(valuesArray);
       if (valuesArray.includes(0)) {
         valuesArray = valuesArray.map((x) => x-1);
       }
