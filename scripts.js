@@ -8,14 +8,19 @@
   const settings = document.getElementById("settings");
   const svgGrid = document.getElementById('svgGrid')
 console.log(orderOptions[orderOptions.selectedIndex].value);
-/* preferences TODO: swap between multi and single square */
-  // let squareOrder = orders6;
+/*
+  preferences TODO:
+  - swap between multi and single square
+  - set padding between squares
+  - set size of squares
+*/
+
   const squareOrder = {
     "4": orders4,
     "5": orders5,
     "6": orders6
   }
-  let pad = 30; // 1 is adjacent, 40 gives a good separation
+  let pad = 1; // 1 is adjacent, 30/40 gives a good separation
   let sizeInc = 100; // scale (fakes line weight) 100 is optimal
 /* ----------- */
 
