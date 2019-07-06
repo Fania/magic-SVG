@@ -5,13 +5,13 @@
   // const valuesString = document.getElementById("values");
   // const lineGrid = document.getElementById("lines");
   const orderOptions = document.getElementById("order-options");
+  const padding = document.getElementById("padding");
   const settings = document.getElementById("settings");
   const svgGrid = document.getElementById('svgGrid')
 // console.log(orderOptions[orderOptions.selectedIndex].value);
 /*
   preferences TODO:
   - swap between multi and single square
-  - set padding between squares
   - set size of squares
 */
 
@@ -20,7 +20,7 @@
     "5": orders5,
     "6": orders6
   }
-  let pad = 30; // 1 is adjacent, 30/40 gives a good separation
+  let pad = 1; // 1 is adjacent, 30 gives a good separation
   let sizeInc = 100; // scale (line weight hack) 100 is optimal
 /* ----------- */
 
@@ -41,12 +41,11 @@
   }
 
   function setup() {
-    let order = '';
-    order = orderOptions[orderOptions.selectedIndex].value;
-    // console.log(orderOptions.);
+    let order = orderOptions[orderOptions.selectedIndex].value;
     // console.log(squareOrder[order]);
-      // let order = "6";
+    console.log(padding.checked);
     let valuesArray = [];
+    if (padding.checked) pad = 30;
     let line;
     svgGrid.innerHTML = '';
     for (line in squareOrder[order]) {
