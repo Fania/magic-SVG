@@ -27,6 +27,10 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] user input for fill colour
 - [ ] user input for line colour
 
+## References
+
+- [SVG Fills and Strokes (MDN)](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes)
+
 ---
 
 Fania Raczinski and Dave Everitt
