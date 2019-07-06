@@ -2,8 +2,10 @@ html {
   --backColour: #222;
   /* --backColour: rgb(7, 41, 62); */
   --textColour: #ccc;
-  --lineColour: #ccc;
-  /* --lineColour: rgb(189, 108, 112); */
+  /* --lineColour: #ccc; */
+  /* --lineColour: rgba(112, 108, 189, .5); */
+  --lineColour: rgb(151, 149, 186);
+  /* --svgFill: red; */
 }
 body {
   background: var(--backColour);
@@ -14,6 +16,7 @@ body {
   height: 100%;
   stroke: var(--lineColour);
   stroke-width: 2;
+  /* fill: var(--svgFill); */
   /* border: 1px solid gray; */
 }
 .svgGrid {

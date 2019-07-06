@@ -23,7 +23,9 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] swap between multi and single square
 - [x] set padding between squares
 - [ ] set size of squares
-
+- [x] set SVG fill in JavaScript
+- [ ] user input for fill colour
+- [ ] user input for line colour
 
 ---
 
