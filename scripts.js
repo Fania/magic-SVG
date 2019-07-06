@@ -1,14 +1,9 @@
 "use strict";
 (function(){
-  // const svgbox = document.getElementById("order-x");
-  // const table = document.getElementById("grid");
-  // const valuesString = document.getElementById("values");
-  // const lineGrid = document.getElementById("lines");
   const orderOptions = document.getElementById("order-options");
   const padding = document.getElementById("padding");
   const settings = document.getElementById("settings");
   const svgGrid = document.getElementById('svgGrid')
-// console.log(orderOptions[orderOptions.selectedIndex].value);
 /*
   preferences TODO:
   - swap between multi and single square
@@ -20,7 +15,7 @@
     "5": orders5,
     "6": orders6
   }
-  let pad = 1; // 1 is adjacent, 30 gives a good separation
+  let pad; // 1 is adjacent, 30 gives a good separation
   let sizeInc = 100; // scale (line weight hack) 100 is optimal
 /* ----------- */
 
@@ -45,7 +40,7 @@
     // console.log(squareOrder[order]);
     console.log(padding.checked);
     let valuesArray = [];
-    if (padding.checked) pad = 30;
+    padding.checked ? pad = 30 : pad = 1;
     let line;
     svgGrid.innerHTML = '';
     for (line in squareOrder[order]) {
@@ -67,7 +62,7 @@
       coords += `${arr[i][1] * sizeInc},${arr[i][0] * sizeInc} `;
     }
     coords += `${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
-    let svgCode = `<svg id="order-x" class="order-x" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline id="lines" fill="none" points="${coords}"/></svg>`;
+    let svgCode = `<svg class="order-x" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline id="lines" fill="none" points="${coords}"/></svg>`;
     svgGrid.innerHTML += svgCode;
   }
 })();
