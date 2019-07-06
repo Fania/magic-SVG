@@ -17,8 +17,8 @@
   }
   let pad; // 1 is adjacent, 30 gives a good separation
   let sizeInc = 100; // scale (line weight hack) 100 is optimal
-  // let svgFill = "rgb(112, 108, 189)";
-  let svgFill = "rgba(112, 108, 189, .5)";
+  let svgFill = "none";
+  // let svgFill = "rgba(112, 108, 189, .5)";
 /* ----------- */
 
   settings.addEventListener("submit", setup, false);
