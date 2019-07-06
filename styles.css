@@ -1,7 +1,9 @@
 html {
-  --backColour: #113;
+  --backColour: #222;
+  /* --backColour: rgb(7, 41, 62); */
   --textColour: #ccc;
-  --lineColour: #eee;
+  --lineColour: #ccc;
+  /* --lineColour: rgb(189, 108, 112); */
 }
 body {
   background: var(--backColour);
@@ -29,4 +31,3 @@ body {
     height: 200px;
   }
 }
-
