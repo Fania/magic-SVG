@@ -7,7 +7,7 @@
   const orderOptions = document.getElementById("order-options");
   const settings = document.getElementById("settings");
   const svgGrid = document.getElementById('svgGrid')
-console.log(orderOptions[orderOptions.selectedIndex].value);
+// console.log(orderOptions[orderOptions.selectedIndex].value);
 /*
   preferences TODO:
   - swap between multi and single square
@@ -20,8 +20,8 @@ console.log(orderOptions[orderOptions.selectedIndex].value);
     "5": orders5,
     "6": orders6
   }
-  let pad = 1; // 1 is adjacent, 30/40 gives a good separation
-  let sizeInc = 100; // scale (fakes line weight) 100 is optimal
+  let pad = 30; // 1 is adjacent, 30/40 gives a good separation
+  let sizeInc = 100; // scale (line weight hack) 100 is optimal
 /* ----------- */
 
   settings.addEventListener("submit", setup, false);
@@ -45,7 +45,7 @@ console.log(orderOptions[orderOptions.selectedIndex].value);
     order = orderOptions[orderOptions.selectedIndex].value;
     // console.log(orderOptions.);
     // console.log(squareOrder[order]);
-    // let order = "6";
+      // let order = "6";
     let valuesArray = [];
     let line;
     svgGrid.innerHTML = '';
