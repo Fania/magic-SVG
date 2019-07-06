@@ -3,7 +3,7 @@
   const orderOptions = document.getElementById("order-options");
   const padding = document.getElementById("padding");
   const settings = document.getElementById("settings");
-  const svgGrid = document.getElementById('svgGrid')
+  const svgGrid = document.getElementById('svgGrid');
 /*
   preferences TODO:
   - swap between multi and single square
