@@ -1,11 +1,16 @@
+html {
+  --backColour: #113;
+  --textColour: #ccc;
+  --lineColour: #eee;
+}
 body {
-  background: #113;
-  color: #ccc;
+  background: var(--backColour);
+  color: var(--textColour);
 }
 .order-x {
   width: 100%;
   height: 100%;
-  stroke: #cc9;
+  stroke: var(--lineColour);
   stroke-width: 2;
   /* border: 1px solid gray; */
 }
