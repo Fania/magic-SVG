@@ -9,6 +9,8 @@ Uses SVG to draw the [magic line](http://recmath.org/Magic%20Squares/transform.h
 
 ## TO DO: magic square checking
 
+Use code from Dave's other magic square checker for this:
+
 - [ ] remove non-numeric characters
 - [ ] remove returns, line feeds
 - [ ] remove duplicate spaces
