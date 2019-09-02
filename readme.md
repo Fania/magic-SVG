@@ -34,6 +34,7 @@ Frénicle established two simple rules to determine the [standard position](http
 ## References
 
 - [SVG Fills and Strokes (MDN)](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes)
+- Possible use: [SVG++ library documentation](http://svgpp.org/index.html)
 
 ---
 
