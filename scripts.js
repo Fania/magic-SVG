@@ -20,11 +20,13 @@
   }
 
   // COLOUR =====================================
-  let svgFill, svgStroke;
+  let svgFill = "transparent";
+  let svgStroke = "white";
   fillColour.addEventListener("change", function() { svgFill = fillColour.value });
   strokeColour.addEventListener("change", function () { svgStroke = strokeColour.value });
   backColour.addEventListener("change", function () { svgStroke = document.body.style.backgroundColor = backColour.value });
 
+ 
   let pad; // 1 is adjacent, 30 gives a good separation
   let sizeInc = 100; // scale (line weight hack) 100 is optimal
 /* ----------- */

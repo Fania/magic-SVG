@@ -14,8 +14,17 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   font-size: 0.9em;
 }
-.settings { background: #000; display: flex; align-items: center; }
-select, input { font-size: 1.15em; margin-right: 1em; }
+.settings { 
+  background: #000; 
+  padding: .75em 0;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+select, input { 
+  font-size: 1.15em; 
+  margin-right: 1em; 
+}
 input[type="color"] {
   border: none;
   padding: 0;
@@ -45,9 +54,6 @@ label {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-.settings {
-  padding: .75em 0;
 }
 
 @media screen and (min-width: 500px){
