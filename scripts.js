@@ -57,7 +57,7 @@
     svgGrid.innerHTML = '';
     for (line in squareOrder[order]) {
       valuesArray = squareOrder[order][line].split(" ").map(Number);
-      console.log(valuesArray);
+      // console.log(valuesArray);
       if (valuesArray.includes(0)) {
         valuesArray = valuesArray.map((x) => x-1);
       }
@@ -73,62 +73,63 @@
     svgStroke===undefined ? svgStroke="none" : svgStroke;
     svgFill===undefined ? svgFill="none" : svgFill;
 
-    // straight polyline
-    // for (i in arr) {
-    //   coords += `${arr[i][1] * sizeInc},${arr[i][0] * sizeInc} `;
-    // }
-    // coords += `${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
-    // let svgCode = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline id="lines" points="${coords}"/></svg>`;
-    // console.log(svgCode);
-    // svgGrid.innerHTML += svgCode;
+    const round = document.getElementById("corners").checked;
+    if (round) {
 
+      for (let a=1; a <= Object.keys(arr).length; a++) {
+        // coords += `${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} `;
+        // coords += `A 30,30 0,0 1 ${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} `;
+        // coords += `Q ${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} ${arr[a+1][1] * sizeInc},${arr[a+1][0] * sizeInc} `;
 
+        let c1x = arr[a][1] * sizeInc;
+        let c1y = arr[a][0] * sizeInc;
+        let c2x, c2y, c3x, c3y;
 
-    // rounded corners
-    for (let a=1; a <= Object.keys(arr).length; a++) {
-      // coords += `${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} `;
-      // coords += `A 30,30 0,0 1 ${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} `;
-      // coords += `Q ${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} ${arr[a+1][1] * sizeInc},${arr[a+1][0] * sizeInc} `;
+        // next to last
+        if (a == (Object.keys(arr).length)) {
+          c2x = arr[1][1] * sizeInc;
+          c2y = arr[1][0] * sizeInc;
+          c3x = arr[2][1] * sizeInc;
+          c3y = arr[2][0] * sizeInc;
 
-      let c1x = arr[a][1] * sizeInc;
-      let c1y = arr[a][0] * sizeInc;
-      let c2x, c2y, c3x, c3y;
+        // last
+        } else if (a == (Object.keys(arr).length - 1)) {
+          c2x = arr[a+1][1] * sizeInc;
+          c2y = arr[a+1][0] * sizeInc;
+          c3x = arr[1][1] * sizeInc;
+          c3y = arr[1][0] * sizeInc;
 
-      // next to last
-      if (a == (Object.keys(arr).length)) {
-        c2x = arr[1][1] * sizeInc;
-        c2y = arr[1][0] * sizeInc;
-        c3x = arr[2][1] * sizeInc;
-        c3y = arr[2][0] * sizeInc;
+        // all previous
+        } else {
+          c2x = arr[a+1][1] * sizeInc;
+          c2y = arr[a+1][0] * sizeInc;
+          c3x = arr[a+2][1] * sizeInc;
+          c3y = arr[a+2][0] * sizeInc;
+        }
 
-      // last
-      } else if (a == (Object.keys(arr).length - 1)) {
-        c2x = arr[a+1][1] * sizeInc;
-        c2y = arr[a+1][0] * sizeInc;
-        c3x = arr[1][1] * sizeInc;
-        c3y = arr[1][0] * sizeInc;
+        let m1x = (c1x + c2x) / 2;
+        let m1y = (c1y + c2y) / 2;
+        let m2x = (c2x + c3x) / 2;
+        let m2y = (c2y + c3y) / 2;
 
-      // all previous
-      } else {
-        c2x = arr[a+1][1] * sizeInc;
-        c2y = arr[a+1][0] * sizeInc;
-        c3x = arr[a+2][1] * sizeInc;
-        c3y = arr[a+2][0] * sizeInc;
+        // console.log(c1x, c1y, m1x, m1y, c2x, c2y, m2x, m2y, c3x, c3y);
+        coords += `M ${m1x},${m1y} Q ${c2x},${c2y} ${m2x},${m2y} `;
       }
 
-      let m1x = (c1x + c2x) / 2;
-      let m1y = (c1y + c2y) / 2;
-      let m2x = (c2x + c3x) / 2;
-      let m2y = (c2y + c3y) / 2;
+      let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="lines" d="${coords}"/></svg>`;
+      // console.log(svgPath);
+      svgGrid.innerHTML += svgPath;
 
-      // console.log(c1x, c1y, m1x, m1y, c2x, c2y, m2x, m2y, c3x, c3y);
-      coords += `M ${m1x},${m1y} Q ${c2x},${c2y} ${m2x},${m2y} `;
-
+    } else {
+      // straight polyline
+      for (i in arr) {
+        coords += `${arr[i][1] * sizeInc},${arr[i][0] * sizeInc} `;
+      }
+      coords += `${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
+      let svgCode = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline id="lines" points="${coords}"/></svg>`;
+      // console.log(svgCode);
+      svgGrid.innerHTML += svgCode;
     }
-
-    let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="lines" d="${coords}"/></svg>`;
-    console.log(svgPath);
-    svgGrid.innerHTML += svgPath;
 
   }
 })();
