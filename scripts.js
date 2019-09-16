@@ -124,9 +124,11 @@
       coords += `M ${m1x},${m1y} Q ${c2x},${c2y} ${m2x},${m2y} `;
     }
 
-    let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="lines" d="${coords}"/></svg>`;
+    let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path class="lines" d="${coords}"/></svg>`;
     // console.log(svgPath);
     svgGrid.innerHTML += svgPath;
+
+    animate();
   }
 
   function createQuadraticCurveLines(size, arr) {
@@ -141,7 +143,7 @@
     }
     coords += `M ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;  // loop back
 
-    let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="lines" d="${coords}"/></svg>`;
+    let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path class="lines" d="${coords}"/></svg>`;
     // console.log(svgPath);
     svgGrid.innerHTML += svgPath;
   }
@@ -158,7 +160,7 @@
     }
     coords += `M ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;  // loop back
 
-    let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="lines" d="${coords}"/></svg>`;
+    let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path class="lines" d="${coords}"/></svg>`;
     // console.log(svgPath);
     svgGrid.innerHTML += svgPath;
   }
@@ -175,8 +177,9 @@
       coords += `${arr[i][1] * sizeInc},${arr[i][0] * sizeInc} `;
     }
     coords += `${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
-    let svgCode = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline id="lines" points="${coords}"/></svg>`;
+    let svgCode = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline class="lines" points="${coords}"/></svg>`;
     // console.log(svgCode);
     svgGrid.innerHTML += svgCode;
   }
+
 })();
