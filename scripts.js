@@ -75,7 +75,7 @@
     let line;
     svgGrid.innerHTML = '';
     for (line in squareOrder[order]) {
-      console.log("counter", counter);
+      // console.log("counter", counter);
       valuesArray = squareOrder[order][line].split(" ").map(Number);
       // console.log(valuesArray);
       if (valuesArray.includes(0)) {
