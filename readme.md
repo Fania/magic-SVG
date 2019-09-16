@@ -1,16 +1,15 @@
-# Draw the magic line of a magic square
-
-See branch "multiple squares" for current work.
-<!-- https://github.com/Fania/magic-SVG/tree/multiple-squares -->
+# Draw the magic line of magic squares
 
 Uses SVG to draw the [magic line](http://recmath.org/Magic%20Squares/transform.htm#Magic%20Lines) traced by joining the integers of a magic square of order `n` in a sequence from `0-(n^2)-1`.
 
 - accepts a string of numbers only if separated by **single spaces** (not double)
 - accepts magic square strings where the lowest integer is either `0` or `1`
 
+See branch "single square" to input a number sequence that draws a plain version of one magic square.
+
 ## TO DO: magic square checking
 
-Use code from Dave's other magic square checker for this:
+Use code from the [magic square checker](https://github.com/DaveEveritt/magic-square) for the following:
 
 - [ ] remove non-numeric characters
 - [ ] remove returns, line feeds
@@ -29,8 +28,9 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] set padding between squares
 - [ ] set size of squares
 - [x] set SVG fill in JavaScript
-- [ ] user input for fill colour
-- [ ] user input for line colour
+- [x] user input for fill colour
+- [x] user input for line colour
+- [ ] hide settings after drawing
 
 ## References
 
