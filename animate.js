@@ -1,32 +1,21 @@
 "use strict";
 
-  function animate() {
+function animate(counter) {
 
-    const square = document.querySelectorAll(".lines");
-    console.log(square);
+  const square = document.getElementById(`square-${counter}`);
 
+  let length = Math.ceil(square.getTotalLength());
+  console.log(length);
 
-    for (let s in square) {
-      let length = square.getTotalLength();
-      console.log(length);
+  extra_styles.innerHTML += `
+    #square-${counter} {
+      stroke-dasharray: ${length};
+      stroke-dashoffset: ${length};
     }
+  `;
 
-  }
+}
 
-
-
-
-
-// .lines {
-//   stroke-dasharray: 2000;
-// 	stroke-dashoffset: 2000;
-// 	animation: dash 5s linear forwards;
-// }
-// @keyframes dash {
-//   to {
-//     stroke-dashoffset: 0;
-//   }
-// }
 
 
 

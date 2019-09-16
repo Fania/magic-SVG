@@ -34,7 +34,7 @@
 
   settings.addEventListener("submit", setup, false);
 
-  function createCoords(valuesArray) {
+  function createCoords(valuesArray, counter) {
     let size = Math.sqrt(valuesArray.length);
     const coordsArray = {};
     let offset = 0;
@@ -48,19 +48,19 @@
 
     switch(styleOptions[styleOptions.selectedIndex].value) {
       case "straight":
-        createPolyline(size, coordsArray);
+        createPolyline(size, coordsArray, counter);
         break;
       case "quadvertix":
-        createQuadraticCurveVertices(size, coordsArray);
+        createQuadraticCurveVertices(size, coordsArray, counter);
         break;
       case "quadline":
-        createQuadraticCurveLines(size, coordsArray);
+        createQuadraticCurveLines(size, coordsArray, counter);
         break;
       case "arc":
-        createArc(size, coordsArray);
+        createArc(size, coordsArray, counter);
         break;
       default:
-        createQuadraticCurveVertices(size, coordsArray);
+        createQuadraticCurveVertices(size, coordsArray, counter);
     }
   }
 
@@ -69,21 +69,25 @@
     // console.log(squareOrder[order]);
     // console.log(padding.checked);
     let valuesArray = [];
+    let counter = 1;
+    extra_styles.innerHTML = "";
     padding.checked ? pad = 30 : pad = 1;
     let line;
     svgGrid.innerHTML = '';
     for (line in squareOrder[order]) {
+      console.log("counter", counter);
       valuesArray = squareOrder[order][line].split(" ").map(Number);
       // console.log(valuesArray);
       if (valuesArray.includes(0)) {
         valuesArray = valuesArray.map((x) => x-1);
       }
-      createCoords(valuesArray);
+      createCoords(valuesArray, counter);
       valuesArray = [];
+      counter++;
     }
   }
 
-  function createQuadraticCurveVertices(size, arr) {
+  function createQuadraticCurveVertices(size, arr, counter) {
     // console.log("quadratic curve on vertices");
     let w = size * sizeInc;
     let coords = "";
@@ -124,14 +128,13 @@
       coords += `M ${m1x},${m1y} Q ${c2x},${c2y} ${m2x},${m2y} `;
     }
 
-    let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path class="lines" d="${coords}"/></svg>`;
+    let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`;
     // console.log(svgPath);
     svgGrid.innerHTML += svgPath;
-
-    animate();
+    animate(counter);
   }
 
-  function createQuadraticCurveLines(size, arr) {
+  function createQuadraticCurveLines(size, arr, counter) {
     // console.log("quadratic curve on lines");
     let w = size * sizeInc;
     let coords = "";
@@ -143,12 +146,13 @@
     }
     coords += `M ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;  // loop back
 
-    let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path class="lines" d="${coords}"/></svg>`;
+    let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`;
     // console.log(svgPath);
     svgGrid.innerHTML += svgPath;
+    animate(counter);
   }
 
-  function createArc(size, arr) {
+  function createArc(size, arr, counter) {
     // console.log("arc experiment");
     let w = size * sizeInc;
     let coords = "";
@@ -160,12 +164,13 @@
     }
     coords += `M ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;  // loop back
 
-    let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path class="lines" d="${coords}"/></svg>`;
+    let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`;
     // console.log(svgPath);
     svgGrid.innerHTML += svgPath;
+    animate(counter);
   }
 
-  function createPolyline(size, arr) {
+  function createPolyline(size, arr, counter) {
     // console.log("straight polyline");
     let w = size * sizeInc;
     let coords = "";
@@ -177,9 +182,10 @@
       coords += `${arr[i][1] * sizeInc},${arr[i][0] * sizeInc} `;
     }
     coords += `${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
-    let svgCode = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline class="lines" points="${coords}"/></svg>`;
+    let svgCode = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline id="square-${counter}" class="lines" points="${coords}"/></svg>`;
     // console.log(svgCode);
     svgGrid.innerHTML += svgCode;
+    animate(counter);
   }
 
 })();
