@@ -92,6 +92,15 @@
     let w = size * sizeInc;
     let coords = "";
 
+    let fstx = arr[1][1] * sizeInc;
+    let fsty = arr[1][0] * sizeInc;
+    let sndx = arr[2][1] * sizeInc;
+    let sndy = arr[2][0] * sizeInc;
+    let fstmx = (fstx + sndx) / 2;
+    let fstmy = (fsty + sndy) / 2;
+
+    coords += `M ${fstmx},${fstmy} `;
+
     for (let a=1; a <= Object.keys(arr).length; a++) {
       let c1x = arr[a][1] * sizeInc;
       let c1y = arr[a][0] * sizeInc;
@@ -125,7 +134,7 @@
       let m2y = (c2y + c3y) / 2;
 
       // console.log(c1x, c1y, m1x, m1y, c2x, c2y, m2x, m2y, c3x, c3y);
-      coords += `M ${m1x},${m1y} Q ${c2x},${c2y} ${m2x},${m2y} `;
+      coords += `Q ${c2x},${c2y} ${m2x},${m2y} `;
     }
 
     let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`;
@@ -139,12 +148,12 @@
     let w = size * sizeInc;
     let coords = "";
 
-    coords += `M${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
+    coords += `M ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
 
     for (let a=2; a <= (Object.keys(arr).length - 1); a = a+2) {
       coords += `Q ${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} ${arr[a+1][1] * sizeInc},${arr[a+1][0] * sizeInc} `;
     }
-    coords += `M ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;  // loop back
+    // coords += `Z `;  // loop back
 
     let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`;
     // console.log(svgPath);

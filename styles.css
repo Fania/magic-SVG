@@ -59,6 +59,7 @@ label {
 
 /* animate */
 [id^="square-"] {
+  /* animation: dash 20s linear alternate infinite; */
   animation: dash 20s linear forwards;
 }
 @keyframes dash {
