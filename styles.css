@@ -18,6 +18,7 @@ body {
   background: #000; 
   padding: .75em 0;
   display: flex; 
+  flex-wrap: wrap;
   align-items: center; 
   justify-content: center;
 }
@@ -74,3 +75,5 @@ label {
     height: 200px;
   }
 }
+
+
