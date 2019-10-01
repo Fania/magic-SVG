@@ -8,13 +8,9 @@
 </head>
 <body>
 
-<form id="settings" class="settings">
-  <select id="order-options">
-    <!-- <option value="3">Order 3</option> -->
-    <option value="4">Order 4</option>
-    <option value="5">Order 5</option>
-    <option value="6" selected>Order 6</option>
-  </select>
+<form id="settings">
+  <a href="index.html" class="active">Order groups</a>
+  <a href="input.html">Single square</a>
   <label>Fill:</label><input type="color" id="fillColour" value="#000000">
   <label>Stroke:</label><input type="color" id="strokeColour" value="#FFFFFF">
   <label>Background:</label><input type="color" id="backColour" value="#222222">
@@ -24,6 +20,12 @@
     <option value="quadvertix" selected>Quadratic curve on vertices</option>
     <option value="quadline">Quadratic curve on lines</option>
     <option value="arc">Arc experiment</option>
+  </select>
+  <select id="order-options">
+    <!-- <option value="3">Order 3</option> -->
+    <option value="4">Order 4</option>
+    <option value="5">Order 5</option>
+    <option value="6" selected>Order 6</option>
   </select>
   <input type="submit" value="Draw magic squares">
 </form>

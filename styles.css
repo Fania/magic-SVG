@@ -14,7 +14,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   font-size: 0.9em;
 }
-.settings { 
+#settings { 
   background: #000; 
   padding: .75em 0;
   display: flex; 
@@ -22,9 +22,15 @@ body {
   align-items: center; 
   justify-content: center;
 }
-select, input { 
-  font-size: 1.15em; 
+select, input, a { 
+  /* font-size: 1.15em;  */
   margin-right: 1em; 
+}
+#settings a {
+  color: white;
+}
+#settings a.active {
+  font-weight: bold;
 }
 input[type="color"] {
   border: none;
@@ -57,6 +63,9 @@ label {
   flex-wrap: wrap;
 }
 
+#grid {
+  margin: 1em auto;
+}
 
 /* animate */
 [id^="square-"] {
