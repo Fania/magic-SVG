@@ -79,9 +79,11 @@ label {
 }
 
 @media screen and (min-width: 500px){
-  .order-x {
-    width:  200px;
-    height: 200px;
+  #order-x {
+    width:  auto;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
   }
 }
 
