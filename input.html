@@ -12,9 +12,10 @@
 <form id="settings">
   <a href="index.html">Order groups</a>
   <a href="input.html" class="active">Single square</a>
-  <label>Fill:</label><input type="color" id="fillColour" value="#000000">
-  <label>Stroke:</label><input type="color" id="strokeColour" value="#FFFFFF">
-  <label>Background:</label><input type="color" id="backColour" value="#222222">
+  <label for="fillColour">Fill:</label><input type="color" id="fillColour" value="#000000">
+  <label for="strokeColour">Stroke:</label><input type="color" id="strokeColour" value="#FFFFFF">
+  <label for="backColour">Background:</label><input type="color" id="backColour" value="#222222">
+  <label for="animate">Animate:</label><input type="checkbox" id="animate" checked>
   <select id="style-options">
     <option value="straight">Straight polyline</option>
     <option value="quadvertix" selected>Quadratic curve on vertices</option>
@@ -22,7 +23,7 @@
     <option value="arc">Arc experiment</option>
   </select>
   <input id="values" placeholder="1 2 3 etc..." value="22 21 24 25 06 07 20 23 27 26 05 04 03 00 17 16 35 34 01 02 19 18 33 32 31 30 08 09 12 15 28 29 10 11 14 13">
-  <input type="submit" value="Draw magic squares">
+  <input type="submit" value="Draw!">
 </form>  
 
 <table id="grid"></table>
@@ -34,7 +35,7 @@
   viewbox sets the size of the coordinate system for drawing your svg
 -->
 
-<svg id="order-x">
+<svg id="single-x">
   <polyline id="lines" fill="none" stroke="black" points=""/>
 </svg>
 

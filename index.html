@@ -11,10 +11,11 @@
 <form id="settings">
   <a href="index.html" class="active">Order groups</a>
   <a href="input.html">Single square</a>
-  <label>Fill:</label><input type="color" id="fillColour" value="#000000">
-  <label>Stroke:</label><input type="color" id="strokeColour" value="#FFFFFF">
-  <label>Background:</label><input type="color" id="backColour" value="#222222">
-  <label for="padding">padding:</label><input type="checkbox" id="padding" checked>
+  <label for="fillColour">Fill:</label><input type="color" id="fillColour" value="#000000">
+  <label for="strokeColour">Stroke:</label><input type="color" id="strokeColour" value="#FFFFFF">
+  <label for="backColour">Background:</label><input type="color" id="backColour" value="#222222">
+  <label for="padding">Padding:</label><input type="checkbox" id="padding" checked>
+  <label for="animate">Animate:</label><input type="checkbox" id="animate" checked>
   <select id="style-options">
     <option value="straight">Straight polyline</option>
     <option value="quadvertix" selected>Quadratic curve on vertices</option>
@@ -27,7 +28,7 @@
     <option value="5">Order 5</option>
     <option value="6" selected>Order 6</option>
   </select>
-  <input type="submit" value="Draw magic squares">
+  <input type="submit" value="Draw!">
 </form>
 <!--
   width and height set the HTML element size on the page

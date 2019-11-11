@@ -5,13 +5,12 @@
   const padding = document.getElementById("padding");
   const settings = document.getElementById("settings");
   const svgGrid = document.getElementById('svgGrid');
+  const anim = document.getElementById("animate");
 /*
   preferences TODO:
-  - swap between multi and single square
   - set size of squares
   - set fill-opacity/stroke-opacity="0.0" - "1.0"
   - loop trhough colour change
-  - background colour
 */
 
   const squareOrder = {
@@ -59,7 +58,7 @@
 
   function createCoords(valuesArray, counter) {
 
-    console.log(valuesArray);
+    // console.log(valuesArray);
 
     let size = Math.sqrt(valuesArray.length);
     const coordsArray = {};
@@ -94,7 +93,7 @@
 
   function createQuadraticCurveVertices(size, arr, counter) {
 
-    console.log(size, arr);
+    // console.log(size, arr);
 
     // console.log("quadratic curve on vertices");
     let w = size * sizeInc;
@@ -148,7 +147,7 @@
     let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`;
     // console.log(svgPath);
     svgGrid.innerHTML += svgPath;
-    animate(counter);
+    if (anim.checked) animate(counter);
   }
 
   function createQuadraticCurveLines(size, arr, counter) {
@@ -166,7 +165,7 @@
     let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`;
     // console.log(svgPath);
     svgGrid.innerHTML += svgPath;
-    animate(counter);
+    if (anim.checked) animate(counter);
   }
 
   function createArc(size, arr, counter) {
@@ -185,7 +184,7 @@
     let svgPath = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`;
     // console.log(svgPath);
     svgGrid.innerHTML += svgPath;
-    animate(counter);
+    if (anim.checked) animate(counter);
   }
 
   function createPolyline(size, arr, counter) {
@@ -203,7 +202,7 @@
     let svgCode = `<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline id="square-${counter}" class="lines" points="${coords}"/></svg>`;
     // console.log(svgCode);
     svgGrid.innerHTML += svgCode;
-    animate(counter);
+    if (anim.checked) animate(counter);
   }
 
 
