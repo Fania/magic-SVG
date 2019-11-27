@@ -14,9 +14,10 @@
 */
 
   const squareOrder = {
-    "4": orders4,
-    "5": orders5,
-    "6": orders6
+    "4": order4,
+    "4a": order4a,
+    "5": order5,
+    "6": order6
   }
 
   // COLOUR =====================================
