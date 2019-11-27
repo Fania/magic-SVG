@@ -37,6 +37,10 @@ Frénicle established two simple rules to determine the [standard position](http
 - [SVG Fills and Strokes (MDN)](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes)
 - Possible use: [SVG++ library documentation](http://svgpp.org/index.html)
 
+## Printing
+
+22 order 4 columns will produce an even block.
+
 ---
 
 Fania Raczinski and Dave Everitt
