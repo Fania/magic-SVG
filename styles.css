@@ -68,9 +68,14 @@ label {
 }
 #grid td {
   font-size: 2em;
-  padding: 6px;
+  padding: 10px;
   text-align: right;
   vertical-align: middle;
+}
+#constant {
+  color: #555;
+  font-size: 1.25em;
+  text-align: center;
 }
 
 /* animate */
@@ -87,10 +92,7 @@ label {
 
 @media screen and (min-width: 500px) {
   #single-x {
-    width:  auto;
-    height: 60vh;
-    margin: 0 auto;
-    display: flex;
+    width:  50%;
   }
   .order-x {
     width:  200px;

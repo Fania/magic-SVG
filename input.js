@@ -2,12 +2,11 @@
 (function(){
   const styleOptions = document.getElementById("style-options");
   const settings = document.getElementById("settings");
-  const svgGrid = document.getElementById('svgGrid');
   const valuesString = document.getElementById("values");
   const table = document.getElementById("grid");
   const svgbox = document.getElementById("single-x");
   const anim = document.getElementById("animate");
-  const sum = document.getElementById("sum");
+  const constant = document.getElementById("constant");
 /*
   preferences TODO:
   - set size of squares
@@ -34,32 +33,36 @@
     
     let values = valuesString.value;
     // let values = "22 21 24 25 06 07 20 23 27 26 05 04 03 00 17 16 35 34 01 02 19 18 33 32 31 30 08 09 12 15 28 29 10 11 14 13";
+    // 13 22 18 27 11 20 31 4 36 9 29 2 12 21 14 23 16 25 30 3 5 32 34 7 17 26 10 19 15 24 8 35 28 1 6 33
     let valuesArray = values.split(" ").map(Number);
     // valuesArray.includes(0) has no IE support
-    // MINUS ONE MAGIC SQUARE
-    // if (valuesArray.indexOf(0) === -1) {
-    //   valuesArray = valuesArray.map((x) => x-1);
-    // }
-    console.log(valuesArray);
+    // IF NUMBERS DO NOT INCLUDE 0 - SUBTRACT ONE FROM EACH VALUE
+    if (valuesArray.indexOf(0) === -1) {
+      valuesArray = valuesArray.map((x) => x-1);
+    }
     
     let size = Math.sqrt(valuesArray.length);
     
-    // MAGIC SUM
+    // MAGIC CONSTANT
     let oneRow = valuesArray.slice(0,size);
-    let magicSum = oneRow.reduce((a,b) => a + b, 0);
-    // console.log(oneRow);
-    // console.log(magicSum);
-    sum.innerHTML = magicSum;
+    let oneCol = valuesArray.filter(
+      (value, index) => { return index % size == 0; }
+    );
+    let rowConstant = oneRow.reduce((a,b) => a + b, size);
+    let colConstant = oneCol.reduce((a,b) => a + b, size);
+    let magicConstant = rowConstant === colConstant ? rowConstant : `ERROR`;
+    constant.innerHTML = `Magic constant: ${magicConstant}`;
 
-
+    // CREATE TABLE AND GENERATE coordsArray FOR SVG
     const coordsArray = {};
     table.innerHTML = "";
-    let offset = 0;
+    let offset = 0; // needed to jump index for valuesArray properly
     for (let r=0; r<size; r++) {
       let row = document.createElement("tr");
       for (let c=0; c<size; c++) {
         let cell = document.createElement("td");
-        let content = document.createTextNode(`${valuesArray[c+offset]}`);
+        // always add 1 to display the table values correctly
+        let content = document.createTextNode(`${valuesArray[c+offset] + 1}`); 
         coordsArray[valuesArray[c+offset]] = [r,c];
         cell.appendChild(content);
         row.appendChild(cell);
@@ -70,7 +73,7 @@
 
     event.preventDefault();
 
-    console.log(coordsArray);
+    // console.log("coordsArray", coordsArray);
 
     switch(styleOptions[styleOptions.selectedIndex].value) {
       case "straight":
