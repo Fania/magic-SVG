@@ -22,45 +22,51 @@
     <option value="quadline">Quadratic curve on lines</option>
     <option value="arc">Arc experiment</option>
   </select>
-  <input id="values" placeholder="1 2 3 etc..." value="22 21 24 25 06 07 20 23 27 26 05 04 03 00 17 16 35 34 01 02 19 18 33 32 31 30 08 09 12 15 28 29 10 11 14 13">
+  <input id="values" placeholder="1 2 3 etc..." value="13 22 18 27 11 20 31 4 36 9 29 2 12 21 14 23 16 25 30 3 5 32 34 7 17 26 10 19 15 24 8 35 28 1 6 33">
   <input type="submit" value="Draw!">
 </form>  
 
-<table id="grid"></table>
+  <main>
+    <div>
+      <table id="grid"></table>
+      <div id="sum"></div>
+    </div>
 
-<!-- <p>22 21 24 25 06 07 20 23 27 26 05 04 03 00 17 16 35 34 01 02 19 18 33 32 31 30 08 09 12 15 28 29 10 11 14 13</p> -->
+    <!-- <p>22 21 24 25 06 07 20 23 27 26 05 04 03 00 17 16 35 34 01 02 19 18 33 32 31 30 08 09 12 15 28 29 10 11 14 13</p> -->
 
-<!--
-  width and height set the size of the element in the HTML page
-  viewbox sets the size of the coordinate system for drawing your svg
--->
+    <!--
+      width and height set the size of the element in the HTML page
+      viewbox sets the size of the coordinate system for drawing your svg
+    -->
 
-<svg id="single-x">
-  <polyline id="lines" fill="none" stroke="black" points=""/>
-</svg>
+    <svg id="single-x">
+      <polyline id="lines" fill="none" stroke="black" points=""/>
+    </svg>
 
-<!-- 20 17 24 27 7 10 14 23 33 30 4 1 9 0 16 13 35 32 3 6 22 19 29 26 34 31 2 5 12 21 25 28 8 11 18 15  -->
+    <!-- 20 17 24 27 7 10 14 23 33 30 4 1 9 0 16 13 35 32 3 6 22 19 29 26 34 31 2 5 12 21 25 28 8 11 18 15  -->
 
-<!--
-  <svg id="order-6" viewBox="0 0 700 700">
-  <rect fill="none" stroke="black" x="0" y="0" width="700" height="700"/>
-  <polyline fill="none" stroke="black" 
-    points="200,300 100,400 200,400 100,300 600,200 500,200 500,100 600,100 300,500 400,500 300,600 400,600 500,500 600,600 500,600 600,500 400,300 300,300 400,400 300,400 100,200 200,100 100,100 200,200 300,100 400,100 400,200 300,200 100,600 200,600 200,500 100,500 600,400 500,400 600,300 500,300 200,300"/>
-  </svg>
--->
+    <!--
+      <svg id="order-6" viewBox="0 0 700 700">
+      <rect fill="none" stroke="black" x="0" y="0" width="700" height="700"/>
+      <polyline fill="none" stroke="black" 
+        points="200,300 100,400 200,400 100,300 600,200 500,200 500,100 600,100 300,500 400,500 300,600 400,600 500,500 600,600 500,600 600,500 400,300 300,300 400,400 300,400 100,200 200,100 100,100 200,200 300,100 400,100 400,200 300,200 100,600 200,600 200,500 100,500 600,400 500,400 600,300 500,300 200,300"/>
+      </svg>
+    -->
 
-<!-- 
-22 21 24 25 06 07
-20 23 27 26 05 04
-03 00 17 16 35 34
-01 02 19 18 33 32
-31 30 08 09 12 15
-28 29 10 11 14 13 
--->
+    <!-- 
+    22 21 24 25 06 07
+    20 23 27 26 05 04
+    03 00 17 16 35 34
+    01 02 19 18 33 32
+    31 30 08 09 12 15
+    28 29 10 11 14 13 
+    -->
+  </main>
 
 
 <style id="extra_styles"></style>
 <script src="input.js"></script>
 <script src="animate.js"></script>
+<script src="calc.js"></script>
 </body>
 </html>

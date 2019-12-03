@@ -66,6 +66,12 @@ label {
 #grid {
   margin: 1em auto;
 }
+#grid td {
+  font-size: 2em;
+  padding: 6px;
+  text-align: right;
+  vertical-align: middle;
+}
 
 /* animate */
 [id^="square-"] {
@@ -78,7 +84,8 @@ label {
   }
 }
 
-@media screen and (min-width: 500px){
+
+@media screen and (min-width: 500px) {
   #single-x {
     width:  auto;
     height: 60vh;
@@ -89,6 +96,13 @@ label {
     width:  200px;
     height: 200px;
   }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
 }
 
 

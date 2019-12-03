@@ -7,6 +7,7 @@
   const table = document.getElementById("grid");
   const svgbox = document.getElementById("single-x");
   const anim = document.getElementById("animate");
+  const sum = document.getElementById("sum");
 /*
   preferences TODO:
   - set size of squares
@@ -35,12 +36,22 @@
     // let values = "22 21 24 25 06 07 20 23 27 26 05 04 03 00 17 16 35 34 01 02 19 18 33 32 31 30 08 09 12 15 28 29 10 11 14 13";
     let valuesArray = values.split(" ").map(Number);
     // valuesArray.includes(0) has no IE support
-    if (valuesArray.indexOf(0) === -1) {
-      valuesArray = valuesArray.map((x) => x-1);
-    }
-    // console.log(valuesArray);
+    // MINUS ONE MAGIC SQUARE
+    // if (valuesArray.indexOf(0) === -1) {
+    //   valuesArray = valuesArray.map((x) => x-1);
+    // }
+    console.log(valuesArray);
     
     let size = Math.sqrt(valuesArray.length);
+    
+    // MAGIC SUM
+    let oneRow = valuesArray.slice(0,size);
+    let magicSum = oneRow.reduce((a,b) => a + b, 0);
+    // console.log(oneRow);
+    // console.log(magicSum);
+    sum.innerHTML = magicSum;
+
+
     const coordsArray = {};
     table.innerHTML = "";
     let offset = 0;
@@ -59,7 +70,7 @@
 
     event.preventDefault();
 
-    // console.log(coordsArray);
+    console.log(coordsArray);
 
     switch(styleOptions[styleOptions.selectedIndex].value) {
       case "straight":
