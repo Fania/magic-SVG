@@ -36,8 +36,20 @@
 
   function setup() {
     let order = orderOptions[orderOptions.selectedIndex].value;
-    // console.log(squareOrder[order]);
+    // console.log(squareOrder[4]);
     // console.log(padding.checked);
+
+    // for printing the numbers art
+    // let padded = [];
+    // let cnt = 0;
+    // squareOrder['4a'].forEach(str => {
+    //   let newStr = str.split(" ");
+    //   let out = newStr.map(s => s.padStart(2, '0'));
+    //   padded[cnt] = out;
+    //   cnt++;
+    // });
+    // console.log(padded.toString());
+
     let valuesArray = [];
     let counter = 1;
     extra_styles.innerHTML = "";
@@ -51,16 +63,47 @@
       if (valuesArray.includes(0)) {
         valuesArray = valuesArray.map((x) => x-1);
       }
-      createCoords(valuesArray, counter);
+
+      // loading bar
+      progress(counter, squareOrder[order].length);
+      
+      setTimeout(createCoords(valuesArray, counter), 0);
+
+      // createCoords(valuesArray, counter);
       valuesArray = [];
+      
+
+
       counter++;
     }
   }
 
+
+  function progress(c,l) {
+    // svgGrid.innerHTML = '';
+    const bar = document.getElementById("loading");
+    const prog = document.getElementById("progress");
+    // let cw = prog.clientWidth;
+    // console.log("cw", cw);
+    let multiplier = 220 / l;
+    if (c === l) {
+      let incr = c * multiplier;
+      console.log("widths", incr, c, l);
+      prog.style.width = `${incr}px`;
+      // bar.style.display = "none";
+    } else {
+      bar.style.display = "block";
+      let incr = c * multiplier;
+      console.log("widths", incr, c, l);
+      prog.style.width = `${incr}px`;
+    }
+
+  }
+
+
   function createCoords(valuesArray, counter) {
 
     // console.log(valuesArray);
-
     let size = Math.sqrt(valuesArray.length);
     const coordsArray = {};
     let offset = 0;

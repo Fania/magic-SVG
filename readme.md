@@ -24,13 +24,15 @@ Frénicle established two simple rules to determine the [standard position](http
 
 ## TO DO: interface
 
-- [ ] swap between multi and single square
+- [x] swap between multi and single square
 - [x] set padding between squares
-- [ ] set size of squares
+- [x] set size of squares
 - [x] set SVG fill in JavaScript
 - [x] user input for fill colour
 - [x] user input for line colour
 - [ ] hide settings after drawing
+- [ ] printing stylesheet
+- [ ] progress bar (loading)
 
 ## References
 
@@ -39,7 +41,7 @@ Frénicle established two simple rules to determine the [standard position](http
 
 ## Printing
 
-22 order 4 columns will produce an even block.
+22x40 order-4s will produce an even block.
 
 ---
 

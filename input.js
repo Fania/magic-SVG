@@ -32,8 +32,12 @@
   function setup() {
     
     let values = valuesString.value;
+
+    // console.log(values);
+
     // let values = "22 21 24 25 06 07 20 23 27 26 05 04 03 00 17 16 35 34 01 02 19 18 33 32 31 30 08 09 12 15 28 29 10 11 14 13";
     // 13 22 18 27 11 20 31 4 36 9 29 2 12 21 14 23 16 25 30 3 5 32 34 7 17 26 10 19 15 24 8 35 28 1 6 33
+    // 7 12 1 14 2 13 8 11 16 3 10 5 9 6 15 4
     let valuesArray = values.split(" ").map(Number);
     // valuesArray.includes(0) has no IE support
     // IF NUMBERS DO NOT INCLUDE 0 - SUBTRACT ONE FROM EACH VALUE
