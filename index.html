@@ -15,20 +15,20 @@
   <label for="strokeColour">Stroke:</label><input type="color" id="strokeColour" value="#FFFFFF">
   <label for="backColour">Background:</label><input type="color" id="backColour" value="#222222">
   <label for="padding">Padding:</label><input type="checkbox" id="padding" checked>
-  <label for="animate">Animate:</label><input type="checkbox" id="animate" checked>
+  <label for="animate">Animate:</label><input type="checkbox" id="animate">
   <select id="style-options">
     <option value="straight">Straight polyline</option>
-    <option value="quadvertix">Quadratic curve on vertices</option>
+    <option value="quadvertix" selected>Quadratic curve on vertices</option>
     <option value="quadline">Quadratic curve on lines</option>
     <option value="arc">Arc experiment</option>
-    <option value="numbers" selected>Numbers</option>
+    <option value="numbers">Numbers</option>
   </select>
   <select id="order-options">
     <!-- <option value="3">Order 3</option> -->
-    <option value="4">Order 4</option>
+    <option value="4" selected>Order 4</option>
     <option value="4a">Order 4 (all)</option>
     <option value="5">Order 5</option>
-    <option value="6" selected>Order 6</option>
+    <option value="6">Order 6</option>
   </select>
   <input type="submit" value="Draw!">
 </form>

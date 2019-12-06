@@ -1,6 +1,6 @@
 html {
   --backColour: #222;
-  --textColour: #ccc;
+  --textColour: #eee;
   /* --backColour: rgb(7, 41, 62); */
   /* --lineColour: #ccc; */
   /* --lineColour: rgba(112, 108, 189, .5); */
@@ -62,7 +62,19 @@ table {
   font-size: 12px;
 }
 
-.order-x, #single-x {
+.order-xt {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.order-xt text {
+  font-size: 4.5em;
+  stroke: none;
+  fill: var(--textColour);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.order-x, .order-x, #single-x {
   width: 100%;
   height: 100%;
   stroke-width: 2;
@@ -108,7 +120,7 @@ table {
   #single-x {
     width:  50%;
   }
-  .order-x {
+  .order-x, .order-xt {
     width:  200px;
     height: 200px;
   }
@@ -136,19 +148,14 @@ table {
   #settings {
     display: none;
   }
-  .order-x {
+  .order-x, .order-xt {
     width:  var(--size);
     height: var(--size);
   }
 
-  .svgGrid table {
-    /* padding: 4px; */
-    /* transform: scale(0.4); */
-    /* width:  var(--size); */
-    /* height: var(--size); */
-    width:  24.3px;
-    height: 24.3px;
-    font-size: 4px;
+  .order-xt {
+    padding: 0px;
   }
+
 
 }

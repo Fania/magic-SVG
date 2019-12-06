@@ -22,7 +22,7 @@
 
   // COLOUR =====================================
   let svgFill = "transparent";
-  let svgStroke = "white";
+  let svgStroke = "#eee";
   fillColour.addEventListener("change", function() { svgFill = fillColour.value });
   strokeColour.addEventListener("change", function () { svgStroke = strokeColour.value });
   backColour.addEventListener("change", function () { svgStroke = document.body.style.backgroundColor = backColour.value });
@@ -101,7 +101,8 @@
         createArc(size, coordsArray, counter);
         break;
       case "numbers":
-        createNumbers(size, valuesArray, counter);
+        // createNumbers(size, valuesArray, counter);
+        createNumberSVGs(size, coordsArray, counter);
         // anim.disabled = true;  // TODO
         anim.checked = false;  // TODO
         break;
@@ -136,6 +137,20 @@
       offset += size;
     }
     svgGrid.insertAdjacentHTML("beforeend", table.outerHTML);
+  }
+
+
+  function createNumberSVGs(size, arr, counter) {
+    // console.log("numbers only");
+    let texts = "";
+    let w = size * sizeInc;
+    pad = 50;
+    for (let a in arr) {
+      // it's Y,X in SVG rather than X,Y
+      texts += `<text x="${arr[a][1] * 100}" y="${arr[a][0] * 100}">${a.padStart(2, '0')}</text>`;
+    }
+    let output = `<svg class="order-xt" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad+30} ${w-sizeInc+pad+pad+30}">${texts}"</svg>`;
+    svgGrid.insertAdjacentHTML("beforeend", output);
   }
 
 
@@ -206,7 +221,7 @@
     for (let a=2; a <= (Object.keys(arr).length - 1); a = a+2) {
       coords += `Q ${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} ${arr[a+1][1] * sizeInc},${arr[a+1][0] * sizeInc} `;
     }
-    // coords += `Z `;  // loop back
+    coords += `Z `;  // loop back
 
     drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
   }
@@ -222,9 +237,11 @@
       // https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Arcs
       coords += `A 10,10 0 1 0 ${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} `;
     }
-    coords += `M ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;  // loop back
+    coords += `A 10,10 0 1 0 ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
 
-    drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
+    // drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
+
+    drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad-150} ${-pad-150} ${w-sizeInc+pad+pad+300} ${w-sizeInc+pad+pad+300}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
   }
 
   function createPolyline(size, arr, counter) {
