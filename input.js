@@ -66,7 +66,7 @@
       for (let c=0; c<size; c++) {
         let cell = document.createElement("td");
         // always add 1 to display the table values correctly
-        let content = document.createTextNode(`${valuesArray[c+offset] + 1}`); 
+        let content = document.createTextNode(`${valuesArray[c+offset] + 1}`.padStart(2, '0')); 
         coordsArray[valuesArray[c+offset]] = [r,c];
         cell.appendChild(content);
         row.appendChild(cell);

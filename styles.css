@@ -52,6 +52,16 @@ label {
   margin-right: 4px;
 }
 
+table {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 4px;
+  text-align: right;
+  vertical-align: middle;
+}
+.svgGrid table {
+  font-size: 12px;
+}
+
 .order-x, #single-x {
   width: 100%;
   height: 100%;
@@ -129,6 +139,16 @@ label {
   .order-x {
     width:  var(--size);
     height: var(--size);
+  }
+
+  .svgGrid table {
+    /* padding: 4px; */
+    /* transform: scale(0.4); */
+    /* width:  var(--size); */
+    /* height: var(--size); */
+    width:  24.3px;
+    height: 24.3px;
+    font-size: 4px;
   }
 
 }
