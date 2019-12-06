@@ -5,8 +5,6 @@ Uses SVG to draw the [magic line](http://recmath.org/Magic%20Squares/transform.h
 - accepts a string of numbers only if separated by **single spaces** (not double)
 - accepts magic square strings where the lowest integer is either `0` or `1`
 
-See branch "single square" to input a number sequence that draws a plain version of one magic square.
-
 ## TO DO: magic square checking
 
 Use code from the [magic square checker](https://github.com/DaveEveritt/magic-square) for the following:
@@ -30,9 +28,10 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] set SVG fill in JavaScript
 - [x] user input for fill colour
 - [x] user input for line colour
-- [ ] hide settings after drawing
-- [ ] printing stylesheet
+- [x] hide settings after drawing
+- [x] printing stylesheet (order-4)
 - [ ] progress bar (loading)
+- [ ] number squares fix mobile
 
 ## References
 
