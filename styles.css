@@ -93,21 +93,6 @@ label {
 }
 
 
-#loading {
-  /* display: none; */
-  margin: 0 auto;
-  margin-top: calc(50vh - 80px);
-  width: 220px;
-  height: 20px;
-  background: gray;
-}
-
-#progress {
-  height: 20px;
-  width: 0px;
-  background: white;
-}
-
 
 @media screen and (min-width: 500px) {
   #single-x {
@@ -128,16 +113,22 @@ label {
 
 
 @media print {
-  body {
-    /* zoom: 0.12; */
-    /* margin: 20px; */
+
+  html {
+    --size: calc((100vw - 80px) / 40);
+    --marg: calc( ( 100vh - ( var(--size) * 22 ) ) / 2 );
   }
+
+  body {
+    margin: var(--marg) 40px;
+  }
+
   #settings {
     display: none;
   }
   .order-x {
-    width:  50px;
-    height: 50px;
+    width:  var(--size);
+    height: var(--size);
   }
 
 }

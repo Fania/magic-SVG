@@ -97,9 +97,9 @@
     }
   }
 
+
   function createQuadraticCurveVertices(size, arr, counter) {
     // console.log("quadratic curve on vertices");
-
     // console.log(size, arr);
 
     let w = size * sizeInc;
