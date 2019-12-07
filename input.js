@@ -7,24 +7,18 @@
   const svgbox = document.getElementById("single-x");
   const anim = document.getElementById("animate");
   const constant = document.getElementById("constant");
-/*
-  preferences TODO:
-  - set size of squares
-  - set fill-opacity/stroke-opacity="0.0" - "1.0"
-  - loop trhough colour change
-*/
 
-  // COLOUR =====================================
+  // COLOURS
   let svgFill = "transparent";
-  let svgStroke = "white";
-  fillColour.addEventListener("change", function() { svgFill = fillColour.value });
-  strokeColour.addEventListener("change", function () { svgStroke = strokeColour.value });
-  backColour.addEventListener("change", function () { svgStroke = document.body.style.backgroundColor = backColour.value });
+  let svgStroke = "#eee";
+  fillColour.addEventListener("change", () => { svgFill = fillColour.value });
+  strokeColour.addEventListener("change", () => { svgStroke = strokeColour.value });
+  backColour.addEventListener("change", () => { svgStroke = document.body.style.backgroundColor = backColour.value });
 
- 
+
   let pad = 50; // 1 is adjacent, 30 gives a good separation
   let sizeInc = 100; // scale (line weight hack) 100 is optimal
-/* ----------- */
+
 
   settings.addEventListener("submit", setup, false);
 
@@ -171,14 +165,12 @@
   function createQuadraticCurveLines(size, arr, counter) {
     // console.log("quadratic curve on lines");
     let w = size * sizeInc;
-    let coords = "";
-
-    coords += `M ${arr[0][1] * sizeInc},${arr[0][0] * sizeInc} `;
-
+    let len = Object.keys(arr).length;
+    let coords = `M ${arr[0][1] * sizeInc},${arr[0][0] * sizeInc} `;
     for (let a=2; a <= (Object.keys(arr).length - 1); a = a+2) {
       coords += `Q ${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} ${arr[a+1][1] * sizeInc},${arr[a+1][0] * sizeInc} `;
     }
-    // coords += `Z `;  // loop back
+    // coords += `Q ${arr[len][1] * sizeInc},${arr[len][0] * sizeInc} ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;  // loop back
 
     let svgPath = `<path id="square-${counter}" class="lines" d="${coords}"/>`;
     svgbox.setAttribute('viewBox', `${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}`);

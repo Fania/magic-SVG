@@ -6,12 +6,6 @@
   const settings = document.getElementById("settings");
   const svgGrid = document.getElementById('svgGrid');
   const anim = document.getElementById("animate");
-/*
-  preferences TODO:
-  - set size of squares
-  - set fill-opacity/stroke-opacity="0.0" - "1.0"
-  - loop trhough colour change
-*/
 
   const squareOrder = {
     "4": order4,
@@ -20,25 +14,21 @@
     "6": order6
   }
 
-  // COLOUR =====================================
+  // COLOURS
   let svgFill = "transparent";
   let svgStroke = "#eee";
-  fillColour.addEventListener("change", function() { svgFill = fillColour.value });
-  strokeColour.addEventListener("change", function () { svgStroke = strokeColour.value });
-  backColour.addEventListener("change", function () { svgStroke = document.body.style.backgroundColor = backColour.value });
+  fillColour.addEventListener("change", () => { svgFill = fillColour.value });
+  strokeColour.addEventListener("change", () => { svgStroke = strokeColour.value });
+  backColour.addEventListener("change", () => { svgStroke = document.body.style.backgroundColor = backColour.value });
 
- 
   let pad; // 1 is adjacent, 30 gives a good separation
   let sizeInc = 100; // scale (line weight hack) 100 is optimal
-/* ----------- */
+
 
   settings.addEventListener("submit", setup, false);
 
   function setup() {
     let order = orderOptions[orderOptions.selectedIndex].value;
-    // console.log(squareOrder[4]);
-    // console.log(padding.checked);
-
     let valuesArray = [];
     let counter = 1;
     extra_styles.innerHTML = "";
@@ -46,13 +36,10 @@
     let line;
     svgGrid.innerHTML = '';
     for (line in squareOrder[order]) {
-      // console.log("counter", counter);
       valuesArray = squareOrder[order][line].split(" ").map(Number);
-      // console.log(valuesArray);
       if (valuesArray.includes(0)) {
         valuesArray = valuesArray.map((x) => x-1);
       }
-
       createCoords(valuesArray, counter);
       valuesArray = [];      
       counter++;
@@ -101,7 +88,7 @@
 
   function drawSquare(text,counter) {
     // svgGrid.innerHTML += text;  // SLOW AS FUCK AND BLOCKING
-    svgGrid.insertAdjacentHTML("beforeend", text);  // FAST AND NON_BLOCKING
+    svgGrid.insertAdjacentHTML("beforeend", text);  // FAST AND NON-BLOCKING
     if (anim.checked) animate(counter);
   }
 

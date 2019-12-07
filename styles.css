@@ -110,6 +110,12 @@ table {
   }
 }
 
+input, label, select, option, #settings a, 
+input:focus, 
+select:focus,
+option:focus {
+  font-size: 16px;
+}
 
 
 @media screen and (min-width: 500px) {
