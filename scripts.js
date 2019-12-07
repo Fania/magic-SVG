@@ -104,7 +104,8 @@
       // order is wrong in the coordsArray [r,c], not the svg
       texts += `<text x="${arr[a][1] * 100}" y="${arr[a][0] * 100}">${a.padStart(2, '0')}</text>`;
     }
-    let output = `<svg class="order-xt" style="fill: ${svgStroke}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad+30} ${w-sizeInc+pad+pad+30}">${texts}"</svg>`;
+    // 0 -50 380 370 for order 4
+    let output = `<svg class="order-xt" style="fill: ${svgStroke}; stroke: ${svgStroke}" viewbox="${0} ${-pad} ${w-sizeInc+pad+30} ${w-sizeInc+pad+20}">${texts}"</svg>`;
     svgGrid.insertAdjacentHTML("beforeend", output);
   }
 
