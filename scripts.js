@@ -39,17 +39,6 @@
     // console.log(squareOrder[4]);
     // console.log(padding.checked);
 
-    // for printing the numbers art
-    // let padded = [];
-    // let cnt = 0;
-    // squareOrder['4a'].forEach(str => {
-    //   let newStr = str.split(" ");
-    //   let out = newStr.map(s => s.padStart(2, '0'));
-    //   padded[cnt] = out;
-    //   cnt++;
-    // });
-    // console.log(padded.toString());
-
     let valuesArray = [];
     let counter = 1;
     extra_styles.innerHTML = "";
@@ -72,7 +61,6 @@
 
 
   function createCoords(valuesArray, counter) {
-
     // console.log(valuesArray);
     let size = Math.sqrt(valuesArray.length);
     const coordsArray = {};
@@ -101,7 +89,6 @@
         createArc(size, coordsArray, counter);
         break;
       case "numbers":
-        // createNumbers(size, valuesArray, counter);
         createNumberSVGs(size, coordsArray, counter);
         // anim.disabled = true;  // TODO
         anim.checked = false;  // TODO
@@ -120,26 +107,6 @@
 
 
 
-  function createNumbers(size, arr, counter) {
-    // console.log("numbers only");
-    let table = document.createElement("table");
-    let offset = 0; // needed to jump index for valuesArray properly
-    for (let r=0; r<size; r++) {
-      let row = document.createElement("tr");
-      for (let c=0; c<size; c++) {
-        let cell = document.createElement("td");
-        // always add 1 to display the table values correctly
-        let content = document.createTextNode(`${arr[c+offset] + 1}`.padStart(2, '0')); 
-        cell.appendChild(content);
-        row.appendChild(cell);
-      }
-      table.appendChild(row);
-      offset += size;
-    }
-    svgGrid.insertAdjacentHTML("beforeend", table.outerHTML);
-  }
-
-
   function createNumberSVGs(size, arr, counter) {
     // console.log("numbers only");
     let texts = "";
@@ -147,9 +114,10 @@
     pad = 50;
     for (let a in arr) {
       // it's Y,X in SVG rather than X,Y
+      // order is wrong in the coordsArray [r,c], not the svg
       texts += `<text x="${arr[a][1] * 100}" y="${arr[a][0] * 100}">${a.padStart(2, '0')}</text>`;
     }
-    let output = `<svg class="order-xt" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad+30} ${w-sizeInc+pad+pad+30}">${texts}"</svg>`;
+    let output = `<svg class="order-xt" style="fill: ${svgStroke}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad+30} ${w-sizeInc+pad+pad+30}">${texts}"</svg>`;
     svgGrid.insertAdjacentHTML("beforeend", output);
   }
 
@@ -159,8 +127,7 @@
     // console.log(size, arr);
     // console.log("quadratic curve on vertices");
     let w = size * sizeInc;
-    let coords = "";
-
+    
     let fstx = arr[1][1] * sizeInc;
     let fsty = arr[1][0] * sizeInc;
     let sndx = arr[2][1] * sizeInc;
@@ -168,7 +135,7 @@
     let fstmx = (fstx + sndx) / 2;
     let fstmy = (fsty + sndy) / 2;
 
-    coords += `M ${fstmx},${fstmy} `;
+    let coords = `M ${fstmx},${fstmy} `;
 
     for (let a=1; a <= Object.keys(arr).length; a++) {
       let c1x = arr[a][1] * sizeInc;
@@ -214,14 +181,12 @@
   function createQuadraticCurveLines(size, arr, counter) {
     // console.log("quadratic curve on lines");
     let w = size * sizeInc;
-    let coords = "";
-
-    coords += `M ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
-
-    for (let a=2; a <= (Object.keys(arr).length - 1); a = a+2) {
+    let len = Object.keys(arr).length;
+    let coords = `M ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
+    for (let a=2; a <= (len - 1); a = a+2) {
       coords += `Q ${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} ${arr[a+1][1] * sizeInc},${arr[a+1][0] * sizeInc} `;
     }
-    coords += `Z `;  // loop back
+    coords += `Q ${arr[len][1] * sizeInc},${arr[len][0] * sizeInc} ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;  // loop back
 
     drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
   }
@@ -229,10 +194,7 @@
   function createArc(size, arr, counter) {
     // console.log("arc experiment");
     let w = size * sizeInc;
-    let coords = "";
-
-    coords += `M${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
-
+    let coords = `M${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
     for (let a=2; a <= (Object.keys(arr).length - 1); a = a+2) {
       // https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Arcs
       coords += `A 10,10 0 1 0 ${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} `;
@@ -240,7 +202,6 @@
     coords += `A 10,10 0 1 0 ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
 
     // drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
-
     drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad-150} ${-pad-150} ${w-sizeInc+pad+pad+300} ${w-sizeInc+pad+pad+300}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
   }
 

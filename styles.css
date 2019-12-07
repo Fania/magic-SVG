@@ -70,17 +70,13 @@ table {
 .order-xt text {
   font-size: 4.5em;
   stroke: none;
-  fill: var(--textColour);
   font-family: 'Courier New', Courier, monospace;
 }
 
-.order-x, .order-x, #single-x {
+.order-x, .order-xt, #single-x {
   width: 100%;
   height: 100%;
   stroke-width: 2;
-  /* stroke: var(--lineColour); */
-  /* fill: var(--svgFill); */
-  /* border: 1px solid gray; */
 }
 .svgGrid {
   display: flex;
