@@ -32,7 +32,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] hide settings for printing
 - [x] printing stylesheet (order-4)
 - [ ] progress bar (loading) for animate
-- [ ] number squares fix mobile
+- [x] number squares fix mobile
 - [ ] give choice of print sizes
 - [ ] when numbers selected disable animate and stroke
 - [ ] swap coordsArray x y
