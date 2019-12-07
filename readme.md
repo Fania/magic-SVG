@@ -28,10 +28,12 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] set SVG fill in JavaScript
 - [x] user input for fill colour
 - [x] user input for line colour
-- [x] hide settings after drawing
+- [ ] hide settings after drawing
+- [ ] hide settings for printing
 - [x] printing stylesheet (order-4)
 - [ ] progress bar (loading)
 - [ ] number squares fix mobile
+- [ ] give choice of print sizes
 
 ## References
 
