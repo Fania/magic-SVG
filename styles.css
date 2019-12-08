@@ -103,7 +103,7 @@ table {
 /* animate */
 /* [id^="square-"] { */
 .animate {
-  animation: dash 20s linear alternate infinite;
+  animation: dash 20s ease-in-out alternate infinite;
   /* animation: dash 20s linear forwards; */
 }
 @keyframes dash {

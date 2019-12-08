@@ -103,9 +103,9 @@ function createArc(size, arr, counter) {
   let coords = `M${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
   for (let a=2; a <= (Object.keys(arr).length - 1); a = a+2) {
     // https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Arcs
-    coords += `A 10,10 0 1 0 ${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} `;
+    coords += `A 10,10 0 1 1 ${arr[a][1] * sizeInc},${arr[a][0] * sizeInc} `;
   }
-  coords += `A 10,10 0 1 0 ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
+  coords += `A 10,10 0 1 1 ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
 
   // drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
   drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad-150} ${-pad-150} ${w-sizeInc+pad+pad+300} ${w-sizeInc+pad+pad+300}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
