@@ -15,8 +15,9 @@ body {
   font-size: 0.9em;
 }
 #settings { 
-  background: #000; 
-  padding: .75em 0;
+  background: #111; 
+  padding: 1.5em 0;
+  margin-bottom: 2em;
   display: flex; 
   flex-wrap: wrap;
   align-items: center; 
@@ -100,9 +101,10 @@ table {
 }
 
 /* animate */
-[id^="square-"] {
-  /* animation: dash 20s linear alternate infinite; */
-  animation: dash 20s linear forwards;
+/* [id^="square-"] { */
+.animate {
+  animation: dash 20s linear alternate infinite;
+  /* animation: dash 20s linear forwards; */
 }
 @keyframes dash {
   to {
