@@ -52,6 +52,11 @@ input[type="text"] {
 label {
   margin-right: 4px;
 }
+.disable {
+  color: #666;
+  text-decoration: line-through;
+}
+
 
 table {
   font-family: 'Courier New', Courier, monospace;

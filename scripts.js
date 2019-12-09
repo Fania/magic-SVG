@@ -14,20 +14,23 @@ const squareOrder = {
   "6": order6
 }
 
+
+
 // COLOURS
-let svgFill = "transparent";
+let svgFill = "none";
 let svgStroke = "#eee";
-fillColour.addEventListener("change", () => { svgFill = fillColour.value });
-strokeColour.addEventListener("change", () => { 
-  svgStroke = strokeColour.value });
-backColour.addEventListener("change", () => { 
-  svgStroke = document.body.style.backgroundColor = backColour.value });
+fillColour.addEventListener("change", updateColours);
+strokeColour.addEventListener("change", updateColours);
+backColour.addEventListener("change", updateColours);
+
 
 let pad; // 1 is adjacent, 30 gives a good separation
 let sizeInc = 100; // scale (line weight hack) 100 is optimal
 
 
-settings.addEventListener("submit", setup, false);
+settings.addEventListener("submit", setup);
+styleOptions.addEventListener("change", setup);
+orderOptions.addEventListener("change", setup);
 
 function setup() {
   let order = orderOptions[orderOptions.selectedIndex].value;
@@ -43,6 +46,7 @@ function setup() {
       valuesArray = valuesArray.map((x) => x-1);
     }
     createCoords(valuesArray, counter);
+    updateColours();
     valuesArray = [];      
     counter++;
   }
@@ -77,9 +81,7 @@ function createCoords(valuesArray, counter) {
       createArc(size, coordsArray, counter);
       break;
     case "numbers":
-      createNumberSVGs(size, coordsArray, counter);
-      // anim.disabled = true;  // TODO
-      anim.checked = false;  // TODO
+      createNumberSVGs(size, coordsArray);
       break;
     default:
       createQuadraticCurveVertices(size, coordsArray, counter);

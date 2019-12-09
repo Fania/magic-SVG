@@ -34,12 +34,13 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] progress bar (loading) for animate
 - [x] number squares fix mobile
 - [ ] give choice of print sizes
-- [ ] when numbers selected disable animate and stroke
+- [x] when numbers selected disable animate and stroke
 - [ ] swap coordsArray x y
 - [ ] merge js files into one
 - [ ] set size of squares
 - [ ] set fill-opacity/stroke-opacity="0.0" - "1.0"
 - [ ] loop trhough colour change
+- [ ] fix color swapping issues (fill transparency)
 
 ## References
 

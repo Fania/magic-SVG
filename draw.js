@@ -11,9 +11,12 @@ function drawSquare(text,counter) {
 
 
 
-function createNumberSVGs(size, arr, counter) {
+function createNumberSVGs(size, arr) {
   // console.log("numbers only");
-  let texts = "";
+
+  disableSettings();
+
+  let texts;
   let w = size * sizeInc;
   pad = 50;
   for (let a in arr) {
@@ -22,8 +25,53 @@ function createNumberSVGs(size, arr, counter) {
     texts += `<text x="${arr[a][1] * 100}" y="${arr[a][0] * 100}">${a.padStart(2, '0')}</text>`;
   }
   // 0 -50 380 370 for order 4
-  let output = `<svg class="order-xt" style="fill: ${svgStroke}; stroke: ${svgStroke}" viewbox="${0} ${-pad} ${w-sizeInc+pad+30} ${w-sizeInc+pad+20}">${texts}"</svg>`;
+  let output = `<svg class="order-xt" viewbox="${0} ${-pad} ${w-sizeInc+pad+30} ${w-sizeInc+pad+20}">${texts}"</svg>`;
   svgGrid.insertAdjacentHTML("beforeend", output);
+}
+
+
+
+function updateColours() {
+
+  svgFill === "none" ? svgFill = "none" : svgFill = fillColour.value;
+  svgStroke = strokeColour.value;
+  
+  document.body.style.background = backColour.value;
+
+  let text = `
+    svg {
+      fill: ${svgFill};
+      stroke: ${svgStroke};
+    }
+  `;
+
+  extra_styles.insertAdjacentHTML("beforeend", text);
+
+}
+
+
+
+function enableSettings() {
+  svgFill = "none";
+  anim.disabled = false;
+  padding.disabled = false;
+  strokeColour.disabled = false;
+  anim.previousSibling.classList.remove("disable");
+  strokeColour.previousSibling.classList.remove("disable");
+  padding.previousSibling.classList.remove("disable");
+}
+
+function disableSettings() {
+  fillColour.value = "#eeeeee";
+  strokeColour.value = "#666666";
+  if (svgFill === "none") svgFill = fillColour.value;
+  anim.checked = false;
+  anim.disabled = true;
+  padding.disabled = true;
+  strokeColour.disabled = true;
+  anim.previousSibling.classList.add("disable");
+  strokeColour.previousSibling.classList.add("disable");
+  padding.previousSibling.classList.add("disable");
 }
 
 
@@ -31,6 +79,9 @@ function createNumberSVGs(size, arr, counter) {
 function createQuadraticCurveVertices(size, arr, counter) {
   // console.log(size, arr);
   // console.log("quadratic curve on vertices");
+
+  enableSettings();
+
   let w = size * sizeInc;
   
   let fstx = arr[1][1] * sizeInc;
@@ -78,13 +129,16 @@ function createQuadraticCurveVertices(size, arr, counter) {
     coords += `Q ${c2x},${c2y} ${m2x},${m2y} `;
   }
 
-  drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
+  drawSquare(`<svg class="order-x" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
 
 }
 
 
 function createQuadraticCurveLines(size, arr, counter) {
   // console.log("quadratic curve on lines");
+
+  enableSettings();
+
   let w = size * sizeInc;
   let len = Object.keys(arr).length;
   let coords = `M ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
@@ -94,11 +148,14 @@ function createQuadraticCurveLines(size, arr, counter) {
   }
   coords += `Q ${arr[len][1] * sizeInc},${arr[len][0] * sizeInc} ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;  // loop back
 
-  drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
+  drawSquare(`<svg class="order-x" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
 }
 
 function createArc(size, arr, counter) {
   // console.log("arc experiment");
+
+  enableSettings();
+
   let w = size * sizeInc;
   let coords = `M${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
   for (let a=2; a <= (Object.keys(arr).length - 1); a = a+2) {
@@ -108,11 +165,14 @@ function createArc(size, arr, counter) {
   coords += `A 10,10 0 1 1 ${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
 
   // drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
-  drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad-150} ${-pad-150} ${w-sizeInc+pad+pad+300} ${w-sizeInc+pad+pad+300}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
+  drawSquare(`<svg class="order-x" viewbox="${-pad-150} ${-pad-150} ${w-sizeInc+pad+pad+300} ${w-sizeInc+pad+pad+300}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`, counter);
 }
 
 function createPolyline(size, arr, counter) {
   // console.log("straight polyline");
+
+  enableSettings();
+
   let w = size * sizeInc;
   let coords = "";
   let i;
@@ -123,5 +183,5 @@ function createPolyline(size, arr, counter) {
     coords += `${arr[i][1] * sizeInc},${arr[i][0] * sizeInc} `;
   }
   coords += `${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
-  drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline id="square-${counter}" class="lines" points="${coords}"/></svg>`, counter);
+  drawSquare(`<svg class="order-x" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline id="square-${counter}" class="lines" points="${coords}"/></svg>`, counter);
 }
