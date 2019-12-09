@@ -23,5 +23,6 @@ function stopAnimation(counter) {
   const square = document.getElementById(`square-${counter}`);
   square.classList.remove("animate");
   extra_styles.innerHTML = "";
-
+  updateColours();
+  
 }

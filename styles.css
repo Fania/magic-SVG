@@ -56,6 +56,9 @@ label {
   color: #666;
   text-decoration: line-through;
 }
+fieldset {
+  border: none;
+}
 
 
 table {

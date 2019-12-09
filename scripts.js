@@ -17,39 +17,30 @@ const squareOrder = {
 
 
 // COLOURS
-let defaultColours = {
+let currentColours = {
   "fill": "none",
   "stroke": "#eeeeee",
   "back": "#222222",
   "text": "#eeeeee"
 };
-let currentColours = defaultColours;
 
-
-let svgFill = defaultColours.fill;
-let svgStroke = defaultColours.stroke;
-let svgText = defaultColours.text;
-
-fillColour.addEventListener("change", () => { 
-  svgFill = fillColour.value; updateColours(); });
-strokeColour.addEventListener("change", () => { 
-  svgStroke = strokeColour.value; updateColours(); });
-textColour.addEventListener("change", () => { 
-  svgText = textColour.value; updateColours(); });
+fillColour.addEventListener("change", updateColours);
+strokeColour.addEventListener("change", updateColours);
+textColour.addEventListener("change", updateColours);
 backColour.addEventListener("change", updateColours);
+clearFill.addEventListener("change", () => toggleFill(clearFill.checked));
 
 
 let pad; // 1 is adjacent, 30 gives a good separation
 let sizeInc = 100; // scale (line weight hack) 100 is optimal
 
-
-// settings.addEventListener("submit", load);
 styleOptions.addEventListener("change", load);
 orderOptions.addEventListener("change", load);
 
-load();
+load();  // first page load
 
 function load() {
+  updateColours();
   let order = orderOptions[orderOptions.selectedIndex].value;
   let valuesArray = [];
   let counter = 1;
@@ -66,8 +57,6 @@ function load() {
     valuesArray = [];      
     counter++;
   }
-  updateColours();
-  // event.preventDefault();
 }
 
 
@@ -83,9 +72,6 @@ function createCoords(valuesArray, counter) {
     }
     offset += size;
   }
-  // event.preventDefault();
-
-  // console.log(coordsArray);
 
   switch(styleOptions[styleOptions.selectedIndex].value) {
     case "straight":

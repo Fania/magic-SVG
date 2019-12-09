@@ -1,4 +1,4 @@
-
+"use strict";
 
 function drawSquare(text,counter) {
   // svgGrid.innerHTML += text;  // SLOW AS FUCK AND BLOCKING
@@ -10,41 +10,35 @@ function drawSquare(text,counter) {
 }
 
 
+
 function updateColours() {
+  clearFill.checked
+    ? currentColours.fill = "none" 
+    : currentColours.fill = fillColour.value;
+  currentColours.stroke = strokeColour.value;
+  currentColours.text = textColour.value;
+  currentColours.back = backColour.value;
+  document.body.style.background = currentColours.back;
 
-  console.log("variables before", svgFill, svgStroke, backColour.value);
-  // console.log("inputs", fillColour.value, strokeColour.value, backColour.value);
-
-  // svgFill = fillColour.value;
-  svgFill === "none" ? svgFill = "none" : svgFill = fillColour.value;
-  svgStroke = strokeColour.value;
-  document.body.style.background = backColour.value;
-  svgText = textColour.value;
-
-  console.log("variables", svgFill, svgStroke, backColour.value, svgText);
-  // console.log("inputs", fillColour.value, strokeColour.value, backColour.value);
-
-  let text = `
-    svg {
-      fill: ${svgFill};
-      stroke: ${svgStroke};
-    }
-  `;
-
-    //   svg text {
-    //   fill: ${svgText};
-    // }
-
+  // update colours or add them in the first place
   if (extra_styles.innerText.includes("svg")) { 
     let txt = extra_styles.innerText;
-    let rexFill = /fill: (#?\w+);/m;
-    let rexStroke = /stroke: (#?\w+);/m;
+    let rexFill = /svg { fill: (#?\w+);/m;
+    let rexStroke = /svg { fill: #?\w+; stroke: (#?\w+);/m;
+    let rexText = /svg text { fill: (#?\w+);/m;
     let fillMatch = txt.match(rexFill);
     let strokeMatch = txt.match(rexStroke);
-    let txtF = txt.replace(fillMatch[1], svgFill);
-    let txtFS = txtF.replace(strokeMatch[1], svgStroke);
-    extra_styles.innerHTML = txtFS;
+    let textMatch = txt.match(rexText);
+    let txtF = txt.replace(fillMatch[1], currentColours.fill);
+    let txtFS = txtF.replace(strokeMatch[1], currentColours.stroke);
+    let txtFST = txtFS.replace(textMatch[1], currentColours.text);
+    extra_styles.innerHTML = txtFST;
+    // extra_styles.innerHTML.replace(txt, txtFST);
   } else {
+    let text = `
+      svg { fill: ${currentColours.fill}; stroke: ${currentColours.stroke}; }
+      svg text { fill: ${currentColours.text}; }
+    `;
     extra_styles.insertAdjacentHTML("beforeend", text);
   }
 }
@@ -52,69 +46,51 @@ function updateColours() {
 
 
 function squareSettings() {
-  svgFill = "none";
-  svgStroke = "#eeeeee";
-  // fillColour.value = "none";
-  strokeColour.value = "#eeeeee";
-  anim.disabled = false;
-  textColour.disabled = true;
   clearFill.disabled = false;
+  clearFill.previousSibling.classList.remove("disable");
   fillColour.disabled = clearFill.checked;
-  padding.disabled = false;
   strokeColour.disabled = false;
-  anim.previousSibling.classList.remove("disable");
   strokeColour.previousSibling.classList.remove("disable");
+  textColour.disabled = true;
   textColour.previousSibling.classList.add("disable");
+  padding.disabled = false;
   padding.previousSibling.classList.remove("disable");
-  // fillColour.previousSibling.classList.remove("disable");
-  // clearFill.previousSibling.classList.remove("disable");
-
-  // toggleFill(clearFill.checked);
-  // toggleFill(true);
-  clearFill.addEventListener("change", () => {
-    toggleFill(clearFill.checked); });
+  anim.disabled = false;
+  anim.previousSibling.classList.remove("disable");
+  updateColours();
 }
 
 function numberSettings() {
-  fillColour.value = "#666666";
-  strokeColour.value = "#666666";
-  textColour.value = "#eeeeee";
-  svgText = textColour.value;
-  if (svgFill === "none") svgFill = fillColour.value;
+  clearFill.disabled = true;
+  clearFill.previousSibling.classList.add("disable");
+  fillColour.disabled = true;
+  fillColour.previousSibling.classList.add("disable");
+  strokeColour.disabled = true;
+  strokeColour.previousSibling.classList.add("disable");
+  textColour.disabled = false;
+  textColour.previousSibling.classList.remove("disable");
+  padding.disabled = true;
+  padding.previousSibling.classList.add("disable");
   anim.checked = false;
   anim.disabled = true;
-  clearFill.checked = false;
-  clearFill.disabled = true;
-  fillColour.disabled = true;
-  textColour.disabled = false;
-  padding.disabled = true;
-  strokeColour.disabled = true;
   anim.previousSibling.classList.add("disable");
-  strokeColour.previousSibling.classList.add("disable");
-  textColour.previousSibling.classList.remove("disable");
-  fillColour.previousSibling.classList.add("disable");
-  clearFill.previousSibling.classList.add("disable");
-  padding.previousSibling.classList.add("disable");
+  updateColours();
 }
 
 
 
 function toggleFill(nofill) {
-  console.log("nofill", nofill);
-  if (nofill) {
-    fillColour.disabled = true;
+  if (nofill) {  // fill colour transparent
     clearFill.checked = true;
+    fillColour.disabled = true;
     fillColour.previousSibling.classList.add("disable");
-    // fillColour.value = "#666666";
-    svgFill = "none";
-  } else {
-    fillColour.disabled = false;
+    updateColours();
+  } else {  // fill colour as selected
     clearFill.checked = false;
+    fillColour.disabled = false;
     fillColour.previousSibling.classList.remove("disable");
-    svgFill = fillColour.value;
+    updateColours();
   }
-
-
 }
 
 
@@ -241,8 +217,8 @@ function createPolyline(size, arr, counter) {
   let w = size * sizeInc;
   let coords = "";
   let i;
-  svgStroke===undefined ? svgStroke="none" : svgStroke;
-  svgFill===undefined ? svgFill="none" : svgFill;
+  // svgStroke===undefined ? svgStroke="none" : svgStroke;
+  // svgFill===undefined ? svgFill="none" : svgFill;
 
   for (i in arr) {
     coords += `${arr[i][1] * sizeInc},${arr[i][0] * sizeInc} `;
