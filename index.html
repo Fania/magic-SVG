@@ -31,28 +31,38 @@
 <body>
 
 <form id="settings">
-  <a href="index.html" class="active">Order groups</a>
-  <a href="input.html">Single input</a>
-  <label for="fillColour">Fill:</label><input type="color" id="fillColour">
-  <label for="strokeColour">Stroke:</label><input type="color" id="strokeColour" value="#FFFFFF">
-  <label for="backColour">Background:</label><input type="color" id="backColour" value="#222222">
-  <label for="padding">Padding:</label><input type="checkbox" id="padding" checked>
-  <label for="animate">Animate:</label><input type="checkbox" id="animate">
-  <select id="style-options">
-    <option value="straight">Straight polyline</option>
-    <option value="quadvertix" selected>Quadratic curve on vertices</option>
-    <option value="quadline">Quadratic curve on lines</option>
-    <option value="arc">Arc experiment</option>
-    <option value="numbers">Numbers</option>
-  </select>
-  <select id="order-options">
-    <!-- <option value="3">Order 3</option> -->
-    <option value="4" selected>Order 4</option>
-    <option value="4a">Order 4 (all)</option>
-    <option value="5">Order 5</option>
-    <option value="6">Order 6</option>
-  </select>
-  <input type="submit" value="Draw!">
+  <fieldset>
+    <a href="index.html" class="active">Order groups</a>
+    <a href="input.html">Single input</a>
+  </fieldset>
+  <fieldset>
+    <label for="clearFill">NoFill:</label><input type="checkbox" id="clearFill" checked>
+    <label for="fillColour" class="disable">Fill:</label><input type="color" id="fillColour" value="#666666" disabled>
+    <label for="strokeColour">Stroke:</label><input type="color" id="strokeColour" value="#FFFFFF">
+    <label for="textColour" class="disable">Text:</label><input type="color" id="textColour" value="#666666" disabled>
+    <label for="backColour">Background:</label><input type="color" id="backColour" value="#222222">
+  </fieldset>
+  <fieldset>
+    <label for="padding">Padding:</label><input type="checkbox" id="padding" checked>
+    <label for="animate">Animate:</label><input type="checkbox" id="animate">
+  </fieldset>
+  <fieldset>
+    <select id="style-options">
+      <option value="straight">Straight polyline</option>
+      <option value="quadvertix" selected>Quadratic curve on vertices</option>
+      <option value="quadline">Quadratic curve on lines</option>
+      <option value="arc">Arc experiment</option>
+      <option value="numbers">Numbers</option>
+    </select>
+    <select id="order-options">
+      <!-- <option value="3">Order 3</option> -->
+      <option value="4" selected>Order 4</option>
+      <option value="4a">Order 4 (all)</option>
+      <option value="5">Order 5</option>
+      <option value="6">Order 6</option>
+    </select>
+  </fieldset>
+  <!-- <input type="submit" value="Draw!"> -->
 </form>
 
 

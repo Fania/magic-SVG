@@ -10,11 +10,120 @@ function drawSquare(text,counter) {
 }
 
 
+function updateColours() {
+
+  console.log("variables before", svgFill, svgStroke, backColour.value);
+  // console.log("inputs", fillColour.value, strokeColour.value, backColour.value);
+
+  // svgFill = fillColour.value;
+  svgFill === "none" ? svgFill = "none" : svgFill = fillColour.value;
+  svgStroke = strokeColour.value;
+  document.body.style.background = backColour.value;
+  svgText = textColour.value;
+
+  console.log("variables", svgFill, svgStroke, backColour.value, svgText);
+  // console.log("inputs", fillColour.value, strokeColour.value, backColour.value);
+
+  let text = `
+    svg {
+      fill: ${svgFill};
+      stroke: ${svgStroke};
+    }
+  `;
+
+    //   svg text {
+    //   fill: ${svgText};
+    // }
+
+  if (extra_styles.innerText.includes("svg")) { 
+    let txt = extra_styles.innerText;
+    let rexFill = /fill: (#?\w+);/m;
+    let rexStroke = /stroke: (#?\w+);/m;
+    let fillMatch = txt.match(rexFill);
+    let strokeMatch = txt.match(rexStroke);
+    let txtF = txt.replace(fillMatch[1], svgFill);
+    let txtFS = txtF.replace(strokeMatch[1], svgStroke);
+    extra_styles.innerHTML = txtFS;
+  } else {
+    extra_styles.insertAdjacentHTML("beforeend", text);
+  }
+}
+
+
+
+function squareSettings() {
+  svgFill = "none";
+  svgStroke = "#eeeeee";
+  // fillColour.value = "none";
+  strokeColour.value = "#eeeeee";
+  anim.disabled = false;
+  textColour.disabled = true;
+  clearFill.disabled = false;
+  fillColour.disabled = clearFill.checked;
+  padding.disabled = false;
+  strokeColour.disabled = false;
+  anim.previousSibling.classList.remove("disable");
+  strokeColour.previousSibling.classList.remove("disable");
+  textColour.previousSibling.classList.add("disable");
+  padding.previousSibling.classList.remove("disable");
+  // fillColour.previousSibling.classList.remove("disable");
+  // clearFill.previousSibling.classList.remove("disable");
+
+  // toggleFill(clearFill.checked);
+  // toggleFill(true);
+  clearFill.addEventListener("change", () => {
+    toggleFill(clearFill.checked); });
+}
+
+function numberSettings() {
+  fillColour.value = "#666666";
+  strokeColour.value = "#666666";
+  textColour.value = "#eeeeee";
+  svgText = textColour.value;
+  if (svgFill === "none") svgFill = fillColour.value;
+  anim.checked = false;
+  anim.disabled = true;
+  clearFill.checked = false;
+  clearFill.disabled = true;
+  fillColour.disabled = true;
+  textColour.disabled = false;
+  padding.disabled = true;
+  strokeColour.disabled = true;
+  anim.previousSibling.classList.add("disable");
+  strokeColour.previousSibling.classList.add("disable");
+  textColour.previousSibling.classList.remove("disable");
+  fillColour.previousSibling.classList.add("disable");
+  clearFill.previousSibling.classList.add("disable");
+  padding.previousSibling.classList.add("disable");
+}
+
+
+
+function toggleFill(nofill) {
+  console.log("nofill", nofill);
+  if (nofill) {
+    fillColour.disabled = true;
+    clearFill.checked = true;
+    fillColour.previousSibling.classList.add("disable");
+    // fillColour.value = "#666666";
+    svgFill = "none";
+  } else {
+    fillColour.disabled = false;
+    clearFill.checked = false;
+    fillColour.previousSibling.classList.remove("disable");
+    svgFill = fillColour.value;
+  }
+
+
+}
+
+
+
 
 function createNumberSVGs(size, arr) {
   // console.log("numbers only");
 
-  disableSettings();
+  numberSettings();
 
   let texts;
   let w = size * sizeInc;
@@ -31,56 +140,12 @@ function createNumberSVGs(size, arr) {
 
 
 
-function updateColours() {
-
-  svgFill === "none" ? svgFill = "none" : svgFill = fillColour.value;
-  svgStroke = strokeColour.value;
-  
-  document.body.style.background = backColour.value;
-
-  let text = `
-    svg {
-      fill: ${svgFill};
-      stroke: ${svgStroke};
-    }
-  `;
-
-  extra_styles.insertAdjacentHTML("beforeend", text);
-
-}
-
-
-
-function enableSettings() {
-  svgFill = "none";
-  anim.disabled = false;
-  padding.disabled = false;
-  strokeColour.disabled = false;
-  anim.previousSibling.classList.remove("disable");
-  strokeColour.previousSibling.classList.remove("disable");
-  padding.previousSibling.classList.remove("disable");
-}
-
-function disableSettings() {
-  fillColour.value = "#eeeeee";
-  strokeColour.value = "#666666";
-  if (svgFill === "none") svgFill = fillColour.value;
-  anim.checked = false;
-  anim.disabled = true;
-  padding.disabled = true;
-  strokeColour.disabled = true;
-  anim.previousSibling.classList.add("disable");
-  strokeColour.previousSibling.classList.add("disable");
-  padding.previousSibling.classList.add("disable");
-}
-
-
 
 function createQuadraticCurveVertices(size, arr, counter) {
   // console.log(size, arr);
   // console.log("quadratic curve on vertices");
 
-  enableSettings();
+  squareSettings();
 
   let w = size * sizeInc;
   
@@ -137,7 +202,7 @@ function createQuadraticCurveVertices(size, arr, counter) {
 function createQuadraticCurveLines(size, arr, counter) {
   // console.log("quadratic curve on lines");
 
-  enableSettings();
+  squareSettings();
 
   let w = size * sizeInc;
   let len = Object.keys(arr).length;
@@ -154,7 +219,7 @@ function createQuadraticCurveLines(size, arr, counter) {
 function createArc(size, arr, counter) {
   // console.log("arc experiment");
 
-  enableSettings();
+  squareSettings();
 
   let w = size * sizeInc;
   let coords = `M${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
@@ -171,7 +236,7 @@ function createArc(size, arr, counter) {
 function createPolyline(size, arr, counter) {
   // console.log("straight polyline");
 
-  enableSettings();
+  squareSettings();
 
   let w = size * sizeInc;
   let coords = "";

@@ -17,10 +17,25 @@ const squareOrder = {
 
 
 // COLOURS
-let svgFill = "none";
-let svgStroke = "#eee";
-fillColour.addEventListener("change", updateColours);
-strokeColour.addEventListener("change", updateColours);
+let defaultColours = {
+  "fill": "none",
+  "stroke": "#eeeeee",
+  "back": "#222222",
+  "text": "#eeeeee"
+};
+let currentColours = defaultColours;
+
+
+let svgFill = defaultColours.fill;
+let svgStroke = defaultColours.stroke;
+let svgText = defaultColours.text;
+
+fillColour.addEventListener("change", () => { 
+  svgFill = fillColour.value; updateColours(); });
+strokeColour.addEventListener("change", () => { 
+  svgStroke = strokeColour.value; updateColours(); });
+textColour.addEventListener("change", () => { 
+  svgText = textColour.value; updateColours(); });
 backColour.addEventListener("change", updateColours);
 
 
@@ -28,11 +43,13 @@ let pad; // 1 is adjacent, 30 gives a good separation
 let sizeInc = 100; // scale (line weight hack) 100 is optimal
 
 
-settings.addEventListener("submit", setup);
-styleOptions.addEventListener("change", setup);
-orderOptions.addEventListener("change", setup);
+// settings.addEventListener("submit", load);
+styleOptions.addEventListener("change", load);
+orderOptions.addEventListener("change", load);
 
-function setup() {
+load();
+
+function load() {
   let order = orderOptions[orderOptions.selectedIndex].value;
   let valuesArray = [];
   let counter = 1;
@@ -46,11 +63,14 @@ function setup() {
       valuesArray = valuesArray.map((x) => x-1);
     }
     createCoords(valuesArray, counter);
-    updateColours();
     valuesArray = [];      
     counter++;
   }
+  updateColours();
+  // event.preventDefault();
 }
+
+
 
 function createCoords(valuesArray, counter) {
   // console.log(valuesArray);
@@ -63,7 +83,7 @@ function createCoords(valuesArray, counter) {
     }
     offset += size;
   }
-  event.preventDefault();
+  // event.preventDefault();
 
   // console.log(coordsArray);
 
