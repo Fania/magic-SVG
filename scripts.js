@@ -40,7 +40,7 @@ orderOptions.addEventListener("change", load);
 load();  // first page load
 
 function load() {
-  updateColours();
+  // updateColours();
   let order = orderOptions[orderOptions.selectedIndex].value;
   let valuesArray = [];
   let counter = 1;
@@ -59,6 +59,7 @@ function load() {
   }
 }
 
+updateColours();
 
 
 function createCoords(valuesArray, counter) {

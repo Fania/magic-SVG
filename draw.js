@@ -32,8 +32,9 @@ function updateColours() {
     let txtF = txt.replace(fillMatch[1], currentColours.fill);
     let txtFS = txtF.replace(strokeMatch[1], currentColours.stroke);
     let txtFST = txtFS.replace(textMatch[1], currentColours.text);
+    console.log(txtFST);
     extra_styles.innerHTML = txtFST;
-    // extra_styles.innerHTML.replace(txt, txtFST);
+    // extra_styles.innerHTML.replace(txtFST);
   } else {
     let text = `
       svg { fill: ${currentColours.fill}; stroke: ${currentColours.stroke}; }
@@ -57,7 +58,7 @@ function squareSettings() {
   padding.previousSibling.classList.remove("disable");
   anim.disabled = false;
   anim.previousSibling.classList.remove("disable");
-  updateColours();
+  // updateColours();
 }
 
 function numberSettings() {
@@ -74,7 +75,7 @@ function numberSettings() {
   anim.checked = false;
   anim.disabled = true;
   anim.previousSibling.classList.add("disable");
-  updateColours();
+  // updateColours();
 }
 
 
@@ -112,6 +113,8 @@ function createNumberSVGs(size, arr) {
   // 0 -50 380 370 for order 4
   let output = `<svg class="order-xt" viewbox="${0} ${-pad} ${w-sizeInc+pad+30} ${w-sizeInc+pad+20}">${texts}"</svg>`;
   svgGrid.insertAdjacentHTML("beforeend", output);
+
+  updateColours();  // this triggers N loads (one for each square)
 }
 
 

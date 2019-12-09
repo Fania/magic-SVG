@@ -1,6 +1,6 @@
 html {
-  --backColour: #222;
-  --textColour: #eee;
+  --backColour: #222222;
+  --textColour: #eeeeee;
   /* --backColour: rgb(7, 41, 62); */
   /* --lineColour: #ccc; */
   /* --lineColour: rgba(112, 108, 189, .5); */
@@ -92,6 +92,9 @@ table {
   justify-content: center;
   flex-wrap: wrap;
 }
+/* svg text {
+  fill: #eeeeee;
+} */
 
 #grid {
   margin: 1em auto;
