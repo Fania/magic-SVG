@@ -14,9 +14,9 @@ const squareOrder = {
   "6": order6
 }
 
+let pad; // 1 is adjacent, 30 gives a good separation
+let sizeInc = 100; // scale (line weight hack) 100 is optimal
 
-
-// COLOURS
 let currentColours = {
   "fill": "none",
   "stroke": "#eeeeee",
@@ -24,46 +24,34 @@ let currentColours = {
   "text": "#eeeeee"
 };
 
-// fillColour.addEventListener("change", updateColours);
-// strokeColour.addEventListener("change", updateColours);
-// textColour.addEventListener("change", updateColours);
-// backColour.addEventListener("change", updateColours);
-fillColour.addEventListener("change", () => {updateColours(0); console.log("fill change");});
-strokeColour.addEventListener("change", () => {updateColours(0); console.log("stroke change");});
-textColour.addEventListener("change", () => {updateColours(0); console.log("text change");});
-backColour.addEventListener("change", () => {updateColours(0); console.log("back change");});
+// EVENT LISTENERS
+fillColour.addEventListener("change", updateColours);
+strokeColour.addEventListener("change", updateColours);
+textColour.addEventListener("change", updateColours);
+backColour.addEventListener("change", updateColours);
 clearFill.addEventListener("change", () => toggleFill(clearFill.checked));
+anim.addEventListener("change", () => { 
+  anim.checked ? startAnimatingAll() : stopAnimatingAll(); });
 
+styleOptions.addEventListener("change", load);
+orderOptions.addEventListener("change", load);
 
-
-anim.addEventListener("change", () => {
-  console.log("anim change");
-  anim.checked ? startAnimatingAll() : stopAnimatingAll(); 
-});
-
-
-let pad; // 1 is adjacent, 30 gives a good separation
-let sizeInc = 100; // scale (line weight hack) 100 is optimal
-
-styleOptions.addEventListener("change", () => load());
-orderOptions.addEventListener("change", () => load());
 
 load();  // first page load
 
+
 function load() {
-  let tar = event ? event.target.id : "";
-  console.log(`loading new ${tar.includes("style-options") ? "display style" : tar === "" ? "page for the first time" : "order group"}`);
-  // updateColours();
+  // let tar = event ? event.target.id : "";
+  // console.log(`loading new ${tar.includes("style-options") ? "display style" : tar === "" ? "page for the first time" : "order group"}`);
   let style = styleOptions[styleOptions.selectedIndex].value;
   let order = orderOptions[orderOptions.selectedIndex].value;
   let valuesArray = [];
-  // extra_styles.innerHTML = "";
   padding.checked ? pad = 30 : pad = 1;
   let line;
   svgGrid.innerHTML = '';
   for (line in squareOrder[order]) {
     let counter = parseInt(line) + 1;
-    console.log(`processing magic square ${counter}`);
+    // console.log(`processing magic square ${counter}`);
     valuesArray = squareOrder[order][line].split(" ").map(Number);
     if (valuesArray.includes(0)) {
       valuesArray = valuesArray.map((x) => x-1);
@@ -71,15 +59,13 @@ function load() {
     createCoords(valuesArray, counter);
     valuesArray = [];
   }
-  updateColours(111);
+  updateColours();
   style === "numbers" ? numberSettings() : squareSettings();
 }
 
-// updateColours();
-
 
 function createCoords(valuesArray, counter) {
-  console.log(`creating coordinate system for square ${counter}`);
+  // console.log(`creating coordinate system for square ${counter}`);
   // console.log(valuesArray);
   let size = Math.sqrt(valuesArray.length);
   const coordsArray = {};
@@ -90,7 +76,6 @@ function createCoords(valuesArray, counter) {
     }
     offset += size;
   }
-
   switch(styleOptions[styleOptions.selectedIndex].value) {
     case "straight":
       createPolyline(size, coordsArray, counter);
@@ -105,7 +90,7 @@ function createCoords(valuesArray, counter) {
       createArc(size, coordsArray, counter);
       break;
     case "numbers":
-      createNumberSVGs(size, coordsArray, counter);
+      createNumberSVGs(size, coordsArray);
       break;
     default:
       createQuadraticCurveVertices(size, coordsArray, counter);
