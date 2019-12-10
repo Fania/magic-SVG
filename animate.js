@@ -12,7 +12,7 @@ function startAnimatingAll() {
         stroke-dashoffset: ${len};
       }
     `;
-    extra_styles.insertAdjacentText("beforeend", text);
+    extra_animation_styles.insertAdjacentText("beforeend", text);
     allSVGs[a].firstChild.classList.add("animate");
   }
 }
@@ -24,11 +24,5 @@ function stopAnimatingAll() {
   allSVGs.forEach(a => {
     a.classList.remove("animate");
   });
-  let extra = extra_styles.innerText;
-  if (extra.includes("svg")) {
-    // remove all animation related styles but not any colour related styles
-    let regex = /svg { fill: #?\w+; stroke: #?\w+; }\n?\s*svg text { fill: #?\w+; }/gm;
-    let regMatch = extra.match(regex)[0];
-    extra_styles.innerHTML = regMatch;
-  }
+  extra_animation_styles.innerHTML = "";
 }

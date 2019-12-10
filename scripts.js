@@ -8,6 +8,7 @@ const svgGrid = document.getElementById('svgGrid');
 const anim = document.getElementById("animate");
 
 const squareOrder = {
+  "3": order3,
   "4": order4,
   "4a": order4a,
   "5": order5,

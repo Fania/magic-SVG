@@ -17,9 +17,9 @@ function updateColours() {
   currentColours.back = backColour.value;
   document.body.style.background = currentColours.back;
   // update colours or add them in the first place
-  if (extra_styles.innerText.includes("svg")) { 
+  if (extra_colour_styles.innerText.includes("svg")) { 
     // console.log(`overriding svg colours css`);
-    let txt = extra_styles.innerText;
+    let txt = extra_colour_styles.innerText;
     let rexFill = /svg { fill: (#?\w+);/m;
     let rexStroke = /svg { fill: #?\w+; stroke: (#?\w+);/m;
     let rexText = /svg text { fill: (#?\w+);/m;
@@ -29,14 +29,14 @@ function updateColours() {
     let txtF = txt.replace(fillMatch[1], currentColours.fill);
     let txtFS = txtF.replace(strokeMatch[1], currentColours.stroke);
     let txtFST = txtFS.replace(textMatch[1], currentColours.text);
-    extra_styles.innerHTML = txtFST;
+    extra_colour_styles.innerHTML = txtFST;
   } else {
     // console.log(`adding svg colours css for first time`);
     let text = `
       svg { fill: ${currentColours.fill}; stroke: ${currentColours.stroke}; }
       svg text { fill: ${currentColours.text}; }
     `;
-    extra_styles.insertAdjacentText("beforeend", text);
+    extra_colour_styles.insertAdjacentText("beforeend", text);
   }
 }
 
