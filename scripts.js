@@ -24,10 +24,14 @@ let currentColours = {
   "text": "#eeeeee"
 };
 
-fillColour.addEventListener("change", updateColours);
-strokeColour.addEventListener("change", updateColours);
-textColour.addEventListener("change", updateColours);
-backColour.addEventListener("change", updateColours);
+// fillColour.addEventListener("change", updateColours);
+// strokeColour.addEventListener("change", updateColours);
+// textColour.addEventListener("change", updateColours);
+// backColour.addEventListener("change", updateColours);
+fillColour.addEventListener("change", () => {updateColours(0); console.log("fill change");});
+strokeColour.addEventListener("change", () => {updateColours(0); console.log("stroke change");});
+textColour.addEventListener("change", () => {updateColours(0); console.log("text change");});
+backColour.addEventListener("change", () => {updateColours(0); console.log("back change");});
 clearFill.addEventListener("change", () => toggleFill(clearFill.checked));
 
 
@@ -40,29 +44,33 @@ orderOptions.addEventListener("change", load);
 load();  // first page load
 
 function load() {
+  let tar = event ? event.target.id : "";
+  console.log(`loading new ${tar.includes("style-options") ? "display style" : tar === "" ? "page for the first time" : "order group"}`);
   // updateColours();
   let order = orderOptions[orderOptions.selectedIndex].value;
   let valuesArray = [];
-  let counter = 1;
-  extra_styles.innerHTML = "";
+  // extra_styles.innerHTML = "";
   padding.checked ? pad = 30 : pad = 1;
   let line;
   svgGrid.innerHTML = '';
   for (line in squareOrder[order]) {
+    let counter = parseInt(line) + 1;
+    console.log(`processing magic square ${counter}`);
     valuesArray = squareOrder[order][line].split(" ").map(Number);
     if (valuesArray.includes(0)) {
       valuesArray = valuesArray.map((x) => x-1);
     }
     createCoords(valuesArray, counter);
-    valuesArray = [];      
-    counter++;
+    valuesArray = [];
   }
+  updateColours(111);
 }
 
-updateColours();
+// updateColours();
 
 
 function createCoords(valuesArray, counter) {
+  console.log(`creating coordinate system for square ${counter}`);
   // console.log(valuesArray);
   let size = Math.sqrt(valuesArray.length);
   const coordsArray = {};
@@ -88,7 +96,7 @@ function createCoords(valuesArray, counter) {
       createArc(size, coordsArray, counter);
       break;
     case "numbers":
-      createNumberSVGs(size, coordsArray);
+      createNumberSVGs(size, coordsArray, counter);
       break;
     default:
       createQuadraticCurveVertices(size, coordsArray, counter);

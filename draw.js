@@ -1,17 +1,32 @@
 "use strict";
 
 function drawSquare(text,counter) {
+  console.log(`inserting square ${counter} to page and animate if necessary`);
   // svgGrid.innerHTML += text;  // SLOW AS FUCK AND BLOCKING
   svgGrid.insertAdjacentHTML("beforeend", text);  // FAST AND NON-BLOCKING
-  anim.checked ? animate(counter) : stopAnimation(counter);
-  anim.addEventListener("change", () => { 
-    anim.checked ? animate(counter) : stopAnimation(counter);
-  });
+  animateIfNecessary(counter);
 }
 
 
 
-function updateColours() {
+function animateIfNecessary(counter) {
+
+  if(anim.checked) animate(counter);
+  anim.addEventListener("change", () => { 
+    anim.checked ? animate(counter) : stopAnimation(counter);
+  });
+
+}
+
+
+
+function updateColours(counter) {
+  let cunt = counter === 0 ? "user triggered" : 
+              counter === 999 ? "fill hidden" : 
+                counter === 666 ? "animation triggered" : 
+                  counter === 111 ? "at end of load" : "mystery";
+  console.log(`updating colours: ${cunt}`);
+
   clearFill.checked
     ? currentColours.fill = "none" 
     : currentColours.fill = fillColour.value;
@@ -22,6 +37,7 @@ function updateColours() {
 
   // update colours or add them in the first place
   if (extra_styles.innerText.includes("svg")) { 
+    console.log(`overriding svg colours css`);
     let txt = extra_styles.innerText;
     let rexFill = /svg { fill: (#?\w+);/m;
     let rexStroke = /svg { fill: #?\w+; stroke: (#?\w+);/m;
@@ -36,17 +52,19 @@ function updateColours() {
     extra_styles.innerHTML = txtFST;
     // extra_styles.innerHTML.replace(txtFST);
   } else {
+    console.log(`adding svg colours css for first time`);
     let text = `
       svg { fill: ${currentColours.fill}; stroke: ${currentColours.stroke}; }
       svg text { fill: ${currentColours.text}; }
     `;
-    extra_styles.insertAdjacentHTML("beforeend", text);
+    extra_styles.insertAdjacentText("beforeend", text);
   }
 }
 
 
 
 function squareSettings() {
+  console.log(`get settings for visual squares`);
   clearFill.disabled = false;
   clearFill.previousSibling.classList.remove("disable");
   fillColour.disabled = clearFill.checked;
@@ -62,6 +80,7 @@ function squareSettings() {
 }
 
 function numberSettings() {
+  console.log(`get settings for number matrices`);
   clearFill.disabled = true;
   clearFill.previousSibling.classList.add("disable");
   fillColour.disabled = true;
@@ -72,7 +91,7 @@ function numberSettings() {
   textColour.previousSibling.classList.remove("disable");
   padding.disabled = true;
   padding.previousSibling.classList.add("disable");
-  anim.checked = false;
+  // anim.checked = false;
   anim.disabled = true;
   anim.previousSibling.classList.add("disable");
   // updateColours();
@@ -81,24 +100,26 @@ function numberSettings() {
 
 
 function toggleFill(nofill) {
+  console.log(`setting hide-fill to ${nofill}`);
   if (nofill) {  // fill colour transparent
     clearFill.checked = true;
     fillColour.disabled = true;
     fillColour.previousSibling.classList.add("disable");
-    updateColours();
+    updateColours(999);
   } else {  // fill colour as selected
     clearFill.checked = false;
     fillColour.disabled = false;
     fillColour.previousSibling.classList.remove("disable");
-    updateColours();
+    updateColours(999);
   }
 }
 
 
 
 
-function createNumberSVGs(size, arr) {
+function createNumberSVGs(size, arr, counter) {
   // console.log("numbers only");
+  console.log(`preparing number matrix svg for square ${counter}`);
 
   numberSettings();
 
@@ -114,7 +135,7 @@ function createNumberSVGs(size, arr) {
   let output = `<svg class="order-xt" viewbox="${0} ${-pad} ${w-sizeInc+pad+30} ${w-sizeInc+pad+20}">${texts}"</svg>`;
   svgGrid.insertAdjacentHTML("beforeend", output);
 
-  updateColours();  // this triggers N loads (one for each square)
+  // updateColours();  // this triggers N loads (one for each square)
 }
 
 
@@ -123,6 +144,7 @@ function createNumberSVGs(size, arr) {
 function createQuadraticCurveVertices(size, arr, counter) {
   // console.log(size, arr);
   // console.log("quadratic curve on vertices");
+  console.log(`preparing quadratic curve on vertices svg for square ${counter}`);
 
   squareSettings();
 
@@ -180,6 +202,7 @@ function createQuadraticCurveVertices(size, arr, counter) {
 
 function createQuadraticCurveLines(size, arr, counter) {
   // console.log("quadratic curve on lines");
+  console.log(`preparing quadratic curve on lines svg for square ${counter}`);
 
   squareSettings();
 
@@ -197,6 +220,7 @@ function createQuadraticCurveLines(size, arr, counter) {
 
 function createArc(size, arr, counter) {
   // console.log("arc experiment");
+  console.log(`preparing arc experiment svg for square ${counter}`);
 
   squareSettings();
 
@@ -214,6 +238,7 @@ function createArc(size, arr, counter) {
 
 function createPolyline(size, arr, counter) {
   // console.log("straight polyline");
+  console.log(`preparing straight polyline svg for square ${counter}`);
 
   squareSettings();
 
