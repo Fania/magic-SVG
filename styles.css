@@ -131,6 +131,21 @@ option:focus {
 }
 
 
+#progressContainer {
+  width: 440px;
+  height: 30px;
+  background: #444;
+  margin: 0 auto;
+}
+#progressBar {
+  /* width: 30%; */
+  width: 0%;
+  height: 100%;
+  background: #ccc;
+}
+
+
+
 @media screen and (min-width: 500px) {
   #single-x {
     width:  50%;

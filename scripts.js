@@ -62,6 +62,7 @@ function load() {
   }
   updateColours();
   style === "numbers" ? numberSettings() : squareSettings();
+  // getLengthsForAnimation();
 }
 
 
