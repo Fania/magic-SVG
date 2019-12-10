@@ -35,11 +35,18 @@ backColour.addEventListener("change", () => {updateColours(0); console.log("back
 clearFill.addEventListener("change", () => toggleFill(clearFill.checked));
 
 
+
+anim.addEventListener("change", () => {
+  console.log("anim change");
+  anim.checked ? startAnimatingAll() : stopAnimatingAll(); 
+});
+
+
 let pad; // 1 is adjacent, 30 gives a good separation
 let sizeInc = 100; // scale (line weight hack) 100 is optimal
 
-styleOptions.addEventListener("change", load);
-orderOptions.addEventListener("change", load);
+styleOptions.addEventListener("change", () => load());
+orderOptions.addEventListener("change", () => load());
 
 load();  // first page load
 
@@ -47,6 +54,7 @@ function load() {
   let tar = event ? event.target.id : "";
   console.log(`loading new ${tar.includes("style-options") ? "display style" : tar === "" ? "page for the first time" : "order group"}`);
   // updateColours();
+  let style = styleOptions[styleOptions.selectedIndex].value;
   let order = orderOptions[orderOptions.selectedIndex].value;
   let valuesArray = [];
   // extra_styles.innerHTML = "";
@@ -64,6 +72,7 @@ function load() {
     valuesArray = [];
   }
   updateColours(111);
+  style === "numbers" ? numberSettings() : squareSettings();
 }
 
 // updateColours();

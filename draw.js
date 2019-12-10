@@ -1,21 +1,10 @@
 "use strict";
 
 function drawSquare(text,counter) {
-  console.log(`inserting square ${counter} to page and animate if necessary`);
+  console.log(`inserting square ${counter} to page`);
   // svgGrid.innerHTML += text;  // SLOW AS FUCK AND BLOCKING
   svgGrid.insertAdjacentHTML("beforeend", text);  // FAST AND NON-BLOCKING
-  animateIfNecessary(counter);
-}
-
-
-
-function animateIfNecessary(counter) {
-
-  if(anim.checked) animate(counter);
-  anim.addEventListener("change", () => { 
-    anim.checked ? animate(counter) : stopAnimation(counter);
-  });
-
+  // animateIfNecessary(counter);
 }
 
 
@@ -121,7 +110,7 @@ function createNumberSVGs(size, arr, counter) {
   // console.log("numbers only");
   console.log(`preparing number matrix svg for square ${counter}`);
 
-  numberSettings();
+  // numberSettings();
 
   let texts;
   let w = size * sizeInc;
@@ -146,7 +135,7 @@ function createQuadraticCurveVertices(size, arr, counter) {
   // console.log("quadratic curve on vertices");
   console.log(`preparing quadratic curve on vertices svg for square ${counter}`);
 
-  squareSettings();
+  // squareSettings();
 
   let w = size * sizeInc;
   
@@ -204,7 +193,7 @@ function createQuadraticCurveLines(size, arr, counter) {
   // console.log("quadratic curve on lines");
   console.log(`preparing quadratic curve on lines svg for square ${counter}`);
 
-  squareSettings();
+  // squareSettings();
 
   let w = size * sizeInc;
   let len = Object.keys(arr).length;
@@ -222,7 +211,7 @@ function createArc(size, arr, counter) {
   // console.log("arc experiment");
   console.log(`preparing arc experiment svg for square ${counter}`);
 
-  squareSettings();
+  // squareSettings();
 
   let w = size * sizeInc;
   let coords = `M${arr[1][1] * sizeInc},${arr[1][0] * sizeInc} `;
@@ -240,7 +229,7 @@ function createPolyline(size, arr, counter) {
   // console.log("straight polyline");
   console.log(`preparing straight polyline svg for square ${counter}`);
 
-  squareSettings();
+  // squareSettings();
 
   let w = size * sizeInc;
   let coords = "";
