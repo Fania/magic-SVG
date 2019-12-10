@@ -40,7 +40,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] set size of squares
 - [ ] set fill-opacity/stroke-opacity="0.0" - "1.0"
 - [ ] loop trhough colour change
-- [ ] fix color swapping issues (fill transparency)
+- [x] fix color swapping issues (fill transparency)
 - [ ] fix padding trigger
 
 ## References
