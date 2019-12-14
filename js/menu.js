@@ -1,17 +1,22 @@
 "use strict";
 
 
-
 const singleMultiple = document.getElementsByName("singleMultiple");
 singleMultiple.forEach(sm => {
   sm.addEventListener("change", () => {
     let id = event.target.id;
     // console.log(`changed page to ${event.target.id}`);
     load(getPageType());  // reload page setup
-    id === "orderGroups" ? multiSettings(): singleSettings();
+    // id === "orderGroups" ? multiSettings(): singleSettings();
   });
 });
 
+
+// update when user inputs manual magic square numbers
+settings.addEventListener("submit", () => {
+  load("singleInput");
+  event.preventDefault();
+});
 
 
 function multiSettings() {
@@ -31,7 +36,7 @@ function multiSettings() {
   orderOptions.disabled = false;
   values.disabled = true;
   values.previousElementSibling.classList.add("disable");
-  drawSubmit.disabled = true;
+  // drawSubmit.disabled = true;
   svgGrid.classList.remove("single");
 }
 
@@ -53,7 +58,7 @@ function singleSettings() {
   orderOptions.disabled = true;
   values.disabled = false;
   values.previousElementSibling.classList.remove("disable");
-  drawSubmit.disabled = false;
+  // drawSubmit.disabled = false;
   svgGrid.classList.add("single");
 }
 

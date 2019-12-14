@@ -43,13 +43,11 @@ function load(pageType) {
       drawSquare(prepareSVG(style,size,coordsArray[counter],counter));
     }
     multiSettings();
-  
+  }
 
-
-  } else {  // pageType === "singleInput"
+  if (pageType === "singleInput") {
     const valuesString = document.getElementById("values");
-    let values = valuesString.value;
-    let valuesArray = values.split(" ").map(Number);
+    let valuesArray = valuesString.value.split(" ").map(Number);
     let size = Math.sqrt(valuesArray.length);
     
     magicConstant(size, valuesArray);
@@ -63,12 +61,10 @@ function load(pageType) {
     drawSquare(prepareSVG("arc",size,coordsArray,1));
   
     singleSettings();
-
-  }  // end singleInput
+  }
 
   updateColours();
   style === "numbers" ? numberSettings() : squareSettings();
-
 }
 
 
