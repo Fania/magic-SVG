@@ -35,7 +35,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] number squares fix mobile
 - [ ] give choice of print sizes
 - [x] when numbers selected disable animate and stroke
-- [ ] swap coordsArray x y
+- [x] swap coordsArray x y
 - [ ] merge js files into one
 - [ ] set size of squares
 - [ ] set fill-opacity/stroke-opacity="0.0" - "1.0"
