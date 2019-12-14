@@ -26,14 +26,16 @@
   <meta property="og:url" content="https://fania.github.io/magic-SVG" />
   <meta property="og:image" content="imgs/example.png" />
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <form id="settings">
   <fieldset>
-    <a href="index.html" class="active">Order groups</a>
-    <a href="input.html">Single input</a>
+    <!-- <a href="index.html" class="active">Order groups</a>
+    <a href="input.html">Single input</a> -->
+    <label for="orderGroups"><input type="radio" id="orderGroups" name="singleMultiple"><span>Order-groups</span></label>
+    <label for="singleInput"><input type="radio" id="singleInput" name="singleMultiple" checked><span>Single-input</span></label>
   </fieldset>
   <fieldset>
     <label for="clearFill">NoFill:</label><input type="checkbox" id="clearFill" checked>
@@ -47,20 +49,27 @@
     <label for="animate">Animate:</label><input type="checkbox" id="animate">
   </fieldset>
   <fieldset>
-    <select id="style-options">
+    <select id="styleOptions">
       <option value="straight">Straight polyline</option>
       <option value="quadvertix" selected>Quadratic curve on vertices</option>
       <option value="quadline">Quadratic curve on lines</option>
       <option value="arc">Arc experiment</option>
       <option value="numbers">Numbers</option>
     </select>
-    <select id="order-options">
+    <select id="orderOptions">
       <option value="3">Order 3</option>
       <option value="4" selected>Order 4</option>
       <option value="4a">Order 4 (all)</option>
       <option value="5">Order 5</option>
       <option value="6">Order 6</option>
     </select>
+  </fieldset>
+  <fieldset>
+    <label for="values">
+      <span class="disable">Add numbers here:</span>
+      <input id="values" type="text" placeholder="1 2 3 etc..." value="13 22 18 27 11 20 31 4 36 9 29 2 12 21 14 23 16 25 30 3 5 32 34 7 17 26 10 19 15 24 8 35 28 1 6 33" disabled>
+    </label>
+    <input id="drawSubmit" type="submit" value="Draw!">
   </fieldset>
   <!-- <input type="submit" value="Draw!"> -->
 </form>
@@ -72,7 +81,12 @@
   width and height set the HTML element size on the page
   viewbox sets the size of the coordinate system for drawing the svg
 -->
-<div id="svgGrid" class="svgGrid"></div>
+
+<p id="constant">0</p>
+
+<main id="svgGrid" class="svgGrid">
+
+</main>
 
 
 
@@ -83,9 +97,11 @@
 <script src="squares/order-4-complete.js"></script>
 <script src="squares/order-5.js"></script>
 <script src="squares/order-6.js"></script>
-<script src="colours.js"></script>
-<script src="draw.js"></script>
-<script src="animate.js"></script>
-<script src="scripts.js"></script>
+<script src="js/colours.js"></script>
+<script src="js/draw.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/calc.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

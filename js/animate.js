@@ -1,6 +1,10 @@
 "use strict";
 
 
+animate.addEventListener("change", () => { 
+  animate.checked ? startAnimatingAll() : stopAnimatingAll(); });
+
+
 function getAnimationLengths() {
   console.log("getAnimationLengths");
   const [...allSVGs] = document.getElementsByClassName("order-x");

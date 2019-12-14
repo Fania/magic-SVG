@@ -8,39 +8,6 @@ function drawSquare(text) {
 }
 
 
-function squareSettings() {
-  // console.log(`get settings for visual squares`);
-  clearFill.disabled = false;
-  clearFill.previousSibling.classList.remove("disable");
-  fillColour.disabled = clearFill.checked;
-  strokeColour.disabled = false;
-  strokeColour.previousSibling.classList.remove("disable");
-  textColour.disabled = true;
-  textColour.previousSibling.classList.add("disable");
-  padding.disabled = false;
-  padding.previousSibling.classList.remove("disable");
-  anim.disabled = false;
-  anim.previousSibling.classList.remove("disable");
-}
-
-
-function numberSettings() {
-  // console.log(`get settings for number matrices`);
-  clearFill.disabled = true;
-  clearFill.previousSibling.classList.add("disable");
-  fillColour.disabled = true;
-  fillColour.previousSibling.classList.add("disable");
-  strokeColour.disabled = true;
-  strokeColour.previousSibling.classList.add("disable");
-  textColour.disabled = false;
-  textColour.previousSibling.classList.remove("disable");
-  padding.disabled = true;
-  padding.previousSibling.classList.add("disable");
-  anim.disabled = true;
-  anim.previousSibling.classList.add("disable");
-}
-
-
 function createNumberSVGs(size, arr) {
   // console.log(`preparing number matrix svg for square ${counter}`);
   let texts;
@@ -50,7 +17,7 @@ function createNumberSVGs(size, arr) {
     texts += `<text x="${arr[a][0] * 100}" y="${arr[a][1] * 100}">${a.padStart(2, '0')}</text>`;
   }
   // 0 -50 380 370 for order 4
-  drawSquare(`<svg class="order-xt" viewbox="${0} ${-pad} ${w-sizeInc+pad+30} ${w-sizeInc+pad+20}">${texts}"</svg>`);
+  return `<svg class="order-xt" viewbox="${0} ${-pad} ${w-sizeInc+pad+30} ${w-sizeInc+pad+20}">${texts}"</svg>`;
 }
 
 
@@ -105,7 +72,7 @@ function createQuadraticCurveVertices(size, arr, counter) {
     coords += `Q ${c2x},${c2y} ${m2x},${m2y} `;
   }
 
-  drawSquare(`<svg class="order-x" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`);
+  return `<svg class="order-x" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`;
 }
 
 
@@ -119,7 +86,8 @@ function createQuadraticCurveLines(size, arr, counter) {
     coords += `Q ${arr[a][0] * sizeInc},${arr[a][1] * sizeInc} ${arr[a+1][0] * sizeInc},${arr[a+1][1] * sizeInc} `;
   }
   coords += `Q ${arr[len][0] * sizeInc},${arr[len][1] * sizeInc} ${arr[1][0] * sizeInc},${arr[1][1] * sizeInc} `;  // loop back
-  drawSquare(`<svg class="order-x" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`);
+
+  return `<svg class="order-x" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`;
 }
 
 
@@ -133,7 +101,7 @@ function createArc(size, arr, counter) {
   }
   coords += `A 10,10 0 1 1 ${arr[1][0] * sizeInc},${arr[1][1] * sizeInc} `;
   // drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`);
-  drawSquare(`<svg class="order-x" viewbox="${-pad-150} ${-pad-150} ${w-sizeInc+pad+pad+300} ${w-sizeInc+pad+pad+300}"><path id="square-${counter}" class="lines arc" d="${coords}"/></svg>`);
+  return `<svg class="order-x" viewbox="${-pad-150} ${-pad-150} ${w-sizeInc+pad+pad+300} ${w-sizeInc+pad+pad+300}"><path id="square-${counter}" class="lines arc" d="${coords}"/></svg>`;
 }
 
 
@@ -146,5 +114,5 @@ function createPolyline(size, arr, counter) {
     coords += `${arr[i][0] * sizeInc},${arr[i][1] * sizeInc} `;
   }
   coords += `${arr[1][0] * sizeInc},${arr[1][1] * sizeInc} `;
-  drawSquare(`<svg class="order-x" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline id="square-${counter}" class="lines" points="${coords}"/></svg>`);
+  return `<svg class="order-x" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><polyline id="square-${counter}" class="lines" points="${coords}"/></svg>`;
 }
