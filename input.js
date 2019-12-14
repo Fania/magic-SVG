@@ -8,16 +8,14 @@ const svgbox = document.getElementById("single-x");
 const anim = document.getElementById("animate");
 const constant = document.getElementById("constant");
 
-// COLOURS
-let svgFill = "transparent";
-let svgStroke = "#eee";
-fillColour.addEventListener("change", () => { svgFill = fillColour.value });
-strokeColour.addEventListener("change", () => { svgStroke = strokeColour.value });
-backColour.addEventListener("change", () => { svgStroke = document.body.style.backgroundColor = backColour.value });
-
 
 let pad = 50; // 1 is adjacent, 30 gives a good separation
 let sizeInc = 100; // scale (line weight hack) 100 is optimal
+
+anim.addEventListener("change", () => { 
+  anim.checked ? startAnimatingAll() : stopAnimatingAll(); });
+
+styleOptions.addEventListener("change", setupSingle);
 
 
 settings.addEventListener("submit", setupSingle, false);
@@ -35,10 +33,10 @@ function setupSingle() {
   let valuesArray = values.split(" ").map(Number);
   // valuesArray.includes(0) has no IE support
   // IF NUMBERS DO NOT INCLUDE 0 - SUBTRACT ONE FROM EACH VALUE
-  if (valuesArray.indexOf(0) === -1) {
-    valuesArray = valuesArray.map((x) => x-1);
-  }
-  
+  // if (valuesArray.indexOf(0) === -1) {
+  //   valuesArray = valuesArray.map((x) => x-1);
+  // }
+
   let size = Math.sqrt(valuesArray.length);
   
   // MAGIC CONSTANT
@@ -51,7 +49,9 @@ function setupSingle() {
   let magicConstant = rowConstant === colConstant ? rowConstant : `ERROR`;
   constant.innerHTML = `Magic constant: ${magicConstant}`;
 
+
   // CREATE TABLE AND GENERATE coordsArray FOR SVG
+  // createCoords(valuesArray, 1);
   const coordsArray = {};
   table.innerHTML = "";
   let offset = 0; // needed to jump index for valuesArray properly
@@ -69,6 +69,8 @@ function setupSingle() {
     offset += size;
   }
 
+  updateColours();
+  
   event.preventDefault();
 
   // console.log("coordsArray", coordsArray);
@@ -92,12 +94,16 @@ function setupSingle() {
 }
 
 
-function createQuadraticCurveVertices(size, arr, counter) {
+
+
+
+
+
+function createQuadraticCurveVertices2(size, arr, counter) {
   // console.log("quadratic curve on vertices");
   // console.log(size, arr);
 
   let w = size * sizeInc;
-  let coords = "";
 
   let fstx = arr[0][1] * sizeInc;
   let fsty = arr[0][0] * sizeInc;
@@ -106,7 +112,7 @@ function createQuadraticCurveVertices(size, arr, counter) {
   let fstmx = (fstx + sndx) / 2;
   let fstmy = (fsty + sndy) / 2;
 
-  coords += `M ${fstmx},${fstmy} `;
+  let coords = `M ${fstmx},${fstmy} `;
 
   // console.log("length: ", Object.keys(arr).length);
   for (let a=0; a < Object.keys(arr).length; a++) {
@@ -162,7 +168,7 @@ function createQuadraticCurveVertices(size, arr, counter) {
   if (anim.checked) animate(counter);
 }
 
-function createQuadraticCurveLines(size, arr, counter) {
+function createQuadraticCurveLines2(size, arr, counter) {
   // console.log("quadratic curve on lines");
   let w = size * sizeInc;
   let len = Object.keys(arr).length;
@@ -180,7 +186,7 @@ function createQuadraticCurveLines(size, arr, counter) {
   if (anim.checked) animate(counter);
 }
 
-function createArc(size, arr, counter) {
+function createArc2(size, arr, counter) {
   // console.log("arc experiment");
   let w = size * sizeInc;
   let coords = "";
@@ -201,7 +207,7 @@ function createArc(size, arr, counter) {
   if (anim.checked) animate(counter);
 }
 
-function createPolyline(size, arr, counter) {
+function createPolyline2(size, arr, counter) {
   // console.log("straight polyline");
   let w = size * sizeInc;
   let coords = "";

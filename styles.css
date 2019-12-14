@@ -87,6 +87,9 @@ table {
   height: 100%;
   stroke-width: 2;
 }
+.arc {
+  stroke-width: 4;
+}
 .svgGrid {
   display: flex;
   justify-content: center;
@@ -153,6 +156,11 @@ option:focus {
   .order-x, .order-xt {
     width:  200px;
     height: 200px;
+  }
+
+  main .order-x, main .order-xt {
+    width:  400px;
+    height: 400px;
   }
 
   main {

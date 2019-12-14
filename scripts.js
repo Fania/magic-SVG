@@ -18,83 +18,70 @@ const squareOrder = {
 let pad; // 1 is adjacent, 30 gives a good separation
 let sizeInc = 100; // scale (line weight hack) 100 is optimal
 
-let currentColours = {
-  "fill": "none",
-  "stroke": "#eeeeee",
-  "back": "#222222",
-  "text": "#eeeeee"
-};
-
-// EVENT LISTENERS
-fillColour.addEventListener("change", updateColours);
-strokeColour.addEventListener("change", updateColours);
-textColour.addEventListener("change", updateColours);
-backColour.addEventListener("change", updateColours);
-clearFill.addEventListener("change", () => toggleFill(clearFill.checked));
 anim.addEventListener("change", () => { 
   anim.checked ? startAnimatingAll() : stopAnimatingAll(); });
 
-styleOptions.addEventListener("change", load);
-orderOptions.addEventListener("change", load);
+styleOptions.addEventListener("change", loadMultiple);
+orderOptions.addEventListener("change", loadMultiple);
 
 
-load();  // first page load
+loadMultiple();  // first page load
 
 
-function load() {
+function loadMultiple() {
   // let tar = event ? event.target.id : "";
   // console.log(`loading new ${tar.includes("style-options") ? "display style" : tar === "" ? "page for the first time" : "order group"}`);
   let style = styleOptions[styleOptions.selectedIndex].value;
   let order = orderOptions[orderOptions.selectedIndex].value;
-  let valuesArray = [];
+  let coordsArray = {};
   padding.checked ? pad = 30 : pad = 1;
-  let line;
   svgGrid.innerHTML = '';
-  for (line in squareOrder[order]) {
-    let counter = parseInt(line) + 1;
+  let size = Math.sqrt(squareOrder[order][0].split(" ").length);
+  let counter = 0;
+  for (let line in squareOrder[order]) {
+    counter = parseInt(line) + 1;
     // console.log(`processing magic square ${counter}`);
-    valuesArray = squareOrder[order][line].split(" ").map(Number);
-    if (valuesArray.includes(0)) {
-      valuesArray = valuesArray.map((x) => x-1);
-    }
-    createCoords(valuesArray, counter);
-    valuesArray = [];
+    let valuesArray = squareOrder[order][line].split(" ").map(Number);
+    coordsArray[counter] = getCoords(size, valuesArray);
+    chooseStyle(style,size,coordsArray[counter],counter);
   }
   updateColours();
   style === "numbers" ? numberSettings() : squareSettings();
-  // getLengthsForAnimation();
 }
 
-
-function createCoords(valuesArray, counter) {
+// size, valuesArray
+function getCoords(s, v) {
   // console.log(`creating coordinate system for square ${counter}`);
-  // console.log(valuesArray);
-  let size = Math.sqrt(valuesArray.length);
-  const coordsArray = {};
+  const coordsObject = {};
   let offset = 0;
-  for (let r=0; r<size; r++) {
-    for (let c=0; c<size; c++) {
-      coordsArray[valuesArray[c+offset]] = [r,c];
+  for (let r=0; r<s; r++) {
+    for (let c=0; c<s; c++) {
+      coordsObject[v[c+offset]] = [c,r];  // column, row = x , y
     }
-    offset += size;
+    offset += s;  // increase offset by one row every 4 columns
   }
-  switch(styleOptions[styleOptions.selectedIndex].value) {
+  return coordsObject;
+}
+
+// style, size, coordsArray, counter
+function chooseStyle(style, s, a, c) {
+  switch(style) {
     case "straight":
-      createPolyline(size, coordsArray, counter);
+      createPolyline(s, a, c);
       break;
     case "quadvertix":
-      createQuadraticCurveVertices(size, coordsArray, counter);
+      createQuadraticCurveVertices(s, a, c);
       break;
     case "quadline":
-      createQuadraticCurveLines(size, coordsArray, counter);
+      createQuadraticCurveLines(s, a, c);
       break;
     case "arc":
-      createArc(size, coordsArray, counter);
+      createArc(s, a, c);
       break;
     case "numbers":
-      createNumberSVGs(size, coordsArray);
+      createNumberSVGs(s, a);
       break;
     default:
-      createQuadraticCurveVertices(size, coordsArray, counter);
+      createQuadraticCurveVertices(s, a, c);
   }
-}
+} 

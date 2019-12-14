@@ -32,19 +32,29 @@
   
 
 <form id="settings">
-  <a href="index.html">Order groups</a>
-  <a href="input.html" class="active">Single input</a>
-  <label for="fillColour">Fill:</label><input type="color" id="fillColour" value="none">
-  <label for="strokeColour">Stroke:</label><input type="color" id="strokeColour" value="#FFFFFF">
-  <label for="backColour">Background:</label><input type="color" id="backColour" value="#222222">
-  <label for="animate">Animate:</label><input type="checkbox" id="animate" checked>
-  <select id="style-options">
-    <option value="straight">Straight polyline</option>
-    <option value="quadvertix" selected>Quadratic curve on vertices</option>
-    <option value="quadline">Quadratic curve on lines</option>
-    <option value="arc">Arc experiment</option>
-  </select>
-  <input id="values" type="text" placeholder="1 2 3 etc..." value="13 22 18 27 11 20 31 4 36 9 29 2 12 21 14 23 16 25 30 3 5 32 34 7 17 26 10 19 15 24 8 35 28 1 6 33">
+  <fieldset>
+    <a href="index.html" class="active">Order groups</a>
+    <a href="input.html">Single input</a>
+  </fieldset>
+  <fieldset>
+    <label for="clearFill">NoFill:</label><input type="checkbox" id="clearFill" checked>
+    <label for="fillColour" class="disable">Fill:</label><input type="color" id="fillColour" value="#666666" disabled>
+    <label for="strokeColour">Stroke:</label><input type="color" id="strokeColour" value="#FFFFFF">
+    <label for="textColour">Text:</label><input type="color" id="textColour" value="#EEEEEE">
+    <label for="backColour">Background:</label><input type="color" id="backColour" value="#222222">
+  </fieldset>
+  <fieldset>
+    <label for="animate">Animate:</label><input type="checkbox" id="animate">
+  </fieldset>
+  <fieldset>
+    <select id="style-options">
+      <option value="straight">Straight polyline</option>
+      <option value="quadvertix" selected>Quadratic curve on vertices</option>
+      <option value="quadline">Quadratic curve on lines</option>
+      <option value="arc">Arc experiment</option>
+    </select>
+    <input id="values" type="text" placeholder="1 2 3 etc..." value="13 22 18 27 11 20 31 4 36 9 29 2 12 21 14 23 16 25 30 3 5 32 34 7 17 26 10 19 15 24 8 35 28 1 6 33">
+  </fieldset>
   <input type="submit" value="Draw!">
 </form>  
 
@@ -61,9 +71,11 @@
       viewbox sets the size of the coordinate system for drawing your svg
     -->
 
-    <svg id="single-x">
+    <div id="svgGrid" class="svgGrid"></div>
+
+    <!-- <svg id="single-x">
       <polyline id="lines" fill="none" stroke="black" points=""/>
-    </svg>
+    </svg> -->
 
     <!-- 20 17 24 27 7 10 14 23 33 30 4 1 9 0 16 13 35 32 3 6 22 19 29 26 34 31 2 5 12 21 25 28 8 11 18 15  -->
 
@@ -86,14 +98,17 @@
   </main>
 
 
-<style id="extra_styles"></style>
+<style id="extra_colour_styles"></style>
+<style id="extra_animation_styles"></style>
+<script src="squares/order-3.js"></script>
 <script src="squares/order-4.js"></script>
 <script src="squares/order-4-complete.js"></script>
 <script src="squares/order-5.js"></script>
 <script src="squares/order-6.js"></script>
-<!-- <script src="draw.js"></script> -->
-<script src="input.js"></script>
+<script src="colours.js"></script>
+<script src="draw.js"></script>
 <script src="animate.js"></script>
+<script src="input.js"></script>
 <script src="calc.js"></script>
 </body>
 </html>
