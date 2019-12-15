@@ -8,9 +8,6 @@ const squareOrder = {
   "6": order6
 }
 
-let pad; // 1 is adjacent, 30 gives a good separation
-let sizeInc = 100; // scale (line weight hack) 100 is optimal
-
 
 styleOptions.addEventListener("change", ()=> load(getPageType()));
 orderOptions.addEventListener("change", ()=> load(getPageType()));
@@ -29,20 +26,18 @@ function load(pageType) {
 
   const style = styleOptions[styleOptions.selectedIndex].value;
 
-  if (pageType === "orderGroups") {    
+  if (pageType === "orderGroups") {
     let order = orderOptions[orderOptions.selectedIndex].value;
     let coordsArray = {};
-    padding.checked ? pad = 30 : pad = 1;
     let size = Math.sqrt(squareOrder[order][0].split(" ").length);
     let counter = 0;
     for (let line in squareOrder[order]) {
       counter = parseInt(line) + 1;
       // console.log(`processing magic square ${counter}`);
       let valuesArray = squareOrder[order][line].split(" ").map(Number);
-      coordsArray[counter] = getCoords(size, valuesArray);
+      coordsArray[counter] = getCoords(size,valuesArray);
       drawSquare(prepareSVG(style,size,coordsArray[counter],counter));
     }
-    multiSettings();
   }
 
   if (pageType === "singleInput") {
@@ -50,25 +45,23 @@ function load(pageType) {
     let valuesArray = valuesString.value.split(" ").map(Number);
     let size = Math.sqrt(valuesArray.length);
     
-    magicConstant(size, valuesArray);
+    magicConstant(size,valuesArray);
 
-    const coordsArray = getCoords(size, valuesArray,1);
+    const coordsArray = getCoords(size,valuesArray,1);
 
     drawSquare(prepareSVG("numbers",size,coordsArray,1));
     drawSquare(prepareSVG("straight",size,coordsArray,1));
     drawSquare(prepareSVG("quadvertix",size,coordsArray,1));
     drawSquare(prepareSVG("quadline",size,coordsArray,1));
     drawSquare(prepareSVG("arc",size,coordsArray,1));
-  
-    singleSettings();
   }
-
   updateColours();
-  style === "numbers" ? numberSettings() : squareSettings();
+  updateMenuStates();
 }
 
 
 function getPageType() {
+  // console.log(document.querySelector('input[name="singleMultiple"]:checked').id);
   return document.querySelector('input[name="singleMultiple"]:checked').id;
 }
 

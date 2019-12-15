@@ -27,12 +27,6 @@ select, input, a {
   /* font-size: 1.15em;  */
   margin-right: 1em; 
 }
-#settings a {
-  color: white;
-}
-#settings a.active {
-  font-weight: bold;
-}
 input[type="color"] {
   border: none;
   padding: 0;
@@ -56,6 +50,16 @@ label {
   color: #666;
   text-decoration: line-through;
 }
+/* .disable, */
+input:disabled, select:disabled {
+  background: #666;
+  border-color: #666;
+  /* display: none; */
+}
+/* span + input:disabled, span + select:disabled {
+  color: #666;
+  text-decoration: line-through;
+} */
 fieldset {
   border: none;
 }
@@ -66,16 +70,13 @@ fieldset {
 #singleInput:checked + span {
   text-decoration: underline;
 }
-/* .disable, */
-input:disabled, select:disabled {
-  background: #666;
-  border-color: #666;
-  /* display: none; */
+
+.pad {
+  padding: 16px;
 }
 
-
 .order-xt {
-  padding: 15px;
+  /* padding: 15px; */
   box-sizing: border-box;
 }
 .order-xt text {
@@ -88,6 +89,7 @@ input:disabled, select:disabled {
   width: 100%;
   height: 100%;
   stroke-width: 2;
+  box-sizing: border-box;
 }
 .arc {
   stroke-width: 4;
