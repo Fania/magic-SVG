@@ -18,8 +18,8 @@ function updateMenuStates() {
   type==="orderGroups" 
     ? orderOptions.disabled = false : orderOptions.disabled = true;
   type==="orderGroups" ? values.disabled = true : values.disabled = false;
-  type==="singleInput" ? svgGrid.classList.add("single") 
-    : svgGrid.classList.remove("single");
+  // type==="singleInput" ? svgGrid.classList.add("single") 
+  //   : svgGrid.classList.remove("single");
 }
 
 

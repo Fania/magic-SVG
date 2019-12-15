@@ -24,9 +24,9 @@ function load(pageType) {
   svgGrid.innerHTML = "";
   constant.innerHTML = "";
 
-  const style = styleOptions[styleOptions.selectedIndex].value;
 
   if (pageType === "orderGroups") {
+    let style = styleOptions[styleOptions.selectedIndex].value;
     let order = orderOptions[orderOptions.selectedIndex].value;
     let coordsArray = {};
     let size = Math.sqrt(squareOrder[order][0].split(" ").length);
@@ -38,6 +38,7 @@ function load(pageType) {
       coordsArray[counter] = getCoords(size,valuesArray);
       drawSquare(prepareSVG(style,size,coordsArray[counter],counter));
     }
+    svgGrid.classList.remove("single");
   }
 
   if (pageType === "singleInput") {
@@ -54,6 +55,8 @@ function load(pageType) {
     drawSquare(prepareSVG("quadvertix",size,coordsArray,1));
     drawSquare(prepareSVG("quadline",size,coordsArray,1));
     drawSquare(prepareSVG("arc",size,coordsArray,1));
+
+    svgGrid.classList.add("single");
   }
   updateColours();
   updateMenuStates();
