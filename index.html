@@ -36,15 +36,15 @@
     <label for="singleInput"><input type="radio" id="singleInput" name="singleMultiple" checked><span>Single-input</span></label>
   </fieldset>
   <fieldset>
-    <label for="clearFill"><span>NoFill:</span><input type="checkbox" id="clearFill" checked></label>
-    <label for="fillColour"><span>Fill:</span><input type="color" id="fillColour" value="#666666"></label>
-    <label for="strokeColour"><span>Stroke:</span><input type="color" id="strokeColour" value="#FFFFFF"></label>
-    <label for="textColour"><span>Text:</span><input type="color" id="textColour" value="#EEEEEE"></label>
-    <label for="backColour"><span>Background:</span><input type="color" id="backColour" value="#222222"></label>
+    <label for="clearFill"><input type="checkbox" id="clearFill" checked><span>NoFill</span></label>
+    <label for="fillColour"><input type="color" id="fillColour" value="#666666"><span>Fill</span></label>
+    <label for="strokeColour"><input type="color" id="strokeColour" value="#FFFFFF"><span>Stroke</span></label>
+    <label for="textColour"><input type="color" id="textColour" value="#EEEEEE"><span>Text</span></label>
+    <label for="backColour"><input type="color" id="backColour" value="#222222"><span>Background</span></label>
   </fieldset>
   <fieldset>
-    <label for="padding"><span>Padding:</span><input type="checkbox" id="padding"></label>
-    <label for="animate"><span>Animate:</span><input type="checkbox" id="animate"></label>
+    <label for="padding"><input type="checkbox" id="padding" checked><span>Padding</span></label>
+    <label for="animate"><input type="checkbox" id="animate"><span>Animate</span></label>
   </fieldset>
   <fieldset>
     <select id="styleOptions">
@@ -64,8 +64,8 @@
   </fieldset>
   <fieldset>
     <label for="values">
-      <span>Add numbers here:</span>
       <input id="values" type="text" placeholder="1 2 3 etc..." value="13 22 18 27 11 20 31 4 36 9 29 2 12 21 14 23 16 25 30 3 5 32 34 7 17 26 10 19 15 24 8 35 28 1 6 33">
+      <span>manual input</span>
     </label>
   </fieldset>
 </form>
@@ -80,7 +80,7 @@
 
 <p id="constant">0</p>
 
-<main id="svgGrid" class="svgGrid">
+<main id="svgGrid" class="svgGrid single">
 
 </main>
 
