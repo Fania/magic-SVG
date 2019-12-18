@@ -54,11 +54,9 @@ function toggleFill(nofill) {
   if (nofill) {  // fill colour transparent
     clearFill.checked = true;
     fillColour.disabled = true;
-    fillColour.previousSibling.classList.add("disable");
   } else {  // fill colour as selected
     clearFill.checked = false;
     fillColour.disabled = false;
-    fillColour.previousSibling.classList.remove("disable");
   }
   updateColours();
 }

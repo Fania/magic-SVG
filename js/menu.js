@@ -9,15 +9,15 @@ function updateMenuStates() {
   fillColour.disabled = clearFill.checked;
   style==="numbers" ? strokeColour.disabled=true : strokeColour.disabled=false;
   type==="orderGroups" && style==="numbers" || type==="singleInput"
-    ? textColour.disabled = false : textColour.disabled = true;
+    ? textColour.disabled=false : textColour.disabled=true;
   type==="orderGroups" && style==="arc" || type==="singleInput" 
-    ? padding.disabled = true : padding.disabled = false;
+    ? padding.disabled=true : padding.disabled=false;
   style==="numbers" ? animate.disabled=true : animate.disabled=false;
   type==="orderGroups" 
-    ? styleOptions.disabled = false : styleOptions.disabled = true;
+    ? styleOptions.disabled=false : styleOptions.disabled=true;
   type==="orderGroups" 
-    ? orderOptions.disabled = false : orderOptions.disabled = true;
-  type==="orderGroups" ? values.disabled = true : values.disabled = false;
+    ? orderOptions.disabled=false : orderOptions.disabled=true;
+  type==="orderGroups" ? values.disabled=true : values.disabled=false;
   // type==="singleInput" ? svgGrid.classList.add("single") 
   //   : svgGrid.classList.remove("single");
 }
