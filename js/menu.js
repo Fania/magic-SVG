@@ -26,10 +26,9 @@ function updateMenuStates() {
 const singleMultiple = document.getElementsByName("singleMultiple");
 singleMultiple.forEach(sm => {
   sm.addEventListener("change", () => {
-    let id = event.target.id;
+    // let id = event.target.id;
     // console.log(`changed page to ${event.target.id}`);
     load(getPageType());  // reload page setup
-    // id === "orderGroups" ? multiSettings(): singleSettings();
   });
 });
 
