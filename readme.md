@@ -28,20 +28,22 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] set SVG fill in JavaScript
 - [x] user input for fill colour
 - [x] user input for line colour
-- [ ] hide settings after drawing
+- [x] when numbers selected disable animate and stroke
 - [x] hide settings for printing
 - [x] printing stylesheet (order-4)
-- [ ] progress bar (loading) for animate
+- [x] fix padding trigger
 - [x] number squares fix mobile
-- [ ] give choice of print sizes
-- [x] when numbers selected disable animate and stroke
-- [x] swap coordsArray x y
-- [ ] merge js files into one
-- [ ] set size of squares
-- [ ] set fill-opacity/stroke-opacity="0.0" - "1.0"
-- [ ] loop trhough colour change
 - [x] fix color swapping issues (fill transparency)
-- [ ] fix padding trigger
+- [x] swap coordsArray x y
+- [x] merge js files into one
+- [x] set size of squares
+- [ ] give choice of print sizes
+- [ ] set fill-opacity/stroke-opacity="0.0" - "1.0"
+- [ ] loop through colour change
+- [ ] progress bar (loading) for animate
+- [ ] hide settings after drawing
+- [ ] redesign menu
+- [ ] integrate magic square checking to singleInput
 
 ## References
 
