@@ -20,6 +20,8 @@ function updateMenuStates() {
   type==="orderGroups" ? values.disabled=true : values.disabled=false;
   // type==="singleInput" ? svgGrid.classList.add("single") 
   //   : svgGrid.classList.remove("single");
+  let state = padding.checked ? "add" : "remove";
+  changePadding(state);
 }
 
 
@@ -40,10 +42,20 @@ settings.addEventListener("submit", () => {
 });
 
 
-padding.addEventListener("change", togglePadding);
-function togglePadding() {
+padding.addEventListener("change", () => {
+  let state = padding.checked ? "add" : "remove";
+  changePadding(state);
+});
+
+function changePadding(state) {
   const squares = document.querySelectorAll(".order-x");
-  squares.forEach(s => s.classList.toggle("pad"));
+  squares.forEach(s => {
+    state==="add" ? s.classList.add("pad")
+                  : s.classList.remove("pad")
+    });
   const nums = document.querySelectorAll(".order-xt");
-  nums.forEach(n => n.classList.toggle("pad"));
+  nums.forEach(n => {
+    state==="add" ? n.classList.add("pad")
+                  : n.classList.remove("pad")
+    });
 }
