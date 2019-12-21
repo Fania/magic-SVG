@@ -50,11 +50,11 @@ function load(pageType) {
 
     const coordsArray = getCoords(size,valuesArray,1);
 
-    drawSquare(prepareSVG("numbers",size,coordsArray,1));
+    drawSquare(prepareSVG("numbers",size,coordsArray,0));
     drawSquare(prepareSVG("straight",size,coordsArray,1));
-    drawSquare(prepareSVG("quadvertix",size,coordsArray,1));
-    drawSquare(prepareSVG("quadline",size,coordsArray,1));
-    drawSquare(prepareSVG("arc",size,coordsArray,1));
+    drawSquare(prepareSVG("quadvertix",size,coordsArray,2));
+    drawSquare(prepareSVG("quadline",size,coordsArray,3));
+    drawSquare(prepareSVG("arc",size,coordsArray,4));
 
     svgGrid.classList.add("single");
   }

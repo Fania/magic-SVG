@@ -80,12 +80,18 @@ function startAnimatingAll() {
     // }
 
 
-
+    // The different duration causes the animation to become irregular and 
+    // out of sync. Remove line to default to 20 seconds for all.
+    // See line 119 in CSS.
+    // Add speed multiplier to slow down, e.g. len/1000 * 2.
+    // animation: dash ${len/1000}s ease-in-out alternate infinite;
+    // animation: dash 20s ease-in-out alternate infinite;
     let len = Math.ceil(allSVGs[a].firstChild.getTotalLength());
     let text = `
       #square-${parseInt(a) + 1} {
         stroke-dasharray: ${len};
         stroke-dashoffset: ${len};
+        animation: dash ${len/1000 * 2}s ease-in-out alternate infinite;
       }
     `;
     extra_animation_styles.insertAdjacentText("beforeend", text);
