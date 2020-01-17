@@ -1,5 +1,6 @@
 "use strict";
 
+// see squares folder
 const squareOrder = {
   "3": order3,
   "4": order4,

@@ -27,6 +27,8 @@ noAnimate.addEventListener("change", () => {
 //   }
 // }
 
+let index = [];
+
 
 function startAnimatingAll(sync) {
   // console.log("animate svgs");
@@ -43,6 +45,18 @@ function startAnimatingAll(sync) {
     // animation: dash ${len/1000}s ease-in-out alternate infinite;
     // animation: dash 20s ease-in-out alternate infinite;
     let len = Math.ceil(allSVGs[a].firstChild.getTotalLength());
+    
+    index[a] = {
+      "nums": order4a[a],
+      "lens": {
+        "quad": lensQuad[a],
+        "straight": lensStraight[a],
+        "arc": lensArc[a],
+        "qline": lensQLine[a]
+      }
+    };
+
+
     let text = `
       #square-${parseInt(a) + 1} {
         stroke-dasharray: ${len};
@@ -54,7 +68,10 @@ function startAnimatingAll(sync) {
   }
 }
 
-
 function stopAnimatingAll() {
   extra_animation_styles.innerHTML = "";
+  console.log(index);
+  console.dir(index);
 }
+
+
