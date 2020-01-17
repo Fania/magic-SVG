@@ -44,19 +44,29 @@ function load(pageType) {
   if (pageType === "singleInput") {
     const valuesString = document.getElementById("values");
     let valuesArray = valuesString.value.split(" ").map(Number);
-    let size = Math.sqrt(valuesArray.length);
     
-    magicConstant(size,valuesArray);
+    if (valuesArray.includes(NaN)) {
+      errorMsg.innerHTML=`contains non-numbers: ${valuesArray}`;
+    } else {
+    
+      let size = Math.sqrt(valuesArray.length);
+      
+      // call checks functions with 'valuesArray' here
+      const dataArray = [...new Set(valuesArray.filter(Boolean))]
 
-    const coordsArray = getCoords(size,valuesArray,1);
+      
+      magicConstant(size,valuesArray);
 
-    drawSquare(prepareSVG("numbers",size,coordsArray,0));
-    drawSquare(prepareSVG("straight",size,coordsArray,1));
-    drawSquare(prepareSVG("quadvertix",size,coordsArray,2));
-    drawSquare(prepareSVG("quadline",size,coordsArray,3));
-    drawSquare(prepareSVG("arc",size,coordsArray,4));
+      const coordsArray = getCoords(size,valuesArray,1);
 
-    svgGrid.classList.add("single");
+      drawSquare(prepareSVG("numbers",size,coordsArray,0));
+      drawSquare(prepareSVG("straight",size,coordsArray,1));
+      drawSquare(prepareSVG("quadvertix",size,coordsArray,2));
+      drawSquare(prepareSVG("quadline",size,coordsArray,3));
+      drawSquare(prepareSVG("arc",size,coordsArray,4));
+
+      svgGrid.classList.add("single");
+    }
   }
   updateColours();
   updateMenuStates();
