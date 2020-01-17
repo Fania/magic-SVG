@@ -27,28 +27,13 @@ function filterByLength(len, type) {
 }
 
 
-
-
 function populateOptions(style) {
-
-
-
-
-
+  let list = eval(`${style}Lens`);
+  lenOptions.innerHTML = "";
+  for (let l in list) {
+    let opt = document.createElement("option");
+    opt.value = l;
+    opt.innerText = `${l} (${list[l].length})`;
+    lenOptions.appendChild(opt);
+  }
 }
-
-
-// lenOptions
-
-
-
-// for(element in langArray)
-// {
-//    var opt = document.createElement("option");
-//    opt.value= index;
-//    opt.innerHTML = element; // whatever property it has
-
-//    // then append it to the select element
-//    newSelect.appendChild(opt);
-//    index++;
-// }

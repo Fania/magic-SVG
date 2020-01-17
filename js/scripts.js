@@ -12,7 +12,13 @@ const squareOrder = {
 
 styleOptions.addEventListener("change", ()=> load(getPageType()));
 orderOptions.addEventListener("change", ()=> load(getPageType()));
-lenFilter.addEventListener("change", ()=> load(getPageType()));
+// lenFilter.addEventListener("change", ()=> load(getPageType()));
+
+let selectedLenIndex = 0;
+lenOptions.addEventListener("change", ()=> {
+  selectedLenIndex = lenOptions.selectedIndex;
+  load(getPageType());
+});
 
 
 load(getPageType());  // first page load
@@ -47,12 +53,16 @@ function load(pageType) {
     // console.log("filter groups selected");
 
     let style = styleOptions[styleOptions.selectedIndex].value;
-
+    populateOptions(style);
+    lenOptions.options[selectedLenIndex].selected = true;
     let allPerStyle = eval(`${style}Lens`);
     // let allPerStyle = generateList(style);
     // console.log(allPerStyle);
 
-    const filterNum = document.getElementById("lenFilter").value;
+    // const filterNum = document.getElementById("lenFilter").value;
+    const filterNum = lenOptions.options[lenOptions.selectedIndex].value;
+    // console.dir(document.getElementById("lenOptions"));
+    // console.log(filterNum);
 
     if (filterNum in allPerStyle) {
 

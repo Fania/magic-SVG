@@ -12,8 +12,10 @@ function updateMenuStates() {
     ? textColour.disabled=false : textColour.disabled=true;
   type==="orderGroups" && style==="arc" || type==="singleInput" 
     ? padding.disabled=true : padding.disabled=false;
+  // type==="filterGroups"
+  //   ? lenFilter.disabled=false : lenFilter.disabled=true;
   type==="filterGroups"
-    ? lenFilter.disabled=false : lenFilter.disabled=true;
+    ? lenOptions.disabled=false : lenOptions.disabled=true;
   style==="numbers" ? animate.disabled=true : animate.disabled=false;
   type==="orderGroups" || type==="filterGroups"
     ? styleOptions.disabled=false : styleOptions.disabled=true;
@@ -33,6 +35,11 @@ singleMultiple.forEach(sm => {
   sm.addEventListener("change", () => {
     // let id = event.target.id;
     // console.log(`changed page to ${event.target.id}`);
+    // let type = getPageType();
+    // let style = styleOptions[styleOptions.selectedIndex].value;
+    // if(type === "filterGroups") {
+    //   populateOptions(style);
+    // }
     load(getPageType());  // reload page setup
   });
 });
@@ -62,3 +69,7 @@ function changePadding(state) {
                   : n.classList.remove("pad")
     });
 }
+
+
+
+// lenOptions.addEventListener("change", ()=> load("filterGroups"));
