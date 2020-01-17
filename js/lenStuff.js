@@ -60,6 +60,21 @@ console.log(generateList("quad"));
 console.log(generateList("qline"));
 console.log(generateList("arc"));
 
+
+    // let feedbackS = {};
+    // uniquestraight.forEach(f => {
+    //   let idx = index4.indexOf(f);
+    //   let nums = f.nums;
+    //   feedbackS.idx = nums;
+    // });
+    // // let feedback = filtered.map(f => [index4.indexOf(f), f.nums]);
+    // console.log("feedback straight", feedbackS);
+
+
+
+
+
+
 function filterByLength(len, type) {
   return index4.filter( square => square.lens[type] == len );
 }

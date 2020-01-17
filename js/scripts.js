@@ -55,14 +55,14 @@ function load(pageType) {
     let squareNumLists = filtered.map(f => f.nums);
     let squareNumIndices = filtered.map(f => index4.indexOf(f));
 
-    let feedback = {};
-    filtered.forEach(f => {
-      let idx = index4.indexOf(f);
-      let nums = f.nums;
-      feedback.idx = nums;
-    });
-    // let feedback = filtered.map(f => [index4.indexOf(f), f.nums]);
-    console.log("feedback", feedback);
+    // let feedback = {};
+    // filtered.forEach(f => {
+    //   let idx = index4.indexOf(f);
+    //   let nums = f.nums;
+    //   feedback.idx = nums;
+    // });
+    // // let feedback = filtered.map(f => [index4.indexOf(f), f.nums]);
+    // console.log("feedback", feedback);
 
 
     // let style = "straight";
