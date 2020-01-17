@@ -43,7 +43,7 @@ function displayDetails(num, original) {
   let id = `square-${num}`;
   let elem = document.getElementById(id).parentElement;
   let det = document.createElement("p");
-  let txt = document.createTextNode(`# ${original}`);
+  let txt = document.createTextNode(`# ${original + 1}`);
   det.appendChild(txt);
   elem.insertAdjacentElement("afterend", det);
 }
