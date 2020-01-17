@@ -44,11 +44,12 @@ function load(pageType) {
   }
 
   if (pageType === "filterGroups") {
-    console.log("filter groups selected");
+    // console.log("filter groups selected");
 
     let style = styleOptions[styleOptions.selectedIndex].value;
 
-    let allPerStyle = generateList(style);
+    let allPerStyle = eval(`${style}Lens`);
+    // let allPerStyle = generateList(style);
     // console.log(allPerStyle);
 
     const filterNum = document.getElementById("lenFilter").value;

@@ -7,6 +7,7 @@ let uniquequadline = [...new Set(lensQLine)];
 let uniquearc = [...new Set(lensArc)]; 
 
 
+// only used to update lists in filtered.js
 function generateList(type) {
   let list = eval(`unique${type}`);
   let output = {};
@@ -24,3 +25,30 @@ function filterByLength(len, type) {
   let out = tmp.map( t => index4.indexOf(t) );
   return out;
 }
+
+
+
+
+function populateOptions(style) {
+
+
+
+
+
+}
+
+
+// lenOptions
+
+
+
+// for(element in langArray)
+// {
+//    var opt = document.createElement("option");
+//    opt.value= index;
+//    opt.innerHTML = element; // whatever property it has
+
+//    // then append it to the select element
+//    newSelect.appendChild(opt);
+//    index++;
+// }
