@@ -45,40 +45,35 @@ function load(pageType) {
 
   if (pageType === "filterGroups") {
     console.log("filter groups selected");
-    const filterNum = document.getElementById("lenFilter").value;
+
     let style = styleOptions[styleOptions.selectedIndex].value;
 
+    let allPerStyle = generateList(style);
+    // console.log(allPerStyle);
 
-    let filtered = filterByLength(filterNum, "straight");
-    // let filtered = index4.filter( square => square.lens.straight == lenS );
-    console.log(`${filterNum} ${filtered.length}`);
-    let squareNumLists = filtered.map(f => f.nums);
-    let squareNumIndices = filtered.map(f => index4.indexOf(f));
+    const filterNum = document.getElementById("lenFilter").value;
 
-    // let feedback = {};
-    // filtered.forEach(f => {
-    //   let idx = index4.indexOf(f);
-    //   let nums = f.nums;
-    //   feedback.idx = nums;
-    // });
-    // // let feedback = filtered.map(f => [index4.indexOf(f), f.nums]);
-    // console.log("feedback", feedback);
+    if (filterNum in allPerStyle) {
 
+      let filtered = allPerStyle[filterNum];
+      let filteredNums = filtered.map(n => index4[n].nums);
 
-    // let style = "straight";
-    let order = "4a";
-    let coordsArray = {};
-    let size = Math.sqrt(squareNumLists[0].split(" ").length);
-    let counter = 0;
-    for (let line in squareNumLists) {
-      counter = parseInt(line) + 1;
-      // console.log(`processing magic square ${counter}`);
-      let valuesArray = squareNumLists[line].split(" ").map(Number);
-      coordsArray[counter] = getCoords(size,valuesArray);
-      drawSquare(prepareSVG(style,size,coordsArray[counter],counter));
+      let order = "4a";
+      let coordsArray = {};
+      let size = Math.sqrt(filteredNums[0].split(" ").length);
+      let counter = 0;
+      for (let line in filteredNums) {
+        counter = parseInt(line) + 1;
+        // console.log(`processing magic square ${counter}`);
+        let valuesArray = filteredNums[line].split(" ").map(Number);
+        coordsArray[counter] = getCoords(size,valuesArray);
+        drawSquare(prepareSVG(style,size,coordsArray[counter],counter));
+      }
+      svgGrid.classList.remove("single");
+    } else {
+      console.log("input doesn't exist");
+      constant.innerHTML = "input doesn't exist"
     }
-    svgGrid.classList.remove("single");
-
 
   }
 
