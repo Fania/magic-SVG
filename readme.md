@@ -44,6 +44,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] hide settings after drawing
 - [ ] redesign menu
 - [ ] hardcode lengths
+- [ ] filters
 
 
 ## References
