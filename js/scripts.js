@@ -12,6 +12,7 @@ const squareOrder = {
 
 styleOptions.addEventListener("change", ()=> load(getPageType()));
 orderOptions.addEventListener("change", ()=> load(getPageType()));
+lenFilter.addEventListener("change", ()=> load(getPageType()));
 
 
 load(getPageType());  // first page load
@@ -40,6 +41,45 @@ function load(pageType) {
       drawSquare(prepareSVG(style,size,coordsArray[counter],counter));
     }
     svgGrid.classList.remove("single");
+  }
+
+  if (pageType === "filterGroups") {
+    console.log("filter groups selected");
+    const filterNum = document.getElementById("lenFilter").value;
+    let style = styleOptions[styleOptions.selectedIndex].value;
+
+
+    let filtered = filterByLength(filterNum, "straight");
+    // let filtered = index4.filter( square => square.lens.straight == lenS );
+    console.log(`${filterNum} ${filtered.length}`);
+    let squareNumLists = filtered.map(f => f.nums);
+    let squareNumIndices = filtered.map(f => index4.indexOf(f));
+
+    let feedback = {};
+    filtered.forEach(f => {
+      let idx = index4.indexOf(f);
+      let nums = f.nums;
+      feedback.idx = nums;
+    });
+    // let feedback = filtered.map(f => [index4.indexOf(f), f.nums]);
+    console.log("feedback", feedback);
+
+
+    // let style = "straight";
+    let order = "4a";
+    let coordsArray = {};
+    let size = Math.sqrt(squareNumLists[0].split(" ").length);
+    let counter = 0;
+    for (let line in squareNumLists) {
+      counter = parseInt(line) + 1;
+      // console.log(`processing magic square ${counter}`);
+      let valuesArray = squareNumLists[line].split(" ").map(Number);
+      coordsArray[counter] = getCoords(size,valuesArray);
+      drawSquare(prepareSVG(style,size,coordsArray[counter],counter));
+    }
+    svgGrid.classList.remove("single");
+
+
   }
 
   if (pageType === "singleInput") {

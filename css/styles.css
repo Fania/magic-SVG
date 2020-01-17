@@ -44,6 +44,9 @@ input[type="checkbox"] {
 input[type="text"] {
   width: 200px;
 }
+input[type="number"] {
+  width: 55px;
+}
 label {
   margin-right: 1em;
 }
@@ -67,10 +70,11 @@ input:disabled ~ span, select:disabled ~ span {
 fieldset {
   border: none;
 }
-#orderGroups, #singleInput {
+#orderGroups, #singleInput, #filterGroups {
   display: none;
 }
 #orderGroups:checked + span, 
+#filterGroups:checked + span,
 #singleInput:checked + span {
   text-decoration: underline;
 }

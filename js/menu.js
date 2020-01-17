@@ -12,12 +12,15 @@ function updateMenuStates() {
     ? textColour.disabled=false : textColour.disabled=true;
   type==="orderGroups" && style==="arc" || type==="singleInput" 
     ? padding.disabled=true : padding.disabled=false;
+  type==="filterGroups"
+    ? lenFilter.disabled=false : lenFilter.disabled=true;
   style==="numbers" ? animate.disabled=true : animate.disabled=false;
-  type==="orderGroups" 
+  type==="orderGroups" || type==="filterGroups"
     ? styleOptions.disabled=false : styleOptions.disabled=true;
   type==="orderGroups" 
     ? orderOptions.disabled=false : orderOptions.disabled=true;
-  type==="orderGroups" ? values.disabled=true : values.disabled=false;
+  type==="orderGroups" || type==="filterGroups"
+    ? values.disabled=true : values.disabled=false;
   // type==="singleInput" ? svgGrid.classList.add("single") 
   //   : svgGrid.classList.remove("single");
   let state = padding.checked ? "add" : "remove";
