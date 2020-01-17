@@ -45,16 +45,13 @@ function load(pageType) {
     const valuesString = document.getElementById("values");
     let valuesArray = valuesString.value.split(" ").map(Number);
     
-    if (valuesArray.includes(NaN)) {
-      errorMsg.innerHTML=`contains non-numbers: ${valuesArray}`;
+    if (errorChecks(valuesArray)) {
+      errorMsg.innerHTML = errorChecks(valuesArray)[1];
+      // call other input checks with 'valuesArray' here
     } else {
     
       let size = Math.sqrt(valuesArray.length);
-      
-      // call checks functions with 'valuesArray' here
-      const dataArray = [...new Set(valuesArray.filter(Boolean))]
 
-      
       magicConstant(size,valuesArray);
 
       const coordsArray = getCoords(size,valuesArray,1);

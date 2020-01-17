@@ -75,6 +75,12 @@ fieldset {
   text-decoration: underline;
 }
 
+.error {
+  width: 80%;
+  margin: 0 5%;
+  color: rgb(250, 124, 124)
+}
+
 .pad {
   padding: 16px;
 }
