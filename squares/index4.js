@@ -1,4 +1,4 @@
-const index = [
+const index4 = [
   {
     "nums": "1 2 15 16 13 14 3 4 12 7 10 5 8 11 6 9",
     "lens": {

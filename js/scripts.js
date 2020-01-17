@@ -46,6 +46,8 @@ function load(pageType) {
     const valuesString = document.getElementById("values");
     let valuesArray = valuesString.value.split(" ").map(Number);
     let size = Math.sqrt(valuesArray.length);
+
+    // daves code
     
     magicConstant(size,valuesArray);
 
