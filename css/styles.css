@@ -107,6 +107,20 @@ fieldset {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.svgGrid.filter {
+  position: relative;
+}
+.svgGrid.filter svg {
+  margin-bottom: 3em;
+}
+.svgGrid.filter svg + p {
+  position: relative;
+  top: 80px;
+  left: -110px;
+  color: #555;
+}
+
 /* svg text {
   fill: #eeeeee;
 } */

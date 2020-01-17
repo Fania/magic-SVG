@@ -46,6 +46,7 @@ function load(pageType) {
       coordsArray[counter] = getCoords(size,valuesArray);
       drawSquare(prepareSVG(style,size,coordsArray[counter],counter));
     }
+    svgGrid.classList.remove("filter");
     svgGrid.classList.remove("single");
   }
 
@@ -67,6 +68,7 @@ function load(pageType) {
     if (filterNum in allPerStyle) {
 
       let filtered = allPerStyle[filterNum];
+      // console.log(filtered);
       let filteredNums = filtered.map(n => index4[n].nums);
 
       let order = "4a";
@@ -79,12 +81,14 @@ function load(pageType) {
         let valuesArray = filteredNums[line].split(" ").map(Number);
         coordsArray[counter] = getCoords(size,valuesArray);
         drawSquare(prepareSVG(style,size,coordsArray[counter],counter));
+        displayDetails(counter, filtered[line]);
       }
-      svgGrid.classList.remove("single");
     } else {
-      console.log("input doesn't exist");
+      // console.log("input doesn't exist");
       constant.innerHTML = "input doesn't exist"
     }
+    svgGrid.classList.add("filter");
+    svgGrid.classList.remove("single");
 
   }
 
@@ -106,6 +110,7 @@ function load(pageType) {
     drawSquare(prepareSVG("arc",size,coordsArray,4));
 
     svgGrid.classList.add("single");
+    svgGrid.classList.remove("filter");
   }
   updateColours();
   updateMenuStates();

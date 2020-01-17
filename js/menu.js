@@ -16,6 +16,8 @@ function updateMenuStates() {
   //   ? lenFilter.disabled=false : lenFilter.disabled=true;
   type==="filterGroups"
     ? lenOptions.disabled=false : lenOptions.disabled=true;
+  type==="filterGroups"
+    ? animateOut.disabled=true : animateOut.disabled=false;
   style==="numbers" ? animate.disabled=true : animate.disabled=false;
   type==="orderGroups" || type==="filterGroups"
     ? styleOptions.disabled=false : styleOptions.disabled=true;
@@ -70,6 +72,3 @@ function changePadding(state) {
     });
 }
 
-
-
-// lenOptions.addEventListener("change", ()=> load("filterGroups"));

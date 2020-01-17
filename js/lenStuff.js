@@ -37,3 +37,14 @@ function populateOptions(style) {
     lenOptions.appendChild(opt);
   }
 }
+
+
+function displayDetails(num, original) {
+  let id = `square-${num}`;
+  let elem = document.getElementById(id).parentElement;
+  let det = document.createElement("p");
+  let txt = document.createTextNode(`# ${original}`);
+  det.appendChild(txt);
+  elem.insertAdjacentElement("afterend", det);
+}
+
