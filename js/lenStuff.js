@@ -1,23 +1,23 @@
 "use strict";
 
 
-let uniquestraight = [...new Set(lensStraight)]; 
-let uniquequadvertix = [...new Set(lensQuad)]; 
-let uniquequadline = [...new Set(lensQLine)]; 
-let uniquearc = [...new Set(lensArc)]; 
+// let uniquestraight = [...new Set(lensStraight)]; 
+// let uniquequadvertix = [...new Set(lensQuad)]; 
+// let uniquequadline = [...new Set(lensQLine)]; 
+// let uniquearc = [...new Set(lensArc)]; 
 
 
 // only used to update lists in filtered.js
-function generateList(type) {
-  let list = eval(`unique${type}`);
-  let output = {};
-  for (let i=0; i < list.length; i++) {
-    let len = list[i];
-    let filtered = filterByLength(len, type);
-    output[len] = filtered;
-  };
-  return output;
-}
+// function generateList(type) {
+//   let list = eval(`unique${type}`);
+//   let output = {};
+//   for (let i=0; i < list.length; i++) {
+//     let len = list[i];
+//     let filtered = filterByLength(len, type);
+//     output[len] = filtered;
+//   };
+//   return output;
+// }
 
 
 function filterByLength(len, type) {

@@ -44,7 +44,7 @@ function load(pageType) {
       // console.log(`processing magic square ${counter}`);
       let valuesArray = squareOrder[order][line].split(" ").map(Number);
       coordsArray[counter] = getCoords(size,valuesArray);
-      drawSquare(prepareSVG(style,size,coordsArray[counter],counter));
+      drawSquare(prepareSVG(style,size,coordsArray[counter],counter,parseInt(line)));
     }
     svgGrid.classList.remove("filter");
     svgGrid.classList.remove("single");
@@ -80,7 +80,7 @@ function load(pageType) {
         // console.log(`processing magic square ${counter}`);
         let valuesArray = filteredNums[line].split(" ").map(Number);
         coordsArray[counter] = getCoords(size,valuesArray);
-        drawSquare(prepareSVG(style,size,coordsArray[counter],counter));
+        drawSquare(prepareSVG(style,size,coordsArray[counter],counter,filtered[line]));
         displayDetails(counter, filtered[line]);
       }
     } else {
@@ -103,11 +103,11 @@ function load(pageType) {
 
     const coordsArray = getCoords(size,valuesArray,1);
 
-    drawSquare(prepareSVG("numbers",size,coordsArray,0));
-    drawSquare(prepareSVG("straight",size,coordsArray,1));
-    drawSquare(prepareSVG("quadvertix",size,coordsArray,2));
-    drawSquare(prepareSVG("quadline",size,coordsArray,3));
-    drawSquare(prepareSVG("arc",size,coordsArray,4));
+    drawSquare(prepareSVG("numbers",size,coordsArray,0,0));
+    drawSquare(prepareSVG("straight",size,coordsArray,1,0));
+    drawSquare(prepareSVG("quadvertix",size,coordsArray,2,0));
+    drawSquare(prepareSVG("quadline",size,coordsArray,3,0));
+    drawSquare(prepareSVG("arc",size,coordsArray,4,0));
 
     svgGrid.classList.add("single");
     svgGrid.classList.remove("filter");
@@ -138,25 +138,25 @@ function getCoords(s, v, c) {
 }
 
 // style, size, coordsArray, counter
-function prepareSVG(style, s, a, c) {
+function prepareSVG(style, s, a, c, n) {
   // console.log(`preparing ${style} SVG for square ${c}`);
   switch(style) {
     case "straight":
-      return createPolyline(s, a, c);
+      return createPolyline(s, a, c, n);
       // break;
     case "quadvertix":
-      return createQuadraticCurveVertices(s, a, c);
+      return createQuadraticCurveVertices(s, a, c, n);
       // break;
     case "quadline":
-      return createQuadraticCurveLines(s, a, c);
+      return createQuadraticCurveLines(s, a, c, n);
       // break;
     case "arc":
-      return createArc(s, a, c);
+      return createArc(s, a, c, n);
       // break;
     case "numbers":
-      return createNumberSVGs(s, a);
+      return createNumberSVGs(s, a, n);
       // break;
     default:
-      return createQuadraticCurveVertices(s, a, c);
+      return createQuadraticCurveVertices(s, a, c, n);
   }
 } 
