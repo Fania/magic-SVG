@@ -26,17 +26,17 @@ function generateList(type) {
 // input: index4, "quadvertix", true
 // generateAnimationCSS(index4, "quadvertix", true)
 function generateAnimationCSS(index, style, sync) {
-  let output = `/* ${style} ${sync ? "sync" : ""} */`;
+  let output = `/* ${style} ${sync ? "lengths" : "speeds"} */`;
   for (let i=0; i < index.length; i++) {
     let len = index[i].lens[style];
-    let dash = `
+    let lengths = `
 #num-${i + 1} .lines {
   stroke-dasharray: ${len};
   stroke-dashoffset: ${len};
 }`;
-    let anim = `
+    let speeds = `
 #num-${i + 1} .lines { animation: dash ${len/1000 * 2}s ease-in-out alternate infinite; }`;
-    output += sync ? dash : anim;
+    output += sync ? lengths : speeds;
   }
   return output;
 }

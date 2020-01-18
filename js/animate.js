@@ -21,20 +21,24 @@ noAnimate.addEventListener("change", () => {
 
 function startAnimatingAll(sync) {
   // console.log("animate svgs");
-  let oldStyle = document.getElementById("animationStyles");
+  // remove old styles
+  let oldStyle = document.getElementById("animationLengths");
   if(oldStyle) document.head.removeChild(oldStyle);
+  let oldStyle2 = document.getElementById("animationSpeeds");
+  if(oldStyle2) document.head.removeChild(oldStyle2);
+  // put new styles
   let style = styleOptions[styleOptions.selectedIndex].value;
   let newStyle = document.createElement("link");
   newStyle.rel = "stylesheet";
-  newStyle.href = `css/${style}Sync4.css`;
-  newStyle.id = "animationStyles";
+  newStyle.href = `css/${style}Lengths4.css`;
+  newStyle.id = "animationLengths";
   document.head.appendChild(newStyle);
   svgGrid.classList.add("animateEvenly");
   if(!sync) {
     let indivStyle = document.createElement("link");
     indivStyle.rel = "stylesheet";
-    indivStyle.href = `css/${style}4.css`;
-    indivStyle.id = "individualStyles";
+    indivStyle.href = `css/${style}Speeds4.css`;
+    indivStyle.id = "animationSpeeds";
     document.head.appendChild(indivStyle);
     svgGrid.classList.remove("animateEvenly");
   }
@@ -42,9 +46,9 @@ function startAnimatingAll(sync) {
 }
 
 function stopAnimatingAll() {
-  let style = document.getElementById("animationStyles");
+  let style = document.getElementById("animationLengths");
   if (style) document.head.removeChild(style);
-  let style2 = document.getElementById("individualStyles");
+  let style2 = document.getElementById("animationSpeeds");
   if (style2) document.head.removeChild(style2);
   svgGrid.classList.remove("animateEvenly");
 }

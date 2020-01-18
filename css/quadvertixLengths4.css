@@ -1,4 +1,4 @@
-/* quadline sync */
+/* quadvertix lengths */
 #num-1 .lines {
   stroke-dasharray: 1857;
   stroke-dashoffset: 1857;
@@ -32,36 +32,36 @@
   stroke-dashoffset: 2039;
 }
 #num-9 .lines {
-  stroke-dasharray: 2055;
-  stroke-dashoffset: 2055;
+  stroke-dasharray: 1987;
+  stroke-dashoffset: 1987;
 }
 #num-10 .lines {
-  stroke-dasharray: 2398;
-  stroke-dashoffset: 2398;
+  stroke-dasharray: 2396;
+  stroke-dashoffset: 2396;
 }
 #num-11 .lines {
-  stroke-dasharray: 2490;
-  stroke-dashoffset: 2490;
+  stroke-dasharray: 2573;
+  stroke-dashoffset: 2573;
 }
 #num-12 .lines {
-  stroke-dasharray: 2085;
-  stroke-dashoffset: 2085;
+  stroke-dasharray: 2164;
+  stroke-dashoffset: 2164;
 }
 #num-13 .lines {
-  stroke-dasharray: 1920;
-  stroke-dashoffset: 1920;
+  stroke-dasharray: 1987;
+  stroke-dashoffset: 1987;
 }
 #num-14 .lines {
-  stroke-dasharray: 2394;
-  stroke-dashoffset: 2394;
+  stroke-dasharray: 2396;
+  stroke-dashoffset: 2396;
 }
 #num-15 .lines {
-  stroke-dasharray: 2655;
-  stroke-dashoffset: 2655;
+  stroke-dasharray: 2573;
+  stroke-dashoffset: 2573;
 }
 #num-16 .lines {
-  stroke-dasharray: 2242;
-  stroke-dashoffset: 2242;
+  stroke-dasharray: 2164;
+  stroke-dashoffset: 2164;
 }
 #num-17 .lines {
   stroke-dasharray: 1918;
@@ -96,36 +96,36 @@
   stroke-dashoffset: 2271;
 }
 #num-25 .lines {
-  stroke-dasharray: 2154;
-  stroke-dashoffset: 2154;
+  stroke-dasharray: 2127;
+  stroke-dashoffset: 2127;
 }
 #num-26 .lines {
-  stroke-dasharray: 2547;
-  stroke-dashoffset: 2547;
+  stroke-dasharray: 2514;
+  stroke-dashoffset: 2514;
 }
 #num-27 .lines {
-  stroke-dasharray: 2483;
-  stroke-dashoffset: 2483;
+  stroke-dasharray: 2533;
+  stroke-dashoffset: 2533;
 }
 #num-28 .lines {
-  stroke-dasharray: 2130;
-  stroke-dashoffset: 2130;
+  stroke-dasharray: 2183;
+  stroke-dashoffset: 2183;
 }
 #num-29 .lines {
-  stroke-dasharray: 2236;
-  stroke-dashoffset: 2236;
+  stroke-dasharray: 2183;
+  stroke-dashoffset: 2183;
 }
 #num-30 .lines {
-  stroke-dasharray: 2583;
-  stroke-dashoffset: 2583;
+  stroke-dasharray: 2533;
+  stroke-dashoffset: 2533;
 }
 #num-31 .lines {
-  stroke-dasharray: 2481;
-  stroke-dashoffset: 2481;
+  stroke-dasharray: 2514;
+  stroke-dashoffset: 2514;
 }
 #num-32 .lines {
-  stroke-dasharray: 2099;
-  stroke-dashoffset: 2099;
+  stroke-dasharray: 2127;
+  stroke-dashoffset: 2127;
 }
 #num-33 .lines {
   stroke-dasharray: 2019;
@@ -160,36 +160,36 @@
   stroke-dashoffset: 2185;
 }
 #num-41 .lines {
-  stroke-dasharray: 2099;
-  stroke-dashoffset: 2099;
+  stroke-dasharray: 2127;
+  stroke-dashoffset: 2127;
 }
 #num-42 .lines {
-  stroke-dasharray: 2481;
-  stroke-dashoffset: 2481;
+  stroke-dasharray: 2514;
+  stroke-dashoffset: 2514;
 }
 #num-43 .lines {
-  stroke-dasharray: 2583;
-  stroke-dashoffset: 2583;
+  stroke-dasharray: 2533;
+  stroke-dashoffset: 2533;
 }
 #num-44 .lines {
-  stroke-dasharray: 2236;
-  stroke-dashoffset: 2236;
+  stroke-dasharray: 2183;
+  stroke-dashoffset: 2183;
 }
 #num-45 .lines {
-  stroke-dasharray: 2130;
-  stroke-dashoffset: 2130;
+  stroke-dasharray: 2183;
+  stroke-dashoffset: 2183;
 }
 #num-46 .lines {
-  stroke-dasharray: 2483;
-  stroke-dashoffset: 2483;
+  stroke-dasharray: 2533;
+  stroke-dashoffset: 2533;
 }
 #num-47 .lines {
-  stroke-dasharray: 2547;
-  stroke-dashoffset: 2547;
+  stroke-dasharray: 2514;
+  stroke-dashoffset: 2514;
 }
 #num-48 .lines {
-  stroke-dasharray: 2154;
-  stroke-dashoffset: 2154;
+  stroke-dasharray: 2127;
+  stroke-dashoffset: 2127;
 }
 #num-49 .lines {
   stroke-dasharray: 2019;
@@ -320,68 +320,68 @@
   stroke-dashoffset: 2297;
 }
 #num-81 .lines {
-  stroke-dasharray: 2221;
-  stroke-dashoffset: 2221;
+  stroke-dasharray: 2186;
+  stroke-dashoffset: 2186;
 }
 #num-82 .lines {
-  stroke-dasharray: 2476;
-  stroke-dashoffset: 2476;
+  stroke-dasharray: 2450;
+  stroke-dashoffset: 2450;
 }
 #num-83 .lines {
-  stroke-dasharray: 2482;
-  stroke-dashoffset: 2482;
-}
-#num-84 .lines {
-  stroke-dasharray: 2342;
-  stroke-dashoffset: 2342;
-}
-#num-85 .lines {
-  stroke-dasharray: 2152;
-  stroke-dashoffset: 2152;
-}
-#num-86 .lines {
-  stroke-dasharray: 2423;
-  stroke-dashoffset: 2423;
-}
-#num-87 .lines {
-  stroke-dasharray: 2529;
-  stroke-dashoffset: 2529;
-}
-#num-88 .lines {
-  stroke-dasharray: 2470;
-  stroke-dashoffset: 2470;
-}
-#num-89 .lines {
-  stroke-dasharray: 2455;
-  stroke-dashoffset: 2455;
-}
-#num-90 .lines {
-  stroke-dasharray: 2501;
-  stroke-dashoffset: 2501;
-}
-#num-91 .lines {
-  stroke-dasharray: 2596;
-  stroke-dashoffset: 2596;
-}
-#num-92 .lines {
-  stroke-dasharray: 2493;
-  stroke-dashoffset: 2493;
-}
-#num-93 .lines {
-  stroke-dasharray: 2643;
-  stroke-dashoffset: 2643;
-}
-#num-94 .lines {
-  stroke-dasharray: 2615;
-  stroke-dashoffset: 2615;
-}
-#num-95 .lines {
   stroke-dasharray: 2506;
   stroke-dashoffset: 2506;
 }
+#num-84 .lines {
+  stroke-dasharray: 2406;
+  stroke-dashoffset: 2406;
+}
+#num-85 .lines {
+  stroke-dasharray: 2186;
+  stroke-dashoffset: 2186;
+}
+#num-86 .lines {
+  stroke-dasharray: 2450;
+  stroke-dashoffset: 2450;
+}
+#num-87 .lines {
+  stroke-dasharray: 2506;
+  stroke-dashoffset: 2506;
+}
+#num-88 .lines {
+  stroke-dasharray: 2406;
+  stroke-dashoffset: 2406;
+}
+#num-89 .lines {
+  stroke-dasharray: 2549;
+  stroke-dashoffset: 2549;
+}
+#num-90 .lines {
+  stroke-dasharray: 2558;
+  stroke-dashoffset: 2558;
+}
+#num-91 .lines {
+  stroke-dasharray: 2551;
+  stroke-dashoffset: 2551;
+}
+#num-92 .lines {
+  stroke-dasharray: 2478;
+  stroke-dashoffset: 2478;
+}
+#num-93 .lines {
+  stroke-dasharray: 2549;
+  stroke-dashoffset: 2549;
+}
+#num-94 .lines {
+  stroke-dasharray: 2558;
+  stroke-dashoffset: 2558;
+}
+#num-95 .lines {
+  stroke-dasharray: 2551;
+  stroke-dashoffset: 2551;
+}
 #num-96 .lines {
-  stroke-dasharray: 2462;
-  stroke-dashoffset: 2462;
+  stroke-dasharray: 2478;
+  stroke-dashoffset: 2478;
 }
 #num-97 .lines {
   stroke-dasharray: 2231;
@@ -416,36 +416,36 @@
   stroke-dashoffset: 2146;
 }
 #num-105 .lines {
-  stroke-dasharray: 2417;
-  stroke-dashoffset: 2417;
+  stroke-dasharray: 2519;
+  stroke-dashoffset: 2519;
 }
 #num-106 .lines {
-  stroke-dasharray: 2507;
-  stroke-dashoffset: 2507;
+  stroke-dasharray: 2601;
+  stroke-dashoffset: 2601;
 }
 #num-107 .lines {
-  stroke-dasharray: 2696;
-  stroke-dashoffset: 2696;
+  stroke-dasharray: 2601;
+  stroke-dashoffset: 2601;
 }
 #num-108 .lines {
-  stroke-dasharray: 2621;
-  stroke-dashoffset: 2621;
+  stroke-dasharray: 2519;
+  stroke-dashoffset: 2519;
 }
 #num-109 .lines {
-  stroke-dasharray: 2621;
-  stroke-dashoffset: 2621;
+  stroke-dasharray: 2519;
+  stroke-dashoffset: 2519;
 }
 #num-110 .lines {
-  stroke-dasharray: 2696;
-  stroke-dashoffset: 2696;
+  stroke-dasharray: 2601;
+  stroke-dashoffset: 2601;
 }
 #num-111 .lines {
-  stroke-dasharray: 2507;
-  stroke-dashoffset: 2507;
+  stroke-dasharray: 2601;
+  stroke-dashoffset: 2601;
 }
 #num-112 .lines {
-  stroke-dasharray: 2417;
-  stroke-dashoffset: 2417;
+  stroke-dasharray: 2519;
+  stroke-dashoffset: 2519;
 }
 #num-113 .lines {
   stroke-dasharray: 2175;
@@ -480,20 +480,20 @@
   stroke-dashoffset: 2131;
 }
 #num-121 .lines {
-  stroke-dasharray: 2543;
-  stroke-dashoffset: 2543;
+  stroke-dasharray: 2598;
+  stroke-dashoffset: 2598;
 }
 #num-122 .lines {
-  stroke-dasharray: 2440;
-  stroke-dashoffset: 2440;
+  stroke-dasharray: 2532;
+  stroke-dashoffset: 2532;
 }
 #num-123 .lines {
-  stroke-dasharray: 2493;
-  stroke-dashoffset: 2493;
+  stroke-dasharray: 2479;
+  stroke-dashoffset: 2479;
 }
 #num-124 .lines {
-  stroke-dasharray: 2647;
-  stroke-dashoffset: 2647;
+  stroke-dasharray: 2602;
+  stroke-dashoffset: 2602;
 }
 #num-125 .lines {
   stroke-dasharray: 2185;
@@ -528,36 +528,36 @@
   stroke-dashoffset: 2117;
 }
 #num-133 .lines {
-  stroke-dasharray: 2662;
-  stroke-dashoffset: 2662;
+  stroke-dasharray: 2563;
+  stroke-dashoffset: 2563;
 }
 #num-134 .lines {
-  stroke-dasharray: 2652;
-  stroke-dashoffset: 2652;
+  stroke-dasharray: 2564;
+  stroke-dashoffset: 2564;
 }
 #num-135 .lines {
-  stroke-dasharray: 2477;
-  stroke-dashoffset: 2477;
+  stroke-dasharray: 2564;
+  stroke-dashoffset: 2564;
 }
 #num-136 .lines {
-  stroke-dasharray: 2464;
-  stroke-dashoffset: 2464;
+  stroke-dasharray: 2563;
+  stroke-dashoffset: 2563;
 }
 #num-137 .lines {
-  stroke-dasharray: 2464;
-  stroke-dashoffset: 2464;
+  stroke-dasharray: 2563;
+  stroke-dashoffset: 2563;
 }
 #num-138 .lines {
-  stroke-dasharray: 2477;
-  stroke-dashoffset: 2477;
+  stroke-dasharray: 2564;
+  stroke-dashoffset: 2564;
 }
 #num-139 .lines {
-  stroke-dasharray: 2652;
-  stroke-dashoffset: 2652;
+  stroke-dasharray: 2564;
+  stroke-dashoffset: 2564;
 }
 #num-140 .lines {
-  stroke-dasharray: 2662;
-  stroke-dashoffset: 2662;
+  stroke-dasharray: 2563;
+  stroke-dashoffset: 2563;
 }
 #num-141 .lines {
   stroke-dasharray: 2214;
@@ -592,20 +592,20 @@
   stroke-dashoffset: 2185;
 }
 #num-149 .lines {
-  stroke-dasharray: 2653;
-  stroke-dashoffset: 2653;
+  stroke-dasharray: 2598;
+  stroke-dashoffset: 2598;
 }
 #num-150 .lines {
-  stroke-dasharray: 2623;
-  stroke-dashoffset: 2623;
+  stroke-dasharray: 2532;
+  stroke-dashoffset: 2532;
 }
 #num-151 .lines {
-  stroke-dasharray: 2466;
-  stroke-dashoffset: 2466;
+  stroke-dasharray: 2479;
+  stroke-dashoffset: 2479;
 }
 #num-152 .lines {
-  stroke-dasharray: 2557;
-  stroke-dashoffset: 2557;
+  stroke-dasharray: 2602;
+  stroke-dashoffset: 2602;
 }
 #num-153 .lines {
   stroke-dasharray: 2257;
@@ -736,36 +736,36 @@
   stroke-dashoffset: 2117;
 }
 #num-185 .lines {
-  stroke-dasharray: 2579;
-  stroke-dashoffset: 2579;
+  stroke-dasharray: 2598;
+  stroke-dashoffset: 2598;
 }
 #num-186 .lines {
-  stroke-dasharray: 2534;
-  stroke-dashoffset: 2534;
+  stroke-dasharray: 2554;
+  stroke-dashoffset: 2554;
 }
 #num-187 .lines {
-  stroke-dasharray: 2534;
-  stroke-dashoffset: 2534;
+  stroke-dasharray: 2554;
+  stroke-dashoffset: 2554;
 }
 #num-188 .lines {
-  stroke-dasharray: 2579;
-  stroke-dashoffset: 2579;
+  stroke-dasharray: 2598;
+  stroke-dashoffset: 2598;
 }
 #num-189 .lines {
-  stroke-dasharray: 2618;
-  stroke-dashoffset: 2618;
+  stroke-dasharray: 2598;
+  stroke-dashoffset: 2598;
 }
 #num-190 .lines {
-  stroke-dasharray: 2573;
-  stroke-dashoffset: 2573;
+  stroke-dasharray: 2554;
+  stroke-dashoffset: 2554;
 }
 #num-191 .lines {
-  stroke-dasharray: 2573;
-  stroke-dashoffset: 2573;
+  stroke-dasharray: 2554;
+  stroke-dashoffset: 2554;
 }
 #num-192 .lines {
-  stroke-dasharray: 2618;
-  stroke-dashoffset: 2618;
+  stroke-dasharray: 2598;
+  stroke-dashoffset: 2598;
 }
 #num-193 .lines {
   stroke-dasharray: 2262;
@@ -1040,20 +1040,20 @@
   stroke-dashoffset: 2238;
 }
 #num-261 .lines {
-  stroke-dasharray: 2064;
-  stroke-dashoffset: 2064;
+  stroke-dasharray: 2166;
+  stroke-dashoffset: 2166;
 }
 #num-262 .lines {
-  stroke-dasharray: 2495;
-  stroke-dashoffset: 2495;
+  stroke-dasharray: 2589;
+  stroke-dashoffset: 2589;
 }
 #num-263 .lines {
-  stroke-dasharray: 2684;
-  stroke-dashoffset: 2684;
+  stroke-dasharray: 2589;
+  stroke-dashoffset: 2589;
 }
 #num-264 .lines {
-  stroke-dasharray: 2268;
-  stroke-dashoffset: 2268;
+  stroke-dasharray: 2166;
+  stroke-dashoffset: 2166;
 }
 #num-265 .lines {
   stroke-dasharray: 2517;
@@ -1088,20 +1088,20 @@
   stroke-dashoffset: 2510;
 }
 #num-273 .lines {
-  stroke-dasharray: 2064;
-  stroke-dashoffset: 2064;
+  stroke-dasharray: 2166;
+  stroke-dashoffset: 2166;
 }
 #num-274 .lines {
-  stroke-dasharray: 2495;
-  stroke-dashoffset: 2495;
+  stroke-dasharray: 2589;
+  stroke-dashoffset: 2589;
 }
 #num-275 .lines {
-  stroke-dasharray: 2684;
-  stroke-dashoffset: 2684;
+  stroke-dasharray: 2589;
+  stroke-dashoffset: 2589;
 }
 #num-276 .lines {
-  stroke-dasharray: 2268;
-  stroke-dashoffset: 2268;
+  stroke-dasharray: 2166;
+  stroke-dashoffset: 2166;
 }
 #num-277 .lines {
   stroke-dasharray: 2238;
@@ -1200,20 +1200,20 @@
   stroke-dashoffset: 2592;
 }
 #num-301 .lines {
-  stroke-dasharray: 2066;
-  stroke-dashoffset: 2066;
+  stroke-dasharray: 2168;
+  stroke-dashoffset: 2168;
 }
 #num-302 .lines {
-  stroke-dasharray: 2242;
-  stroke-dashoffset: 2242;
+  stroke-dasharray: 2361;
+  stroke-dashoffset: 2361;
 }
 #num-303 .lines {
-  stroke-dasharray: 2481;
-  stroke-dashoffset: 2481;
+  stroke-dasharray: 2361;
+  stroke-dashoffset: 2361;
 }
 #num-304 .lines {
-  stroke-dasharray: 2271;
-  stroke-dashoffset: 2271;
+  stroke-dasharray: 2168;
+  stroke-dashoffset: 2168;
 }
 #num-305 .lines {
   stroke-dasharray: 2186;
@@ -1280,20 +1280,20 @@
   stroke-dashoffset: 2186;
 }
 #num-321 .lines {
-  stroke-dasharray: 2066;
-  stroke-dashoffset: 2066;
+  stroke-dasharray: 2168;
+  stroke-dashoffset: 2168;
 }
 #num-322 .lines {
-  stroke-dasharray: 2242;
-  stroke-dashoffset: 2242;
+  stroke-dasharray: 2361;
+  stroke-dashoffset: 2361;
 }
 #num-323 .lines {
-  stroke-dasharray: 2481;
-  stroke-dashoffset: 2481;
+  stroke-dasharray: 2361;
+  stroke-dashoffset: 2361;
 }
 #num-324 .lines {
-  stroke-dasharray: 2271;
-  stroke-dashoffset: 2271;
+  stroke-dasharray: 2168;
+  stroke-dashoffset: 2168;
 }
 #num-325 .lines {
   stroke-dasharray: 2284;
@@ -1312,20 +1312,20 @@
   stroke-dashoffset: 2424;
 }
 #num-329 .lines {
-  stroke-dasharray: 2161;
-  stroke-dashoffset: 2161;
+  stroke-dasharray: 2245;
+  stroke-dashoffset: 2245;
 }
 #num-330 .lines {
-  stroke-dasharray: 2412;
-  stroke-dashoffset: 2412;
+  stroke-dasharray: 2530;
+  stroke-dashoffset: 2530;
 }
 #num-331 .lines {
-  stroke-dasharray: 2648;
-  stroke-dashoffset: 2648;
+  stroke-dasharray: 2530;
+  stroke-dashoffset: 2530;
 }
 #num-332 .lines {
-  stroke-dasharray: 2328;
-  stroke-dashoffset: 2328;
+  stroke-dasharray: 2245;
+  stroke-dashoffset: 2245;
 }
 #num-333 .lines {
   stroke-dasharray: 2192;
@@ -1376,20 +1376,20 @@
   stroke-dashoffset: 2231;
 }
 #num-345 .lines {
-  stroke-dasharray: 2124;
-  stroke-dashoffset: 2124;
+  stroke-dasharray: 2211;
+  stroke-dashoffset: 2211;
 }
 #num-346 .lines {
-  stroke-dasharray: 2452;
-  stroke-dashoffset: 2452;
+  stroke-dasharray: 2551;
+  stroke-dashoffset: 2551;
 }
 #num-347 .lines {
-  stroke-dasharray: 2650;
-  stroke-dashoffset: 2650;
+  stroke-dasharray: 2551;
+  stroke-dashoffset: 2551;
 }
 #num-348 .lines {
-  stroke-dasharray: 2299;
-  stroke-dashoffset: 2299;
+  stroke-dasharray: 2211;
+  stroke-dashoffset: 2211;
 }
 #num-349 .lines {
   stroke-dasharray: 2422;
@@ -1456,20 +1456,20 @@
   stroke-dashoffset: 2422;
 }
 #num-365 .lines {
-  stroke-dasharray: 2124;
-  stroke-dashoffset: 2124;
+  stroke-dasharray: 2211;
+  stroke-dashoffset: 2211;
 }
 #num-366 .lines {
-  stroke-dasharray: 2452;
-  stroke-dashoffset: 2452;
+  stroke-dasharray: 2551;
+  stroke-dashoffset: 2551;
 }
 #num-367 .lines {
-  stroke-dasharray: 2650;
-  stroke-dashoffset: 2650;
+  stroke-dasharray: 2551;
+  stroke-dashoffset: 2551;
 }
 #num-368 .lines {
-  stroke-dasharray: 2299;
-  stroke-dashoffset: 2299;
+  stroke-dasharray: 2211;
+  stroke-dashoffset: 2211;
 }
 #num-369 .lines {
   stroke-dasharray: 2231;
@@ -1488,212 +1488,212 @@
   stroke-dashoffset: 2231;
 }
 #num-373 .lines {
-  stroke-dasharray: 2161;
-  stroke-dashoffset: 2161;
+  stroke-dasharray: 2245;
+  stroke-dashoffset: 2245;
 }
 #num-374 .lines {
-  stroke-dasharray: 2412;
-  stroke-dashoffset: 2412;
+  stroke-dasharray: 2530;
+  stroke-dashoffset: 2530;
 }
 #num-375 .lines {
-  stroke-dasharray: 2648;
-  stroke-dashoffset: 2648;
+  stroke-dasharray: 2530;
+  stroke-dashoffset: 2530;
 }
 #num-376 .lines {
-  stroke-dasharray: 2328;
-  stroke-dashoffset: 2328;
+  stroke-dasharray: 2245;
+  stroke-dashoffset: 2245;
 }
 #num-377 .lines {
-  stroke-dasharray: 2585;
-  stroke-dashoffset: 2585;
-}
-#num-378 .lines {
-  stroke-dasharray: 2455;
-  stroke-dashoffset: 2455;
-}
-#num-379 .lines {
-  stroke-dasharray: 2482;
-  stroke-dashoffset: 2482;
-}
-#num-380 .lines {
-  stroke-dasharray: 2586;
-  stroke-dashoffset: 2586;
-}
-#num-381 .lines {
-  stroke-dasharray: 2535;
-  stroke-dashoffset: 2535;
-}
-#num-382 .lines {
   stroke-dasharray: 2602;
   stroke-dashoffset: 2602;
 }
+#num-378 .lines {
+  stroke-dasharray: 2562;
+  stroke-dashoffset: 2562;
+}
+#num-379 .lines {
+  stroke-dasharray: 2561;
+  stroke-dashoffset: 2561;
+}
+#num-380 .lines {
+  stroke-dasharray: 2597;
+  stroke-dashoffset: 2597;
+}
+#num-381 .lines {
+  stroke-dasharray: 2428;
+  stroke-dashoffset: 2428;
+}
+#num-382 .lines {
+  stroke-dasharray: 2585;
+  stroke-dashoffset: 2585;
+}
 #num-383 .lines {
-  stroke-dasharray: 2552;
-  stroke-dashoffset: 2552;
+  stroke-dasharray: 2541;
+  stroke-dashoffset: 2541;
 }
 #num-384 .lines {
-  stroke-dasharray: 2424;
-  stroke-dashoffset: 2424;
-}
-#num-385 .lines {
-  stroke-dasharray: 2533;
-  stroke-dashoffset: 2533;
-}
-#num-386 .lines {
-  stroke-dasharray: 2604;
-  stroke-dashoffset: 2604;
-}
-#num-387 .lines {
-  stroke-dasharray: 2589;
-  stroke-dashoffset: 2589;
-}
-#num-388 .lines {
-  stroke-dasharray: 2379;
-  stroke-dashoffset: 2379;
-}
-#num-389 .lines {
-  stroke-dasharray: 2563;
-  stroke-dashoffset: 2563;
-}
-#num-390 .lines {
-  stroke-dasharray: 2460;
-  stroke-dashoffset: 2460;
-}
-#num-391 .lines {
-  stroke-dasharray: 2461;
-  stroke-dashoffset: 2461;
-}
-#num-392 .lines {
-  stroke-dasharray: 2579;
-  stroke-dashoffset: 2579;
-}
-#num-393 .lines {
-  stroke-dasharray: 2399;
-  stroke-dashoffset: 2399;
-}
-#num-394 .lines {
-  stroke-dasharray: 2579;
-  stroke-dashoffset: 2579;
-}
-#num-395 .lines {
-  stroke-dasharray: 2669;
-  stroke-dashoffset: 2669;
-}
-#num-396 .lines {
-  stroke-dasharray: 2584;
-  stroke-dashoffset: 2584;
-}
-#num-397 .lines {
-  stroke-dasharray: 2559;
-  stroke-dashoffset: 2559;
-}
-#num-398 .lines {
-  stroke-dasharray: 2401;
-  stroke-dashoffset: 2401;
-}
-#num-399 .lines {
-  stroke-dasharray: 2426;
-  stroke-dashoffset: 2426;
-}
-#num-400 .lines {
-  stroke-dasharray: 2669;
-  stroke-dashoffset: 2669;
-}
-#num-401 .lines {
-  stroke-dasharray: 2375;
-  stroke-dashoffset: 2375;
-}
-#num-402 .lines {
-  stroke-dasharray: 2573;
-  stroke-dashoffset: 2573;
-}
-#num-403 .lines {
-  stroke-dasharray: 2651;
-  stroke-dashoffset: 2651;
-}
-#num-404 .lines {
-  stroke-dasharray: 2593;
-  stroke-dashoffset: 2593;
-}
-#num-405 .lines {
-  stroke-dasharray: 2536;
-  stroke-dashoffset: 2536;
-}
-#num-406 .lines {
-  stroke-dasharray: 2405;
-  stroke-dashoffset: 2405;
-}
-#num-407 .lines {
-  stroke-dasharray: 2405;
-  stroke-dashoffset: 2405;
-}
-#num-408 .lines {
-  stroke-dasharray: 2662;
-  stroke-dashoffset: 2662;
-}
-#num-409 .lines {
-  stroke-dasharray: 2326;
-  stroke-dashoffset: 2326;
-}
-#num-410 .lines {
-  stroke-dasharray: 2486;
-  stroke-dashoffset: 2486;
-}
-#num-411 .lines {
-  stroke-dasharray: 2441;
-  stroke-dashoffset: 2441;
-}
-#num-412 .lines {
   stroke-dasharray: 2344;
   stroke-dashoffset: 2344;
 }
+#num-385 .lines {
+  stroke-dasharray: 2424;
+  stroke-dashoffset: 2424;
+}
+#num-386 .lines {
+  stroke-dasharray: 2585;
+  stroke-dashoffset: 2585;
+}
+#num-387 .lines {
+  stroke-dasharray: 2578;
+  stroke-dashoffset: 2578;
+}
+#num-388 .lines {
+  stroke-dasharray: 2301;
+  stroke-dashoffset: 2301;
+}
+#num-389 .lines {
+  stroke-dasharray: 2581;
+  stroke-dashoffset: 2581;
+}
+#num-390 .lines {
+  stroke-dasharray: 2569;
+  stroke-dashoffset: 2569;
+}
+#num-391 .lines {
+  stroke-dasharray: 2539;
+  stroke-dashoffset: 2539;
+}
+#num-392 .lines {
+  stroke-dasharray: 2590;
+  stroke-dashoffset: 2590;
+}
+#num-393 .lines {
+  stroke-dasharray: 2413;
+  stroke-dashoffset: 2413;
+}
+#num-394 .lines {
+  stroke-dasharray: 2624;
+  stroke-dashoffset: 2624;
+}
+#num-395 .lines {
+  stroke-dasharray: 2614;
+  stroke-dashoffset: 2614;
+}
+#num-396 .lines {
+  stroke-dasharray: 2492;
+  stroke-dashoffset: 2492;
+}
+#num-397 .lines {
+  stroke-dasharray: 2614;
+  stroke-dashoffset: 2614;
+}
+#num-398 .lines {
+  stroke-dasharray: 2492;
+  stroke-dashoffset: 2492;
+}
+#num-399 .lines {
+  stroke-dasharray: 2413;
+  stroke-dashoffset: 2413;
+}
+#num-400 .lines {
+  stroke-dasharray: 2624;
+  stroke-dashoffset: 2624;
+}
+#num-401 .lines {
+  stroke-dasharray: 2390;
+  stroke-dashoffset: 2390;
+}
+#num-402 .lines {
+  stroke-dasharray: 2617;
+  stroke-dashoffset: 2617;
+}
+#num-403 .lines {
+  stroke-dasharray: 2594;
+  stroke-dashoffset: 2594;
+}
+#num-404 .lines {
+  stroke-dasharray: 2499;
+  stroke-dashoffset: 2499;
+}
+#num-405 .lines {
+  stroke-dasharray: 2594;
+  stroke-dashoffset: 2594;
+}
+#num-406 .lines {
+  stroke-dasharray: 2499;
+  stroke-dashoffset: 2499;
+}
+#num-407 .lines {
+  stroke-dasharray: 2390;
+  stroke-dashoffset: 2390;
+}
+#num-408 .lines {
+  stroke-dasharray: 2617;
+  stroke-dashoffset: 2617;
+}
+#num-409 .lines {
+  stroke-dasharray: 2429;
+  stroke-dashoffset: 2429;
+}
+#num-410 .lines {
+  stroke-dasharray: 2498;
+  stroke-dashoffset: 2498;
+}
+#num-411 .lines {
+  stroke-dasharray: 2456;
+  stroke-dashoffset: 2456;
+}
+#num-412 .lines {
+  stroke-dasharray: 2457;
+  stroke-dashoffset: 2457;
+}
 #num-413 .lines {
-  stroke-dasharray: 2488;
-  stroke-dashoffset: 2488;
+  stroke-dasharray: 2517;
+  stroke-dashoffset: 2517;
 }
 #num-414 .lines {
-  stroke-dasharray: 2164;
-  stroke-dashoffset: 2164;
+  stroke-dasharray: 2275;
+  stroke-dashoffset: 2275;
 }
 #num-415 .lines {
-  stroke-dasharray: 2336;
-  stroke-dashoffset: 2336;
+  stroke-dasharray: 2437;
+  stroke-dashoffset: 2437;
 }
 #num-416 .lines {
-  stroke-dasharray: 2564;
-  stroke-dashoffset: 2564;
+  stroke-dasharray: 2591;
+  stroke-dashoffset: 2591;
 }
 #num-417 .lines {
-  stroke-dasharray: 2555;
-  stroke-dashoffset: 2555;
+  stroke-dasharray: 2583;
+  stroke-dashoffset: 2583;
 }
 #num-418 .lines {
-  stroke-dasharray: 1996;
-  stroke-dashoffset: 1996;
+  stroke-dasharray: 2119;
+  stroke-dashoffset: 2119;
 }
 #num-419 .lines {
-  stroke-dasharray: 1968;
-  stroke-dashoffset: 1968;
+  stroke-dasharray: 2093;
+  stroke-dashoffset: 2093;
 }
 #num-420 .lines {
-  stroke-dasharray: 2564;
-  stroke-dashoffset: 2564;
+  stroke-dasharray: 2585;
+  stroke-dashoffset: 2585;
 }
 #num-421 .lines {
-  stroke-dasharray: 2202;
-  stroke-dashoffset: 2202;
+  stroke-dasharray: 2317;
+  stroke-dashoffset: 2317;
 }
 #num-422 .lines {
-  stroke-dasharray: 2579;
-  stroke-dashoffset: 2579;
+  stroke-dasharray: 2588;
+  stroke-dashoffset: 2588;
 }
 #num-423 .lines {
-  stroke-dasharray: 2574;
-  stroke-dashoffset: 2574;
+  stroke-dasharray: 2590;
+  stroke-dashoffset: 2590;
 }
 #num-424 .lines {
-  stroke-dasharray: 2177;
-  stroke-dashoffset: 2177;
+  stroke-dasharray: 2291;
+  stroke-dashoffset: 2291;
 }
 #num-425 .lines {
   stroke-dasharray: 2324;
@@ -1744,36 +1744,36 @@
   stroke-dashoffset: 2232;
 }
 #num-437 .lines {
-  stroke-dasharray: 2401;
-  stroke-dashoffset: 2401;
+  stroke-dasharray: 2492;
+  stroke-dashoffset: 2492;
 }
 #num-438 .lines {
-  stroke-dasharray: 2559;
-  stroke-dashoffset: 2559;
+  stroke-dasharray: 2614;
+  stroke-dashoffset: 2614;
 }
 #num-439 .lines {
-  stroke-dasharray: 2669;
-  stroke-dashoffset: 2669;
+  stroke-dasharray: 2624;
+  stroke-dashoffset: 2624;
 }
 #num-440 .lines {
-  stroke-dasharray: 2426;
-  stroke-dashoffset: 2426;
+  stroke-dasharray: 2413;
+  stroke-dashoffset: 2413;
 }
 #num-441 .lines {
-  stroke-dasharray: 2399;
-  stroke-dashoffset: 2399;
+  stroke-dasharray: 2413;
+  stroke-dashoffset: 2413;
 }
 #num-442 .lines {
-  stroke-dasharray: 2579;
-  stroke-dashoffset: 2579;
+  stroke-dasharray: 2624;
+  stroke-dashoffset: 2624;
 }
 #num-443 .lines {
-  stroke-dasharray: 2669;
-  stroke-dashoffset: 2669;
+  stroke-dasharray: 2614;
+  stroke-dashoffset: 2614;
 }
 #num-444 .lines {
-  stroke-dasharray: 2584;
-  stroke-dashoffset: 2584;
+  stroke-dasharray: 2492;
+  stroke-dashoffset: 2492;
 }
 #num-445 .lines {
   stroke-dasharray: 2275;
@@ -1840,20 +1840,20 @@
   stroke-dashoffset: 2411;
 }
 #num-461 .lines {
-  stroke-dasharray: 2405;
-  stroke-dashoffset: 2405;
+  stroke-dasharray: 2499;
+  stroke-dashoffset: 2499;
 }
 #num-462 .lines {
-  stroke-dasharray: 2536;
-  stroke-dashoffset: 2536;
+  stroke-dasharray: 2594;
+  stroke-dashoffset: 2594;
 }
 #num-463 .lines {
-  stroke-dasharray: 2662;
-  stroke-dashoffset: 2662;
+  stroke-dasharray: 2617;
+  stroke-dashoffset: 2617;
 }
 #num-464 .lines {
-  stroke-dasharray: 2405;
-  stroke-dashoffset: 2405;
+  stroke-dasharray: 2390;
+  stroke-dashoffset: 2390;
 }
 #num-465 .lines {
   stroke-dasharray: 2521;
@@ -1984,20 +1984,20 @@
   stroke-dashoffset: 2429;
 }
 #num-497 .lines {
-  stroke-dasharray: 2573;
-  stroke-dashoffset: 2573;
+  stroke-dasharray: 2617;
+  stroke-dashoffset: 2617;
 }
 #num-498 .lines {
-  stroke-dasharray: 2375;
-  stroke-dashoffset: 2375;
+  stroke-dasharray: 2390;
+  stroke-dashoffset: 2390;
 }
 #num-499 .lines {
-  stroke-dasharray: 2593;
-  stroke-dashoffset: 2593;
+  stroke-dasharray: 2499;
+  stroke-dashoffset: 2499;
 }
 #num-500 .lines {
-  stroke-dasharray: 2651;
-  stroke-dashoffset: 2651;
+  stroke-dasharray: 2594;
+  stroke-dashoffset: 2594;
 }
 #num-501 .lines {
   stroke-dasharray: 2551;
@@ -2016,20 +2016,20 @@
   stroke-dashoffset: 2551;
 }
 #num-505 .lines {
-  stroke-dasharray: 2691;
-  stroke-dashoffset: 2691;
+  stroke-dasharray: 2593;
+  stroke-dashoffset: 2593;
 }
 #num-506 .lines {
-  stroke-dasharray: 2623;
-  stroke-dashoffset: 2623;
+  stroke-dasharray: 2536;
+  stroke-dashoffset: 2536;
 }
 #num-507 .lines {
-  stroke-dasharray: 2448;
-  stroke-dashoffset: 2448;
+  stroke-dasharray: 2536;
+  stroke-dashoffset: 2536;
 }
 #num-508 .lines {
-  stroke-dasharray: 2494;
-  stroke-dashoffset: 2494;
+  stroke-dasharray: 2593;
+  stroke-dashoffset: 2593;
 }
 #num-509 .lines {
   stroke-dasharray: 2516;
@@ -2064,20 +2064,20 @@
   stroke-dashoffset: 2613;
 }
 #num-517 .lines {
-  stroke-dasharray: 2494;
-  stroke-dashoffset: 2494;
+  stroke-dasharray: 2593;
+  stroke-dashoffset: 2593;
 }
 #num-518 .lines {
-  stroke-dasharray: 2448;
-  stroke-dashoffset: 2448;
+  stroke-dasharray: 2536;
+  stroke-dashoffset: 2536;
 }
 #num-519 .lines {
-  stroke-dasharray: 2623;
-  stroke-dashoffset: 2623;
+  stroke-dasharray: 2536;
+  stroke-dashoffset: 2536;
 }
 #num-520 .lines {
-  stroke-dasharray: 2691;
-  stroke-dashoffset: 2691;
+  stroke-dasharray: 2593;
+  stroke-dashoffset: 2593;
 }
 #num-521 .lines {
   stroke-dasharray: 2551;
@@ -2224,36 +2224,36 @@
   stroke-dashoffset: 2602;
 }
 #num-557 .lines {
-  stroke-dasharray: 2624;
-  stroke-dashoffset: 2624;
+  stroke-dasharray: 2643;
+  stroke-dashoffset: 2643;
 }
 #num-558 .lines {
-  stroke-dasharray: 2522;
-  stroke-dashoffset: 2522;
+  stroke-dasharray: 2541;
+  stroke-dashoffset: 2541;
 }
 #num-559 .lines {
-  stroke-dasharray: 2522;
-  stroke-dashoffset: 2522;
+  stroke-dasharray: 2541;
+  stroke-dashoffset: 2541;
 }
 #num-560 .lines {
-  stroke-dasharray: 2624;
-  stroke-dashoffset: 2624;
+  stroke-dasharray: 2643;
+  stroke-dashoffset: 2643;
 }
 #num-561 .lines {
-  stroke-dasharray: 2662;
-  stroke-dashoffset: 2662;
+  stroke-dasharray: 2643;
+  stroke-dashoffset: 2643;
 }
 #num-562 .lines {
-  stroke-dasharray: 2560;
-  stroke-dashoffset: 2560;
+  stroke-dasharray: 2541;
+  stroke-dashoffset: 2541;
 }
 #num-563 .lines {
-  stroke-dasharray: 2560;
-  stroke-dashoffset: 2560;
+  stroke-dasharray: 2541;
+  stroke-dashoffset: 2541;
 }
 #num-564 .lines {
-  stroke-dasharray: 2662;
-  stroke-dashoffset: 2662;
+  stroke-dasharray: 2643;
+  stroke-dashoffset: 2643;
 }
 #num-565 .lines {
   stroke-dasharray: 2457;
@@ -2304,20 +2304,20 @@
   stroke-dashoffset: 2526;
 }
 #num-577 .lines {
-  stroke-dasharray: 2472;
-  stroke-dashoffset: 2472;
+  stroke-dasharray: 2456;
+  stroke-dashoffset: 2456;
 }
 #num-578 .lines {
-  stroke-dasharray: 2570;
-  stroke-dashoffset: 2570;
+  stroke-dasharray: 2457;
+  stroke-dashoffset: 2457;
 }
 #num-579 .lines {
-  stroke-dasharray: 2531;
-  stroke-dashoffset: 2531;
+  stroke-dasharray: 2429;
+  stroke-dashoffset: 2429;
 }
 #num-580 .lines {
-  stroke-dasharray: 2509;
-  stroke-dashoffset: 2509;
+  stroke-dasharray: 2498;
+  stroke-dashoffset: 2498;
 }
 #num-581 .lines {
   stroke-dasharray: 2435;
@@ -2384,68 +2384,68 @@
   stroke-dashoffset: 2251;
 }
 #num-597 .lines {
-  stroke-dasharray: 2669;
-  stroke-dashoffset: 2669;
+  stroke-dasharray: 2562;
+  stroke-dashoffset: 2562;
 }
 #num-598 .lines {
-  stroke-dasharray: 2618;
-  stroke-dashoffset: 2618;
-}
-#num-599 .lines {
-  stroke-dasharray: 2609;
-  stroke-dashoffset: 2609;
-}
-#num-600 .lines {
-  stroke-dasharray: 2641;
-  stroke-dashoffset: 2641;
-}
-#num-601 .lines {
-  stroke-dasharray: 2265;
-  stroke-dashoffset: 2265;
-}
-#num-602 .lines {
-  stroke-dasharray: 2530;
-  stroke-dashoffset: 2530;
-}
-#num-603 .lines {
-  stroke-dasharray: 2569;
-  stroke-dashoffset: 2569;
-}
-#num-604 .lines {
-  stroke-dasharray: 2321;
-  stroke-dashoffset: 2321;
-}
-#num-605 .lines {
-  stroke-dasharray: 2223;
-  stroke-dashoffset: 2223;
-}
-#num-606 .lines {
-  stroke-dasharray: 2567;
-  stroke-dashoffset: 2567;
-}
-#num-607 .lines {
-  stroke-dasharray: 2566;
-  stroke-dashoffset: 2566;
-}
-#num-608 .lines {
-  stroke-dasharray: 2315;
-  stroke-dashoffset: 2315;
-}
-#num-609 .lines {
-  stroke-dasharray: 2678;
-  stroke-dashoffset: 2678;
-}
-#num-610 .lines {
-  stroke-dasharray: 2600;
-  stroke-dashoffset: 2600;
-}
-#num-611 .lines {
   stroke-dasharray: 2602;
   stroke-dashoffset: 2602;
 }
+#num-599 .lines {
+  stroke-dasharray: 2597;
+  stroke-dashoffset: 2597;
+}
+#num-600 .lines {
+  stroke-dasharray: 2561;
+  stroke-dashoffset: 2561;
+}
+#num-601 .lines {
+  stroke-dasharray: 2344;
+  stroke-dashoffset: 2344;
+}
+#num-602 .lines {
+  stroke-dasharray: 2541;
+  stroke-dashoffset: 2541;
+}
+#num-603 .lines {
+  stroke-dasharray: 2585;
+  stroke-dashoffset: 2585;
+}
+#num-604 .lines {
+  stroke-dasharray: 2428;
+  stroke-dashoffset: 2428;
+}
+#num-605 .lines {
+  stroke-dasharray: 2301;
+  stroke-dashoffset: 2301;
+}
+#num-606 .lines {
+  stroke-dasharray: 2578;
+  stroke-dashoffset: 2578;
+}
+#num-607 .lines {
+  stroke-dasharray: 2585;
+  stroke-dashoffset: 2585;
+}
+#num-608 .lines {
+  stroke-dasharray: 2424;
+  stroke-dashoffset: 2424;
+}
+#num-609 .lines {
+  stroke-dasharray: 2569;
+  stroke-dashoffset: 2569;
+}
+#num-610 .lines {
+  stroke-dasharray: 2581;
+  stroke-dashoffset: 2581;
+}
+#num-611 .lines {
+  stroke-dasharray: 2590;
+  stroke-dashoffset: 2590;
+}
 #num-612 .lines {
-  stroke-dasharray: 2617;
-  stroke-dashoffset: 2617;
+  stroke-dasharray: 2539;
+  stroke-dashoffset: 2539;
 }
 #num-613 .lines {
   stroke-dasharray: 2450;
@@ -2496,20 +2496,20 @@
   stroke-dashoffset: 2459;
 }
 #num-625 .lines {
-  stroke-dasharray: 2431;
-  stroke-dashoffset: 2431;
+  stroke-dasharray: 2534;
+  stroke-dashoffset: 2534;
 }
 #num-626 .lines {
-  stroke-dasharray: 2234;
-  stroke-dashoffset: 2234;
+  stroke-dasharray: 2353;
+  stroke-dashoffset: 2353;
 }
 #num-627 .lines {
-  stroke-dasharray: 2472;
-  stroke-dashoffset: 2472;
+  stroke-dasharray: 2353;
+  stroke-dashoffset: 2353;
 }
 #num-628 .lines {
-  stroke-dasharray: 2637;
-  stroke-dashoffset: 2637;
+  stroke-dasharray: 2534;
+  stroke-dashoffset: 2534;
 }
 #num-629 .lines {
   stroke-dasharray: 2567;
@@ -2576,20 +2576,20 @@
   stroke-dashoffset: 2567;
 }
 #num-645 .lines {
-  stroke-dasharray: 2431;
-  stroke-dashoffset: 2431;
+  stroke-dasharray: 2534;
+  stroke-dashoffset: 2534;
 }
 #num-646 .lines {
-  stroke-dasharray: 2234;
-  stroke-dashoffset: 2234;
+  stroke-dasharray: 2353;
+  stroke-dashoffset: 2353;
 }
 #num-647 .lines {
-  stroke-dasharray: 2472;
-  stroke-dashoffset: 2472;
+  stroke-dasharray: 2353;
+  stroke-dashoffset: 2353;
 }
 #num-648 .lines {
-  stroke-dasharray: 2637;
-  stroke-dashoffset: 2637;
+  stroke-dasharray: 2534;
+  stroke-dashoffset: 2534;
 }
 #num-649 .lines {
   stroke-dasharray: 2444;
@@ -2608,20 +2608,20 @@
   stroke-dashoffset: 2308;
 }
 #num-653 .lines {
-  stroke-dasharray: 2459;
-  stroke-dashoffset: 2459;
+  stroke-dasharray: 2542;
+  stroke-dashoffset: 2542;
 }
 #num-654 .lines {
-  stroke-dasharray: 2386;
-  stroke-dashoffset: 2386;
+  stroke-dasharray: 2504;
+  stroke-dashoffset: 2504;
 }
 #num-655 .lines {
-  stroke-dasharray: 2622;
-  stroke-dashoffset: 2622;
+  stroke-dasharray: 2504;
+  stroke-dashoffset: 2504;
 }
 #num-656 .lines {
-  stroke-dasharray: 2626;
-  stroke-dashoffset: 2626;
+  stroke-dasharray: 2542;
+  stroke-dashoffset: 2542;
 }
 #num-657 .lines {
   stroke-dasharray: 2515;
@@ -2672,20 +2672,20 @@
   stroke-dashoffset: 2547;
 }
 #num-669 .lines {
-  stroke-dasharray: 2448;
-  stroke-dashoffset: 2448;
+  stroke-dasharray: 2536;
+  stroke-dashoffset: 2536;
 }
 #num-670 .lines {
-  stroke-dasharray: 2494;
-  stroke-dashoffset: 2494;
+  stroke-dasharray: 2593;
+  stroke-dashoffset: 2593;
 }
 #num-671 .lines {
-  stroke-dasharray: 2691;
-  stroke-dashoffset: 2691;
+  stroke-dasharray: 2593;
+  stroke-dashoffset: 2593;
 }
 #num-672 .lines {
-  stroke-dasharray: 2623;
-  stroke-dashoffset: 2623;
+  stroke-dasharray: 2536;
+  stroke-dashoffset: 2536;
 }
 #num-673 .lines {
   stroke-dasharray: 2613;
@@ -2752,20 +2752,20 @@
   stroke-dashoffset: 2613;
 }
 #num-689 .lines {
-  stroke-dasharray: 2448;
-  stroke-dashoffset: 2448;
+  stroke-dasharray: 2536;
+  stroke-dashoffset: 2536;
 }
 #num-690 .lines {
-  stroke-dasharray: 2494;
-  stroke-dashoffset: 2494;
+  stroke-dasharray: 2593;
+  stroke-dashoffset: 2593;
 }
 #num-691 .lines {
-  stroke-dasharray: 2691;
-  stroke-dashoffset: 2691;
+  stroke-dasharray: 2593;
+  stroke-dashoffset: 2593;
 }
 #num-692 .lines {
-  stroke-dasharray: 2623;
-  stroke-dashoffset: 2623;
+  stroke-dasharray: 2536;
+  stroke-dashoffset: 2536;
 }
 #num-693 .lines {
   stroke-dasharray: 2547;
@@ -2784,36 +2784,36 @@
   stroke-dashoffset: 2547;
 }
 #num-697 .lines {
-  stroke-dasharray: 2459;
-  stroke-dashoffset: 2459;
+  stroke-dasharray: 2542;
+  stroke-dashoffset: 2542;
 }
 #num-698 .lines {
-  stroke-dasharray: 2386;
-  stroke-dashoffset: 2386;
+  stroke-dasharray: 2504;
+  stroke-dashoffset: 2504;
 }
 #num-699 .lines {
-  stroke-dasharray: 2622;
-  stroke-dashoffset: 2622;
+  stroke-dasharray: 2504;
+  stroke-dashoffset: 2504;
 }
 #num-700 .lines {
-  stroke-dasharray: 2626;
-  stroke-dashoffset: 2626;
+  stroke-dasharray: 2542;
+  stroke-dashoffset: 2542;
 }
 #num-701 .lines {
-  stroke-dasharray: 2423;
-  stroke-dashoffset: 2423;
+  stroke-dasharray: 2450;
+  stroke-dashoffset: 2450;
 }
 #num-702 .lines {
-  stroke-dasharray: 2152;
-  stroke-dashoffset: 2152;
+  stroke-dasharray: 2186;
+  stroke-dashoffset: 2186;
 }
 #num-703 .lines {
-  stroke-dasharray: 2470;
-  stroke-dashoffset: 2470;
+  stroke-dasharray: 2406;
+  stroke-dashoffset: 2406;
 }
 #num-704 .lines {
-  stroke-dasharray: 2529;
-  stroke-dashoffset: 2529;
+  stroke-dasharray: 2506;
+  stroke-dashoffset: 2506;
 }
 #num-705 .lines {
   stroke-dasharray: 2531;
@@ -2848,20 +2848,20 @@
   stroke-dashoffset: 2402;
 }
 #num-713 .lines {
-  stroke-dasharray: 2482;
-  stroke-dashoffset: 2482;
+  stroke-dasharray: 2506;
+  stroke-dashoffset: 2506;
 }
 #num-714 .lines {
-  stroke-dasharray: 2342;
-  stroke-dashoffset: 2342;
+  stroke-dasharray: 2406;
+  stroke-dashoffset: 2406;
 }
 #num-715 .lines {
-  stroke-dasharray: 2221;
-  stroke-dashoffset: 2221;
+  stroke-dasharray: 2186;
+  stroke-dashoffset: 2186;
 }
 #num-716 .lines {
-  stroke-dasharray: 2476;
-  stroke-dashoffset: 2476;
+  stroke-dasharray: 2450;
+  stroke-dashoffset: 2450;
 }
 #num-717 .lines {
   stroke-dasharray: 2369;
@@ -3184,52 +3184,52 @@
   stroke-dashoffset: 2312;
 }
 #num-797 .lines {
-  stroke-dasharray: 2538;
-  stroke-dashoffset: 2538;
+  stroke-dasharray: 2437;
+  stroke-dashoffset: 2437;
 }
 #num-798 .lines {
-  stroke-dasharray: 2618;
-  stroke-dashoffset: 2618;
+  stroke-dasharray: 2591;
+  stroke-dashoffset: 2591;
 }
 #num-799 .lines {
-  stroke-dasharray: 2545;
-  stroke-dashoffset: 2545;
+  stroke-dasharray: 2517;
+  stroke-dashoffset: 2517;
 }
 #num-800 .lines {
-  stroke-dasharray: 2386;
-  stroke-dashoffset: 2386;
+  stroke-dasharray: 2275;
+  stroke-dashoffset: 2275;
 }
 #num-801 .lines {
-  stroke-dasharray: 2432;
-  stroke-dashoffset: 2432;
+  stroke-dasharray: 2317;
+  stroke-dashoffset: 2317;
 }
 #num-802 .lines {
-  stroke-dasharray: 2596;
-  stroke-dashoffset: 2596;
+  stroke-dasharray: 2588;
+  stroke-dashoffset: 2588;
 }
 #num-803 .lines {
-  stroke-dasharray: 2605;
-  stroke-dashoffset: 2605;
+  stroke-dasharray: 2590;
+  stroke-dashoffset: 2590;
 }
 #num-804 .lines {
-  stroke-dasharray: 2404;
-  stroke-dashoffset: 2404;
+  stroke-dasharray: 2291;
+  stroke-dashoffset: 2291;
 }
 #num-805 .lines {
-  stroke-dasharray: 2217;
-  stroke-dashoffset: 2217;
+  stroke-dasharray: 2093;
+  stroke-dashoffset: 2093;
 }
 #num-806 .lines {
-  stroke-dasharray: 2606;
-  stroke-dashoffset: 2606;
+  stroke-dasharray: 2585;
+  stroke-dashoffset: 2585;
 }
 #num-807 .lines {
-  stroke-dasharray: 2611;
-  stroke-dashoffset: 2611;
+  stroke-dasharray: 2583;
+  stroke-dashoffset: 2583;
 }
 #num-808 .lines {
-  stroke-dasharray: 2243;
-  stroke-dashoffset: 2243;
+  stroke-dasharray: 2119;
+  stroke-dashoffset: 2119;
 }
 #num-809 .lines {
   stroke-dasharray: 2364;
@@ -3328,20 +3328,20 @@
   stroke-dashoffset: 2308;
 }
 #num-833 .lines {
-  stroke-dasharray: 2568;
-  stroke-dashoffset: 2568;
+  stroke-dasharray: 2466;
+  stroke-dashoffset: 2466;
 }
 #num-834 .lines {
-  stroke-dasharray: 2454;
-  stroke-dashoffset: 2454;
+  stroke-dasharray: 2335;
+  stroke-dashoffset: 2335;
 }
 #num-835 .lines {
-  stroke-dasharray: 2216;
-  stroke-dashoffset: 2216;
+  stroke-dasharray: 2335;
+  stroke-dashoffset: 2335;
 }
 #num-836 .lines {
-  stroke-dasharray: 2363;
-  stroke-dashoffset: 2363;
+  stroke-dasharray: 2466;
+  stroke-dashoffset: 2466;
 }
 #num-837 .lines {
   stroke-dasharray: 2594;
@@ -3376,20 +3376,20 @@
   stroke-dashoffset: 2526;
 }
 #num-845 .lines {
-  stroke-dasharray: 2637;
-  stroke-dashoffset: 2637;
+  stroke-dasharray: 2534;
+  stroke-dashoffset: 2534;
 }
 #num-846 .lines {
-  stroke-dasharray: 2472;
-  stroke-dashoffset: 2472;
+  stroke-dasharray: 2353;
+  stroke-dashoffset: 2353;
 }
 #num-847 .lines {
-  stroke-dasharray: 2234;
-  stroke-dashoffset: 2234;
+  stroke-dasharray: 2353;
+  stroke-dashoffset: 2353;
 }
 #num-848 .lines {
-  stroke-dasharray: 2431;
-  stroke-dashoffset: 2431;
+  stroke-dasharray: 2534;
+  stroke-dashoffset: 2534;
 }
 #num-849 .lines {
   stroke-dasharray: 2567;
@@ -3488,34 +3488,34 @@
   stroke-dashoffset: 2567;
 }
 #num-873 .lines {
-  stroke-dasharray: 2637;
-  stroke-dashoffset: 2637;
+  stroke-dasharray: 2534;
+  stroke-dashoffset: 2534;
 }
 #num-874 .lines {
-  stroke-dasharray: 2472;
-  stroke-dashoffset: 2472;
+  stroke-dasharray: 2353;
+  stroke-dashoffset: 2353;
 }
 #num-875 .lines {
-  stroke-dasharray: 2234;
-  stroke-dashoffset: 2234;
+  stroke-dasharray: 2353;
+  stroke-dashoffset: 2353;
 }
 #num-876 .lines {
-  stroke-dasharray: 2431;
-  stroke-dashoffset: 2431;
+  stroke-dasharray: 2534;
+  stroke-dashoffset: 2534;
 }
 #num-877 .lines {
-  stroke-dasharray: 2568;
-  stroke-dashoffset: 2568;
+  stroke-dasharray: 2466;
+  stroke-dashoffset: 2466;
 }
 #num-878 .lines {
-  stroke-dasharray: 2454;
-  stroke-dashoffset: 2454;
+  stroke-dasharray: 2335;
+  stroke-dashoffset: 2335;
 }
 #num-879 .lines {
-  stroke-dasharray: 2216;
-  stroke-dashoffset: 2216;
+  stroke-dasharray: 2335;
+  stroke-dashoffset: 2335;
 }
 #num-880 .lines {
-  stroke-dasharray: 2363;
-  stroke-dashoffset: 2363;
+  stroke-dasharray: 2466;
+  stroke-dashoffset: 2466;
 }
