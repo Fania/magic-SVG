@@ -28,13 +28,18 @@ function filterByLength(len, type) {
 
 
 function populateOptions(style) {
-  let list = eval(`${style}Lens`);
   lenOptions.innerHTML = "";
-  for (let l in list) {
-    let opt = document.createElement("option");
-    opt.value = l;
-    opt.innerText = `${l} (${list[l].length})`;
-    lenOptions.appendChild(opt);
+  if(style !== "numbers") {
+    let list = eval(`${style}Lens`);
+    lenOptions.disabled=false;
+    for (let l in list) {
+      let opt = document.createElement("option");
+      opt.value = l;
+      opt.innerText = `${l} (${list[l].length})`;
+      lenOptions.appendChild(opt);
+    }
+  } else {
+    lenOptions.disabled=true;
   }
 }
 
