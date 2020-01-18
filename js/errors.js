@@ -1,23 +1,21 @@
 const errorChecks = (valuesArray) => {
   const unDupvaluesArray = [...new Set(valuesArray)];
   let dups = valuesArray.length !== unDupvaluesArray.length;
-  // checks for non-numbers
+  // checks for non-numbers:
   if (valuesArray.includes(NaN)) {
     dataArray = [...new Set(valuesArray.filter(Boolean))];
-    // removes non-numbers:
-    // valuesArray = dataArray;
     let n = valuesArray.findIndex(Number.isNaN)
     return [true, `contains non-numbers (NaN): ${valuesArray}`];
   } else if (dups) {
     return [findDuplicates(valuesArray), `Contains duplicated numbers: ${findDuplicates(valuesArray)}`];
+    // return [true, `Contains duplicated numbers: ${calcDup s(valuesArray, unDupvaluesArray)}`];
     // return [true, valuesArray.filter(x => unDupvaluesArray.includes(x))];
-    // return [true, `Contains duplicated numbers: ${calcDups(valuesArray, unDupvaluesArray)}`];
   } else {
-    // contains only contiguous integers:
-    // sorts valuesArray
+    // checks for contiguous integers:
+    // duplicates and sorts valuesArray
     const valuesArraySorted = [...valuesArray];
     valuesArraySorted.sort((a, b) => a - b);
-    // creates new array from 1 to length of valuesArray
+    // creates new array with the length of valuesArray
     let ArrayLen = [...valuesArray.keys()];
     // compares sorted array with a contiguous array of same length
     ArrayLen = ArrayLen.map((val) => val + 1 );
