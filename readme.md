@@ -43,8 +43,10 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] progress bar (loading) for animate
 - [ ] hide settings after drawing
 - [ ] redesign menu
-- [ ] hardcode lengths
+- [x] hardcode lengths
 - [ ] filters
+- [ ] write library of helper function for hardcoding
+- [ ] give option of inputting numbers of squares
 
 
 ## References

@@ -1,5279 +1,881 @@
-#num-1 .lines {
-  stroke-dasharray: 2284;
-  stroke-dashoffset: 2284;
-  animation: dash 4.568s ease-in-out alternate infinite;
-}
-
-#num-2 .lines {
-  stroke-dasharray: 2478;
-  stroke-dashoffset: 2478;
-  animation: dash 4.956s ease-in-out alternate infinite;
-}
-
-#num-3 .lines {
-  stroke-dasharray: 2694;
-  stroke-dashoffset: 2694;
-  animation: dash 5.388s ease-in-out alternate infinite;
-}
-
-#num-4 .lines {
-  stroke-dasharray: 2559;
-  stroke-dashoffset: 2559;
-  animation: dash 5.118s ease-in-out alternate infinite;
-}
-
-#num-5 .lines {
-  stroke-dasharray: 2284;
-  stroke-dashoffset: 2284;
-  animation: dash 4.568s ease-in-out alternate infinite;
-}
-
-#num-6 .lines {
-  stroke-dasharray: 2479;
-  stroke-dashoffset: 2479;
-  animation: dash 4.958s ease-in-out alternate infinite;
-}
-
-#num-7 .lines {
-  stroke-dasharray: 2694;
-  stroke-dashoffset: 2694;
-  animation: dash 5.388s ease-in-out alternate infinite;
-}
-
-#num-8 .lines {
-  stroke-dasharray: 2559;
-  stroke-dashoffset: 2559;
-  animation: dash 5.118s ease-in-out alternate infinite;
-}
-
-#num-9 .lines {
-  stroke-dasharray: 2511;
-  stroke-dashoffset: 2511;
-  animation: dash 5.022s ease-in-out alternate infinite;
-}
-
-#num-10 .lines {
-  stroke-dasharray: 3417;
-  stroke-dashoffset: 3417;
-  animation: dash 6.834s ease-in-out alternate infinite;
-}
-
-#num-11 .lines {
-  stroke-dasharray: 3318;
-  stroke-dashoffset: 3318;
-  animation: dash 6.636s ease-in-out alternate infinite;
-}
-
-#num-12 .lines {
-  stroke-dasharray: 2472;
-  stroke-dashoffset: 2472;
-  animation: dash 4.944s ease-in-out alternate infinite;
-}
-
-#num-13 .lines {
-  stroke-dasharray: 2181;
-  stroke-dashoffset: 2181;
-  animation: dash 4.362s ease-in-out alternate infinite;
-}
-
-#num-14 .lines {
-  stroke-dasharray: 2888;
-  stroke-dashoffset: 2888;
-  animation: dash 5.776s ease-in-out alternate infinite;
-}
-
-#num-15 .lines {
-  stroke-dasharray: 3417;
-  stroke-dashoffset: 3417;
-  animation: dash 6.834s ease-in-out alternate infinite;
-}
-
-#num-16 .lines {
-  stroke-dasharray: 2769;
-  stroke-dashoffset: 2769;
-  animation: dash 5.538s ease-in-out alternate infinite;
-}
-
-#num-17 .lines {
-  stroke-dasharray: 2220;
-  stroke-dashoffset: 2220;
-  animation: dash 4.44s ease-in-out alternate infinite;
-}
-
-#num-18 .lines {
-  stroke-dasharray: 2470;
-  stroke-dashoffset: 2470;
-  animation: dash 4.94s ease-in-out alternate infinite;
-}
-
-#num-19 .lines {
-  stroke-dasharray: 2745;
-  stroke-dashoffset: 2745;
-  animation: dash 5.49s ease-in-out alternate infinite;
-}
-
-#num-20 .lines {
-  stroke-dasharray: 2435;
-  stroke-dashoffset: 2435;
-  animation: dash 4.87s ease-in-out alternate infinite;
-}
-
-#num-21 .lines {
-  stroke-dasharray: 2507;
-  stroke-dashoffset: 2507;
-  animation: dash 5.014s ease-in-out alternate infinite;
-}
-
-#num-22 .lines {
-  stroke-dasharray: 2256;
-  stroke-dashoffset: 2256;
-  animation: dash 4.512s ease-in-out alternate infinite;
-}
-
-#num-23 .lines {
-  stroke-dasharray: 2471;
-  stroke-dashoffset: 2471;
-  animation: dash 4.942s ease-in-out alternate infinite;
-}
-
-#num-24 .lines {
-  stroke-dasharray: 2781;
-  stroke-dashoffset: 2781;
-  animation: dash 5.562s ease-in-out alternate infinite;
-}
-
-#num-25 .lines {
-  stroke-dasharray: 1856;
-  stroke-dashoffset: 1856;
-  animation: dash 3.712s ease-in-out alternate infinite;
-}
-
-#num-26 .lines {
-  stroke-dasharray: 2485;
-  stroke-dashoffset: 2485;
-  animation: dash 4.97s ease-in-out alternate infinite;
-}
-
-#num-27 .lines {
-  stroke-dasharray: 3289;
-  stroke-dashoffset: 3289;
-  animation: dash 6.578s ease-in-out alternate infinite;
-}
-
-#num-28 .lines {
-  stroke-dasharray: 2660;
-  stroke-dashoffset: 2660;
-  animation: dash 5.32s ease-in-out alternate infinite;
-}
-
-#num-29 .lines {
-  stroke-dasharray: 2083;
-  stroke-dashoffset: 2083;
-  animation: dash 4.166s ease-in-out alternate infinite;
-}
-
-#num-30 .lines {
-  stroke-dasharray: 2485;
-  stroke-dashoffset: 2485;
-  animation: dash 4.97s ease-in-out alternate infinite;
-}
-
-#num-31 .lines {
-  stroke-dasharray: 2655;
-  stroke-dashoffset: 2655;
-  animation: dash 5.31s ease-in-out alternate infinite;
-}
-
-#num-32 .lines {
-  stroke-dasharray: 2312;
-  stroke-dashoffset: 2312;
-  animation: dash 4.624s ease-in-out alternate infinite;
-}
-
-#num-33 .lines {
-  stroke-dasharray: 2019;
-  stroke-dashoffset: 2019;
-  animation: dash 4.038s ease-in-out alternate infinite;
-}
-
-#num-34 .lines {
-  stroke-dasharray: 2485;
-  stroke-dashoffset: 2485;
-  animation: dash 4.97s ease-in-out alternate infinite;
-}
-
-#num-35 .lines {
-  stroke-dasharray: 2739;
-  stroke-dashoffset: 2739;
-  animation: dash 5.478s ease-in-out alternate infinite;
-}
-
-#num-36 .lines {
-  stroke-dasharray: 2393;
-  stroke-dashoffset: 2393;
-  animation: dash 4.786s ease-in-out alternate infinite;
-}
-
-#num-37 .lines {
-  stroke-dasharray: 2305;
-  stroke-dashoffset: 2305;
-  animation: dash 4.61s ease-in-out alternate infinite;
-}
-
-#num-38 .lines {
-  stroke-dasharray: 2485;
-  stroke-dashoffset: 2485;
-  animation: dash 4.97s ease-in-out alternate infinite;
-}
-
-#num-39 .lines {
-  stroke-dasharray: 2210;
-  stroke-dashoffset: 2210;
-  animation: dash 4.42s ease-in-out alternate infinite;
-}
-
-#num-40 .lines {
-  stroke-dasharray: 2090;
-  stroke-dashoffset: 2090;
-  animation: dash 4.18s ease-in-out alternate infinite;
-}
-
-#num-41 .lines {
-  stroke-dasharray: 2535;
-  stroke-dashoffset: 2535;
-  animation: dash 5.07s ease-in-out alternate infinite;
-}
-
-#num-42 .lines {
-  stroke-dasharray: 3099;
-  stroke-dashoffset: 3099;
-  animation: dash 6.198s ease-in-out alternate infinite;
-}
-
-#num-43 .lines {
-  stroke-dasharray: 2615;
-  stroke-dashoffset: 2615;
-  animation: dash 5.23s ease-in-out alternate infinite;
-}
-
-#num-44 .lines {
-  stroke-dasharray: 1991;
-  stroke-dashoffset: 1991;
-  animation: dash 3.982s ease-in-out alternate infinite;
-}
-
-#num-45 .lines {
-  stroke-dasharray: 2294;
-  stroke-dashoffset: 2294;
-  animation: dash 4.588s ease-in-out alternate infinite;
-}
-
-#num-46 .lines {
-  stroke-dasharray: 2889;
-  stroke-dashoffset: 2889;
-  animation: dash 5.778s ease-in-out alternate infinite;
-}
-
-#num-47 .lines {
-  stroke-dasharray: 2830;
-  stroke-dashoffset: 2830;
-  animation: dash 5.66s ease-in-out alternate infinite;
-}
-
-#num-48 .lines {
-  stroke-dasharray: 2353;
-  stroke-dashoffset: 2353;
-  animation: dash 4.706s ease-in-out alternate infinite;
-}
-
-#num-49 .lines {
-  stroke-dasharray: 2527;
-  stroke-dashoffset: 2527;
-  animation: dash 5.054s ease-in-out alternate infinite;
-}
-
-#num-50 .lines {
-  stroke-dasharray: 2929;
-  stroke-dashoffset: 2929;
-  animation: dash 5.858s ease-in-out alternate infinite;
-}
-
-#num-51 .lines {
-  stroke-dasharray: 2340;
-  stroke-dashoffset: 2340;
-  animation: dash 4.68s ease-in-out alternate infinite;
-}
-
-#num-52 .lines {
-  stroke-dasharray: 1998;
-  stroke-dashoffset: 1998;
-  animation: dash 3.996s ease-in-out alternate infinite;
-}
-
-#num-53 .lines {
-  stroke-dasharray: 2241;
-  stroke-dashoffset: 2241;
-  animation: dash 4.482s ease-in-out alternate infinite;
-}
-
-#num-54 .lines {
-  stroke-dasharray: 2615;
-  stroke-dashoffset: 2615;
-  animation: dash 5.23s ease-in-out alternate infinite;
-}
-
-#num-55 .lines {
-  stroke-dasharray: 2555;
-  stroke-dashoffset: 2555;
-  animation: dash 5.11s ease-in-out alternate infinite;
-}
-
-#num-56 .lines {
-  stroke-dasharray: 2301;
-  stroke-dashoffset: 2301;
-  animation: dash 4.602s ease-in-out alternate infinite;
-}
-
-#num-57 .lines {
-  stroke-dasharray: 2459;
-  stroke-dashoffset: 2459;
-  animation: dash 4.918s ease-in-out alternate infinite;
-}
-
-#num-58 .lines {
-  stroke-dasharray: 2686;
-  stroke-dashoffset: 2686;
-  animation: dash 5.372s ease-in-out alternate infinite;
-}
-
-#num-59 .lines {
-  stroke-dasharray: 2470;
-  stroke-dashoffset: 2470;
-  animation: dash 4.94s ease-in-out alternate infinite;
-}
-
-#num-60 .lines {
-  stroke-dasharray: 2184;
-  stroke-dashoffset: 2184;
-  animation: dash 4.368s ease-in-out alternate infinite;
-}
-
-#num-61 .lines {
-  stroke-dasharray: 2289;
-  stroke-dashoffset: 2289;
-  animation: dash 4.578s ease-in-out alternate infinite;
-}
-
-#num-62 .lines {
-  stroke-dasharray: 2960;
-  stroke-dashoffset: 2960;
-  animation: dash 5.92s ease-in-out alternate infinite;
-}
-
-#num-63 .lines {
-  stroke-dasharray: 3190;
-  stroke-dashoffset: 3190;
-  animation: dash 6.38s ease-in-out alternate infinite;
-}
-
-#num-64 .lines {
-  stroke-dasharray: 2459;
-  stroke-dashoffset: 2459;
-  animation: dash 4.918s ease-in-out alternate infinite;
-}
-
-#num-65 .lines {
-  stroke-dasharray: 1986;
-  stroke-dashoffset: 1986;
-  animation: dash 3.972s ease-in-out alternate infinite;
-}
-
-#num-66 .lines {
-  stroke-dasharray: 2758;
-  stroke-dashoffset: 2758;
-  animation: dash 5.516s ease-in-out alternate infinite;
-}
-
-#num-67 .lines {
-  stroke-dasharray: 3502;
-  stroke-dashoffset: 3502;
-  animation: dash 7.004s ease-in-out alternate infinite;
-}
-
-#num-68 .lines {
-  stroke-dasharray: 2850;
-  stroke-dashoffset: 2850;
-  animation: dash 5.7s ease-in-out alternate infinite;
-}
-
-#num-69 .lines {
-  stroke-dasharray: 2495;
-  stroke-dashoffset: 2495;
-  animation: dash 4.99s ease-in-out alternate infinite;
-}
-
-#num-70 .lines {
-  stroke-dasharray: 3202;
-  stroke-dashoffset: 3202;
-  animation: dash 6.404s ease-in-out alternate infinite;
-}
-
-#num-71 .lines {
-  stroke-dasharray: 3103;
-  stroke-dashoffset: 3103;
-  animation: dash 6.206s ease-in-out alternate infinite;
-}
-
-#num-72 .lines {
-  stroke-dasharray: 2455;
-  stroke-dashoffset: 2455;
-  animation: dash 4.91s ease-in-out alternate infinite;
-}
-
-#num-73 .lines {
-  stroke-dasharray: 2677;
-  stroke-dashoffset: 2677;
-  animation: dash 5.354s ease-in-out alternate infinite;
-}
-
-#num-74 .lines {
-  stroke-dasharray: 2710;
-  stroke-dashoffset: 2710;
-  animation: dash 5.42s ease-in-out alternate infinite;
-}
-
-#num-75 .lines {
-  stroke-dasharray: 3214;
-  stroke-dashoffset: 3214;
-  animation: dash 6.428s ease-in-out alternate infinite;
-}
-
-#num-76 .lines {
-  stroke-dasharray: 3063;
-  stroke-dashoffset: 3063;
-  animation: dash 6.126s ease-in-out alternate infinite;
-}
-
-#num-77 .lines {
-  stroke-dasharray: 2689;
-  stroke-dashoffset: 2689;
-  animation: dash 5.378s ease-in-out alternate infinite;
-}
-
-#num-78 .lines {
-  stroke-dasharray: 2630;
-  stroke-dashoffset: 2630;
-  animation: dash 5.26s ease-in-out alternate infinite;
-}
-
-#num-79 .lines {
-  stroke-dasharray: 2689;
-  stroke-dashoffset: 2689;
-  animation: dash 5.378s ease-in-out alternate infinite;
-}
-
-#num-80 .lines {
-  stroke-dasharray: 2630;
-  stroke-dashoffset: 2630;
-  animation: dash 5.26s ease-in-out alternate infinite;
-}
-
-#num-81 .lines {
-  stroke-dasharray: 2106;
-  stroke-dashoffset: 2106;
-  animation: dash 4.212s ease-in-out alternate infinite;
-}
-
-#num-82 .lines {
-  stroke-dasharray: 2337;
-  stroke-dashoffset: 2337;
-  animation: dash 4.674s ease-in-out alternate infinite;
-}
-
-#num-83 .lines {
-  stroke-dasharray: 3296;
-  stroke-dashoffset: 3296;
-  animation: dash 6.592s ease-in-out alternate infinite;
-}
-
-#num-84 .lines {
-  stroke-dasharray: 3245;
-  stroke-dashoffset: 3245;
-  animation: dash 6.49s ease-in-out alternate infinite;
-}
-
-#num-85 .lines {
-  stroke-dasharray: 2757;
-  stroke-dashoffset: 2757;
-  animation: dash 5.514s ease-in-out alternate infinite;
-}
-
-#num-86 .lines {
-  stroke-dasharray: 3015;
-  stroke-dashoffset: 3015;
-  animation: dash 6.03s ease-in-out alternate infinite;
-}
-
-#num-87 .lines {
-  stroke-dasharray: 2687;
-  stroke-dashoffset: 2687;
-  animation: dash 5.374s ease-in-out alternate infinite;
-}
-
-#num-88 .lines {
-  stroke-dasharray: 2547;
-  stroke-dashoffset: 2547;
-  animation: dash 5.094s ease-in-out alternate infinite;
-}
-
-#num-89 .lines {
-  stroke-dasharray: 3510;
-  stroke-dashoffset: 3510;
-  animation: dash 7.02s ease-in-out alternate infinite;
-}
-
-#num-90 .lines {
-  stroke-dasharray: 3335;
-  stroke-dashoffset: 3335;
-  animation: dash 6.67s ease-in-out alternate infinite;
-}
-
-#num-91 .lines {
-  stroke-dasharray: 2284;
-  stroke-dashoffset: 2284;
-  animation: dash 4.568s ease-in-out alternate infinite;
-}
-
-#num-92 .lines {
-  stroke-dasharray: 2340;
-  stroke-dashoffset: 2340;
-  animation: dash 4.68s ease-in-out alternate infinite;
-}
-
-#num-93 .lines {
-  stroke-dasharray: 2790;
-  stroke-dashoffset: 2790;
-  animation: dash 5.58s ease-in-out alternate infinite;
-}
-
-#num-94 .lines {
-  stroke-dasharray: 2921;
-  stroke-dashoffset: 2921;
-  animation: dash 5.842s ease-in-out alternate infinite;
-}
-
-#num-95 .lines {
-  stroke-dasharray: 2745;
-  stroke-dashoffset: 2745;
-  animation: dash 5.49s ease-in-out alternate infinite;
-}
-
-#num-96 .lines {
-  stroke-dasharray: 2615;
-  stroke-dashoffset: 2615;
-  animation: dash 5.23s ease-in-out alternate infinite;
-}
-
-#num-97 .lines {
-  stroke-dasharray: 2650;
-  stroke-dashoffset: 2650;
-  animation: dash 5.3s ease-in-out alternate infinite;
-}
-
-#num-98 .lines {
-  stroke-dasharray: 3297;
-  stroke-dashoffset: 3297;
-  animation: dash 6.594s ease-in-out alternate infinite;
-}
-
-#num-99 .lines {
-  stroke-dasharray: 3082;
-  stroke-dashoffset: 3082;
-  animation: dash 6.164s ease-in-out alternate infinite;
-}
-
-#num-100 .lines {
-  stroke-dasharray: 2375;
-  stroke-dashoffset: 2375;
-  animation: dash 4.75s ease-in-out alternate infinite;
-}
-
-#num-101 .lines {
-  stroke-dasharray: 2649;
-  stroke-dashoffset: 2649;
-  animation: dash 5.298s ease-in-out alternate infinite;
-}
-
-#num-102 .lines {
-  stroke-dasharray: 3297;
-  stroke-dashoffset: 3297;
-  animation: dash 6.594s ease-in-out alternate infinite;
-}
-
-#num-103 .lines {
-  stroke-dasharray: 3082;
-  stroke-dashoffset: 3082;
-  animation: dash 6.164s ease-in-out alternate infinite;
-}
-
-#num-104 .lines {
-  stroke-dasharray: 2375;
-  stroke-dashoffset: 2375;
-  animation: dash 4.75s ease-in-out alternate infinite;
-}
-
-#num-105 .lines {
-  stroke-dasharray: 3584;
-  stroke-dashoffset: 3584;
-  animation: dash 7.168s ease-in-out alternate infinite;
-}
-
-#num-106 .lines {
-  stroke-dasharray: 3465;
-  stroke-dashoffset: 3465;
-  animation: dash 6.93s ease-in-out alternate infinite;
-}
-
-#num-107 .lines {
-  stroke-dasharray: 2964;
-  stroke-dashoffset: 2964;
-  animation: dash 5.928s ease-in-out alternate infinite;
-}
-
-#num-108 .lines {
-  stroke-dasharray: 2845;
-  stroke-dashoffset: 2845;
-  animation: dash 5.69s ease-in-out alternate infinite;
-}
-
-#num-109 .lines {
-  stroke-dasharray: 2865;
-  stroke-dashoffset: 2865;
-  animation: dash 5.73s ease-in-out alternate infinite;
-}
-
-#num-110 .lines {
-  stroke-dasharray: 2865;
-  stroke-dashoffset: 2865;
-  animation: dash 5.73s ease-in-out alternate infinite;
-}
-
-#num-111 .lines {
-  stroke-dasharray: 3669;
-  stroke-dashoffset: 3669;
-  animation: dash 7.338s ease-in-out alternate infinite;
-}
-
-#num-112 .lines {
-  stroke-dasharray: 3669;
-  stroke-dashoffset: 3669;
-  animation: dash 7.338s ease-in-out alternate infinite;
-}
-
-#num-113 .lines {
-  stroke-dasharray: 2375;
-  stroke-dashoffset: 2375;
-  animation: dash 4.75s ease-in-out alternate infinite;
-}
-
-#num-114 .lines {
-  stroke-dasharray: 3082;
-  stroke-dashoffset: 3082;
-  animation: dash 6.164s ease-in-out alternate infinite;
-}
-
-#num-115 .lines {
-  stroke-dasharray: 3297;
-  stroke-dashoffset: 3297;
-  animation: dash 6.594s ease-in-out alternate infinite;
-}
-
-#num-116 .lines {
-  stroke-dasharray: 2650;
-  stroke-dashoffset: 2650;
-  animation: dash 5.3s ease-in-out alternate infinite;
-}
-
-#num-117 .lines {
-  stroke-dasharray: 2375;
-  stroke-dashoffset: 2375;
-  animation: dash 4.75s ease-in-out alternate infinite;
-}
-
-#num-118 .lines {
-  stroke-dasharray: 3082;
-  stroke-dashoffset: 3082;
-  animation: dash 6.164s ease-in-out alternate infinite;
-}
-
-#num-119 .lines {
-  stroke-dasharray: 3297;
-  stroke-dashoffset: 3297;
-  animation: dash 6.594s ease-in-out alternate infinite;
-}
-
-#num-120 .lines {
-  stroke-dasharray: 2649;
-  stroke-dashoffset: 2649;
-  animation: dash 5.298s ease-in-out alternate infinite;
-}
-
-#num-121 .lines {
-  stroke-dasharray: 3325;
-  stroke-dashoffset: 3325;
-  animation: dash 6.65s ease-in-out alternate infinite;
-}
-
-#num-122 .lines {
-  stroke-dasharray: 3723;
-  stroke-dashoffset: 3723;
-  animation: dash 7.446s ease-in-out alternate infinite;
-}
-
-#num-123 .lines {
-  stroke-dasharray: 3103;
-  stroke-dashoffset: 3103;
-  animation: dash 6.206s ease-in-out alternate infinite;
-}
-
-#num-124 .lines {
-  stroke-dasharray: 2705;
-  stroke-dashoffset: 2705;
-  animation: dash 5.41s ease-in-out alternate infinite;
-}
-
-#num-125 .lines {
-  stroke-dasharray: 2301;
-  stroke-dashoffset: 2301;
-  animation: dash 4.602s ease-in-out alternate infinite;
-}
-
-#num-126 .lines {
-  stroke-dasharray: 3008;
-  stroke-dashoffset: 3008;
-  animation: dash 6.016s ease-in-out alternate infinite;
-}
-
-#num-127 .lines {
-  stroke-dasharray: 3223;
-  stroke-dashoffset: 3223;
-  animation: dash 6.446s ease-in-out alternate infinite;
-}
-
-#num-128 .lines {
-  stroke-dasharray: 2575;
-  stroke-dashoffset: 2575;
-  animation: dash 5.15s ease-in-out alternate infinite;
-}
-
-#num-129 .lines {
-  stroke-dasharray: 2559;
-  stroke-dashoffset: 2559;
-  animation: dash 5.118s ease-in-out alternate infinite;
-}
-
-#num-130 .lines {
-  stroke-dasharray: 2694;
-  stroke-dashoffset: 2694;
-  animation: dash 5.388s ease-in-out alternate infinite;
-}
-
-#num-131 .lines {
-  stroke-dasharray: 2479;
-  stroke-dashoffset: 2479;
-  animation: dash 4.958s ease-in-out alternate infinite;
-}
-
-#num-132 .lines {
-  stroke-dasharray: 2284;
-  stroke-dashoffset: 2284;
-  animation: dash 4.568s ease-in-out alternate infinite;
-}
-
-#num-133 .lines {
-  stroke-dasharray: 2516;
-  stroke-dashoffset: 2516;
-  animation: dash 5.032s ease-in-out alternate infinite;
-}
-
-#num-134 .lines {
-  stroke-dasharray: 3088;
-  stroke-dashoffset: 3088;
-  animation: dash 6.176s ease-in-out alternate infinite;
-}
-
-#num-135 .lines {
-  stroke-dasharray: 3159;
-  stroke-dashoffset: 3159;
-  animation: dash 6.318s ease-in-out alternate infinite;
-}
-
-#num-136 .lines {
-  stroke-dasharray: 2706;
-  stroke-dashoffset: 2706;
-  animation: dash 5.412s ease-in-out alternate infinite;
-}
-
-#num-137 .lines {
-  stroke-dasharray: 2790;
-  stroke-dashoffset: 2790;
-  animation: dash 5.58s ease-in-out alternate infinite;
-}
-
-#num-138 .lines {
-  stroke-dasharray: 3363;
-  stroke-dashoffset: 3363;
-  animation: dash 6.726s ease-in-out alternate infinite;
-}
-
-#num-139 .lines {
-  stroke-dasharray: 2989;
-  stroke-dashoffset: 2989;
-  animation: dash 5.978s ease-in-out alternate infinite;
-}
-
-#num-140 .lines {
-  stroke-dasharray: 2536;
-  stroke-dashoffset: 2536;
-  animation: dash 5.072s ease-in-out alternate infinite;
-}
-
-#num-141 .lines {
-  stroke-dasharray: 2284;
-  stroke-dashoffset: 2284;
-  animation: dash 4.568s ease-in-out alternate infinite;
-}
-
-#num-142 .lines {
-  stroke-dasharray: 2478;
-  stroke-dashoffset: 2478;
-  animation: dash 4.956s ease-in-out alternate infinite;
-}
-
-#num-143 .lines {
-  stroke-dasharray: 2694;
-  stroke-dashoffset: 2694;
-  animation: dash 5.388s ease-in-out alternate infinite;
-}
-
-#num-144 .lines {
-  stroke-dasharray: 2559;
-  stroke-dashoffset: 2559;
-  animation: dash 5.118s ease-in-out alternate infinite;
-}
-
-#num-145 .lines {
-  stroke-dasharray: 2575;
-  stroke-dashoffset: 2575;
-  animation: dash 5.15s ease-in-out alternate infinite;
-}
-
-#num-146 .lines {
-  stroke-dasharray: 3223;
-  stroke-dashoffset: 3223;
-  animation: dash 6.446s ease-in-out alternate infinite;
-}
-
-#num-147 .lines {
-  stroke-dasharray: 3008;
-  stroke-dashoffset: 3008;
-  animation: dash 6.016s ease-in-out alternate infinite;
-}
-
-#num-148 .lines {
-  stroke-dasharray: 2301;
-  stroke-dashoffset: 2301;
-  animation: dash 4.602s ease-in-out alternate infinite;
-}
-
-#num-149 .lines {
-  stroke-dasharray: 2865;
-  stroke-dashoffset: 2865;
-  animation: dash 5.73s ease-in-out alternate infinite;
-}
-
-#num-150 .lines {
-  stroke-dasharray: 3123;
-  stroke-dashoffset: 3123;
-  animation: dash 6.246s ease-in-out alternate infinite;
-}
-
-#num-151 .lines {
-  stroke-dasharray: 3378;
-  stroke-dashoffset: 3378;
-  animation: dash 6.756s ease-in-out alternate infinite;
-}
-
-#num-152 .lines {
-  stroke-dasharray: 3238;
-  stroke-dashoffset: 3238;
-  animation: dash 6.476s ease-in-out alternate infinite;
-}
-
-#num-153 .lines {
-  stroke-dasharray: 2836;
-  stroke-dashoffset: 2836;
-  animation: dash 5.672s ease-in-out alternate infinite;
-}
-
-#num-154 .lines {
-  stroke-dasharray: 3039;
-  stroke-dashoffset: 3039;
-  animation: dash 6.078s ease-in-out alternate infinite;
-}
-
-#num-155 .lines {
-  stroke-dasharray: 2824;
-  stroke-dashoffset: 2824;
-  animation: dash 5.648s ease-in-out alternate infinite;
-}
-
-#num-156 .lines {
-  stroke-dasharray: 2561;
-  stroke-dashoffset: 2561;
-  animation: dash 5.122s ease-in-out alternate infinite;
-}
-
-#num-157 .lines {
-  stroke-dasharray: 2649;
-  stroke-dashoffset: 2649;
-  animation: dash 5.298s ease-in-out alternate infinite;
-}
-
-#num-158 .lines {
-  stroke-dasharray: 3098;
-  stroke-dashoffset: 3098;
-  animation: dash 6.196s ease-in-out alternate infinite;
-}
-
-#num-159 .lines {
-  stroke-dasharray: 3328;
-  stroke-dashoffset: 3328;
-  animation: dash 6.656s ease-in-out alternate infinite;
-}
-
-#num-160 .lines {
-  stroke-dasharray: 2819;
-  stroke-dashoffset: 2819;
-  animation: dash 5.638s ease-in-out alternate infinite;
-}
-
-#num-161 .lines {
-  stroke-dasharray: 3035;
-  stroke-dashoffset: 3035;
-  animation: dash 6.07s ease-in-out alternate infinite;
-}
-
-#num-162 .lines {
-  stroke-dasharray: 3221;
-  stroke-dashoffset: 3221;
-  animation: dash 6.442s ease-in-out alternate infinite;
-}
-
-#num-163 .lines {
-  stroke-dasharray: 3150;
-  stroke-dashoffset: 3150;
-  animation: dash 6.3s ease-in-out alternate infinite;
-}
-
-#num-164 .lines {
-  stroke-dasharray: 2845;
-  stroke-dashoffset: 2845;
-  animation: dash 5.69s ease-in-out alternate infinite;
-}
-
-#num-165 .lines {
-  stroke-dasharray: 2865;
-  stroke-dashoffset: 2865;
-  animation: dash 5.73s ease-in-out alternate infinite;
-}
-
-#num-166 .lines {
-  stroke-dasharray: 3051;
-  stroke-dashoffset: 3051;
-  animation: dash 6.102s ease-in-out alternate infinite;
-}
-
-#num-167 .lines {
-  stroke-dasharray: 3424;
-  stroke-dashoffset: 3424;
-  animation: dash 6.848s ease-in-out alternate infinite;
-}
-
-#num-168 .lines {
-  stroke-dasharray: 3119;
-  stroke-dashoffset: 3119;
-  animation: dash 6.238s ease-in-out alternate infinite;
-}
-
-#num-169 .lines {
-  stroke-dasharray: 2819;
-  stroke-dashoffset: 2819;
-  animation: dash 5.638s ease-in-out alternate infinite;
-}
-
-#num-170 .lines {
-  stroke-dasharray: 3328;
-  stroke-dashoffset: 3328;
-  animation: dash 6.656s ease-in-out alternate infinite;
-}
-
-#num-171 .lines {
-  stroke-dasharray: 3098;
-  stroke-dashoffset: 3098;
-  animation: dash 6.196s ease-in-out alternate infinite;
-}
-
-#num-172 .lines {
-  stroke-dasharray: 2650;
-  stroke-dashoffset: 2650;
-  animation: dash 5.3s ease-in-out alternate infinite;
-}
-
-#num-173 .lines {
-  stroke-dasharray: 2561;
-  stroke-dashoffset: 2561;
-  animation: dash 5.122s ease-in-out alternate infinite;
-}
-
-#num-174 .lines {
-  stroke-dasharray: 2824;
-  stroke-dashoffset: 2824;
-  animation: dash 5.648s ease-in-out alternate infinite;
-}
-
-#num-175 .lines {
-  stroke-dasharray: 3039;
-  stroke-dashoffset: 3039;
-  animation: dash 6.078s ease-in-out alternate infinite;
-}
-
-#num-176 .lines {
-  stroke-dasharray: 2836;
-  stroke-dashoffset: 2836;
-  animation: dash 5.672s ease-in-out alternate infinite;
-}
-
-#num-177 .lines {
-  stroke-dasharray: 2590;
-  stroke-dashoffset: 2590;
-  animation: dash 5.18s ease-in-out alternate infinite;
-}
-
-#num-178 .lines {
-  stroke-dasharray: 3098;
-  stroke-dashoffset: 3098;
-  animation: dash 6.196s ease-in-out alternate infinite;
-}
-
-#num-179 .lines {
-  stroke-dasharray: 3313;
-  stroke-dashoffset: 3313;
-  animation: dash 6.626s ease-in-out alternate infinite;
-}
-
-#num-180 .lines {
-  stroke-dasharray: 2865;
-  stroke-dashoffset: 2865;
-  animation: dash 5.73s ease-in-out alternate infinite;
-}
-
-#num-181 .lines {
-  stroke-dasharray: 2848;
-  stroke-dashoffset: 2848;
-  animation: dash 5.696s ease-in-out alternate infinite;
-}
-
-#num-182 .lines {
-  stroke-dasharray: 3098;
-  stroke-dashoffset: 3098;
-  animation: dash 6.196s ease-in-out alternate infinite;
-}
-
-#num-183 .lines {
-  stroke-dasharray: 2883;
-  stroke-dashoffset: 2883;
-  animation: dash 5.766s ease-in-out alternate infinite;
-}
-
-#num-184 .lines {
-  stroke-dasharray: 2574;
-  stroke-dashoffset: 2574;
-  animation: dash 5.148s ease-in-out alternate infinite;
-}
-
-#num-185 .lines {
-  stroke-dasharray: 3179;
-  stroke-dashoffset: 3179;
-  animation: dash 6.358s ease-in-out alternate infinite;
-}
-
-#num-186 .lines {
-  stroke-dasharray: 3437;
-  stroke-dashoffset: 3437;
-  animation: dash 6.874s ease-in-out alternate infinite;
-}
-
-#num-187 .lines {
-  stroke-dasharray: 3063;
-  stroke-dashoffset: 3063;
-  animation: dash 6.126s ease-in-out alternate infinite;
-}
-
-#num-188 .lines {
-  stroke-dasharray: 2924;
-  stroke-dashoffset: 2924;
-  animation: dash 5.848s ease-in-out alternate infinite;
-}
-
-#num-189 .lines {
-  stroke-dasharray: 2904;
-  stroke-dashoffset: 2904;
-  animation: dash 5.808s ease-in-out alternate infinite;
-}
-
-#num-190 .lines {
-  stroke-dasharray: 3163;
-  stroke-dashoffset: 3163;
-  animation: dash 6.326s ease-in-out alternate infinite;
-}
-
-#num-191 .lines {
-  stroke-dasharray: 3233;
-  stroke-dashoffset: 3233;
-  animation: dash 6.466s ease-in-out alternate infinite;
-}
-
-#num-192 .lines {
-  stroke-dasharray: 3094;
-  stroke-dashoffset: 3094;
-  animation: dash 6.188s ease-in-out alternate infinite;
-}
-
-#num-193 .lines {
-  stroke-dasharray: 2574;
-  stroke-dashoffset: 2574;
-  animation: dash 5.148s ease-in-out alternate infinite;
-}
-
-#num-194 .lines {
-  stroke-dasharray: 2883;
-  stroke-dashoffset: 2883;
-  animation: dash 5.766s ease-in-out alternate infinite;
-}
-
-#num-195 .lines {
-  stroke-dasharray: 3098;
-  stroke-dashoffset: 3098;
-  animation: dash 6.196s ease-in-out alternate infinite;
-}
-
-#num-196 .lines {
-  stroke-dasharray: 2848;
-  stroke-dashoffset: 2848;
-  animation: dash 5.696s ease-in-out alternate infinite;
-}
-
-#num-197 .lines {
-  stroke-dasharray: 2865;
-  stroke-dashoffset: 2865;
-  animation: dash 5.73s ease-in-out alternate infinite;
-}
-
-#num-198 .lines {
-  stroke-dasharray: 3314;
-  stroke-dashoffset: 3314;
-  animation: dash 6.628s ease-in-out alternate infinite;
-}
-
-#num-199 .lines {
-  stroke-dasharray: 3098;
-  stroke-dashoffset: 3098;
-  animation: dash 6.196s ease-in-out alternate infinite;
-}
-
-#num-200 .lines {
-  stroke-dasharray: 2590;
-  stroke-dashoffset: 2590;
-  animation: dash 5.18s ease-in-out alternate infinite;
-}
-
-#num-201 .lines {
-  stroke-dasharray: 2527;
-  stroke-dashoffset: 2527;
-  animation: dash 5.054s ease-in-out alternate infinite;
-}
-
-#num-202 .lines {
-  stroke-dasharray: 2781;
-  stroke-dashoffset: 2781;
-  animation: dash 5.562s ease-in-out alternate infinite;
-}
-
-#num-203 .lines {
-  stroke-dasharray: 2937;
-  stroke-dashoffset: 2937;
-  animation: dash 5.874s ease-in-out alternate infinite;
-}
-
-#num-204 .lines {
-  stroke-dasharray: 2861;
-  stroke-dashoffset: 2861;
-  animation: dash 5.722s ease-in-out alternate infinite;
-}
-
-#num-205 .lines {
-  stroke-dasharray: 2861;
-  stroke-dashoffset: 2861;
-  animation: dash 5.722s ease-in-out alternate infinite;
-}
-
-#num-206 .lines {
-  stroke-dasharray: 2937;
-  stroke-dashoffset: 2937;
-  animation: dash 5.874s ease-in-out alternate infinite;
-}
-
-#num-207 .lines {
-  stroke-dasharray: 2781;
-  stroke-dashoffset: 2781;
-  animation: dash 5.562s ease-in-out alternate infinite;
-}
-
-#num-208 .lines {
-  stroke-dasharray: 2527;
-  stroke-dashoffset: 2527;
-  animation: dash 5.054s ease-in-out alternate infinite;
-}
-
-#num-209 .lines {
-  stroke-dasharray: 2889;
-  stroke-dashoffset: 2889;
-  animation: dash 5.778s ease-in-out alternate infinite;
-}
-
-#num-210 .lines {
-  stroke-dasharray: 2937;
-  stroke-dashoffset: 2937;
-  animation: dash 5.874s ease-in-out alternate infinite;
-}
-
-#num-211 .lines {
-  stroke-dasharray: 2637;
-  stroke-dashoffset: 2637;
-  animation: dash 5.274s ease-in-out alternate infinite;
-}
-
-#num-212 .lines {
-  stroke-dasharray: 2470;
-  stroke-dashoffset: 2470;
-  animation: dash 4.94s ease-in-out alternate infinite;
-}
-
-#num-213 .lines {
-  stroke-dasharray: 2613;
-  stroke-dashoffset: 2613;
-  animation: dash 5.226s ease-in-out alternate infinite;
-}
-
-#num-214 .lines {
-  stroke-dasharray: 3062;
-  stroke-dashoffset: 3062;
-  animation: dash 6.124s ease-in-out alternate infinite;
-}
-
-#num-215 .lines {
-  stroke-dasharray: 3292;
-  stroke-dashoffset: 3292;
-  animation: dash 6.584s ease-in-out alternate infinite;
-}
-
-#num-216 .lines {
-  stroke-dasharray: 2783;
-  stroke-dashoffset: 2783;
-  animation: dash 5.566s ease-in-out alternate infinite;
-}
-
-#num-217 .lines {
-  stroke-dasharray: 3041;
-  stroke-dashoffset: 3041;
-  animation: dash 6.082s ease-in-out alternate infinite;
-}
-
-#num-218 .lines {
-  stroke-dasharray: 3106;
-  stroke-dashoffset: 3106;
-  animation: dash 6.212s ease-in-out alternate infinite;
-}
-
-#num-219 .lines {
-  stroke-dasharray: 2876;
-  stroke-dashoffset: 2876;
-  animation: dash 5.752s ease-in-out alternate infinite;
-}
-
-#num-220 .lines {
-  stroke-dasharray: 2872;
-  stroke-dashoffset: 2872;
-  animation: dash 5.744s ease-in-out alternate infinite;
-}
-
-#num-221 .lines {
-  stroke-dasharray: 2908;
-  stroke-dashoffset: 2908;
-  animation: dash 5.816s ease-in-out alternate infinite;
-}
-
-#num-222 .lines {
-  stroke-dasharray: 3075;
-  stroke-dashoffset: 3075;
-  animation: dash 6.15s ease-in-out alternate infinite;
-}
-
-#num-223 .lines {
-  stroke-dasharray: 2919;
-  stroke-dashoffset: 2919;
-  animation: dash 5.838s ease-in-out alternate infinite;
-}
-
-#num-224 .lines {
-  stroke-dasharray: 2574;
-  stroke-dashoffset: 2574;
-  animation: dash 5.148s ease-in-out alternate infinite;
-}
-
-#num-225 .lines {
-  stroke-dasharray: 2900;
-  stroke-dashoffset: 2900;
-  animation: dash 5.8s ease-in-out alternate infinite;
-}
-
-#num-226 .lines {
-  stroke-dasharray: 3011;
-  stroke-dashoffset: 3011;
-  animation: dash 6.022s ease-in-out alternate infinite;
-}
-
-#num-227 .lines {
-  stroke-dasharray: 2796;
-  stroke-dashoffset: 2796;
-  animation: dash 5.592s ease-in-out alternate infinite;
-}
-
-#num-228 .lines {
-  stroke-dasharray: 2625;
-  stroke-dashoffset: 2625;
-  animation: dash 5.25s ease-in-out alternate infinite;
-}
-
-#num-229 .lines {
-  stroke-dasharray: 2825;
-  stroke-dashoffset: 2825;
-  animation: dash 5.65s ease-in-out alternate infinite;
-}
-
-#num-230 .lines {
-  stroke-dasharray: 2965;
-  stroke-dashoffset: 2965;
-  animation: dash 5.93s ease-in-out alternate infinite;
-}
-
-#num-231 .lines {
-  stroke-dasharray: 2665;
-  stroke-dashoffset: 2665;
-  animation: dash 5.33s ease-in-out alternate infinite;
-}
-
-#num-232 .lines {
-  stroke-dasharray: 2406;
-  stroke-dashoffset: 2406;
-  animation: dash 4.812s ease-in-out alternate infinite;
-}
-
-#num-233 .lines {
-  stroke-dasharray: 2932;
-  stroke-dashoffset: 2932;
-  animation: dash 5.864s ease-in-out alternate infinite;
-}
-
-#num-234 .lines {
-  stroke-dasharray: 2840;
-  stroke-dashoffset: 2840;
-  animation: dash 5.68s ease-in-out alternate infinite;
-}
-
-#num-235 .lines {
-  stroke-dasharray: 2350;
-  stroke-dashoffset: 2350;
-  animation: dash 4.7s ease-in-out alternate infinite;
-}
-
-#num-236 .lines {
-  stroke-dasharray: 2442;
-  stroke-dashoffset: 2442;
-  animation: dash 4.884s ease-in-out alternate infinite;
-}
-
-#num-237 .lines {
-  stroke-dasharray: 2689;
-  stroke-dashoffset: 2689;
-  animation: dash 5.378s ease-in-out alternate infinite;
-}
-
-#num-238 .lines {
-  stroke-dasharray: 2666;
-  stroke-dashoffset: 2666;
-  animation: dash 5.332s ease-in-out alternate infinite;
-}
-
-#num-239 .lines {
-  stroke-dasharray: 2666;
-  stroke-dashoffset: 2666;
-  animation: dash 5.332s ease-in-out alternate infinite;
-}
-
-#num-240 .lines {
-  stroke-dasharray: 2689;
-  stroke-dashoffset: 2689;
-  animation: dash 5.378s ease-in-out alternate infinite;
-}
-
-#num-241 .lines {
-  stroke-dasharray: 2909;
-  stroke-dashoffset: 2909;
-  animation: dash 5.818s ease-in-out alternate infinite;
-}
-
-#num-242 .lines {
-  stroke-dasharray: 2714;
-  stroke-dashoffset: 2714;
-  animation: dash 5.428s ease-in-out alternate infinite;
-}
-
-#num-243 .lines {
-  stroke-dasharray: 2595;
-  stroke-dashoffset: 2595;
-  animation: dash 5.19s ease-in-out alternate infinite;
-}
-
-#num-244 .lines {
-  stroke-dasharray: 3028;
-  stroke-dashoffset: 3028;
-  animation: dash 6.056s ease-in-out alternate infinite;
-}
-
-#num-245 .lines {
-  stroke-dasharray: 2980;
-  stroke-dashoffset: 2980;
-  animation: dash 5.96s ease-in-out alternate infinite;
-}
-
-#num-246 .lines {
-  stroke-dasharray: 3060;
-  stroke-dashoffset: 3060;
-  animation: dash 6.12s ease-in-out alternate infinite;
-}
-
-#num-247 .lines {
-  stroke-dasharray: 2689;
-  stroke-dashoffset: 2689;
-  animation: dash 5.378s ease-in-out alternate infinite;
-}
-
-#num-248 .lines {
-  stroke-dasharray: 2371;
-  stroke-dashoffset: 2371;
-  animation: dash 4.742s ease-in-out alternate infinite;
-}
-
-#num-249 .lines {
-  stroke-dasharray: 2698;
-  stroke-dashoffset: 2698;
-  animation: dash 5.396s ease-in-out alternate infinite;
-}
-
-#num-250 .lines {
-  stroke-dasharray: 3143;
-  stroke-dashoffset: 3143;
-  animation: dash 6.286s ease-in-out alternate infinite;
-}
-
-#num-251 .lines {
-  stroke-dasharray: 3097;
-  stroke-dashoffset: 3097;
-  animation: dash 6.194s ease-in-out alternate infinite;
-}
-
-#num-252 .lines {
-  stroke-dasharray: 2653;
-  stroke-dashoffset: 2653;
-  animation: dash 5.306s ease-in-out alternate infinite;
-}
-
-#num-253 .lines {
-  stroke-dasharray: 2985;
-  stroke-dashoffset: 2985;
-  animation: dash 5.97s ease-in-out alternate infinite;
-}
-
-#num-254 .lines {
-  stroke-dasharray: 2893;
-  stroke-dashoffset: 2893;
-  animation: dash 5.786s ease-in-out alternate infinite;
-}
-
-#num-255 .lines {
-  stroke-dasharray: 2847;
-  stroke-dashoffset: 2847;
-  animation: dash 5.694s ease-in-out alternate infinite;
-}
-
-#num-256 .lines {
-  stroke-dasharray: 2939;
-  stroke-dashoffset: 2939;
-  animation: dash 5.878s ease-in-out alternate infinite;
-}
-
-#num-257 .lines {
-  stroke-dasharray: 2781;
-  stroke-dashoffset: 2781;
-  animation: dash 5.562s ease-in-out alternate infinite;
-}
-
-#num-258 .lines {
-  stroke-dasharray: 2952;
-  stroke-dashoffset: 2952;
-  animation: dash 5.904s ease-in-out alternate infinite;
-}
-
-#num-259 .lines {
-  stroke-dasharray: 2853;
-  stroke-dashoffset: 2853;
-  animation: dash 5.706s ease-in-out alternate infinite;
-}
-
-#num-260 .lines {
-  stroke-dasharray: 2742;
-  stroke-dashoffset: 2742;
-  animation: dash 5.484s ease-in-out alternate infinite;
-}
-
-#num-261 .lines {
-  stroke-dasharray: 3016;
-  stroke-dashoffset: 3016;
-  animation: dash 6.032s ease-in-out alternate infinite;
-}
-
-#num-262 .lines {
-  stroke-dasharray: 3068;
-  stroke-dashoffset: 3068;
-  animation: dash 6.136s ease-in-out alternate infinite;
-}
-
-#num-263 .lines {
-  stroke-dasharray: 2737;
-  stroke-dashoffset: 2737;
-  animation: dash 5.474s ease-in-out alternate infinite;
-}
-
-#num-264 .lines {
-  stroke-dasharray: 2506;
-  stroke-dashoffset: 2506;
-  animation: dash 5.012s ease-in-out alternate infinite;
-}
-
-#num-265 .lines {
-  stroke-dasharray: 2957;
-  stroke-dashoffset: 2957;
-  animation: dash 5.914s ease-in-out alternate infinite;
-}
-
-#num-266 .lines {
-  stroke-dasharray: 2897;
-  stroke-dashoffset: 2897;
-  animation: dash 5.794s ease-in-out alternate infinite;
-}
-
-#num-267 .lines {
-  stroke-dasharray: 2957;
-  stroke-dashoffset: 2957;
-  animation: dash 5.914s ease-in-out alternate infinite;
-}
-
-#num-268 .lines {
-  stroke-dasharray: 2897;
-  stroke-dashoffset: 2897;
-  animation: dash 5.794s ease-in-out alternate infinite;
-}
-
-#num-269 .lines {
-  stroke-dasharray: 2957;
-  stroke-dashoffset: 2957;
-  animation: dash 5.914s ease-in-out alternate infinite;
-}
-
-#num-270 .lines {
-  stroke-dasharray: 2897;
-  stroke-dashoffset: 2897;
-  animation: dash 5.794s ease-in-out alternate infinite;
-}
-
-#num-271 .lines {
-  stroke-dasharray: 2957;
-  stroke-dashoffset: 2957;
-  animation: dash 5.914s ease-in-out alternate infinite;
-}
-
-#num-272 .lines {
-  stroke-dasharray: 2897;
-  stroke-dashoffset: 2897;
-  animation: dash 5.794s ease-in-out alternate infinite;
-}
-
-#num-273 .lines {
-  stroke-dasharray: 3056;
-  stroke-dashoffset: 3056;
-  animation: dash 6.112s ease-in-out alternate infinite;
-}
-
-#num-274 .lines {
-  stroke-dasharray: 3167;
-  stroke-dashoffset: 3167;
-  animation: dash 6.334s ease-in-out alternate infinite;
-}
-
-#num-275 .lines {
-  stroke-dasharray: 2638;
-  stroke-dashoffset: 2638;
-  animation: dash 5.276s ease-in-out alternate infinite;
-}
-
-#num-276 .lines {
-  stroke-dasharray: 2467;
-  stroke-dashoffset: 2467;
-  animation: dash 4.934s ease-in-out alternate infinite;
-}
-
-#num-277 .lines {
-  stroke-dasharray: 2742;
-  stroke-dashoffset: 2742;
-  animation: dash 5.484s ease-in-out alternate infinite;
-}
-
-#num-278 .lines {
-  stroke-dasharray: 2853;
-  stroke-dashoffset: 2853;
-  animation: dash 5.706s ease-in-out alternate infinite;
-}
-
-#num-279 .lines {
-  stroke-dasharray: 2952;
-  stroke-dashoffset: 2952;
-  animation: dash 5.904s ease-in-out alternate infinite;
-}
-
-#num-280 .lines {
-  stroke-dasharray: 2781;
-  stroke-dashoffset: 2781;
-  animation: dash 5.562s ease-in-out alternate infinite;
-}
-
-#num-281 .lines {
-  stroke-dasharray: 2734;
-  stroke-dashoffset: 2734;
-  animation: dash 5.468s ease-in-out alternate infinite;
-}
-
-#num-282 .lines {
-  stroke-dasharray: 3017;
-  stroke-dashoffset: 3017;
-  animation: dash 6.034s ease-in-out alternate infinite;
-}
-
-#num-283 .lines {
-  stroke-dasharray: 2862;
-  stroke-dashoffset: 2862;
-  animation: dash 5.724s ease-in-out alternate infinite;
-}
-
-#num-284 .lines {
-  stroke-dasharray: 2400;
-  stroke-dashoffset: 2400;
-  animation: dash 4.8s ease-in-out alternate infinite;
-}
-
-#num-285 .lines {
-  stroke-dasharray: 2516;
-  stroke-dashoffset: 2516;
-  animation: dash 5.032s ease-in-out alternate infinite;
-}
-
-#num-286 .lines {
-  stroke-dasharray: 2746;
-  stroke-dashoffset: 2746;
-  animation: dash 5.492s ease-in-out alternate infinite;
-}
-
-#num-287 .lines {
-  stroke-dasharray: 2902;
-  stroke-dashoffset: 2902;
-  animation: dash 5.804s ease-in-out alternate infinite;
-}
-
-#num-288 .lines {
-  stroke-dasharray: 2850;
-  stroke-dashoffset: 2850;
-  animation: dash 5.7s ease-in-out alternate infinite;
-}
-
-#num-289 .lines {
-  stroke-dasharray: 2516;
-  stroke-dashoffset: 2516;
-  animation: dash 5.032s ease-in-out alternate infinite;
-}
-
-#num-290 .lines {
-  stroke-dasharray: 2746;
-  stroke-dashoffset: 2746;
-  animation: dash 5.492s ease-in-out alternate infinite;
-}
-
-#num-291 .lines {
-  stroke-dasharray: 2902;
-  stroke-dashoffset: 2902;
-  animation: dash 5.804s ease-in-out alternate infinite;
-}
-
-#num-292 .lines {
-  stroke-dasharray: 2850;
-  stroke-dashoffset: 2850;
-  animation: dash 5.7s ease-in-out alternate infinite;
-}
-
-#num-293 .lines {
-  stroke-dasharray: 2734;
-  stroke-dashoffset: 2734;
-  animation: dash 5.468s ease-in-out alternate infinite;
-}
-
-#num-294 .lines {
-  stroke-dasharray: 3017;
-  stroke-dashoffset: 3017;
-  animation: dash 6.034s ease-in-out alternate infinite;
-}
-
-#num-295 .lines {
-  stroke-dasharray: 2862;
-  stroke-dashoffset: 2862;
-  animation: dash 5.724s ease-in-out alternate infinite;
-}
-
-#num-296 .lines {
-  stroke-dasharray: 2400;
-  stroke-dashoffset: 2400;
-  animation: dash 4.8s ease-in-out alternate infinite;
-}
-
-#num-297 .lines {
-  stroke-dasharray: 2670;
-  stroke-dashoffset: 2670;
-  animation: dash 5.34s ease-in-out alternate infinite;
-}
-
-#num-298 .lines {
-  stroke-dasharray: 3207;
-  stroke-dashoffset: 3207;
-  animation: dash 6.414s ease-in-out alternate infinite;
-}
-
-#num-299 .lines {
-  stroke-dasharray: 3162;
-  stroke-dashoffset: 3162;
-  animation: dash 6.324s ease-in-out alternate infinite;
-}
-
-#num-300 .lines {
-  stroke-dasharray: 2625;
-  stroke-dashoffset: 2625;
-  animation: dash 5.25s ease-in-out alternate infinite;
-}
-
-#num-301 .lines {
-  stroke-dasharray: 3021;
-  stroke-dashoffset: 3021;
-  animation: dash 6.042s ease-in-out alternate infinite;
-}
-
-#num-302 .lines {
-  stroke-dasharray: 3192;
-  stroke-dashoffset: 3192;
-  animation: dash 6.384s ease-in-out alternate infinite;
-}
-
-#num-303 .lines {
-  stroke-dasharray: 2464;
-  stroke-dashoffset: 2464;
-  animation: dash 4.928s ease-in-out alternate infinite;
-}
-
-#num-304 .lines {
-  stroke-dasharray: 2353;
-  stroke-dashoffset: 2353;
-  animation: dash 4.706s ease-in-out alternate infinite;
-}
-
-#num-305 .lines {
-  stroke-dasharray: 2965;
-  stroke-dashoffset: 2965;
-  animation: dash 5.93s ease-in-out alternate infinite;
-}
-
-#num-306 .lines {
-  stroke-dasharray: 2563;
-  stroke-dashoffset: 2563;
-  animation: dash 5.126s ease-in-out alternate infinite;
-}
-
-#num-307 .lines {
-  stroke-dasharray: 2034;
-  stroke-dashoffset: 2034;
-  animation: dash 4.068s ease-in-out alternate infinite;
-}
-
-#num-308 .lines {
-  stroke-dasharray: 2376;
-  stroke-dashoffset: 2376;
-  animation: dash 4.752s ease-in-out alternate infinite;
-}
-
-#num-309 .lines {
-  stroke-dasharray: 2294;
-  stroke-dashoffset: 2294;
-  animation: dash 4.588s ease-in-out alternate infinite;
-}
-
-#num-310 .lines {
-  stroke-dasharray: 2866;
-  stroke-dashoffset: 2866;
-  animation: dash 5.732s ease-in-out alternate infinite;
-}
-
-#num-311 .lines {
-  stroke-dasharray: 2807;
-  stroke-dashoffset: 2807;
-  animation: dash 5.614s ease-in-out alternate infinite;
-}
-
-#num-312 .lines {
-  stroke-dasharray: 2353;
-  stroke-dashoffset: 2353;
-  animation: dash 4.706s ease-in-out alternate infinite;
-}
-
-#num-313 .lines {
-  stroke-dasharray: 2294;
-  stroke-dashoffset: 2294;
-  animation: dash 4.588s ease-in-out alternate infinite;
-}
-
-#num-314 .lines {
-  stroke-dasharray: 2866;
-  stroke-dashoffset: 2866;
-  animation: dash 5.732s ease-in-out alternate infinite;
-}
-
-#num-315 .lines {
-  stroke-dasharray: 2807;
-  stroke-dashoffset: 2807;
-  animation: dash 5.614s ease-in-out alternate infinite;
-}
-
-#num-316 .lines {
-  stroke-dasharray: 2353;
-  stroke-dashoffset: 2353;
-  animation: dash 4.706s ease-in-out alternate infinite;
-}
-
-#num-317 .lines {
-  stroke-dasharray: 2376;
-  stroke-dashoffset: 2376;
-  animation: dash 4.752s ease-in-out alternate infinite;
-}
-
-#num-318 .lines {
-  stroke-dasharray: 2034;
-  stroke-dashoffset: 2034;
-  animation: dash 4.068s ease-in-out alternate infinite;
-}
-
-#num-319 .lines {
-  stroke-dasharray: 2563;
-  stroke-dashoffset: 2563;
-  animation: dash 5.126s ease-in-out alternate infinite;
-}
-
-#num-320 .lines {
-  stroke-dasharray: 2965;
-  stroke-dashoffset: 2965;
-  animation: dash 5.93s ease-in-out alternate infinite;
-}
-
-#num-321 .lines {
-  stroke-dasharray: 2982;
-  stroke-dashoffset: 2982;
-  animation: dash 5.964s ease-in-out alternate infinite;
-}
-
-#num-322 .lines {
-  stroke-dasharray: 3093;
-  stroke-dashoffset: 3093;
-  animation: dash 6.186s ease-in-out alternate infinite;
-}
-
-#num-323 .lines {
-  stroke-dasharray: 2563;
-  stroke-dashoffset: 2563;
-  animation: dash 5.126s ease-in-out alternate infinite;
-}
-
-#num-324 .lines {
-  stroke-dasharray: 2393;
-  stroke-dashoffset: 2393;
-  animation: dash 4.786s ease-in-out alternate infinite;
-}
-
-#num-325 .lines {
-  stroke-dasharray: 2698;
-  stroke-dashoffset: 2698;
-  animation: dash 5.396s ease-in-out alternate infinite;
-}
-
-#num-326 .lines {
-  stroke-dasharray: 3143;
-  stroke-dashoffset: 3143;
-  animation: dash 6.286s ease-in-out alternate infinite;
-}
-
-#num-327 .lines {
-  stroke-dasharray: 3098;
-  stroke-dashoffset: 3098;
-  animation: dash 6.196s ease-in-out alternate infinite;
-}
-
-#num-328 .lines {
-  stroke-dasharray: 2653;
-  stroke-dashoffset: 2653;
-  animation: dash 5.306s ease-in-out alternate infinite;
-}
-
-#num-329 .lines {
-  stroke-dasharray: 3486;
-  stroke-dashoffset: 3486;
-  animation: dash 6.972s ease-in-out alternate infinite;
-}
-
-#num-330 .lines {
-  stroke-dasharray: 3458;
-  stroke-dashoffset: 3458;
-  animation: dash 6.916s ease-in-out alternate infinite;
-}
-
-#num-331 .lines {
-  stroke-dasharray: 2379;
-  stroke-dashoffset: 2379;
-  animation: dash 4.758s ease-in-out alternate infinite;
-}
-
-#num-332 .lines {
-  stroke-dasharray: 2467;
-  stroke-dashoffset: 2467;
-  animation: dash 4.934s ease-in-out alternate infinite;
-}
-
-#num-333 .lines {
-  stroke-dasharray: 3254;
-  stroke-dashoffset: 3254;
-  animation: dash 6.508s ease-in-out alternate infinite;
-}
-
-#num-334 .lines {
-  stroke-dasharray: 2968;
-  stroke-dashoffset: 2968;
-  animation: dash 5.936s ease-in-out alternate infinite;
-}
-
-#num-335 .lines {
-  stroke-dasharray: 2439;
-  stroke-dashoffset: 2439;
-  animation: dash 4.878s ease-in-out alternate infinite;
-}
-
-#num-336 .lines {
-  stroke-dasharray: 2666;
-  stroke-dashoffset: 2666;
-  animation: dash 5.332s ease-in-out alternate infinite;
-}
-
-#num-337 .lines {
-  stroke-dasharray: 2682;
-  stroke-dashoffset: 2682;
-  animation: dash 5.364s ease-in-out alternate infinite;
-}
-
-#num-338 .lines {
-  stroke-dasharray: 2940;
-  stroke-dashoffset: 2940;
-  animation: dash 5.88s ease-in-out alternate infinite;
-}
-
-#num-339 .lines {
-  stroke-dasharray: 2881;
-  stroke-dashoffset: 2881;
-  animation: dash 5.762s ease-in-out alternate infinite;
-}
-
-#num-340 .lines {
-  stroke-dasharray: 2742;
-  stroke-dashoffset: 2742;
-  animation: dash 5.484s ease-in-out alternate infinite;
-}
-
-#num-341 .lines {
-  stroke-dasharray: 3242;
-  stroke-dashoffset: 3242;
-  animation: dash 6.484s ease-in-out alternate infinite;
-}
-
-#num-342 .lines {
-  stroke-dasharray: 2909;
-  stroke-dashoffset: 2909;
-  animation: dash 5.818s ease-in-out alternate infinite;
-}
-
-#num-343 .lines {
-  stroke-dasharray: 2379;
-  stroke-dashoffset: 2379;
-  animation: dash 4.758s ease-in-out alternate infinite;
-}
-
-#num-344 .lines {
-  stroke-dasharray: 2653;
-  stroke-dashoffset: 2653;
-  animation: dash 5.306s ease-in-out alternate infinite;
-}
-
-#num-345 .lines {
-  stroke-dasharray: 3500;
-  stroke-dashoffset: 3500;
-  animation: dash 7s ease-in-out alternate infinite;
-}
-
-#num-346 .lines {
-  stroke-dasharray: 3413;
-  stroke-dashoffset: 3413;
-  animation: dash 6.826s ease-in-out alternate infinite;
-}
-
-#num-347 .lines {
-  stroke-dasharray: 2439;
-  stroke-dashoffset: 2439;
-  animation: dash 4.878s ease-in-out alternate infinite;
-}
-
-#num-348 .lines {
-  stroke-dasharray: 2467;
-  stroke-dashoffset: 2467;
-  animation: dash 4.934s ease-in-out alternate infinite;
-}
-
-#num-349 .lines {
-  stroke-dasharray: 2682;
-  stroke-dashoffset: 2682;
-  animation: dash 5.364s ease-in-out alternate infinite;
-}
-
-#num-350 .lines {
-  stroke-dasharray: 2868;
-  stroke-dashoffset: 2868;
-  animation: dash 5.736s ease-in-out alternate infinite;
-}
-
-#num-351 .lines {
-  stroke-dasharray: 2928;
-  stroke-dashoffset: 2928;
-  animation: dash 5.856s ease-in-out alternate infinite;
-}
-
-#num-352 .lines {
-  stroke-dasharray: 2622;
-  stroke-dashoffset: 2622;
-  animation: dash 5.244s ease-in-out alternate infinite;
-}
-
-#num-353 .lines {
-  stroke-dasharray: 2682;
-  stroke-dashoffset: 2682;
-  animation: dash 5.364s ease-in-out alternate infinite;
-}
-
-#num-354 .lines {
-  stroke-dasharray: 2940;
-  stroke-dashoffset: 2940;
-  animation: dash 5.88s ease-in-out alternate infinite;
-}
-
-#num-355 .lines {
-  stroke-dasharray: 2881;
-  stroke-dashoffset: 2881;
-  animation: dash 5.762s ease-in-out alternate infinite;
-}
-
-#num-356 .lines {
-  stroke-dasharray: 2741;
-  stroke-dashoffset: 2741;
-  animation: dash 5.482s ease-in-out alternate infinite;
-}
-
-#num-357 .lines {
-  stroke-dasharray: 2666;
-  stroke-dashoffset: 2666;
-  animation: dash 5.332s ease-in-out alternate infinite;
-}
-
-#num-358 .lines {
-  stroke-dasharray: 2439;
-  stroke-dashoffset: 2439;
-  animation: dash 4.878s ease-in-out alternate infinite;
-}
-
-#num-359 .lines {
-  stroke-dasharray: 2968;
-  stroke-dashoffset: 2968;
-  animation: dash 5.936s ease-in-out alternate infinite;
-}
-
-#num-360 .lines {
-  stroke-dasharray: 3255;
-  stroke-dashoffset: 3255;
-  animation: dash 6.51s ease-in-out alternate infinite;
-}
-
-#num-361 .lines {
-  stroke-dasharray: 2682;
-  stroke-dashoffset: 2682;
-  animation: dash 5.364s ease-in-out alternate infinite;
-}
-
-#num-362 .lines {
-  stroke-dasharray: 2868;
-  stroke-dashoffset: 2868;
-  animation: dash 5.736s ease-in-out alternate infinite;
-}
-
-#num-363 .lines {
-  stroke-dasharray: 2928;
-  stroke-dashoffset: 2928;
-  animation: dash 5.856s ease-in-out alternate infinite;
-}
-
-#num-364 .lines {
-  stroke-dasharray: 2622;
-  stroke-dashoffset: 2622;
-  animation: dash 5.244s ease-in-out alternate infinite;
-}
-
-#num-365 .lines {
-  stroke-dasharray: 2911;
-  stroke-dashoffset: 2911;
-  animation: dash 5.822s ease-in-out alternate infinite;
-}
-
-#num-366 .lines {
-  stroke-dasharray: 2883;
-  stroke-dashoffset: 2883;
-  animation: dash 5.766s ease-in-out alternate infinite;
-}
-
-#num-367 .lines {
-  stroke-dasharray: 2968;
-  stroke-dashoffset: 2968;
-  animation: dash 5.936s ease-in-out alternate infinite;
-}
-
-#num-368 .lines {
-  stroke-dasharray: 3056;
-  stroke-dashoffset: 3056;
-  animation: dash 6.112s ease-in-out alternate infinite;
-}
-
-#num-369 .lines {
-  stroke-dasharray: 2653;
-  stroke-dashoffset: 2653;
-  animation: dash 5.306s ease-in-out alternate infinite;
-}
-
-#num-370 .lines {
-  stroke-dasharray: 2380;
-  stroke-dashoffset: 2380;
-  animation: dash 4.76s ease-in-out alternate infinite;
-}
-
-#num-371 .lines {
-  stroke-dasharray: 2909;
-  stroke-dashoffset: 2909;
-  animation: dash 5.818s ease-in-out alternate infinite;
-}
-
-#num-372 .lines {
-  stroke-dasharray: 3242;
-  stroke-dashoffset: 3242;
-  animation: dash 6.484s ease-in-out alternate infinite;
-}
-
-#num-373 .lines {
-  stroke-dasharray: 2897;
-  stroke-dashoffset: 2897;
-  animation: dash 5.794s ease-in-out alternate infinite;
-}
-
-#num-374 .lines {
-  stroke-dasharray: 2929;
-  stroke-dashoffset: 2929;
-  animation: dash 5.858s ease-in-out alternate infinite;
-}
-
-#num-375 .lines {
-  stroke-dasharray: 2909;
-  stroke-dashoffset: 2909;
-  animation: dash 5.818s ease-in-out alternate infinite;
-}
-
-#num-376 .lines {
-  stroke-dasharray: 3056;
-  stroke-dashoffset: 3056;
-  animation: dash 6.112s ease-in-out alternate infinite;
-}
-
-#num-377 .lines {
-  stroke-dasharray: 3005;
-  stroke-dashoffset: 3005;
-  animation: dash 6.01s ease-in-out alternate infinite;
-}
-
-#num-378 .lines {
-  stroke-dasharray: 3112;
-  stroke-dashoffset: 3112;
-  animation: dash 6.224s ease-in-out alternate infinite;
-}
-
-#num-379 .lines {
-  stroke-dasharray: 3331;
-  stroke-dashoffset: 3331;
-  animation: dash 6.662s ease-in-out alternate infinite;
-}
-
-#num-380 .lines {
-  stroke-dasharray: 2925;
-  stroke-dashoffset: 2925;
-  animation: dash 5.85s ease-in-out alternate infinite;
-}
-
-#num-381 .lines {
-  stroke-dasharray: 2707;
-  stroke-dashoffset: 2707;
-  animation: dash 5.414s ease-in-out alternate infinite;
-}
-
-#num-382 .lines {
-  stroke-dasharray: 2750;
-  stroke-dashoffset: 2750;
-  animation: dash 5.5s ease-in-out alternate infinite;
-}
-
-#num-383 .lines {
-  stroke-dasharray: 2220;
-  stroke-dashoffset: 2220;
-  animation: dash 4.44s ease-in-out alternate infinite;
-}
-
-#num-384 .lines {
-  stroke-dasharray: 2118;
-  stroke-dashoffset: 2118;
-  animation: dash 4.236s ease-in-out alternate infinite;
-}
-
-#num-385 .lines {
-  stroke-dasharray: 2495;
-  stroke-dashoffset: 2495;
-  animation: dash 4.99s ease-in-out alternate infinite;
-}
-
-#num-386 .lines {
-  stroke-dasharray: 3130;
-  stroke-dashoffset: 3130;
-  animation: dash 6.26s ease-in-out alternate infinite;
-}
-
-#num-387 .lines {
-  stroke-dasharray: 3150;
-  stroke-dashoffset: 3150;
-  animation: dash 6.3s ease-in-out alternate infinite;
-}
-
-#num-388 .lines {
-  stroke-dasharray: 2336;
-  stroke-dashoffset: 2336;
-  animation: dash 4.672s ease-in-out alternate infinite;
-}
-
-#num-389 .lines {
-  stroke-dasharray: 3231;
-  stroke-dashoffset: 3231;
-  animation: dash 6.462s ease-in-out alternate infinite;
-}
-
-#num-390 .lines {
-  stroke-dasharray: 2886;
-  stroke-dashoffset: 2886;
-  animation: dash 5.772s ease-in-out alternate infinite;
-}
-
-#num-391 .lines {
-  stroke-dasharray: 3044;
-  stroke-dashoffset: 3044;
-  animation: dash 6.088s ease-in-out alternate infinite;
-}
-
-#num-392 .lines {
-  stroke-dasharray: 3211;
-  stroke-dashoffset: 3211;
-  animation: dash 6.422s ease-in-out alternate infinite;
-}
-
-#num-393 .lines {
-  stroke-dasharray: 3195;
-  stroke-dashoffset: 3195;
-  animation: dash 6.39s ease-in-out alternate infinite;
-}
-
-#num-394 .lines {
-  stroke-dasharray: 3028;
-  stroke-dashoffset: 3028;
-  animation: dash 6.056s ease-in-out alternate infinite;
-}
-
-#num-395 .lines {
-  stroke-dasharray: 2379;
-  stroke-dashoffset: 2379;
-  animation: dash 4.758s ease-in-out alternate infinite;
-}
-
-#num-396 .lines {
-  stroke-dasharray: 2725;
-  stroke-dashoffset: 2725;
-  animation: dash 5.45s ease-in-out alternate infinite;
-}
-
-#num-397 .lines {
-  stroke-dasharray: 2770;
-  stroke-dashoffset: 2770;
-  animation: dash 5.54s ease-in-out alternate infinite;
-}
-
-#num-398 .lines {
-  stroke-dasharray: 3254;
-  stroke-dashoffset: 3254;
-  animation: dash 6.508s ease-in-out alternate infinite;
-}
-
-#num-399 .lines {
-  stroke-dasharray: 3155;
-  stroke-dashoffset: 3155;
-  animation: dash 6.31s ease-in-out alternate infinite;
-}
-
-#num-400 .lines {
-  stroke-dasharray: 2730;
-  stroke-dashoffset: 2730;
-  animation: dash 5.46s ease-in-out alternate infinite;
-}
-
-#num-401 .lines {
-  stroke-dasharray: 2937;
-  stroke-dashoffset: 2937;
-  animation: dash 5.874s ease-in-out alternate infinite;
-}
-
-#num-402 .lines {
-  stroke-dasharray: 3214;
-  stroke-dashoffset: 3214;
-  animation: dash 6.428s ease-in-out alternate infinite;
-}
-
-#num-403 .lines {
-  stroke-dasharray: 2566;
-  stroke-dashoffset: 2566;
-  animation: dash 5.132s ease-in-out alternate infinite;
-}
-
-#num-404 .lines {
-  stroke-dasharray: 2467;
-  stroke-dashoffset: 2467;
-  animation: dash 4.934s ease-in-out alternate infinite;
-}
-
-#num-405 .lines {
-  stroke-dasharray: 2996;
-  stroke-dashoffset: 2996;
-  animation: dash 5.992s ease-in-out alternate infinite;
-}
-
-#num-406 .lines {
-  stroke-dasharray: 3028;
-  stroke-dashoffset: 3028;
-  animation: dash 6.056s ease-in-out alternate infinite;
-}
-
-#num-407 .lines {
-  stroke-dasharray: 2869;
-  stroke-dashoffset: 2869;
-  animation: dash 5.738s ease-in-out alternate infinite;
-}
-
-#num-408 .lines {
-  stroke-dasharray: 3016;
-  stroke-dashoffset: 3016;
-  animation: dash 6.032s ease-in-out alternate infinite;
-}
-
-#num-409 .lines {
-  stroke-dasharray: 2872;
-  stroke-dashoffset: 2872;
-  animation: dash 5.744s ease-in-out alternate infinite;
-}
-
-#num-410 .lines {
-  stroke-dasharray: 2789;
-  stroke-dashoffset: 2789;
-  animation: dash 5.578s ease-in-out alternate infinite;
-}
-
-#num-411 .lines {
-  stroke-dasharray: 3117;
-  stroke-dashoffset: 3117;
-  animation: dash 6.234s ease-in-out alternate infinite;
-}
-
-#num-412 .lines {
-  stroke-dasharray: 3081;
-  stroke-dashoffset: 3081;
-  animation: dash 6.162s ease-in-out alternate infinite;
-}
-
-#num-413 .lines {
-  stroke-dasharray: 3179;
-  stroke-dashoffset: 3179;
-  animation: dash 6.358s ease-in-out alternate infinite;
-}
-
-#num-414 .lines {
-  stroke-dasharray: 3401;
-  stroke-dashoffset: 3401;
-  animation: dash 6.802s ease-in-out alternate infinite;
-}
-
-#num-415 .lines {
-  stroke-dasharray: 3042;
-  stroke-dashoffset: 3042;
-  animation: dash 6.084s ease-in-out alternate infinite;
-}
-
-#num-416 .lines {
-  stroke-dasharray: 2819;
-  stroke-dashoffset: 2819;
-  animation: dash 5.638s ease-in-out alternate infinite;
-}
-
-#num-417 .lines {
-  stroke-dasharray: 3378;
-  stroke-dashoffset: 3378;
-  animation: dash 6.756s ease-in-out alternate infinite;
-}
-
-#num-418 .lines {
-  stroke-dasharray: 3238;
-  stroke-dashoffset: 3238;
-  animation: dash 6.476s ease-in-out alternate infinite;
-}
-
-#num-419 .lines {
-  stroke-dasharray: 2819;
-  stroke-dashoffset: 2819;
-  animation: dash 5.638s ease-in-out alternate infinite;
-}
-
-#num-420 .lines {
-  stroke-dasharray: 3078;
-  stroke-dashoffset: 3078;
-  animation: dash 6.156s ease-in-out alternate infinite;
-}
-
-#num-421 .lines {
-  stroke-dasharray: 2650;
-  stroke-dashoffset: 2650;
-  animation: dash 5.3s ease-in-out alternate infinite;
-}
-
-#num-422 .lines {
-  stroke-dasharray: 3011;
-  stroke-dashoffset: 3011;
-  animation: dash 6.022s ease-in-out alternate infinite;
-}
-
-#num-423 .lines {
-  stroke-dasharray: 3339;
-  stroke-dashoffset: 3339;
-  animation: dash 6.678s ease-in-out alternate infinite;
-}
-
-#num-424 .lines {
-  stroke-dasharray: 2859;
-  stroke-dashoffset: 2859;
-  animation: dash 5.718s ease-in-out alternate infinite;
-}
-
-#num-425 .lines {
-  stroke-dasharray: 2812;
-  stroke-dashoffset: 2812;
-  animation: dash 5.624s ease-in-out alternate infinite;
-}
-
-#num-426 .lines {
-  stroke-dasharray: 3098;
-  stroke-dashoffset: 3098;
-  animation: dash 6.196s ease-in-out alternate infinite;
-}
-
-#num-427 .lines {
-  stroke-dasharray: 2824;
-  stroke-dashoffset: 2824;
-  animation: dash 5.648s ease-in-out alternate infinite;
-}
-
-#num-428 .lines {
-  stroke-dasharray: 2597;
-  stroke-dashoffset: 2597;
-  animation: dash 5.194s ease-in-out alternate infinite;
-}
-
-#num-429 .lines {
-  stroke-dasharray: 2538;
-  stroke-dashoffset: 2538;
-  animation: dash 5.076s ease-in-out alternate infinite;
-}
-
-#num-430 .lines {
-  stroke-dasharray: 2883;
-  stroke-dashoffset: 2883;
-  animation: dash 5.766s ease-in-out alternate infinite;
-}
-
-#num-431 .lines {
-  stroke-dasharray: 3039;
-  stroke-dashoffset: 3039;
-  animation: dash 6.078s ease-in-out alternate infinite;
-}
-
-#num-432 .lines {
-  stroke-dasharray: 2872;
-  stroke-dashoffset: 2872;
-  animation: dash 5.744s ease-in-out alternate infinite;
-}
-
-#num-433 .lines {
-  stroke-dasharray: 2670;
-  stroke-dashoffset: 2670;
-  animation: dash 5.34s ease-in-out alternate infinite;
-}
-
-#num-434 .lines {
-  stroke-dasharray: 3207;
-  stroke-dashoffset: 3207;
-  animation: dash 6.414s ease-in-out alternate infinite;
-}
-
-#num-435 .lines {
-  stroke-dasharray: 3162;
-  stroke-dashoffset: 3162;
-  animation: dash 6.324s ease-in-out alternate infinite;
-}
-
-#num-436 .lines {
-  stroke-dasharray: 2625;
-  stroke-dashoffset: 2625;
-  animation: dash 5.25s ease-in-out alternate infinite;
-}
-
-#num-437 .lines {
-  stroke-dasharray: 3285;
-  stroke-dashoffset: 3285;
-  animation: dash 6.57s ease-in-out alternate infinite;
-}
-
-#num-438 .lines {
-  stroke-dasharray: 2865;
-  stroke-dashoffset: 2865;
-  animation: dash 5.73s ease-in-out alternate infinite;
-}
-
-#num-439 .lines {
-  stroke-dasharray: 2689;
-  stroke-dashoffset: 2689;
-  animation: dash 5.378s ease-in-out alternate infinite;
-}
-
-#num-440 .lines {
-  stroke-dasharray: 3110;
-  stroke-dashoffset: 3110;
-  animation: dash 6.22s ease-in-out alternate infinite;
-}
-
-#num-441 .lines {
-  stroke-dasharray: 3286;
-  stroke-dashoffset: 3286;
-  animation: dash 6.572s ease-in-out alternate infinite;
-}
-
-#num-442 .lines {
-  stroke-dasharray: 2924;
-  stroke-dashoffset: 2924;
-  animation: dash 5.848s ease-in-out alternate infinite;
-}
-
-#num-443 .lines {
-  stroke-dasharray: 2689;
-  stroke-dashoffset: 2689;
-  animation: dash 5.378s ease-in-out alternate infinite;
-}
-
-#num-444 .lines {
-  stroke-dasharray: 3169;
-  stroke-dashoffset: 3169;
-  animation: dash 6.338s ease-in-out alternate infinite;
-}
-
-#num-445 .lines {
-  stroke-dasharray: 3070;
-  stroke-dashoffset: 3070;
-  animation: dash 6.14s ease-in-out alternate infinite;
-}
-
-#num-446 .lines {
-  stroke-dasharray: 2876;
-  stroke-dashoffset: 2876;
-  animation: dash 5.752s ease-in-out alternate infinite;
-}
-
-#num-447 .lines {
-  stroke-dasharray: 2661;
-  stroke-dashoffset: 2661;
-  animation: dash 5.322s ease-in-out alternate infinite;
-}
-
-#num-448 .lines {
-  stroke-dasharray: 2796;
-  stroke-dashoffset: 2796;
-  animation: dash 5.592s ease-in-out alternate infinite;
-}
-
-#num-449 .lines {
-  stroke-dasharray: 3011;
-  stroke-dashoffset: 3011;
-  animation: dash 6.022s ease-in-out alternate infinite;
-}
-
-#num-450 .lines {
-  stroke-dasharray: 2900;
-  stroke-dashoffset: 2900;
-  animation: dash 5.8s ease-in-out alternate infinite;
-}
-
-#num-451 .lines {
-  stroke-dasharray: 2625;
-  stroke-dashoffset: 2625;
-  animation: dash 5.25s ease-in-out alternate infinite;
-}
-
-#num-452 .lines {
-  stroke-dasharray: 2796;
-  stroke-dashoffset: 2796;
-  animation: dash 5.592s ease-in-out alternate infinite;
-}
-
-#num-453 .lines {
-  stroke-dasharray: 3075;
-  stroke-dashoffset: 3075;
-  animation: dash 6.15s ease-in-out alternate infinite;
-}
-
-#num-454 .lines {
-  stroke-dasharray: 2908;
-  stroke-dashoffset: 2908;
-  animation: dash 5.816s ease-in-out alternate infinite;
-}
-
-#num-455 .lines {
-  stroke-dasharray: 2574;
-  stroke-dashoffset: 2574;
-  animation: dash 5.148s ease-in-out alternate infinite;
-}
-
-#num-456 .lines {
-  stroke-dasharray: 2919;
-  stroke-dashoffset: 2919;
-  animation: dash 5.838s ease-in-out alternate infinite;
-}
-
-#num-457 .lines {
-  stroke-dasharray: 2860;
-  stroke-dashoffset: 2860;
-  animation: dash 5.72s ease-in-out alternate infinite;
-}
-
-#num-458 .lines {
-  stroke-dasharray: 2597;
-  stroke-dashoffset: 2597;
-  animation: dash 5.194s ease-in-out alternate infinite;
-}
-
-#num-459 .lines {
-  stroke-dasharray: 2872;
-  stroke-dashoffset: 2872;
-  animation: dash 5.744s ease-in-out alternate infinite;
-}
-
-#num-460 .lines {
-  stroke-dasharray: 3075;
-  stroke-dashoffset: 3075;
-  animation: dash 6.15s ease-in-out alternate infinite;
-}
-
-#num-461 .lines {
-  stroke-dasharray: 3146;
-  stroke-dashoffset: 3146;
-  animation: dash 6.292s ease-in-out alternate infinite;
-}
-
-#num-462 .lines {
-  stroke-dasharray: 3004;
-  stroke-dashoffset: 3004;
-  animation: dash 6.008s ease-in-out alternate infinite;
-}
-
-#num-463 .lines {
-  stroke-dasharray: 2947;
-  stroke-dashoffset: 2947;
-  animation: dash 5.894s ease-in-out alternate infinite;
-}
-
-#num-464 .lines {
-  stroke-dasharray: 2852;
-  stroke-dashoffset: 2852;
-  animation: dash 5.704s ease-in-out alternate infinite;
-}
-
-#num-465 .lines {
-  stroke-dasharray: 3110;
-  stroke-dashoffset: 3110;
-  animation: dash 6.22s ease-in-out alternate infinite;
-}
-
-#num-466 .lines {
-  stroke-dasharray: 2833;
-  stroke-dashoffset: 2833;
-  animation: dash 5.666s ease-in-out alternate infinite;
-}
-
-#num-467 .lines {
-  stroke-dasharray: 3122;
-  stroke-dashoffset: 3122;
-  animation: dash 6.244s ease-in-out alternate infinite;
-}
-
-#num-468 .lines {
-  stroke-dasharray: 3221;
-  stroke-dashoffset: 3221;
-  animation: dash 6.442s ease-in-out alternate infinite;
-}
-
-#num-469 .lines {
-  stroke-dasharray: 2575;
-  stroke-dashoffset: 2575;
-  animation: dash 5.15s ease-in-out alternate infinite;
-}
-
-#num-470 .lines {
-  stroke-dasharray: 2710;
-  stroke-dashoffset: 2710;
-  animation: dash 5.42s ease-in-out alternate infinite;
-}
-
-#num-471 .lines {
-  stroke-dasharray: 2939;
-  stroke-dashoffset: 2939;
-  animation: dash 5.878s ease-in-out alternate infinite;
-}
-
-#num-472 .lines {
-  stroke-dasharray: 2745;
-  stroke-dashoffset: 2745;
-  animation: dash 5.49s ease-in-out alternate infinite;
-}
-
-#num-473 .lines {
-  stroke-dasharray: 2559;
-  stroke-dashoffset: 2559;
-  animation: dash 5.118s ease-in-out alternate infinite;
-}
-
-#num-474 .lines {
-  stroke-dasharray: 2750;
-  stroke-dashoffset: 2750;
-  animation: dash 5.5s ease-in-out alternate infinite;
-}
-
-#num-475 .lines {
-  stroke-dasharray: 3084;
-  stroke-dashoffset: 3084;
-  animation: dash 6.168s ease-in-out alternate infinite;
-}
-
-#num-476 .lines {
-  stroke-dasharray: 2715;
-  stroke-dashoffset: 2715;
-  animation: dash 5.43s ease-in-out alternate infinite;
-}
-
-#num-477 .lines {
-  stroke-dasharray: 2715;
-  stroke-dashoffset: 2715;
-  animation: dash 5.43s ease-in-out alternate infinite;
-}
-
-#num-478 .lines {
-  stroke-dasharray: 3084;
-  stroke-dashoffset: 3084;
-  animation: dash 6.168s ease-in-out alternate infinite;
-}
-
-#num-479 .lines {
-  stroke-dasharray: 2750;
-  stroke-dashoffset: 2750;
-  animation: dash 5.5s ease-in-out alternate infinite;
-}
-
-#num-480 .lines {
-  stroke-dasharray: 2559;
-  stroke-dashoffset: 2559;
-  animation: dash 5.118s ease-in-out alternate infinite;
-}
-
-#num-481 .lines {
-  stroke-dasharray: 2836;
-  stroke-dashoffset: 2836;
-  animation: dash 5.672s ease-in-out alternate infinite;
-}
-
-#num-482 .lines {
-  stroke-dasharray: 2840;
-  stroke-dashoffset: 2840;
-  animation: dash 5.68s ease-in-out alternate infinite;
-}
-
-#num-483 .lines {
-  stroke-dasharray: 3070;
-  stroke-dashoffset: 3070;
-  animation: dash 6.14s ease-in-out alternate infinite;
-}
-
-#num-484 .lines {
-  stroke-dasharray: 3005;
-  stroke-dashoffset: 3005;
-  animation: dash 6.01s ease-in-out alternate infinite;
-}
-
-#num-485 .lines {
-  stroke-dasharray: 2819;
-  stroke-dashoffset: 2819;
-  animation: dash 5.638s ease-in-out alternate infinite;
-}
-
-#num-486 .lines {
-  stroke-dasharray: 3328;
-  stroke-dashoffset: 3328;
-  animation: dash 6.656s ease-in-out alternate infinite;
-}
-
-#num-487 .lines {
-  stroke-dasharray: 3098;
-  stroke-dashoffset: 3098;
-  animation: dash 6.196s ease-in-out alternate infinite;
-}
-
-#num-488 .lines {
-  stroke-dasharray: 2649;
-  stroke-dashoffset: 2649;
-  animation: dash 5.298s ease-in-out alternate infinite;
-}
-
-#num-489 .lines {
-  stroke-dasharray: 2790;
-  stroke-dashoffset: 2790;
-  animation: dash 5.58s ease-in-out alternate infinite;
-}
-
-#num-490 .lines {
-  stroke-dasharray: 3147;
-  stroke-dashoffset: 3147;
-  animation: dash 6.294s ease-in-out alternate infinite;
-}
-
-#num-491 .lines {
-  stroke-dasharray: 2442;
-  stroke-dashoffset: 2442;
-  animation: dash 4.884s ease-in-out alternate infinite;
-}
-
-#num-492 .lines {
-  stroke-dasharray: 2026;
-  stroke-dashoffset: 2026;
-  animation: dash 4.052s ease-in-out alternate infinite;
-}
-
-#num-493 .lines {
-  stroke-dasharray: 2985;
-  stroke-dashoffset: 2985;
-  animation: dash 5.97s ease-in-out alternate infinite;
-}
-
-#num-494 .lines {
-  stroke-dasharray: 3091;
-  stroke-dashoffset: 3091;
-  animation: dash 6.182s ease-in-out alternate infinite;
-}
-
-#num-495 .lines {
-  stroke-dasharray: 2602;
-  stroke-dashoffset: 2602;
-  animation: dash 5.204s ease-in-out alternate infinite;
-}
-
-#num-496 .lines {
-  stroke-dasharray: 2495;
-  stroke-dashoffset: 2495;
-  animation: dash 4.99s ease-in-out alternate infinite;
-}
-
-#num-497 .lines {
-  stroke-dasharray: 3146;
-  stroke-dashoffset: 3146;
-  animation: dash 6.292s ease-in-out alternate infinite;
-}
-
-#num-498 .lines {
-  stroke-dasharray: 3063;
-  stroke-dashoffset: 3063;
-  animation: dash 6.126s ease-in-out alternate infinite;
-}
-
-#num-499 .lines {
-  stroke-dasharray: 2947;
-  stroke-dashoffset: 2947;
-  animation: dash 5.894s ease-in-out alternate infinite;
-}
-
-#num-500 .lines {
-  stroke-dasharray: 2911;
-  stroke-dashoffset: 2911;
-  animation: dash 5.822s ease-in-out alternate infinite;
-}
-
-#num-501 .lines {
-  stroke-dasharray: 2786;
-  stroke-dashoffset: 2786;
-  animation: dash 5.572s ease-in-out alternate infinite;
-}
-
-#num-502 .lines {
-  stroke-dasharray: 2523;
-  stroke-dashoffset: 2523;
-  animation: dash 5.046s ease-in-out alternate infinite;
-}
-
-#num-503 .lines {
-  stroke-dasharray: 2797;
-  stroke-dashoffset: 2797;
-  animation: dash 5.594s ease-in-out alternate infinite;
-}
-
-#num-504 .lines {
-  stroke-dasharray: 3001;
-  stroke-dashoffset: 3001;
-  animation: dash 6.002s ease-in-out alternate infinite;
-}
-
-#num-505 .lines {
-  stroke-dasharray: 2471;
-  stroke-dashoffset: 2471;
-  animation: dash 4.942s ease-in-out alternate infinite;
-}
-
-#num-506 .lines {
-  stroke-dasharray: 2559;
-  stroke-dashoffset: 2559;
-  animation: dash 5.118s ease-in-out alternate infinite;
-}
-
-#num-507 .lines {
-  stroke-dasharray: 2729;
-  stroke-dashoffset: 2729;
-  animation: dash 5.458s ease-in-out alternate infinite;
-}
-
-#num-508 .lines {
-  stroke-dasharray: 2701;
-  stroke-dashoffset: 2701;
-  animation: dash 5.402s ease-in-out alternate infinite;
-}
-
-#num-509 .lines {
-  stroke-dasharray: 3088;
-  stroke-dashoffset: 3088;
-  animation: dash 6.176s ease-in-out alternate infinite;
-}
-
-#num-510 .lines {
-  stroke-dasharray: 2738;
-  stroke-dashoffset: 2738;
-  animation: dash 5.476s ease-in-out alternate infinite;
-}
-
-#num-511 .lines {
-  stroke-dasharray: 2483;
-  stroke-dashoffset: 2483;
-  animation: dash 4.966s ease-in-out alternate infinite;
-}
-
-#num-512 .lines {
-  stroke-dasharray: 2715;
-  stroke-dashoffset: 2715;
-  animation: dash 5.43s ease-in-out alternate infinite;
-}
-
-#num-513 .lines {
-  stroke-dasharray: 2814;
-  stroke-dashoffset: 2814;
-  animation: dash 5.628s ease-in-out alternate infinite;
-}
-
-#num-514 .lines {
-  stroke-dasharray: 2523;
-  stroke-dashoffset: 2523;
-  animation: dash 5.046s ease-in-out alternate infinite;
-}
-
-#num-515 .lines {
-  stroke-dasharray: 2698;
-  stroke-dashoffset: 2698;
-  animation: dash 5.396s ease-in-out alternate infinite;
-}
-
-#num-516 .lines {
-  stroke-dasharray: 2989;
-  stroke-dashoffset: 2989;
-  animation: dash 5.978s ease-in-out alternate infinite;
-}
-
-#num-517 .lines {
-  stroke-dasharray: 2746;
-  stroke-dashoffset: 2746;
-  animation: dash 5.492s ease-in-out alternate infinite;
-}
-
-#num-518 .lines {
-  stroke-dasharray: 2834;
-  stroke-dashoffset: 2834;
-  animation: dash 5.668s ease-in-out alternate infinite;
-}
-
-#num-519 .lines {
-  stroke-dasharray: 2559;
-  stroke-dashoffset: 2559;
-  animation: dash 5.118s ease-in-out alternate infinite;
-}
-
-#num-520 .lines {
-  stroke-dasharray: 2531;
-  stroke-dashoffset: 2531;
-  animation: dash 5.062s ease-in-out alternate infinite;
-}
-
-#num-521 .lines {
-  stroke-dasharray: 3001;
-  stroke-dashoffset: 3001;
-  animation: dash 6.002s ease-in-out alternate infinite;
-}
-
-#num-522 .lines {
-  stroke-dasharray: 2797;
-  stroke-dashoffset: 2797;
-  animation: dash 5.594s ease-in-out alternate infinite;
-}
-
-#num-523 .lines {
-  stroke-dasharray: 2523;
-  stroke-dashoffset: 2523;
-  animation: dash 5.046s ease-in-out alternate infinite;
-}
-
-#num-524 .lines {
-  stroke-dasharray: 2786;
-  stroke-dashoffset: 2786;
-  animation: dash 5.572s ease-in-out alternate infinite;
-}
-
-#num-525 .lines {
-  stroke-dasharray: 3005;
-  stroke-dashoffset: 3005;
-  animation: dash 6.01s ease-in-out alternate infinite;
-}
-
-#num-526 .lines {
-  stroke-dasharray: 3046;
-  stroke-dashoffset: 3046;
-  animation: dash 6.092s ease-in-out alternate infinite;
-}
-
-#num-527 .lines {
-  stroke-dasharray: 2817;
-  stroke-dashoffset: 2817;
-  animation: dash 5.634s ease-in-out alternate infinite;
-}
-
-#num-528 .lines {
-  stroke-dasharray: 2836;
-  stroke-dashoffset: 2836;
-  animation: dash 5.672s ease-in-out alternate infinite;
-}
-
-#num-529 .lines {
-  stroke-dasharray: 2872;
-  stroke-dashoffset: 2872;
-  animation: dash 5.744s ease-in-out alternate infinite;
-}
-
-#num-530 .lines {
-  stroke-dasharray: 2876;
-  stroke-dashoffset: 2876;
-  animation: dash 5.752s ease-in-out alternate infinite;
-}
-
-#num-531 .lines {
-  stroke-dasharray: 3106;
-  stroke-dashoffset: 3106;
-  animation: dash 6.212s ease-in-out alternate infinite;
-}
-
-#num-532 .lines {
-  stroke-dasharray: 3041;
-  stroke-dashoffset: 3041;
-  animation: dash 6.082s ease-in-out alternate infinite;
-}
-
-#num-533 .lines {
-  stroke-dasharray: 3027;
-  stroke-dashoffset: 3027;
-  animation: dash 6.054s ease-in-out alternate infinite;
-}
-
-#num-534 .lines {
-  stroke-dasharray: 3051;
-  stroke-dashoffset: 3051;
-  animation: dash 6.102s ease-in-out alternate infinite;
-}
-
-#num-535 .lines {
-  stroke-dasharray: 2875;
-  stroke-dashoffset: 2875;
-  animation: dash 5.75s ease-in-out alternate infinite;
-}
-
-#num-536 .lines {
-  stroke-dasharray: 2852;
-  stroke-dashoffset: 2852;
-  animation: dash 5.704s ease-in-out alternate infinite;
-}
-
-#num-537 .lines {
-  stroke-dasharray: 2812;
-  stroke-dashoffset: 2812;
-  animation: dash 5.624s ease-in-out alternate infinite;
-}
-
-#num-538 .lines {
-  stroke-dasharray: 2776;
-  stroke-dashoffset: 2776;
-  animation: dash 5.552s ease-in-out alternate infinite;
-}
-
-#num-539 .lines {
-  stroke-dasharray: 3150;
-  stroke-dashoffset: 3150;
-  animation: dash 6.3s ease-in-out alternate infinite;
-}
-
-#num-540 .lines {
-  stroke-dasharray: 3067;
-  stroke-dashoffset: 3067;
-  animation: dash 6.134s ease-in-out alternate infinite;
-}
-
-#num-541 .lines {
-  stroke-dasharray: 3041;
-  stroke-dashoffset: 3041;
-  animation: dash 6.082s ease-in-out alternate infinite;
-}
-
-#num-542 .lines {
-  stroke-dasharray: 3106;
-  stroke-dashoffset: 3106;
-  animation: dash 6.212s ease-in-out alternate infinite;
-}
-
-#num-543 .lines {
-  stroke-dasharray: 2876;
-  stroke-dashoffset: 2876;
-  animation: dash 5.752s ease-in-out alternate infinite;
-}
-
-#num-544 .lines {
-  stroke-dasharray: 2872;
-  stroke-dashoffset: 2872;
-  animation: dash 5.744s ease-in-out alternate infinite;
-}
-
-#num-545 .lines {
-  stroke-dasharray: 2836;
-  stroke-dashoffset: 2836;
-  animation: dash 5.672s ease-in-out alternate infinite;
-}
-
-#num-546 .lines {
-  stroke-dasharray: 2876;
-  stroke-dashoffset: 2876;
-  animation: dash 5.752s ease-in-out alternate infinite;
-}
-
-#num-547 .lines {
-  stroke-dasharray: 3091;
-  stroke-dashoffset: 3091;
-  animation: dash 6.182s ease-in-out alternate infinite;
-}
-
-#num-548 .lines {
-  stroke-dasharray: 3110;
-  stroke-dashoffset: 3110;
-  animation: dash 6.22s ease-in-out alternate infinite;
-}
-
-#num-549 .lines {
-  stroke-dasharray: 2990;
-  stroke-dashoffset: 2990;
-  animation: dash 5.98s ease-in-out alternate infinite;
-}
-
-#num-550 .lines {
-  stroke-dasharray: 2791;
-  stroke-dashoffset: 2791;
-  animation: dash 5.582s ease-in-out alternate infinite;
-}
-
-#num-551 .lines {
-  stroke-dasharray: 2791;
-  stroke-dashoffset: 2791;
-  animation: dash 5.582s ease-in-out alternate infinite;
-}
-
-#num-552 .lines {
-  stroke-dasharray: 2990;
-  stroke-dashoffset: 2990;
-  animation: dash 5.98s ease-in-out alternate infinite;
-}
-
-#num-553 .lines {
-  stroke-dasharray: 3245;
-  stroke-dashoffset: 3245;
-  animation: dash 6.49s ease-in-out alternate infinite;
-}
-
-#num-554 .lines {
-  stroke-dasharray: 3666;
-  stroke-dashoffset: 3666;
-  animation: dash 7.332s ease-in-out alternate infinite;
-}
-
-#num-555 .lines {
-  stroke-dasharray: 3222;
-  stroke-dashoffset: 3222;
-  animation: dash 6.444s ease-in-out alternate infinite;
-}
-
-#num-556 .lines {
-  stroke-dasharray: 2801;
-  stroke-dashoffset: 2801;
-  animation: dash 5.602s ease-in-out alternate infinite;
-}
-
-#num-557 .lines {
-  stroke-dasharray: 3695;
-  stroke-dashoffset: 3695;
-  animation: dash 7.39s ease-in-out alternate infinite;
-}
-
-#num-558 .lines {
-  stroke-dasharray: 3135;
-  stroke-dashoffset: 3135;
-  animation: dash 6.27s ease-in-out alternate infinite;
-}
-
-#num-559 .lines {
-  stroke-dasharray: 2585;
-  stroke-dashoffset: 2585;
-  animation: dash 5.17s ease-in-out alternate infinite;
-}
-
-#num-560 .lines {
-  stroke-dasharray: 3265;
-  stroke-dashoffset: 3265;
-  animation: dash 6.53s ease-in-out alternate infinite;
-}
-
-#num-561 .lines {
-  stroke-dasharray: 3205;
-  stroke-dashoffset: 3205;
-  animation: dash 6.41s ease-in-out alternate infinite;
-}
-
-#num-562 .lines {
-  stroke-dasharray: 2585;
-  stroke-dashoffset: 2585;
-  animation: dash 5.17s ease-in-out alternate infinite;
-}
-
-#num-563 .lines {
-  stroke-dasharray: 3030;
-  stroke-dashoffset: 3030;
-  animation: dash 6.06s ease-in-out alternate infinite;
-}
-
-#num-564 .lines {
-  stroke-dasharray: 3650;
-  stroke-dashoffset: 3650;
-  animation: dash 7.3s ease-in-out alternate infinite;
-}
-
-#num-565 .lines {
-  stroke-dasharray: 2801;
-  stroke-dashoffset: 2801;
-  animation: dash 5.602s ease-in-out alternate infinite;
-}
-
-#num-566 .lines {
-  stroke-dasharray: 3281;
-  stroke-dashoffset: 3281;
-  animation: dash 6.562s ease-in-out alternate infinite;
-}
-
-#num-567 .lines {
-  stroke-dasharray: 3711;
-  stroke-dashoffset: 3711;
-  animation: dash 7.422s ease-in-out alternate infinite;
-}
-
-#num-568 .lines {
-  stroke-dasharray: 3350;
-  stroke-dashoffset: 3350;
-  animation: dash 6.7s ease-in-out alternate infinite;
-}
-
-#num-569 .lines {
-  stroke-dasharray: 2990;
-  stroke-dashoffset: 2990;
-  animation: dash 5.98s ease-in-out alternate infinite;
-}
-
-#num-570 .lines {
-  stroke-dasharray: 2791;
-  stroke-dashoffset: 2791;
-  animation: dash 5.582s ease-in-out alternate infinite;
-}
-
-#num-571 .lines {
-  stroke-dasharray: 2791;
-  stroke-dashoffset: 2791;
-  animation: dash 5.582s ease-in-out alternate infinite;
-}
-
-#num-572 .lines {
-  stroke-dasharray: 2990;
-  stroke-dashoffset: 2990;
-  animation: dash 5.98s ease-in-out alternate infinite;
-}
-
-#num-573 .lines {
-  stroke-dasharray: 2774;
-  stroke-dashoffset: 2774;
-  animation: dash 5.548s ease-in-out alternate infinite;
-}
-
-#num-574 .lines {
-  stroke-dasharray: 2547;
-  stroke-dashoffset: 2547;
-  animation: dash 5.094s ease-in-out alternate infinite;
-}
-
-#num-575 .lines {
-  stroke-dasharray: 2717;
-  stroke-dashoffset: 2717;
-  animation: dash 5.434s ease-in-out alternate infinite;
-}
-
-#num-576 .lines {
-  stroke-dasharray: 3003;
-  stroke-dashoffset: 3003;
-  animation: dash 6.006s ease-in-out alternate infinite;
-}
-
-#num-577 .lines {
-  stroke-dasharray: 2849;
-  stroke-dashoffset: 2849;
-  animation: dash 5.698s ease-in-out alternate infinite;
-}
-
-#num-578 .lines {
-  stroke-dasharray: 2563;
-  stroke-dashoffset: 2563;
-  animation: dash 5.126s ease-in-out alternate infinite;
-}
-
-#num-579 .lines {
-  stroke-dasharray: 2568;
-  stroke-dashoffset: 2568;
-  animation: dash 5.136s ease-in-out alternate infinite;
-}
-
-#num-580 .lines {
-  stroke-dasharray: 2795;
-  stroke-dashoffset: 2795;
-  animation: dash 5.59s ease-in-out alternate infinite;
-}
-
-#num-581 .lines {
-  stroke-dasharray: 3034;
-  stroke-dashoffset: 3034;
-  animation: dash 6.068s ease-in-out alternate infinite;
-}
-
-#num-582 .lines {
-  stroke-dasharray: 2840;
-  stroke-dashoffset: 2840;
-  animation: dash 5.68s ease-in-out alternate infinite;
-}
-
-#num-583 .lines {
-  stroke-dasharray: 2625;
-  stroke-dashoffset: 2625;
-  animation: dash 5.25s ease-in-out alternate infinite;
-}
-
-#num-584 .lines {
-  stroke-dasharray: 2760;
-  stroke-dashoffset: 2760;
-  animation: dash 5.52s ease-in-out alternate infinite;
-}
-
-#num-585 .lines {
-  stroke-dasharray: 2824;
-  stroke-dashoffset: 2824;
-  animation: dash 5.648s ease-in-out alternate infinite;
-}
-
-#num-586 .lines {
-  stroke-dasharray: 2819;
-  stroke-dashoffset: 2819;
-  animation: dash 5.638s ease-in-out alternate infinite;
-}
-
-#num-587 .lines {
-  stroke-dasharray: 2545;
-  stroke-dashoffset: 2545;
-  animation: dash 5.09s ease-in-out alternate infinite;
-}
-
-#num-588 .lines {
-  stroke-dasharray: 2609;
-  stroke-dashoffset: 2609;
-  animation: dash 5.218s ease-in-out alternate infinite;
-}
-
-#num-589 .lines {
-  stroke-dasharray: 3098;
-  stroke-dashoffset: 3098;
-  animation: dash 6.196s ease-in-out alternate infinite;
-}
-
-#num-590 .lines {
-  stroke-dasharray: 2848;
-  stroke-dashoffset: 2848;
-  animation: dash 5.696s ease-in-out alternate infinite;
-}
-
-#num-591 .lines {
-  stroke-dasharray: 2574;
-  stroke-dashoffset: 2574;
-  animation: dash 5.148s ease-in-out alternate infinite;
-}
-
-#num-592 .lines {
-  stroke-dasharray: 2883;
-  stroke-dashoffset: 2883;
-  animation: dash 5.766s ease-in-out alternate infinite;
-}
-
-#num-593 .lines {
-  stroke-dasharray: 2819;
-  stroke-dashoffset: 2819;
-  animation: dash 5.638s ease-in-out alternate infinite;
-}
-
-#num-594 .lines {
-  stroke-dasharray: 2824;
-  stroke-dashoffset: 2824;
-  animation: dash 5.648s ease-in-out alternate infinite;
-}
-
-#num-595 .lines {
-  stroke-dasharray: 2609;
-  stroke-dashoffset: 2609;
-  animation: dash 5.218s ease-in-out alternate infinite;
-}
-
-#num-596 .lines {
-  stroke-dasharray: 2545;
-  stroke-dashoffset: 2545;
-  animation: dash 5.09s ease-in-out alternate infinite;
-}
-
-#num-597 .lines {
-  stroke-dasharray: 3027;
-  stroke-dashoffset: 3027;
-  animation: dash 6.054s ease-in-out alternate infinite;
-}
-
-#num-598 .lines {
-  stroke-dasharray: 3110;
-  stroke-dashoffset: 3110;
-  animation: dash 6.22s ease-in-out alternate infinite;
-}
-
-#num-599 .lines {
-  stroke-dasharray: 2875;
-  stroke-dashoffset: 2875;
-  animation: dash 5.75s ease-in-out alternate infinite;
-}
-
-#num-600 .lines {
-  stroke-dasharray: 2911;
-  stroke-dashoffset: 2911;
-  animation: dash 5.822s ease-in-out alternate infinite;
-}
-
-#num-601 .lines {
-  stroke-dasharray: 2797;
-  stroke-dashoffset: 2797;
-  animation: dash 5.594s ease-in-out alternate infinite;
-}
-
-#num-602 .lines {
-  stroke-dasharray: 2400;
-  stroke-dashoffset: 2400;
-  animation: dash 4.8s ease-in-out alternate infinite;
-}
-
-#num-603 .lines {
-  stroke-dasharray: 2774;
-  stroke-dashoffset: 2774;
-  animation: dash 5.548s ease-in-out alternate infinite;
-}
-
-#num-604 .lines {
-  stroke-dasharray: 3052;
-  stroke-dashoffset: 3052;
-  animation: dash 6.104s ease-in-out alternate infinite;
-}
-
-#num-605 .lines {
-  stroke-dasharray: 3080;
-  stroke-dashoffset: 3080;
-  animation: dash 6.16s ease-in-out alternate infinite;
-}
-
-#num-606 .lines {
-  stroke-dasharray: 3338;
-  stroke-dashoffset: 3338;
-  animation: dash 6.676s ease-in-out alternate infinite;
-}
-
-#num-607 .lines {
-  stroke-dasharray: 3103;
-  stroke-dashoffset: 3103;
-  animation: dash 6.206s ease-in-out alternate infinite;
-}
-
-#num-608 .lines {
-  stroke-dasharray: 2964;
-  stroke-dashoffset: 2964;
-  animation: dash 5.928s ease-in-out alternate infinite;
-}
-
-#num-609 .lines {
-  stroke-dasharray: 2805;
-  stroke-dashoffset: 2805;
-  animation: dash 5.61s ease-in-out alternate infinite;
-}
-
-#num-610 .lines {
-  stroke-dasharray: 3332;
-  stroke-dashoffset: 3332;
-  animation: dash 6.664s ease-in-out alternate infinite;
-}
-
-#num-611 .lines {
-  stroke-dasharray: 3097;
-  stroke-dashoffset: 3097;
-  animation: dash 6.194s ease-in-out alternate infinite;
-}
-
-#num-612 .lines {
-  stroke-dasharray: 2689;
-  stroke-dashoffset: 2689;
-  animation: dash 5.378s ease-in-out alternate infinite;
-}
-
-#num-613 .lines {
-  stroke-dasharray: 2653;
-  stroke-dashoffset: 2653;
-  animation: dash 5.306s ease-in-out alternate infinite;
-}
-
-#num-614 .lines {
-  stroke-dasharray: 2630;
-  stroke-dashoffset: 2630;
-  animation: dash 5.26s ease-in-out alternate infinite;
-}
-
-#num-615 .lines {
-  stroke-dasharray: 2630;
-  stroke-dashoffset: 2630;
-  animation: dash 5.26s ease-in-out alternate infinite;
-}
-
-#num-616 .lines {
-  stroke-dasharray: 2653;
-  stroke-dashoffset: 2653;
-  animation: dash 5.306s ease-in-out alternate infinite;
-}
-
-#num-617 .lines {
-  stroke-dasharray: 2876;
-  stroke-dashoffset: 2876;
-  animation: dash 5.752s ease-in-out alternate infinite;
-}
-
-#num-618 .lines {
-  stroke-dasharray: 2968;
-  stroke-dashoffset: 2968;
-  animation: dash 5.936s ease-in-out alternate infinite;
-}
-
-#num-619 .lines {
-  stroke-dasharray: 2479;
-  stroke-dashoffset: 2479;
-  animation: dash 4.958s ease-in-out alternate infinite;
-}
-
-#num-620 .lines {
-  stroke-dasharray: 2386;
-  stroke-dashoffset: 2386;
-  animation: dash 4.772s ease-in-out alternate infinite;
-}
-
-#num-621 .lines {
-  stroke-dasharray: 2904;
-  stroke-dashoffset: 2904;
-  animation: dash 5.808s ease-in-out alternate infinite;
-}
-
-#num-622 .lines {
-  stroke-dasharray: 2904;
-  stroke-dashoffset: 2904;
-  animation: dash 5.808s ease-in-out alternate infinite;
-}
-
-#num-623 .lines {
-  stroke-dasharray: 2415;
-  stroke-dashoffset: 2415;
-  animation: dash 4.83s ease-in-out alternate infinite;
-}
-
-#num-624 .lines {
-  stroke-dasharray: 2414;
-  stroke-dashoffset: 2414;
-  animation: dash 4.828s ease-in-out alternate infinite;
-}
-
-#num-625 .lines {
-  stroke-dasharray: 3544;
-  stroke-dashoffset: 3544;
-  animation: dash 7.088s ease-in-out alternate infinite;
-}
-
-#num-626 .lines {
-  stroke-dasharray: 3059;
-  stroke-dashoffset: 3059;
-  animation: dash 6.118s ease-in-out alternate infinite;
-}
-
-#num-627 .lines {
-  stroke-dasharray: 2261;
-  stroke-dashoffset: 2261;
-  animation: dash 4.522s ease-in-out alternate infinite;
-}
-
-#num-628 .lines {
-  stroke-dasharray: 2687;
-  stroke-dashoffset: 2687;
-  animation: dash 5.374s ease-in-out alternate infinite;
-}
-
-#num-629 .lines {
-  stroke-dasharray: 2471;
-  stroke-dashoffset: 2471;
-  animation: dash 4.942s ease-in-out alternate infinite;
-}
-
-#num-630 .lines {
-  stroke-dasharray: 2781;
-  stroke-dashoffset: 2781;
-  animation: dash 5.562s ease-in-out alternate infinite;
-}
-
-#num-631 .lines {
-  stroke-dasharray: 2506;
-  stroke-dashoffset: 2506;
-  animation: dash 5.012s ease-in-out alternate infinite;
-}
-
-#num-632 .lines {
-  stroke-dasharray: 2256;
-  stroke-dashoffset: 2256;
-  animation: dash 4.512s ease-in-out alternate infinite;
-}
-
-#num-633 .lines {
-  stroke-dasharray: 3526;
-  stroke-dashoffset: 3526;
-  animation: dash 7.052s ease-in-out alternate infinite;
-}
-
-#num-634 .lines {
-  stroke-dasharray: 2790;
-  stroke-dashoffset: 2790;
-  animation: dash 5.58s ease-in-out alternate infinite;
-}
-
-#num-635 .lines {
-  stroke-dasharray: 1986;
-  stroke-dashoffset: 1986;
-  animation: dash 3.972s ease-in-out alternate infinite;
-}
-
-#num-636 .lines {
-  stroke-dasharray: 2722;
-  stroke-dashoffset: 2722;
-  animation: dash 5.444s ease-in-out alternate infinite;
-}
-
-#num-637 .lines {
-  stroke-dasharray: 2937;
-  stroke-dashoffset: 2937;
-  animation: dash 5.874s ease-in-out alternate infinite;
-}
-
-#num-638 .lines {
-  stroke-dasharray: 2261;
-  stroke-dashoffset: 2261;
-  animation: dash 4.522s ease-in-out alternate infinite;
-}
-
-#num-639 .lines {
-  stroke-dasharray: 2516;
-  stroke-dashoffset: 2516;
-  animation: dash 5.032s ease-in-out alternate infinite;
-}
-
-#num-640 .lines {
-  stroke-dasharray: 3310;
-  stroke-dashoffset: 3310;
-  animation: dash 6.62s ease-in-out alternate infinite;
-}
-
-#num-641 .lines {
-  stroke-dasharray: 2471;
-  stroke-dashoffset: 2471;
-  animation: dash 4.942s ease-in-out alternate infinite;
-}
-
-#num-642 .lines {
-  stroke-dasharray: 2781;
-  stroke-dashoffset: 2781;
-  animation: dash 5.562s ease-in-out alternate infinite;
-}
-
-#num-643 .lines {
-  stroke-dasharray: 2506;
-  stroke-dashoffset: 2506;
-  animation: dash 5.012s ease-in-out alternate infinite;
-}
-
-#num-644 .lines {
-  stroke-dasharray: 2256;
-  stroke-dashoffset: 2256;
-  animation: dash 4.512s ease-in-out alternate infinite;
-}
-
-#num-645 .lines {
-  stroke-dasharray: 3590;
-  stroke-dashoffset: 3590;
-  animation: dash 7.18s ease-in-out alternate infinite;
-}
-
-#num-646 .lines {
-  stroke-dasharray: 3164;
-  stroke-dashoffset: 3164;
-  animation: dash 6.328s ease-in-out alternate infinite;
-}
-
-#num-647 .lines {
-  stroke-dasharray: 2261;
-  stroke-dashoffset: 2261;
-  animation: dash 4.522s ease-in-out alternate infinite;
-}
-
-#num-648 .lines {
-  stroke-dasharray: 2746;
-  stroke-dashoffset: 2746;
-  animation: dash 5.492s ease-in-out alternate infinite;
-}
-
-#num-649 .lines {
-  stroke-dasharray: 2836;
-  stroke-dashoffset: 2836;
-  animation: dash 5.672s ease-in-out alternate infinite;
-}
-
-#num-650 .lines {
-  stroke-dasharray: 3003;
-  stroke-dashoffset: 3003;
-  animation: dash 6.006s ease-in-out alternate infinite;
-}
-
-#num-651 .lines {
-  stroke-dasharray: 2847;
-  stroke-dashoffset: 2847;
-  animation: dash 5.694s ease-in-out alternate infinite;
-}
-
-#num-652 .lines {
-  stroke-dasharray: 2501;
-  stroke-dashoffset: 2501;
-  animation: dash 5.002s ease-in-out alternate infinite;
-}
-
-#num-653 .lines {
-  stroke-dasharray: 3481;
-  stroke-dashoffset: 3481;
-  animation: dash 6.962s ease-in-out alternate infinite;
-}
-
-#num-654 .lines {
-  stroke-dasharray: 3342;
-  stroke-dashoffset: 3342;
-  animation: dash 6.684s ease-in-out alternate infinite;
-}
-
-#num-655 .lines {
-  stroke-dasharray: 2164;
-  stroke-dashoffset: 2164;
-  animation: dash 4.328s ease-in-out alternate infinite;
-}
-
-#num-656 .lines {
-  stroke-dasharray: 2423;
-  stroke-dashoffset: 2423;
-  animation: dash 4.846s ease-in-out alternate infinite;
-}
-
-#num-657 .lines {
-  stroke-dasharray: 3259;
-  stroke-dashoffset: 3259;
-  animation: dash 6.518s ease-in-out alternate infinite;
-}
-
-#num-658 .lines {
-  stroke-dasharray: 3084;
-  stroke-dashoffset: 3084;
-  animation: dash 6.168s ease-in-out alternate infinite;
-}
-
-#num-659 .lines {
-  stroke-dasharray: 2654;
-  stroke-dashoffset: 2654;
-  animation: dash 5.308s ease-in-out alternate infinite;
-}
-
-#num-660 .lines {
-  stroke-dasharray: 2710;
-  stroke-dashoffset: 2710;
-  animation: dash 5.42s ease-in-out alternate infinite;
-}
-
-#num-661 .lines {
-  stroke-dasharray: 2853;
-  stroke-dashoffset: 2853;
-  animation: dash 5.706s ease-in-out alternate infinite;
-}
-
-#num-662 .lines {
-  stroke-dasharray: 2769;
-  stroke-dashoffset: 2769;
-  animation: dash 5.538s ease-in-out alternate infinite;
-}
-
-#num-663 .lines {
-  stroke-dasharray: 2770;
-  stroke-dashoffset: 2770;
-  animation: dash 5.54s ease-in-out alternate infinite;
-}
-
-#num-664 .lines {
-  stroke-dasharray: 2853;
-  stroke-dashoffset: 2853;
-  animation: dash 5.706s ease-in-out alternate infinite;
-}
-
-#num-665 .lines {
-  stroke-dasharray: 3242;
-  stroke-dashoffset: 3242;
-  animation: dash 6.484s ease-in-out alternate infinite;
-}
-
-#num-666 .lines {
-  stroke-dasharray: 2909;
-  stroke-dashoffset: 2909;
-  animation: dash 5.818s ease-in-out alternate infinite;
-}
-
-#num-667 .lines {
-  stroke-dasharray: 2379;
-  stroke-dashoffset: 2379;
-  animation: dash 4.758s ease-in-out alternate infinite;
-}
-
-#num-668 .lines {
-  stroke-dasharray: 2653;
-  stroke-dashoffset: 2653;
-  animation: dash 5.306s ease-in-out alternate infinite;
-}
-
-#num-669 .lines {
-  stroke-dasharray: 3500;
-  stroke-dashoffset: 3500;
-  animation: dash 7s ease-in-out alternate infinite;
-}
-
-#num-670 .lines {
-  stroke-dasharray: 3413;
-  stroke-dashoffset: 3413;
-  animation: dash 6.826s ease-in-out alternate infinite;
-}
-
-#num-671 .lines {
-  stroke-dasharray: 2439;
-  stroke-dashoffset: 2439;
-  animation: dash 4.878s ease-in-out alternate infinite;
-}
-
-#num-672 .lines {
-  stroke-dasharray: 2467;
-  stroke-dashoffset: 2467;
-  animation: dash 4.934s ease-in-out alternate infinite;
-}
-
-#num-673 .lines {
-  stroke-dasharray: 2682;
-  stroke-dashoffset: 2682;
-  animation: dash 5.364s ease-in-out alternate infinite;
-}
-
-#num-674 .lines {
-  stroke-dasharray: 2868;
-  stroke-dashoffset: 2868;
-  animation: dash 5.736s ease-in-out alternate infinite;
-}
-
-#num-675 .lines {
-  stroke-dasharray: 2928;
-  stroke-dashoffset: 2928;
-  animation: dash 5.856s ease-in-out alternate infinite;
-}
-
-#num-676 .lines {
-  stroke-dasharray: 2623;
-  stroke-dashoffset: 2623;
-  animation: dash 5.246s ease-in-out alternate infinite;
-}
-
-#num-677 .lines {
-  stroke-dasharray: 3068;
-  stroke-dashoffset: 3068;
-  animation: dash 6.136s ease-in-out alternate infinite;
-}
-
-#num-678 .lines {
-  stroke-dasharray: 3044;
-  stroke-dashoffset: 3044;
-  animation: dash 6.088s ease-in-out alternate infinite;
-}
-
-#num-679 .lines {
-  stroke-dasharray: 2495;
-  stroke-dashoffset: 2495;
-  animation: dash 4.99s ease-in-out alternate infinite;
-}
-
-#num-680 .lines {
-  stroke-dasharray: 2638;
-  stroke-dashoffset: 2638;
-  animation: dash 5.276s ease-in-out alternate infinite;
-}
-
-#num-681 .lines {
-  stroke-dasharray: 2985;
-  stroke-dashoffset: 2985;
-  animation: dash 5.97s ease-in-out alternate infinite;
-}
-
-#num-682 .lines {
-  stroke-dasharray: 2869;
-  stroke-dashoffset: 2869;
-  animation: dash 5.738s ease-in-out alternate infinite;
-}
-
-#num-683 .lines {
-  stroke-dasharray: 2869;
-  stroke-dashoffset: 2869;
-  animation: dash 5.738s ease-in-out alternate infinite;
-}
-
-#num-684 .lines {
-  stroke-dasharray: 2985;
-  stroke-dashoffset: 2985;
-  animation: dash 5.97s ease-in-out alternate infinite;
-}
-
-#num-685 .lines {
-  stroke-dasharray: 2897;
-  stroke-dashoffset: 2897;
-  animation: dash 5.794s ease-in-out alternate infinite;
-}
-
-#num-686 .lines {
-  stroke-dasharray: 3143;
-  stroke-dashoffset: 3143;
-  animation: dash 6.286s ease-in-out alternate infinite;
-}
-
-#num-687 .lines {
-  stroke-dasharray: 2653;
-  stroke-dashoffset: 2653;
-  animation: dash 5.306s ease-in-out alternate infinite;
-}
-
-#num-688 .lines {
-  stroke-dasharray: 2407;
-  stroke-dashoffset: 2407;
-  animation: dash 4.814s ease-in-out alternate infinite;
-}
-
-#num-689 .lines {
-  stroke-dasharray: 3226;
-  stroke-dashoffset: 3226;
-  animation: dash 6.452s ease-in-out alternate infinite;
-}
-
-#num-690 .lines {
-  stroke-dasharray: 3198;
-  stroke-dashoffset: 3198;
-  animation: dash 6.396s ease-in-out alternate infinite;
-}
-
-#num-691 .lines {
-  stroke-dasharray: 2654;
-  stroke-dashoffset: 2654;
-  animation: dash 5.308s ease-in-out alternate infinite;
-}
-
-#num-692 .lines {
-  stroke-dasharray: 2742;
-  stroke-dashoffset: 2742;
-  animation: dash 5.484s ease-in-out alternate infinite;
-}
-
-#num-693 .lines {
-  stroke-dasharray: 2928;
-  stroke-dashoffset: 2928;
-  animation: dash 5.856s ease-in-out alternate infinite;
-}
-
-#num-694 .lines {
-  stroke-dasharray: 2595;
-  stroke-dashoffset: 2595;
-  animation: dash 5.19s ease-in-out alternate infinite;
-}
-
-#num-695 .lines {
-  stroke-dasharray: 2694;
-  stroke-dashoffset: 2694;
-  animation: dash 5.388s ease-in-out alternate infinite;
-}
-
-#num-696 .lines {
-  stroke-dasharray: 2967;
-  stroke-dashoffset: 2967;
-  animation: dash 5.934s ease-in-out alternate infinite;
-}
-
-#num-697 .lines {
-  stroke-dasharray: 3167;
-  stroke-dashoffset: 3167;
-  animation: dash 6.334s ease-in-out alternate infinite;
-}
-
-#num-698 .lines {
-  stroke-dasharray: 3028;
-  stroke-dashoffset: 3028;
-  animation: dash 6.056s ease-in-out alternate infinite;
-}
-
-#num-699 .lines {
-  stroke-dasharray: 2478;
-  stroke-dashoffset: 2478;
-  animation: dash 4.956s ease-in-out alternate infinite;
-}
-
-#num-700 .lines {
-  stroke-dasharray: 2737;
-  stroke-dashoffset: 2737;
-  animation: dash 5.474s ease-in-out alternate infinite;
-}
-
-#num-701 .lines {
-  stroke-dasharray: 2563;
-  stroke-dashoffset: 2563;
-  animation: dash 5.126s ease-in-out alternate infinite;
-}
-
-#num-702 .lines {
-  stroke-dasharray: 2470;
-  stroke-dashoffset: 2470;
-  animation: dash 4.94s ease-in-out alternate infinite;
-}
-
-#num-703 .lines {
-  stroke-dasharray: 2516;
-  stroke-dashoffset: 2516;
-  animation: dash 5.032s ease-in-out alternate infinite;
-}
-
-#num-704 .lines {
-  stroke-dasharray: 2608;
-  stroke-dashoffset: 2608;
-  animation: dash 5.216s ease-in-out alternate infinite;
-}
-
-#num-705 .lines {
-  stroke-dasharray: 2725;
-  stroke-dashoffset: 2725;
-  animation: dash 5.45s ease-in-out alternate infinite;
-}
-
-#num-706 .lines {
-  stroke-dasharray: 2407;
-  stroke-dashoffset: 2407;
-  animation: dash 4.814s ease-in-out alternate infinite;
-}
-
-#num-707 .lines {
-  stroke-dasharray: 3016;
-  stroke-dashoffset: 3016;
-  animation: dash 6.032s ease-in-out alternate infinite;
-}
-
-#num-708 .lines {
-  stroke-dasharray: 3096;
-  stroke-dashoffset: 3096;
-  animation: dash 6.192s ease-in-out alternate infinite;
-}
-
-#num-709 .lines {
-  stroke-dasharray: 2558;
-  stroke-dashoffset: 2558;
-  animation: dash 5.116s ease-in-out alternate infinite;
-}
-
-#num-710 .lines {
-  stroke-dasharray: 2992;
-  stroke-dashoffset: 2992;
-  animation: dash 5.984s ease-in-out alternate infinite;
-}
-
-#num-711 .lines {
-  stroke-dasharray: 2873;
-  stroke-dashoffset: 2873;
-  animation: dash 5.746s ease-in-out alternate infinite;
-}
-
-#num-712 .lines {
-  stroke-dasharray: 2677;
-  stroke-dashoffset: 2677;
-  animation: dash 5.354s ease-in-out alternate infinite;
-}
-
-#num-713 .lines {
-  stroke-dasharray: 3013;
-  stroke-dashoffset: 3013;
-  animation: dash 6.026s ease-in-out alternate infinite;
-}
-
-#num-714 .lines {
-  stroke-dasharray: 2762;
-  stroke-dashoffset: 2762;
-  animation: dash 5.524s ease-in-out alternate infinite;
-}
-
-#num-715 .lines {
-  stroke-dasharray: 2488;
-  stroke-dashoffset: 2488;
-  animation: dash 4.976s ease-in-out alternate infinite;
-}
-
-#num-716 .lines {
-  stroke-dasharray: 2798;
-  stroke-dashoffset: 2798;
-  animation: dash 5.596s ease-in-out alternate infinite;
-}
-
-#num-717 .lines {
-  stroke-dasharray: 2876;
-  stroke-dashoffset: 2876;
-  animation: dash 5.752s ease-in-out alternate infinite;
-}
-
-#num-718 .lines {
-  stroke-dasharray: 3070;
-  stroke-dashoffset: 3070;
-  animation: dash 6.14s ease-in-out alternate infinite;
-}
-
-#num-719 .lines {
-  stroke-dasharray: 2796;
-  stroke-dashoffset: 2796;
-  animation: dash 5.592s ease-in-out alternate infinite;
-}
-
-#num-720 .lines {
-  stroke-dasharray: 2661;
-  stroke-dashoffset: 2661;
-  animation: dash 5.322s ease-in-out alternate infinite;
-}
-
-#num-721 .lines {
-  stroke-dasharray: 2609;
-  stroke-dashoffset: 2609;
-  animation: dash 5.218s ease-in-out alternate infinite;
-}
-
-#num-722 .lines {
-  stroke-dasharray: 2545;
-  stroke-dashoffset: 2545;
-  animation: dash 5.09s ease-in-out alternate infinite;
-}
-
-#num-723 .lines {
-  stroke-dasharray: 2819;
-  stroke-dashoffset: 2819;
-  animation: dash 5.638s ease-in-out alternate infinite;
-}
-
-#num-724 .lines {
-  stroke-dasharray: 2824;
-  stroke-dashoffset: 2824;
-  animation: dash 5.648s ease-in-out alternate infinite;
-}
-
-#num-725 .lines {
-  stroke-dasharray: 3098;
-  stroke-dashoffset: 3098;
-  animation: dash 6.196s ease-in-out alternate infinite;
-}
-
-#num-726 .lines {
-  stroke-dasharray: 2848;
-  stroke-dashoffset: 2848;
-  animation: dash 5.696s ease-in-out alternate infinite;
-}
-
-#num-727 .lines {
-  stroke-dasharray: 2574;
-  stroke-dashoffset: 2574;
-  animation: dash 5.148s ease-in-out alternate infinite;
-}
-
-#num-728 .lines {
-  stroke-dasharray: 2883;
-  stroke-dashoffset: 2883;
-  animation: dash 5.766s ease-in-out alternate infinite;
-}
-
-#num-729 .lines {
-  stroke-dasharray: 2545;
-  stroke-dashoffset: 2545;
-  animation: dash 5.09s ease-in-out alternate infinite;
-}
-
-#num-730 .lines {
-  stroke-dasharray: 2609;
-  stroke-dashoffset: 2609;
-  animation: dash 5.218s ease-in-out alternate infinite;
-}
-
-#num-731 .lines {
-  stroke-dasharray: 2824;
-  stroke-dashoffset: 2824;
-  animation: dash 5.648s ease-in-out alternate infinite;
-}
-
-#num-732 .lines {
-  stroke-dasharray: 2819;
-  stroke-dashoffset: 2819;
-  animation: dash 5.638s ease-in-out alternate infinite;
-}
-
-#num-733 .lines {
-  stroke-dasharray: 3261;
-  stroke-dashoffset: 3261;
-  animation: dash 6.522s ease-in-out alternate infinite;
-}
-
-#num-734 .lines {
-  stroke-dasharray: 3058;
-  stroke-dashoffset: 3058;
-  animation: dash 6.116s ease-in-out alternate infinite;
-}
-
-#num-735 .lines {
-  stroke-dasharray: 2829;
-  stroke-dashoffset: 2829;
-  animation: dash 5.658s ease-in-out alternate infinite;
-}
-
-#num-736 .lines {
-  stroke-dasharray: 3091;
-  stroke-dashoffset: 3091;
-  animation: dash 6.182s ease-in-out alternate infinite;
-}
-
-#num-737 .lines {
-  stroke-dasharray: 3006;
-  stroke-dashoffset: 3006;
-  animation: dash 6.012s ease-in-out alternate infinite;
-}
-
-#num-738 .lines {
-  stroke-dasharray: 2808;
-  stroke-dashoffset: 2808;
-  animation: dash 5.616s ease-in-out alternate infinite;
-}
-
-#num-739 .lines {
-  stroke-dasharray: 3297;
-  stroke-dashoffset: 3297;
-  animation: dash 6.594s ease-in-out alternate infinite;
-}
-
-#num-740 .lines {
-  stroke-dasharray: 3496;
-  stroke-dashoffset: 3496;
-  animation: dash 6.992s ease-in-out alternate infinite;
-}
-
-#num-741 .lines {
-  stroke-dasharray: 2786;
-  stroke-dashoffset: 2786;
-  animation: dash 5.572s ease-in-out alternate infinite;
-}
-
-#num-742 .lines {
-  stroke-dasharray: 2209;
-  stroke-dashoffset: 2209;
-  animation: dash 4.418s ease-in-out alternate infinite;
-}
-
-#num-743 .lines {
-  stroke-dasharray: 2483;
-  stroke-dashoffset: 2483;
-  animation: dash 4.966s ease-in-out alternate infinite;
-}
-
-#num-744 .lines {
-  stroke-dasharray: 3001;
-  stroke-dashoffset: 3001;
-  animation: dash 6.002s ease-in-out alternate infinite;
-}
-
-#num-745 .lines {
-  stroke-dasharray: 3230;
-  stroke-dashoffset: 3230;
-  animation: dash 6.46s ease-in-out alternate infinite;
-}
-
-#num-746 .lines {
-  stroke-dasharray: 2689;
-  stroke-dashoffset: 2689;
-  animation: dash 5.378s ease-in-out alternate infinite;
-}
-
-#num-747 .lines {
-  stroke-dasharray: 1970;
-  stroke-dashoffset: 1970;
-  animation: dash 3.94s ease-in-out alternate infinite;
-}
-
-#num-748 .lines {
-  stroke-dasharray: 2571;
-  stroke-dashoffset: 2571;
-  animation: dash 5.142s ease-in-out alternate infinite;
-}
-
-#num-749 .lines {
-  stroke-dasharray: 3088;
-  stroke-dashoffset: 3088;
-  animation: dash 6.176s ease-in-out alternate infinite;
-}
-
-#num-750 .lines {
-  stroke-dasharray: 3052;
-  stroke-dashoffset: 3052;
-  animation: dash 6.104s ease-in-out alternate infinite;
-}
-
-#num-751 .lines {
-  stroke-dasharray: 2798;
-  stroke-dashoffset: 2798;
-  animation: dash 5.596s ease-in-out alternate infinite;
-}
-
-#num-752 .lines {
-  stroke-dasharray: 2715;
-  stroke-dashoffset: 2715;
-  animation: dash 5.43s ease-in-out alternate infinite;
-}
-
-#num-753 .lines {
-  stroke-dasharray: 2814;
-  stroke-dashoffset: 2814;
-  animation: dash 5.628s ease-in-out alternate infinite;
-}
-
-#num-754 .lines {
-  stroke-dasharray: 2837;
-  stroke-dashoffset: 2837;
-  animation: dash 5.674s ease-in-out alternate infinite;
-}
-
-#num-755 .lines {
-  stroke-dasharray: 3013;
-  stroke-dashoffset: 3013;
-  animation: dash 6.026s ease-in-out alternate infinite;
-}
-
-#num-756 .lines {
-  stroke-dasharray: 2989;
-  stroke-dashoffset: 2989;
-  animation: dash 5.978s ease-in-out alternate infinite;
-}
-
-#num-757 .lines {
-  stroke-dasharray: 3060;
-  stroke-dashoffset: 3060;
-  animation: dash 6.12s ease-in-out alternate infinite;
-}
-
-#num-758 .lines {
-  stroke-dasharray: 2519;
-  stroke-dashoffset: 2519;
-  animation: dash 5.038s ease-in-out alternate infinite;
-}
-
-#num-759 .lines {
-  stroke-dasharray: 2245;
-  stroke-dashoffset: 2245;
-  animation: dash 4.49s ease-in-out alternate infinite;
-}
-
-#num-760 .lines {
-  stroke-dasharray: 2845;
-  stroke-dashoffset: 2845;
-  animation: dash 5.69s ease-in-out alternate infinite;
-}
-
-#num-761 .lines {
-  stroke-dasharray: 3001;
-  stroke-dashoffset: 3001;
-  animation: dash 6.002s ease-in-out alternate infinite;
-}
-
-#num-762 .lines {
-  stroke-dasharray: 2483;
-  stroke-dashoffset: 2483;
-  animation: dash 4.966s ease-in-out alternate infinite;
-}
-
-#num-763 .lines {
-  stroke-dasharray: 2209;
-  stroke-dashoffset: 2209;
-  animation: dash 4.418s ease-in-out alternate infinite;
-}
-
-#num-764 .lines {
-  stroke-dasharray: 2786;
-  stroke-dashoffset: 2786;
-  animation: dash 5.572s ease-in-out alternate infinite;
-}
-
-#num-765 .lines {
-  stroke-dasharray: 3154;
-  stroke-dashoffset: 3154;
-  animation: dash 6.308s ease-in-out alternate infinite;
-}
-
-#num-766 .lines {
-  stroke-dasharray: 2960;
-  stroke-dashoffset: 2960;
-  animation: dash 5.92s ease-in-out alternate infinite;
-}
-
-#num-767 .lines {
-  stroke-dasharray: 2301;
-  stroke-dashoffset: 2301;
-  animation: dash 4.602s ease-in-out alternate infinite;
-}
-
-#num-768 .lines {
-  stroke-dasharray: 2435;
-  stroke-dashoffset: 2435;
-  animation: dash 4.87s ease-in-out alternate infinite;
-}
-
-#num-769 .lines {
-  stroke-dasharray: 2900;
-  stroke-dashoffset: 2900;
-  animation: dash 5.8s ease-in-out alternate infinite;
-}
-
-#num-770 .lines {
-  stroke-dasharray: 2710;
-  stroke-dashoffset: 2710;
-  animation: dash 5.42s ease-in-out alternate infinite;
-}
-
-#num-771 .lines {
-  stroke-dasharray: 2769;
-  stroke-dashoffset: 2769;
-  animation: dash 5.538s ease-in-out alternate infinite;
-}
-
-#num-772 .lines {
-  stroke-dasharray: 2840;
-  stroke-dashoffset: 2840;
-  animation: dash 5.68s ease-in-out alternate infinite;
-}
-
-#num-773 .lines {
-  stroke-dasharray: 2701;
-  stroke-dashoffset: 2701;
-  animation: dash 5.402s ease-in-out alternate infinite;
-}
-
-#num-774 .lines {
-  stroke-dasharray: 2386;
-  stroke-dashoffset: 2386;
-  animation: dash 4.772s ease-in-out alternate infinite;
-}
-
-#num-775 .lines {
-  stroke-dasharray: 2386;
-  stroke-dashoffset: 2386;
-  animation: dash 4.772s ease-in-out alternate infinite;
-}
-
-#num-776 .lines {
-  stroke-dasharray: 2701;
-  stroke-dashoffset: 2701;
-  animation: dash 5.402s ease-in-out alternate infinite;
-}
-
-#num-777 .lines {
-  stroke-dasharray: 3791;
-  stroke-dashoffset: 3791;
-  animation: dash 7.582s ease-in-out alternate infinite;
-}
-
-#num-778 .lines {
-  stroke-dasharray: 2916;
-  stroke-dashoffset: 2916;
-  animation: dash 5.832s ease-in-out alternate infinite;
-}
-
-#num-779 .lines {
-  stroke-dasharray: 1922;
-  stroke-dashoffset: 1922;
-  animation: dash 3.844s ease-in-out alternate infinite;
-}
-
-#num-780 .lines {
-  stroke-dasharray: 2916;
-  stroke-dashoffset: 2916;
-  animation: dash 5.832s ease-in-out alternate infinite;
-}
-
-#num-781 .lines {
-  stroke-dasharray: 2956;
-  stroke-dashoffset: 2956;
-  animation: dash 5.912s ease-in-out alternate infinite;
-}
-
-#num-782 .lines {
-  stroke-dasharray: 3575;
-  stroke-dashoffset: 3575;
-  animation: dash 7.15s ease-in-out alternate infinite;
-}
-
-#num-783 .lines {
-  stroke-dasharray: 3131;
-  stroke-dashoffset: 3131;
-  animation: dash 6.262s ease-in-out alternate infinite;
-}
-
-#num-784 .lines {
-  stroke-dasharray: 2511;
-  stroke-dashoffset: 2511;
-  animation: dash 5.022s ease-in-out alternate infinite;
-}
-
-#num-785 .lines {
-  stroke-dasharray: 2511;
-  stroke-dashoffset: 2511;
-  animation: dash 5.022s ease-in-out alternate infinite;
-}
-
-#num-786 .lines {
-  stroke-dasharray: 3190;
-  stroke-dashoffset: 3190;
-  animation: dash 6.38s ease-in-out alternate infinite;
-}
-
-#num-787 .lines {
-  stroke-dasharray: 3621;
-  stroke-dashoffset: 3621;
-  animation: dash 7.242s ease-in-out alternate infinite;
-}
-
-#num-788 .lines {
-  stroke-dasharray: 3060;
-  stroke-dashoffset: 3060;
-  animation: dash 6.12s ease-in-out alternate infinite;
-}
-
-#num-789 .lines {
-  stroke-dasharray: 3406;
-  stroke-dashoffset: 3406;
-  animation: dash 6.812s ease-in-out alternate infinite;
-}
-
-#num-790 .lines {
-  stroke-dasharray: 2472;
-  stroke-dashoffset: 2472;
-  animation: dash 4.944s ease-in-out alternate infinite;
-}
-
-#num-791 .lines {
-  stroke-dasharray: 2472;
-  stroke-dashoffset: 2472;
-  animation: dash 4.944s ease-in-out alternate infinite;
-}
-
-#num-792 .lines {
-  stroke-dasharray: 3406;
-  stroke-dashoffset: 3406;
-  animation: dash 6.812s ease-in-out alternate infinite;
-}
-
-#num-793 .lines {
-  stroke-dasharray: 2701;
-  stroke-dashoffset: 2701;
-  animation: dash 5.402s ease-in-out alternate infinite;
-}
-
-#num-794 .lines {
-  stroke-dasharray: 2386;
-  stroke-dashoffset: 2386;
-  animation: dash 4.772s ease-in-out alternate infinite;
-}
-
-#num-795 .lines {
-  stroke-dasharray: 2387;
-  stroke-dashoffset: 2387;
-  animation: dash 4.774s ease-in-out alternate infinite;
-}
-
-#num-796 .lines {
-  stroke-dasharray: 2701;
-  stroke-dashoffset: 2701;
-  animation: dash 5.402s ease-in-out alternate infinite;
-}
-
-#num-797 .lines {
-  stroke-dasharray: 2523;
-  stroke-dashoffset: 2523;
-  animation: dash 5.046s ease-in-out alternate infinite;
-}
-
-#num-798 .lines {
-  stroke-dasharray: 2809;
-  stroke-dashoffset: 2809;
-  animation: dash 5.618s ease-in-out alternate infinite;
-}
-
-#num-799 .lines {
-  stroke-dasharray: 2894;
-  stroke-dashoffset: 2894;
-  animation: dash 5.788s ease-in-out alternate infinite;
-}
-
-#num-800 .lines {
-  stroke-dasharray: 2667;
-  stroke-dashoffset: 2667;
-  animation: dash 5.334s ease-in-out alternate infinite;
-}
-
-#num-801 .lines {
-  stroke-dasharray: 2341;
-  stroke-dashoffset: 2341;
-  animation: dash 4.682s ease-in-out alternate infinite;
-}
-
-#num-802 .lines {
-  stroke-dasharray: 3022;
-  stroke-dashoffset: 3022;
-  animation: dash 6.044s ease-in-out alternate infinite;
-}
-
-#num-803 .lines {
-  stroke-dasharray: 3135;
-  stroke-dashoffset: 3135;
-  animation: dash 6.27s ease-in-out alternate infinite;
-}
-
-#num-804 .lines {
-  stroke-dasharray: 2276;
-  stroke-dashoffset: 2276;
-  animation: dash 4.552s ease-in-out alternate infinite;
-}
-
-#num-805 .lines {
-  stroke-dasharray: 2237;
-  stroke-dashoffset: 2237;
-  animation: dash 4.474s ease-in-out alternate infinite;
-}
-
-#num-806 .lines {
-  stroke-dasharray: 3059;
-  stroke-dashoffset: 3059;
-  animation: dash 6.118s ease-in-out alternate infinite;
-}
-
-#num-807 .lines {
-  stroke-dasharray: 3144;
-  stroke-dashoffset: 3144;
-  animation: dash 6.288s ease-in-out alternate infinite;
-}
-
-#num-808 .lines {
-  stroke-dasharray: 2381;
-  stroke-dashoffset: 2381;
-  animation: dash 4.762s ease-in-out alternate infinite;
-}
-
-#num-809 .lines {
-  stroke-dasharray: 2774;
-  stroke-dashoffset: 2774;
-  animation: dash 5.548s ease-in-out alternate infinite;
-}
-
-#num-810 .lines {
-  stroke-dasharray: 2547;
-  stroke-dashoffset: 2547;
-  animation: dash 5.094s ease-in-out alternate infinite;
-}
-
-#num-811 .lines {
-  stroke-dasharray: 2717;
-  stroke-dashoffset: 2717;
-  animation: dash 5.434s ease-in-out alternate infinite;
-}
-
-#num-812 .lines {
-  stroke-dasharray: 3003;
-  stroke-dashoffset: 3003;
-  animation: dash 6.006s ease-in-out alternate infinite;
-}
-
-#num-813 .lines {
-  stroke-dasharray: 2665;
-  stroke-dashoffset: 2665;
-  animation: dash 5.33s ease-in-out alternate infinite;
-}
-
-#num-814 .lines {
-  stroke-dasharray: 2406;
-  stroke-dashoffset: 2406;
-  animation: dash 4.812s ease-in-out alternate infinite;
-}
-
-#num-815 .lines {
-  stroke-dasharray: 2825;
-  stroke-dashoffset: 2825;
-  animation: dash 5.65s ease-in-out alternate infinite;
-}
-
-#num-816 .lines {
-  stroke-dasharray: 2965;
-  stroke-dashoffset: 2965;
-  animation: dash 5.93s ease-in-out alternate infinite;
-}
-
-#num-817 .lines {
-  stroke-dasharray: 2798;
-  stroke-dashoffset: 2798;
-  animation: dash 5.596s ease-in-out alternate infinite;
-}
-
-#num-818 .lines {
-  stroke-dasharray: 2488;
-  stroke-dashoffset: 2488;
-  animation: dash 4.976s ease-in-out alternate infinite;
-}
-
-#num-819 .lines {
-  stroke-dasharray: 2717;
-  stroke-dashoffset: 2717;
-  animation: dash 5.434s ease-in-out alternate infinite;
-}
-
-#num-820 .lines {
-  stroke-dasharray: 2967;
-  stroke-dashoffset: 2967;
-  animation: dash 5.934s ease-in-out alternate infinite;
-}
-
-#num-821 .lines {
-  stroke-dasharray: 2693;
-  stroke-dashoffset: 2693;
-  animation: dash 5.386s ease-in-out alternate infinite;
-}
-
-#num-822 .lines {
-  stroke-dasharray: 2415;
-  stroke-dashoffset: 2415;
-  animation: dash 4.83s ease-in-out alternate infinite;
-}
-
-#num-823 .lines {
-  stroke-dasharray: 2715;
-  stroke-dashoffset: 2715;
-  animation: dash 5.43s ease-in-out alternate infinite;
-}
-
-#num-824 .lines {
-  stroke-dasharray: 3112;
-  stroke-dashoffset: 3112;
-  animation: dash 6.224s ease-in-out alternate infinite;
-}
-
-#num-825 .lines {
-  stroke-dasharray: 2710;
-  stroke-dashoffset: 2710;
-  animation: dash 5.42s ease-in-out alternate infinite;
-}
-
-#num-826 .lines {
-  stroke-dasharray: 2738;
-  stroke-dashoffset: 2738;
-  animation: dash 5.476s ease-in-out alternate infinite;
-}
-
-#num-827 .lines {
-  stroke-dasharray: 2523;
-  stroke-dashoffset: 2523;
-  animation: dash 5.046s ease-in-out alternate infinite;
-}
-
-#num-828 .lines {
-  stroke-dasharray: 2435;
-  stroke-dashoffset: 2435;
-  animation: dash 4.87s ease-in-out alternate infinite;
-}
-
-#num-829 .lines {
-  stroke-dasharray: 2646;
-  stroke-dashoffset: 2646;
-  animation: dash 5.292s ease-in-out alternate infinite;
-}
-
-#num-830 .lines {
-  stroke-dasharray: 2738;
-  stroke-dashoffset: 2738;
-  animation: dash 5.476s ease-in-out alternate infinite;
-}
-
-#num-831 .lines {
-  stroke-dasharray: 2562;
-  stroke-dashoffset: 2562;
-  animation: dash 5.124s ease-in-out alternate infinite;
-}
-
-#num-832 .lines {
-  stroke-dasharray: 2470;
-  stroke-dashoffset: 2470;
-  animation: dash 4.94s ease-in-out alternate infinite;
-}
-
-#num-833 .lines {
-  stroke-dasharray: 2663;
-  stroke-dashoffset: 2663;
-  animation: dash 5.326s ease-in-out alternate infinite;
-}
-
-#num-834 .lines {
-  stroke-dasharray: 2348;
-  stroke-dashoffset: 2348;
-  animation: dash 4.696s ease-in-out alternate infinite;
-}
-
-#num-835 .lines {
-  stroke-dasharray: 2348;
-  stroke-dashoffset: 2348;
-  animation: dash 4.696s ease-in-out alternate infinite;
-}
-
-#num-836 .lines {
-  stroke-dasharray: 2662;
-  stroke-dashoffset: 2662;
-  animation: dash 5.324s ease-in-out alternate infinite;
-}
-
-#num-837 .lines {
-  stroke-dasharray: 2994;
-  stroke-dashoffset: 2994;
-  animation: dash 5.988s ease-in-out alternate infinite;
-}
-
-#num-838 .lines {
-  stroke-dasharray: 2656;
-  stroke-dashoffset: 2656;
-  animation: dash 5.312s ease-in-out alternate infinite;
-}
-
-#num-839 .lines {
-  stroke-dasharray: 2106;
-  stroke-dashoffset: 2106;
-  animation: dash 4.212s ease-in-out alternate infinite;
-}
-
-#num-840 .lines {
-  stroke-dasharray: 2564;
-  stroke-dashoffset: 2564;
-  animation: dash 5.128s ease-in-out alternate infinite;
-}
-
-#num-841 .lines {
-  stroke-dasharray: 2381;
-  stroke-dashoffset: 2381;
-  animation: dash 4.762s ease-in-out alternate infinite;
-}
-
-#num-842 .lines {
-  stroke-dasharray: 2464;
-  stroke-dashoffset: 2464;
-  animation: dash 4.928s ease-in-out alternate infinite;
-}
-
-#num-843 .lines {
-  stroke-dasharray: 3093;
-  stroke-dashoffset: 3093;
-  animation: dash 6.186s ease-in-out alternate infinite;
-}
-
-#num-844 .lines {
-  stroke-dasharray: 3009;
-  stroke-dashoffset: 3009;
-  animation: dash 6.018s ease-in-out alternate infinite;
-}
-
-#num-845 .lines {
-  stroke-dasharray: 2779;
-  stroke-dashoffset: 2779;
-  animation: dash 5.558s ease-in-out alternate infinite;
-}
-
-#num-846 .lines {
-  stroke-dasharray: 2353;
-  stroke-dashoffset: 2353;
-  animation: dash 4.706s ease-in-out alternate infinite;
-}
-
-#num-847 .lines {
-  stroke-dasharray: 2393;
-  stroke-dashoffset: 2393;
-  animation: dash 4.786s ease-in-out alternate infinite;
-}
-
-#num-848 .lines {
-  stroke-dasharray: 2878;
-  stroke-dashoffset: 2878;
-  animation: dash 5.756s ease-in-out alternate infinite;
-}
-
-#num-849 .lines {
-  stroke-dasharray: 2878;
-  stroke-dashoffset: 2878;
-  animation: dash 5.756s ease-in-out alternate infinite;
-}
-
-#num-850 .lines {
-  stroke-dasharray: 2651;
-  stroke-dashoffset: 2651;
-  animation: dash 5.302s ease-in-out alternate infinite;
-}
-
-#num-851 .lines {
-  stroke-dasharray: 2062;
-  stroke-dashoffset: 2062;
-  animation: dash 4.124s ease-in-out alternate infinite;
-}
-
-#num-852 .lines {
-  stroke-dasharray: 2348;
-  stroke-dashoffset: 2348;
-  animation: dash 4.696s ease-in-out alternate infinite;
-}
-
-#num-853 .lines {
-  stroke-dasharray: 2552;
-  stroke-dashoffset: 2552;
-  animation: dash 5.104s ease-in-out alternate infinite;
-}
-
-#num-854 .lines {
-  stroke-dasharray: 2294;
-  stroke-dashoffset: 2294;
-  animation: dash 4.588s ease-in-out alternate infinite;
-}
-
-#num-855 .lines {
-  stroke-dasharray: 2982;
-  stroke-dashoffset: 2982;
-  animation: dash 5.964s ease-in-out alternate infinite;
-}
-
-#num-856 .lines {
-  stroke-dasharray: 3121;
-  stroke-dashoffset: 3121;
-  animation: dash 6.242s ease-in-out alternate infinite;
-}
-
-#num-857 .lines {
-  stroke-dasharray: 2735;
-  stroke-dashoffset: 2735;
-  animation: dash 5.47s ease-in-out alternate infinite;
-}
-
-#num-858 .lines {
-  stroke-dasharray: 2878;
-  stroke-dashoffset: 2878;
-  animation: dash 5.756s ease-in-out alternate infinite;
-}
-
-#num-859 .lines {
-  stroke-dasharray: 2680;
-  stroke-dashoffset: 2680;
-  animation: dash 5.36s ease-in-out alternate infinite;
-}
-
-#num-860 .lines {
-  stroke-dasharray: 2656;
-  stroke-dashoffset: 2656;
-  animation: dash 5.312s ease-in-out alternate infinite;
-}
-
-#num-861 .lines {
-  stroke-dasharray: 2779;
-  stroke-dashoffset: 2779;
-  animation: dash 5.558s ease-in-out alternate infinite;
-}
-
-#num-862 .lines {
-  stroke-dasharray: 2381;
-  stroke-dashoffset: 2381;
-  animation: dash 4.762s ease-in-out alternate infinite;
-}
-
-#num-863 .lines {
-  stroke-dasharray: 2381;
-  stroke-dashoffset: 2381;
-  animation: dash 4.762s ease-in-out alternate infinite;
-}
-
-#num-864 .lines {
-  stroke-dasharray: 2779;
-  stroke-dashoffset: 2779;
-  animation: dash 5.558s ease-in-out alternate infinite;
-}
-
-#num-865 .lines {
-  stroke-dasharray: 2906;
-  stroke-dashoffset: 2906;
-  animation: dash 5.812s ease-in-out alternate infinite;
-}
-
-#num-866 .lines {
-  stroke-dasharray: 2707;
-  stroke-dashoffset: 2707;
-  animation: dash 5.414s ease-in-out alternate infinite;
-}
-
-#num-867 .lines {
-  stroke-dasharray: 2568;
-  stroke-dashoffset: 2568;
-  animation: dash 5.136s ease-in-out alternate infinite;
-}
-
-#num-868 .lines {
-  stroke-dasharray: 2767;
-  stroke-dashoffset: 2767;
-  animation: dash 5.534s ease-in-out alternate infinite;
-}
-
-#num-869 .lines {
-  stroke-dasharray: 2563;
-  stroke-dashoffset: 2563;
-  animation: dash 5.126s ease-in-out alternate infinite;
-}
-
-#num-870 .lines {
-  stroke-dasharray: 2337;
-  stroke-dashoffset: 2337;
-  animation: dash 4.674s ease-in-out alternate infinite;
-}
-
-#num-871 .lines {
-  stroke-dasharray: 2376;
-  stroke-dashoffset: 2376;
-  animation: dash 4.752s ease-in-out alternate infinite;
-}
-
-#num-872 .lines {
-  stroke-dasharray: 2662;
-  stroke-dashoffset: 2662;
-  animation: dash 5.324s ease-in-out alternate infinite;
-}
-
-#num-873 .lines {
-  stroke-dasharray: 2563;
-  stroke-dashoffset: 2563;
-  animation: dash 5.126s ease-in-out alternate infinite;
-}
-
-#num-874 .lines {
-  stroke-dasharray: 2078;
-  stroke-dashoffset: 2078;
-  animation: dash 4.156s ease-in-out alternate infinite;
-}
-
-#num-875 .lines {
-  stroke-dasharray: 2667;
-  stroke-dashoffset: 2667;
-  animation: dash 5.334s ease-in-out alternate infinite;
-}
-
-#num-876 .lines {
-  stroke-dasharray: 3093;
-  stroke-dashoffset: 3093;
-  animation: dash 6.186s ease-in-out alternate infinite;
-}
-
-#num-877 .lines {
-  stroke-dasharray: 2348;
-  stroke-dashoffset: 2348;
-  animation: dash 4.696s ease-in-out alternate infinite;
-}
-
-#num-878 .lines {
-  stroke-dasharray: 2034;
-  stroke-dashoffset: 2034;
-  animation: dash 4.068s ease-in-out alternate infinite;
-}
-
-#num-879 .lines {
-  stroke-dasharray: 2663;
-  stroke-dashoffset: 2663;
-  animation: dash 5.326s ease-in-out alternate infinite;
-}
-
-#num-880 .lines {
-  stroke-dasharray: 2977;
-  stroke-dashoffset: 2977;
-  animation: dash 5.954s ease-in-out alternate infinite;
-}
+/* arc  */
+#num-1 .lines { animation: dash 4.568s ease-in-out alternate infinite; }
+#num-2 .lines { animation: dash 4.956s ease-in-out alternate infinite; }
+#num-3 .lines { animation: dash 5.388s ease-in-out alternate infinite; }
+#num-4 .lines { animation: dash 5.118s ease-in-out alternate infinite; }
+#num-5 .lines { animation: dash 4.568s ease-in-out alternate infinite; }
+#num-6 .lines { animation: dash 4.958s ease-in-out alternate infinite; }
+#num-7 .lines { animation: dash 5.388s ease-in-out alternate infinite; }
+#num-8 .lines { animation: dash 5.118s ease-in-out alternate infinite; }
+#num-9 .lines { animation: dash 5.022s ease-in-out alternate infinite; }
+#num-10 .lines { animation: dash 6.834s ease-in-out alternate infinite; }
+#num-11 .lines { animation: dash 6.636s ease-in-out alternate infinite; }
+#num-12 .lines { animation: dash 4.944s ease-in-out alternate infinite; }
+#num-13 .lines { animation: dash 4.362s ease-in-out alternate infinite; }
+#num-14 .lines { animation: dash 5.776s ease-in-out alternate infinite; }
+#num-15 .lines { animation: dash 6.834s ease-in-out alternate infinite; }
+#num-16 .lines { animation: dash 5.538s ease-in-out alternate infinite; }
+#num-17 .lines { animation: dash 4.44s ease-in-out alternate infinite; }
+#num-18 .lines { animation: dash 4.94s ease-in-out alternate infinite; }
+#num-19 .lines { animation: dash 5.49s ease-in-out alternate infinite; }
+#num-20 .lines { animation: dash 4.87s ease-in-out alternate infinite; }
+#num-21 .lines { animation: dash 5.014s ease-in-out alternate infinite; }
+#num-22 .lines { animation: dash 4.512s ease-in-out alternate infinite; }
+#num-23 .lines { animation: dash 4.942s ease-in-out alternate infinite; }
+#num-24 .lines { animation: dash 5.562s ease-in-out alternate infinite; }
+#num-25 .lines { animation: dash 3.712s ease-in-out alternate infinite; }
+#num-26 .lines { animation: dash 4.97s ease-in-out alternate infinite; }
+#num-27 .lines { animation: dash 6.578s ease-in-out alternate infinite; }
+#num-28 .lines { animation: dash 5.32s ease-in-out alternate infinite; }
+#num-29 .lines { animation: dash 4.166s ease-in-out alternate infinite; }
+#num-30 .lines { animation: dash 4.97s ease-in-out alternate infinite; }
+#num-31 .lines { animation: dash 5.31s ease-in-out alternate infinite; }
+#num-32 .lines { animation: dash 4.624s ease-in-out alternate infinite; }
+#num-33 .lines { animation: dash 4.038s ease-in-out alternate infinite; }
+#num-34 .lines { animation: dash 4.97s ease-in-out alternate infinite; }
+#num-35 .lines { animation: dash 5.478s ease-in-out alternate infinite; }
+#num-36 .lines { animation: dash 4.786s ease-in-out alternate infinite; }
+#num-37 .lines { animation: dash 4.61s ease-in-out alternate infinite; }
+#num-38 .lines { animation: dash 4.97s ease-in-out alternate infinite; }
+#num-39 .lines { animation: dash 4.42s ease-in-out alternate infinite; }
+#num-40 .lines { animation: dash 4.18s ease-in-out alternate infinite; }
+#num-41 .lines { animation: dash 5.07s ease-in-out alternate infinite; }
+#num-42 .lines { animation: dash 6.198s ease-in-out alternate infinite; }
+#num-43 .lines { animation: dash 5.23s ease-in-out alternate infinite; }
+#num-44 .lines { animation: dash 3.982s ease-in-out alternate infinite; }
+#num-45 .lines { animation: dash 4.588s ease-in-out alternate infinite; }
+#num-46 .lines { animation: dash 5.778s ease-in-out alternate infinite; }
+#num-47 .lines { animation: dash 5.66s ease-in-out alternate infinite; }
+#num-48 .lines { animation: dash 4.706s ease-in-out alternate infinite; }
+#num-49 .lines { animation: dash 5.054s ease-in-out alternate infinite; }
+#num-50 .lines { animation: dash 5.858s ease-in-out alternate infinite; }
+#num-51 .lines { animation: dash 4.68s ease-in-out alternate infinite; }
+#num-52 .lines { animation: dash 3.996s ease-in-out alternate infinite; }
+#num-53 .lines { animation: dash 4.482s ease-in-out alternate infinite; }
+#num-54 .lines { animation: dash 5.23s ease-in-out alternate infinite; }
+#num-55 .lines { animation: dash 5.11s ease-in-out alternate infinite; }
+#num-56 .lines { animation: dash 4.602s ease-in-out alternate infinite; }
+#num-57 .lines { animation: dash 4.918s ease-in-out alternate infinite; }
+#num-58 .lines { animation: dash 5.372s ease-in-out alternate infinite; }
+#num-59 .lines { animation: dash 4.94s ease-in-out alternate infinite; }
+#num-60 .lines { animation: dash 4.368s ease-in-out alternate infinite; }
+#num-61 .lines { animation: dash 4.578s ease-in-out alternate infinite; }
+#num-62 .lines { animation: dash 5.92s ease-in-out alternate infinite; }
+#num-63 .lines { animation: dash 6.38s ease-in-out alternate infinite; }
+#num-64 .lines { animation: dash 4.918s ease-in-out alternate infinite; }
+#num-65 .lines { animation: dash 3.972s ease-in-out alternate infinite; }
+#num-66 .lines { animation: dash 5.516s ease-in-out alternate infinite; }
+#num-67 .lines { animation: dash 7.004s ease-in-out alternate infinite; }
+#num-68 .lines { animation: dash 5.7s ease-in-out alternate infinite; }
+#num-69 .lines { animation: dash 4.99s ease-in-out alternate infinite; }
+#num-70 .lines { animation: dash 6.404s ease-in-out alternate infinite; }
+#num-71 .lines { animation: dash 6.206s ease-in-out alternate infinite; }
+#num-72 .lines { animation: dash 4.91s ease-in-out alternate infinite; }
+#num-73 .lines { animation: dash 5.354s ease-in-out alternate infinite; }
+#num-74 .lines { animation: dash 5.42s ease-in-out alternate infinite; }
+#num-75 .lines { animation: dash 6.428s ease-in-out alternate infinite; }
+#num-76 .lines { animation: dash 6.126s ease-in-out alternate infinite; }
+#num-77 .lines { animation: dash 5.378s ease-in-out alternate infinite; }
+#num-78 .lines { animation: dash 5.26s ease-in-out alternate infinite; }
+#num-79 .lines { animation: dash 5.378s ease-in-out alternate infinite; }
+#num-80 .lines { animation: dash 5.26s ease-in-out alternate infinite; }
+#num-81 .lines { animation: dash 4.212s ease-in-out alternate infinite; }
+#num-82 .lines { animation: dash 4.674s ease-in-out alternate infinite; }
+#num-83 .lines { animation: dash 6.592s ease-in-out alternate infinite; }
+#num-84 .lines { animation: dash 6.49s ease-in-out alternate infinite; }
+#num-85 .lines { animation: dash 5.514s ease-in-out alternate infinite; }
+#num-86 .lines { animation: dash 6.03s ease-in-out alternate infinite; }
+#num-87 .lines { animation: dash 5.374s ease-in-out alternate infinite; }
+#num-88 .lines { animation: dash 5.094s ease-in-out alternate infinite; }
+#num-89 .lines { animation: dash 7.02s ease-in-out alternate infinite; }
+#num-90 .lines { animation: dash 6.67s ease-in-out alternate infinite; }
+#num-91 .lines { animation: dash 4.568s ease-in-out alternate infinite; }
+#num-92 .lines { animation: dash 4.68s ease-in-out alternate infinite; }
+#num-93 .lines { animation: dash 5.58s ease-in-out alternate infinite; }
+#num-94 .lines { animation: dash 5.842s ease-in-out alternate infinite; }
+#num-95 .lines { animation: dash 5.49s ease-in-out alternate infinite; }
+#num-96 .lines { animation: dash 5.23s ease-in-out alternate infinite; }
+#num-97 .lines { animation: dash 5.3s ease-in-out alternate infinite; }
+#num-98 .lines { animation: dash 6.594s ease-in-out alternate infinite; }
+#num-99 .lines { animation: dash 6.164s ease-in-out alternate infinite; }
+#num-100 .lines { animation: dash 4.75s ease-in-out alternate infinite; }
+#num-101 .lines { animation: dash 5.298s ease-in-out alternate infinite; }
+#num-102 .lines { animation: dash 6.594s ease-in-out alternate infinite; }
+#num-103 .lines { animation: dash 6.164s ease-in-out alternate infinite; }
+#num-104 .lines { animation: dash 4.75s ease-in-out alternate infinite; }
+#num-105 .lines { animation: dash 7.168s ease-in-out alternate infinite; }
+#num-106 .lines { animation: dash 6.93s ease-in-out alternate infinite; }
+#num-107 .lines { animation: dash 5.928s ease-in-out alternate infinite; }
+#num-108 .lines { animation: dash 5.69s ease-in-out alternate infinite; }
+#num-109 .lines { animation: dash 5.73s ease-in-out alternate infinite; }
+#num-110 .lines { animation: dash 5.73s ease-in-out alternate infinite; }
+#num-111 .lines { animation: dash 7.338s ease-in-out alternate infinite; }
+#num-112 .lines { animation: dash 7.338s ease-in-out alternate infinite; }
+#num-113 .lines { animation: dash 4.75s ease-in-out alternate infinite; }
+#num-114 .lines { animation: dash 6.164s ease-in-out alternate infinite; }
+#num-115 .lines { animation: dash 6.594s ease-in-out alternate infinite; }
+#num-116 .lines { animation: dash 5.3s ease-in-out alternate infinite; }
+#num-117 .lines { animation: dash 4.75s ease-in-out alternate infinite; }
+#num-118 .lines { animation: dash 6.164s ease-in-out alternate infinite; }
+#num-119 .lines { animation: dash 6.594s ease-in-out alternate infinite; }
+#num-120 .lines { animation: dash 5.298s ease-in-out alternate infinite; }
+#num-121 .lines { animation: dash 6.65s ease-in-out alternate infinite; }
+#num-122 .lines { animation: dash 7.446s ease-in-out alternate infinite; }
+#num-123 .lines { animation: dash 6.206s ease-in-out alternate infinite; }
+#num-124 .lines { animation: dash 5.41s ease-in-out alternate infinite; }
+#num-125 .lines { animation: dash 4.602s ease-in-out alternate infinite; }
+#num-126 .lines { animation: dash 6.016s ease-in-out alternate infinite; }
+#num-127 .lines { animation: dash 6.446s ease-in-out alternate infinite; }
+#num-128 .lines { animation: dash 5.15s ease-in-out alternate infinite; }
+#num-129 .lines { animation: dash 5.118s ease-in-out alternate infinite; }
+#num-130 .lines { animation: dash 5.388s ease-in-out alternate infinite; }
+#num-131 .lines { animation: dash 4.958s ease-in-out alternate infinite; }
+#num-132 .lines { animation: dash 4.568s ease-in-out alternate infinite; }
+#num-133 .lines { animation: dash 5.032s ease-in-out alternate infinite; }
+#num-134 .lines { animation: dash 6.176s ease-in-out alternate infinite; }
+#num-135 .lines { animation: dash 6.318s ease-in-out alternate infinite; }
+#num-136 .lines { animation: dash 5.412s ease-in-out alternate infinite; }
+#num-137 .lines { animation: dash 5.58s ease-in-out alternate infinite; }
+#num-138 .lines { animation: dash 6.726s ease-in-out alternate infinite; }
+#num-139 .lines { animation: dash 5.978s ease-in-out alternate infinite; }
+#num-140 .lines { animation: dash 5.072s ease-in-out alternate infinite; }
+#num-141 .lines { animation: dash 4.568s ease-in-out alternate infinite; }
+#num-142 .lines { animation: dash 4.956s ease-in-out alternate infinite; }
+#num-143 .lines { animation: dash 5.388s ease-in-out alternate infinite; }
+#num-144 .lines { animation: dash 5.118s ease-in-out alternate infinite; }
+#num-145 .lines { animation: dash 5.15s ease-in-out alternate infinite; }
+#num-146 .lines { animation: dash 6.446s ease-in-out alternate infinite; }
+#num-147 .lines { animation: dash 6.016s ease-in-out alternate infinite; }
+#num-148 .lines { animation: dash 4.602s ease-in-out alternate infinite; }
+#num-149 .lines { animation: dash 5.73s ease-in-out alternate infinite; }
+#num-150 .lines { animation: dash 6.246s ease-in-out alternate infinite; }
+#num-151 .lines { animation: dash 6.756s ease-in-out alternate infinite; }
+#num-152 .lines { animation: dash 6.476s ease-in-out alternate infinite; }
+#num-153 .lines { animation: dash 5.672s ease-in-out alternate infinite; }
+#num-154 .lines { animation: dash 6.078s ease-in-out alternate infinite; }
+#num-155 .lines { animation: dash 5.648s ease-in-out alternate infinite; }
+#num-156 .lines { animation: dash 5.122s ease-in-out alternate infinite; }
+#num-157 .lines { animation: dash 5.298s ease-in-out alternate infinite; }
+#num-158 .lines { animation: dash 6.196s ease-in-out alternate infinite; }
+#num-159 .lines { animation: dash 6.656s ease-in-out alternate infinite; }
+#num-160 .lines { animation: dash 5.638s ease-in-out alternate infinite; }
+#num-161 .lines { animation: dash 6.07s ease-in-out alternate infinite; }
+#num-162 .lines { animation: dash 6.442s ease-in-out alternate infinite; }
+#num-163 .lines { animation: dash 6.3s ease-in-out alternate infinite; }
+#num-164 .lines { animation: dash 5.69s ease-in-out alternate infinite; }
+#num-165 .lines { animation: dash 5.73s ease-in-out alternate infinite; }
+#num-166 .lines { animation: dash 6.102s ease-in-out alternate infinite; }
+#num-167 .lines { animation: dash 6.848s ease-in-out alternate infinite; }
+#num-168 .lines { animation: dash 6.238s ease-in-out alternate infinite; }
+#num-169 .lines { animation: dash 5.638s ease-in-out alternate infinite; }
+#num-170 .lines { animation: dash 6.656s ease-in-out alternate infinite; }
+#num-171 .lines { animation: dash 6.196s ease-in-out alternate infinite; }
+#num-172 .lines { animation: dash 5.3s ease-in-out alternate infinite; }
+#num-173 .lines { animation: dash 5.122s ease-in-out alternate infinite; }
+#num-174 .lines { animation: dash 5.648s ease-in-out alternate infinite; }
+#num-175 .lines { animation: dash 6.078s ease-in-out alternate infinite; }
+#num-176 .lines { animation: dash 5.672s ease-in-out alternate infinite; }
+#num-177 .lines { animation: dash 5.18s ease-in-out alternate infinite; }
+#num-178 .lines { animation: dash 6.196s ease-in-out alternate infinite; }
+#num-179 .lines { animation: dash 6.626s ease-in-out alternate infinite; }
+#num-180 .lines { animation: dash 5.73s ease-in-out alternate infinite; }
+#num-181 .lines { animation: dash 5.696s ease-in-out alternate infinite; }
+#num-182 .lines { animation: dash 6.196s ease-in-out alternate infinite; }
+#num-183 .lines { animation: dash 5.766s ease-in-out alternate infinite; }
+#num-184 .lines { animation: dash 5.148s ease-in-out alternate infinite; }
+#num-185 .lines { animation: dash 6.358s ease-in-out alternate infinite; }
+#num-186 .lines { animation: dash 6.874s ease-in-out alternate infinite; }
+#num-187 .lines { animation: dash 6.126s ease-in-out alternate infinite; }
+#num-188 .lines { animation: dash 5.848s ease-in-out alternate infinite; }
+#num-189 .lines { animation: dash 5.808s ease-in-out alternate infinite; }
+#num-190 .lines { animation: dash 6.326s ease-in-out alternate infinite; }
+#num-191 .lines { animation: dash 6.466s ease-in-out alternate infinite; }
+#num-192 .lines { animation: dash 6.188s ease-in-out alternate infinite; }
+#num-193 .lines { animation: dash 5.148s ease-in-out alternate infinite; }
+#num-194 .lines { animation: dash 5.766s ease-in-out alternate infinite; }
+#num-195 .lines { animation: dash 6.196s ease-in-out alternate infinite; }
+#num-196 .lines { animation: dash 5.696s ease-in-out alternate infinite; }
+#num-197 .lines { animation: dash 5.73s ease-in-out alternate infinite; }
+#num-198 .lines { animation: dash 6.628s ease-in-out alternate infinite; }
+#num-199 .lines { animation: dash 6.196s ease-in-out alternate infinite; }
+#num-200 .lines { animation: dash 5.18s ease-in-out alternate infinite; }
+#num-201 .lines { animation: dash 5.054s ease-in-out alternate infinite; }
+#num-202 .lines { animation: dash 5.562s ease-in-out alternate infinite; }
+#num-203 .lines { animation: dash 5.874s ease-in-out alternate infinite; }
+#num-204 .lines { animation: dash 5.722s ease-in-out alternate infinite; }
+#num-205 .lines { animation: dash 5.722s ease-in-out alternate infinite; }
+#num-206 .lines { animation: dash 5.874s ease-in-out alternate infinite; }
+#num-207 .lines { animation: dash 5.562s ease-in-out alternate infinite; }
+#num-208 .lines { animation: dash 5.054s ease-in-out alternate infinite; }
+#num-209 .lines { animation: dash 5.778s ease-in-out alternate infinite; }
+#num-210 .lines { animation: dash 5.874s ease-in-out alternate infinite; }
+#num-211 .lines { animation: dash 5.274s ease-in-out alternate infinite; }
+#num-212 .lines { animation: dash 4.94s ease-in-out alternate infinite; }
+#num-213 .lines { animation: dash 5.226s ease-in-out alternate infinite; }
+#num-214 .lines { animation: dash 6.124s ease-in-out alternate infinite; }
+#num-215 .lines { animation: dash 6.584s ease-in-out alternate infinite; }
+#num-216 .lines { animation: dash 5.566s ease-in-out alternate infinite; }
+#num-217 .lines { animation: dash 6.082s ease-in-out alternate infinite; }
+#num-218 .lines { animation: dash 6.212s ease-in-out alternate infinite; }
+#num-219 .lines { animation: dash 5.752s ease-in-out alternate infinite; }
+#num-220 .lines { animation: dash 5.744s ease-in-out alternate infinite; }
+#num-221 .lines { animation: dash 5.816s ease-in-out alternate infinite; }
+#num-222 .lines { animation: dash 6.15s ease-in-out alternate infinite; }
+#num-223 .lines { animation: dash 5.838s ease-in-out alternate infinite; }
+#num-224 .lines { animation: dash 5.148s ease-in-out alternate infinite; }
+#num-225 .lines { animation: dash 5.8s ease-in-out alternate infinite; }
+#num-226 .lines { animation: dash 6.022s ease-in-out alternate infinite; }
+#num-227 .lines { animation: dash 5.592s ease-in-out alternate infinite; }
+#num-228 .lines { animation: dash 5.25s ease-in-out alternate infinite; }
+#num-229 .lines { animation: dash 5.65s ease-in-out alternate infinite; }
+#num-230 .lines { animation: dash 5.93s ease-in-out alternate infinite; }
+#num-231 .lines { animation: dash 5.33s ease-in-out alternate infinite; }
+#num-232 .lines { animation: dash 4.812s ease-in-out alternate infinite; }
+#num-233 .lines { animation: dash 5.864s ease-in-out alternate infinite; }
+#num-234 .lines { animation: dash 5.68s ease-in-out alternate infinite; }
+#num-235 .lines { animation: dash 4.7s ease-in-out alternate infinite; }
+#num-236 .lines { animation: dash 4.884s ease-in-out alternate infinite; }
+#num-237 .lines { animation: dash 5.378s ease-in-out alternate infinite; }
+#num-238 .lines { animation: dash 5.332s ease-in-out alternate infinite; }
+#num-239 .lines { animation: dash 5.332s ease-in-out alternate infinite; }
+#num-240 .lines { animation: dash 5.378s ease-in-out alternate infinite; }
+#num-241 .lines { animation: dash 5.818s ease-in-out alternate infinite; }
+#num-242 .lines { animation: dash 5.428s ease-in-out alternate infinite; }
+#num-243 .lines { animation: dash 5.19s ease-in-out alternate infinite; }
+#num-244 .lines { animation: dash 6.056s ease-in-out alternate infinite; }
+#num-245 .lines { animation: dash 5.96s ease-in-out alternate infinite; }
+#num-246 .lines { animation: dash 6.12s ease-in-out alternate infinite; }
+#num-247 .lines { animation: dash 5.378s ease-in-out alternate infinite; }
+#num-248 .lines { animation: dash 4.742s ease-in-out alternate infinite; }
+#num-249 .lines { animation: dash 5.396s ease-in-out alternate infinite; }
+#num-250 .lines { animation: dash 6.286s ease-in-out alternate infinite; }
+#num-251 .lines { animation: dash 6.194s ease-in-out alternate infinite; }
+#num-252 .lines { animation: dash 5.306s ease-in-out alternate infinite; }
+#num-253 .lines { animation: dash 5.97s ease-in-out alternate infinite; }
+#num-254 .lines { animation: dash 5.786s ease-in-out alternate infinite; }
+#num-255 .lines { animation: dash 5.694s ease-in-out alternate infinite; }
+#num-256 .lines { animation: dash 5.878s ease-in-out alternate infinite; }
+#num-257 .lines { animation: dash 5.562s ease-in-out alternate infinite; }
+#num-258 .lines { animation: dash 5.904s ease-in-out alternate infinite; }
+#num-259 .lines { animation: dash 5.706s ease-in-out alternate infinite; }
+#num-260 .lines { animation: dash 5.484s ease-in-out alternate infinite; }
+#num-261 .lines { animation: dash 6.032s ease-in-out alternate infinite; }
+#num-262 .lines { animation: dash 6.136s ease-in-out alternate infinite; }
+#num-263 .lines { animation: dash 5.474s ease-in-out alternate infinite; }
+#num-264 .lines { animation: dash 5.012s ease-in-out alternate infinite; }
+#num-265 .lines { animation: dash 5.914s ease-in-out alternate infinite; }
+#num-266 .lines { animation: dash 5.794s ease-in-out alternate infinite; }
+#num-267 .lines { animation: dash 5.914s ease-in-out alternate infinite; }
+#num-268 .lines { animation: dash 5.794s ease-in-out alternate infinite; }
+#num-269 .lines { animation: dash 5.914s ease-in-out alternate infinite; }
+#num-270 .lines { animation: dash 5.794s ease-in-out alternate infinite; }
+#num-271 .lines { animation: dash 5.914s ease-in-out alternate infinite; }
+#num-272 .lines { animation: dash 5.794s ease-in-out alternate infinite; }
+#num-273 .lines { animation: dash 6.112s ease-in-out alternate infinite; }
+#num-274 .lines { animation: dash 6.334s ease-in-out alternate infinite; }
+#num-275 .lines { animation: dash 5.276s ease-in-out alternate infinite; }
+#num-276 .lines { animation: dash 4.934s ease-in-out alternate infinite; }
+#num-277 .lines { animation: dash 5.484s ease-in-out alternate infinite; }
+#num-278 .lines { animation: dash 5.706s ease-in-out alternate infinite; }
+#num-279 .lines { animation: dash 5.904s ease-in-out alternate infinite; }
+#num-280 .lines { animation: dash 5.562s ease-in-out alternate infinite; }
+#num-281 .lines { animation: dash 5.468s ease-in-out alternate infinite; }
+#num-282 .lines { animation: dash 6.034s ease-in-out alternate infinite; }
+#num-283 .lines { animation: dash 5.724s ease-in-out alternate infinite; }
+#num-284 .lines { animation: dash 4.8s ease-in-out alternate infinite; }
+#num-285 .lines { animation: dash 5.032s ease-in-out alternate infinite; }
+#num-286 .lines { animation: dash 5.492s ease-in-out alternate infinite; }
+#num-287 .lines { animation: dash 5.804s ease-in-out alternate infinite; }
+#num-288 .lines { animation: dash 5.7s ease-in-out alternate infinite; }
+#num-289 .lines { animation: dash 5.032s ease-in-out alternate infinite; }
+#num-290 .lines { animation: dash 5.492s ease-in-out alternate infinite; }
+#num-291 .lines { animation: dash 5.804s ease-in-out alternate infinite; }
+#num-292 .lines { animation: dash 5.7s ease-in-out alternate infinite; }
+#num-293 .lines { animation: dash 5.468s ease-in-out alternate infinite; }
+#num-294 .lines { animation: dash 6.034s ease-in-out alternate infinite; }
+#num-295 .lines { animation: dash 5.724s ease-in-out alternate infinite; }
+#num-296 .lines { animation: dash 4.8s ease-in-out alternate infinite; }
+#num-297 .lines { animation: dash 5.34s ease-in-out alternate infinite; }
+#num-298 .lines { animation: dash 6.414s ease-in-out alternate infinite; }
+#num-299 .lines { animation: dash 6.324s ease-in-out alternate infinite; }
+#num-300 .lines { animation: dash 5.25s ease-in-out alternate infinite; }
+#num-301 .lines { animation: dash 6.042s ease-in-out alternate infinite; }
+#num-302 .lines { animation: dash 6.384s ease-in-out alternate infinite; }
+#num-303 .lines { animation: dash 4.928s ease-in-out alternate infinite; }
+#num-304 .lines { animation: dash 4.706s ease-in-out alternate infinite; }
+#num-305 .lines { animation: dash 5.93s ease-in-out alternate infinite; }
+#num-306 .lines { animation: dash 5.126s ease-in-out alternate infinite; }
+#num-307 .lines { animation: dash 4.068s ease-in-out alternate infinite; }
+#num-308 .lines { animation: dash 4.752s ease-in-out alternate infinite; }
+#num-309 .lines { animation: dash 4.588s ease-in-out alternate infinite; }
+#num-310 .lines { animation: dash 5.732s ease-in-out alternate infinite; }
+#num-311 .lines { animation: dash 5.614s ease-in-out alternate infinite; }
+#num-312 .lines { animation: dash 4.706s ease-in-out alternate infinite; }
+#num-313 .lines { animation: dash 4.588s ease-in-out alternate infinite; }
+#num-314 .lines { animation: dash 5.732s ease-in-out alternate infinite; }
+#num-315 .lines { animation: dash 5.614s ease-in-out alternate infinite; }
+#num-316 .lines { animation: dash 4.706s ease-in-out alternate infinite; }
+#num-317 .lines { animation: dash 4.752s ease-in-out alternate infinite; }
+#num-318 .lines { animation: dash 4.068s ease-in-out alternate infinite; }
+#num-319 .lines { animation: dash 5.126s ease-in-out alternate infinite; }
+#num-320 .lines { animation: dash 5.93s ease-in-out alternate infinite; }
+#num-321 .lines { animation: dash 5.964s ease-in-out alternate infinite; }
+#num-322 .lines { animation: dash 6.186s ease-in-out alternate infinite; }
+#num-323 .lines { animation: dash 5.126s ease-in-out alternate infinite; }
+#num-324 .lines { animation: dash 4.786s ease-in-out alternate infinite; }
+#num-325 .lines { animation: dash 5.396s ease-in-out alternate infinite; }
+#num-326 .lines { animation: dash 6.286s ease-in-out alternate infinite; }
+#num-327 .lines { animation: dash 6.196s ease-in-out alternate infinite; }
+#num-328 .lines { animation: dash 5.306s ease-in-out alternate infinite; }
+#num-329 .lines { animation: dash 6.972s ease-in-out alternate infinite; }
+#num-330 .lines { animation: dash 6.916s ease-in-out alternate infinite; }
+#num-331 .lines { animation: dash 4.758s ease-in-out alternate infinite; }
+#num-332 .lines { animation: dash 4.934s ease-in-out alternate infinite; }
+#num-333 .lines { animation: dash 6.508s ease-in-out alternate infinite; }
+#num-334 .lines { animation: dash 5.936s ease-in-out alternate infinite; }
+#num-335 .lines { animation: dash 4.878s ease-in-out alternate infinite; }
+#num-336 .lines { animation: dash 5.332s ease-in-out alternate infinite; }
+#num-337 .lines { animation: dash 5.364s ease-in-out alternate infinite; }
+#num-338 .lines { animation: dash 5.88s ease-in-out alternate infinite; }
+#num-339 .lines { animation: dash 5.762s ease-in-out alternate infinite; }
+#num-340 .lines { animation: dash 5.484s ease-in-out alternate infinite; }
+#num-341 .lines { animation: dash 6.484s ease-in-out alternate infinite; }
+#num-342 .lines { animation: dash 5.818s ease-in-out alternate infinite; }
+#num-343 .lines { animation: dash 4.758s ease-in-out alternate infinite; }
+#num-344 .lines { animation: dash 5.306s ease-in-out alternate infinite; }
+#num-345 .lines { animation: dash 7s ease-in-out alternate infinite; }
+#num-346 .lines { animation: dash 6.826s ease-in-out alternate infinite; }
+#num-347 .lines { animation: dash 4.878s ease-in-out alternate infinite; }
+#num-348 .lines { animation: dash 4.934s ease-in-out alternate infinite; }
+#num-349 .lines { animation: dash 5.364s ease-in-out alternate infinite; }
+#num-350 .lines { animation: dash 5.736s ease-in-out alternate infinite; }
+#num-351 .lines { animation: dash 5.856s ease-in-out alternate infinite; }
+#num-352 .lines { animation: dash 5.244s ease-in-out alternate infinite; }
+#num-353 .lines { animation: dash 5.364s ease-in-out alternate infinite; }
+#num-354 .lines { animation: dash 5.88s ease-in-out alternate infinite; }
+#num-355 .lines { animation: dash 5.762s ease-in-out alternate infinite; }
+#num-356 .lines { animation: dash 5.482s ease-in-out alternate infinite; }
+#num-357 .lines { animation: dash 5.332s ease-in-out alternate infinite; }
+#num-358 .lines { animation: dash 4.878s ease-in-out alternate infinite; }
+#num-359 .lines { animation: dash 5.936s ease-in-out alternate infinite; }
+#num-360 .lines { animation: dash 6.51s ease-in-out alternate infinite; }
+#num-361 .lines { animation: dash 5.364s ease-in-out alternate infinite; }
+#num-362 .lines { animation: dash 5.736s ease-in-out alternate infinite; }
+#num-363 .lines { animation: dash 5.856s ease-in-out alternate infinite; }
+#num-364 .lines { animation: dash 5.244s ease-in-out alternate infinite; }
+#num-365 .lines { animation: dash 5.822s ease-in-out alternate infinite; }
+#num-366 .lines { animation: dash 5.766s ease-in-out alternate infinite; }
+#num-367 .lines { animation: dash 5.936s ease-in-out alternate infinite; }
+#num-368 .lines { animation: dash 6.112s ease-in-out alternate infinite; }
+#num-369 .lines { animation: dash 5.306s ease-in-out alternate infinite; }
+#num-370 .lines { animation: dash 4.76s ease-in-out alternate infinite; }
+#num-371 .lines { animation: dash 5.818s ease-in-out alternate infinite; }
+#num-372 .lines { animation: dash 6.484s ease-in-out alternate infinite; }
+#num-373 .lines { animation: dash 5.794s ease-in-out alternate infinite; }
+#num-374 .lines { animation: dash 5.858s ease-in-out alternate infinite; }
+#num-375 .lines { animation: dash 5.818s ease-in-out alternate infinite; }
+#num-376 .lines { animation: dash 6.112s ease-in-out alternate infinite; }
+#num-377 .lines { animation: dash 6.01s ease-in-out alternate infinite; }
+#num-378 .lines { animation: dash 6.224s ease-in-out alternate infinite; }
+#num-379 .lines { animation: dash 6.662s ease-in-out alternate infinite; }
+#num-380 .lines { animation: dash 5.85s ease-in-out alternate infinite; }
+#num-381 .lines { animation: dash 5.414s ease-in-out alternate infinite; }
+#num-382 .lines { animation: dash 5.5s ease-in-out alternate infinite; }
+#num-383 .lines { animation: dash 4.44s ease-in-out alternate infinite; }
+#num-384 .lines { animation: dash 4.236s ease-in-out alternate infinite; }
+#num-385 .lines { animation: dash 4.99s ease-in-out alternate infinite; }
+#num-386 .lines { animation: dash 6.26s ease-in-out alternate infinite; }
+#num-387 .lines { animation: dash 6.3s ease-in-out alternate infinite; }
+#num-388 .lines { animation: dash 4.672s ease-in-out alternate infinite; }
+#num-389 .lines { animation: dash 6.462s ease-in-out alternate infinite; }
+#num-390 .lines { animation: dash 5.772s ease-in-out alternate infinite; }
+#num-391 .lines { animation: dash 6.088s ease-in-out alternate infinite; }
+#num-392 .lines { animation: dash 6.422s ease-in-out alternate infinite; }
+#num-393 .lines { animation: dash 6.39s ease-in-out alternate infinite; }
+#num-394 .lines { animation: dash 6.056s ease-in-out alternate infinite; }
+#num-395 .lines { animation: dash 4.758s ease-in-out alternate infinite; }
+#num-396 .lines { animation: dash 5.45s ease-in-out alternate infinite; }
+#num-397 .lines { animation: dash 5.54s ease-in-out alternate infinite; }
+#num-398 .lines { animation: dash 6.508s ease-in-out alternate infinite; }
+#num-399 .lines { animation: dash 6.31s ease-in-out alternate infinite; }
+#num-400 .lines { animation: dash 5.46s ease-in-out alternate infinite; }
+#num-401 .lines { animation: dash 5.874s ease-in-out alternate infinite; }
+#num-402 .lines { animation: dash 6.428s ease-in-out alternate infinite; }
+#num-403 .lines { animation: dash 5.132s ease-in-out alternate infinite; }
+#num-404 .lines { animation: dash 4.934s ease-in-out alternate infinite; }
+#num-405 .lines { animation: dash 5.992s ease-in-out alternate infinite; }
+#num-406 .lines { animation: dash 6.056s ease-in-out alternate infinite; }
+#num-407 .lines { animation: dash 5.738s ease-in-out alternate infinite; }
+#num-408 .lines { animation: dash 6.032s ease-in-out alternate infinite; }
+#num-409 .lines { animation: dash 5.744s ease-in-out alternate infinite; }
+#num-410 .lines { animation: dash 5.578s ease-in-out alternate infinite; }
+#num-411 .lines { animation: dash 6.234s ease-in-out alternate infinite; }
+#num-412 .lines { animation: dash 6.162s ease-in-out alternate infinite; }
+#num-413 .lines { animation: dash 6.358s ease-in-out alternate infinite; }
+#num-414 .lines { animation: dash 6.802s ease-in-out alternate infinite; }
+#num-415 .lines { animation: dash 6.084s ease-in-out alternate infinite; }
+#num-416 .lines { animation: dash 5.638s ease-in-out alternate infinite; }
+#num-417 .lines { animation: dash 6.756s ease-in-out alternate infinite; }
+#num-418 .lines { animation: dash 6.476s ease-in-out alternate infinite; }
+#num-419 .lines { animation: dash 5.638s ease-in-out alternate infinite; }
+#num-420 .lines { animation: dash 6.156s ease-in-out alternate infinite; }
+#num-421 .lines { animation: dash 5.3s ease-in-out alternate infinite; }
+#num-422 .lines { animation: dash 6.022s ease-in-out alternate infinite; }
+#num-423 .lines { animation: dash 6.678s ease-in-out alternate infinite; }
+#num-424 .lines { animation: dash 5.718s ease-in-out alternate infinite; }
+#num-425 .lines { animation: dash 5.624s ease-in-out alternate infinite; }
+#num-426 .lines { animation: dash 6.196s ease-in-out alternate infinite; }
+#num-427 .lines { animation: dash 5.648s ease-in-out alternate infinite; }
+#num-428 .lines { animation: dash 5.194s ease-in-out alternate infinite; }
+#num-429 .lines { animation: dash 5.076s ease-in-out alternate infinite; }
+#num-430 .lines { animation: dash 5.766s ease-in-out alternate infinite; }
+#num-431 .lines { animation: dash 6.078s ease-in-out alternate infinite; }
+#num-432 .lines { animation: dash 5.744s ease-in-out alternate infinite; }
+#num-433 .lines { animation: dash 5.34s ease-in-out alternate infinite; }
+#num-434 .lines { animation: dash 6.414s ease-in-out alternate infinite; }
+#num-435 .lines { animation: dash 6.324s ease-in-out alternate infinite; }
+#num-436 .lines { animation: dash 5.25s ease-in-out alternate infinite; }
+#num-437 .lines { animation: dash 6.57s ease-in-out alternate infinite; }
+#num-438 .lines { animation: dash 5.73s ease-in-out alternate infinite; }
+#num-439 .lines { animation: dash 5.378s ease-in-out alternate infinite; }
+#num-440 .lines { animation: dash 6.22s ease-in-out alternate infinite; }
+#num-441 .lines { animation: dash 6.572s ease-in-out alternate infinite; }
+#num-442 .lines { animation: dash 5.848s ease-in-out alternate infinite; }
+#num-443 .lines { animation: dash 5.378s ease-in-out alternate infinite; }
+#num-444 .lines { animation: dash 6.338s ease-in-out alternate infinite; }
+#num-445 .lines { animation: dash 6.14s ease-in-out alternate infinite; }
+#num-446 .lines { animation: dash 5.752s ease-in-out alternate infinite; }
+#num-447 .lines { animation: dash 5.322s ease-in-out alternate infinite; }
+#num-448 .lines { animation: dash 5.592s ease-in-out alternate infinite; }
+#num-449 .lines { animation: dash 6.022s ease-in-out alternate infinite; }
+#num-450 .lines { animation: dash 5.8s ease-in-out alternate infinite; }
+#num-451 .lines { animation: dash 5.25s ease-in-out alternate infinite; }
+#num-452 .lines { animation: dash 5.592s ease-in-out alternate infinite; }
+#num-453 .lines { animation: dash 6.15s ease-in-out alternate infinite; }
+#num-454 .lines { animation: dash 5.816s ease-in-out alternate infinite; }
+#num-455 .lines { animation: dash 5.148s ease-in-out alternate infinite; }
+#num-456 .lines { animation: dash 5.838s ease-in-out alternate infinite; }
+#num-457 .lines { animation: dash 5.72s ease-in-out alternate infinite; }
+#num-458 .lines { animation: dash 5.194s ease-in-out alternate infinite; }
+#num-459 .lines { animation: dash 5.744s ease-in-out alternate infinite; }
+#num-460 .lines { animation: dash 6.15s ease-in-out alternate infinite; }
+#num-461 .lines { animation: dash 6.292s ease-in-out alternate infinite; }
+#num-462 .lines { animation: dash 6.008s ease-in-out alternate infinite; }
+#num-463 .lines { animation: dash 5.894s ease-in-out alternate infinite; }
+#num-464 .lines { animation: dash 5.704s ease-in-out alternate infinite; }
+#num-465 .lines { animation: dash 6.22s ease-in-out alternate infinite; }
+#num-466 .lines { animation: dash 5.666s ease-in-out alternate infinite; }
+#num-467 .lines { animation: dash 6.244s ease-in-out alternate infinite; }
+#num-468 .lines { animation: dash 6.442s ease-in-out alternate infinite; }
+#num-469 .lines { animation: dash 5.15s ease-in-out alternate infinite; }
+#num-470 .lines { animation: dash 5.42s ease-in-out alternate infinite; }
+#num-471 .lines { animation: dash 5.878s ease-in-out alternate infinite; }
+#num-472 .lines { animation: dash 5.49s ease-in-out alternate infinite; }
+#num-473 .lines { animation: dash 5.118s ease-in-out alternate infinite; }
+#num-474 .lines { animation: dash 5.5s ease-in-out alternate infinite; }
+#num-475 .lines { animation: dash 6.168s ease-in-out alternate infinite; }
+#num-476 .lines { animation: dash 5.43s ease-in-out alternate infinite; }
+#num-477 .lines { animation: dash 5.43s ease-in-out alternate infinite; }
+#num-478 .lines { animation: dash 6.168s ease-in-out alternate infinite; }
+#num-479 .lines { animation: dash 5.5s ease-in-out alternate infinite; }
+#num-480 .lines { animation: dash 5.118s ease-in-out alternate infinite; }
+#num-481 .lines { animation: dash 5.672s ease-in-out alternate infinite; }
+#num-482 .lines { animation: dash 5.68s ease-in-out alternate infinite; }
+#num-483 .lines { animation: dash 6.14s ease-in-out alternate infinite; }
+#num-484 .lines { animation: dash 6.01s ease-in-out alternate infinite; }
+#num-485 .lines { animation: dash 5.638s ease-in-out alternate infinite; }
+#num-486 .lines { animation: dash 6.656s ease-in-out alternate infinite; }
+#num-487 .lines { animation: dash 6.196s ease-in-out alternate infinite; }
+#num-488 .lines { animation: dash 5.298s ease-in-out alternate infinite; }
+#num-489 .lines { animation: dash 5.58s ease-in-out alternate infinite; }
+#num-490 .lines { animation: dash 6.294s ease-in-out alternate infinite; }
+#num-491 .lines { animation: dash 4.884s ease-in-out alternate infinite; }
+#num-492 .lines { animation: dash 4.052s ease-in-out alternate infinite; }
+#num-493 .lines { animation: dash 5.97s ease-in-out alternate infinite; }
+#num-494 .lines { animation: dash 6.182s ease-in-out alternate infinite; }
+#num-495 .lines { animation: dash 5.204s ease-in-out alternate infinite; }
+#num-496 .lines { animation: dash 4.99s ease-in-out alternate infinite; }
+#num-497 .lines { animation: dash 6.292s ease-in-out alternate infinite; }
+#num-498 .lines { animation: dash 6.126s ease-in-out alternate infinite; }
+#num-499 .lines { animation: dash 5.894s ease-in-out alternate infinite; }
+#num-500 .lines { animation: dash 5.822s ease-in-out alternate infinite; }
+#num-501 .lines { animation: dash 5.572s ease-in-out alternate infinite; }
+#num-502 .lines { animation: dash 5.046s ease-in-out alternate infinite; }
+#num-503 .lines { animation: dash 5.594s ease-in-out alternate infinite; }
+#num-504 .lines { animation: dash 6.002s ease-in-out alternate infinite; }
+#num-505 .lines { animation: dash 4.942s ease-in-out alternate infinite; }
+#num-506 .lines { animation: dash 5.118s ease-in-out alternate infinite; }
+#num-507 .lines { animation: dash 5.458s ease-in-out alternate infinite; }
+#num-508 .lines { animation: dash 5.402s ease-in-out alternate infinite; }
+#num-509 .lines { animation: dash 6.176s ease-in-out alternate infinite; }
+#num-510 .lines { animation: dash 5.476s ease-in-out alternate infinite; }
+#num-511 .lines { animation: dash 4.966s ease-in-out alternate infinite; }
+#num-512 .lines { animation: dash 5.43s ease-in-out alternate infinite; }
+#num-513 .lines { animation: dash 5.628s ease-in-out alternate infinite; }
+#num-514 .lines { animation: dash 5.046s ease-in-out alternate infinite; }
+#num-515 .lines { animation: dash 5.396s ease-in-out alternate infinite; }
+#num-516 .lines { animation: dash 5.978s ease-in-out alternate infinite; }
+#num-517 .lines { animation: dash 5.492s ease-in-out alternate infinite; }
+#num-518 .lines { animation: dash 5.668s ease-in-out alternate infinite; }
+#num-519 .lines { animation: dash 5.118s ease-in-out alternate infinite; }
+#num-520 .lines { animation: dash 5.062s ease-in-out alternate infinite; }
+#num-521 .lines { animation: dash 6.002s ease-in-out alternate infinite; }
+#num-522 .lines { animation: dash 5.594s ease-in-out alternate infinite; }
+#num-523 .lines { animation: dash 5.046s ease-in-out alternate infinite; }
+#num-524 .lines { animation: dash 5.572s ease-in-out alternate infinite; }
+#num-525 .lines { animation: dash 6.01s ease-in-out alternate infinite; }
+#num-526 .lines { animation: dash 6.092s ease-in-out alternate infinite; }
+#num-527 .lines { animation: dash 5.634s ease-in-out alternate infinite; }
+#num-528 .lines { animation: dash 5.672s ease-in-out alternate infinite; }
+#num-529 .lines { animation: dash 5.744s ease-in-out alternate infinite; }
+#num-530 .lines { animation: dash 5.752s ease-in-out alternate infinite; }
+#num-531 .lines { animation: dash 6.212s ease-in-out alternate infinite; }
+#num-532 .lines { animation: dash 6.082s ease-in-out alternate infinite; }
+#num-533 .lines { animation: dash 6.054s ease-in-out alternate infinite; }
+#num-534 .lines { animation: dash 6.102s ease-in-out alternate infinite; }
+#num-535 .lines { animation: dash 5.75s ease-in-out alternate infinite; }
+#num-536 .lines { animation: dash 5.704s ease-in-out alternate infinite; }
+#num-537 .lines { animation: dash 5.624s ease-in-out alternate infinite; }
+#num-538 .lines { animation: dash 5.552s ease-in-out alternate infinite; }
+#num-539 .lines { animation: dash 6.3s ease-in-out alternate infinite; }
+#num-540 .lines { animation: dash 6.134s ease-in-out alternate infinite; }
+#num-541 .lines { animation: dash 6.082s ease-in-out alternate infinite; }
+#num-542 .lines { animation: dash 6.212s ease-in-out alternate infinite; }
+#num-543 .lines { animation: dash 5.752s ease-in-out alternate infinite; }
+#num-544 .lines { animation: dash 5.744s ease-in-out alternate infinite; }
+#num-545 .lines { animation: dash 5.672s ease-in-out alternate infinite; }
+#num-546 .lines { animation: dash 5.752s ease-in-out alternate infinite; }
+#num-547 .lines { animation: dash 6.182s ease-in-out alternate infinite; }
+#num-548 .lines { animation: dash 6.22s ease-in-out alternate infinite; }
+#num-549 .lines { animation: dash 5.98s ease-in-out alternate infinite; }
+#num-550 .lines { animation: dash 5.582s ease-in-out alternate infinite; }
+#num-551 .lines { animation: dash 5.582s ease-in-out alternate infinite; }
+#num-552 .lines { animation: dash 5.98s ease-in-out alternate infinite; }
+#num-553 .lines { animation: dash 6.49s ease-in-out alternate infinite; }
+#num-554 .lines { animation: dash 7.332s ease-in-out alternate infinite; }
+#num-555 .lines { animation: dash 6.444s ease-in-out alternate infinite; }
+#num-556 .lines { animation: dash 5.602s ease-in-out alternate infinite; }
+#num-557 .lines { animation: dash 7.39s ease-in-out alternate infinite; }
+#num-558 .lines { animation: dash 6.27s ease-in-out alternate infinite; }
+#num-559 .lines { animation: dash 5.17s ease-in-out alternate infinite; }
+#num-560 .lines { animation: dash 6.53s ease-in-out alternate infinite; }
+#num-561 .lines { animation: dash 6.41s ease-in-out alternate infinite; }
+#num-562 .lines { animation: dash 5.17s ease-in-out alternate infinite; }
+#num-563 .lines { animation: dash 6.06s ease-in-out alternate infinite; }
+#num-564 .lines { animation: dash 7.3s ease-in-out alternate infinite; }
+#num-565 .lines { animation: dash 5.602s ease-in-out alternate infinite; }
+#num-566 .lines { animation: dash 6.562s ease-in-out alternate infinite; }
+#num-567 .lines { animation: dash 7.422s ease-in-out alternate infinite; }
+#num-568 .lines { animation: dash 6.7s ease-in-out alternate infinite; }
+#num-569 .lines { animation: dash 5.98s ease-in-out alternate infinite; }
+#num-570 .lines { animation: dash 5.582s ease-in-out alternate infinite; }
+#num-571 .lines { animation: dash 5.582s ease-in-out alternate infinite; }
+#num-572 .lines { animation: dash 5.98s ease-in-out alternate infinite; }
+#num-573 .lines { animation: dash 5.548s ease-in-out alternate infinite; }
+#num-574 .lines { animation: dash 5.094s ease-in-out alternate infinite; }
+#num-575 .lines { animation: dash 5.434s ease-in-out alternate infinite; }
+#num-576 .lines { animation: dash 6.006s ease-in-out alternate infinite; }
+#num-577 .lines { animation: dash 5.698s ease-in-out alternate infinite; }
+#num-578 .lines { animation: dash 5.126s ease-in-out alternate infinite; }
+#num-579 .lines { animation: dash 5.136s ease-in-out alternate infinite; }
+#num-580 .lines { animation: dash 5.59s ease-in-out alternate infinite; }
+#num-581 .lines { animation: dash 6.068s ease-in-out alternate infinite; }
+#num-582 .lines { animation: dash 5.68s ease-in-out alternate infinite; }
+#num-583 .lines { animation: dash 5.25s ease-in-out alternate infinite; }
+#num-584 .lines { animation: dash 5.52s ease-in-out alternate infinite; }
+#num-585 .lines { animation: dash 5.648s ease-in-out alternate infinite; }
+#num-586 .lines { animation: dash 5.638s ease-in-out alternate infinite; }
+#num-587 .lines { animation: dash 5.09s ease-in-out alternate infinite; }
+#num-588 .lines { animation: dash 5.218s ease-in-out alternate infinite; }
+#num-589 .lines { animation: dash 6.196s ease-in-out alternate infinite; }
+#num-590 .lines { animation: dash 5.696s ease-in-out alternate infinite; }
+#num-591 .lines { animation: dash 5.148s ease-in-out alternate infinite; }
+#num-592 .lines { animation: dash 5.766s ease-in-out alternate infinite; }
+#num-593 .lines { animation: dash 5.638s ease-in-out alternate infinite; }
+#num-594 .lines { animation: dash 5.648s ease-in-out alternate infinite; }
+#num-595 .lines { animation: dash 5.218s ease-in-out alternate infinite; }
+#num-596 .lines { animation: dash 5.09s ease-in-out alternate infinite; }
+#num-597 .lines { animation: dash 6.054s ease-in-out alternate infinite; }
+#num-598 .lines { animation: dash 6.22s ease-in-out alternate infinite; }
+#num-599 .lines { animation: dash 5.75s ease-in-out alternate infinite; }
+#num-600 .lines { animation: dash 5.822s ease-in-out alternate infinite; }
+#num-601 .lines { animation: dash 5.594s ease-in-out alternate infinite; }
+#num-602 .lines { animation: dash 4.8s ease-in-out alternate infinite; }
+#num-603 .lines { animation: dash 5.548s ease-in-out alternate infinite; }
+#num-604 .lines { animation: dash 6.104s ease-in-out alternate infinite; }
+#num-605 .lines { animation: dash 6.16s ease-in-out alternate infinite; }
+#num-606 .lines { animation: dash 6.676s ease-in-out alternate infinite; }
+#num-607 .lines { animation: dash 6.206s ease-in-out alternate infinite; }
+#num-608 .lines { animation: dash 5.928s ease-in-out alternate infinite; }
+#num-609 .lines { animation: dash 5.61s ease-in-out alternate infinite; }
+#num-610 .lines { animation: dash 6.664s ease-in-out alternate infinite; }
+#num-611 .lines { animation: dash 6.194s ease-in-out alternate infinite; }
+#num-612 .lines { animation: dash 5.378s ease-in-out alternate infinite; }
+#num-613 .lines { animation: dash 5.306s ease-in-out alternate infinite; }
+#num-614 .lines { animation: dash 5.26s ease-in-out alternate infinite; }
+#num-615 .lines { animation: dash 5.26s ease-in-out alternate infinite; }
+#num-616 .lines { animation: dash 5.306s ease-in-out alternate infinite; }
+#num-617 .lines { animation: dash 5.752s ease-in-out alternate infinite; }
+#num-618 .lines { animation: dash 5.936s ease-in-out alternate infinite; }
+#num-619 .lines { animation: dash 4.958s ease-in-out alternate infinite; }
+#num-620 .lines { animation: dash 4.772s ease-in-out alternate infinite; }
+#num-621 .lines { animation: dash 5.808s ease-in-out alternate infinite; }
+#num-622 .lines { animation: dash 5.808s ease-in-out alternate infinite; }
+#num-623 .lines { animation: dash 4.83s ease-in-out alternate infinite; }
+#num-624 .lines { animation: dash 4.828s ease-in-out alternate infinite; }
+#num-625 .lines { animation: dash 7.088s ease-in-out alternate infinite; }
+#num-626 .lines { animation: dash 6.118s ease-in-out alternate infinite; }
+#num-627 .lines { animation: dash 4.522s ease-in-out alternate infinite; }
+#num-628 .lines { animation: dash 5.374s ease-in-out alternate infinite; }
+#num-629 .lines { animation: dash 4.942s ease-in-out alternate infinite; }
+#num-630 .lines { animation: dash 5.562s ease-in-out alternate infinite; }
+#num-631 .lines { animation: dash 5.012s ease-in-out alternate infinite; }
+#num-632 .lines { animation: dash 4.512s ease-in-out alternate infinite; }
+#num-633 .lines { animation: dash 7.052s ease-in-out alternate infinite; }
+#num-634 .lines { animation: dash 5.58s ease-in-out alternate infinite; }
+#num-635 .lines { animation: dash 3.972s ease-in-out alternate infinite; }
+#num-636 .lines { animation: dash 5.444s ease-in-out alternate infinite; }
+#num-637 .lines { animation: dash 5.874s ease-in-out alternate infinite; }
+#num-638 .lines { animation: dash 4.522s ease-in-out alternate infinite; }
+#num-639 .lines { animation: dash 5.032s ease-in-out alternate infinite; }
+#num-640 .lines { animation: dash 6.62s ease-in-out alternate infinite; }
+#num-641 .lines { animation: dash 4.942s ease-in-out alternate infinite; }
+#num-642 .lines { animation: dash 5.562s ease-in-out alternate infinite; }
+#num-643 .lines { animation: dash 5.012s ease-in-out alternate infinite; }
+#num-644 .lines { animation: dash 4.512s ease-in-out alternate infinite; }
+#num-645 .lines { animation: dash 7.18s ease-in-out alternate infinite; }
+#num-646 .lines { animation: dash 6.328s ease-in-out alternate infinite; }
+#num-647 .lines { animation: dash 4.522s ease-in-out alternate infinite; }
+#num-648 .lines { animation: dash 5.492s ease-in-out alternate infinite; }
+#num-649 .lines { animation: dash 5.672s ease-in-out alternate infinite; }
+#num-650 .lines { animation: dash 6.006s ease-in-out alternate infinite; }
+#num-651 .lines { animation: dash 5.694s ease-in-out alternate infinite; }
+#num-652 .lines { animation: dash 5.002s ease-in-out alternate infinite; }
+#num-653 .lines { animation: dash 6.962s ease-in-out alternate infinite; }
+#num-654 .lines { animation: dash 6.684s ease-in-out alternate infinite; }
+#num-655 .lines { animation: dash 4.328s ease-in-out alternate infinite; }
+#num-656 .lines { animation: dash 4.846s ease-in-out alternate infinite; }
+#num-657 .lines { animation: dash 6.518s ease-in-out alternate infinite; }
+#num-658 .lines { animation: dash 6.168s ease-in-out alternate infinite; }
+#num-659 .lines { animation: dash 5.308s ease-in-out alternate infinite; }
+#num-660 .lines { animation: dash 5.42s ease-in-out alternate infinite; }
+#num-661 .lines { animation: dash 5.706s ease-in-out alternate infinite; }
+#num-662 .lines { animation: dash 5.538s ease-in-out alternate infinite; }
+#num-663 .lines { animation: dash 5.54s ease-in-out alternate infinite; }
+#num-664 .lines { animation: dash 5.706s ease-in-out alternate infinite; }
+#num-665 .lines { animation: dash 6.484s ease-in-out alternate infinite; }
+#num-666 .lines { animation: dash 5.818s ease-in-out alternate infinite; }
+#num-667 .lines { animation: dash 4.758s ease-in-out alternate infinite; }
+#num-668 .lines { animation: dash 5.306s ease-in-out alternate infinite; }
+#num-669 .lines { animation: dash 7s ease-in-out alternate infinite; }
+#num-670 .lines { animation: dash 6.826s ease-in-out alternate infinite; }
+#num-671 .lines { animation: dash 4.878s ease-in-out alternate infinite; }
+#num-672 .lines { animation: dash 4.934s ease-in-out alternate infinite; }
+#num-673 .lines { animation: dash 5.364s ease-in-out alternate infinite; }
+#num-674 .lines { animation: dash 5.736s ease-in-out alternate infinite; }
+#num-675 .lines { animation: dash 5.856s ease-in-out alternate infinite; }
+#num-676 .lines { animation: dash 5.246s ease-in-out alternate infinite; }
+#num-677 .lines { animation: dash 6.136s ease-in-out alternate infinite; }
+#num-678 .lines { animation: dash 6.088s ease-in-out alternate infinite; }
+#num-679 .lines { animation: dash 4.99s ease-in-out alternate infinite; }
+#num-680 .lines { animation: dash 5.276s ease-in-out alternate infinite; }
+#num-681 .lines { animation: dash 5.97s ease-in-out alternate infinite; }
+#num-682 .lines { animation: dash 5.738s ease-in-out alternate infinite; }
+#num-683 .lines { animation: dash 5.738s ease-in-out alternate infinite; }
+#num-684 .lines { animation: dash 5.97s ease-in-out alternate infinite; }
+#num-685 .lines { animation: dash 5.794s ease-in-out alternate infinite; }
+#num-686 .lines { animation: dash 6.286s ease-in-out alternate infinite; }
+#num-687 .lines { animation: dash 5.306s ease-in-out alternate infinite; }
+#num-688 .lines { animation: dash 4.814s ease-in-out alternate infinite; }
+#num-689 .lines { animation: dash 6.452s ease-in-out alternate infinite; }
+#num-690 .lines { animation: dash 6.396s ease-in-out alternate infinite; }
+#num-691 .lines { animation: dash 5.308s ease-in-out alternate infinite; }
+#num-692 .lines { animation: dash 5.484s ease-in-out alternate infinite; }
+#num-693 .lines { animation: dash 5.856s ease-in-out alternate infinite; }
+#num-694 .lines { animation: dash 5.19s ease-in-out alternate infinite; }
+#num-695 .lines { animation: dash 5.388s ease-in-out alternate infinite; }
+#num-696 .lines { animation: dash 5.934s ease-in-out alternate infinite; }
+#num-697 .lines { animation: dash 6.334s ease-in-out alternate infinite; }
+#num-698 .lines { animation: dash 6.056s ease-in-out alternate infinite; }
+#num-699 .lines { animation: dash 4.956s ease-in-out alternate infinite; }
+#num-700 .lines { animation: dash 5.474s ease-in-out alternate infinite; }
+#num-701 .lines { animation: dash 5.126s ease-in-out alternate infinite; }
+#num-702 .lines { animation: dash 4.94s ease-in-out alternate infinite; }
+#num-703 .lines { animation: dash 5.032s ease-in-out alternate infinite; }
+#num-704 .lines { animation: dash 5.216s ease-in-out alternate infinite; }
+#num-705 .lines { animation: dash 5.45s ease-in-out alternate infinite; }
+#num-706 .lines { animation: dash 4.814s ease-in-out alternate infinite; }
+#num-707 .lines { animation: dash 6.032s ease-in-out alternate infinite; }
+#num-708 .lines { animation: dash 6.192s ease-in-out alternate infinite; }
+#num-709 .lines { animation: dash 5.116s ease-in-out alternate infinite; }
+#num-710 .lines { animation: dash 5.984s ease-in-out alternate infinite; }
+#num-711 .lines { animation: dash 5.746s ease-in-out alternate infinite; }
+#num-712 .lines { animation: dash 5.354s ease-in-out alternate infinite; }
+#num-713 .lines { animation: dash 6.026s ease-in-out alternate infinite; }
+#num-714 .lines { animation: dash 5.524s ease-in-out alternate infinite; }
+#num-715 .lines { animation: dash 4.976s ease-in-out alternate infinite; }
+#num-716 .lines { animation: dash 5.596s ease-in-out alternate infinite; }
+#num-717 .lines { animation: dash 5.752s ease-in-out alternate infinite; }
+#num-718 .lines { animation: dash 6.14s ease-in-out alternate infinite; }
+#num-719 .lines { animation: dash 5.592s ease-in-out alternate infinite; }
+#num-720 .lines { animation: dash 5.322s ease-in-out alternate infinite; }
+#num-721 .lines { animation: dash 5.218s ease-in-out alternate infinite; }
+#num-722 .lines { animation: dash 5.09s ease-in-out alternate infinite; }
+#num-723 .lines { animation: dash 5.638s ease-in-out alternate infinite; }
+#num-724 .lines { animation: dash 5.648s ease-in-out alternate infinite; }
+#num-725 .lines { animation: dash 6.196s ease-in-out alternate infinite; }
+#num-726 .lines { animation: dash 5.696s ease-in-out alternate infinite; }
+#num-727 .lines { animation: dash 5.148s ease-in-out alternate infinite; }
+#num-728 .lines { animation: dash 5.766s ease-in-out alternate infinite; }
+#num-729 .lines { animation: dash 5.09s ease-in-out alternate infinite; }
+#num-730 .lines { animation: dash 5.218s ease-in-out alternate infinite; }
+#num-731 .lines { animation: dash 5.648s ease-in-out alternate infinite; }
+#num-732 .lines { animation: dash 5.638s ease-in-out alternate infinite; }
+#num-733 .lines { animation: dash 6.522s ease-in-out alternate infinite; }
+#num-734 .lines { animation: dash 6.116s ease-in-out alternate infinite; }
+#num-735 .lines { animation: dash 5.658s ease-in-out alternate infinite; }
+#num-736 .lines { animation: dash 6.182s ease-in-out alternate infinite; }
+#num-737 .lines { animation: dash 6.012s ease-in-out alternate infinite; }
+#num-738 .lines { animation: dash 5.616s ease-in-out alternate infinite; }
+#num-739 .lines { animation: dash 6.594s ease-in-out alternate infinite; }
+#num-740 .lines { animation: dash 6.992s ease-in-out alternate infinite; }
+#num-741 .lines { animation: dash 5.572s ease-in-out alternate infinite; }
+#num-742 .lines { animation: dash 4.418s ease-in-out alternate infinite; }
+#num-743 .lines { animation: dash 4.966s ease-in-out alternate infinite; }
+#num-744 .lines { animation: dash 6.002s ease-in-out alternate infinite; }
+#num-745 .lines { animation: dash 6.46s ease-in-out alternate infinite; }
+#num-746 .lines { animation: dash 5.378s ease-in-out alternate infinite; }
+#num-747 .lines { animation: dash 3.94s ease-in-out alternate infinite; }
+#num-748 .lines { animation: dash 5.142s ease-in-out alternate infinite; }
+#num-749 .lines { animation: dash 6.176s ease-in-out alternate infinite; }
+#num-750 .lines { animation: dash 6.104s ease-in-out alternate infinite; }
+#num-751 .lines { animation: dash 5.596s ease-in-out alternate infinite; }
+#num-752 .lines { animation: dash 5.43s ease-in-out alternate infinite; }
+#num-753 .lines { animation: dash 5.628s ease-in-out alternate infinite; }
+#num-754 .lines { animation: dash 5.674s ease-in-out alternate infinite; }
+#num-755 .lines { animation: dash 6.026s ease-in-out alternate infinite; }
+#num-756 .lines { animation: dash 5.978s ease-in-out alternate infinite; }
+#num-757 .lines { animation: dash 6.12s ease-in-out alternate infinite; }
+#num-758 .lines { animation: dash 5.038s ease-in-out alternate infinite; }
+#num-759 .lines { animation: dash 4.49s ease-in-out alternate infinite; }
+#num-760 .lines { animation: dash 5.69s ease-in-out alternate infinite; }
+#num-761 .lines { animation: dash 6.002s ease-in-out alternate infinite; }
+#num-762 .lines { animation: dash 4.966s ease-in-out alternate infinite; }
+#num-763 .lines { animation: dash 4.418s ease-in-out alternate infinite; }
+#num-764 .lines { animation: dash 5.572s ease-in-out alternate infinite; }
+#num-765 .lines { animation: dash 6.308s ease-in-out alternate infinite; }
+#num-766 .lines { animation: dash 5.92s ease-in-out alternate infinite; }
+#num-767 .lines { animation: dash 4.602s ease-in-out alternate infinite; }
+#num-768 .lines { animation: dash 4.87s ease-in-out alternate infinite; }
+#num-769 .lines { animation: dash 5.8s ease-in-out alternate infinite; }
+#num-770 .lines { animation: dash 5.42s ease-in-out alternate infinite; }
+#num-771 .lines { animation: dash 5.538s ease-in-out alternate infinite; }
+#num-772 .lines { animation: dash 5.68s ease-in-out alternate infinite; }
+#num-773 .lines { animation: dash 5.402s ease-in-out alternate infinite; }
+#num-774 .lines { animation: dash 4.772s ease-in-out alternate infinite; }
+#num-775 .lines { animation: dash 4.772s ease-in-out alternate infinite; }
+#num-776 .lines { animation: dash 5.402s ease-in-out alternate infinite; }
+#num-777 .lines { animation: dash 7.582s ease-in-out alternate infinite; }
+#num-778 .lines { animation: dash 5.832s ease-in-out alternate infinite; }
+#num-779 .lines { animation: dash 3.844s ease-in-out alternate infinite; }
+#num-780 .lines { animation: dash 5.832s ease-in-out alternate infinite; }
+#num-781 .lines { animation: dash 5.912s ease-in-out alternate infinite; }
+#num-782 .lines { animation: dash 7.15s ease-in-out alternate infinite; }
+#num-783 .lines { animation: dash 6.262s ease-in-out alternate infinite; }
+#num-784 .lines { animation: dash 5.022s ease-in-out alternate infinite; }
+#num-785 .lines { animation: dash 5.022s ease-in-out alternate infinite; }
+#num-786 .lines { animation: dash 6.38s ease-in-out alternate infinite; }
+#num-787 .lines { animation: dash 7.242s ease-in-out alternate infinite; }
+#num-788 .lines { animation: dash 6.12s ease-in-out alternate infinite; }
+#num-789 .lines { animation: dash 6.812s ease-in-out alternate infinite; }
+#num-790 .lines { animation: dash 4.944s ease-in-out alternate infinite; }
+#num-791 .lines { animation: dash 4.944s ease-in-out alternate infinite; }
+#num-792 .lines { animation: dash 6.812s ease-in-out alternate infinite; }
+#num-793 .lines { animation: dash 5.402s ease-in-out alternate infinite; }
+#num-794 .lines { animation: dash 4.772s ease-in-out alternate infinite; }
+#num-795 .lines { animation: dash 4.774s ease-in-out alternate infinite; }
+#num-796 .lines { animation: dash 5.402s ease-in-out alternate infinite; }
+#num-797 .lines { animation: dash 5.046s ease-in-out alternate infinite; }
+#num-798 .lines { animation: dash 5.618s ease-in-out alternate infinite; }
+#num-799 .lines { animation: dash 5.788s ease-in-out alternate infinite; }
+#num-800 .lines { animation: dash 5.334s ease-in-out alternate infinite; }
+#num-801 .lines { animation: dash 4.682s ease-in-out alternate infinite; }
+#num-802 .lines { animation: dash 6.044s ease-in-out alternate infinite; }
+#num-803 .lines { animation: dash 6.27s ease-in-out alternate infinite; }
+#num-804 .lines { animation: dash 4.552s ease-in-out alternate infinite; }
+#num-805 .lines { animation: dash 4.474s ease-in-out alternate infinite; }
+#num-806 .lines { animation: dash 6.118s ease-in-out alternate infinite; }
+#num-807 .lines { animation: dash 6.288s ease-in-out alternate infinite; }
+#num-808 .lines { animation: dash 4.762s ease-in-out alternate infinite; }
+#num-809 .lines { animation: dash 5.548s ease-in-out alternate infinite; }
+#num-810 .lines { animation: dash 5.094s ease-in-out alternate infinite; }
+#num-811 .lines { animation: dash 5.434s ease-in-out alternate infinite; }
+#num-812 .lines { animation: dash 6.006s ease-in-out alternate infinite; }
+#num-813 .lines { animation: dash 5.33s ease-in-out alternate infinite; }
+#num-814 .lines { animation: dash 4.812s ease-in-out alternate infinite; }
+#num-815 .lines { animation: dash 5.65s ease-in-out alternate infinite; }
+#num-816 .lines { animation: dash 5.93s ease-in-out alternate infinite; }
+#num-817 .lines { animation: dash 5.596s ease-in-out alternate infinite; }
+#num-818 .lines { animation: dash 4.976s ease-in-out alternate infinite; }
+#num-819 .lines { animation: dash 5.434s ease-in-out alternate infinite; }
+#num-820 .lines { animation: dash 5.934s ease-in-out alternate infinite; }
+#num-821 .lines { animation: dash 5.386s ease-in-out alternate infinite; }
+#num-822 .lines { animation: dash 4.83s ease-in-out alternate infinite; }
+#num-823 .lines { animation: dash 5.43s ease-in-out alternate infinite; }
+#num-824 .lines { animation: dash 6.224s ease-in-out alternate infinite; }
+#num-825 .lines { animation: dash 5.42s ease-in-out alternate infinite; }
+#num-826 .lines { animation: dash 5.476s ease-in-out alternate infinite; }
+#num-827 .lines { animation: dash 5.046s ease-in-out alternate infinite; }
+#num-828 .lines { animation: dash 4.87s ease-in-out alternate infinite; }
+#num-829 .lines { animation: dash 5.292s ease-in-out alternate infinite; }
+#num-830 .lines { animation: dash 5.476s ease-in-out alternate infinite; }
+#num-831 .lines { animation: dash 5.124s ease-in-out alternate infinite; }
+#num-832 .lines { animation: dash 4.94s ease-in-out alternate infinite; }
+#num-833 .lines { animation: dash 5.326s ease-in-out alternate infinite; }
+#num-834 .lines { animation: dash 4.696s ease-in-out alternate infinite; }
+#num-835 .lines { animation: dash 4.696s ease-in-out alternate infinite; }
+#num-836 .lines { animation: dash 5.324s ease-in-out alternate infinite; }
+#num-837 .lines { animation: dash 5.988s ease-in-out alternate infinite; }
+#num-838 .lines { animation: dash 5.312s ease-in-out alternate infinite; }
+#num-839 .lines { animation: dash 4.212s ease-in-out alternate infinite; }
+#num-840 .lines { animation: dash 5.128s ease-in-out alternate infinite; }
+#num-841 .lines { animation: dash 4.762s ease-in-out alternate infinite; }
+#num-842 .lines { animation: dash 4.928s ease-in-out alternate infinite; }
+#num-843 .lines { animation: dash 6.186s ease-in-out alternate infinite; }
+#num-844 .lines { animation: dash 6.018s ease-in-out alternate infinite; }
+#num-845 .lines { animation: dash 5.558s ease-in-out alternate infinite; }
+#num-846 .lines { animation: dash 4.706s ease-in-out alternate infinite; }
+#num-847 .lines { animation: dash 4.786s ease-in-out alternate infinite; }
+#num-848 .lines { animation: dash 5.756s ease-in-out alternate infinite; }
+#num-849 .lines { animation: dash 5.756s ease-in-out alternate infinite; }
+#num-850 .lines { animation: dash 5.302s ease-in-out alternate infinite; }
+#num-851 .lines { animation: dash 4.124s ease-in-out alternate infinite; }
+#num-852 .lines { animation: dash 4.696s ease-in-out alternate infinite; }
+#num-853 .lines { animation: dash 5.104s ease-in-out alternate infinite; }
+#num-854 .lines { animation: dash 4.588s ease-in-out alternate infinite; }
+#num-855 .lines { animation: dash 5.964s ease-in-out alternate infinite; }
+#num-856 .lines { animation: dash 6.242s ease-in-out alternate infinite; }
+#num-857 .lines { animation: dash 5.47s ease-in-out alternate infinite; }
+#num-858 .lines { animation: dash 5.756s ease-in-out alternate infinite; }
+#num-859 .lines { animation: dash 5.36s ease-in-out alternate infinite; }
+#num-860 .lines { animation: dash 5.312s ease-in-out alternate infinite; }
+#num-861 .lines { animation: dash 5.558s ease-in-out alternate infinite; }
+#num-862 .lines { animation: dash 4.762s ease-in-out alternate infinite; }
+#num-863 .lines { animation: dash 4.762s ease-in-out alternate infinite; }
+#num-864 .lines { animation: dash 5.558s ease-in-out alternate infinite; }
+#num-865 .lines { animation: dash 5.812s ease-in-out alternate infinite; }
+#num-866 .lines { animation: dash 5.414s ease-in-out alternate infinite; }
+#num-867 .lines { animation: dash 5.136s ease-in-out alternate infinite; }
+#num-868 .lines { animation: dash 5.534s ease-in-out alternate infinite; }
+#num-869 .lines { animation: dash 5.126s ease-in-out alternate infinite; }
+#num-870 .lines { animation: dash 4.674s ease-in-out alternate infinite; }
+#num-871 .lines { animation: dash 4.752s ease-in-out alternate infinite; }
+#num-872 .lines { animation: dash 5.324s ease-in-out alternate infinite; }
+#num-873 .lines { animation: dash 5.126s ease-in-out alternate infinite; }
+#num-874 .lines { animation: dash 4.156s ease-in-out alternate infinite; }
+#num-875 .lines { animation: dash 5.334s ease-in-out alternate infinite; }
+#num-876 .lines { animation: dash 6.186s ease-in-out alternate infinite; }
+#num-877 .lines { animation: dash 4.696s ease-in-out alternate infinite; }
+#num-878 .lines { animation: dash 4.068s ease-in-out alternate infinite; }
+#num-879 .lines { animation: dash 5.326s ease-in-out alternate infinite; }
+#num-880 .lines { animation: dash 5.954s ease-in-out alternate infinite; }

@@ -132,10 +132,9 @@ fieldset {
 }
 
 /* animate */
-/* [id^="square-"] { */
-/* .animate {
+#svgGrid.animateEvenly svg .lines {
   animation: dash 20s ease-in-out alternate infinite;
-} */
+}
 @keyframes dash {
   to {
     stroke-dashoffset: 0;

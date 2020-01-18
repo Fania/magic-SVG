@@ -26,12 +26,26 @@ function startAnimatingAll(sync) {
   let style = styleOptions[styleOptions.selectedIndex].value;
   let newStyle = document.createElement("link");
   newStyle.rel = "stylesheet";
-  newStyle.href = sync ? `css/${style}Sync4.css` : `css/${style}4.css`;
+  newStyle.href = `css/${style}Sync4.css`;
   newStyle.id = "animationStyles";
   document.head.appendChild(newStyle);
+  svgGrid.classList.add("animateEvenly");
+  if(!sync) {
+    let indivStyle = document.createElement("link");
+    indivStyle.rel = "stylesheet";
+    indivStyle.href = `css/${style}4.css`;
+    indivStyle.id = "individualStyles";
+    document.head.appendChild(indivStyle);
+    svgGrid.classList.remove("animateEvenly");
+  }
+
 }
 
 function stopAnimatingAll() {
   let style = document.getElementById("animationStyles");
-  document.head.removeChild(style);
+  if (style) document.head.removeChild(style);
+  let style2 = document.getElementById("individualStyles");
+  if (style2) document.head.removeChild(style2);
+  svgGrid.classList.remove("animateEvenly");
 }
+
