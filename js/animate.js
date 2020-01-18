@@ -42,7 +42,6 @@ function startAnimatingAll(sync) {
     document.head.appendChild(indivStyle);
     svgGrid.classList.remove("animateEvenly");
   }
-
 }
 
 function stopAnimatingAll() {
