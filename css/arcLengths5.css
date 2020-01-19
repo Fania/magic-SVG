@@ -1,0 +1,21 @@
+/* arc lengths */
+#num-1 .lines {
+  stroke-dasharray: 6772;
+  stroke-dashoffset: 6772;
+}
+#num-2 .lines {
+  stroke-dasharray: 6338;
+  stroke-dashoffset: 6338;
+}
+#num-3 .lines {
+  stroke-dasharray: 6400;
+  stroke-dashoffset: 6400;
+}
+#num-4 .lines {
+  stroke-dasharray: 4515;
+  stroke-dashoffset: 4515;
+}
+#num-5 .lines {
+  stroke-dasharray: 5879;
+  stroke-dashoffset: 5879;
+}

@@ -21,7 +21,7 @@ function updateMenuStates() {
   style==="numbers" ? animate.disabled=true : animate.disabled=false;
   type==="orderGroups" || type==="filterGroups"
     ? styleOptions.disabled=false : styleOptions.disabled=true;
-  type==="orderGroups" 
+  type==="orderGroups" || type==="filterGroups"
     ? orderOptions.disabled=false : orderOptions.disabled=true;
   type==="orderGroups" || type==="filterGroups"
     ? values.disabled=true : values.disabled=false;

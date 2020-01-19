@@ -37,26 +37,23 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] swap coordsArray x y
 - [x] merge js files into one
 - [x] set size of squares
+- [x] write library of helper function for hardcoding
+- [x] hardcode lengths
 - [ ] give choice of print sizes
 - [ ] set fill-opacity/stroke-opacity="0.0" - "1.0"
 - [ ] loop through colour change
 - [ ] progress bar (loading) for animate
 - [ ] hide settings after drawing
 - [ ] redesign menu
-- [x] hardcode lengths
 - [ ] filters
-- [ ] write library of helper function for hardcoding
 - [ ] give option of inputting numbers of squares
+- [ ] clean up unused stuff
 
 
 
 ## URGENT
 
-- finish the helper functions for all sizes/styles, etc
-- make sure the filterGroups page works
-- make sure animations work
-- add/update new css files for each
-- clean up unused stuff
+- single input animations broken
 
 
 

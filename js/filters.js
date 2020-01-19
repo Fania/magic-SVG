@@ -2,17 +2,10 @@
 
 
 
-function filterByLength(len, type) {
-  let tmp = index4.filter( square => square.lens[type] == len );
-  let out = tmp.map( t => index4.indexOf(t) );
-  return out;
-}
-
-
-function populateOptions(style) {
+function populateOptions(order,style) {
   lenOptions.innerHTML = "";
   if(style !== "numbers") {
-    let list = eval(`${style}Lens`);
+    let list = eval(`${style}Lens${order}`);
     lenOptions.disabled=false;
     for (let l in list) {
       let opt = document.createElement("option");

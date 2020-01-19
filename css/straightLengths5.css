@@ -1,0 +1,21 @@
+/* straight lengths */
+#num-1 .lines {
+  stroke-dasharray: 6828;
+  stroke-dashoffset: 6828;
+}
+#num-2 .lines {
+  stroke-dasharray: 7317;
+  stroke-dashoffset: 7317;
+}
+#num-3 .lines {
+  stroke-dasharray: 6711;
+  stroke-dashoffset: 6711;
+}
+#num-4 .lines {
+  stroke-dasharray: 7212;
+  stroke-dashoffset: 7212;
+}
+#num-5 .lines {
+  stroke-dasharray: 6828;
+  stroke-dashoffset: 6828;
+}

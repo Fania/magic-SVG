@@ -1,0 +1,21 @@
+/* quadvertix lengths */
+#num-1 .lines {
+  stroke-dasharray: 4721;
+  stroke-dashoffset: 4721;
+}
+#num-2 .lines {
+  stroke-dasharray: 4949;
+  stroke-dashoffset: 4949;
+}
+#num-3 .lines {
+  stroke-dasharray: 4751;
+  stroke-dashoffset: 4751;
+}
+#num-4 .lines {
+  stroke-dasharray: 4694;
+  stroke-dashoffset: 4694;
+}
+#num-5 .lines {
+  stroke-dasharray: 4851;
+  stroke-dashoffset: 4851;
+}

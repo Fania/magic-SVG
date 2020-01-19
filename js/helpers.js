@@ -1,4 +1,8 @@
-// create index with lengths
+"use strict";
+
+
+// order-X.js -> indexX.js
+// create index with lengths per style
 function generateIndex(order) {
   const styles = ["quadvertix", "straight", "arc", "quadline"];
   const source = eval(`order${order}`);
@@ -29,32 +33,13 @@ function generateIndex(order) {
   ];`;
   return output;
 }
-
+// console.log(generateIndex(3));
+// console.log(generateIndex(4));
+// console.log(generateIndex(5));
 // console.log(generateIndex(6));
 
 
 
-
-// from lengths4.js
-// let uniquestraight = [...new Set(lensStraight4)]; 
-// let uniquequadvertix = [...new Set(lensQuad4)]; 
-// let uniquequadline = [...new Set(lensQLine4)]; 
-// let uniquearc = [...new Set(lensArc4)]; 
-
-
-// used to update lists in filtered.js
-function generateList(type) {
-  let list = eval(`unique${type}`);
-  let output = {};
-  for (let i=0; i < list.length; i++) {
-    let len = list[i];
-    let filtered = filterByLength(len, type);
-    output[len] = filtered;
-  };
-  return output;
-}
-
-// console.log(generateList(""));
 
 
 
@@ -77,4 +62,48 @@ function generateAnimationCSS(index, style, sync) {
   return output;
 }
 // generateAnimationCSS(index4, "quadvertix", true);
-// console.log(generateAnimationCSS(index4, "straight", true));
+// console.log(generateAnimationCSS(index6, "quadvertix", true));
+// console.log(generateAnimationCSS(index6, "quadvertix", false));
+// console.log(generateAnimationCSS(index6, "straight", true));
+// console.log(generateAnimationCSS(index6, "straight", false));
+// console.log(generateAnimationCSS(index6, "arc", true));
+// console.log(generateAnimationCSS(index6, "arc", false));
+// console.log(generateAnimationCSS(index6, "quadline", true));
+// console.log(generateAnimationCSS(index6, "quadline", false));
+
+
+
+
+
+
+
+
+// UNUSED ??? OLD
+
+// from lengths4.js
+// let uniquestraight = [...new Set(lensStraight4)]; 
+// let uniquequadvertix = [...new Set(lensQuad4)]; 
+// let uniquequadline = [...new Set(lensQLine4)]; 
+// let uniquearc = [...new Set(lensArc4)]; 
+
+
+// indexX.js -> filteredX.js
+// used to update lists in filtered.js
+function generateList(order,style) {
+  // console.log(`generating lengths ${order}, ${style}`);
+  let index = eval(`index${order}`);
+  let lengths = index.map(i => i.lens[style]);
+  let output = {};
+  for (let i=0; i < lengths.length; i++) {
+    let len = lengths[i];
+    let matches = index.filter(i => i.lens[style] == len);
+    let out = matches.map(t => index.indexOf(t));
+    output[len] = out;
+  };
+  return output;
+}
+// console.log(generateList(3,"quadvertix"));
+// console.log(generateList(3,"straight"));
+// console.log(generateList(3,"arc"));
+// console.log(generateList(3,"quadline"));
+

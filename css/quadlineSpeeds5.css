@@ -1,0 +1,6 @@
+/* quadline speeds */
+#num-1 .lines { animation: dash 9.108s ease-in-out alternate infinite; }
+#num-2 .lines { animation: dash 9.734s ease-in-out alternate infinite; }
+#num-3 .lines { animation: dash 9.362s ease-in-out alternate infinite; }
+#num-4 .lines { animation: dash 10.366s ease-in-out alternate infinite; }
+#num-5 .lines { animation: dash 10.38s ease-in-out alternate infinite; }

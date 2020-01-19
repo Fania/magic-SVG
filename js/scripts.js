@@ -53,11 +53,14 @@ function load(pageType) {
     // console.log("filter groups selected");
     let order = orderOptions[orderOptions.selectedIndex].value;
     let style = styleOptions[styleOptions.selectedIndex].value;
-    populateOptions(style);
+    populateOptions(order,style);
+    // console.log(selectedLenIndex);
+    if (selectedLenIndex > lenOptions.options.length)   { selectedLenIndex = 0; }
+    // console.log(selectedLenIndex);
     lenOptions.options[selectedLenIndex].selected = true;
-    let allPerStyle = eval(`${style}Lens`);
+    let allPerStyle = eval(`${style}Lens${order}`);
     let index = eval(`index${order}`);
-    console.log(index);
+    // console.log(index);
     // let allPerStyle = generateList(style);
     // console.log(allPerStyle);
 
