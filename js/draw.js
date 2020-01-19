@@ -26,12 +26,13 @@ function createNumberSVGs(size, arr, num) {
 function createPolyline(size, arr, counter, num) {
   // console.log(`preparing straight polyline svg for square ${counter}`);
   let w = size * sizeInc;
-  let coords = "";
+  let coords = "M";
   for (let i in arr) {
     coords += `${arr[i][0] * sizeInc},${arr[i][1] * sizeInc} `;
   }
   coords += `${arr[1][0] * sizeInc},${arr[1][1] * sizeInc} `;
-  return `<svg id="num-${num+1}" class="order-x pad" viewbox="${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}"><polyline id="square-${counter}" class="lines" points="${coords}"/></svg>`;
+  // return `<svg id="num-${num+1}" class="order-x pad" viewbox="${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}"><polyline id="square-${counter}" class="lines" points="${coords}"/></svg>`;
+  return `<svg id="num-${num+1}" class="order-x pad" viewbox="${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`;
 }
 
 

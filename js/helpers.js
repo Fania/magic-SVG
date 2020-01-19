@@ -1,9 +1,45 @@
+// create index with lengths
+function generateIndex(order) {
+  const styles = ["quadvertix", "straight", "arc", "quadline"];
+  const source = eval(`order${order}`);
+  let output = `const index${order} = [`;
+  let lengths = {};
+  for (let i=0; i < source.length; i++) {
+    for (let j=0; j < styles.length; j++) {
+      let valuesArray = source[i].split(" ").map(Number);
+      let coordsArray = getCoords(order,valuesArray);
+      let svgString = prepareSVG(styles[j],order,coordsArray,i,0);
+      let svg = new DOMParser().parseFromString(svgString, 'text/html');
+      let len = Math.ceil(svg.querySelector(".lines").getTotalLength());
+      lengths[styles[j]] = len;
+    }
+    let txt = `
+    {
+      "nums": "${source[i]}",
+      "lens": {
+        "quadvertix": ${lengths.quadvertix},
+        "straight": ${lengths.straight},
+        "arc": ${lengths.arc},
+        "quadline": ${lengths.quadline}
+      }
+    }${ (i!==(source.length -1)) ? "," : "" }`;
+    output += txt;
+  }
+  output += `
+  ];`;
+  return output;
+}
+
+// console.log(generateIndex(6));
 
 
-// let uniquestraight = [...new Set(lensStraight)]; 
-// let uniquequadvertix = [...new Set(lensQuad)]; 
-// let uniquequadline = [...new Set(lensQLine)]; 
-// let uniquearc = [...new Set(lensArc)]; 
+
+
+// from lengths4.js
+// let uniquestraight = [...new Set(lensStraight4)]; 
+// let uniquequadvertix = [...new Set(lensQuad4)]; 
+// let uniquequadline = [...new Set(lensQLine4)]; 
+// let uniquearc = [...new Set(lensArc4)]; 
 
 
 // used to update lists in filtered.js

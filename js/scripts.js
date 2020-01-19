@@ -4,7 +4,6 @@
 const squareOrder = {
   "3": order3,
   "4": order4,
-  "4a": order4a,
   "5": order5,
   "6": order6
 }
@@ -71,7 +70,7 @@ function load(pageType) {
       // console.log(filtered);
       let filteredNums = filtered.map(n => index4[n].nums);
 
-      let order = "4a";
+      let order = "4";
       let coordsArray = {};
       let size = Math.sqrt(filteredNums[0].split(" ").length);
       let counter = 0;
