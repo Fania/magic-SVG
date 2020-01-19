@@ -51,11 +51,13 @@ function load(pageType) {
 
   if (pageType === "filterGroups") {
     // console.log("filter groups selected");
-
+    let order = orderOptions[orderOptions.selectedIndex].value;
     let style = styleOptions[styleOptions.selectedIndex].value;
     populateOptions(style);
     lenOptions.options[selectedLenIndex].selected = true;
     let allPerStyle = eval(`${style}Lens`);
+    let index = eval(`index${order}`);
+    console.log(index);
     // let allPerStyle = generateList(style);
     // console.log(allPerStyle);
 
@@ -68,7 +70,7 @@ function load(pageType) {
 
       let filtered = allPerStyle[filterNum];
       // console.log(filtered);
-      let filteredNums = filtered.map(n => index4[n].nums);
+      let filteredNums = filtered.map(n => index[n].nums);
 
       let order = "4";
       let coordsArray = {};

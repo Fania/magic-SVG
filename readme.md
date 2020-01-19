@@ -49,6 +49,17 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] give option of inputting numbers of squares
 
 
+
+## URGENT
+
+- finish the helper functions for all sizes/styles, etc
+- make sure the filterGroups page works
+- make sure animations work
+- add/update new css files for each
+- clean up unused stuff
+
+
+
 ## References
 
 - [SVG Fills and Strokes (MDN)](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes)
