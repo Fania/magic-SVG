@@ -72,3 +72,16 @@ function changePadding(state) {
     });
 }
 
+
+// https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code
+document.addEventListener("keydown", event => {
+  // F11 doesnt work
+  if (event.key === "s") {
+    if ([...settings.classList].includes("hide")) {
+      settings.classList.remove("hide");
+    } else {
+      settings.classList.add("hide");
+    }
+  }
+});
+

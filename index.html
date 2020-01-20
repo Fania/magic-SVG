@@ -25,61 +25,69 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://fania.github.io/magic-SVG" />
   <meta property="og:image" content="imgs/example.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <form id="settings">
-  <fieldset>
-    <label for="orderGroups"><input type="radio" id="orderGroups" name="singleMultiple" checked><span>Order-groups</span></label>
-    <label for="filterGroups"><input type="radio" id="filterGroups" name="singleMultiple"><span>Filter-groups</span></label>
-    <label for="singleInput"><input type="radio" id="singleInput" name="singleMultiple"><span>Single-input</span></label>
-  </fieldset>
-  <fieldset>
-    <label for="clearFill"><input type="checkbox" id="clearFill" checked><span>NoFill</span></label>
-    <label for="fillColour"><input type="color" id="fillColour" value="#666666"><span>Fill</span></label>
-    <label for="strokeColour"><input type="color" id="strokeColour" value="#FFFFFF"><span>Stroke</span></label>
-    <label for="textColour"><input type="color" id="textColour" value="#EEEEEE"><span>Text</span></label>
-    <label for="backColour"><input type="color" id="backColour" value="#222222"><span>Background</span></label>
-  </fieldset>
-  <fieldset>
-    <label for="padding"><input type="checkbox" id="padding" checked><span>Padding</span></label>
-  </fieldset>
-  <fieldset>
-    <label for="animate"><input type="radio" id="animate" name="animateRadio"><span>Animate (In Sync)</span></label>
-    <label for="animateOut"><input type="radio" id="animateOut" name="animateRadio"><span>Animate (Out of Sync)</span></label>
-    <label for="noAnimate"><input type="radio" id="noAnimate" name="animateRadio" checked><span>Animate (Stop)</span></label>
-  </fieldset>
-  <fieldset>
-    <select id="styleOptions">
-      <option value="quadvertix" selected>Quadratic curve on vertices</option>
-      <option value="straight">Straight polyline</option>
-      <option value="arc">Arc experiment</option>
-      <option value="quadline">Quadratic curve on lines</option>
-      <option value="numbers">Numbers</option>
-    </select>
-    <select id="orderOptions">
-      <option value="3">Order 3</option>
-      <option value="4">Order 4</option>
-      <option value="5">Order 5</option>
-      <option value="6" selected>Order 6</option>
-    </select>
-  </fieldset>
-  <fieldset>
+  <div class="tabs">
+    <img src="imgs/logo.svg" alt="logo" width="100">
+    <fieldset>
+      <label for="orderGroups"><input type="radio" id="orderGroups" name="singleMultiple" checked><span>ORDER-GROUPS</span></label>
+      <label for="filterGroups"><input type="radio" id="filterGroups" name="singleMultiple"><span>FILTER-GROUPS</span></label>
+      <label for="singleInput"><input type="radio" id="singleInput" name="singleMultiple"><span>SINGLE-INPUT</span></label>
+    </fieldset>
+  </div>
+  <div class="options">
+    <fieldset>
+      <label for="clearFill"><input type="checkbox" id="clearFill" checked><span>NoFill</span></label>
+      <label for="fillColour"><input type="color" id="fillColour" value="#666666"><span>Fill</span></label>
+      <label for="strokeColour"><input type="color" id="strokeColour" value="#FFFFFF"><span>Stroke</span></label>
+      <label for="textColour"><input type="color" id="textColour" value="#EEEEEE"><span>Text</span></label>
+      <label for="backColour"><input type="color" id="backColour" value="#222222"><span>Background</span></label>
+    </fieldset>
+    <fieldset>
+      <label for="padding"><input type="checkbox" id="padding" checked><span>Padding</span></label>
+    </fieldset>
+    <fieldset>
+      <!-- <legend>Animation</legend> -->
+      <label for="animate"><input type="radio" id="animate" name="animateRadio"><span>Animate (In Sync)</span></label>
+      <label for="animateOut"><input type="radio" id="animateOut" name="animateRadio"><span>Animate (Out of Sync)</span></label>
+      <label for="noAnimate"><input type="radio" id="noAnimate" name="animateRadio" checked><span>Animate (Stop)</span></label>
+    </fieldset>
+    <fieldset>
+      <select id="styleOptions">
+        <option value="quadvertix" selected>Quadratic curve on vertices</option>
+        <option value="straight">Straight polyline</option>
+        <option value="arc">Arc experiment</option>
+        <option value="quadline">Quadratic curve on lines</option>
+        <option value="numbers">Numbers</option>
+      </select>
+      <select id="orderOptions">
+        <option value="3">Order 3</option>
+        <option value="4">Order 4</option>
+        <option value="5">Order 5</option>
+        <option value="6" selected>Order 6</option>
+      </select>
+      <label for="lenOptions">
+        <select id="lenOptions"></select>
+        <span>filter options</span>
+      </label>
+    </fieldset>
+  </div>
+  <fieldset class="userInput">
+    <!-- <legend></legend> -->
     <label for="values">
       <input id="values" type="text" placeholder="1 2 3 etc..." value="13 22 18 27 11 20 31 4 36 9 29 2 12 21 14 23 16 25 30 3 5 32 34 7 17 26 10 19 15 24 8 35 28 1 6 33">
       <span>manual input</span>
     </label>
-    <!-- <label for="lenFilter">
-      <input id="lenFilter" type="number" value="0000">
-      <span>manual filter</span>
-    </label> -->
-    <label for="lenOptions">
-      <select id="lenOptions"></select>
-      <span>filter options</span>
-    </label>
   </fieldset>
+  <div class="instructions">
+    <p>Press 's' to hide/show menu.</p>
+    <p>Press 'F11' to toggle fullscreen.</p>
+  </div>
 </form>
 
 

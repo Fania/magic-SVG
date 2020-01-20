@@ -19,11 +19,47 @@ body {
   background: #111; 
   padding: 1.5em 0;
   margin-bottom: 2em;
-  display: flex; 
+  /* display: flex; 
   flex-wrap: wrap;
   align-items: center; 
-  justify-content: center;
+  justify-content: center; */
 }
+
+#settings .tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#settings fieldset,
+#settings .tabs fieldset {
+  border: none;
+}
+#settings .tabs img, 
+#settings .tabs fieldset {
+  margin: 1em 2em;
+}
+
+#settings .options {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+}
+.options fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.instructions {
+  margin-top: 1em;
+  margin-right: 2em;
+  display: flex;
+  justify-content: flex-end;
+}
+.instructions p {
+  margin: 0;
+  padding: 0 1em;
+}
+
 select, input, a { 
   /* font-size: 1.15em;  */
   margin-left: 1em; 
@@ -42,7 +78,7 @@ input[type="checkbox"] {
   border: none;
 }
 input[type="text"] {
-  width: 200px;
+  width: 80%;
 }
 input[type="number"] {
   width: 55px;
@@ -52,6 +88,8 @@ label {
 }
 label span {
   margin-left: 5px;
+  /* font-variant: small-caps; */
+  font-size: 1.2em;
 }
 .disable {
   color: #666;
@@ -67,9 +105,7 @@ input:disabled ~ span, select:disabled ~ span {
   color: #666;
   text-decoration: line-through;
 }
-fieldset {
-  border: none;
-}
+
 #orderGroups, #singleInput, #filterGroups {
   display: none;
 }
@@ -178,6 +214,11 @@ option:focus {
   width: 10vw;
   height: 10vh;
 }
+
+.hide {
+  display: none;
+}
+
 
 
 @media screen and (min-width: 500px) {
