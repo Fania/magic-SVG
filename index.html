@@ -42,6 +42,29 @@
   </div>
   <div class="options">
     <fieldset>
+      <label for="styleOptions">
+        <select id="styleOptions">
+          <option value="quadvertix" selected>Quadratic curve on vertices</option>
+          <option value="straight">Straight polyline</option>
+          <option value="arc">Arc experiment</option>
+          <option value="quadline">Quadratic curve on lines</option>
+          <option value="numbers">Numbers</option>
+        </select>
+      </label>
+      <label for="orderOptions">
+        <select id="orderOptions">
+          <option value="3">Order 3</option>
+          <option value="4">Order 4</option>
+          <option value="5">Order 5</option>
+          <option value="6" selected>Order 6</option>
+        </select>
+      </label>
+      <label for="lenOptions">
+        <select id="lenOptions"></select>
+        <span>Lengths</span>
+      </label>
+    </fieldset>
+    <fieldset>
       <label for="clearFill"><input type="checkbox" id="clearFill" checked><span>NoFill</span></label>
       <label for="fillColour"><input type="color" id="fillColour" value="#666666"><span>Fill</span></label>
       <label for="strokeColour"><input type="color" id="strokeColour" value="#FFFFFF"><span>Stroke</span></label>
@@ -56,25 +79,6 @@
       <label for="animate"><input type="radio" id="animate" name="animateRadio"><span>Animate (In Sync)</span></label>
       <label for="animateOut"><input type="radio" id="animateOut" name="animateRadio"><span>Animate (Out of Sync)</span></label>
       <label for="noAnimate"><input type="radio" id="noAnimate" name="animateRadio" checked><span>Animate (Stop)</span></label>
-    </fieldset>
-    <fieldset>
-      <select id="styleOptions">
-        <option value="quadvertix" selected>Quadratic curve on vertices</option>
-        <option value="straight">Straight polyline</option>
-        <option value="arc">Arc experiment</option>
-        <option value="quadline">Quadratic curve on lines</option>
-        <option value="numbers">Numbers</option>
-      </select>
-      <select id="orderOptions">
-        <option value="3">Order 3</option>
-        <option value="4">Order 4</option>
-        <option value="5">Order 5</option>
-        <option value="6" selected>Order 6</option>
-      </select>
-      <label for="lenOptions">
-        <select id="lenOptions"></select>
-        <span>filter options</span>
-      </label>
     </fieldset>
   </div>
   <fieldset class="userInput">

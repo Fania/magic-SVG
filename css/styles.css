@@ -19,10 +19,6 @@ body {
   background: #111; 
   padding: 1.5em 0;
   margin-bottom: 2em;
-  /* display: flex; 
-  flex-wrap: wrap;
-  align-items: center; 
-  justify-content: center; */
 }
 
 #settings .tabs {
@@ -61,9 +57,13 @@ body {
 }
 
 select, input, a { 
-  /* font-size: 1.15em;  */
   margin-left: 1em; 
 }
+.options select {
+  padding: .2em 0;
+  font-size: 16px;
+}
+
 input[type="color"] {
   border: none;
   padding: 0;
@@ -73,22 +73,25 @@ input[type="color"] {
   font-size: 0.95em;
 }
 input[type="checkbox"] {
-  width: 20px;
+  width: 25px;
   height: 20px;
   border: none;
 }
-input[type="text"] {
-  width: 80%;
+.userInput {
+  margin: 1em 2em;
+}
+.userInput label input[type="text"]#values {
+  width: 70%;
 }
 input[type="number"] {
   width: 55px;
 }
 label {
   margin-right: 1em;
+  padding: .2em 0;
 }
 label span {
   margin-left: 5px;
-  /* font-variant: small-caps; */
   font-size: 1.2em;
 }
 .disable {
