@@ -253,9 +253,16 @@ footer img {
   width: 20px;
 }
 
+.mouseInstructions {
+  display: none;
+}
+.touchInstructions {
+  display: block;
+}
 
 
-@media screen and (min-width: 500px) and (orientation: landscape) {
+/* and (orientation: landscape) */
+@media screen and (min-width: 500px) {
   #single-x {
     width:  50%;
   }
@@ -299,11 +306,18 @@ footer img {
     color: #555;
   }
 
+  .touchInstructions {
+    display: none;
+  }
+  .mouseInstructions {
+    display: block;
+  }
+
 
 }
 
 
-@media screen and (min-width: 800px) and (orientation: landscape) {
+@media screen and (min-width: 800px) {
 
   .single .order-x, .single .order-xt {
     width: calc(95vw / 5);

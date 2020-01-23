@@ -107,17 +107,17 @@ mc.on("doubletap", toggleMenu );
 // });
 
 
-let mql = window.matchMedia('(min-width: 500px) and (orientation: landscape)');
-mql.addListener(adjustMenuText);
-const instructions = document.querySelector(".instructions");
+// let mql = window.matchMedia('(min-width: 500px) and (orientation: landscape)');
+// mql.addListener(adjustMenuText);
+// const instructions = document.querySelector(".instructions");
 
-function adjustMenuText() {
-  if(mql.matches) {
-    instructions.innerHTML = `
-      <p>Press 's' to hide/show menu.</p>
-      <p>Press 'F11' to toggle fullscreen.</p>`;
-  } else {
-    instructions.innerHTML = `<p>Double Tap to hide/show menu</p>`;
-  }
-}
+// function adjustMenuText() {
+//   if(mql.matches) {
+//     instructions.innerHTML = `
+//       <p>Press 's' to hide/show menu.</p>
+//       <p>Press 'F11' to toggle fullscreen.</p>`;
+//   } else {
+//     instructions.innerHTML = `<p>Double Tap to hide/show menu</p>`;
+//   }
+// }
 
