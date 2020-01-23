@@ -240,6 +240,19 @@ option:focus {
   display: none;
 }
 
+footer {
+  margin-top: 3em;
+  text-align: center;
+}
+footer a, footer p {
+  color: #666;
+  text-decoration: none;
+  margin: 0;
+}
+footer img {
+  width: 20px;
+}
+
 
 
 @media screen and (min-width: 500px) {
@@ -326,6 +339,10 @@ option:focus {
 
   .pad {
     padding: 4px;
+  }
+
+  footer {
+    display: none;
   }
 
 }
