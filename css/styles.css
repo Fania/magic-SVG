@@ -255,7 +255,7 @@ footer img {
 
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) and (orientation: landscape) {
   #single-x {
     width:  50%;
   }
@@ -303,7 +303,7 @@ footer img {
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) and (orientation: landscape) {
 
   .single .order-x, .single .order-xt {
     width: calc(95vw / 5);

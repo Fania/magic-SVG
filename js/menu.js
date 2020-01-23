@@ -107,7 +107,7 @@ mc.on("doubletap", toggleMenu );
 // });
 
 
-let mql = window.matchMedia('(min-width: 500px)');
+let mql = window.matchMedia('(min-width: 500px) and (orientation: landscape)');
 mql.addListener(adjustMenuText);
 const instructions = document.querySelector(".instructions");
 
