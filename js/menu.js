@@ -88,10 +88,23 @@ document.addEventListener("keydown", event => {
   }
 });
 
-document.addEventListener('dblclick', () => {
+
+// proper touch support
+const mc = new Hammer.Manager(document);
+mc.add( new Hammer.Tap({ event: 'doubletap', taps: 2 }) );
+mc.on("doubletap", () => {
   if ([...settings.classList].includes("hide")) {
     settings.classList.remove("hide");
   } else {
     settings.classList.add("hide");
   }
 });
+
+// doesn't actually work with taps (only clicks)
+// document.addEventListener('dblclick', () => {
+//   if ([...settings.classList].includes("hide")) {
+//     settings.classList.remove("hide");
+//   } else {
+//     settings.classList.add("hide");
+//   }
+// });
