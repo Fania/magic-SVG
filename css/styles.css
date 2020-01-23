@@ -20,10 +20,10 @@ body {
   padding: 1.5em 0;
   margin-bottom: 2em;
 }
-
 #settings .tabs {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
 }
 #settings fieldset,
@@ -34,11 +34,20 @@ body {
 #settings .tabs fieldset {
   margin: 1em 2em;
 }
+#settings .tabs img {
+  margin-right: 0;
+}
+#settings .tabs fieldset {
+  display: flex;
+  flex-direction: column;
+}
 
 #settings .options {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   border: none;
+  margin: 0 2em;
 }
 .options fieldset {
   border: none;
@@ -252,6 +261,19 @@ option:focus {
     align-items: center;
     justify-content: space-around;
   }
+
+
+
+  #settings .tabs {
+    flex-direction: row;
+  }
+  #settings .options {
+    flex-direction: row;
+  }
+  #settings .tabs fieldset {
+    display: unset;
+  }
+
 
 }
 

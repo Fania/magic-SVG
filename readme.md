@@ -40,11 +40,11 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] write library of helper function for hardcoding
 - [x] hardcode lengths
 - [x] redesign menu
+- [x] hide settings after drawing
 - [ ] give choice of print sizes
 - [ ] set fill-opacity/stroke-opacity="0.0" - "1.0"
 - [ ] loop through colour change
 - [ ] progress bar (loading) for animate
-- [ ] hide settings after drawing
 - [ ] filters
 - [ ] give option of inputting numbers of squares
 - [ ] clean up unused stuff
