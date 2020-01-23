@@ -111,14 +111,15 @@ function load(pageType) {
 
       const coordsArray = getCoords(size,valuesArray,1);
 
-    drawSquare(prepareSVG("numbers",size,coordsArray,0,0));
-    drawSquare(prepareSVG("straight",size,coordsArray,1,0));
-    drawSquare(prepareSVG("quadvertix",size,coordsArray,2,0));
-    drawSquare(prepareSVG("quadline",size,coordsArray,3,0));
-    drawSquare(prepareSVG("arc",size,coordsArray,4,0));
+      drawSquare(prepareSVG("numbers",size,coordsArray,0,0));
+      drawSquare(prepareSVG("straight",size,coordsArray,1,0));
+      drawSquare(prepareSVG("quadvertix",size,coordsArray,2,0));
+      drawSquare(prepareSVG("quadline",size,coordsArray,3,0));
+      drawSquare(prepareSVG("arc",size,coordsArray,4,0));
 
-    svgGrid.classList.add("single");
-    svgGrid.classList.remove("filter");
+      svgGrid.classList.add("single");
+      svgGrid.classList.remove("filter");
+    }
   }
   updateColours();
   updateMenuStates();
@@ -167,4 +168,4 @@ function prepareSVG(style, s, a, c, n) {
     default:
       return createQuadraticCurveVertices(s, a, c, n);
   }
-} 
+}
