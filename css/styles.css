@@ -167,12 +167,13 @@ input:disabled ~ span, select:disabled ~ span {
   position: relative;
 }
 .svgGrid.filter svg {
-  margin-bottom: 3em;
+  margin-bottom: 0;
 }
 .svgGrid.filter svg + p {
-  position: relative;
-  top: 80px;
-  left: -110px;
+  /* position: relative; */
+  /* top: 80px; */
+  /* left: -110px; */
+  margin-bottom: 3em;
   color: #555;
 }
 
@@ -184,6 +185,7 @@ input:disabled ~ span, select:disabled ~ span {
   color: #555;
   font-size: 1.25em;
   text-align: center;
+  margin: 0;
 }
 
 /* animate */
@@ -274,6 +276,16 @@ option:focus {
     justify-content: flex-end;
   }
 
+  .svgGrid.filter svg {
+    margin-bottom: 3em;
+  }
+  .svgGrid.filter svg + p {
+    position: relative;
+    top: 100px;
+    left: -115px;
+    color: #555;
+  }
+
 
 }
 
@@ -289,26 +301,31 @@ option:focus {
 
 @media print {
 
-  html {
-    --size: calc((100vw - 80px) / 40);
-    --marg: calc( ( 100vh - ( var(--size) * 22 ) ) / 2 );
+  html { 
+    /* for all 880 order 4s on one A4 page */
+    --sizeOrder4All: calc((100vw - 80px) / 40);
+    --margOrder4All: calc( ( 100vh - ( var(--sizeOrder4All) * 22 ) ) / 2 );
   }
 
   body {
-    margin: var(--marg) 40px;
+    margin: var(--margOrder4All) 40px;
   }
 
   #settings {
     display: none;
   }
   .order-x, .order-xt {
-    width:  var(--size);
-    height: var(--size);
+    box-sizing: border-box;
+    width:  var(--sizeOrder4All);
+    height: var(--sizeOrder4All);
   }
 
   .order-xt {
     padding: 2px;
   }
 
+  .pad {
+    padding: 4px;
+  }
 
 }
