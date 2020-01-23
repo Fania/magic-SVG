@@ -249,19 +249,10 @@ option:focus {
     height: 200px;
   }
 
-  /* main .order-x, main .order-xt {
-    width:  400px;
-    height: 400px;
-  } */
   .single .order-x, .single .order-xt {
-    width:  400px;
-    height: 400px;
+    width: calc(95vw / 3);
+    height: calc(95vw / 3);
   }
-  /* .single .order-xt {
-    width:  400px;
-    height: 400px;
-  } */
-  
 
   main {
     display: flex;
@@ -269,13 +260,12 @@ option:focus {
     justify-content: space-around;
   }
 
-
-
   #settings .tabs {
     flex-direction: row;
   }
   #settings .options {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   #settings .tabs fieldset {
     display: unset;
@@ -287,6 +277,15 @@ option:focus {
 
 }
 
+
+@media screen and (min-width: 800px) {
+
+  .single .order-x, .single .order-xt {
+    width: calc(95vw / 5);
+    height: calc(95vw / 5);
+  }
+
+}
 
 @media print {
 
