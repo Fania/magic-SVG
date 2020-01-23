@@ -88,3 +88,10 @@ document.addEventListener("keydown", event => {
   }
 });
 
+document.addEventListener('dblclick', () => {
+  if ([...settings.classList].includes("hide")) {
+    settings.classList.remove("hide");
+  } else {
+    settings.classList.add("hide");
+  }
+});
