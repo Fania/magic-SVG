@@ -1,6 +1,5 @@
 "use strict";
 
-
 function magicConstant(size, valuesArray) {
   let oneRow = valuesArray.slice(0,size);
   let oneCol = valuesArray.filter(

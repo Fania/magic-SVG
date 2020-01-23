@@ -99,13 +99,17 @@ function load(pageType) {
   if (pageType === "singleInput") {
     const valuesString = document.getElementById("values");
     let valuesArray = valuesString.value.split(" ").map(Number);
-    let size = Math.sqrt(valuesArray.length);
-
-    // daves code
     
-    magicConstant(size,valuesArray);
+    if (errorChecks(valuesArray)) {
+      errorMsg.innerHTML = errorChecks(valuesArray)[1];
+      // call other input checks with 'valuesArray' here
+    } else {
+    
+      let size = Math.sqrt(valuesArray.length);
 
-    const coordsArray = getCoords(size,valuesArray,1);
+      magicConstant(size,valuesArray);
+
+      const coordsArray = getCoords(size,valuesArray,1);
 
     drawSquare(prepareSVG("numbers",size,coordsArray,0,0));
     drawSquare(prepareSVG("straight",size,coordsArray,1,0));
