@@ -76,29 +76,26 @@ function changePadding(state) {
 }
 
 
-// https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code
-document.addEventListener("keydown", event => {
-  // F11 doesnt work
-  if (event.key === "s") {
-    if ([...settings.classList].includes("hide")) {
-      settings.classList.remove("hide");
-    } else {
-      settings.classList.add("hide");
-    }
+
+function toggleMenu() {
+  if ([...settings.classList].includes("hide")) {
+    settings.classList.remove("hide");
+  } else {
+    settings.classList.add("hide");
   }
+}
+
+// https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code
+  // F11 doesnt work
+document.addEventListener("keydown", event => {
+  if (event.key === "s") toggleMenu(); 
 });
 
 
 // proper touch support
 const mc = new Hammer.Manager(document);
 mc.add( new Hammer.Tap({ event: 'doubletap', taps: 2 }) );
-mc.on("doubletap", () => {
-  if ([...settings.classList].includes("hide")) {
-    settings.classList.remove("hide");
-  } else {
-    settings.classList.add("hide");
-  }
-});
+mc.on("doubletap", toggleMenu );
 
 // doesn't actually work with taps (only clicks)
 // document.addEventListener('dblclick', () => {
@@ -108,3 +105,19 @@ mc.on("doubletap", () => {
 //     settings.classList.add("hide");
 //   }
 // });
+
+
+let mql = window.matchMedia('(min-width: 500px)');
+mql.addListener(adjustMenuText);
+const instructions = document.querySelector(".instructions");
+
+function adjustMenuText() {
+  if(mql.matches) {
+    instructions.innerHTML = `
+      <p>Press 's' to hide/show menu.</p>
+      <p>Press 'F11' to toggle fullscreen.</p>`;
+  } else {
+    instructions.innerHTML = `<p>Double Tap to hide/show menu</p>`;
+  }
+}
+

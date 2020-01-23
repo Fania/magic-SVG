@@ -59,7 +59,7 @@ body {
   margin-top: 1em;
   margin-right: 2em;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .instructions p {
   margin: 0;
@@ -279,6 +279,9 @@ option:focus {
   }
   #settings .tabs fieldset {
     display: unset;
+  }
+  .instructions {
+    justify-content: flex-end;
   }
 
 
