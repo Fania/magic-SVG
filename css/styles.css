@@ -1,17 +1,12 @@
 html {
   --backColour: #222222;
   --textColour: #eeeeee;
-  /* --backColour: rgb(7, 41, 62); */
-  /* --lineColour: #ccc; */
-  /* --lineColour: rgba(112, 108, 189, .5); */
-  /* --lineColour: rgb(151, 149, 186); */
-  /* --svgFill: red; */
 }
 body {
   background: var(--backColour);
   color: var(--textColour);
   margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
   font-size: 0.9em;
 }
 #settings { 
@@ -169,16 +164,9 @@ input:disabled ~ span, select:disabled ~ span {
   margin-bottom: 0;
 }
 .svgGrid.filter svg + p {
-  /* position: relative; */
-  /* top: 80px; */
-  /* left: -110px; */
   margin-bottom: 3em;
   color: #555;
 }
-
-/* svg text {
-  fill: #eeeeee;
-} */
 
 #constant {
   color: #555;
@@ -204,36 +192,7 @@ option:focus {
   font-size: 16px;
 }
 
-#progressContainer {
-  width: 440px;
-  height: 30px;
-  background: #444;
-  margin: 0 auto;
-}
-#progressBar {
-  /* width: 30%; */
-  width: 0%;
-  height: 100%;
-  background: #ccc;
-}
 
-#modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(0,0,0,0.9);
-}
-#modal img {
-  object-fit: contain;
-  width: 10vw;
-  height: 10vh;
-}
 
 .hide {
   display: none;
