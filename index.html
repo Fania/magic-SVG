@@ -50,18 +50,20 @@
           <option value="quadline">Quadratic curve on lines</option>
           <option value="numbers">Numbers</option>
         </select>
+        <span>Style</span>
       </label>
       <label for="orderOptions">
         <select id="orderOptions">
           <option value="3">Order 3</option>
-          <option value="4">Order 4</option>
+          <option value="4" selected>Order 4</option>
           <option value="5">Order 5</option>
-          <option value="6" selected>Order 6</option>
+          <option value="6">Order 6</option>
         </select>
+        <span>Order</span>
       </label>
       <label for="lenOptions">
         <select id="lenOptions"></select>
-        <span>Lengths</span>
+        <span>Length</span>
       </label>
     </fieldset>
     <fieldset>
@@ -95,32 +97,21 @@
   </div>
 </form>
 
-
-<!-- <div id="progressContainer"><div id="progressBar"></div></div> -->
-
-<!--
-  width and height set the HTML element size on the page
-  viewbox sets the size of the coordinate system for drawing the svg
--->
-
 <p id="constant">0</p>
-
 <p id="errorMsg" class="error"></p>
 
-<main id="svgGrid" class="svgGrid single">
-
-</main>
+<main id="svgGrid" class="svgGrid"></main>
 
 
 <footer>
-  <p>© Fania Raczinski & Dave Everitt</p>
-  <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" src="imgs/cc.png" /><img alt="Creative Commons Licence" src="imgs/by.png" /><img alt="Creative Commons Licence" style="border-width:0" src="imgs/nc.png" /></a>
+  <p>© <a href="https://fania.eu">Fania Raczinski</a> & <a href="https://daveeveritt.org/art.html">Dave Everitt</a></p>
+  <!-- <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" src="imgs/cc.png" /><img alt="Creative Commons Licence" src="imgs/by.png" /><img alt="Creative Commons Licence" style="border-width:0" src="imgs/nc.png" /></a> -->
   <!-- This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a> -->
-  </p>
+  <!-- </p> -->
 </footer>
 
 <style id="extra_colour_styles"></style>
-<!-- <style id="extra_animation_styles"></style> -->
+
 <script src="js/hammer.min.js"></script>
 <script src="squares/order-3.js"></script>
 <script src="squares/order-4.js"></script>

@@ -13,7 +13,6 @@ body {
   margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   font-size: 0.9em;
-  margin-bottom: 2em;
 }
 #settings { 
   background: #111; 
@@ -242,7 +241,9 @@ option:focus {
 
 footer {
   margin-top: 3em;
-  text-align: center;
+  text-align: right;
+  background: #111;
+  padding: 1em;
 }
 footer a, footer p {
   color: #666;
@@ -352,7 +353,7 @@ footer img {
   }
 
   .pad {
-    padding: 4px;
+    padding: 3px;
   }
 
   footer {
