@@ -38,14 +38,7 @@ function updateMenuStates() {
 const singleMultiple = document.getElementsByName("singleMultiple");
 singleMultiple.forEach(sm => {
   sm.addEventListener("change", () => {
-    // let id = event.target.id;
-    // console.log(`changed page to ${event.target.id}`);
-    // let type = getPageType();
-    // let style = styleOptions[styleOptions.selectedIndex].value;
-    // if(type === "filterGroups") {
-    //   populateOptions(style);
-    // }
-    load(getPageType());  // reload page setup
+    load(getPageType());
   });
 });
 
@@ -93,31 +86,6 @@ document.addEventListener("keydown", event => {
 
 
 // proper touch support
-const mc = new Hammer.Manager(document);
-mc.add( new Hammer.Tap({ event: 'doubletap', taps: 2 }) );
-mc.on("doubletap", toggleMenu );
-
-// doesn't actually work with taps (only clicks)
-// document.addEventListener('dblclick', () => {
-//   if ([...settings.classList].includes("hide")) {
-//     settings.classList.remove("hide");
-//   } else {
-//     settings.classList.add("hide");
-//   }
-// });
-
-
-// let mql = window.matchMedia('(min-width: 500px) and (orientation: landscape)');
-// mql.addListener(adjustMenuText);
-// const instructions = document.querySelector(".instructions");
-
-// function adjustMenuText() {
-//   if(mql.matches) {
-//     instructions.innerHTML = `
-//       <p>Press 's' to hide/show menu.</p>
-//       <p>Press 'F11' to toggle fullscreen.</p>`;
-//   } else {
-//     instructions.innerHTML = `<p>Double Tap to hide/show menu</p>`;
-//   }
-// }
-
+// const mc = new Hammer.Manager(document);
+// mc.add( new Hammer.Tap({ event: 'doubletap', taps: 2 }) );
+// mc.on("doubletap", toggleMenu );

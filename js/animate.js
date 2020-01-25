@@ -11,6 +11,9 @@ noAnimate.addEventListener("change", () => {
   if (noAnimate.checked) stopAnimatingAll(); });
 
 
+// animateColours happens in updateColours.js file
+
+
 // The different duration causes the animation to become irregular and 
 // out of sync. Remove line to default to 20 seconds for all.
 // See line 119 in CSS.

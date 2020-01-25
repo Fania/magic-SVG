@@ -60,3 +60,40 @@ function toggleFill(nofill) {
   }
   updateColours();
 }
+
+
+
+
+
+
+const numberColours = {
+  1: "red",
+  2: "orange",
+  3: "yellow",
+  4: "green",
+  5: "blue",
+  6: "indigo",
+  7: "violet",
+  8: "rose",
+  9: "gold"
+}
+
+function getDigitalRoot(n) {
+  const n2String = n.toString().split('');
+  const listOfNums = n2String.map(n => parseInt(n));
+  const sum = listOfNums.reduce( (i,a) => i + a );
+  const output = (sum > 9) ? getDigitalRoot(sum) : sum;
+  return output;
+}
+// console.log(getDigitalRoot(8));
+// console.log(getDigitalRoot(12));
+// console.log(getDigitalRoot(99));
+
+
+// animateColours.addEventListener("change", () => { 
+//   animateColours.checked ? cycleColours() : stopAnimatingAll(); });
+
+// function cycleColours() {
+//   console.log("colours");
+//   startAnimatingAll(true);
+// } 

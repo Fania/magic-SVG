@@ -257,9 +257,9 @@ footer img {
 .mouseInstructions {
   display: none;
 }
-.touchInstructions {
+/* .touchInstructions {
   display: block;
-}
+} */
 
 
 /* and (orientation: landscape) */
@@ -307,9 +307,9 @@ footer img {
     color: #555;
   }
 
-  .touchInstructions {
+  /* .touchInstructions {
     display: none;
-  }
+  } */
   .mouseInstructions {
     display: block;
   }
