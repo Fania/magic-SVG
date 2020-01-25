@@ -1,6 +1,6 @@
 # Order 4
 
-**checked up to (incl) 2214 length**
+**checked up to (incl) 2308 length**
 
 13 L/R mirror of 9
 49 == 33
@@ -40,3 +40,28 @@
 141 == 129
 
 **removed from reducedOrder4.js up to here**
+
+432 == 428
+117 == 97
+344 L/R mirror of 341
+372 L/R mirror of 369
+277 L/R mirror of 260
+52 == 36
+484 == 217
+175 == 155
+708 U/D mirror of 246
+376 == 329
+373 == 332
+722 == 596
+193 = 181
+800 L/R mirror 414
+457 == 445
+727 90rotation of 445
+546 == 526
+761 U/D mirror of 744
+804 U/D mirror of 424
+815 L/R mirror of 810
+823 L/R mirror of 818
+605 U/D mirror of 388
+616 90rotation of 234
+825, 832 == 652
