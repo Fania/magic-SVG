@@ -305,6 +305,9 @@ footer img {
     /* for all 880 order 4s on one A4 page */
     --sizeOrder4All: calc((100vw - 80px) / 40);
     --margOrder4All: calc( ( 100vh - ( var(--sizeOrder4All) * 22 ) ) / 2 );
+    /* for all unique 397 order 4s on one A4 page */
+    /* --sizeOrder4All: calc((100vw - 80px) / 25);
+    --margOrder4All: calc( ( 100vh - ( var(--sizeOrder4All) * 16 ) ) / 2 ); */
   }
 
   body {

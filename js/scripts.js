@@ -4,6 +4,7 @@
 const squareOrder = {
   "3": order3,
   "4": order4,
+  "4.0": reduced4,
   "5": order5,
   "6": order6
 }
@@ -35,7 +36,6 @@ function load(pageType) {
   if (pageType === "orderGroups") {
     let style = styleOptions[styleOptions.selectedIndex].value;
     let order = orderOptions[orderOptions.selectedIndex].value;
-    // let order = orderPre == "4r" ? 
     let coordsArray = {};
     let size = Math.sqrt(squareOrder[order][0].split(" ").length);
     let counter = 0;
