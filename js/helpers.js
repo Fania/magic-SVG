@@ -121,6 +121,9 @@ function deletestuff(list) {
   }
   // console.log(tmp);
 
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // current similarities are based on quadvertix style only 
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   for (let j=0; j<list.length; j++) {
     if(tmp[j]) {
       // console.log(tmp[j]);
