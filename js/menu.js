@@ -28,6 +28,8 @@ function updateMenuStates() {
     ? orderOptions.disabled=false : orderOptions.disabled=true;
   type==="orderGroups" || type==="filterGroups"
     ? values.disabled=true : values.disabled=false;
+  // type==="orderGroups" || type==="filterGroups"
+  //   ? comparison.disabled=true : comparison.disabled=false;
   // type==="singleInput" ? svgGrid.classList.add("single") 
   //   : svgGrid.classList.remove("single");
   let state = padding.checked ? "add" : "remove";

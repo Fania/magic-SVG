@@ -48,12 +48,13 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] filters
 - [ ] give option of inputting numbers of squares
 - [ ] clean up unused stuff
+- [ ] add about/info page
 
 
 
 ## URGENT
 
-- single input animations broken
+- [ ] single input animations broken
 
 
 

@@ -3,10 +3,10 @@
 
 // order-X.js -> indexX.js
 // create index with lengths per style
-function generateIndex(order) {
+function generateIndex(order,reduced) {
   const styles = ["quadvertix", "straight", "arc", "quadline"];
-  const source = eval(`order${order}`);
-  let output = `const index${order} = [`;
+  const source = eval(`${reduced ? "reduced" : "order"}${order}`);
+  let output = `const index${order}${reduced ? "reduced" : ""} = [`;
   let lengths = {};
   for (let i=0; i < source.length; i++) {
     for (let j=0; j < styles.length; j++) {
@@ -33,10 +33,11 @@ function generateIndex(order) {
   ];`;
   return output;
 }
-// console.log(generateIndex(3));
-// console.log(generateIndex(4));
-// console.log(generateIndex(5));
-// console.log(generateIndex(6));
+// console.log(generateIndex(3,false));
+// console.log(generateIndex(4,false));
+// console.log(generateIndex(5,false));
+// console.log(generateIndex(6,false));
+// console.log(generateIndex(4,true));
 
 
 

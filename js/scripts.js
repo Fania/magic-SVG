@@ -35,6 +35,7 @@ function load(pageType) {
   if (pageType === "orderGroups") {
     let style = styleOptions[styleOptions.selectedIndex].value;
     let order = orderOptions[orderOptions.selectedIndex].value;
+    // let order = orderPre == "4r" ? 
     let coordsArray = {};
     let size = Math.sqrt(squareOrder[order][0].split(" ").length);
     let counter = 0;
