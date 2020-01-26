@@ -20,6 +20,9 @@ body {
   flex-direction: row;
   align-items: center;
 }
+#settings .tabs fieldset label {
+  cursor: pointer;
+}
 #settings fieldset,
 #settings .tabs fieldset {
   border: none;
@@ -50,8 +53,7 @@ body {
   flex-direction: column;
 }
 .instructions {
-  margin-top: 1em;
-  margin-right: 2em;
+  margin: 2em 2em 0;
   display: flex;
   justify-content: center;
 }
@@ -59,9 +61,18 @@ body {
   margin: 0;
   padding: 0 1em;
 }
+.instructions svg {
+  width: 25px;
+  fill: #666;
+  cursor: pointer;
+}
+.instructions svg:hover {
+  fill: white;
+}
 
 select, input, a { 
   margin-left: 1em; 
+  cursor: pointer;
 }
 .options select {
   padding: .2em 0;
@@ -93,6 +104,7 @@ input[type="number"] {
 label {
   margin-right: 1em;
   padding: .2em 0;
+  cursor: pointer;
 }
 label span {
   margin-left: 5px;
@@ -221,6 +233,7 @@ footer img {
 } */
 
 
+
 /* and (orientation: landscape) */
 @media screen and (min-width: 500px) {
   #single-x {
@@ -253,7 +266,7 @@ footer img {
     display: unset;
   }
   .instructions {
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   .svgGrid.filter svg {

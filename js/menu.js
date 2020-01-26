@@ -91,3 +91,17 @@ document.addEventListener("keydown", event => {
 // const mc = new Hammer.Manager(document);
 // mc.add( new Hammer.Tap({ event: 'doubletap', taps: 2 }) );
 // mc.on("doubletap", toggleMenu );
+
+
+
+const info = document.querySelector(".instructions svg");
+info.addEventListener("mouseover", () => {
+  constant.innerHTML = `
+  <p>
+    This is work by Fania Raczinski about a long term project by Dave Everitt.
+  </p>
+  `;
+});
+info.addEventListener("mouseout", () => {
+  constant.innerHTML = ``;
+});
