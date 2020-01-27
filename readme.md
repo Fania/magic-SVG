@@ -49,7 +49,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] give option of inputting numbers of squares
 - [ ] clean up unused stuff
 - [ ] add about/info page
-
+- [ ] use new index4new
 
 
 ## URGENT
