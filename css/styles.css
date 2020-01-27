@@ -266,7 +266,8 @@ footer img {
     display: unset;
   }
   .instructions {
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
   }
 
   .svgGrid.filter svg {

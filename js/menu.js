@@ -94,14 +94,15 @@ document.addEventListener("keydown", event => {
 
 
 
-const info = document.querySelector(".instructions svg");
-info.addEventListener("mouseover", () => {
-  constant.innerHTML = `
-  <p>
-    This is work by Fania Raczinski about a long term project by Dave Everitt.
-  </p>
-  `;
-});
-info.addEventListener("mouseout", () => {
-  constant.innerHTML = ``;
-});
+// ABOUT INFO
+// const info = document.querySelector(".instructions svg");
+// info.addEventListener("mouseover", () => {
+//   constant.innerHTML = `
+//   <p>
+//     This is work by Fania Raczinski about a long term project by Dave Everitt.
+//   </p>
+//   `;
+// });
+// info.addEventListener("mouseout", () => {
+//   constant.innerHTML = ``;
+// });

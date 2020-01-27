@@ -1,15 +1,13 @@
 "use strict";
 
 
-
+const styles = ["quadvertix", "straight", "arc", "quadline"];
 
 
 // order-X.js -> indexX.js
 // create index with lengths per style
-function generateIndex(order,reduced) {
-  const styles = ["quadvertix", "straight", "arc", "quadline"];
-  const source = eval(`${reduced ? "reduced" : "order"}${order}`);
-  // let output = `const index${order}${reduced ? "reduced" : ""} = [`;
+function generateInitialIndex(order) {
+  const source = squareOrder[order];
   let output = `[`;
   let lengths = {};
   for (let i=0; i < source.length; i++) {
@@ -23,185 +21,103 @@ function generateIndex(order,reduced) {
     }
     let txt = `
     {
-      "nums": "${source[i]}",
-      "lens": {
-        "quadvertix": ${lengths.quadvertix},
-        "straight": ${lengths.straight},
-        "arc": ${lengths.arc},
-        "quadline": ${lengths.quadline}
-      }
-    }${ (i!==(source.length -1)) ? "," : "" }`;
-    let txt2 = `
-    {
       "id": ${i + 1},
       "nums": "${source[i]}",
-      "lens": {
-        "quadvertix": ${lengths.quadvertix},
-        "straight": ${lengths.straight},
-        "arc": ${lengths.arc},
-        "quadline": ${lengths.quadline}
-      },
-      "lensShared": {
-        "quadvertix": [],
-        "straight": [],
-        "arc": [],
-        "quadline": []
-      },
+      "quadvertix": { "${lengths.quadvertix}": [] },
+      "straight": { "${lengths.straight}": [] },
+      "arc": { "${lengths.arc}": [] },
+      "quadline": { "${lengths.quadline}": [] },
       "similarities": {
         "ids": [],
         "type": ""
       }
     }${ (i!==(source.length -1)) ? "," : "" }`;
-    output += txt2;
+
+    output += txt;
   }
   output += `
   ]`;
-  return output;
+  return JSON.parse(output);
 }
-  // ];`;
-// console.log(generateIndex(3,false));
-// console.log(generateIndex(4,false));
-// console.log(generateIndex(5,false));
-// console.log(generateIndex(6,false));
-// console.log(generateIndex(4,false));
-
-
-let test = JSON.parse(generateIndex(4,false));
-// console.log(test);
-
-let tmp = generateListX(test,"quadvertix");
-let tmp1 = generateListX(tmp,"straight");
-let tmp2 = generateListX(tmp1,"arc");
-let tmp3 = generateListX(tmp2,"quadline");
-// console.log(tmp3);
+// let emptyIndex = generateInitialIndex(4);
+// console.log(emptyIndex);
 
 
 
-function generateListX(list,style) {
+
+  // {
+  //   "id": 879,
+  //   "nums": "8 2 13 11 15 9 6 4 1 7 12 14 10 16 3 5",
+  //   "quadvertix": { "2335": [] },
+  //   "straight": { "3670": [] },
+  //   "arc": { "2663": [] },
+  //   "quadline": { "2216": [] },
+  //   "similarities": {
+  //     "ids": [],
+  //     "type": ""
+  //   }
+  // },
+  // temp1[0].quadvertix.key()
+
+// add shared lengths into master index
+function generateSharedLengths(index) {
   // console.log(`generating lengths ${order}, ${style}`);
-  let index = list;
-  let lengths = index.map(i => i.lens[style]);
-  let output = {};
-  for (let i=0; i < lengths.length; i++) {
-    let len = lengths[i];
-    let matches = index.filter(i => i.lens[style] == len);
-    let out = matches.map(t => index.indexOf(t));
-    output[len] = out;
-  };
-  for(let j=0; j < index.length; j++) {
-    index[j].lensShared[style] = output[index[j].lens[style]];
-  }
+  styles.forEach(style => {
+    const lengths = index.map(i => Object.keys(i[style])[0]);
+    let output = {};
+    for (let i=0; i < lengths.length; i++) {
+      let len = lengths[i];
+      let matches = index.filter(i => Object.keys(i[style])[0] == len);
+      let match = matches.map(m => index.indexOf(m) + 1);
+      output[len] = match;
+    };
+    // add shared lengths into index
+    for(let j=0; j < index.length; j++) {
+      let x = index[j][style];
+      let l = Object.keys(x)[0];
+      x[l] = output[l];
+    }
+  });
   return index;
 }
+// let indexSharedLengths = generateSharedLengths(emptyIndex);
+// console.log(indexSharedLengths);
 
 
 
 
-function deletestuff(list) {
-
+// add deletable info into index
+function generateDeletables(index) {
   let tmp = [];
-
   for (let i=0; i< deletables.length; i++) {
-
-    // console.log(deletables[i]);
     let match = [...deletables[i].matchAll(/(\d+,?\s?\d*,?\s?\d*)\s(.*)\s(\d+)/g)][0];
-    // console.log(match);
-    let duplicates = match[1].split(",");
+    let dupls = match[1].split(",");
+    let duplicates = dupls.map(d => parseInt(d));
     let kind = match[2];
     let keeper = match[3];
-    // console.log(duplicates);
-    // console.log(type);
-    // console.log(keeper);
-
     tmp[keeper-1] = {
-      type: kind,
-      list: duplicates
+      "type": kind,
+      "list": duplicates
     };
-
   }
-  // console.log(tmp);
-
   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   // current similarities are based on quadvertix style only 
   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  for (let j=0; j<list.length; j++) {
+  for (let j=0; j<index.length; j++) {
     if(tmp[j]) {
-      // console.log(tmp[j]);
       let xs = tmp[j].list;
       let t = tmp[j].type;
-      list[j].similarities.ids = xs;
-      list[j].similarities.type = t;
+      index[j].similarities.ids = xs;
+      index[j].similarities.type = t;
     } else {
-      list[j].similarities.ids = "";
-      list[j].similarities.type = "";
+      index[j].similarities.ids = "";
+      index[j].similarities.type = "";
     }
   }
-
-
-
-
-  return list;
+  return index;
 }
-
-
-let final = deletestuff(tmp3);
-console.log(final);
-
-
-
-var foo = { H̹̙̦̮͉̩̗̗ͧ̇̏̊̾Eͨ͆͒̆ͮ̃͏̷̮̣̫̤̣Cͯ̂͐͏̨̛͔̦̟͈̻O̜͎͍͙͚̬̝̣̽ͮ͐͗̀ͤ̍̀͢M̴̡̲̭͍͇̼̟̯̦̉̒͠Ḛ̛̙̞̪̗ͥͤͩ̾͑̔͐ͅṮ̴̷̷̗̼͍̿̿̓̽͐H̙̙̔̄͜: 42 };
-
-
-console.log(foo);
-
-
-
-
-// UNUSED ??? OLD
-
-// from lengths4.js
-// let uniquestraight = [...new Set(lensStraight4)]; 
-// let uniquequadvertix = [...new Set(lensQuad4)]; 
-// let uniquequadline = [...new Set(lensQLine4)]; 
-// let uniquearc = [...new Set(lensArc4)]; 
-
-
-// indexX.js -> filteredX.js
-// used to update lists in filtered.js
-function generateList(order,style) {
-  // console.log(`generating lengths ${order}, ${style}`);
-  let index = eval(`index${order}`);
-  let lengths = index.map(i => i.lens[style]);
-  let output = {};
-  for (let i=0; i < lengths.length; i++) {
-    let len = lengths[i];
-    let matches = index.filter(i => i.lens[style] == len);
-    let out = matches.map(t => index.indexOf(t));
-    output[len] = out;
-  };
-  return output;
-}
-// console.log(generateList(3,"quadvertix"));
-// console.log(generateList(3,"straight"));
-// console.log(generateList(3,"arc"));
-// console.log(generateList(3,"quadline"));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// let final = generateDeletables(indexSharedLengths);
+// console.log(final);
 
 
 

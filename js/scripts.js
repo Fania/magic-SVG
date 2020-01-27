@@ -37,6 +37,7 @@ function load(pageType) {
     let style = styleOptions[styleOptions.selectedIndex].value;
     let order = orderOptions[orderOptions.selectedIndex].value;
     let coordsArray = {};
+    // let size = order;
     let size = Math.sqrt(squareOrder[order][0].split(" ").length);
     let counter = 0;
     for (let line in squareOrder[order]) {
