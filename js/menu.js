@@ -2,8 +2,8 @@
 
 
 function updateMenuStates() {
-  let type = getPageType();
-  let style = styleOptions[styleOptions.selectedIndex].value;
+  const style = getCurrent("style");
+  const type = getCurrent("pageType");
 
   style==="numbers" ? clearFill.disabled=true : clearFill.disabled=false;
   fillColour.disabled = clearFill.checked;
@@ -37,10 +37,10 @@ function updateMenuStates() {
 }
 
 
-const singleMultiple = document.getElementsByName("singleMultiple");
-singleMultiple.forEach(sm => {
-  sm.addEventListener("change", () => {
-    load(getPageType());
+const mypageType = document.getElementsByName("pageType");
+mypageType.forEach(type => {
+  type.addEventListener("change", () => {
+    load(type.id);
   });
 });
 

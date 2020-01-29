@@ -10,32 +10,50 @@ const squareOrder = {
 }
 
 
-styleOptions.addEventListener("change", ()=> load(getPageType()));
-orderOptions.addEventListener("change", ()=> load(getPageType()));
-// lenFilter.addEventListener("change", ()=> load(getPageType()));
+function getCurrent(thing) {
+  switch (thing) {
+    case "style":
+      return styleOptions[styleOptions.selectedIndex].value;
+    case "order":
+      return orderOptions[orderOptions.selectedIndex].value;
+    case "pageType":
+      return document.querySelector('input[name="pageType"]:checked').id;
+    case "length":
+      return lenOptions.selectedIndex;
+  }
+}
+
+
+
+styleOptions.addEventListener("change", ()=> load(getCurrent("pageType")));
+orderOptions.addEventListener("change", ()=> load(getCurrent("pageType")));
+// lenFilter.addEventListener("change", ()=> load(getCurrent("pageType")()));
 
 let selectedLenIndex = 0;
 lenOptions.addEventListener("change", ()=> {
-  selectedLenIndex = lenOptions.selectedIndex;
-  load(getPageType());
+  selectedLenIndex = getCurrent("length");
+  load("filterGroups");
+  lenOptions.options[selectedLenIndex].selected = true;
 });
 
 
-load(getPageType());  // first page load
+
+load(getCurrent("pageType"));  // first page load
 
 
 function load(pageType) {
   // let tar = event ? event.target.id : "";
   // console.log(`loading new ${tar.includes("style-options") ? "display style" : tar === "" ? "page for the first time" : "order group"}`);
-  // console.log(`loading ${getPageType()}`);
+  // console.log(`loading ${getCurrent("pageType")()}`);
 
   svgGrid.innerHTML = "";
   constant.innerHTML = "";
 
+  const style = getCurrent("style");
+  const order = getCurrent("order");
 
   if (pageType === "orderGroups") {
-    let style = styleOptions[styleOptions.selectedIndex].value;
-    let order = orderOptions[orderOptions.selectedIndex].value;
+
     let coordsArray = {};
     // let size = order;
     let size = Math.sqrt(squareOrder[order][0].split(" ").length);
@@ -51,20 +69,20 @@ function load(pageType) {
     svgGrid.classList.remove("single");
   }
 
+
+
   if (pageType === "filterGroups") {
     // console.log("filter groups selected");
-    let order = orderOptions[orderOptions.selectedIndex].value;
-    let style = styleOptions[styleOptions.selectedIndex].value;
     populateOptions(order,style);
-    // console.log(selectedLenIndex);
-    if (selectedLenIndex > lenOptions.options.length)   { selectedLenIndex = 0; }
-    // console.log(selectedLenIndex);
+
+    if (selectedLenIndex > lenOptions.options.length) { selectedLenIndex = 0; }
     lenOptions.options[selectedLenIndex].selected = true;
+
+
+
     let allPerStyle = eval(`${style}Lens${order}`);
     let index = eval(`index${order}`);
-    // console.log(index);
-    // let allPerStyle = generateList(style);
-    // console.log(allPerStyle);
+
 
     // const filterNum = document.getElementById("lenFilter").value;
     const filterNum = lenOptions.options[lenOptions.selectedIndex].value;
@@ -98,6 +116,9 @@ function load(pageType) {
 
   }
 
+
+
+
   if (pageType === "singleInput") {
     const valuesString = document.getElementById("values");
     let valuesArray = valuesString.value.split(" ").map(Number);
@@ -123,15 +144,18 @@ function load(pageType) {
       svgGrid.classList.remove("filter");
     }
   }
+
+
+
   updateColours();
   updateMenuStates();
 }
 
 
-function getPageType() {
-  // console.log(document.querySelector('input[name="singleMultiple"]:checked').id);
-  return document.querySelector('input[name="singleMultiple"]:checked').id;
-}
+
+
+
+
 
 
 // size, valuesArray
