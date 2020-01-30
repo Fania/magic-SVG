@@ -15,7 +15,7 @@ function getCurrent(thing) {
     case "style":
       return styleOptions[styleOptions.selectedIndex].value;
     case "order":
-      return orderOptions[orderOptions.selectedIndex].value;
+      return parseInt(orderOptions[orderOptions.selectedIndex].value);
     case "pageType":
       return document.querySelector('input[name="pageType"]:checked').id;
     case "length":
@@ -50,7 +50,14 @@ function load(pageType) {
 
   const style = getCurrent("style");
   const order = getCurrent("order");
-  const size = parseInt(order);
+  const size = order;
+
+  const details = {
+    "id": 0,
+    "style": style,
+    "order": order,
+    "type": pageType
+  };
 
 
 
@@ -96,9 +103,9 @@ function load(pageType) {
     const allPerChosenLength = indexNew.filter(i => 
       Object.keys(i[style])[0] === chosenLength
     );
-    console.log(allPerChosenLength);
+    console.log(allPerChosenLength);  // [{...},{...},{...},...]
     const numsPerChosenLength = allPerChosenLength.map(n => n.nums);
-    console.log(numsPerChosenLength);
+    console.log(numsPerChosenLength);  // ["1 2 3 4", "1 3 2 4"]
 
 
     if (chosenLength in allPerStyle) {
@@ -107,8 +114,11 @@ function load(pageType) {
       // [8,12]
       // console.log(filtered);
       let filteredNums = filtered.map(n => index[n].nums);
-      console.log(filteredNums);
       // ["1 2 3 4", "1 3 2 4"]
+      // console.log(filteredNums);
+      let filteredNumArrays = filteredNums.map(f => f.split(" ").map(Number));
+      console.log(filteredNumArrays);  // [[1,2,3,4],[1,3,2,4]]
+      // [[1,2,3,4],[1,3,2,4]]
 
       // let order = "4";
       let coordsArray = {};
@@ -116,6 +126,14 @@ function load(pageType) {
       let counter = 0;
       for (let line in filteredNums) {
         counter = parseInt(line) + 1;
+
+        // drawSquare(prepareSVG(square.style,
+        //                       square.order,
+        //                       getCoords(square.order,valuesArray),
+        //                       square.id,
+        //                       filtered[line]));
+        // displayDetails(id, filtered[line]);
+
         // console.log(`processing magic square ${counter}`);
         let valuesArray = filteredNums[line].split(" ").map(Number);
         coordsArray[counter] = getCoords(size,valuesArray);
@@ -185,6 +203,33 @@ function load(pageType) {
 }
 
 
+
+function getSVG(square, valuesArray) {
+  
+
+  const numsPerChosenLength = allPerChosenLength.map(n => n.nums);
+  console.log(numsPerChosenLength);  // ["1 2 3 4", "1 3 2 4"]
+
+
+
+  drawSquare(prepareSVG(square.style,
+                        square.order,
+                        getCoords(square.order,valuesArray),
+                        square.id,
+                        filtered[line]));
+  displayDetails(id, filtered[line]);
+
+
+  // for (let line in filteredNums) {
+  //   counter = parseInt(line) + 1;
+  //   // console.log(`processing magic square ${counter}`);
+  //   let valuesArray = filteredNums[line].split(" ").map(Number);
+  //   coordsArray[counter] = getCoords(size,valuesArray);
+  //   drawSquare(prepareSVG(style,size,coordsArray[counter],counter,filtered[line]));
+  //   displayDetails(counter, filtered[line]);
+  // }
+
+}
 
 
 
