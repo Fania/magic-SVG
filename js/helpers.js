@@ -13,8 +13,8 @@ function generateInitialIndex(order) {
   for (let i=0; i < source.length; i++) {
     for (let j=0; j < styles.length; j++) {
       let valuesArray = source[i].split(" ").map(Number);
-      let coordsArray = getCoords(order,valuesArray);
-      let svgString = prepareSVG(styles[j],order,coordsArray,i,0);
+      let coordsObject = getCoords(order,valuesArray);
+      let svgString = prepareSVG(styles[j],coordsObject,i);
       let svg = new DOMParser().parseFromString(svgString, 'text/html');
       let len = Math.ceil(svg.querySelector(".lines").getTotalLength());
       lengths[styles[j]] = len;
@@ -39,7 +39,7 @@ function generateInitialIndex(order) {
   ]`;
   return JSON.parse(output);
 }
-// let emptyIndex = generateInitialIndex(4);
+// let emptyIndex = generateInitialIndex(6);
 // console.log(emptyIndex);
 
 

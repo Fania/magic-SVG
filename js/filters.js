@@ -6,6 +6,13 @@ function populateOptions(order,style) {
   lenOptions.innerHTML = "";
   if(style !== "numbers") {
     let list = eval(`${style}Lens${order}`);
+
+    // const allPerChosenLength = index.filter(i => 
+    //   Object.keys(i[style])[0] === chosenLength);
+
+    
+
+
     lenOptions.disabled=false;
     for (let l in list) {
       let opt = document.createElement("option");
@@ -19,11 +26,11 @@ function populateOptions(order,style) {
 }
 
 
-function displayDetails(num, original) {
+function displayDetails(num) {
   let id = `square-${num}`;
   let elem = document.getElementById(id).parentElement;
   let det = document.createElement("p");
-  let txt = document.createTextNode(`# ${original + 1}`);
+  let txt = document.createTextNode(`# ${num}`);
   det.appendChild(txt);
   elem.insertAdjacentElement("afterend", det);
 }

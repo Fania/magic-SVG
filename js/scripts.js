@@ -8,6 +8,13 @@ const squareOrder = {
   "5": order5,
   "6": order6
 }
+const orderIndex = {
+  "3": index3,
+  "4": index4,
+  "5": index5,
+  "6": index6
+}
+
 
 
 function getCurrent(thing) {
@@ -50,29 +57,16 @@ function load(pageType) {
 
   const style = getCurrent("style");
   const order = getCurrent("order");
-  const size = order;
-
-  const details = {
-    "id": 0,
-    "style": style,
-    "order": order,
-    "type": pageType
-  };
-
+  const index = orderIndex[order];
 
 
   if (pageType === "orderGroups") {
-
-    let coordsArray = {};
-    // let size = order;
-    let size = Math.sqrt(squareOrder[order][0].split(" ").length);
-    let counter = 0;
-    for (let line in squareOrder[order]) {
-      counter = parseInt(line) + 1;
-      // console.log(`processing magic square ${counter}`);
-      let valuesArray = squareOrder[order][line].split(" ").map(Number);
-      coordsArray[counter] = getCoords(size,valuesArray);
-      drawSquare(prepareSVG(style,size,coordsArray[counter],counter,parseInt(line)));
+    for (let i in index) {
+      let square = index[i];
+      let valuesArray = square.nums.split(" ").map(Number);
+      drawSquare(prepareSVG(style,
+                            getCoords(order,valuesArray),
+                            square.id));
     }
     svgGrid.classList.remove("filter");
     svgGrid.classList.remove("single");
@@ -81,90 +75,23 @@ function load(pageType) {
 
 
   if (pageType === "filterGroups") {
-    // console.log("filter groups selected");
     populateOptions(order,style);
-
     // make sure appropriate length is selected
     if (selectedLenIndex > lenOptions.options.length) { selectedLenIndex = 0; }
     lenOptions.options[selectedLenIndex].selected = true;
-
-
-
-    const allPerStyle = eval(`${style}Lens${order}`);
-
-
-    const index = eval(`index${order}`);
-    // let index = squareOrder[order];
-    let indexNew = index4new;
-
-
     const chosenLength = lenOptions.options[selectedLenIndex].value;
-
-    const allPerChosenLength = indexNew.filter(i => 
-      Object.keys(i[style])[0] === chosenLength
-    );
-    console.log(allPerChosenLength);  // [{...},{...},{...},...]
-    const numsPerChosenLength = allPerChosenLength.map(n => n.nums);
-    console.log(numsPerChosenLength);  // ["1 2 3 4", "1 3 2 4"]
-
-
-    if (chosenLength in allPerStyle) {
-
-      let filtered = allPerStyle[chosenLength];
-      // [8,12]
-      // console.log(filtered);
-      let filteredNums = filtered.map(n => index[n].nums);
-      // ["1 2 3 4", "1 3 2 4"]
-      // console.log(filteredNums);
-      let filteredNumArrays = filteredNums.map(f => f.split(" ").map(Number));
-      console.log(filteredNumArrays);  // [[1,2,3,4],[1,3,2,4]]
-      // [[1,2,3,4],[1,3,2,4]]
-
-      // let order = "4";
-      let coordsArray = {};
-      
-      let counter = 0;
-      for (let line in filteredNums) {
-        counter = parseInt(line) + 1;
-
-        // drawSquare(prepareSVG(square.style,
-        //                       square.order,
-        //                       getCoords(square.order,valuesArray),
-        //                       square.id,
-        //                       filtered[line]));
-        // displayDetails(id, filtered[line]);
-
-        // console.log(`processing magic square ${counter}`);
-        let valuesArray = filteredNums[line].split(" ").map(Number);
-        coordsArray[counter] = getCoords(size,valuesArray);
-        drawSquare(prepareSVG(style,size,coordsArray[counter],counter,filtered[line]));
-        displayDetails(counter, filtered[line]);
-      }
-    // if (chosenLength in allPerStyle) {
-
-    //   let filtered = allPerStyle[chosenLength];
-    //   // console.log(filtered);
-    //   let filteredNums = filtered.map(n => index[n].nums);
-
-    //   // let order = "4";
-    //   let coordsArray = {};
-    //   let size = Math.sqrt(filteredNums[0].split(" ").length);
-    //   let counter = 0;
-    //   for (let line in filteredNums) {
-    //     counter = parseInt(line) + 1;
-    //     // console.log(`processing magic square ${counter}`);
-    //     let valuesArray = filteredNums[line].split(" ").map(Number);
-    //     coordsArray[counter] = getCoords(size,valuesArray);
-    //     drawSquare(prepareSVG(style,size,coordsArray[counter],counter,filtered[line]));
-    //     displayDetails(counter, filtered[line]);
-    //   }
-    } else {
-      // console.log("input doesn't exist");
-      constant.innerHTML = "input doesn't exist"
+    const allPerChosenLength = index.filter(i => 
+      Object.keys(i[style])[0] === chosenLength);
+    for (let i in allPerChosenLength) {
+      let square = allPerChosenLength[i];
+      let valuesArray = square.nums.split(" ").map(Number);
+      drawSquare(prepareSVG(style,
+                            getCoords(order,valuesArray),
+                            square.id));
+      displayDetails(square.id);
     }
     svgGrid.classList.add("filter");
     svgGrid.classList.remove("single");
-
   } // end filterGroups
 
 
@@ -172,25 +99,19 @@ function load(pageType) {
 
   if (pageType === "singleInput") {
     const valuesString = document.getElementById("values");
-    let valuesArray = valuesString.value.split(" ").map(Number);
-    
+    const valuesArray = valuesString.value.split(" ").map(Number);
     if (errorChecks(valuesArray)) {
       errorMsg.innerHTML = errorChecks(valuesArray)[1];
       // call other input checks with 'valuesArray' here
     } else {
-    
-      let size = Math.sqrt(valuesArray.length);
-
+      const size = Math.sqrt(valuesArray.length);
       magicConstant(size,valuesArray);
-
-      const coordsArray = getCoords(size,valuesArray,1);
-
-      drawSquare(prepareSVG("numbers",size,coordsArray,0,0));
-      drawSquare(prepareSVG("straight",size,coordsArray,1,0));
-      drawSquare(prepareSVG("quadvertix",size,coordsArray,2,0));
-      drawSquare(prepareSVG("quadline",size,coordsArray,3,0));
-      drawSquare(prepareSVG("arc",size,coordsArray,4,0));
-
+      const coordsObject = getCoords(size,valuesArray);
+      drawSquare(prepareSVG("numbers",coordsObject,1));
+      drawSquare(prepareSVG("straight",coordsObject,2));
+      drawSquare(prepareSVG("quadvertix",coordsObject,3));
+      drawSquare(prepareSVG("quadline",coordsObject,4));
+      drawSquare(prepareSVG("arc",coordsObject,5));
       svgGrid.classList.add("single");
       svgGrid.classList.remove("filter");
     }
@@ -204,72 +125,39 @@ function load(pageType) {
 
 
 
-function getSVG(square, valuesArray) {
-  
-
-  const numsPerChosenLength = allPerChosenLength.map(n => n.nums);
-  console.log(numsPerChosenLength);  // ["1 2 3 4", "1 3 2 4"]
-
-
-
-  drawSquare(prepareSVG(square.style,
-                        square.order,
-                        getCoords(square.order,valuesArray),
-                        square.id,
-                        filtered[line]));
-  displayDetails(id, filtered[line]);
-
-
-  // for (let line in filteredNums) {
-  //   counter = parseInt(line) + 1;
-  //   // console.log(`processing magic square ${counter}`);
-  //   let valuesArray = filteredNums[line].split(" ").map(Number);
-  //   coordsArray[counter] = getCoords(size,valuesArray);
-  //   drawSquare(prepareSVG(style,size,coordsArray[counter],counter,filtered[line]));
-  //   displayDetails(counter, filtered[line]);
-  // }
-
-}
 
 
 
 
-
-
-// size, valuesArray
-function getCoords(s, v, c) {
+// order, valuesArray
+function getCoords(order, valuesArray) {
   // console.log(`creating coordinate system for square ${c}`);
   const coordsObject = {};
   let offset = 0;
-  for (let r=0; r<s; r++) {
-    for (let c=0; c<s; c++) {
-      coordsObject[v[c+offset]] = [c,r];  // column, row = x , y
+  for (let row=0; row < order; row++) {
+    for (let col=0; col < order; col++) {
+      coordsObject[valuesArray[col+offset]] = [col,row];  // x,y
     }
-    offset += s;  // increase offset by one row every 4 columns
+    offset += order;  // increase offset by one row every 4(order) columns
   }
   return coordsObject;
 }
 
-// style, size, coordsArray, counter
-function prepareSVG(style, s, a, c, n) {
+// style, coordsObject, id
+function prepareSVG(style, coordsObject, id) {
   // console.log(`preparing ${style} SVG for square ${c}`);
   switch(style) {
     case "straight":
-      return createPolyline(s, a, c, n);
-      // break;
+      return createPolyline(coordsObject, id);
     case "quadvertix":
-      return createQuadraticCurveVertices(s, a, c, n);
-      // break;
+      return createQuadraticCurveVertices(coordsObject, id);
     case "quadline":
-      return createQuadraticCurveLines(s, a, c, n);
-      // break;
+      return createQuadraticCurveLines(coordsObject, id);
     case "arc":
-      return createArc(s, a, c, n);
-      // break;
+      return createArc(coordsObject, id);
     case "numbers":
-      return createNumberSVGs(s, a, n);
-      // break;
+      return createNumberSVGs(coordsObject, id);
     default:
-      return createQuadraticCurveVertices(s, a, c, n);
+      return createQuadraticCurveVertices(coordsObject, id);
   }
 }
