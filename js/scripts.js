@@ -33,7 +33,6 @@ let selectedLenIndex = 0;
 lenOptions.addEventListener("change", ()=> {
   selectedLenIndex = getCurrent("length");
   load("filterGroups");
-  lenOptions.options[selectedLenIndex].selected = true;
 });
 
 
@@ -51,6 +50,9 @@ function load(pageType) {
 
   const style = getCurrent("style");
   const order = getCurrent("order");
+  const size = parseInt(order);
+
+
 
   if (pageType === "orderGroups") {
 
@@ -67,7 +69,7 @@ function load(pageType) {
     }
     svgGrid.classList.remove("filter");
     svgGrid.classList.remove("single");
-  }
+  } // end orderGroups
 
 
 
@@ -75,29 +77,42 @@ function load(pageType) {
     // console.log("filter groups selected");
     populateOptions(order,style);
 
+    // make sure appropriate length is selected
     if (selectedLenIndex > lenOptions.options.length) { selectedLenIndex = 0; }
     lenOptions.options[selectedLenIndex].selected = true;
 
 
 
-    let allPerStyle = eval(`${style}Lens${order}`);
-    let index = eval(`index${order}`);
+    const allPerStyle = eval(`${style}Lens${order}`);
 
 
-    // const filterNum = document.getElementById("lenFilter").value;
-    const filterNum = lenOptions.options[lenOptions.selectedIndex].value;
-    // console.dir(document.getElementById("lenOptions"));
-    // console.log(filterNum);
+    const index = eval(`index${order}`);
+    // let index = squareOrder[order];
+    let indexNew = index4new;
 
-    if (filterNum in allPerStyle) {
 
-      let filtered = allPerStyle[filterNum];
+    const chosenLength = lenOptions.options[selectedLenIndex].value;
+
+    const allPerChosenLength = indexNew.filter(i => 
+      Object.keys(i[style])[0] === chosenLength
+    );
+    console.log(allPerChosenLength);
+    const numsPerChosenLength = allPerChosenLength.map(n => n.nums);
+    console.log(numsPerChosenLength);
+
+
+    if (chosenLength in allPerStyle) {
+
+      let filtered = allPerStyle[chosenLength];
+      // [8,12]
       // console.log(filtered);
       let filteredNums = filtered.map(n => index[n].nums);
+      console.log(filteredNums);
+      // ["1 2 3 4", "1 3 2 4"]
 
-      let order = "4";
+      // let order = "4";
       let coordsArray = {};
-      let size = Math.sqrt(filteredNums[0].split(" ").length);
+      
       let counter = 0;
       for (let line in filteredNums) {
         counter = parseInt(line) + 1;
@@ -107,6 +122,24 @@ function load(pageType) {
         drawSquare(prepareSVG(style,size,coordsArray[counter],counter,filtered[line]));
         displayDetails(counter, filtered[line]);
       }
+    // if (chosenLength in allPerStyle) {
+
+    //   let filtered = allPerStyle[chosenLength];
+    //   // console.log(filtered);
+    //   let filteredNums = filtered.map(n => index[n].nums);
+
+    //   // let order = "4";
+    //   let coordsArray = {};
+    //   let size = Math.sqrt(filteredNums[0].split(" ").length);
+    //   let counter = 0;
+    //   for (let line in filteredNums) {
+    //     counter = parseInt(line) + 1;
+    //     // console.log(`processing magic square ${counter}`);
+    //     let valuesArray = filteredNums[line].split(" ").map(Number);
+    //     coordsArray[counter] = getCoords(size,valuesArray);
+    //     drawSquare(prepareSVG(style,size,coordsArray[counter],counter,filtered[line]));
+    //     displayDetails(counter, filtered[line]);
+    //   }
     } else {
       // console.log("input doesn't exist");
       constant.innerHTML = "input doesn't exist"
@@ -114,7 +147,7 @@ function load(pageType) {
     svgGrid.classList.add("filter");
     svgGrid.classList.remove("single");
 
-  }
+  } // end filterGroups
 
 
 
@@ -143,7 +176,7 @@ function load(pageType) {
       svgGrid.classList.add("single");
       svgGrid.classList.remove("filter");
     }
-  }
+  } // end singleInput
 
 
 
