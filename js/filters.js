@@ -5,23 +5,18 @@
 function populateOptions(order,style) {
   lenOptions.innerHTML = "";
   if(style !== "numbers") {
-    let list = eval(`${style}Lens${order}`);
-
-    // const allPerChosenLength = index.filter(i => 
-    //   Object.keys(i[style])[0] === chosenLength);
-
-    
-
-
-    lenOptions.disabled=false;
+    const allLengths = orderIndex[order].map(o => `${Object.keys(o[style])[0]} (${o[style][Object.keys(o[style])[0]].length})`);
+    const list = [...new Set(allLengths.sort())];
+    lenOptions.disabled = false;
     for (let l in list) {
       let opt = document.createElement("option");
-      opt.value = l;
-      opt.innerText = `${l} (${list[l].length})`;
+      let x = list[l].slice(0,4);
+      opt.value = x;
+      opt.innerText = list[l];
       lenOptions.appendChild(opt);
     }
   } else {
-    lenOptions.disabled=true;
+    lenOptions.disabled = true;
   }
 }
 

@@ -43,6 +43,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] hide settings after drawing
 - [x] filters
 - [x] use new index4new
+- [x] filters page broken (populateOptions) (use new index only)
 - [ ] give choice of print sizes
 - [ ] add about/info page
 - [ ] set fill-opacity/stroke-opacity="0.0" - "1.0"
@@ -55,7 +56,7 @@ Frénicle established two simple rules to determine the [standard position](http
 ## URGENT
 
 - [ ] single input animations broken
-- [ ] filters page broken (populateOptions) (use new index only)
+- [ ] error message / disable numbers in filterGroups
 
 
 ## References
