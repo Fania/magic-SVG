@@ -73,10 +73,13 @@ function changePadding(state) {
 
 
 function toggleMenu() {
+  const foot = document.querySelector("footer");
   if ([...settings.classList].includes("hide")) {
     settings.classList.remove("hide");
+    foot.classList.remove("hide");
   } else {
     settings.classList.add("hide");
+    foot.classList.add("hide");
   }
 }
 
