@@ -44,6 +44,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] filters
 - [x] use new index4new
 - [x] filters page broken (populateOptions) (use new index only)
+- [x] error message / disable numbers in filterGroups
 - [ ] give choice of print sizes
 - [ ] add about/info page
 - [ ] set fill-opacity/stroke-opacity="0.0" - "1.0"
@@ -55,8 +56,8 @@ Frénicle established two simple rules to determine the [standard position](http
 
 ## URGENT
 
-- [ ] single input animations broken
-- [ ] error message / disable numbers in filterGroups
+- [ ] single input animations broken/disabled
+- [ ] refactor for node ?
 
 
 ## References

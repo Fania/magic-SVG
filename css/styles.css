@@ -187,15 +187,6 @@ input:disabled ~ span, select:disabled ~ span {
   margin: 0;
 }
 
-/* animate */
-#svgGrid.animateEvenly svg .lines {
-  animation: dash 20s ease-in-out alternate infinite;
-}
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
 
 input, label, select, option, #settings a, 
 input:focus, 
@@ -203,7 +194,6 @@ select:focus,
 option:focus {
   font-size: 16px;
 }
-
 
 
 .hide {
@@ -231,6 +221,20 @@ footer img {
 /* .touchInstructions {
   display: block;
 } */
+
+
+
+
+
+/* animate */
+#svgGrid.animateEvenly svg .lines {
+  animation: dash 20s ease-in-out alternate infinite;
+}
+@keyframes dash {
+  to { stroke-dashoffset: 0; }
+}
+
+
 
 
 
