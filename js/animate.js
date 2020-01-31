@@ -22,6 +22,14 @@ noAnimate.addEventListener("change", () => {
 // animation: dash 20s ease-in-out alternate infinite;
 
 
+console.log(document.styleSheets);
+
+for (let i = 0; i < document.styleSheets.length; i++) {
+  console.log(document.styleSheets[i].ownerNode.id);
+}
+// mainStyles, extra_colour_styles
+
+
 function startAnimatingAll(sync) {
   // console.log("animate svgs");
   let order = orderOptions[orderOptions.selectedIndex].value;

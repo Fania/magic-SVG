@@ -9,9 +9,8 @@ function populateOptions(order,style) {
     const list = [...new Set(allLengths.sort())];
     lenOptions.disabled = false;
     for (let l in list) {
-      let opt = document.createElement("option");
-      let x = list[l].slice(0,4);
-      opt.value = x;
+      const opt = document.createElement("option");
+      opt.value = list[l].slice(0,4);
       opt.innerText = list[l];
       lenOptions.appendChild(opt);
     }
@@ -22,10 +21,10 @@ function populateOptions(order,style) {
 
 
 function displayDetails(num) {
-  let id = `square-${num}`;
-  let elem = document.getElementById(id).parentElement;
-  let det = document.createElement("p");
-  let txt = document.createTextNode(`# ${num}`);
+  const id = `square-${num}`;
+  const elem = document.getElementById(id).parentElement;
+  const det = document.createElement("p");
+  const txt = document.createTextNode(`# ${num}`);
   det.appendChild(txt);
   elem.insertAdjacentElement("afterend", det);
 }

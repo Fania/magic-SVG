@@ -156,9 +156,3 @@ function generateAnimationCSS(index, style, sync) {
 // console.log(generateAnimationCSS(index6, "quadline", true));
 // console.log(generateAnimationCSS(index6, "quadline", false));
 
-
-
-
-
-
-
