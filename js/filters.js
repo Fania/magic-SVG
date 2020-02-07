@@ -61,26 +61,28 @@ function compareSVGs() {
   let confirmedDuplicates = [];
 
   withDups.forEach( (i) => {
-    let dups = i[style][Object.keys(i[style])[0]];
+    const dups = i[style][Object.keys(i[style])[0]];
     console.log(`processing items: ${dups}`);
 
-    let head = dups.slice(0,1)[0];
-    let tail = dups.slice(1);
+    const head = dups.slice(0,1)[0];
+    const tail = dups.slice(1);
     // console.log(head);
     // console.log(tail);
     // console.log(tail[0]);
 
-    console.log(quadVertix4PNGs[head]);
-    console.log(quadVertix4PNGs[tail[0]]);
-    console.log(quadVertix4PNGs[tail[1]]);
-    console.log(quadVertix4PNGs[tail[2]]);
-    console.log(quadVertix4PNGs[head] === quadVertix4PNGs[tail[0]]);
-    console.log(quadVertix4PNGs[head] === quadVertix4PNGs[tail[1]]);
-    console.log(quadVertix4PNGs[head] === quadVertix4PNGs[tail[2]]);
+    // console.log(quadVertix4PNGs[head]);
+    // console.log(quadVertix4PNGs[tail[0]]);
+    // console.log(quadVertix4PNGs[tail[1]]);
+    // console.log(quadVertix4PNGs[tail[2]]);
+    // console.log(quadVertix4PNGs[head] === quadVertix4PNGs[tail[0]]);
+    // console.log(quadVertix4PNGs[head] === quadVertix4PNGs[tail[1]]);
+    // console.log(quadVertix4PNGs[head] === quadVertix4PNGs[tail[2]]);
 
     let boolList = {};
     tail.map(t => 
-      boolList[t] = quadVertix4PNGs[head] === quadVertix4PNGs[t]
+      boolList[t] = quadVertix4PNGs[head] === quadVertix4PNGs[t] 
+                // ||  quadVertix4PNGs[head] === quadVertix4PNGsROTATED90[t] 
+                // ||  quadVertix4PNGs[head] === quadVertix4PNGsROTATED180[t]
     );
     console.log(boolList);
 
@@ -108,7 +110,7 @@ function compareSVGs() {
 }
 
 // window.onload = () => { compareSVGs() }
-// compareSVGs();
+compareSVGs();
 
 
 

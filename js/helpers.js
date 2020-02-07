@@ -215,7 +215,7 @@ function generateQuadVertixPNGs() {
 
 function printAllPNGs(file) {
   for (let i in file) {
-    document.body.insertAdjacentHTML("beforeend", `<img class="${i}" src="${file[i]}">`);
+    document.body.insertAdjacentHTML("beforeend", `<img class="png-${i}" src="${file[i]}">`);
   }
 }
 printAllPNGs(quadVertix4PNGs);
