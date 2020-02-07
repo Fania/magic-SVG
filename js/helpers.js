@@ -156,3 +156,18 @@ function generateAnimationCSS(index, style, sync) {
 // console.log(generateAnimationCSS(index6, "quadline", true));
 // console.log(generateAnimationCSS(index6, "quadline", false));
 
+
+
+
+
+
+// see filters.js for svgToPng function
+function generateQuadVertixPNGs() {
+  index.forEach( i => {
+    const svg = svgStringsQuadVertix4[i.id - 1];
+    svgToPng(svg).then((data)=>{ 
+      console.log(`${i.id}: "${data}",`) 
+    });
+  });
+}
+generateQuadVertixPNGs();

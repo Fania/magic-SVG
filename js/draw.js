@@ -26,7 +26,7 @@ function createNumberSVGs(coordsObject, id) {
     texts += `<text x="${coordsObject[a][0] * 100}" y="${coordsObject[a][1] * 100}">${a.padStart(2, '0')}</text>`;
   }
   // 0 -50 380 370 for order 4
-  return `<svg id="num-${id}" class="order-xt pad" viewbox="${0} ${-50} ${w-sizeInc+50+30} ${w-sizeInc+50+20}" xmlns="http://www.w3.org/2000/svg">${texts}"</svg>`;
+  return `<svg id="num-${id}" class="order-xt pad" viewbox="${0} ${-50} ${w-sizeInc+50+30} ${w-sizeInc+50+20}">${texts}"</svg>`;
 }
 
 
@@ -42,7 +42,7 @@ function createPolyline(coordsObject, id) {
   }
   coords += `${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;
   // return `<svg id="num-${num+1}" class="order-x pad" viewbox="${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}"><polyline id="square-${counter}" class="lines" points="${coords}"/></svg>`;
-  return `<svg id="num-${id}" class="order-x pad" viewbox="${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}" xmlns="http://www.w3.org/2000/svg"><path id="square-${id}" class="lines" d="${coords}"/></svg>`;
+  return `<svg id="num-${id}" class="order-x pad" viewbox="${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}"><path id="square-${id}" class="lines" d="${coords}"/></svg>`;
 }
 
 
@@ -96,7 +96,7 @@ function createQuadraticCurveVertices(coordsObject, id) {
     coords += `Q ${c2x},${c2y} ${m2x},${m2y} `;
   }
 
-  return `<svg id="num-${id}" class="order-x pad" viewbox="${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}" xmlns="http://www.w3.org/2000/svg"><path id="square-${id}" class="lines" d="${coords}"/></svg>`;
+  return `<svg id="num-${id}" class="order-x pad" viewbox="${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}"><path id="square-${id}" class="lines" d="${coords}"/></svg>`;
 }
 
 
@@ -111,7 +111,7 @@ function createQuadraticCurveLines(coordsObject, id) {
   }
   coords += `Q ${coordsObject[len][0] * sizeInc},${coordsObject[len][1] * sizeInc} ${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;  // loop back
 
-  return `<svg id="num-${id}" class="order-x pad" viewbox="${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}" xmlns="http://www.w3.org/2000/svg"><path id="square-${id}" class="lines" d="${coords}"/></svg>`;
+  return `<svg id="num-${id}" class="order-x pad" viewbox="${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}"><path id="square-${id}" class="lines" d="${coords}"/></svg>`;
 }
 
 
@@ -125,5 +125,5 @@ function createArc(coordsObject, id) {
   }
   coords += `A 10,10 0 1 1 ${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;
   // drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`);
-  return `<svg id="num-${id}" class="order-x" viewbox="${-200} ${-170} ${w-sizeInc+380} ${w-sizeInc+380}" xmlns="http://www.w3.org/2000/svg"><path id="square-${id}" class="lines arc" d="${coords}"/></svg>`;
+  return `<svg id="num-${id}" class="order-x" viewbox="${-200} ${-170} ${w-sizeInc+380} ${w-sizeInc+380}"><path id="square-${id}" class="lines arc" d="${coords}"/></svg>`;
 }
