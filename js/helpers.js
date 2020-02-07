@@ -161,6 +161,43 @@ function generateAnimationCSS(index, style, sync) {
 
 
 
+
+
+
+
+
+
+
+const svgToPng = (svgText) => {
+  return new Promise(function(resolve, reject) {
+    // needs a namespace
+    if (!svgText.match(/xmlns=\"/mi)){
+      svgText = svgText.replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ');  
+    }
+    // add colors for stroke and fill
+    svgText = svgText.replace('<svg ','<svg fill="none" stroke="black" '); 
+    // add rotation
+    svgText = svgText.replace('<svg ','<svg transform="rotate(180)" '); 
+    // initialise canvas
+    let canvas = document.createElement("canvas");
+    canvas.width = 200; canvas.height = 200;
+    const ctx = canvas.getContext("2d");
+    const svg = new Blob([svgText], {type: "image/svg+xml;charset=utf-8"});
+    const domUrl = window.URL || window.webkitURL || window;
+    const url = domUrl.createObjectURL(svg);
+    const img = document.createElement("img");
+    img.onload = function() {
+      ctx.drawImage(img,0,0);
+      domUrl.revokeObjectURL(url);
+      resolve(canvas.toDataURL());  // base64 url
+    };
+    img.src = url;  // load the image
+  });
+};
+
+
+
+
 // see filters.js for svgToPng function
 function generateQuadVertixPNGs() {
   index.forEach( i => {
@@ -170,4 +207,21 @@ function generateQuadVertixPNGs() {
     });
   });
 }
-generateQuadVertixPNGs();
+// generateQuadVertixPNGs();
+
+
+
+
+
+function printAllPNGs(file) {
+  for (let i in file) {
+    document.body.insertAdjacentHTML("beforeend", `<img class="${i}" src="${file[i]}">`);
+  }
+}
+printAllPNGs(quadVertix4PNGs);
+printAllPNGs(quadVertix4PNGsROTATED90);
+printAllPNGs(quadVertix4PNGsROTATED180);
+// printAllPNGs("quadVertix4PNGsROTATED");
+
+
+
