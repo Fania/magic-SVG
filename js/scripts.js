@@ -90,7 +90,7 @@ function load(pageType) {
         <div>
           ${prepareSVG(style,coords,square.id)}
           ${prepareSVG("numbers",coords,square.id)}
-          <p>#${square.id}</p>
+          <p>#${square.id}: ${square.nums}</p>
         </div>
       `;
       svgGrid.insertAdjacentHTML("beforeend", text);
