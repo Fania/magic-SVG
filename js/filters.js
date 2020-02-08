@@ -47,16 +47,26 @@ function displayDetails(num) {
 
 
 const svgToPng = (svgText) => {
+  // console.log(svgText);
   return new Promise(function(resolve, reject) {
+    svgText = svgText.replace('<svg ','<svg fill="none" stroke="black" '); 
+    // svgText = svgText.replace('<svg ','<svg width="200" height="200" '); 
+    // svgText = svgText.replace('<svg ','<svg transform="rotate(180)" '); 
+    // console.log(svgText);
     // needs a namespace
     if (!svgText.match(/xmlns=\"/mi)){
       svgText = svgText.replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ');  
     }
-    svgText = svgText.replace('<svg ','<svg fill="none" stroke="black" '); 
-    // svgText = svgText.replace('<svg ','<svg transform="rotate(180)" '); 
+    // console.log(svgText);
 
     let canvas = document.createElement("canvas");
-    canvas.width = 200; canvas.height = 200;
+    canvas.width = 306; canvas.height = 306;
+    // let svgElem = new DOMParser().parseFromString(svgText, 'text/html').body.firstChild;
+    // console.log(svgElem);
+    // let bbox = svgElem.getBBox();
+    // console.log(bbox.width, bbox.height);
+    // canvas.width = bbox.width;
+    // canvas.height = bbox.height;
     const ctx = canvas.getContext("2d");
     const svg = new Blob([svgText], {type: "image/svg+xml;charset=utf-8"});
     const domUrl = window.URL || window.webkitURL || window;
@@ -71,7 +81,7 @@ const svgToPng = (svgText) => {
   });
 };
 
-// svgToPng(svgStringsQuadVertix4[834]).then((data)=>{ 
+// svgToPng(index4new["1"]).then((data)=>{ 
 //       // console.log(`<img src="${data}">`) 
 //       document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
 //     });

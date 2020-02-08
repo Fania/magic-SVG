@@ -4,15 +4,15 @@
 const styles = ["quadvertix", "straight", "arc", "quadline"];
 
 
-// order-X.js -> indexX.js
+// STEP 1
 // create index with lengths per style
 function generateInitialIndex(order) {
   const source = squareOrder[order];
   let output = `{`;
   let lengths = {};
   for (let i=0; i < source.length; i++) {
+    let valuesArray = source[i].split(" ").map(Number);
     for (let j=0; j < styles.length; j++) {
-      let valuesArray = source[i].split(" ").map(Number);
       let coordsObject = getCoords(order,valuesArray);
       let svgString = prepareSVG(styles[j],coordsObject,i);
       let svg = new DOMParser().parseFromString(svgString, 'text/html');
@@ -21,7 +21,7 @@ function generateInitialIndex(order) {
     }
     let txt = `
     "${i + 1}": {
-      "numbers": { "string": "${source[i]}" },
+      "numbers": { "string": "${source[i]}", "array": [${valuesArray}] },
       "quadvertix": { "${lengths.quadvertix}": [] },
       "straight": { "${lengths.straight}": [] },
       "arc": { "${lengths.arc}": [] },
@@ -35,23 +35,15 @@ function generateInitialIndex(order) {
   }`;
   return JSON.parse(output);
 }
-let emptyIndex = generateInitialIndex(4);
+// let emptyIndex = generateInitialIndex(4);
 // console.log(emptyIndex);
 
 
 
 
 
-// "879": {
-//   "nums": "8 2 13 11 15 9 6 4 1 7 12 14 10 16 3 5",
-//   "quadvertix": { "2335": [] },
-//   "straight": { "3670": [] },
-//   "arc": { "2663": [] },
-//   "quadline": { "2216": [] },
-//   "duplicates": { }
-// },
-// temp1[0].quadvertix.key()
 
+// STEP 2
 // add shared lengths into master index
 function generateSharedLengths(index) {
   // console.log(`generating lengths ${order}, ${style}`);
@@ -74,8 +66,96 @@ function generateSharedLengths(index) {
   });
   return index;
 }
-let indexSharedLengths = generateSharedLengths(emptyIndex);
+// let indexSharedLengths = generateSharedLengths(emptyIndex);
 // console.log(indexSharedLengths);
+
+
+
+
+
+
+// STEP 3
+// indexSharedLengths -> add SVG data
+function generateSVGs(index) {
+  for (let idx in index) {
+    let numberString = index[idx]["numbers"]["string"];
+    let valuesArray = numberString.split(" ").map(Number);
+    let order = Math.sqrt(valuesArray.length);
+    index[idx]["numbers"]["svg"] = prepareSVG("numbers",getCoords(order,valuesArray),idx);
+    styles.forEach(style => {
+      // let style = index[idx][s];
+      let svg = prepareSVG(style,getCoords(order,valuesArray),idx);
+      index[idx][style]["svg"] = svg;
+    });
+  }
+  return index;
+}
+// let indexSVGs = generateSVGs(indexSharedLengths);
+// console.log(indexSVGs);
+
+
+
+
+
+
+// STEP 4
+// add in png data to master index
+function generatePNGs(index) {
+  for (let i in index) {
+    styles.forEach(s => {
+      svgToPng(index[i][s]["svg"]).then((data)=>{
+        index[i][s]["png"] = data;
+      });
+    });
+  }
+  return index;
+}
+// let indexPNGs = generatePNGs(indexSVGs);
+// console.log(indexPNGs);
+
+
+
+// GENERATE NEW INDEX IN ONE COMMAND
+// let final = generatePNGs( 
+//               generateSVGs(
+//                 generateSharedLengths(
+//                   generateInitialIndex(4)
+//                 )
+//               )
+//             );
+// console.log(final);
+
+
+
+
+
+function showAllPNGs(style) {
+  for (let i in index4new) {
+    document.body.insertAdjacentHTML("beforeend", 
+      `<img class="png-${i}" src="${index4new[i][style]["png"]}">`);
+  }
+}
+showAllPNGs("quadvertix");
+// showAllPNGs("straight");
+
+
+
+
+function printAllPNGs(file) {
+  // for (let i in file) {
+  for (let i=1; i<=880; i++) {
+    document.body.insertAdjacentHTML("beforeend", `<img class="png-${i}" src="${file[i]}">`);
+  }
+}
+// printAllPNGs(quadVertix4PNGs);
+// printAllPNGs(quadVertix4PNGsROTATED90);
+// printAllPNGs(quadVertix4PNGsROTATED180);
+// printAllPNGs("quadVertix4PNGsROTATED");
+
+
+
+
+
 
 
 
@@ -156,89 +236,5 @@ function generateAnimationCSS(index, style, sync) {
 // console.log(generateAnimationCSS(index6, "arc", false));
 // console.log(generateAnimationCSS(index6, "quadline", true));
 // console.log(generateAnimationCSS(index6, "quadline", false));
-
-
-
-
-
-
-
-
-// indexSharedLengths -> add SVG data
-
-function generateSVGs(index) {
-  // console.log(`generating SVGs ${order}, ${style}`);
-
-  for (let idx in index) {
-
-    let numberString = index[idx]["numbers"]["string"];
-    let valuesArray = numberString.split(" ").map(Number);
-    let order = Math.sqrt(valuesArray.length);
-
-    index[idx]["numbers"]["svg"] = prepareSVG("numbers",getCoords(order,valuesArray),idx);
-
-    styles.forEach(s => {
-      let style = index[idx][s];
-      let svg = prepareSVG(style,getCoords(order,valuesArray),idx);
-      style["svg"] = svg;
-      // style["png"] = "pngcode";
-    });
-  }
-  return index;
-}
-let indexSVGs = generateSVGs(indexSharedLengths);
-// console.log(indexSVGs);
-
-
-
-
-function generatePNGs(index) {
-
-  for (let i in index) {
-    styles.forEach(s => {
-      svgToPng(index[i][s]["svg"]).then((data)=>{
-        index[i][s]["png"] = data;
-      });
-    });
-  }
-}
-// let indexPNGs = generatePNGs(indexSVGs);
-
-// BROKEN
-window.onload = () => { console.log(generatePNGs(indexSVGs)) }
-// window.onload = () => console.log(indexPNGs);
-
-
-
-
-
-
-
-// see filters.js for svgToPng function
-function generateQuadVertixPNGs() {
-  index.forEach( i => {
-    const svg = svgStringsQuadVertix4[i.id - 1];
-    svgToPng(svg).then((data)=>{ 
-      console.log(`${i.id}: "${data}",`) 
-    });
-  });
-}
-// generateQuadVertixPNGs();
-
-
-
-
-
-function printAllPNGs(file) {
-  // for (let i in file) {
-  for (let i=1; i<=880; i++) {
-    document.body.insertAdjacentHTML("beforeend", `<img class="png-${i}" src="${file[i]}">`);
-  }
-}
-// printAllPNGs(quadVertix4PNGs);
-// printAllPNGs(quadVertix4PNGsROTATED90);
-// printAllPNGs(quadVertix4PNGsROTATED180);
-// printAllPNGs("quadVertix4PNGsROTATED");
-
 
 
