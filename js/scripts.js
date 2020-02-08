@@ -85,10 +85,15 @@ function load(pageType) {
     for (let i in allPerChosenLength) {
       let square = allPerChosenLength[i];
       let valuesArray = square.nums.split(" ").map(Number);
-      drawSquare(prepareSVG(style,
-                            getCoords(order,valuesArray),
-                            square.id));
-      displayDetails(square.id);
+      let coords = getCoords(order,valuesArray);
+      let text = `
+        <div>
+          ${prepareSVG(style,coords,square.id)}
+          ${prepareSVG("numbers",coords,square.id)}
+          <p>#${square.id}</p>
+        </div>
+      `;
+      svgGrid.insertAdjacentHTML("beforeend", text);
     }
     svgGrid.classList.add("filter");
     svgGrid.classList.remove("single");

@@ -156,7 +156,7 @@ input:disabled ~ span, select:disabled ~ span {
 
 .order-x, .order-xt, #single-x {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   stroke-width: 2;
   box-sizing: border-box;
 }
@@ -170,14 +170,16 @@ input:disabled ~ span, select:disabled ~ span {
 }
 
 .svgGrid.filter {
-  position: relative;
+  /* position: relative; */
 }
 .svgGrid.filter svg {
   margin-bottom: 0;
 }
 .svgGrid.filter svg + p {
-  margin-bottom: 3em;
+  margin: 0 0 3em 0;
+  font-size: 3em;
   color: #555;
+  text-align: center;
 }
 
 #constant {
@@ -274,14 +276,11 @@ footer img {
     justify-content: flex-end;
   }
 
-  .svgGrid.filter svg {
-    margin-bottom: 3em;
+  .svgGrid.filter div {
+    margin: 0 2em;
   }
   .svgGrid.filter svg + p {
-    position: relative;
-    top: 100px;
-    left: -115px;
-    color: #555;
+    font-size: 1em;
   }
 
   /* .touchInstructions {
