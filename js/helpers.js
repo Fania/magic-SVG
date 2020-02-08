@@ -8,7 +8,6 @@ const styles = ["quadvertix", "straight", "arc", "quadline"];
 // create index with lengths per style
 function generateInitialIndex(order) {
   const source = squareOrder[order];
-  // let output = `const index${order} = {`;
   let output = `{`;
   let lengths = {};
   for (let i=0; i < source.length; i++) {
@@ -22,7 +21,7 @@ function generateInitialIndex(order) {
     }
     let txt = `
     "${i + 1}": {
-      "nums": "${source[i]}",
+      "numbers": { "string": "${source[i]}" },
       "quadvertix": { "${lengths.quadvertix}": [] },
       "straight": { "${lengths.straight}": [] },
       "arc": { "${lengths.arc}": [] },
@@ -34,7 +33,6 @@ function generateInitialIndex(order) {
   }
   output += `
   }`;
-  // return output;
   return JSON.parse(output);
 }
 let emptyIndex = generateInitialIndex(4);
@@ -77,7 +75,11 @@ function generateSharedLengths(index) {
   return index;
 }
 let indexSharedLengths = generateSharedLengths(emptyIndex);
-console.log(indexSharedLengths);
+// console.log(indexSharedLengths);
+
+
+
+
 
 
 
@@ -162,44 +164,52 @@ function generateAnimationCSS(index, style, sync) {
 
 
 
+// indexSharedLengths -> add SVG data
+
+function generateSVGs(index) {
+  // console.log(`generating SVGs ${order}, ${style}`);
+
+  for (let idx in index) {
+
+    let numberString = index[idx]["numbers"]["string"];
+    let valuesArray = numberString.split(" ").map(Number);
+    let order = Math.sqrt(valuesArray.length);
+
+    index[idx]["numbers"]["svg"] = prepareSVG("numbers",getCoords(order,valuesArray),idx);
+
+    styles.forEach(s => {
+      let style = index[idx][s];
+      let svg = prepareSVG(style,getCoords(order,valuesArray),idx);
+      style["svg"] = svg;
+      // style["png"] = "pngcode";
+    });
+  }
+  return index;
+}
+let indexSVGs = generateSVGs(indexSharedLengths);
+// console.log(indexSVGs);
 
 
 
 
+function generatePNGs(index) {
 
-const svgToPng = (svgText) => {
-  return new Promise(function(resolve, reject) {
-    // needs a namespace
-    if (!svgText.match(/xmlns=\"/mi)){
-      svgText = svgText.replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ');  
-    }
-    svgText = svgText.replace('<svg ','<svg fill="none" stroke="black" '); 
-    // svgText = svgText.replace('<svg ','<svg transform="rotate(180)" '); 
+  for (let i in index) {
+    styles.forEach(s => {
+      svgToPng(index[i][s]["svg"]).then((data)=>{
+        index[i][s]["png"] = data;
+      });
+    });
+  }
+}
+// let indexPNGs = generatePNGs(indexSVGs);
 
-    let canvas = document.createElement("canvas");
-    canvas.width = 200; canvas.height = 200;
-    const ctx = canvas.getContext("2d");
-    const svg = new Blob([svgText], {type: "image/svg+xml;charset=utf-8"});
-    const domUrl = window.URL || window.webkitURL || window;
-    const url = domUrl.createObjectURL(svg);
-    const img = document.createElement("img");
-    img.onload = function() {
-      ctx.drawImage(img,0,0);
-      domUrl.revokeObjectURL(url);
-      resolve(canvas.toDataURL());  // base64 url
-    };
-    img.src = url;  // load the image
-  });
-};
+// BROKEN
+window.onload = () => { console.log(generatePNGs(indexSVGs)) }
+// window.onload = () => console.log(indexPNGs);
 
-// svgToPng(svgStringsQuadVertix4[834]).then((data)=>{ 
-//       // console.log(`<img src="${data}">`) 
-//       document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
-//     });
-// svgToPng(svgStringsQuadVertix4[837]).then((data)=>{ 
-//       // console.log(`<img src="${data}">`) 
-//       document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
-//     });
+
+
 
 
 

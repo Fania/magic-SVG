@@ -43,12 +43,59 @@ function displayDetails(num) {
 
 
 
+
+
+
+const svgToPng = (svgText) => {
+  return new Promise(function(resolve, reject) {
+    // needs a namespace
+    if (!svgText.match(/xmlns=\"/mi)){
+      svgText = svgText.replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ');  
+    }
+    svgText = svgText.replace('<svg ','<svg fill="none" stroke="black" '); 
+    // svgText = svgText.replace('<svg ','<svg transform="rotate(180)" '); 
+
+    let canvas = document.createElement("canvas");
+    canvas.width = 200; canvas.height = 200;
+    const ctx = canvas.getContext("2d");
+    const svg = new Blob([svgText], {type: "image/svg+xml;charset=utf-8"});
+    const domUrl = window.URL || window.webkitURL || window;
+    const url = domUrl.createObjectURL(svg);
+    const img = document.createElement("img");
+    img.onload = function() {
+      ctx.drawImage(img,0,0);
+      domUrl.revokeObjectURL(url);
+      resolve(canvas.toDataURL());  // base64 url
+    };
+    img.src = url;  // load the image
+  });
+};
+
+// svgToPng(svgStringsQuadVertix4[834]).then((data)=>{ 
+//       // console.log(`<img src="${data}">`) 
+//       document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
+//     });
+// svgToPng(svgStringsQuadVertix4[837]).then((data)=>{ 
+//       // console.log(`<img src="${data}">`) 
+//       document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
+//     });
+
+
+
+
+
+
+
 // const source = squareOrder[order];
 let index = index4;
 let style = "quadvertix";
 
 const withDups = index.filter( i => i[style][Object.keys(i[style])[0]].length > 1 );
 // console.log(withDups);
+
+
+
+
 
 
 
@@ -70,9 +117,9 @@ function compareSVGs() {
     // console.log(tail);
     // console.log(tail[0]);
 
-    console.log(quadVertix4PNGs[833]);
-    console.log(quadVertix4PNGs[836]);
-    console.log(quadVertix4PNGs[833] === quadVertix4PNGs[836]);
+    // console.log(quadVertix4PNGs[833]);
+    // console.log(quadVertix4PNGs[836]);
+    // console.log(quadVertix4PNGs[833] === quadVertix4PNGs[836]);
     // console.log(quadVertix4PNGs[tail[0]]);
     // console.log(quadVertix4PNGs[tail[1]]);
     // console.log(quadVertix4PNGs[tail[2]]);
