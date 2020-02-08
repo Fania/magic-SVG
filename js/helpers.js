@@ -8,7 +8,8 @@ const styles = ["quadvertix", "straight", "arc", "quadline"];
 // create index with lengths per style
 function generateInitialIndex(order) {
   const source = squareOrder[order];
-  let output = `[`;
+  // let output = `const index${order} = {`;
+  let output = `{`;
   let lengths = {};
   for (let i=0; i < source.length; i++) {
     for (let j=0; j < styles.length; j++) {
@@ -20,59 +21,54 @@ function generateInitialIndex(order) {
       lengths[styles[j]] = len;
     }
     let txt = `
-    {
-      "id": ${i + 1},
+    "${i + 1}": {
       "nums": "${source[i]}",
       "quadvertix": { "${lengths.quadvertix}": [] },
       "straight": { "${lengths.straight}": [] },
       "arc": { "${lengths.arc}": [] },
       "quadline": { "${lengths.quadline}": [] },
-      "similarities": {
-        "ids": [],
-        "type": ""
-      }
+      "duplicates": { }
     }${ (i!==(source.length -1)) ? "," : "" }`;
-
+    // duplicates: { "id": "type", "id": "type", ... }
     output += txt;
   }
   output += `
-  ]`;
+  }`;
+  // return output;
   return JSON.parse(output);
 }
-// let emptyIndex = generateInitialIndex(6);
+let emptyIndex = generateInitialIndex(4);
 // console.log(emptyIndex);
 
 
 
 
-  // {
-  //   "id": 879,
-  //   "nums": "8 2 13 11 15 9 6 4 1 7 12 14 10 16 3 5",
-  //   "quadvertix": { "2335": [] },
-  //   "straight": { "3670": [] },
-  //   "arc": { "2663": [] },
-  //   "quadline": { "2216": [] },
-  //   "similarities": {
-  //     "ids": [],
-  //     "type": ""
-  //   }
-  // },
-  // temp1[0].quadvertix.key()
+
+// "879": {
+//   "nums": "8 2 13 11 15 9 6 4 1 7 12 14 10 16 3 5",
+//   "quadvertix": { "2335": [] },
+//   "straight": { "3670": [] },
+//   "arc": { "2663": [] },
+//   "quadline": { "2216": [] },
+//   "duplicates": { }
+// },
+// temp1[0].quadvertix.key()
 
 // add shared lengths into master index
 function generateSharedLengths(index) {
   // console.log(`generating lengths ${order}, ${style}`);
+  let idx = Object.values(index);
   styles.forEach(style => {
-    const lengths = index.map(i => Object.keys(i[style])[0]);
+    const lengths = idx.map(i => Object.keys(i[style])[0]);
     let output = {};
     for (let i=0; i < lengths.length; i++) {
       let len = lengths[i];
-      let matches = index.filter(i => Object.keys(i[style])[0] == len);
-      let match = matches.map(m => index.indexOf(m) + 1);
+      let matches = idx.filter(i => Object.keys(i[style])[0] == len);
+      let match = matches.map(m => idx.indexOf(m) + 1);
       output[len] = match;
     };
     // add shared lengths into index
-    for(let j=0; j < index.length; j++) {
+    for(let j in index) {
       let x = index[j][style];
       let l = Object.keys(x)[0];
       x[l] = output[l];
@@ -80,26 +76,29 @@ function generateSharedLengths(index) {
   });
   return index;
 }
-// let indexSharedLengths = generateSharedLengths(emptyIndex);
-// console.log(indexSharedLengths);
+let indexSharedLengths = generateSharedLengths(emptyIndex);
+console.log(indexSharedLengths);
 
 
 
+
+// BROKEN ATM BUT WILL BE OVERWRITTEN WITH SVG2PNG STUFF IN FILTERS
 
 // add deletable info into index
 function generateDeletables(index) {
-  let tmp = [];
+  let tmp = {};
+  let tmp2 = {};
   for (let i=0; i< deletables.length; i++) {
     let match = [...deletables[i].matchAll(/(\d+,?\s?\d*,?\s?\d*)\s(.*)\s(\d+)/g)][0];
     let dupls = match[1].split(",");
     let duplicates = dupls.map(d => parseInt(d));
     let kind = match[2];
     let keeper = match[3];
-    tmp[keeper-1] = {
-      "type": kind,
-      "list": duplicates
-    };
+    console.log(keeper, kind, duplicates);
+    let tmp3 = duplicates.forEach(d => { tmp2[d] = kind });
+    tmp[keeper] = tmp3;
   }
+  console.log(tmp);
   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   // current similarities are based on quadvertix style only 
   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -107,11 +106,11 @@ function generateDeletables(index) {
     if(tmp[j]) {
       let xs = tmp[j].list;
       let t = tmp[j].type;
-      index[j].similarities.ids = xs;
-      index[j].similarities.type = t;
+      index[j].duplicates.ids = xs;
+      index[j].duplicates.type = t;
     } else {
-      index[j].similarities.ids = "";
-      index[j].similarities.type = "";
+      index[j].duplicates.ids = "";
+      index[j].duplicates.type = "";
     }
   }
   return index;
@@ -174,11 +173,9 @@ const svgToPng = (svgText) => {
     if (!svgText.match(/xmlns=\"/mi)){
       svgText = svgText.replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ');  
     }
-    // add colors for stroke and fill
     svgText = svgText.replace('<svg ','<svg fill="none" stroke="black" '); 
-    // add rotation
-    svgText = svgText.replace('<svg ','<svg transform="rotate(180)" '); 
-    // initialise canvas
+    // svgText = svgText.replace('<svg ','<svg transform="rotate(180)" '); 
+
     let canvas = document.createElement("canvas");
     canvas.width = 200; canvas.height = 200;
     const ctx = canvas.getContext("2d");
@@ -194,6 +191,15 @@ const svgToPng = (svgText) => {
     img.src = url;  // load the image
   });
 };
+
+// svgToPng(svgStringsQuadVertix4[834]).then((data)=>{ 
+//       // console.log(`<img src="${data}">`) 
+//       document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
+//     });
+// svgToPng(svgStringsQuadVertix4[837]).then((data)=>{ 
+//       // console.log(`<img src="${data}">`) 
+//       document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
+//     });
 
 
 
@@ -214,13 +220,14 @@ function generateQuadVertixPNGs() {
 
 
 function printAllPNGs(file) {
-  for (let i in file) {
+  // for (let i in file) {
+  for (let i=1; i<=880; i++) {
     document.body.insertAdjacentHTML("beforeend", `<img class="png-${i}" src="${file[i]}">`);
   }
 }
-printAllPNGs(quadVertix4PNGs);
-printAllPNGs(quadVertix4PNGsROTATED90);
-printAllPNGs(quadVertix4PNGsROTATED180);
+// printAllPNGs(quadVertix4PNGs);
+// printAllPNGs(quadVertix4PNGsROTATED90);
+// printAllPNGs(quadVertix4PNGsROTATED180);
 // printAllPNGs("quadVertix4PNGsROTATED");
 
 

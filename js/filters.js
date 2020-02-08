@@ -70,7 +70,9 @@ function compareSVGs() {
     // console.log(tail);
     // console.log(tail[0]);
 
-    // console.log(quadVertix4PNGs[head]);
+    console.log(quadVertix4PNGs[833]);
+    console.log(quadVertix4PNGs[836]);
+    console.log(quadVertix4PNGs[833] === quadVertix4PNGs[836]);
     // console.log(quadVertix4PNGs[tail[0]]);
     // console.log(quadVertix4PNGs[tail[1]]);
     // console.log(quadVertix4PNGs[tail[2]]);
@@ -79,11 +81,13 @@ function compareSVGs() {
     // console.log(quadVertix4PNGs[head] === quadVertix4PNGs[tail[2]]);
 
     let boolList = {};
+    boolList[head] = true;
     tail.map(t => 
       boolList[t] = quadVertix4PNGs[head] === quadVertix4PNGs[t] 
                 // ||  quadVertix4PNGs[head] === quadVertix4PNGsROTATED90[t] 
                 // ||  quadVertix4PNGs[head] === quadVertix4PNGsROTATED180[t]
     );
+    
     console.log(boolList);
 
     // const png = pngsQuadVertix4[d - 1];
@@ -110,7 +114,7 @@ function compareSVGs() {
 }
 
 // window.onload = () => { compareSVGs() }
-compareSVGs();
+// compareSVGs();
 
 
 
