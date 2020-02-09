@@ -52,6 +52,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] progress bar (loading) for animate
 - [ ] give option of inputting numbers of squares
 - [ ] clean up unused stuff
+- [ ] add day/night mode
 
 
 ## URGENT

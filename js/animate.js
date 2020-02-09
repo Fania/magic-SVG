@@ -35,6 +35,14 @@ noAnimate.addEventListener("change", () => {
 // //   stroke-dashoffset: 1857;
 // // }
 // // #num-1 .lines { animation: dash 3.714s ease-in-out alternate infinite; }
+// mainStyles, extra_colour_styles
+
+
+// #num-1 .lines {
+//   stroke-dasharray: 1857;
+//   stroke-dashoffset: 1857;
+// }
+// #num-1 .lines { animation: dash 3.714s ease-in-out alternate infinite; }
 // const stylesheet = document.styleSheets[0];
 // const rules = stylesheet.cssRules;
 
