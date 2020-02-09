@@ -87,6 +87,19 @@ input[type="color"] {
   background: var(--backColour);
   font-size: 0.95em;
 }
+input[type="text"] {
+  cursor: text;
+  background: #aaa;
+}
+input[type="text"]:focus {
+  background: white;
+}
+input[type="text"].current {
+  background: white;
+}
+input[type="text"].current:disabled {
+  background: #666;
+}
 input[type="checkbox"] {
   width: 25px;
   height: 20px;
@@ -94,6 +107,8 @@ input[type="checkbox"] {
 }
 .userInput {
   margin: 1em 2em;
+  display: flex;
+  flex-direction: column;
 }
 .userInput label input[type="text"]#values {
   width: 70%;
@@ -119,6 +134,7 @@ input:disabled, select:disabled {
   background: #666;
   border-color: #666;
   /* display: none; */
+  cursor: default;
 }
 input:disabled ~ span, select:disabled ~ span {
   color: #666;
@@ -175,6 +191,7 @@ input:disabled ~ span, select:disabled ~ span {
 .svgGrid.filter svg {
   margin-bottom: 0;
 }
+.svgGrid.search p,
 .svgGrid.filter svg + p {
   margin: 0 0 3em 0;
   font-size: 3em;
@@ -250,6 +267,7 @@ footer img {
     height: 200px;
   }
 
+  .search .order-x, .search .order-xt,
   .single .order-x, .single .order-xt {
     width: calc(95vw / 3);
     height: calc(95vw / 3);
@@ -279,6 +297,7 @@ footer img {
   .svgGrid.filter div {
     margin: 0 2em;
   }
+  .svgGrid.search p,
   .svgGrid.filter svg + p {
     font-size: 1em;
   }
@@ -296,6 +315,7 @@ footer img {
 
 @media screen and (min-width: 800px) {
 
+  .search .order-x, .search .order-xt,
   .single .order-x, .single .order-xt {
     width: calc(95vw / 5);
     height: calc(95vw / 5);

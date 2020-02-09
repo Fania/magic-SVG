@@ -28,8 +28,8 @@ function updateMenuStates() {
     ? orderOptions.disabled=false : orderOptions.disabled=true;
   type==="orderGroups" || type==="filterGroups"
     ? values.disabled=true : values.disabled=false;
-  // type==="orderGroups" || type==="filterGroups"
-  //   ? comparison.disabled=true : comparison.disabled=false;
+  type==="orderGroups" || type==="filterGroups"
+    ? search.disabled=true : search.disabled=false;
   // type==="singleInput" ? svgGrid.classList.add("single") 
   //   : svgGrid.classList.remove("single");
   let state = padding.checked ? "add" : "remove";
@@ -46,10 +46,21 @@ mypageType.forEach(type => {
 
 
 // update when user inputs manual magic square numbers
-settings.addEventListener("submit", () => {
-  load("singleInput");
+// settings.addEventListener("submit", () => {
+//   load("singleInput");
+//   event.preventDefault();
+// });
+values.addEventListener("keyup", () => {
+  if (event.keyCode === 13) { load("singleInput") }  // enter
   event.preventDefault();
 });
+search.addEventListener("keyup", () => {
+  if (event.keyCode === 13) { load("singleInput") }  // enter
+  event.preventDefault();
+});
+
+
+
 
 
 padding.addEventListener("change", () => {

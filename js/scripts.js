@@ -69,6 +69,7 @@ function load(pageType) {
                             square.id));
     }
     svgGrid.classList.remove("filter");
+    svgGrid.classList.remove("search");
     svgGrid.classList.remove("single");
   } // end orderGroups
 
@@ -90,12 +91,13 @@ function load(pageType) {
         <div>
           ${prepareSVG(style,coords,square.id)}
           ${prepareSVG("numbers",coords,square.id)}
-          <p>#${square.id}: ${square.nums}</p>
+          <p><strong>#${square.id}:</strong> ${square.nums}</p>
         </div>
       `;
       svgGrid.insertAdjacentHTML("beforeend", text);
     }
     svgGrid.classList.add("filter");
+    svgGrid.classList.remove("search");
     svgGrid.classList.remove("single");
   } // end filterGroups
 
@@ -103,25 +105,59 @@ function load(pageType) {
 
 
   if (pageType === "singleInput") {
-    const valuesString = document.getElementById("values");
-    const valuesArray = valuesString.value.split(" ").map(Number);
-    if (errorChecks(valuesArray)) {
-      errorMsg.innerHTML = errorChecks(valuesArray)[1];
-      // call other input checks with 'valuesArray' here
-    } else {
-      const size = Math.sqrt(valuesArray.length);
-      magicConstant(size,valuesArray);
-      const coordsObject = getCoords(size,valuesArray);
-      drawSquare(prepareSVG("numbers",coordsObject,1));
-      drawSquare(prepareSVG("straight",coordsObject,2));
-      drawSquare(prepareSVG("quadvertix",coordsObject,3));
-      drawSquare(prepareSVG("quadline",coordsObject,4));
-      drawSquare(prepareSVG("arc",coordsObject,5));
-      svgGrid.classList.add("single");
+    if (!event || event.target.id === "values") {
+      const valuesString = document.getElementById("values");
+      const valuesArray = valuesString.value.split(" ").map(Number);
+      if (errorChecks(valuesArray)) {
+        errorMsg.innerHTML = errorChecks(valuesArray)[1];
+        // call other input checks with 'valuesArray' here
+      } else {
+        const size = Math.sqrt(valuesArray.length);
+        magicConstant(size,valuesArray);
+        const coordsObject = getCoords(size,valuesArray);
+        drawSquare(prepareSVG("numbers",coordsObject,1));
+        drawSquare(prepareSVG("straight",coordsObject,2));
+        drawSquare(prepareSVG("quadvertix",coordsObject,3));
+        drawSquare(prepareSVG("quadline",coordsObject,4));
+        drawSquare(prepareSVG("arc",coordsObject,5));
+        svgGrid.classList.add("single");
+        svgGrid.classList.remove("search");
+        svgGrid.classList.remove("filter");
+        values.classList.add("current");
+        search.classList.remove("current");
+      }
+    }
+    if (event && event.target.id === "search") {
+      // console.log(`searched for ${search.value}`);
+      const squaresString = document.getElementById("search");
+      const squaresArray = squaresString.value.split(",").map(Number);
+      // console.log(squaresArray);
+      for (let i in squaresArray) {
+        let square = squaresArray[i];
+        let valuesArray = index[square - 1]["nums"].split(" ").map(Number);
+        // drawSquare(prepareSVG(style,getCoords(order,valuesArray),square));
+        const size = Math.sqrt(valuesArray.length);
+        magicConstant(size,valuesArray);
+        const coordsObject = getCoords(size,valuesArray);
+        let text = `
+          <div>
+            ${prepareSVG("numbers",coordsObject,square)}
+            ${prepareSVG("straight",coordsObject,square)}
+            ${prepareSVG("quadvertix",coordsObject,square)}
+            ${prepareSVG("quadline",coordsObject,square)}
+            ${prepareSVG("arc",coordsObject,square)}
+            <p><strong>#${square}</strong>: ${valuesArray}</p>
+          </div>
+        `;
+        svgGrid.insertAdjacentHTML("beforeend", text);
+      }
+      svgGrid.classList.add("search");
       svgGrid.classList.remove("filter");
+      svgGrid.classList.remove("single");
+      values.classList.remove("current");
+      search.classList.add("current");
     }
   } // end singleInput
-
 
 
   updateColours();
