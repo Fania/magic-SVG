@@ -123,10 +123,13 @@ function compareSVGs() {
     // console.log(head);
     // console.log(tail);
 
+
+
+
     let boolList = {};
     boolList[head] = true;
 
-    // IMAGEDIFF.MIN.JS SOLUTION
+    // IMAGEDIFF.MIN.JS SOLUTION ... INCOMPLETE ???
     // let ImageA = new Image();
     // ImageA.src = getPNGData(head);
     // tail.map(t => {
@@ -140,12 +143,12 @@ function compareSVGs() {
     //   };
     //   ImageA.onload = onImagesLoaded;
     //   ImageB.onload = onImagesLoaded;
-    // });
+    // });  // tail loop
 
 
     
 
-    // REMBRANDT SOLUTION
+    // REMBRANDT SOLUTION ... SLOW ???
     tail.map(t => {
       const rembrandt = new Rembrandt({
         imageA: getPNGData(head),
@@ -164,7 +167,7 @@ function compareSVGs() {
 
 
 
-    console.log(boolList);
+    // console.log(boolList);
     confirmedDuplicates.push(boolList);
 
 
@@ -178,4 +181,7 @@ function compareSVGs() {
 // window.onload = () => { compareSVGs() }
 // compareSVGs();
 console.log( compareSVGs() );
+
+
+
 
