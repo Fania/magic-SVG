@@ -146,7 +146,7 @@ function compareSVGs(style) {
   return confirmedDuplicates;
 }
 
-console.log( compareSVGs("quadvertix") );
+// console.log( compareSVGs("quadvertix") );
 
 
 
