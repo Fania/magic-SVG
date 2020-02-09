@@ -88,17 +88,17 @@ const svgToPng = (svgText) => {
 
 
 // const source = squareOrder[order];
-let index = index4new;
-let style = "quadvertix";
+// let index = index4new;
+// let style = "quadvertix";
 
-const withDups = index.filter( i => 
-  i[style][Object.keys(i[style])[0]].length > 1 );  // 845
+// const withDups = index.filter( i => 
+//   i[style][Object.keys(i[style])[0]].length > 1 );  // 845
 // console.log(withDups);
 
 
 
-const getPNGData = (n) => {
-  return index4new.filter(i => i.id === n)[0]["quadvertix"]["png"]
+const getPNGData = (n,s) => {
+  return index4new.filter(i => i.id === n)[0][s]["png"]
 };
 
 
@@ -110,49 +110,29 @@ const getPNGData = (n) => {
 // https://rsmbl.github.io/Resemble.js/
 
 
-function compareSVGs() {
+function compareSVGs(style) {
 
   let confirmedDuplicates = [];
 
-  withDups.forEach( (wd) => {
-    const dups = wd[style][Object.keys(wd[style])[0]];
-    console.log(`processing items: ${dups}`);
-
-    const head = dups.slice(0,1)[0];
-    const tail = dups.slice(1);
+  // withDups.forEach( (wd) => {
+  index4new.forEach( (idx) => {
+    const dups = idx[style][Object.keys(idx[style])[0]];
+    // console.log(`processing items: ${dups}`);
+    const self = idx.id;
+    // const head = dups.slice(0,1)[0];
+    // const tail = dups.slice(1);
     // console.log(head);
     // console.log(tail);
 
-
-
-
     let boolList = {};
-    boolList[head] = true;
+    boolList[self] = "self";
 
-    // IMAGEDIFF.MIN.JS SOLUTION ... INCOMPLETE ???
-    // let ImageA = new Image();
-    // ImageA.src = getPNGData(head);
-    // tail.map(t => {
-    //   let ImageB = new Image();
-    //   ImageB.src = getPNGData(t);
-    //   let loadedImages = 0;
-    //   let onImagesLoaded =  function () {
-    //     loadedImages++;
-    //     if(loadedImages != 2){ return }
-    //     boolList[t] = imagediff.equal(ImageA, ImageB, 0);
-    //   };
-    //   ImageA.onload = onImagesLoaded;
-    //   ImageB.onload = onImagesLoaded;
-    // });  // tail loop
-
-
-    
 
     // REMBRANDT SOLUTION ... SLOW ???
-    tail.map(t => {
+    dups.map(d => {
       const rembrandt = new Rembrandt({
-        imageA: getPNGData(head),
-        imageB: getPNGData(t),
+        imageA: getPNGData(self,style),
+        imageB: getPNGData(d,style),
         thresholdType: Rembrandt.THRESHOLD_PERCENT,
         maxThreshold: 0.01,
         maxDelta: 0.02,
@@ -161,9 +141,9 @@ function compareSVGs() {
         compositionMaskColor: Rembrandt.Color.RED
       })
       rembrandt.compare()
-        .then(function (result) { boolList[t] = result.passed })
+        .then(function (result) { boolList[d] = result.passed })
         .catch((e) => { console.error(e) })
-    });  // tail loop
+    });  // dups loop
 
 
 
@@ -173,14 +153,12 @@ function compareSVGs() {
 
 
 
-  });  // withDups loop
+  });  // index4new loop
 
   return confirmedDuplicates;
 }
 
-// window.onload = () => { compareSVGs() }
-// compareSVGs();
-console.log( compareSVGs() );
+console.log( compareSVGs("quadvertix") );
 
 
 

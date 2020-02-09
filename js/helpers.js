@@ -58,7 +58,8 @@ function generateSharedLengths(index) {
     for(let j in index) {
       let x = index[j][style];
       let l = Object.keys(x)[0];
-      x[l] = output[l];
+      x[l] = output[l].filter(o => o !== (parseInt(j)+1));  // remove self
+      // x[l] = output[l];
     }
   });
   return index;
