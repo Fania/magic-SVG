@@ -105,7 +105,7 @@ function load(pageType) {
 
 
   if (pageType === "singleInput") {
-    if (!event || event.target.id === "values") {
+    if (event.type === "change" || event.target.id === "values") {
       const valuesString = document.getElementById("values");
       const valuesArray = valuesString.value.split(" ").map(Number);
       if (errorChecks(valuesArray)) {
