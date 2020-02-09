@@ -106,6 +106,8 @@ const getPNGData = (n) => {
 
 
 // https://github.com/HumbleSoftware/js-imagediff
+// https://github.com/imgly/rembrandt
+// https://rsmbl.github.io/Resemble.js/
 
 
 function compareSVGs() {
@@ -124,51 +126,51 @@ function compareSVGs() {
     let boolList = {};
     boolList[head] = true;
 
-    let ImageA = new Image();
-    ImageA.src = getPNGData(head);
+    // IMAGEDIFF.MIN.JS SOLUTION
+    // let ImageA = new Image();
+    // ImageA.src = getPNGData(head);
+    // tail.map(t => {
+    //   let ImageB = new Image();
+    //   ImageB.src = getPNGData(t);
+    //   let loadedImages = 0;
+    //   let onImagesLoaded =  function () {
+    //     loadedImages++;
+    //     if(loadedImages != 2){ return }
+    //     boolList[t] = imagediff.equal(ImageA, ImageB, 0);
+    //   };
+    //   ImageA.onload = onImagesLoaded;
+    //   ImageB.onload = onImagesLoaded;
+    // });
+
+
     
-    // let isEqual = imagediff.equal(ImageA, ImageB , 0);
-    // console.log("isEqual", isEqual);
 
-
+    // REMBRANDT SOLUTION
     tail.map(t => {
-      let ImageB = new Image();
-      ImageB.src = getPNGData(t);
-      let loadedImages = 0;
-      let onImagesLoaded =  function () {
-        loadedImages++;
-        if(loadedImages != 2){ return }
-        // console.log( imagediff.equal(ImageA, ImageB, 0) );
-        boolList[t] = imagediff.equal(ImageA, ImageB, 0);
-      };
-      // Set the onLoad callback of the images
-      ImageA.onload = onImagesLoaded;
-      ImageB.onload = onImagesLoaded;
-      // boolList[t] = getPNGData(head) === getPNGData(t);
-    });
-    
+      const rembrandt = new Rembrandt({
+        imageA: getPNGData(head),
+        imageB: getPNGData(t),
+        thresholdType: Rembrandt.THRESHOLD_PERCENT,
+        maxThreshold: 0.01,
+        maxDelta: 0.02,
+        maxOffset: 0,
+        renderComposition: false,
+        compositionMaskColor: Rembrandt.Color.RED
+      })
+      rembrandt.compare()
+        .then(function (result) { boolList[t] = result.passed })
+        .catch((e) => { console.error(e) })
+    });  // tail loop
+
+
+
     console.log(boolList);
     confirmedDuplicates.push(boolList);
 
-    
-
-    // console.log(getPNGData(head));
-    // console.log(getPNGData(tail[0]));
-
-    // let boolList = {};
-    // boolList[head] = true;
-    // tail.map(t =>
-    //   boolList[t] = getPNGData(head) === getPNGData(t) 
-    //             // ||  quadVertix4PNGs[head] === quadVertix4PNGsROTATED90[t] 
-    //             // ||  quadVertix4PNGs[head] === quadVertix4PNGsROTATED180[t]
-    // );
-    
-    // console.log(boolList);
 
 
 
-
-  });
+  });  // withDups loop
 
   return confirmedDuplicates;
 }
