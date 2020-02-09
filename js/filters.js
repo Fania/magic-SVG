@@ -88,139 +88,92 @@ const svgToPng = (svgText) => {
 
 
 // const source = squareOrder[order];
-// let index = index4new;
-// let style = "quadvertix";
+let index = index4new;
+let style = "quadvertix";
 
-// console.log([...index]);
-
-// const withDups = Object.values(index).filter( i => 
-//   i[style][Object.keys(i[style])[0]].length > 1
-// );
+const withDups = index.filter( i => 
+  i[style][Object.keys(i[style])[0]].length > 1 );  // 845
 // console.log(withDups);
 
 
-// function getDups(index) {
 
-
-
-// }
-
-
+const getPNGData = (n) => {
+  return index4new.filter(i => i.id === n)[0]["quadvertix"]["png"]
+};
 
 
 
 
+
+// https://github.com/HumbleSoftware/js-imagediff
 
 
 function compareSVGs() {
 
   let confirmedDuplicates = [];
 
-  withDups.forEach( (i) => {
-    const dups = i[style][Object.keys(i[style])[0]];
+  withDups.forEach( (wd) => {
+    const dups = wd[style][Object.keys(wd[style])[0]];
     console.log(`processing items: ${dups}`);
 
     const head = dups.slice(0,1)[0];
     const tail = dups.slice(1);
     // console.log(head);
     // console.log(tail);
-    // console.log(tail[0]);
-
-    // console.log(quadVertix4PNGs[833]);
-    // console.log(quadVertix4PNGs[836]);
-    // console.log(quadVertix4PNGs[833] === quadVertix4PNGs[836]);
-    // console.log(quadVertix4PNGs[tail[0]]);
-    // console.log(quadVertix4PNGs[tail[1]]);
-    // console.log(quadVertix4PNGs[tail[2]]);
-    // console.log(quadVertix4PNGs[head] === quadVertix4PNGs[tail[0]]);
-    // console.log(quadVertix4PNGs[head] === quadVertix4PNGs[tail[1]]);
-    // console.log(quadVertix4PNGs[head] === quadVertix4PNGs[tail[2]]);
 
     let boolList = {};
     boolList[head] = true;
-    tail.map(t => 
-      boolList[t] = quadVertix4PNGs[head] === quadVertix4PNGs[t] 
-                // ||  quadVertix4PNGs[head] === quadVertix4PNGsROTATED90[t] 
-                // ||  quadVertix4PNGs[head] === quadVertix4PNGsROTATED180[t]
-    );
+
+    let ImageA = new Image();
+    ImageA.src = getPNGData(head);
+    
+    // let isEqual = imagediff.equal(ImageA, ImageB , 0);
+    // console.log("isEqual", isEqual);
+
+
+    tail.map(t => {
+      let ImageB = new Image();
+      ImageB.src = getPNGData(t);
+      let loadedImages = 0;
+      let onImagesLoaded =  function () {
+        loadedImages++;
+        if(loadedImages != 2){ return }
+        // console.log( imagediff.equal(ImageA, ImageB, 0) );
+        boolList[t] = imagediff.equal(ImageA, ImageB, 0);
+      };
+      // Set the onLoad callback of the images
+      ImageA.onload = onImagesLoaded;
+      ImageB.onload = onImagesLoaded;
+      // boolList[t] = getPNGData(head) === getPNGData(t);
+    });
     
     console.log(boolList);
+    confirmedDuplicates.push(boolList);
 
-    // const png = pngsQuadVertix4[d - 1];
-    // const check = (next) => {
-    //   pngsQuadVertix4[dups.head - 1] === pngsQuadVertix4[currentValue -1];
-    // };
-    // dups.reduce(reducer);
-    // console.log(dups.reduce(reducer));
-    // console.log(dups.map(reducer));
+    
+
+    // console.log(getPNGData(head));
+    // console.log(getPNGData(tail[0]));
+
+    // let boolList = {};
+    // boolList[head] = true;
+    // tail.map(t =>
+    //   boolList[t] = getPNGData(head) === getPNGData(t) 
+    //             // ||  quadVertix4PNGs[head] === quadVertix4PNGsROTATED90[t] 
+    //             // ||  quadVertix4PNGs[head] === quadVertix4PNGsROTATED180[t]
+    // );
+    
+    // console.log(boolList);
 
 
-    // const array1 = [1, 2, 3, 4];
-    // const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    // // 1 + 2 + 3 + 4
-    // console.log(array1.reduce(reducer));
-    // // expected output: 10
-    // // 5 + 1 + 2 + 3 + 4
-    // console.log(array1.reduce(reducer, 5));
-    // // expected output: 15
 
 
   });
 
+  return confirmedDuplicates;
 }
 
 // window.onload = () => { compareSVGs() }
 // compareSVGs();
+console.log( compareSVGs() );
 
-
-
-
-
-
-
-
-// const svgToStyledPng = (svgText, margin, fill) => {
-//   return new Promise(function(resolve, reject) {
-//     // needs a namespace
-//     if (!svgText.match(/xmlns=\"/mi)){
-//       svgText = svgText.replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ');  
-//     }
-//     // figure out the height and width from svg text
-//     const heightMatch = svgText.match(/height=\"(\d+)/m);
-//     const height = heightMatch && heightMatch[1] ? parseInt(heightMatch[1],10) : 200;
-//     const widthMatch = svgText.match(/width=\"(\d+)/m);
-//     const width = widthMatch && widthMatch[1] ? parseInt(widthMatch[1],10) : 200;
-//     margin = margin || 0;
-    
-//     let canvas = document.createElement("canvas");
-//     canvas.width = height + margin * 2;
-//     canvas.height = width + margin * 2;
-//     const ctx = canvas.getContext("2d");
-    
-//     const svg = new Blob([svgText], {type: "image/svg+xml;charset=utf-8"});
-//     const domUrl = window.URL || window.webkitURL || window;
-//     const url = domUrl.createObjectURL(svg);
-//     const img = document.createElement("img");
-    
-//     img.onload = function() {
-//       ctx.drawImage(img, margin, margin);
-//       if (fill) {
-//         const styled = document.createElement("canvas");
-//         styled.width = canvas.width;
-//         styled.height = canvas.height;
-//         const styledCtx = styled.getContext("2d");
-//         styledCtx.save();
-//         styledCtx.fillStyle = fill;   
-//         styledCtx.fillRect(0,0,canvas.width,canvas.height);
-//         styledCtx.strokeRect(0,0,canvas.width,canvas.height);
-//         styledCtx.restore();
-//         styledCtx.drawImage(canvas,0,0);
-//         canvas = styled;
-//       }
-//       domUrl.revokeObjectURL(url);
-//       // now we can resolve the promise, passing the base64 url
-//       resolve(canvas.toDataURL());
-//     };
-//     img.src = url;  // load the image
-//   });
-// };
