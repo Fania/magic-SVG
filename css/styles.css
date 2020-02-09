@@ -185,9 +185,6 @@ input:disabled ~ span, select:disabled ~ span {
   flex-wrap: wrap;
 }
 
-.svgGrid.filter {
-  /* position: relative; */
-}
 .svgGrid.filter svg {
   margin-bottom: 0;
 }
