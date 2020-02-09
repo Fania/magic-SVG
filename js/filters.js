@@ -114,19 +114,12 @@ function compareSVGs(style) {
 
   let confirmedDuplicates = [];
 
-  // withDups.forEach( (wd) => {
   index4new.forEach( (idx) => {
     const dups = idx[style][Object.keys(idx[style])[0]];
-    // console.log(`processing items: ${dups}`);
     const self = idx.id;
-    // const head = dups.slice(0,1)[0];
-    // const tail = dups.slice(1);
-    // console.log(head);
-    // console.log(tail);
 
     let boolList = {};
     boolList[self] = "self";
-
 
     // REMBRANDT SOLUTION ... SLOW ???
     dups.map(d => {
@@ -145,13 +138,8 @@ function compareSVGs(style) {
         .catch((e) => { console.error(e) })
     });  // dups loop
 
-
-
     // console.log(boolList);
     confirmedDuplicates.push(boolList);
-
-
-
 
   });  // index4new loop
 
