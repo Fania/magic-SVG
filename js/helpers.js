@@ -132,11 +132,13 @@ function generatePNGs(index) {
 function showAllPNGs(style) {
   for (let i in index4new) {
     document.body.insertAdjacentHTML("beforeend", 
-      `<img class="png-${i}" src="${index4new[i][style]["png"]}">`);
+      `<img class="png-${i}" width="200" height="200" src="${index4new[i][style]["png"]}">`);
   }
 }
-showAllPNGs("quadvertix");
+// showAllPNGs("quadvertix");
 // showAllPNGs("straight");
+// showAllPNGs("arc");  // broken ??
+// showAllPNGs("quadline");
 
 
 

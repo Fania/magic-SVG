@@ -49,46 +49,37 @@ function displayDetails(num) {
 const svgToPng = (svgText) => {
   // console.log(svgText);
   return new Promise(function(resolve, reject) {
-    svgText = svgText.replace('<svg ','<svg fill="none" stroke="black" '); 
-    // svgText = svgText.replace('<svg ','<svg width="200" height="200" '); 
+    svgText = svgText.replace('<svg ',`<svg fill='none' stroke='white' `); 
     // svgText = svgText.replace('<svg ','<svg transform="rotate(180)" '); 
-    // console.log(svgText);
-    // needs a namespace
-    if (!svgText.match(/xmlns=\"/mi)){
+    if (!svgText.match(/xmlns=\"/mi)){  // needs a namespace
       svgText = svgText.replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ');  
     }
-    // console.log(svgText);
-
-    let canvas = document.createElement("canvas");
-    canvas.width = 306; canvas.height = 306;
-    // let svgElem = new DOMParser().parseFromString(svgText, 'text/html').body.firstChild;
-    // console.log(svgElem);
-    // let bbox = svgElem.getBBox();
-    // console.log(bbox.width, bbox.height);
-    // canvas.width = bbox.width;
-    // canvas.height = bbox.height;
-    const ctx = canvas.getContext("2d");
-    const svg = new Blob([svgText], {type: "image/svg+xml;charset=utf-8"});
+    let svgdoc = new DOMParser().parseFromString(svgText, 'text/html');
+    let svgelem = svgdoc.body.firstChild;
+    let svgSize = svgelem.viewBox.baseVal;
+    const myImg = document.createElement("img");
+    const mySvg = new Blob([svgText], {type: "image/svg+xml;charset=utf-8"});
     const domUrl = window.URL || window.webkitURL || window;
-    const url = domUrl.createObjectURL(svg);
-    const img = document.createElement("img");
-    img.onload = function() {
-      ctx.drawImage(img,0,0);
+    const url = domUrl.createObjectURL(mySvg);
+    let canvas = document.createElement("canvas");
+    canvas.width = svgSize.width;
+    canvas.height = svgSize.height;
+    const ctx = canvas.getContext("2d");
+    myImg.onload = function() {
+      ctx.drawImage(myImg,0,0);
       domUrl.revokeObjectURL(url);
       resolve(canvas.toDataURL());  // base64 url
     };
-    img.src = url;  // load the image
+    myImg.src = url;  // load the image
   });
 };
 
-// svgToPng(index4new["1"]).then((data)=>{ 
-//       // console.log(`<img src="${data}">`) 
-//       document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
-//     });
-// svgToPng(svgStringsQuadVertix4[837]).then((data)=>{ 
-//       // console.log(`<img src="${data}">`) 
-//       document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
-//     });
+
+// let testsvg = "<svg id='num-880' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-880' class='lines' d='M 300,200 Q 100,300 200,0 Q 0,100 0,0 Q 200,100 100,200 Q 300,300 100,100 Q 300,0 0,300 Q 200,200 200,300 Q 0,200 300,100 Q 100,0 300,200 '/></svg>";
+// svgToPng(testsvg).then((data)=>{ 
+//   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
+// });
+
 
 
 
