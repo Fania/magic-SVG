@@ -5,10 +5,10 @@ const styles = ["quadvertix", "straight", "arc", "quadline"];
 
 
 // STEP 1
-// create index with lengths per style
+// create master index
 function generateInitialIndex(order) {
   const source = squareOrder[order];
-  let output = `{`;
+  let output = `[`;
   let lengths = {};
   for (let i=0; i < source.length; i++) {
     let valuesArray = source[i].split(" ").map(Number);
@@ -20,19 +20,19 @@ function generateInitialIndex(order) {
       lengths[styles[j]] = len;
     }
     let txt = `
-    "${i + 1}": {
+    {
+      "id": ${i + 1},
       "numbers": { "string": "${source[i]}", "array": [${valuesArray}] },
       "quadvertix": { "${lengths.quadvertix}": [] },
       "straight": { "${lengths.straight}": [] },
       "arc": { "${lengths.arc}": [] },
-      "quadline": { "${lengths.quadline}": [] },
-      "duplicates": { }
+      "quadline": { "${lengths.quadline}": [] }
     }${ (i!==(source.length -1)) ? "," : "" }`;
     // duplicates: { "id": "type", "id": "type", ... }
     output += txt;
   }
   output += `
-  }`;
+  ]`;
   return JSON.parse(output);
 }
 // let emptyIndex = generateInitialIndex(4);
@@ -46,17 +46,14 @@ function generateInitialIndex(order) {
 // STEP 2
 // add shared lengths into master index
 function generateSharedLengths(index) {
-  // console.log(`generating lengths ${order}, ${style}`);
-  let idx = Object.values(index);
   styles.forEach(style => {
-    const lengths = idx.map(i => Object.keys(i[style])[0]);
+    const lengths = index.map(i => Object.keys(i[style])[0]);
     let output = {};
-    for (let i=0; i < lengths.length; i++) {
-      let len = lengths[i];
-      let matches = idx.filter(i => Object.keys(i[style])[0] == len);
-      let match = matches.map(m => idx.indexOf(m) + 1);
-      output[len] = match;
-    };
+    lengths.forEach(len => {
+      let matches = index.filter(i => Object.keys(i[style])[0] == len);
+      let matchList = matches.map(m => m.id);
+      output[len] = matchList;
+    });
     // add shared lengths into index
     for(let j in index) {
       let x = index[j][style];
@@ -75,7 +72,7 @@ function generateSharedLengths(index) {
 
 
 // STEP 3
-// indexSharedLengths -> add SVG data
+// add SVG data into master index
 function generateSVGs(index) {
   for (let idx in index) {
     let numberString = index[idx]["numbers"]["string"];
@@ -83,9 +80,8 @@ function generateSVGs(index) {
     let order = Math.sqrt(valuesArray.length);
     index[idx]["numbers"]["svg"] = prepareSVG("numbers",getCoords(order,valuesArray),idx);
     styles.forEach(style => {
-      // let style = index[idx][s];
-      let svg = prepareSVG(style,getCoords(order,valuesArray),idx);
-      index[idx][style]["svg"] = svg;
+      let mysvg = prepareSVG(style,getCoords(order,valuesArray),idx);
+      index[idx][style]["svg"] = mysvg;
     });
   }
   return index;
@@ -103,9 +99,11 @@ function generateSVGs(index) {
 function generatePNGs(index) {
   for (let i in index) {
     styles.forEach(s => {
-      svgToPng(index[i][s]["svg"]).then((data)=>{
-        index[i][s]["png"] = data;
-      });
+      if(s!=="arc") {
+        svgToPng(index[i][s]["svg"]).then((data)=>{
+          index[i][s]["png"] = data;
+        });
+      }
     });
   }
   return index;
@@ -115,7 +113,8 @@ function generatePNGs(index) {
 
 
 
-// GENERATE NEW INDEX IN ONE COMMAND
+
+// GENERATE NEW INDEX HERE IN ONE COMMAND
 // let final = generatePNGs( 
 //               generateSVGs(
 //                 generateSharedLengths(
@@ -137,22 +136,7 @@ function showAllPNGs(style) {
 }
 // showAllPNGs("quadvertix");
 // showAllPNGs("straight");
-// showAllPNGs("arc");  // broken ??
 // showAllPNGs("quadline");
-
-
-
-
-function printAllPNGs(file) {
-  // for (let i in file) {
-  for (let i=1; i<=880; i++) {
-    document.body.insertAdjacentHTML("beforeend", `<img class="png-${i}" src="${file[i]}">`);
-  }
-}
-// printAllPNGs(quadVertix4PNGs);
-// printAllPNGs(quadVertix4PNGsROTATED90);
-// printAllPNGs(quadVertix4PNGsROTATED180);
-// printAllPNGs("quadVertix4PNGsROTATED");
 
 
 

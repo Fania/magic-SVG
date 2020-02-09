@@ -88,14 +88,22 @@ const svgToPng = (svgText) => {
 
 
 // const source = squareOrder[order];
-let index = index4;
-let style = "quadvertix";
+// let index = index4new;
+// let style = "quadvertix";
 
-const withDups = index.filter( i => i[style][Object.keys(i[style])[0]].length > 1 );
+// console.log([...index]);
+
+// const withDups = Object.values(index).filter( i => 
+//   i[style][Object.keys(i[style])[0]].length > 1
+// );
 // console.log(withDups);
 
 
+// function getDups(index) {
 
+
+
+// }
 
 
 
