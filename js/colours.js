@@ -100,15 +100,16 @@ function getDigitalRoot(n) {
 
 
 
-night.addEventListener("click", toggleDayNight);
-day.addEventListener("click", toggleDayNight);
+night.addEventListener("click", () => toggleDayNight(true) );
+day.addEventListener("click", () => toggleDayNight(false) );
 
-function toggleDayNight() {
-  console.log("toggled DayNightMode");
+function toggleDayNight(dark) {
   night.classList.toggle("active");
   day.classList.toggle("active");
-  document.body.classList.toggle("dayMode");
-  // document.body.style.background = "white";
   settings.classList.toggle("dayMode");
   document.querySelector("footer").classList.toggle("dayMode");
+  backColour.value = dark ? "#222222" : "#ffffff";
+  strokeColour.value = dark ? "#ffffff" : "#000000";
+  textColour.value = dark ? "#ffffff" : "#000000";
+  updateColours();
 }

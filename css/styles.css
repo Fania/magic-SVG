@@ -265,7 +265,7 @@ footer.dayMode #night.active::before {
   font-weight: 900;
   color: black;
 }
-body.dayMode,
+/* body.dayMode,
 body.dayMode svg {
   background: white !important;
   color: black !important;
@@ -273,7 +273,7 @@ body.dayMode svg {
 }
 body.dayMode svg text {
   fill: black !important;
-}
+} */
 footer.dayMode,
 #settings.dayMode {
   background: #ccc;
