@@ -11,6 +11,7 @@ function updateMenuStates() {
   type==="orderGroups" && style==="numbers" || type==="singleInput"
     ? textColour.disabled=false : textColour.disabled=true;
   type==="orderGroups" && style==="arc" || type==="singleInput" 
+    || type==="filterGroups" 
     ? padding.disabled=true : padding.disabled=false;
   // type==="filterGroups"
   //   ? lenFilter.disabled=false : lenFilter.disabled=true;
@@ -32,6 +33,7 @@ function updateMenuStates() {
     ? search.disabled=true : search.disabled=false;
   // type==="singleInput" ? svgGrid.classList.add("single") 
   //   : svgGrid.classList.remove("single");
+  if(type==="singleInput" || type==="filterGroups" ) padding.checked=true;
   let state = padding.checked ? "add" : "remove";
   changePadding(state);
 }

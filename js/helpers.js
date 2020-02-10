@@ -112,6 +112,8 @@ function generatePNGs(index) {
 // let indexPNGs = generatePNGs(indexSVGs);
 // console.log(indexPNGs);
 
+// let indexPNGs = generatePNGs(indexSVGs);
+// console.log(indexPNGs);
 
 
 

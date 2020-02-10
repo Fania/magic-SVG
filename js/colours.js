@@ -97,3 +97,18 @@ function getDigitalRoot(n) {
 //   console.log("colours");
 //   startAnimatingAll(true);
 // } 
+
+
+
+night.addEventListener("click", toggleDayNight);
+day.addEventListener("click", toggleDayNight);
+
+function toggleDayNight() {
+  console.log("toggled DayNightMode");
+  night.classList.toggle("active");
+  day.classList.toggle("active");
+  document.body.classList.toggle("dayMode");
+  // document.body.style.background = "white";
+  settings.classList.toggle("dayMode");
+  document.querySelector("footer").classList.toggle("dayMode");
+}
