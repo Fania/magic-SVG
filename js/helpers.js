@@ -98,16 +98,19 @@ function generateSVGs(index) {
 // STEP 4
 // add in png data to master index
 function generatePNGs(index) {
+  // let pngIndex = [];
   for (let i in index) {
     styles.forEach(s => {
       if(s!=="arc") {
         svgToPng(index[i][s]["svg"]).then((data)=>{
           index[i][s]["png"] = data;
+          // pngIndex[i][s]["png"] = data;
         });
       }
     });
   }
   return index;
+  // return pngIndex;
 }
 // let indexPNGs = generatePNGs(indexSVGs);
 // console.log(indexPNGs);
@@ -123,6 +126,12 @@ function generatePNGs(index) {
 //                 generateSharedLengths(
 //                   generateInitialIndex(4)
 //                 )
+//               )
+//             );
+// console.log(final);
+// let final = generatePNGs( 
+//               generateSVGs(
+//                 generateInitialIndex(4)
 //               )
 //             );
 // console.log(final);
