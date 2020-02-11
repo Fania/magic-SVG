@@ -14,6 +14,7 @@ Use code from the [magic square checker](https://github.com/DaveEveritt/magic-sq
 - [ ] remove duplicate spaces
 - [ ] fix errors caused by strings without a single space separating numbers
 - [ ] use Frénicle's rules to normalise each square (see below)
+- [ ] if contains '0' `arr.map(x => x + 1)`
 
 Frénicle established two simple rules to determine the [standard position](http://recmath.org/Magic%20Squares/transform.htm#Normalized%20position%20&%20Magic%20Lines) or order 4 squares, which can be used for any order:
 
