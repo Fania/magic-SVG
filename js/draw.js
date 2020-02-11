@@ -1,7 +1,7 @@
 "use strict";
 
 
-let sizeInc = 100; // scale (line weight hack) 100 is optimal
+const sizeInc = 100; // scale (line weight hack) 100 is optimal
 
 
 function drawSquare(text) {
@@ -21,12 +21,13 @@ function getSize(coordsObject) {
 function createNumberSVGs(coordsObject, id) {
   // console.log(`preparing number matrix svg for square ${counter}`);
   let texts;
-  let w = getSize(coordsObject) * sizeInc;
+  let s = getSize(coordsObject);
+  let w = s * sizeInc;
   for (let a in coordsObject) {
     texts += `<text x='${coordsObject[a][0] * 100}' y='${coordsObject[a][1] * 100}'>${a.padStart(2, '0')}</text>`;
   }
   // 0 -50 380 370 for order 4
-  return `<svg id='num-${id}' class='order-xt pad' viewbox='${0} ${-50} ${w-sizeInc+50+30} ${w-sizeInc+50+20}'>${texts}</svg>`;
+  return `<svg id='numbers-${s}-${id}' class='order-xt pad' viewbox='${0} ${-50} ${w-sizeInc+50+30} ${w-sizeInc+50+20}'>${texts}</svg>`;
 }
 
 
@@ -35,21 +36,22 @@ function createNumberSVGs(coordsObject, id) {
 
 function createPolyline(coordsObject, id) {
   // console.log(`preparing straight polyline svg for square ${counter}`);
-  let w = getSize(coordsObject) * sizeInc;
+  let s = getSize(coordsObject);
+  let w = s * sizeInc;
   let coords = "M";
   for (let i in coordsObject) {
     coords += `${coordsObject[i][0] * sizeInc},${coordsObject[i][1] * sizeInc} `;
   }
   coords += `${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;
   // return `<svg id="num-${num+1}" class="order-x pad" viewbox="${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}"><polyline id="square-${counter}" class="lines" points="${coords}"/></svg>`;
-  return `<svg id='num-${id}' class='order-x pad' viewbox='${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}'><path id='square-${id}' class='lines' d='${coords}'/></svg>`;
+  return `<svg id='straight-${s}-${id}' class='order-x pad' viewbox='${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}'><path id='square-${id}' class='lines' d='${coords}'/></svg>`;
 }
 
 
 function createQuadraticCurveVertices(coordsObject, id) {
   // console.log(`preparing quadratic curve on vertices svg for square ${counter}`);
-
-  let w = getSize(coordsObject) * sizeInc;
+  let s = getSize(coordsObject);
+  let w = s * sizeInc;
 
   let fstx = coordsObject[1][0] * sizeInc;
   let fsty = coordsObject[1][1] * sizeInc;
@@ -96,13 +98,14 @@ function createQuadraticCurveVertices(coordsObject, id) {
     coords += `Q ${c2x},${c2y} ${m2x},${m2y} `;
   }
 
-  return `<svg id='num-${id}' class='order-x pad' viewbox='${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}'><path id='square-${id}' class='lines' d='${coords}'/></svg>`;
+  return `<svg id='quadvertix-${s}-${id}' class='order-x pad' viewbox='${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}'><path id='square-${id}' class='lines' d='${coords}'/></svg>`;
 }
 
 
 function createQuadraticCurveLines(coordsObject, id) {
   // console.log(`preparing quadratic curve on lines svg for square ${counter}`);
-  let w = getSize(coordsObject) * sizeInc;
+  let s = getSize(coordsObject);
+  let w = s * sizeInc;
   let len = Object.keys(coordsObject).length;
   let coords = `M ${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;
   // for (let a=2; a <= (len - 1); a = a+2) {
@@ -111,13 +114,14 @@ function createQuadraticCurveLines(coordsObject, id) {
   }
   coords += `Q ${coordsObject[len][0] * sizeInc},${coordsObject[len][1] * sizeInc} ${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;  // loop back
 
-  return `<svg id='num-${id}' class='order-x pad' viewbox='${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}'><path id='square-${id}' class='lines' d='${coords}'/></svg>`;
+  return `<svg id='quadline-${s}-${id}' class='order-x pad' viewbox='${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}'><path id='square-${id}' class='lines' d='${coords}'/></svg>`;
 }
 
 
 function createArc(coordsObject, id) {
   // console.log(`preparing arc experiment svg for square ${counter}`);
-  let w = getSize(coordsObject) * sizeInc;
+  let s = getSize(coordsObject);
+  let w = s * sizeInc;
   let coords = `M${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;
   for (let a=2; a <= (Object.keys(coordsObject).length - 1); a = a+2) {
     // https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Arcs
@@ -125,5 +129,5 @@ function createArc(coordsObject, id) {
   }
   coords += `A 10,10 0 1 1 ${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;
   // drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`);
-  return `<svg id='num-${id}' class='order-x' viewbox='${-200} ${-170} ${w-sizeInc+380} ${w-sizeInc+380}'><path id='square-${id}' class='lines arc' d='${coords}'/></svg>`;
+  return `<svg id='arc-${s}-${id}' class='order-x' viewbox='${-200} ${-170} ${w-sizeInc+380} ${w-sizeInc+380}'><path id='square-${id}' class='lines arc' d='${coords}'/></svg>`;
 }

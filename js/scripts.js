@@ -20,11 +20,14 @@ const orderIndex = {
 
 
 function getCurrent(thing) {
+  let size = parseInt(orderOptions[orderOptions.selectedIndex].value);
   switch (thing) {
+    case "index": 
+      return orderIndex[size];
     case "style":
       return styleOptions[styleOptions.selectedIndex].value;
     case "order":
-      return parseInt(orderOptions[orderOptions.selectedIndex].value);
+      return size;
     case "pageType":
       return document.querySelector('input[name="pageType"]:checked').id;
     case "length":
@@ -50,16 +53,13 @@ load(getCurrent("pageType"));  // first page load
 
 
 function load(pageType) {
-  // let tar = event ? event.target.id : "";
-  // console.log(`loading new ${tar.includes("style-options") ? "display style" : tar === "" ? "page for the first time" : "order group"}`);
-  // console.log(`loading ${getCurrent("pageType")()}`);
-
   svgGrid.innerHTML = "";
   constant.innerHTML = "";
 
   const style = getCurrent("style");
   const order = getCurrent("order");
-  const index = orderIndex[order];
+  const index = getCurrent("index");
+
 
 
   if (pageType === "orderGroups") {
@@ -126,16 +126,12 @@ function load(pageType) {
     }
     // SEARCH BY ID
     if (event && event.target.id === "search") {
-      // console.log(`searched for ${search.value}`);
       const squaresString = document.getElementById("search");
       const squaresArray = squaresString.value.split(",").map(Number);
-      console.log(squaresArray);
       for (let i in squaresArray) {
         let square = squaresArray[i];
         let valuesString = index[square - 1]["numbers"]["string"];
         let valuesArray = index[square - 1]["numbers"]["array"];
-        // drawSquare(prepareSVG(style,getCoords(order,valuesArray),square));
-        // const size = Math.sqrt(valuesArray.length);
         magicConstant(order,valuesArray);
         const coordsObject = getCoords(order,valuesArray);
         let text = `

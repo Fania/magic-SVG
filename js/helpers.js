@@ -28,15 +28,12 @@ function generateInitialIndex(order) {
       "arc": { "${lengths.arc}": [] },
       "quadline": { "${lengths.quadline}": [] }
     }${ (i!==(source.length -1)) ? "," : "" }`;
-    // duplicates: { "id": "type", "id": "type", ... }
     output += txt;
   }
   output += `
   ]`;
   return JSON.parse(output);
 }
-// let emptyIndex = generateInitialIndex(4);
-// console.log(emptyIndex);
 
 
 
@@ -59,13 +56,10 @@ function generateSharedLengths(index) {
       let x = index[j][style];
       let l = Object.keys(x)[0];
       x[l] = output[l].filter(o => o !== (parseInt(j)+1));  // remove self
-      // x[l] = output[l];
     }
   });
   return index;
 }
-// let indexSharedLengths = generateSharedLengths(emptyIndex);
-// console.log(indexSharedLengths);
 
 
 
@@ -87,9 +81,6 @@ function generateSVGs(index) {
   }
   return index;
 }
-// let indexSVGs = generateSVGs(indexSharedLengths);
-// console.log(indexSVGs);
-
 
 
 
@@ -112,12 +103,6 @@ function generatePNGs(index) {
   return index;
   // return pngIndex;
 }
-// let indexPNGs = generatePNGs(indexSVGs);
-// console.log(indexPNGs);
-
-// let indexPNGs = generatePNGs(indexSVGs);
-// console.log(indexPNGs);
-
 
 
 // GENERATE NEW INDEX HERE IN ONE COMMAND
@@ -133,18 +118,13 @@ function generatePNGs(index) {
 // WITHOUT PNGS
 // let final = generateSVGs(
 //               generateSharedLengths(
-//                 generateInitialIndex(6)
+//                 generateInitialIndex(3)
 //               )
 //             );
 // console.log(final);
 
-// PNGS ONLY
-// let final = generatePNGs( 
-//               generateSVGs(
-//                 generateInitialIndex(4)
-//               )
-//             );
-// console.log(final);
+// PNGS ONLY ??
+
 
 
 
@@ -163,50 +143,6 @@ function showAllPNGs(style) {
 
 
 
-
-
-
-
-
-
-
-
-
-// BROKEN ATM BUT WILL BE OVERWRITTEN WITH SVG2PNG STUFF IN FILTERS
-
-// add deletable info into index
-function generateDeletables(index) {
-  let tmp = {};
-  let tmp2 = {};
-  for (let i=0; i< deletables.length; i++) {
-    let match = [...deletables[i].matchAll(/(\d+,?\s?\d*,?\s?\d*)\s(.*)\s(\d+)/g)][0];
-    let dupls = match[1].split(",");
-    let duplicates = dupls.map(d => parseInt(d));
-    let kind = match[2];
-    let keeper = match[3];
-    console.log(keeper, kind, duplicates);
-    let tmp3 = duplicates.forEach(d => { tmp2[d] = kind });
-    tmp[keeper] = tmp3;
-  }
-  console.log(tmp);
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  // current similarities are based on quadvertix style only 
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  for (let j=0; j<index.length; j++) {
-    if(tmp[j]) {
-      let xs = tmp[j].list;
-      let t = tmp[j].type;
-      index[j].duplicates.ids = xs;
-      index[j].duplicates.type = t;
-    } else {
-      index[j].duplicates.ids = "";
-      index[j].duplicates.type = "";
-    }
-  }
-  return index;
-}
-// let final = generateDeletables(indexSharedLengths);
-// console.log(final);
 
 
 
@@ -246,3 +182,46 @@ function generateAnimationCSS(index, style, sync) {
 // console.log(generateAnimationCSS(index6, "quadline", false));
 
 
+
+
+
+
+
+
+
+
+// BROKEN ATM BUT WILL BE OVERWRITTEN WITH SVG2PNG STUFF IN FILTERS
+
+// add deletable info into index
+// function generateDeletables(index) {
+//   let tmp = {};
+//   let tmp2 = {};
+//   for (let i=0; i< deletables.length; i++) {
+//     let match = [...deletables[i].matchAll(/(\d+,?\s?\d*,?\s?\d*)\s(.*)\s(\d+)/g)][0];
+//     let dupls = match[1].split(",");
+//     let duplicates = dupls.map(d => parseInt(d));
+//     let kind = match[2];
+//     let keeper = match[3];
+//     console.log(keeper, kind, duplicates);
+//     let tmp3 = duplicates.forEach(d => { tmp2[d] = kind });
+//     tmp[keeper] = tmp3;
+//   }
+//   console.log(tmp);
+//   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//   // current similarities are based on quadvertix style only 
+//   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//   for (let j=0; j<index.length; j++) {
+//     if(tmp[j]) {
+//       let xs = tmp[j].list;
+//       let t = tmp[j].type;
+//       index[j].duplicates.ids = xs;
+//       index[j].duplicates.type = t;
+//     } else {
+//       index[j].duplicates.ids = "";
+//       index[j].duplicates.type = "";
+//     }
+//   }
+//   return index;
+// }
+// let final = generateDeletables(indexSharedLengths);
+// console.log(final);
