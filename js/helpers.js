@@ -153,33 +153,24 @@ function showAllPNGs(style) {
 
 
 
-// to generate animation CSS
-// input: index4, "quadvertix", true
-// generateAnimationCSS(index4, "quadvertix", true)
-function generateAnimationCSS(index, style, sync) {
-  let output = `/* ${style} ${sync ? "lengths" : "speeds"} */`;
+// generate animation CSS
+function generateAnimationCSS(order, style, sync) {
+  let output = `/* Order-${order} ${style} ${sync ? "lengths" : "speeds"} */`;
+  const index = orderIndex[order];
   for (let i=0; i < index.length; i++) {
-    let len = index[i].lens[style];
+    let len = Object.keys(index[i][style])[0];
     let lengths = `
-#num-${i + 1} .lines {
-  stroke-dasharray: ${len};
-  stroke-dashoffset: ${len};
-}`;
+#${style}-${order}-${i + 1} .lines { stroke-dasharray: ${len}; stroke-dashoffset: ${len}; }`;
     let speeds = `
-#num-${i + 1} .lines { animation: dash ${len/1000 * 2}s ease-in-out alternate infinite; }`;
+#${style}-${order}-${i + 1} .lines { animation: dash ${len/1000 * 2}s ease-in-out alternate infinite; }`;
     output += sync ? lengths : speeds;
   }
   return output;
 }
-// generateAnimationCSS(index4, "quadvertix", true);
-// console.log(generateAnimationCSS(index6, "quadvertix", true));
-// console.log(generateAnimationCSS(index6, "quadvertix", false));
-// console.log(generateAnimationCSS(index6, "straight", true));
-// console.log(generateAnimationCSS(index6, "straight", false));
-// console.log(generateAnimationCSS(index6, "arc", true));
-// console.log(generateAnimationCSS(index6, "arc", false));
-// console.log(generateAnimationCSS(index6, "quadline", true));
-// console.log(generateAnimationCSS(index6, "quadline", false));
+// console.log( generateAnimationCSS( 3, "straight", false ) );
+// console.log( generateAnimationCSS( 4, "straight", false ) );
+// console.log( generateAnimationCSS( 5, "straight", false ) );
+// console.log( generateAnimationCSS( 6, "straight", false ) );
 
 
 

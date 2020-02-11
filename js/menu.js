@@ -17,12 +17,12 @@ function updateMenuStates() {
   //   ? lenFilter.disabled=false : lenFilter.disabled=true;
   type==="filterGroups"
     ? lenOptions.disabled=false : lenOptions.disabled=true;
-  type==="filterGroups" || type==="singleInput"
+  type==="filterGroups"
     ? animateOut.disabled=true : animateOut.disabled=false;
-  style==="numbers" || type==="singleInput" 
+  style==="numbers"
     ? animate.disabled=true : animate.disabled=false;
-  type==="singleInput" 
-    ? noAnimate.disabled=true : noAnimate.disabled=false;
+  // type==="singleInput" 
+  //   ? noAnimate.disabled=true : noAnimate.disabled=false;
   type==="orderGroups" || type==="filterGroups"
     ? styleOptions.disabled=false : styleOptions.disabled=true;
   // type==="orderGroups" || type==="filterGroups"
