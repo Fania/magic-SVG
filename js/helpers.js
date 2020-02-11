@@ -129,12 +129,12 @@ function generatePNGs(index) {
 //               )
 //             );
 // console.log(final);
-// let final = generatePNGs( 
-//               generateSVGs(
-//                 generateInitialIndex(4)
-//               )
-//             );
-// console.log(final);
+let final = generatePNGs( 
+              generateSVGs(
+                generateInitialIndex(4)
+              )
+            );
+console.log(final);
 
 
 
