@@ -25,12 +25,14 @@ function updateMenuStates() {
     ? noAnimate.disabled=true : noAnimate.disabled=false;
   type==="orderGroups" || type==="filterGroups"
     ? styleOptions.disabled=false : styleOptions.disabled=true;
-  type==="orderGroups" || type==="filterGroups"
-    ? orderOptions.disabled=false : orderOptions.disabled=true;
+  // type==="orderGroups" || type==="filterGroups"
+  //   ? orderOptions.disabled=false : orderOptions.disabled=true;
   type==="orderGroups" || type==="filterGroups"
     ? values.disabled=true : values.disabled=false;
   type==="orderGroups" || type==="filterGroups"
     ? search.disabled=true : search.disabled=false;
+  // type==="orderGroups" || type==="filterGroups"
+  //   ? searchOrder.disabled=true : searchOrder.disabled=false;
   // type==="singleInput" ? svgGrid.classList.add("single") 
   //   : svgGrid.classList.remove("single");
   if(type==="singleInput" || type==="filterGroups" ) padding.checked=true;

@@ -88,6 +88,9 @@ input[type="color"] {
   background: none;
   font-size: 0.95em;
 }
+input[type="text"]#searchOrder {
+  width: 20px;
+}
 input[type="text"] {
   cursor: text;
   background: #aaa;

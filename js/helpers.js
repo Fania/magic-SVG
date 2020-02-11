@@ -14,7 +14,7 @@ function generateInitialIndex(order) {
     let valuesArray = source[i].split(" ").map(Number);
     for (let j=0; j < styles.length; j++) {
       let coordsObject = getCoords(order,valuesArray);
-      let svgString = prepareSVG(styles[j],coordsObject,i);
+      let svgString = prepareSVG(styles[j],coordsObject,i+1);
       let svg = new DOMParser().parseFromString(svgString, 'text/html');
       let len = Math.ceil(svg.querySelector(".lines").getTotalLength());
       lengths[styles[j]] = len;
@@ -76,12 +76,12 @@ function generateSharedLengths(index) {
 // add SVG data into master index
 function generateSVGs(index) {
   for (let idx in index) {
-    let numberString = index[idx]["numbers"]["string"];
-    let valuesArray = numberString.split(" ").map(Number);
+    let id = parseInt(idx) + 1;
+    let valuesArray = index[idx]["numbers"]["array"];
     let order = Math.sqrt(valuesArray.length);
-    index[idx]["numbers"]["svg"] = prepareSVG("numbers",getCoords(order,valuesArray),idx);
+    index[idx]["numbers"]["svg"] = prepareSVG("numbers",getCoords(order,valuesArray),id);
     styles.forEach(style => {
-      let mysvg = prepareSVG(style,getCoords(order,valuesArray),idx);
+      let mysvg = prepareSVG(style,getCoords(order,valuesArray),id);
       index[idx][style]["svg"] = mysvg;
     });
   }
@@ -129,12 +129,22 @@ function generatePNGs(index) {
 //               )
 //             );
 // console.log(final);
-let final = generatePNGs( 
-              generateSVGs(
-                generateInitialIndex(4)
-              )
-            );
-console.log(final);
+
+// WITHOUT PNGS
+// let final = generateSVGs(
+//               generateSharedLengths(
+//                 generateInitialIndex(6)
+//               )
+//             );
+// console.log(final);
+
+// PNGS ONLY
+// let final = generatePNGs( 
+//               generateSVGs(
+//                 generateInitialIndex(4)
+//               )
+//             );
+// console.log(final);
 
 
 

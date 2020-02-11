@@ -8,11 +8,13 @@ const squareOrder = {
   "5": order5,
   "6": order6
 }
+
+// without png data
 const orderIndex = {
-  "3": index3,
-  "4": index4,
-  "5": index5,
-  "6": index6
+  "3": index3new,
+  "4": index4new,
+  "5": index5new,
+  "6": index6new
 }
 
 
@@ -62,11 +64,7 @@ function load(pageType) {
 
   if (pageType === "orderGroups") {
     for (let i in index) {
-      let square = index[i];
-      let valuesArray = square.nums.split(" ").map(Number);
-      drawSquare(prepareSVG(style,
-                            getCoords(order,valuesArray),
-                            square.id));
+      drawSquare(index[i][style]["svg"]);
     }
     svgGrid.classList.remove("filter");
     svgGrid.classList.remove("search");
@@ -85,13 +83,11 @@ function load(pageType) {
       Object.keys(i[style])[0] === chosenLength);
     for (let i in allPerChosenLength) {
       let square = allPerChosenLength[i];
-      let valuesArray = square.nums.split(" ").map(Number);
-      let coords = getCoords(order,valuesArray);
       let text = `
         <div>
-          ${prepareSVG(style,coords,square.id)}
-          ${prepareSVG("numbers",coords,square.id)}
-          <p><strong>#${square.id}:</strong> ${square.nums}</p>
+          ${square[style]["svg"]}
+          ${square["numbers"]["svg"]}
+          <p><strong>#${square.id}:</strong> ${square.numbers.string}</p>
         </div>
       `;
       svgGrid.insertAdjacentHTML("beforeend", text);
@@ -105,6 +101,7 @@ function load(pageType) {
 
 
   if (pageType === "singleInput") {
+    // DISPLAY BY NUMBER VALUES
     if (event.type === "change" || event.target.id === "values") {
       const valuesString = document.getElementById("values");
       const valuesArray = valuesString.value.split(" ").map(Number);
@@ -127,18 +124,20 @@ function load(pageType) {
         search.classList.remove("current");
       }
     }
+    // SEARCH BY ID
     if (event && event.target.id === "search") {
       // console.log(`searched for ${search.value}`);
       const squaresString = document.getElementById("search");
       const squaresArray = squaresString.value.split(",").map(Number);
-      // console.log(squaresArray);
+      console.log(squaresArray);
       for (let i in squaresArray) {
         let square = squaresArray[i];
-        let valuesArray = index[square - 1]["nums"].split(" ").map(Number);
+        let valuesString = index[square - 1]["numbers"]["string"];
+        let valuesArray = index[square - 1]["numbers"]["array"];
         // drawSquare(prepareSVG(style,getCoords(order,valuesArray),square));
-        const size = Math.sqrt(valuesArray.length);
-        magicConstant(size,valuesArray);
-        const coordsObject = getCoords(size,valuesArray);
+        // const size = Math.sqrt(valuesArray.length);
+        magicConstant(order,valuesArray);
+        const coordsObject = getCoords(order,valuesArray);
         let text = `
           <div>
             ${prepareSVG("numbers",coordsObject,square)}
@@ -146,7 +145,7 @@ function load(pageType) {
             ${prepareSVG("quadvertix",coordsObject,square)}
             ${prepareSVG("quadline",coordsObject,square)}
             ${prepareSVG("arc",coordsObject,square)}
-            <p><strong>#${square}</strong>: ${valuesArray}</p>
+            <p><strong>#${square}</strong>: ${valuesString}</p>
           </div>
         `;
         svgGrid.insertAdjacentHTML("beforeend", text);
