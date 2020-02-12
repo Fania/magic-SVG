@@ -1,5 +1,14 @@
 "use strict";
 
+
+
+console.log(window.scrollbars);
+console.log(window.scrollbars.visible);
+// window.scrollbars.visible = false;
+
+
+
+
 // see squares folder
 const squareOrder = {
   "3": order3,

@@ -53,8 +53,8 @@
       </label>
       <label for="orderOptions">
         <select id="orderOptions">
-          <option value="3">Order 3</option>
-          <option value="4" selected>Order 4</option>
+          <option value="3" selected>Order 3</option>
+          <option value="4">Order 4</option>
           <!-- <option value="4.0">Order 4 (unique)</option> -->
           <option value="5">Order 5</option>
           <option value="6">Order 6</option>
@@ -102,9 +102,9 @@
     </div> -->
   </fieldset>
   <div class="instructions">
-    <!-- FontAwesome icon from https://fontawesome.com/icons/question-circle?style=solid -->
-    <!-- <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="question-circle" class="svg-inline--fa fa-question-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path></svg> -->
-    <p class="mouseInstructions">Press 's' to hide/show menu. Press 'F11' (win) or 'Ctrl Cmd F' (mac) to toggle fullscreen.</p>
+    <p><span id="info"></span></p>
+    <p><span id="night" class="active"></span><span id="day"></span></p>
+    <!-- <p class="mouseInstructions">Press 's' to hide/show menu. Press 'F11' (win) or 'Ctrl Cmd F' (mac) to toggle fullscreen.</p> -->
     <!-- <p class="touchInstructions">Double Tap to hide/show menu</p> -->
   </div>
 </form>
@@ -115,13 +115,22 @@
 <!-- <canvas id="canvas" width="800" height="400"></canvas> -->
 <div id="pngs" class="hide"></div>
 
+<div id="about" class="hide">
+  <h1>Magic Square Visualisations</h1>
+  <p>This is an art/research project by <a href="https://fania.eu">Fania Raczinski</a> and <a href="https://daveeveritt.org">Dave Everitt</a>.</p>
+  <p>Read more about the <a href="https://cubelife.org/culture.html">culture</a>, <a href="https://cubelife.org/history/">history</a>, and <a href="https://cubelife.org/research.html">theory</a> of magic squares.</p>
+  <p></p>
+  <p></p>
+  <p>Printing is currently optimised for all 880 order 4 squares on one A4 page. This means order 3/5/6 squares will not cover the page evenly.</p>
+  <p>Press 's' to hide/show menu and footer.</p>
+  <p>Press 'F11' (on Windows) or 'Ctrl Cmd F' (on a Mac) to toggle fullscreen.</p>
+</div>
+
 <main id="svgGrid" class="svgGrid"></main>
 
 
 <footer>
-  <p><span id="night" class="active"></span><span id="day"></span>
-    <!-- <i class="far fa-moon"></i><i class="fas fa-moon"></i><i class="far fa-sun"></i><i class="fas fa-sun"></i> -->
-  </p>
+  <!-- <p><span id="night" class="active"></span><span id="day"></span></p> -->
   <p>© <a href="https://fania.eu">Fania Raczinski</a> & <a href="https://daveeveritt.org/art.html">Dave Everitt</a></p>
   <!-- <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" src="imgs/cc.png" /><img alt="Creative Commons Licence" src="imgs/by.png" /><img alt="Creative Commons Licence" style="border-width:0" src="imgs/nc.png" /></a> -->
   <!-- This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a> -->

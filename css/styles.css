@@ -2,6 +2,14 @@ html {
   --backColour: #222222;
   --textColour: #eeeeee;
 }
+
+
+/* hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
 body {
   background: var(--backColour);
   color: var(--textColour);
@@ -13,6 +21,7 @@ body {
   background: #111; 
   padding: 1.5em 0;
   margin-bottom: 2em;
+  /* position: relative; */
 }
 #settings .tabs {
   display: flex;
@@ -60,6 +69,7 @@ body {
 .instructions p {
   margin: 0;
   padding: 0 1em;
+  font-size: 1.5em;
 }
 .instructions svg {
   width: 25px;
@@ -219,14 +229,25 @@ option:focus {
 .hide {
   display: none;
 }
+/* .showAbout {
+  opacity: 0;
+} */
+#about {
+  /* position: absolute; */
+  margin-left: 4em;
+}
+#about a {
+  color: white;
+  margin-left: 0;
+  font-size: 1em;
+}
 
 footer {
   margin-top: 3em;
-  text-align: right;
   background: #111;
   padding: 1em;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 footer a, footer p {
   color: #666;
@@ -245,6 +266,7 @@ footer img {
 } */
 
 
+#info::before,
 #night::before,
 #day::before {
   font-family: "Font Awesome 5 Free"; 
@@ -252,22 +274,33 @@ footer img {
   padding: .5em;
   cursor: pointer;
 }
+#info::before {
+  content: "\f059";
+}
 #night::before {
   content: "\f186";
 }
 #day::before { 
   content: "\f185";
 }
+#info.active::before,
 #day.active::before,
 #night.active::before {
   font-weight: 900;
   color: white;
 }
+.instructions.dayMode #info.active::before,
+.instructions.dayMode #day.active::before,
+.instructions.dayMode #night.active::before {
+  font-weight: 900;
+  color: black;
+}
+/* footer.dayMode #info.active::before,
 footer.dayMode #day.active::before,
 footer.dayMode #night.active::before {
   font-weight: 900;
   color: black;
-}
+} */
 /* body.dayMode,
 body.dayMode svg {
   background: white !important;

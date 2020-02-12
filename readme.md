@@ -48,13 +48,13 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] filters page broken (populateOptions) (use new index only)
 - [x] error message / disable numbers in filterGroups
 - [x] give option of inputting numbers of squares
+- [x] add day/night mode
 - [ ] give choice of print sizes
 - [ ] add about/info page
 - [ ] set fill-opacity/stroke-opacity="0.0" - "1.0"
 - [ ] loop through colour change
 - [ ] progress bar (loading) for animate
 - [ ] clean up unused stuff
-- [ ] add day/night mode
 
 
 ## URGENT

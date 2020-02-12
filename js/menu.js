@@ -113,14 +113,10 @@ document.addEventListener("keydown", event => {
 
 
 // ABOUT INFO
-// const info = document.querySelector(".instructions svg");
-// info.addEventListener("mouseover", () => {
-//   constant.innerHTML = `
-//   <p>
-//     This is work by Fania Raczinski about a long term project by Dave Everitt.
-//   </p>
-//   `;
-// });
-// info.addEventListener("mouseout", () => {
-//   constant.innerHTML = ``;
-// });
+info.addEventListener("click", () => toggleAbout() );
+function toggleAbout() {
+  info.classList.toggle("active");
+  const settingPanels = document.querySelectorAll(".options, .userInput");
+  settingPanels.forEach(panel => panel.classList.toggle("showAbout"));
+  about.classList.toggle("hide");
+}
