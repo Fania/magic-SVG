@@ -118,7 +118,7 @@ function generatePNGs(index) {
 // WITHOUT PNGS
 // let final = generateSVGs(
 //               generateSharedLengths(
-//                 generateInitialIndex(3)
+//                 generateInitialIndex(9)
 //               )
 //             );
 // console.log(final);
@@ -171,6 +171,9 @@ function generateAnimationCSS(order, style, sync) {
 // console.log( generateAnimationCSS( 4, "straight", false ) );
 // console.log( generateAnimationCSS( 5, "straight", false ) );
 // console.log( generateAnimationCSS( 6, "straight", false ) );
+// console.log( generateAnimationCSS( 7, "quadvertix", false ) );
+// console.log( generateAnimationCSS( 8, "quadvertix", false ) );
+// console.log( generateAnimationCSS( 9, "quadvertix", false ) );
 
 
 

@@ -933,3 +933,21 @@
 #quadline-6-25 .lines { animation: dash 18.258s ease-in-out alternate infinite; }
 #quadline-6-26 .lines { animation: dash 14.042s ease-in-out alternate infinite; }
 #quadline-6-27 .lines { animation: dash 14.238s ease-in-out alternate infinite; }
+
+/* Order-7 quadline speeds */
+#quadline-7-1 .lines { animation: dash 21.178s ease-in-out alternate infinite; }
+#quadline-7-2 .lines { animation: dash 24.694s ease-in-out alternate infinite; }
+#quadline-7-3 .lines { animation: dash 26.982s ease-in-out alternate infinite; }
+#quadline-7-4 .lines { animation: dash 27.604s ease-in-out alternate infinite; }
+
+/* Order-8 quadline speeds */
+#quadline-8-1 .lines { animation: dash 36.332s ease-in-out alternate infinite; }
+#quadline-8-2 .lines { animation: dash 38.556s ease-in-out alternate infinite; }
+#quadline-8-3 .lines { animation: dash 32.77s ease-in-out alternate infinite; }
+#quadline-8-4 .lines { animation: dash 42.214s ease-in-out alternate infinite; }
+
+/* Order-9 quadline speeds */
+#quadline-9-1 .lines { animation: dash 39.212s ease-in-out alternate infinite; }
+#quadline-9-2 .lines { animation: dash 52.112s ease-in-out alternate infinite; }
+#quadline-9-3 .lines { animation: dash 25.408s ease-in-out alternate infinite; }
+#quadline-9-4 .lines { animation: dash 46.16s ease-in-out alternate infinite; }

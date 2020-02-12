@@ -933,3 +933,21 @@
 #straight-6-25 .lines { stroke-dasharray: 13759; stroke-dashoffset: 13759; }
 #straight-6-26 .lines { stroke-dasharray: 8551; stroke-dashoffset: 8551; }
 #straight-6-27 .lines { stroke-dasharray: 8642; stroke-dashoffset: 8642; }
+
+/* Order-7 straight lengths */
+#straight-7-1 .lines { stroke-dasharray: 13230; stroke-dashoffset: 13230; }
+#straight-7-2 .lines { stroke-dasharray: 21686; stroke-dashoffset: 21686; }
+#straight-7-3 .lines { stroke-dasharray: 22139; stroke-dashoffset: 22139; }
+#straight-7-4 .lines { stroke-dasharray: 20966; stroke-dashoffset: 20966; }
+
+/* Order-8 straight lengths */
+#straight-8-1 .lines { stroke-dasharray: 24710; stroke-dashoffset: 24710; }
+#straight-8-2 .lines { stroke-dasharray: 24568; stroke-dashoffset: 24568; }
+#straight-8-3 .lines { stroke-dasharray: 18761; stroke-dashoffset: 18761; }
+#straight-8-4 .lines { stroke-dasharray: 30899; stroke-dashoffset: 30899; }
+
+/* Order-9 straight lengths */
+#straight-9-1 .lines { stroke-dasharray: 23404; stroke-dashoffset: 23404; }
+#straight-9-2 .lines { stroke-dasharray: 47012; stroke-dashoffset: 47012; }
+#straight-9-3 .lines { stroke-dasharray: 17124; stroke-dashoffset: 17124; }
+#straight-9-4 .lines { stroke-dasharray: 29323; stroke-dashoffset: 29323; }

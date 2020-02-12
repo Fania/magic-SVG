@@ -933,3 +933,21 @@
 #quadvertix-6-25 .lines { stroke-dasharray: 9160; stroke-dashoffset: 9160; }
 #quadvertix-6-26 .lines { stroke-dasharray: 7054; stroke-dashoffset: 7054; }
 #quadvertix-6-27 .lines { stroke-dasharray: 7100; stroke-dashoffset: 7100; }
+
+/* Order-7 quadvertix lengths */
+#quadvertix-7-1 .lines { stroke-dasharray: 10362; stroke-dashoffset: 10362; }
+#quadvertix-7-2 .lines { stroke-dasharray: 13705; stroke-dashoffset: 13705; }
+#quadvertix-7-3 .lines { stroke-dasharray: 13829; stroke-dashoffset: 13829; }
+#quadvertix-7-4 .lines { stroke-dasharray: 13849; stroke-dashoffset: 13849; }
+
+/* Order-8 quadvertix lengths */
+#quadvertix-8-1 .lines { stroke-dasharray: 18045; stroke-dashoffset: 18045; }
+#quadvertix-8-2 .lines { stroke-dasharray: 19342; stroke-dashoffset: 19342; }
+#quadvertix-8-3 .lines { stroke-dasharray: 16385; stroke-dashoffset: 16385; }
+#quadvertix-8-4 .lines { stroke-dasharray: 21107; stroke-dashoffset: 21107; }
+
+/* Order-9 quadvertix lengths */
+#quadvertix-9-1 .lines { stroke-dasharray: 18807; stroke-dashoffset: 18807; }
+#quadvertix-9-2 .lines { stroke-dasharray: 28654; stroke-dashoffset: 28654; }
+#quadvertix-9-3 .lines { stroke-dasharray: 12575; stroke-dashoffset: 12575; }
+#quadvertix-9-4 .lines { stroke-dasharray: 21710; stroke-dashoffset: 21710; }

@@ -933,3 +933,21 @@
 #arc-6-25 .lines { animation: dash 20.394s ease-in-out alternate infinite; }
 #arc-6-26 .lines { animation: dash 19.04s ease-in-out alternate infinite; }
 #arc-6-27 .lines { animation: dash 19.052s ease-in-out alternate infinite; }
+
+/* Order-7 arc speeds */
+#arc-7-1 .lines { animation: dash 27.49s ease-in-out alternate infinite; }
+#arc-7-2 .lines { animation: dash 35.074s ease-in-out alternate infinite; }
+#arc-7-3 .lines { animation: dash 29.074s ease-in-out alternate infinite; }
+#arc-7-4 .lines { animation: dash 32.262s ease-in-out alternate infinite; }
+
+/* Order-8 arc speeds */
+#arc-8-1 .lines { animation: dash 41.588s ease-in-out alternate infinite; }
+#arc-8-2 .lines { animation: dash 53.706s ease-in-out alternate infinite; }
+#arc-8-3 .lines { animation: dash 45.24s ease-in-out alternate infinite; }
+#arc-8-4 .lines { animation: dash 45.894s ease-in-out alternate infinite; }
+
+/* Order-9 arc speeds */
+#arc-9-1 .lines { animation: dash 48.306s ease-in-out alternate infinite; }
+#arc-9-2 .lines { animation: dash 63.924s ease-in-out alternate infinite; }
+#arc-9-3 .lines { animation: dash 32.736s ease-in-out alternate infinite; }
+#arc-9-4 .lines { animation: dash 49.562s ease-in-out alternate infinite; }
