@@ -933,3 +933,21 @@
 #quadvertix-6-25 .lines { animation: dash 18.32s ease-in-out alternate infinite; }
 #quadvertix-6-26 .lines { animation: dash 14.108s ease-in-out alternate infinite; }
 #quadvertix-6-27 .lines { animation: dash 14.2s ease-in-out alternate infinite; }
+
+/* Order-7 quadvertix speeds */
+#quadvertix-7-1 .lines { animation: dash 20.724s ease-in-out alternate infinite; }
+#quadvertix-7-2 .lines { animation: dash 27.41s ease-in-out alternate infinite; }
+#quadvertix-7-3 .lines { animation: dash 27.658s ease-in-out alternate infinite; }
+#quadvertix-7-4 .lines { animation: dash 27.698s ease-in-out alternate infinite; }
+
+/* Order-8 quadvertix speeds */
+#quadvertix-8-1 .lines { animation: dash 36.09s ease-in-out alternate infinite; }
+#quadvertix-8-2 .lines { animation: dash 38.684s ease-in-out alternate infinite; }
+#quadvertix-8-3 .lines { animation: dash 32.77s ease-in-out alternate infinite; }
+#quadvertix-8-4 .lines { animation: dash 42.214s ease-in-out alternate infinite; }
+
+/* Order-9 quadvertix speeds */
+#quadvertix-9-1 .lines { animation: dash 37.614s ease-in-out alternate infinite; }
+#quadvertix-9-2 .lines { animation: dash 57.308s ease-in-out alternate infinite; }
+#quadvertix-9-3 .lines { animation: dash 25.15s ease-in-out alternate infinite; }
+#quadvertix-9-4 .lines { animation: dash 43.42s ease-in-out alternate infinite; }

@@ -933,3 +933,21 @@
 #straight-6-25 .lines { animation: dash 27.518s ease-in-out alternate infinite; }
 #straight-6-26 .lines { animation: dash 17.102s ease-in-out alternate infinite; }
 #straight-6-27 .lines { animation: dash 17.284s ease-in-out alternate infinite; }
+
+/* Order-7 straight speeds */
+#straight-7-1 .lines { animation: dash 26.46s ease-in-out alternate infinite; }
+#straight-7-2 .lines { animation: dash 43.372s ease-in-out alternate infinite; }
+#straight-7-3 .lines { animation: dash 44.278s ease-in-out alternate infinite; }
+#straight-7-4 .lines { animation: dash 41.932s ease-in-out alternate infinite; }
+
+/* Order-8 straight speeds */
+#straight-8-1 .lines { animation: dash 49.42s ease-in-out alternate infinite; }
+#straight-8-2 .lines { animation: dash 49.136s ease-in-out alternate infinite; }
+#straight-8-3 .lines { animation: dash 37.522s ease-in-out alternate infinite; }
+#straight-8-4 .lines { animation: dash 61.798s ease-in-out alternate infinite; }
+
+/* Order-9 straight speeds */
+#straight-9-1 .lines { animation: dash 46.808s ease-in-out alternate infinite; }
+#straight-9-2 .lines { animation: dash 94.024s ease-in-out alternate infinite; }
+#straight-9-3 .lines { animation: dash 34.248s ease-in-out alternate infinite; }
+#straight-9-4 .lines { animation: dash 58.646s ease-in-out alternate infinite; }

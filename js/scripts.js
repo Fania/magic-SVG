@@ -9,7 +9,10 @@ const squareOrder = {
   "4": order4,
   "4.0": reduced4,
   "5": order5,
-  "6": order6
+  "6": order6,
+  "7": order7,
+  "8": order8,
+  "9": order9
 }
 
 // without png data
@@ -17,7 +20,10 @@ const orderIndex = {
   "3": index3new,
   "4": index4new,
   "5": index5new,
-  "6": index6new
+  "6": index6new,
+  "7": index7new,
+  "8": index8new,
+  "9": index9new
 }
 
 
