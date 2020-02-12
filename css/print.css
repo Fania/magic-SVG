@@ -26,18 +26,22 @@
     --size: calc((100vw - 80px) / 7);
     --marg: calc( ( 100vh - ( var(--size) * 4 ) ) / 2 );
   }
-  /* body.orderGroups.order7 {
-    --size: calc((100vw - 80px) / 7);
-    --marg: calc( ( 100vh - ( var(--size) * 4 ) ) / 2 );
+  body.orderGroups.order7 {
+    --size: calc((100vw - 80px) / 4);
+    --marg: calc( ( 100vh - ( var(--size) * 1 ) ) / 2 );
   }
   body.orderGroups.order8 {
-    --size: calc((100vw - 80px) / 7);
-    --marg: calc( ( 100vh - ( var(--size) * 4 ) ) / 2 );
+    --size: calc((100vw - 80px) / 4);
+    --marg: calc( ( 100vh - ( var(--size) * 1 ) ) / 2 );
   }
   body.orderGroups.order9 {
-    --size: calc((100vw - 80px) / 7);
-    --marg: calc( ( 100vh - ( var(--size) * 4 ) ) / 2 );
-  } */
+    --size: calc((100vw - 80px) / 4);
+    --marg: calc( ( 100vh - ( var(--size) * 1 ) ) / 2 );
+  }
+  body.singleInput.order9 {
+    --size: calc(((100vw - 80px) / 5) * .9);
+    --marg: 40px;
+  }
 
   body { margin: var(--marg) 40px }
   .order-x, .order-xt { width: var(--size); height: var(--size) }
@@ -46,5 +50,10 @@
   .order-x, .order-xt { box-sizing: border-box }
   .order-xt { padding: 2px }
   .pad { padding: 3px }
+
+  .svgGrid.search p,
+  .svgGrid.filter svg + p {
+    font-size: 1em;
+  }
 
 }
