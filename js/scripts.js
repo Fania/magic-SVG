@@ -63,7 +63,7 @@ function load(pageType) {
   const order = getCurrent("order");
   const index = getCurrent("index");
 
-
+  updateBodyClasses(getCurrent("pageType"), getCurrent("order"));
 
   if (pageType === "orderGroups") {
     for (let i in index) {

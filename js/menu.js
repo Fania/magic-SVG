@@ -41,12 +41,15 @@ function updateMenuStates() {
 }
 
 
-const mypageType = document.getElementsByName("pageType");
-mypageType.forEach(type => {
-  type.addEventListener("change", () => {
-    load(type.id);
-  });
-});
+const pageType = document.getElementsByName("pageType");
+pageType.forEach(type => type.addEventListener("change", ()=> load(type.id)));
+
+
+function updateBodyClasses(type, order) {
+  document.body.classList = [];
+  document.body.classList.add(type);
+  document.body.classList.add(`order${order}`);
+}
 
 
 // update when user inputs manual magic square numbers

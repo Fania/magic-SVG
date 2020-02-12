@@ -20,7 +20,7 @@ body {
 #settings { 
   background: #111; 
   padding: 1.5em 0;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   /* position: relative; */
 }
 #settings .tabs {
@@ -389,44 +389,6 @@ footer.dayMode,
   .single .order-x, .single .order-xt {
     width: calc(95vw / 5);
     height: calc(95vw / 5);
-  }
-
-}
-
-@media print {
-
-  html { 
-    /* for all 880 order 4s on one A4 page */
-    --sizeOrder4All: calc((100vw - 80px) / 40);
-    --margOrder4All: calc( ( 100vh - ( var(--sizeOrder4All) * 22 ) ) / 2 );
-    /* for all unique 397 order 4s on one A4 page */
-    /* --sizeOrder4All: calc((100vw - 80px) / 25);
-    --margOrder4All: calc( ( 100vh - ( var(--sizeOrder4All) * 16 ) ) / 2 ); */
-  }
-
-  body {
-    margin: var(--margOrder4All) 40px;
-  }
-
-  #settings {
-    display: none;
-  }
-  .order-x, .order-xt {
-    box-sizing: border-box;
-    width:  var(--sizeOrder4All);
-    height: var(--sizeOrder4All);
-  }
-
-  .order-xt {
-    padding: 2px;
-  }
-
-  .pad {
-    padding: 3px;
-  }
-
-  footer {
-    display: none;
   }
 
 }
