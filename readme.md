@@ -64,6 +64,7 @@ Frénicle established two simple rules to determine the [standard position](http
 
 - [ ] broken filter for order >= 7
 - [ ] check animation for >= order 7
+- [ ] fix print styles for all orders
 
 ## References
 
