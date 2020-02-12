@@ -113,6 +113,6 @@ function toggleDayNight(dark) {
   strokeColour.value = dark ? "#ffffff" : "#000000";
   textColour.value = dark ? "#ffffff" : "#000000";
   const logo = document.querySelector("[alt='logo']");
-  if (!dark) logo.src = "imgs/logo-dark.svg";
+  logo.src = dark ? "imgs/logo.svg" : "imgs/logo-dark.svg";
   updateColours();
 }

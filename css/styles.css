@@ -229,17 +229,26 @@ option:focus {
 .hide {
   display: none;
 }
-/* .showAbout {
-  opacity: 0;
-} */
+
 #about {
-  /* position: absolute; */
-  margin-left: 4em;
+  margin: 4em;
 }
 #about a {
   color: white;
   margin-left: 0;
   font-size: 1em;
+}
+#about h1 {
+  position: relative;
+}
+#about img {
+  filter: invert(1);
+  width: 40px;
+  position: relative;
+  top: 10px;
+}
+#about.dayMode img {
+  filter: invert(0);
 }
 
 footer {
