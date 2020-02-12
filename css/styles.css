@@ -295,21 +295,10 @@ footer img {
   font-weight: 900;
   color: black;
 }
-/* footer.dayMode #info.active::before,
-footer.dayMode #day.active::before,
-footer.dayMode #night.active::before {
-  font-weight: 900;
+#about.dayMode,
+#about.dayMode a {
   color: black;
-} */
-/* body.dayMode,
-body.dayMode svg {
-  background: white !important;
-  color: black !important;
-  stroke: black !important;
 }
-body.dayMode svg text {
-  fill: black !important;
-} */
 footer.dayMode,
 #settings.dayMode {
   background: #ccc;
