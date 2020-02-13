@@ -1,4 +1,4 @@
-const index4new = [
+const index4 = [
   {
     "id": 1,
     "numbers": {
