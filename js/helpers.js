@@ -1,7 +1,7 @@
 "use strict";
 
 
-const styles = ["quadvertix", "straight", "arc", "quadline"];
+const styles = ["quadvertex", "straight", "arc", "quadline"];
 
 
 // STEP 1
@@ -23,7 +23,7 @@ function generateInitialIndex(order) {
     {
       "id": ${i + 1},
       "numbers": { "string": "${source[i]}", "array": [${valuesArray}] },
-      "quadvertix": { "${lengths.quadvertix}": [] },
+      "quadvertex": { "${lengths.quadvertex}": [] },
       "straight": { "${lengths.straight}": [] },
       "arc": { "${lengths.arc}": [] },
       "quadline": { "${lengths.quadline}": [] }
@@ -136,7 +136,7 @@ function showAllPNGs(style) {
       `<img class="png-${i}" width="200" height="200" src="${index4new[i][style]["png"]}">`);
   }
 }
-// showAllPNGs("quadvertix");
+// showAllPNGs("quadvertex");
 // showAllPNGs("straight");
 // showAllPNGs("quadline");
 
@@ -158,22 +158,22 @@ function generateAnimationCSS(order, style, sync) {
   let output = `/* Order-${order} ${style} ${sync ? "lengths" : "speeds"} */`;
   const index = orderIndex[order];
   for (let i=0; i < index.length; i++) {
-    let len = Object.keys(index[i][style])[0];
-    let lengths = `
+    const len = Object.keys(index[i][style])[0];
+    const lengths = `
 #${style}-${order}-${i + 1} .lines { stroke-dasharray: ${len}; stroke-dashoffset: ${len}; }`;
-    let speeds = `
+    const speeds = `
 #${style}-${order}-${i + 1} .lines { animation: dash ${len/1000 * 2}s ease-in-out alternate infinite; }`;
     output += sync ? lengths : speeds;
   }
   return output;
 }
-// console.log( generateAnimationCSS( 3, "straight", false ) );
-// console.log( generateAnimationCSS( 4, "straight", false ) );
-// console.log( generateAnimationCSS( 5, "straight", false ) );
-// console.log( generateAnimationCSS( 6, "straight", false ) );
-// console.log( generateAnimationCSS( 7, "quadvertix", false ) );
-// console.log( generateAnimationCSS( 8, "quadvertix", false ) );
-// console.log( generateAnimationCSS( 9, "quadvertix", false ) );
+// console.log( generateAnimationCSS( 3, "quadvertex", false ) );
+// console.log( generateAnimationCSS( 4, "quadvertex", false ) );
+// console.log( generateAnimationCSS( 5, "quadvertex", false ) );
+// console.log( generateAnimationCSS( 6, "quadvertex", false ) );
+// console.log( generateAnimationCSS( 7, "quadvertex", false ) );
+// console.log( generateAnimationCSS( 8, "quadvertex", false ) );
+// console.log( generateAnimationCSS( 9, "quadvertex", false ) );
 
 
 
@@ -202,7 +202,7 @@ function generateAnimationCSS(order, style, sync) {
 //   }
 //   console.log(tmp);
 //   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//   // current similarities are based on quadvertix style only 
+//   // current similarities are based on quadvertex style only 
 //   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //   for (let j=0; j<index.length; j++) {
 //     if(tmp[j]) {

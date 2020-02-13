@@ -178,7 +178,7 @@ function prepareSVG(style, coordsObject, id) {
   switch(style) {
     case "straight":
       return createPolyline(coordsObject, id);
-    case "quadvertix":
+    case "quadvertex":
       return createQuadraticCurveVertices(coordsObject, id);
     case "quadline":
       return createQuadraticCurveLines(coordsObject, id);

@@ -19,7 +19,7 @@ function drawAllStyles(order, valuesString, id) {
     <div>
       ${prepareSVG("numbers",coordsObject,id)}
       ${prepareSVG("straight",coordsObject,id)}
-      ${prepareSVG("quadvertix",coordsObject,id)}
+      ${prepareSVG("quadvertex",coordsObject,id)}
       ${prepareSVG("quadline",coordsObject,id)}
       ${prepareSVG("arc",coordsObject,id)}
       <p>Order ${order} <strong>#${id}</strong>: ${valuesString}</p>
@@ -117,7 +117,7 @@ function createQuadraticCurveVertices(coordsObject, id) {
     coords += `Q ${c2x},${c2y} ${m2x},${m2y} `;
   }
 
-  return `<svg id='quadvertix-${s}-${id}' class='order-x pad' viewbox='${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}'><path id='square-${id}' class='lines' d='${coords}'/></svg>`;
+  return `<svg id='quadvertex-${s}-${id}' class='order-x pad' viewbox='${-2} ${-2} ${w-sizeInc+4} ${w-sizeInc+4}'><path id='square-${id}' class='lines' d='${coords}'/></svg>`;
 }
 
 

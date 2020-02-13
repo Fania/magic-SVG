@@ -25,7 +25,7 @@ noAnimate.addEventListener("change", () => {
 function startAnimatingAll(sync) {
   const pageType = getCurrent("pageType");
   const styles = pageType === "singleInput" 
-                  ? ["quadvertix", "quadline", "arc", "straight"] 
+                  ? ["quadvertex", "quadline", "arc", "straight"] 
                   : [getCurrent("style")];
   stopAnimatingAll();  // remove old styles  
   styles.forEach(st => {

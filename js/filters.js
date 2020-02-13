@@ -93,7 +93,7 @@ const svgToPng = (svgText) => {
 
 // const source = squareOrder[order];
 // let index = index4new;
-// let style = "quadvertix";
+// let style = "quadvertex";
 
 // const withDups = index.filter( i => 
 //   i[style][Object.keys(i[style])[0]].length > 1 );  // 845
@@ -150,7 +150,7 @@ function compareSVGs(style) {
   return confirmedDuplicates;
 }
 
-// console.log( compareSVGs("quadvertix") );
+// console.log( compareSVGs("quadvertex") );
 
 
 
