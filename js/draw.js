@@ -11,6 +11,25 @@ function drawSquare(text) {
 }
 
 
+function drawAllStyles(order, valuesString, id) {
+  const valuesArray = valuesString.split(" ").map(Number);
+  const coordsObject = getCoords(order,valuesArray);
+  magicConstant(order,valuesArray);
+  let text = `
+    <div>
+      ${prepareSVG("numbers",coordsObject,id)}
+      ${prepareSVG("straight",coordsObject,id)}
+      ${prepareSVG("quadvertix",coordsObject,id)}
+      ${prepareSVG("quadline",coordsObject,id)}
+      ${prepareSVG("arc",coordsObject,id)}
+      <p>Order ${order} <strong>#${id}</strong>: ${valuesString}</p>
+    </div>
+  `;
+  drawSquare(text);
+}
+
+
+
 
 function getSize(coordsObject) {
   return Math.sqrt(Object.keys(coordsObject).length);

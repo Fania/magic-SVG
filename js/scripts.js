@@ -111,20 +111,14 @@ function load(pageType) {
       const valuesArray = valuesString.split(" ").map(Number);
       const size = Math.sqrt(valuesArray.length);
       const source = orderIndex[size];
-      const match = source.filter(idx => idx.numbers.string === valuesString)[0];
+      const match = source.filter(i => i.numbers.string === valuesString)[0];
       const id = match ? match.id : 0;
 
       if (errorChecks(valuesArray)) {
         errorMsg.innerHTML = errorChecks(valuesArray)[1];
         // call other input checks with 'valuesArray' here
       } else {
-        magicConstant(size,valuesArray);
-        const coordsObject = getCoords(size,valuesArray);
-        drawSquare(prepareSVG("numbers",coordsObject,id));
-        drawSquare(prepareSVG("straight",coordsObject,id));
-        drawSquare(prepareSVG("quadvertix",coordsObject,id));
-        drawSquare(prepareSVG("quadline",coordsObject,id));
-        drawSquare(prepareSVG("arc",coordsObject,id));
+        drawAllStyles(size, valuesString, id);
         svgGrid.classList.add("single");
         svgGrid.classList.remove("search", "filter");
         values.classList.add("current");
@@ -133,25 +127,18 @@ function load(pageType) {
     }
     // SEARCH BY ID
     if (event && event.target.id === "search") {
+      errorMsg.innerHTML = "";
       const squaresString = document.getElementById("search");
       const squaresArray = squaresString.value.split(",").map(Number);
       for (let i in squaresArray) {
-        let square = squaresArray[i];
-        let valuesString = index[square - 1]["numbers"]["string"];
-        let valuesArray = index[square - 1]["numbers"]["array"];
-        magicConstant(order,valuesArray);
-        const coordsObject = getCoords(order,valuesArray);
-        let text = `
-          <div>
-            ${prepareSVG("numbers",coordsObject,square)}
-            ${prepareSVG("straight",coordsObject,square)}
-            ${prepareSVG("quadvertix",coordsObject,square)}
-            ${prepareSVG("quadline",coordsObject,square)}
-            ${prepareSVG("arc",coordsObject,square)}
-            <p><strong>#${square}</strong>: ${valuesString}</p>
-          </div>
-        `;
-        drawSquare(text);
+        const size = getCurrent("order");
+        const square = squaresArray[i];
+        if (!index[square - 1]) {
+          errorMsg.innerHTML += `#${square} doesn't exist for order ${size}. `;
+        } else {
+          const valuesString = index[square - 1]["numbers"]["string"];
+          drawAllStyles(size, valuesString, square);
+        }
       }
       svgGrid.classList.add("search");
       svgGrid.classList.remove("filter", "single");

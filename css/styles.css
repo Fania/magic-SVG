@@ -165,8 +165,9 @@ input:disabled ~ span, select:disabled ~ span {
 }
 
 .error {
+  text-align: center;
   width: 80%;
-  margin: 0 5%;
+  margin: 0 auto;
   color: rgb(250, 124, 124)
 }
 
@@ -202,7 +203,13 @@ input:disabled ~ span, select:disabled ~ span {
 .svgGrid.filter svg {
   margin-bottom: 0;
 }
-.svgGrid.search p,
+.svgGrid.single p,
+.svgGrid.search p {
+  margin: 0 0 3em 0;
+  font-size: 3em;
+  color: #555;
+  text-align: center;
+}
 .svgGrid.filter svg + p {
   margin: 0 0 3em 0;
   font-size: 3em;
@@ -368,6 +375,7 @@ footer.dayMode,
   .svgGrid.filter div {
     margin: 0 2em;
   }
+  .svgGrid.single p,
   .svgGrid.search p,
   .svgGrid.filter svg + p {
     font-size: 1em;
