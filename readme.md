@@ -62,6 +62,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] clean up unused stuff
 - [ ] refactor for node ?
 - [ ] not super happy with print styles
+- [ ] check mobile styles (reduce margins)
 
 
 ## URGENT
