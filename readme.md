@@ -53,18 +53,20 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] fix slowness of load due to massive index file
 - [x] add about/info page
 - [x] broken filter for order >= 7
+- [x] fix print styles for all orders
+- [x] check animation for >= order 7
 - [ ] give choice of print sizes
 - [ ] set fill-opacity/stroke-opacity="0.0" - "1.0"
 - [ ] loop through colour change
 - [ ] progress bar (loading) for animate
 - [ ] clean up unused stuff
 - [ ] refactor for node ?
+- [ ] not super happy with print styles
 
 
 ## URGENT
 
-- [ ] check animation for >= order 7
-- [ ] fix print styles for all orders
+
 
 ## References
 
