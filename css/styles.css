@@ -167,7 +167,7 @@ input:disabled ~ span, select:disabled ~ span {
 .error {
   text-align: center;
   width: 80%;
-  margin: 0 auto;
+  margin: 1em auto;
   color: rgb(250, 124, 124)
 }
 

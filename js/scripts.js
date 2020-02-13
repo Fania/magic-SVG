@@ -128,11 +128,11 @@ function load(pageType) {
     // SEARCH BY ID
     if (event && event.target.id === "search") {
       errorMsg.innerHTML = "";
-      const squaresString = document.getElementById("search");
-      const squaresArray = squaresString.value.split(",").map(Number);
-      for (let i in squaresArray) {
+      const inputString = document.getElementById("search");
+      const inputArray = inputString.value.split(",").map(Number);
+      for (let i in inputArray) {
         const size = getCurrent("order");
-        const square = squaresArray[i];
+        const square = inputArray[i];
         if (!index[square - 1]) {
           errorMsg.innerHTML += `#${square} doesn't exist for order ${size}. `;
         } else {
