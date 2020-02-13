@@ -72,12 +72,8 @@ function load(pageType) {
   updateBodyClasses(getCurrent("pageType"), getCurrent("order"));
 
   if (pageType === "orderGroups") {
-    for (let i in index) {
-      drawSquare(index[i][style]["svg"]);
-    }
-    svgGrid.classList.remove("filter");
-    svgGrid.classList.remove("search");
-    svgGrid.classList.remove("single");
+    index.forEach(idx => drawSquare(idx[style]["svg"]));
+    svgGrid.classList.remove("filter", "search", "single");
   } // end orderGroups
 
 
@@ -99,11 +95,10 @@ function load(pageType) {
           <p><strong>#${square.id}:</strong> ${square.numbers.string}</p>
         </div>
       `;
-      svgGrid.insertAdjacentHTML("beforeend", text);
+      drawSquare(text);
     }
     svgGrid.classList.add("filter");
-    svgGrid.classList.remove("search");
-    svgGrid.classList.remove("single");
+    svgGrid.classList.remove("search", "single");
   } // end filterGroups
 
 
@@ -131,8 +126,7 @@ function load(pageType) {
         drawSquare(prepareSVG("quadline",coordsObject,id));
         drawSquare(prepareSVG("arc",coordsObject,id));
         svgGrid.classList.add("single");
-        svgGrid.classList.remove("search");
-        svgGrid.classList.remove("filter");
+        svgGrid.classList.remove("search", "filter");
         values.classList.add("current");
         search.classList.remove("current");
       }
@@ -157,11 +151,10 @@ function load(pageType) {
             <p><strong>#${square}</strong>: ${valuesString}</p>
           </div>
         `;
-        svgGrid.insertAdjacentHTML("beforeend", text);
+        drawSquare(text);
       }
       svgGrid.classList.add("search");
-      svgGrid.classList.remove("filter");
-      svgGrid.classList.remove("single");
+      svgGrid.classList.remove("filter", "single");
       values.classList.remove("current");
       search.classList.add("current");
     }

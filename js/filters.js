@@ -9,8 +9,12 @@ function populateOptions(order,style) {
     const list = [...new Set(allLengths.sort())];
     lenOptions.disabled = false;
     for (let l in list) {
+      // console.log(list[l]);
+      // let rgx = /\d+/;
+      // const match = list[l].match(/\d+/);
       const opt = document.createElement("option");
-      opt.value = list[l].slice(0,4);
+      // opt.value = list[l].slice(0,4);
+      opt.value = list[l].match(/\d+/);
       opt.innerText = list[l];
       lenOptions.appendChild(opt);
     }

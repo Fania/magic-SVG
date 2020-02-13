@@ -208,6 +208,7 @@ input:disabled ~ span, select:disabled ~ span {
   font-size: 3em;
   color: #555;
   text-align: center;
+  max-width: 400px;
 }
 
 #constant {
