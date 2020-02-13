@@ -222,7 +222,7 @@ input:disabled ~ span, select:disabled ~ span {
   color: #555;
   font-size: 1.25em;
   text-align: center;
-  margin: 0;
+  margin: 0 0 2em 0;
 }
 
 

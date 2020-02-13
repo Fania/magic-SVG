@@ -1,16 +1,28 @@
 
 @media print {
 
-  /* html {  */
-    /* for all 880 order 4s on one A4 page */
-    /* --sizeOrder4All: calc((100vw - 80px) / 40); */
-    /* --margOrder4All: calc( ( 100vh - ( var(--sizeOrder4All) * 22 ) ) / 2 ); */
-    /* for all unique 397 order 4s on one A4 page */
-    /* --sizeOrder4All: calc((100vw - 80px) / 25);
-    --margOrder4All: calc( ( 100vh - ( var(--sizeOrder4All) * 16 ) ) / 2 ); */
-  /* } */
+  @page {
+    margin: 0;
+    size: landscape;
+  }
 
-  body.orderGroups.order3 {
+
+  /* h1 { 
+    string-set: doctitle content(); 
+  } */
+  /* @page {
+    @top-right {
+      content: string(doctitle);
+    }
+  } */
+
+
+  /* size = how many columns */
+  /* marg = how many rows */
+
+
+  /* ORDER-GROUPS */
+  body.orderGroups.order3 {  /* 4 */
     --size: calc((100vw - 80px) / 7);
     --marg: calc( ( 100vh - ( var(--size) * 4 ) ) / 2 );
   }
@@ -18,33 +30,49 @@
     --size: calc((100vw - 80px) / 40);
     --marg: calc( ( 100vh - ( var(--size) * 22 ) ) / 2 );
   }
-  body.orderGroups.order5 {
-    --size: calc(((100vw - 80px) / 5) * .85);
+  body.orderGroups.order5 {  /* 23 */
+    --size: calc((100vw - 80px) / 6);
     --marg: calc( ( 100vh - ( var(--size) * 4 ) ) / 2 );
   }
-  body.orderGroups.order6 {
-    --size: calc((100vw - 80px) / 7);
-    --marg: calc( ( 100vh - ( var(--size) * 4 ) ) / 2 );
+  body.orderGroups.order6 {  /* 30 */
+    --size: calc(((100vw - 80px) / 6) * .875);
+    --marg: calc( ( 100vh - ( var(--size) * 5 ) ) / 2 );
   }
-  body.orderGroups.order7 {
+  body.orderGroups.order7 {  /* 4 */
     --size: calc((100vw - 80px) / 4);
     --marg: calc( ( 100vh - ( var(--size) * 1 ) ) / 2 );
   }
-  body.orderGroups.order8 {
+  body.orderGroups.order8 {  /* 4 */
     --size: calc((100vw - 80px) / 4);
     --marg: calc( ( 100vh - ( var(--size) * 1 ) ) / 2 );
   }
-  body.orderGroups.order9 {
+  body.orderGroups.order9 {  /* 4 */
     --size: calc((100vw - 80px) / 4);
     --marg: calc( ( 100vh - ( var(--size) * 1 ) ) / 2 );
   }
-  body.singleInput.order9 {
-    --size: calc(((100vw - 80px) / 5) * .9);
+
+  /* FILTER-GROUPS */
+  body.filterGroups {
+    --size: calc((100vw - 80px) / 6);
     --marg: 40px;
   }
 
+  /* SINGLE-INPUT */
+  body.singleInput {
+    --size: calc(((100vw - 80px) / 5) * .975);
+    /* --marg: calc( ( 100vh - ( var(--size) * 2 ) ) / 2 ); */
+    --marg: 40px;
+  }
+
+
   body { margin: var(--marg) 40px }
   .order-x, .order-xt { width: var(--size); height: var(--size) }
+  body.filterGroups .svgGrid.filter div:nth-child(odd) { margin-right: 6em }
+
+  /* body.singleInput .svgGrid.search div {
+    break-before: page;
+    break-inside: avoid;
+  } */
 
   #settings, footer { display: none }
   .order-x, .order-xt { box-sizing: border-box }
@@ -52,8 +80,16 @@
   .pad { padding: 3px }
 
   .svgGrid.search p,
-  .svgGrid.filter svg + p {
-    font-size: 1em;
-  }
+  .svgGrid.single p,
+  .svgGrid.filter p,
+  .svgGrid.filter svg + p { margin: 1em 0 2em; font-size: 1em }
+
+  /* body.orderGroups .svgGrid::after,
+  body.filterGroups .svgGrid::after,
+  body.singleInput .svgGrid::after {
+    content: "squares.cubelife.org";
+    color: #999;
+    font-size: .5em;
+  } */
 
 }
