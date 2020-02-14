@@ -186,15 +186,15 @@ let testsvg6 = "<svg id='quadvertex-4-69' class='order-x pad' viewbox='-2 -2 304
 // svgToTransPng(testsvg2).then((data)=>{ 
 //   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
 // });
-svgToTransPng(testsvg3).then((data)=>{ 
-  document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
-});
-svgToTransPng(testsvg4).then((data)=>{ 
-  document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
-});
-svgToTransPng(testsvg4, "mirrorLR").then((data)=>{ 
-  document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
-});
+// svgToTransPng(testsvg3).then((data)=>{ 
+//   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
+// });
+// svgToTransPng(testsvg4).then((data)=>{ 
+//   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
+// });
+// svgToTransPng(testsvg4, "mirrorLR").then((data)=>{ 
+//   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
+// });
 // svgToTransPng(testsvg5).then((data)=>{ 
 //   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
 // });
