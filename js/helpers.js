@@ -219,7 +219,7 @@ function generateSimilarities(index,style) {
 }
 
 // console.log( generateSimilarities(index4, "quadvertex") );
-console.log( generateSimilarities(index4mini, "quadvertex") );
+// console.log( generateSimilarities(index4mini, "quadvertex") );
 
 
 function comparePNGs(index, style, i, pngA, pngB) {
