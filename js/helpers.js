@@ -192,48 +192,62 @@ function generateAnimationCSS(order, style, sync) {
 //   ...
 // ]
 function generateSimilarities(index,style) {
-  let similarities = [];
+  const similarities = [];
 
   index.forEach( (idx, i) => {
     const dups = idx[style][Object.keys(idx[style])[0]];
     const self = idx.id;
 
-    let objA = {};
+    const objA = {};
     objA[self] = [];
     similarities[i] = objA;
 
-    let svgA = idx[style].svg;
+    const svgA = idx[style].svg;
     svgToPng(svgA).then( pngA => { 
       
-      // REMBRANDT SOLUTION ... SLOW ???
+      // REMBRANDT SOLUTION ... SLOW
       dups.forEach(d => {
         svgToPng(index[d - 1][style].svg).then( pngB => { 
-          const rembrandt = new Rembrandt({
-            imageA: pngA,
-            imageB: pngB,
-            thresholdType: Rembrandt.THRESHOLD_PERCENT,
-            maxThreshold: 0.01,
-            maxDelta: 0.02,
-            maxOffset: 0,
-            renderComposition: false,
-            compositionMaskColor: Rembrandt.Color.RED
+          comparePNGs(index,style,d,pngA,pngB).then(result => { 
+            similarities[i][self].push(result);
           });
-          rembrandt.compare()
-            .then(function (result) { 
-              let objB = {};
-              objB[d] = result.passed ? "identical" : "TBC";
-              similarities[i][self].push(objB);
-            })
-            .catch((e) => { console.error(e) });
-        }); // end of pngB generation
-      });  // dups loop
-    } ); // end of pngA generation
-  });  // index loop
+        });
+      });
+    });
+  });
   return similarities;
 }
 
 // console.log( generateSimilarities(index4, "quadvertex") );
 console.log( generateSimilarities(index4mini, "quadvertex") );
+
+
+function comparePNGs(index, style, i, pngA, pngB) {
+  return new Promise((resolve, reject) => {
+    const rembrandt = new Rembrandt({
+      imageA: pngA,
+      imageB: pngB,
+      thresholdType: Rembrandt.THRESHOLD_PERCENT,
+      maxThreshold: 0.01,
+      maxDelta: 0.02,
+      maxOffset: 0,
+      renderComposition: false,
+      compositionMaskColor: Rembrandt.Color.RED
+    });
+    rembrandt.compare().then( result => { 
+      const objB = {};
+      if (result.passed) { 
+        objB[i] = "identical";
+      } else {
+        objB[i] = "TBC";
+      }
+      resolve(objB);
+    }).catch((e) => { console.error(e) });
+  });
+}
+
+
+
 
 
 const mini4SimsQuadvertex = [
