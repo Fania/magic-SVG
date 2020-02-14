@@ -182,40 +182,66 @@ function generateAnimationCSS(order, style, sync) {
 
 
 
+// [
+//   { 1: [ { 2: "mirror" },
+//          { 34: "90 rotation" },
+//          { 431: "same" },
+//          ...
+//        ]
+//   },
+//   ...
+// ]
+function generateSimilarities(index,style) {
+  let similarities = [];
+
+  index.forEach( (idx, i) => {
+    const dups = idx[style][Object.keys(idx[style])[0]];
+    const self = idx.id;
+
+    let objA = {};
+    objA[self] = [];
+    similarities[i] = objA;
+
+    let svgA = idx[style].svg;
+    svgToPng(svgA).then( pngA => { 
+      
+      // REMBRANDT SOLUTION ... SLOW ???
+      dups.forEach(d => {
+        svgToPng(index[d - 1][style].svg).then( pngB => { 
+          const rembrandt = new Rembrandt({
+            imageA: pngA,
+            imageB: pngB,
+            thresholdType: Rembrandt.THRESHOLD_PERCENT,
+            maxThreshold: 0.01,
+            maxDelta: 0.02,
+            maxOffset: 0,
+            renderComposition: false,
+            compositionMaskColor: Rembrandt.Color.RED
+          });
+          rembrandt.compare()
+            .then(function (result) { 
+              let objB = {};
+              objB[d] = result.passed ? "identical" : "TBC";
+              similarities[i][self].push(objB);
+            })
+            .catch((e) => { console.error(e) });
+        }); // end of pngB generation
+      });  // dups loop
+    } ); // end of pngA generation
+  });  // index loop
+  return similarities;
+}
+
+// console.log( generateSimilarities(index4, "quadvertex") );
+console.log( generateSimilarities(index4mini, "quadvertex") );
 
 
-// BROKEN ATM BUT WILL BE OVERWRITTEN WITH SVG2PNG STUFF IN FILTERS
+const mini4SimsQuadvertex = [
+  { "1": [ { "2": "identical" } ] },
+  { "2": [ { "1": "identical" } ] },
+  { "3": [ { "4": "TBC" } ] },
+  { "4": [ { "3": "TBC" } ] }
+];
 
-// add deletable info into index
-// function generateDeletables(index) {
-//   let tmp = {};
-//   let tmp2 = {};
-//   for (let i=0; i< deletables.length; i++) {
-//     let match = [...deletables[i].matchAll(/(\d+,?\s?\d*,?\s?\d*)\s(.*)\s(\d+)/g)][0];
-//     let dupls = match[1].split(",");
-//     let duplicates = dupls.map(d => parseInt(d));
-//     let kind = match[2];
-//     let keeper = match[3];
-//     console.log(keeper, kind, duplicates);
-//     let tmp3 = duplicates.forEach(d => { tmp2[d] = kind });
-//     tmp[keeper] = tmp3;
-//   }
-//   console.log(tmp);
-//   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//   // current similarities are based on quadvertex style only 
-//   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//   for (let j=0; j<index.length; j++) {
-//     if(tmp[j]) {
-//       let xs = tmp[j].list;
-//       let t = tmp[j].type;
-//       index[j].duplicates.ids = xs;
-//       index[j].duplicates.type = t;
-//     } else {
-//       index[j].duplicates.ids = "";
-//       index[j].duplicates.type = "";
-//     }
-//   }
-//   return index;
-// }
-// let final = generateDeletables(indexSharedLengths);
-// console.log(final);
+
+

@@ -3,24 +3,7 @@ const index4 = [
     "id": 1,
     "numbers": {
       "string": "1 2 15 16 13 14 3 4 12 7 10 5 8 11 6 9",
-      "array": [
-        1,
-        2,
-        15,
-        16,
-        13,
-        14,
-        3,
-        4,
-        12,
-        7,
-        10,
-        5,
-        8,
-        11,
-        6,
-        9
-      ],
+      "array": [1,2,15,16,13,14,3,4,12,7,10,5,8,11,6,9],
       "svg": "<svg id='numbers-4-1' class='order-xt pad' viewbox='0 -50 380 370'>undefined<text x='0' y='0'>01</text><text x='100' y='0'>02</text><text x='200' y='100'>03</text><text x='300' y='100'>04</text><text x='300' y='200'>05</text><text x='200' y='300'>06</text><text x='100' y='200'>07</text><text x='0' y='300'>08</text><text x='300' y='300'>09</text><text x='200' y='200'>10</text><text x='100' y='300'>11</text><text x='0' y='200'>12</text><text x='0' y='100'>13</text><text x='100' y='100'>14</text><text x='200' y='0'>15</text><text x='300' y='0'>16</text></svg>"
     },
     "quadvertex": {
@@ -32,12 +15,7 @@ const index4 = [
       "svg": "<svg id='straight-4-1' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-1' class='lines' d='M0,0 100,0 200,100 300,100 300,200 200,300 100,200 0,300 300,300 200,200 100,300 0,200 0,100 100,100 200,0 300,0 0,0 '/></svg>"
     },
     "arc": {
-      "2284": [
-        5,
-        91,
-        132,
-        141
-      ],
+      "2284": [5,91,132,141],
       "svg": "<svg id='arc-4-1' class='order-x' viewbox='-200 -170 680 680'><path id='square-1' class='lines arc' d='M0,0 A 10,10 0 1 1 100,0 A 10,10 0 1 1 300,100 A 10,10 0 1 1 200,300 A 10,10 0 1 1 0,300 A 10,10 0 1 1 200,200 A 10,10 0 1 1 0,200 A 10,10 0 1 1 100,100 A 10,10 0 1 1 0,0 '/></svg>"
     },
     "quadline": {
@@ -50,8 +28,7 @@ const index4 = [
     "numbers": {
       "string": "9 11 6 8 4 14 3 13 5 7 10 12 16 2 15 1",
       "array": [
-        9,
-        11,
+        9,11,
         6,
         8,
         4,

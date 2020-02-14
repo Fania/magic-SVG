@@ -3,7 +3,7 @@
 
   @page {
     margin: 0;
-    size: landscape;
+    size: A4 landscape;
   }
 
 
@@ -82,7 +82,11 @@
   .svgGrid.search p,
   .svgGrid.single p,
   .svgGrid.filter p,
-  .svgGrid.filter svg + p { margin: 1em 0 2em; font-size: 1em }
+  .svgGrid.filter svg + p {
+    margin: 1em 0 2em; 
+    font-size: 1em; 
+    /* max-width: 380px;  */
+  }
 
   /* body.orderGroups .svgGrid::after,
   body.filterGroups .svgGrid::after,
