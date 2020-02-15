@@ -35,6 +35,8 @@ body {
 #settings fieldset,
 #settings .tabs fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 #settings .tabs img, 
 #settings .tabs fieldset {
@@ -129,8 +131,11 @@ input[type="checkbox"] {
   flex-direction: column;
 }
 .userInput label input[type="text"]#values,
-.userInput label input[type="number"]#values {
-  width: 70%;
+.userInput label input[type="text"]#search {
+  width: 100%;
+}
+#settings fieldset.userInput {
+  margin: 1em 2em;
 }
 input[type="number"] {
   width: 55px;
@@ -376,7 +381,12 @@ footer.dayMode,
     /* justify-content: space-between; */
     justify-content: flex-end;
   }
-
+  .userInput label input[type="text"]#values {
+    width: 80%;
+  }
+  .userInput label input[type="text"]#search {
+    width: 30%;
+  }
   .svgGrid.filter div {
     margin: 0 2em;
   }
