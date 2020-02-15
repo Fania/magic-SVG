@@ -86,36 +86,7 @@ function generateSVGs(index) {
 
 
 
-// STEP 4
-// add in png data to master index
-function generatePNGs(index) {
-  // let pngIndex = [];
-  for (let i in index) {
-    styles.forEach(s => {
-      if(s!=="arc") {
-        svgToPng(index[i][s]["svg"]).then((data)=>{
-          index[i][s]["png"] = data;
-          // pngIndex[i][s]["png"] = data;
-        });
-      }
-    });
-  }
-  return index;
-  // return pngIndex;
-}
-
-
 // GENERATE NEW INDEX HERE IN ONE COMMAND
-// let final = generatePNGs( 
-//               generateSVGs(
-//                 generateSharedLengths(
-//                   generateInitialIndex(4)
-//                 )
-//               )
-//             );
-// console.log(final);
-
-// WITHOUT PNGS
 // let final = generateSVGs(
 //               generateSharedLengths(
 //                 generateInitialIndex(9)
@@ -123,27 +94,56 @@ function generatePNGs(index) {
 //             );
 // console.log(final);
 
-// PNGS ONLY ??
 
 
 
 
 
 
-function showAllPNGs(style) {
-  for (let i in index4new) {
+// generate separate index for png data
+function generatePNGs(index, transformation, degree) {
+  let pngIndex = [];
+
+  index.forEach(idx => {
+    let current = {};
+    current["id"] = idx.id;
+    ["quadvertex", "quadline", "straight"].forEach( style => {
+      const svgString = idx[style].svg;
+      svgToTransPng(svgString, transformation, degree).then( data => { 
+        current[style] = data.src;
+      });
+    });
+    pngIndex.push( current );
+  });
+  return pngIndex;
+}
+
+// console.log( generatePNGs(index4mini) );
+// console.log( generatePNGs(index4) );
+// console.log( generatePNGs(index4, "rotate", 90) );
+// console.log( generatePNGs(index4, "mirrorLR") );
+
+
+
+
+
+
+
+
+
+
+
+function showAllPNGs(index,style) {
+  for (let i=0; i<10; i++) {
+  // index.forEach( (idx,i) => {
     document.body.insertAdjacentHTML("beforeend", 
-      `<img class="png-${i}" width="200" height="200" src="${index4new[i][style]["png"]}">`);
+      `<img width="200" height="200" src="${index[i][style]}">`);
   }
 }
-// showAllPNGs("quadvertex");
+// showAllPNGs(jpegs4,"quadvertex");
+// showAllPNGs(jpegs4rot90,"quadvertex");
 // showAllPNGs("straight");
 // showAllPNGs("quadline");
-
-
-
-
-
 
 
 
@@ -182,55 +182,17 @@ function generateAnimationCSS(order, style, sync) {
 
 
 
-// [
-//   { 1: [ { 2: "mirror" },
-//          { 34: "90 rotation" },
-//          { 431: "same" },
-//          ...
-//        ]
-//   },
-//   ...
-// ]
-function generateSimilarities(index,style) {
-  const similarities = [];
-
-  index.forEach( (idx, i) => {
-    const dups = idx[style][Object.keys(idx[style])[0]];
-    const self = idx.id;
-
-    const objA = {};
-    objA[self] = [];
-    similarities[i] = objA;
-
-    const svgA = idx[style].svg;
-    svgToPng(svgA).then( pngA => { 
-      
-      // REMBRANDT SOLUTION ... SLOW
-      dups.forEach(d => {
-        svgToPng(index[d - 1][style].svg).then( pngB => { 
-          comparePNGs(index,style,d,pngA,pngB).then(result => { 
-            similarities[i][self].push(result);
-          });
-        });
-      });
-    });
-  });
-  return similarities;
-}
-
-// console.log( generateSimilarities(index4, "quadvertex") );
-// console.log( generateSimilarities(index4mini, "quadvertex") );
 
 
-function comparePNGs(index, style, i, pngA, pngB) {
+function comparePNGs(i, pngA, pngB) {
   return new Promise((resolve, reject) => {
     const rembrandt = new Rembrandt({
       imageA: pngA,
       imageB: pngB,
       thresholdType: Rembrandt.THRESHOLD_PERCENT,
-      maxThreshold: 0.01,
-      maxDelta: 0.02,
-      maxOffset: 0,
+      maxThreshold: 0.20,  // 0.01
+      maxDelta: 0.02,      // 0.02
+      maxOffset: 0,        // 0
       renderComposition: false,
       compositionMaskColor: Rembrandt.Color.RED
     });
@@ -247,15 +209,74 @@ function comparePNGs(index, style, i, pngA, pngB) {
 }
 
 
+// comparePNGs(0,jpegs4[8]["quadvertex"],jpegs4mirrorLR[12]["quadvertex"])
+//   .then(result => console.log(result) );
+// comparePNGs(0,jpegs4[8]["quadvertex"],jpegs4rot90[8]["quadvertex"])
+//   .then(result => console.log(result) );
+// comparePNGs(0,jpegs4[727]["quadvertex"],jpegs4[727]["quadvertex"])
+//   .then(result => console.log(result) );
+
+// document.body.insertAdjacentHTML("beforeend", 
+//   `<img width="200" height="200" src="${jpegs4[8]["quadvertex"]}">`);
+// document.body.insertAdjacentHTML("beforeend", 
+//   `<img width="200" height="200" src="${jpegs4[12]["quadvertex"]}">`);
+// document.body.insertAdjacentHTML("beforeend", 
+//   `<img width="200" height="200" src="${jpegs4mirrorLR[12]["quadvertex"]}">`);
+// document.body.insertAdjacentHTML("beforeend", 
+//   `<img width="200" height="200" src="${jpegs4rot90[0]["quadvertex"]}">`);
+// document.body.insertAdjacentHTML("beforeend", 
+//   `<img width="200" height="200" src="${jpegs4[727]["quadvertex"]}">`);
+// document.body.insertAdjacentHTML("beforeend", 
+//   `<img width="200" height="200" src="${jpegs4rot90[445]["quadvertex"]}">`);
 
 
 
-const mini4SimsQuadvertex = [
-  { "1": [ { "2": "identical" } ] },
-  { "2": [ { "1": "identical" } ] },
-  { "3": [ { "4": "TBC" } ] },
-  { "4": [ { "3": "TBC" } ] }
-];
 
 
+
+function generateSimilaritiesX(order,style) {
+  const index = orderIndex[order];
+  const pngs = orderPNGs[order];
+  const similarities = [];
+  index.forEach( (idx, i) => {
+
+    let current = {};
+    const self = idx.id;
+
+    // ["quadvertex", "quadline", "straight"].forEach( style => {
+
+      const dups = idx[style][Object.keys(idx[style])[0]];
+      const pngA = pngs.find(p => p.id === self)[style];
+      current["id"] = self;
+      current[style] = [];
+
+      // REMBRANDT SOLUTION ... SLOW
+      dups.forEach(d => {
+        const pngB = pngs.find(p => p.id === d)[style];
+        comparePNGs(d,pngA,pngB).then(result => { 
+          current[style].push(result);
+
+          // if(current[style][d] === "TBC") {
+
+          // }
+
+
+
+
+        });
+
+      });
+
+    // });
+
+
+
+    similarities.push(current);
+
+
+  });
+  return similarities;
+}
+
+// console.log( generateSimilaritiesX(4,"quadvertex") );
 

@@ -26,6 +26,16 @@ const orderIndex = {
   "9": index9
 }
 
+// const orderPNGs = {
+//   // "3": pngs3,
+//   "4": pngs4
+//   // "5": pngs5,
+//   // "6": pngs6,
+//   // "7": pngs7,
+//   // "8": pngs8,
+//   // "9": pngs9
+// }
+
 
 
 function getCurrent(thing) {
@@ -111,7 +121,7 @@ function load(pageType) {
       const valuesArray = valuesString.split(" ").map(Number);
       const size = Math.sqrt(valuesArray.length);
       const source = orderIndex[size];
-      const match = source.filter(i => i.numbers.string === valuesString)[0];
+      const match = source.find(i => i.numbers.string === valuesString);
       const id = match ? match.id : 0;
 
       if (errorChecks(valuesArray)) {

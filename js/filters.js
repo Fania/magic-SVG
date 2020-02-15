@@ -139,7 +139,11 @@ const svgToTransPng = (svgText, transformation, degree) => {
     myImg.onload = function() {
       ctx.drawImage(myImg,0,0);
       domUrl.revokeObjectURL(url);
-      resolve(canvas.toDataURL());  // base64 url
+      const data = canvas.toDataURL('image/jpeg', 0.1);
+      const finalImage = document.createElement("img");
+      finalImage.id = svgelem.id;
+      finalImage.src = data;
+      resolve(finalImage);  // base64 url
     };
     myImg.src = url;  // load the image
   });
@@ -166,7 +170,7 @@ let testsvg6 = "<svg id='quadvertex-4-69' class='order-x pad' viewbox='-2 -2 304
 // console.log(testsvg6);
 
 // svgToTransPng(testsvg).then((data)=>{ 
-//   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
+//   document.body.appendChild(data);
 // });
 // svgToTransPng(testsvg, "rotate", 90).then((data)=>{ 
 //   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
@@ -201,4 +205,8 @@ let testsvg6 = "<svg id='quadvertex-4-69' class='order-x pad' viewbox='-2 -2 304
 // svgToTransPng(testsvg6).then((data)=>{ 
 //   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
 // });
+
+
+
+
 
