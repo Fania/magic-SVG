@@ -259,7 +259,9 @@ function generateSimilaritiesX(order,style) {
           if(result[d] === "TBC") {
             const pngC = jpegs4mirrorLR.find(p => p.id === d)[style];
             comparePNGs(d,pngA,pngC).then(result => { 
-              result[d] = "mirrorLR";
+              if(result[d] === "identical") {
+                result[d] = "mirrorLR";
+              }
               current[style].push(result);
             });
           } else {
