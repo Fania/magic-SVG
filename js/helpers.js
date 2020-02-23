@@ -236,7 +236,8 @@ function comparePNGs(i, pngA, pngB) {
 
 function generateSimilaritiesX(order,style) {
   const index = orderIndex[order];
-  const pngs = orderPNGs[order];
+  // const pngs = orderPNGs[order];
+  const pngs = jpegs4;
   const similarities = [];
   index.forEach( (idx, i) => {
 
@@ -254,21 +255,22 @@ function generateSimilaritiesX(order,style) {
       dups.forEach(d => {
         const pngB = pngs.find(p => p.id === d)[style];
         comparePNGs(d,pngA,pngB).then(result => { 
-          current[style].push(result);
 
-          // if(current[style][d] === "TBC") {
-
-          // }
-
-
-
+          if(result[d] === "TBC") {
+            const pngC = jpegs4mirrorLR.find(p => p.id === d)[style];
+            comparePNGs(d,pngA,pngC).then(result => { 
+              result[d] = "mirrorLR";
+              current[style].push(result);
+            });
+          } else {
+            // pngA === pngB
+            current[style].push(result);
+          }
+          // generate each stage individually
 
         });
 
       });
-
-    // });
-
 
 
     similarities.push(current);
