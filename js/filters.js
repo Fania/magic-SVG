@@ -122,19 +122,19 @@ const svgToTransPng = (svgText, transformation, degree) => {
     canvas.height = svgSize.height;
     const ctx = canvas.getContext("2d");
     if(transformation === "rotate") {
-      ctx.translate((svgSize.width)/2,(svgSize.height)/2);
+      ctx.translate((canvas.width)/2,(canvas.height)/2);
       ctx.rotate((Math.PI/180) * degree);
-      ctx.translate(-(svgSize.width)/2,-(svgSize.height)/2);
+      ctx.translate(-(canvas.width)/2,-(canvas.height)/2);
     }
     if(transformation === "mirrorLR") {
-      ctx.translate((svgSize.width)/2,(svgSize.height)/2);
+      ctx.translate((canvas.width)/2,(canvas.height)/2);
       ctx.scale(-1,1);
-      ctx.translate(-(svgSize.width)/2,-(svgSize.height)/2);
+      ctx.translate(-(canvas.width)/2,-(canvas.height)/2);
     }
     if(transformation === "mirrorUD") {
-      ctx.translate((svgSize.width)/2,(svgSize.height)/2);
+      ctx.translate((canvas.width)/2,(canvas.height)/2);
       ctx.scale(1,-1);
-      ctx.translate(-(svgSize.width)/2,-(svgSize.height)/2);
+      ctx.translate(-(canvas.width)/2,-(canvas.height)/2);
     }
     myImg.onload = function() {
       ctx.drawImage(myImg,0,0);
@@ -207,6 +207,75 @@ let testsvg6 = "<svg id='quadvertex-4-69' class='order-x pad' viewbox='-2 -2 304
 // });
 
 
+const b64toBlob = (base64, type = 'application/octet-stream') => 
+  fetch(`data:${type};base64,${base64}`).then(res => res.blob())
 
 
 
+const transformPng = (png, transformation) => {
+  return new Promise((resolve, reject) => {
+    let exifOrientation;
+    switch (transformation) {
+      case "rotate90":
+        exifOrientation = 8; break;
+      case "rotate180":
+        exifOrientation = 3; break;
+      case "rotate-90":
+        exifOrientation = 6; break;
+      case "mirrorLR":
+        exifOrientation = 2; break;
+      case "mirrorUD":
+        exifOrientation = 4; break;
+      case "mirrorLRrotate90":
+        exifOrientation = 7; break;
+      case "mirrorLRrotate-90":
+        exifOrientation = 5; break;
+      default:
+        exifOrientation = 1; break;
+    }
+
+    fetch(png).then(res => res.blob()).then(data => {
+      loadImage(
+        data,
+        img => { resolve(img) },
+        { maxWidth: 600, orientation: exifOrientation }
+      );
+    });
+  });
+};
+
+
+
+
+
+// https://sirv-cdn.sirv.com/website/exif-orientation-values.jpg
+// 1 = 0 degrees – the correct orientation, no adjustment is required.
+// 2 = 0 degrees, mirrored – image has been flipped back-to-front.
+// 3 = 180 degrees – image is upside down.
+// 4 = 180 degrees, mirrored – image is upside down and flipped back-to-front.
+// 5 = 90 degrees – image is on its side.
+// 6 = 90 degrees, mirrored – image is on its side and flipped back-to-front.
+// 7 = 270 degrees – image is on its far side.
+// 8 = 270 degrees, mirrored – image is on its far side and flipped back-to-front.
+
+
+
+let testpng = jpegs4[8].quadvertex;
+// console.log(testpng);
+
+transformPng(testpng).then(data => document.body.appendChild(data));
+transformPng(testpng, "rotate90").then(data => document.body.appendChild(data));
+transformPng(testpng, "mirrorLR").then(data => document.body.appendChild(data));
+// transformPng(testpng).then(data => document.body.appendChild(data));
+// transformPng(testpng, "rotate", 90).then((data)=>{ 
+//   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
+// });
+// transformPng(testpng, "rotate", 180).then((data)=>{ 
+//   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
+// });
+// transformPng(testpng, "rotate", -90).then((data)=>{ 
+//   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
+// });
+// transformPng(testpng, "mirrorLR").then((data)=>{ 
+//   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
+// });

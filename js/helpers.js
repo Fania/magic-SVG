@@ -286,14 +286,14 @@ function generateSimilaritiesX(order,style) {
 }
 
 // console.log( generateSimilaritiesX(4,"quadvertex") );
-console.log( generateSimilaritiesX("4m2","quadvertex") );
+// console.log( generateSimilaritiesX("4m2","quadvertex") );
 
-document.body.insertAdjacentHTML("beforeend", 
-  `<img width="200" height="200" src="${jpegs4[8]["quadvertex"]}">`);
-document.body.insertAdjacentHTML("beforeend", 
-  `<img width="200" height="200" src="${jpegs4[12]["quadvertex"]}">`);
 // document.body.insertAdjacentHTML("beforeend", 
-//   `<img width="200" height="200" src="${jpegs4[i][style]}">`);
+//   `<img width="200" height="200" src="${jpegs4[8]["quadvertex"]}">`);
+// document.body.insertAdjacentHTML("beforeend", 
+//   `<img width="200" height="200" src="${jpegs4[12]["quadvertex"]}">`);
+// // document.body.insertAdjacentHTML("beforeend", 
+// //   `<img width="200" height="200" src="${jpegs4[i][style]}">`);
 
-comparePNGs(0,jpegs4[8]["quadvertex"],jpegs4[12]["quadvertex"]).then(result => { console.log(result) });
-comparePNGs(0,jpegs4[8]["quadvertex"],jpegs4[8]["quadvertex"]).then(result => { console.log(result) });
+// comparePNGs(0,jpegs4[8]["quadvertex"],jpegs4[12]["quadvertex"]).then(result => { console.log(result) });
+// comparePNGs(0,jpegs4[8]["quadvertex"],jpegs4[8]["quadvertex"]).then(result => { console.log(result) });
