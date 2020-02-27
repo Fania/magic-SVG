@@ -190,20 +190,21 @@ function comparePNGs(i, pngA, pngB) {
       imageA: pngA,
       imageB: pngB,
       thresholdType: Rembrandt.THRESHOLD_PERCENT,
-      maxThreshold: 0.20,  // 0.01
+      maxThreshold: 0.01,  // 0.01, 0.20
       maxDelta: 0.02,      // 0.02
       maxOffset: 0,        // 0
       renderComposition: false,
       compositionMaskColor: Rembrandt.Color.RED
     });
     rembrandt.compare().then( result => { 
-      const objB = {};
-      if (result.passed) { 
-        objB[i] = "identical";
-      } else {
-        objB[i] = "TBC";
-      }
-      resolve(objB);
+      // const objB = {};
+      // if (result.passed) { 
+      //   objB[i] = "identical";
+      // } else {
+      //   objB[i] = "TBC";
+      // }
+      // resolve(objB);
+      resolve(result);
     }).catch((e) => { console.error(e) });
   });
 }
@@ -237,7 +238,6 @@ function comparePNGs(i, pngA, pngB) {
 function generateSimilaritiesX(order,style) {
   const index = orderIndex[order];
   // const pngs = orderPNGs[order];
-  const pngs = jpegs4;
   const similarities = [];
   index.forEach( (idx, i) => {
 
@@ -247,26 +247,29 @@ function generateSimilaritiesX(order,style) {
     // ["quadvertex", "quadline", "straight"].forEach( style => {
 
       const dups = idx[style][Object.keys(idx[style])[0]];
-      const pngA = pngs.find(p => p.id === self)[style];
+      const pngA = jpegs4.find(p => p.id === self)[style];
       current["id"] = self;
       current[style] = [];
 
       // REMBRANDT SOLUTION ... SLOW
       dups.forEach(d => {
-        const pngB = pngs.find(p => p.id === d)[style];
+        const pngB = jpegs4.find(p => p.id === d)[style];
         comparePNGs(d,pngA,pngB).then(result => { 
 
-          if(result[d] === "TBC") {
+          if(result.passed === false) {
             const pngC = jpegs4mirrorLR.find(p => p.id === d)[style];
             comparePNGs(d,pngA,pngC).then(result => { 
-              if(result[d] === "identical") {
-                result[d] = "mirrorLR";
-              }
-              current[style].push(result);
+              console.log(result);
+              const objAC = {};
+              objAC[d] = result.passed ? "mirrorLR" : "TBC";
+              current[style].push(objAC);
             });
           } else {
             // pngA === pngB
-            current[style].push(result);
+            const objAB = {};
+            objAB[d] = "identical";
+            current[style].push(objAB);
+            // current[style].push("identical");
           }
           // generate each stage individually
 
@@ -283,4 +286,14 @@ function generateSimilaritiesX(order,style) {
 }
 
 // console.log( generateSimilaritiesX(4,"quadvertex") );
+console.log( generateSimilaritiesX("4m2","quadvertex") );
 
+document.body.insertAdjacentHTML("beforeend", 
+  `<img width="200" height="200" src="${jpegs4[8]["quadvertex"]}">`);
+document.body.insertAdjacentHTML("beforeend", 
+  `<img width="200" height="200" src="${jpegs4[12]["quadvertex"]}">`);
+// document.body.insertAdjacentHTML("beforeend", 
+//   `<img width="200" height="200" src="${jpegs4[i][style]}">`);
+
+comparePNGs(0,jpegs4[8]["quadvertex"],jpegs4[12]["quadvertex"]).then(result => { console.log(result) });
+comparePNGs(0,jpegs4[8]["quadvertex"],jpegs4[8]["quadvertex"]).then(result => { console.log(result) });
