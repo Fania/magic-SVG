@@ -102,52 +102,52 @@ const svgToPng = (svgText) => {
 
 
 
-const svgToTransPng = (svgText, transformation, degree) => {
-  // console.log(svgText);
-  return new Promise((resolve, reject) => {
-    svgText = svgText.replace('<svg ',`<svg fill='none' stroke='white' `); 
-    // svgText = svgText.replace('<svg ','<svg transform="rotate(180)" '); 
-    if (!svgText.match(/xmlns=\"/mi)){  // needs a namespace
-      svgText = svgText.replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ');  
-    }
-    let svgdoc = new DOMParser().parseFromString(svgText, 'text/html');
-    let svgelem = svgdoc.body.firstChild;
-    let svgSize = svgelem.viewBox.baseVal;
-    const myImg = document.createElement("img");
-    const mySvg = new Blob([svgText], {type: "image/svg+xml;charset=utf-8"});
-    const domUrl = window.URL || window.webkitURL || window;
-    const url = domUrl.createObjectURL(mySvg);
-    let canvas = document.createElement("canvas");
-    canvas.width = svgSize.width;
-    canvas.height = svgSize.height;
-    const ctx = canvas.getContext("2d");
-    if(transformation === "rotate") {
-      ctx.translate((canvas.width)/2,(canvas.height)/2);
-      ctx.rotate((Math.PI/180) * degree);
-      ctx.translate(-(canvas.width)/2,-(canvas.height)/2);
-    }
-    if(transformation === "mirrorLR") {
-      ctx.translate((canvas.width)/2,(canvas.height)/2);
-      ctx.scale(-1,1);
-      ctx.translate(-(canvas.width)/2,-(canvas.height)/2);
-    }
-    if(transformation === "mirrorUD") {
-      ctx.translate((canvas.width)/2,(canvas.height)/2);
-      ctx.scale(1,-1);
-      ctx.translate(-(canvas.width)/2,-(canvas.height)/2);
-    }
-    myImg.onload = function() {
-      ctx.drawImage(myImg,0,0);
-      domUrl.revokeObjectURL(url);
-      const data = canvas.toDataURL('image/jpeg', 0.1);
-      const finalImage = document.createElement("img");
-      finalImage.id = svgelem.id;
-      finalImage.src = data;
-      resolve(finalImage);  // base64 url
-    };
-    myImg.src = url;  // load the image
-  });
-};
+// const svgToTransPng = (svgText, transformation, degree) => {
+//   // console.log(svgText);
+//   return new Promise((resolve, reject) => {
+//     svgText = svgText.replace('<svg ',`<svg fill='none' stroke='white' `); 
+//     // svgText = svgText.replace('<svg ','<svg transform="rotate(180)" '); 
+//     if (!svgText.match(/xmlns=\"/mi)){  // needs a namespace
+//       svgText = svgText.replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" ');  
+//     }
+//     let svgdoc = new DOMParser().parseFromString(svgText, 'text/html');
+//     let svgelem = svgdoc.body.firstChild;
+//     let svgSize = svgelem.viewBox.baseVal;
+//     const myImg = document.createElement("img");
+//     const mySvg = new Blob([svgText], {type: "image/svg+xml;charset=utf-8"});
+//     const domUrl = window.URL || window.webkitURL || window;
+//     const url = domUrl.createObjectURL(mySvg);
+//     let canvas = document.createElement("canvas");
+//     canvas.width = svgSize.width;
+//     canvas.height = svgSize.height;
+//     const ctx = canvas.getContext("2d");
+//     if(transformation === "rotate") {
+//       ctx.translate((canvas.width)/2,(canvas.height)/2);
+//       ctx.rotate((Math.PI/180) * degree);
+//       ctx.translate(-(canvas.width)/2,-(canvas.height)/2);
+//     }
+//     if(transformation === "mirrorLR") {
+//       ctx.translate((canvas.width)/2,(canvas.height)/2);
+//       ctx.scale(-1,1);
+//       ctx.translate(-(canvas.width)/2,-(canvas.height)/2);
+//     }
+//     if(transformation === "mirrorUD") {
+//       ctx.translate((canvas.width)/2,(canvas.height)/2);
+//       ctx.scale(1,-1);
+//       ctx.translate(-(canvas.width)/2,-(canvas.height)/2);
+//     }
+//     myImg.onload = function() {
+//       ctx.drawImage(myImg,0,0);
+//       domUrl.revokeObjectURL(url);
+//       const data = canvas.toDataURL('image/jpeg', 0.1);
+//       const finalImage = document.createElement("img");
+//       finalImage.id = svgelem.id;
+//       finalImage.src = data;
+//       resolve(finalImage);  // base64 url
+//     };
+//     myImg.src = url;  // load the image
+//   });
+// };
 
 
 
@@ -207,42 +207,42 @@ let testsvg6 = "<svg id='quadvertex-4-69' class='order-x pad' viewbox='-2 -2 304
 // });
 
 
-const b64toBlob = (base64, type = 'application/octet-stream') => 
-  fetch(`data:${type};base64,${base64}`).then(res => res.blob())
+// const b64toBlob = (base64, type = 'application/octet-stream') => 
+//   fetch(`data:${type};base64,${base64}`).then(res => res.blob())
 
 
 
-const transformPng = (png, transformation) => {
-  return new Promise((resolve, reject) => {
-    let exifOrientation;
-    switch (transformation) {
-      case "rotate90":
-        exifOrientation = 8; break;
-      case "rotate180":
-        exifOrientation = 3; break;
-      case "rotate-90":
-        exifOrientation = 6; break;
-      case "mirrorLR":
-        exifOrientation = 2; break;
-      case "mirrorUD":
-        exifOrientation = 4; break;
-      case "mirrorLRrotate90":
-        exifOrientation = 7; break;
-      case "mirrorLRrotate-90":
-        exifOrientation = 5; break;
-      default:
-        exifOrientation = 1; break;
-    }
+// const transformPng = (png, transformation) => {
+//   return new Promise((resolve, reject) => {
+//     let exifOrientation;
+//     switch (transformation) {
+//       case "rotate90":
+//         exifOrientation = 8; break;
+//       case "rotate180":
+//         exifOrientation = 3; break;
+//       case "rotate-90":
+//         exifOrientation = 6; break;
+//       case "mirrorLR":
+//         exifOrientation = 2; break;
+//       case "mirrorUD":
+//         exifOrientation = 4; break;
+//       case "mirrorLRrotate90":
+//         exifOrientation = 7; break;
+//       case "mirrorLRrotate-90":
+//         exifOrientation = 5; break;
+//       default:
+//         exifOrientation = 1; break;
+//     }
 
-    fetch(png).then(res => res.blob()).then(data => {
-      loadImage(
-        data,
-        img => { resolve(img) },
-        { maxWidth: 600, orientation: exifOrientation }
-      );
-    });
-  });
-};
+//     fetch(png).then(res => res.blob()).then(data => {
+//       loadImage(
+//         data,
+//         img => { resolve(img) },
+//         { maxWidth: 600, orientation: exifOrientation }
+//       );
+//     });
+//   });
+// };
 
 
 
@@ -260,12 +260,12 @@ const transformPng = (png, transformation) => {
 
 
 
-let testpng = jpegs4[8].quadvertex;
-// console.log(testpng);
+// let testpng = jpegs4[8].quadvertex;
+// // console.log(testpng);
 
-transformPng(testpng).then(data => document.body.appendChild(data));
-transformPng(testpng, "rotate90").then(data => document.body.appendChild(data));
-transformPng(testpng, "mirrorLR").then(data => document.body.appendChild(data));
+// transformPng(testpng).then(data => document.body.appendChild(data));
+// transformPng(testpng, "rotate90").then(data => document.body.appendChild(data));
+// transformPng(testpng, "mirrorLR").then(data => document.body.appendChild(data));
 // transformPng(testpng).then(data => document.body.appendChild(data));
 // transformPng(testpng, "rotate", 90).then((data)=>{ 
 //   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);

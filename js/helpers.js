@@ -89,7 +89,7 @@ function generateSVGs(index) {
 // GENERATE NEW INDEX HERE IN ONE COMMAND
 // let final = generateSVGs(
 //               generateSharedLengths(
-//                 generateInitialIndex(9)
+//                 generateInitialIndex(19)
 //               )
 //             );
 // console.log(final);

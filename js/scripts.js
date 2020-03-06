@@ -12,7 +12,18 @@ const squareOrder = {
   "6": order6,
   "7": order7,
   "8": order8,
-  "9": order9
+  "9": order9,
+  "10": order10,
+  "11": order11,
+  "12": order12,
+  "13": order13,
+  "14": order14,
+  "15": order15,
+  // "16": order16,
+  "17": order17,
+  "18": order18,
+  "19": order19,
+  "20": order20
 }
 
 // without png data
@@ -25,7 +36,17 @@ const orderIndex = {
   "6": index6,
   "7": index7,
   "8": index8,
-  "9": index9
+  "9": index9,
+  "10": index10,
+  "11": index11,
+  "12": index12,
+  "13": index13,
+  "14": index14,
+  "15": index15,
+  "17": index17,
+  "18": index18,
+  "19": index19,
+  "20": index20
 }
 
 // const orderPNGs = {
@@ -122,7 +143,7 @@ function load(pageType) {
       const valuesString = document.getElementById("values").value;
       const valuesArray = valuesString.split(" ").map(Number);
       const size = Math.sqrt(valuesArray.length);
-      const source = orderIndex[size];
+      const source = orderIndex[size] ? orderIndex[size] : [];
       const match = source.find(i => i.numbers.string === valuesString);
       const id = match ? match.id : 0;
 

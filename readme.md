@@ -68,6 +68,9 @@ Frénicle established two simple rules to determine the [standard position](http
 
 ## URGENT
 
+- [ ] fix single input for squares not already catalogued
+- [ ] generate animations for larger orders 10 - 20
+
 
 
 ## References
@@ -75,9 +78,70 @@ Frénicle established two simple rules to determine the [standard position](http
 - [SVG Fills and Strokes (MDN)](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes)
 - Possible use: [SVG++ library documentation](http://svgpp.org/index.html)
 
-## Printing
 
-22x40 order-4s will produce an even block.
+
+
+## Theory
+
+
+http://www.multimagie.com/
+
+https://www.gaspalou.fr/magic-squares/transformation.htm
+
+https://www.grogono.com/magic/4x4.php
+
+https://www.cs.umb.edu/~eb/d4/index.html
+
+https://en.wikipedia.org/wiki/Dihedral_group
+
+https://www.primepuzzles.net/thepuzzlers/Mutsumi%20Suzuki's%20Magic%20Squares%20Web%20Pages.pdf
+
+http://www.magic-squares.net/transform.htm
+
+http://recmath.org/Magic%20Squares/
+
+
+
+
+**Dihedral Group D4**
+
+**8 transformations**
+
+1. R0 identity
+2. R1 rotation 90° anticlockwise
+3. R2 rotation 180°
+4. R3 rotation 90° clockwise
+5. M1 vertical symmetry
+6. M2 horizontal symmetry
+7. D1 symmetry about the first diagonal
+8. D2 symmetry about the second diagonal
+
+
+
+or taken from https://www.gaspalou.fr/magic-squares/order-4.htm#1
+
+
+1. I identity
+2. R1 rotation 90° anticlockwise
+3. R2 rotation 180°
+4. R3 rotation 90° clockwise
+5. V vertical symmetry
+6. H horizontal symmetry
+7. G symmetry about the first diagonal
+8. D symmetry about the second diagonal
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
