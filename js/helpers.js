@@ -98,6 +98,29 @@ function generateSVGs(index) {
 
 
 
+// function generateStats(index) {
+//   for (let i in index) {
+//     let id = parseInt(i) + 1;
+//     let valuesArray = index[i]["numbers"]["array"];
+//     console.log(id, valuesArray);
+//     // let order = Math.sqrt(valuesArray.length);
+//     // index[i]["numbers"]["svg"] = prepareSVG("numbers",getCoords(order,valuesArray),id);
+//   }
+//   return index;
+// }
+
+
+// // generateStats( index4 );
+// // console.log( generateStats( index4 ) );
+
+
+
+
+
+
+
+
+
 
 
 // generate separate index for png data
