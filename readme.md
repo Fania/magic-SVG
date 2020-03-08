@@ -324,6 +324,10 @@ B2 D2 A2 C2
 
 
 
+other sets:
+
+http://www.magic-squares.net/order4lista.htm
+
 
 
 ### Tests
@@ -342,9 +346,21 @@ C2 C1 C4 C3
 
 
 
+OUR SET OF TRANSFORMATIONS
+
+- identity
+- mirrorLR
+- mirrorUD
+- rotate90
+- rotate-90
+- rotate 180
+- rotate-90+mirrorLR
+- rotate90+mirrorLR
+- rotate90+mirrorUD
 
 
 
+1 15 24 8 17 23 7 16 5 14 20 4 13 22 6 12 21 10 19 3 9 18 2 11 25
 
 
 

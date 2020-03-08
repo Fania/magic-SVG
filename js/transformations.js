@@ -9,12 +9,13 @@ const m13 = index4[12].numbers.array;
 
 function transform(m, type) {
   switch(type) {
+    // 8 D4 transformations (using Gaspalou naming)
     case "I":  // A1 A2 A3 A4 B1 B2 B3 B4 C1 C2 C3 C4 D1 D2 D3 D4
-      return m;
-      // return [m[ 0], m[ 1], m[ 2], m[ 3],
-      //         m[ 4], m[ 5], m[ 6], m[ 7],
-      //         m[ 8], m[ 9], m[10], m[11],
-      //         m[12], m[13], m[14], m[15]];
+      // return m;
+      return [m[ 0], m[ 1], m[ 2], m[ 3],
+              m[ 4], m[ 5], m[ 6], m[ 7],
+              m[ 8], m[ 9], m[10], m[11],
+              m[12], m[13], m[14], m[15]];
     case "V":  // A4 A3 A2 A1 B4 B3 B2 B1 C4 C3 C2 C1 D4 D3 D2 D1
       return [m[ 3], m[ 2], m[ 1], m[ 0],
               m[ 7], m[ 6], m[ 5], m[ 4],
@@ -52,6 +53,7 @@ function transform(m, type) {
               m[15], m[11], m[ 7], m[ 3]];
 
 
+    // Additional 24 transformations by Gaspalou (32 in total)
     case "IT": // A1 A3 A2 A4 C1 C3 C2 C4 B1 B3 B2 B4 D1 D3 D2 D4
       return [m[ 0], m[ 2], m[ 1], m[ 3],
               m[ 8], m[10], m[ 9], m[11],

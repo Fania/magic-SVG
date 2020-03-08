@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<title></title>
+	<style type="text/css">
+		body {
+			margin: 30px;
+		}
+		.values {
+			width: 30px;
+			float: left;
+			margin-right:1px;
+		}
+		.clear {
+			clear: both;
+		}
+		#hat {
+			height: 271px;
+			position: relative;
+			display: inline;
+			left: 133px;
+		}
+	</style>
+</head>
+<body>
+		<div id="input" style="font-family: 'Arial';">Array's dimensions:
+		    <input type="text" id="dimensions"/>
+		    <button id="submit">submit</button>
+		</div>
+		<pre id="output" style="font-family:'Arial';"></pre>
+
+		<div class="clear"></div>
+		<script type="text/javascript">
+			$(function () {
+		    var output = $('#output');
+		    $('#submit').click(function () {
+		    //get the number of subarrays
+		        var dm = $("#dimensions").val();
+		        output.html('');
+		   //generating value input fields
+		        for (i = 0; i < dm; i++) {
+		            for (j = 0; j < dm; j++) {
+		                output.append('<input type="text" class="values"/>');
+		            }
+		            output.append('<div class="clear"></div>');
+		        }
+		        output.append('<button id="submitVal">submit</button>');
+		        $("#submitVal").click(function () {
+		            generateArray(dm);
+		        });
+		    });
+		    //allow dimensions submit by pressing 'ENTER' (keyCode = 13)
+		    $('#dimensions').keypress(function (e) {
+		        if (typeof e == 'undefined' && window.event) {
+		            e = window.event;
+		        }
+		        if (e.keyCode == 13) {
+		            $('#submit').click();
+		        }
+		    });
+		});
+		//build array with subarrays
+		function generateArray(dm) {
+		    var output = $('#output');
+		    var values = $('.values');
+		    var arr = [];
+		    for (i = 0; i < dm; i++) {
+		        var subArr = [];
+		        for (j = 0; j < dm; j++) {
+		            subArr.push(parseInt(values.get(i * dm + j).value));
+		        }
+		        arr.push(subArr);
+		    }
+		    //print array
+		    output.append('<div class="clear"></div>');
+		    output.append("<br>Array: [[" + arr.join("],[") + "]]<br><br>");
+
+		    //initiate magic 
+		    var isMagic = true;
+		    var magicSum = 0;
+		    var sum = 0;
+		    
+		    //find the sum that makes the square magic
+		    for (c = 0; c < dm; c++) {
+		        magicSum += arr[0][c];
+		    }
+		    //check if every row makes the magic sum
+		     for (r = 1; r < dm; r++) {
+		        for (c = 0; c < dm; c++) {
+		            sum += arr[r][c];
+		        }
+		        if (sum != magicSum) isMagic = false;
+		        sum = 0;
+		    }
+		    //check if every column makes the magic sum
+		    for (c = 0; c < dm; c++) {
+		        for (r = 0; r < dm; r++) {
+		            sum += arr[r][c];
+		        }
+		        if (sum != magicSum) isMagic = false;
+		        sum = 0;
+		    }
+		    //check the sum of the diagonals
+		   for (i = 0; i < dm; i++) {
+		        sum += arr[i][i];
+		    }
+		    if (sum != magicSum) isMagic = false;
+		    sum = 0;
+
+		    for (i = 0; i < dm; i++) {
+		        sum += arr[i][dm - i - 1];
+		    }
+		    if (sum != magicSum) {
+		        isMagic = false;
+		    }
+		    sum = 0; 
+		    //print result
+		    if (isMagic) {
+		        output.append("Abracadabra! It's a magic square!" + '<br><img id="hat" src="http://elizabethfais.files.wordpress.com/2012/04/magic-hat-photo22.jpg">');
+		    } else {
+		        output.append("No magic here!");
+		    }
+		}
+	</script> 
+</body>
+</html>

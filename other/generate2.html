@@ -1,0 +1,90 @@
+<html>
+
+<head>
+
+<title>MAgic SQuaRe</title>
+
+<style>
+
+.box
+
+{
+
+font-weight:bold;
+
+font-size:50px;
+
+text-align:center;
+
+outline:black solid thick;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<table id="table" border="2"></table>
+
+<script>
+
+
+
+for(t=0;;t++)
+{
+var n=prompt("Enter the dimension");
+if(n%2!=0&&n>2) break;
+else alert("MAgic Square cannot be made");
+}
+var last=n*n;
+var a=[];
+
+for(m=0;m<n;m++)
+a[m]=[];
+
+
+var i=0;
+var j=Math.floor(n/2);;
+
+for(var c=1;c<=last;c++)
+{
+ if(i<0)  i=n-(-i);
+ if(i>=n) i=i-n;
+ if(j<0)  j=n-(-j);
+ if(j>=n) j=j-n;
+
+ a[i][j]=c;
+
+ if(c%n==0)
+ {
+  i++;
+ }
+ else
+ {
+  i--;
+  j++;
+ }
+  
+}
+document.write("<table border='2'>");
+for(k=0;k<n;k++)
+{
+document.write("<tr>");
+
+ for(l=0;l<n;l++)
+ {
+  document.write("<td class='box' width='60' height='60'>"+a[k][l]+"</td>");
+ }
+ document.write("</tr>");
+}
+document.write("</table>");
+
+
+
+</script>
+
+</body>
+
+</html>    
