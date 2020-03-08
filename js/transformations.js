@@ -177,6 +177,12 @@ function transform(m, type) {
               m[ 7], m[15], m[ 3], m[11],
               m[ 5], m[13], m[ 1], m[ 9]];
 
+    case "REmirrorLR": 
+      return [m[ 1], m[ 0], m[ 3], m[ 2],
+              m[ 5], m[ 4], m[ 7], m[ 6],
+              m[13], m[12], m[15], m[14],
+              m[ 9], m[ 8], m[11], m[10]];
+
     // case "": 
     //   return [m[], m[], m[], m[],
     //           m[], m[], m[], m[],
@@ -191,7 +197,8 @@ function transform(m, type) {
 const types = ["I","V","H","G","D","R1","R2","R3",
                "IT","EX","M","N","X","Y","Z","T",
                "A","V*A","H*A","G*A","D*A","R1*A","R2*A","R3*A",
-               "IT*A","EX*A","M*A","N*A","X*A","Y*A","Z*A","T*A"];
+               "IT*A","EX*A","M*A","N*A","X*A","Y*A","Z*A","T*A",
+               "REmirrorLR"];
 for (let i=0; i<1; i++) {
   console.log(`Transforming square #${i+1}:`);
   for (let t in types) {
