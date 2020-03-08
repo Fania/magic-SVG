@@ -242,6 +242,9 @@ input:disabled ~ span, select:disabled ~ span {
   align-items: center;
   font-size: 4em;
   padding: 0 10px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
 }
 
 
@@ -342,6 +345,10 @@ footer img {
 }
 #about.dayMode,
 #about.dayMode a {
+  color: black;
+}
+body.dayMode .transDiv div div,
+body.dayMode .transDiv p {
   color: black;
 }
 footer.dayMode,

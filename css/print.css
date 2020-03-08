@@ -96,4 +96,19 @@
     font-size: .5em;
   } */
 
+
+
+  body.transGroups {  /* 32 */
+    --size: calc((100vw - 80px) / 12);
+    --marg: calc( ( 100vh - ( var(--size) * 8 ) ) / 2 );
+  }
+
+  body.transGroups .transDiv p {
+    display: none;
+  }
+  body.transGroups .transDiv div div {
+    font-size: 2em;
+  }
+
+
 }
