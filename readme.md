@@ -66,7 +66,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] add settings to localstorage
 - [ ] change font size for larger order squares
 - [ ] fix arc size to match natural size
-
+- [ ] add our own transformations
 
 ## URGENT
 
