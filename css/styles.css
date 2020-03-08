@@ -228,6 +228,24 @@ input:disabled ~ span, select:disabled ~ span {
   max-width: 400px;
 }
 
+.transDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.transDiv div {
+  display: flex;
+}
+.transDiv div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  padding: 0 10px;
+}
+
+
+
 #constant {
   color: #555;
   font-size: 1.25em;

@@ -108,6 +108,7 @@ function toggleDayNight(dark) {
   day.classList.toggle("active");
   settings.classList.toggle("dayMode");
   document.querySelector(".instructions").classList.toggle("dayMode");
+  document.querySelector("footer").classList.toggle("dayMode");
   about.classList.toggle("dayMode");
   backColour.value = dark ? "#222222" : "#ffffff";
   strokeColour.value = dark ? "#ffffff" : "#000000";

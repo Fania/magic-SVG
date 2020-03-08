@@ -1,53 +1,6 @@
 // Gaspalou Transformations
 // https://www.gaspalou.fr/magic-squares/order-4.htm#1
 
-// IT: 
-// A1 A3 A2 A4
-// C1 C3 C2 C4
-// B1 B3 B2 B4
-// D1 D3 D2 D4
-
-// EX:
-// D4 D2 D3 D1
-// B4 B2 B3 B1
-// C4 C2 C3 C1
-// A4 A2 A3 A1
-
-// M:
-// A1 C1 B1 D1
-// A3 C3 B3 D3
-// A2 C2 B2 D2
-// A4 C4 B4 D4
-
-// N:
-// D4 B4 C4 A4
-// D2 B2 C2 A2
-// D3 B3 C3 A3
-// D1 B1 C1 A1
-
-// X:
-// A4 A2 A3 A1
-// C4 C2 C3 C1
-// B4 B2 B3 B1
-// D4 D2 D3 D1
-
-// Y:
-// D1 D3 D2 D4
-// B1 B3 B2 B4
-// C1 C3 C2 C4
-// A1 A3 A2 A4
-
-// Z:
-// A4 C4 B4 D4
-// A2 C2 B2 D2
-// A3 C3 B3 D3
-// A1 C1 B1 D1
-
-// T:
-// D1 B1 C1 A1
-// D3 B3 C3 A3
-// D2 B2 C2 A2
-// D4 B4 C4 A4
 
 // A: 
 // B2 B1 B4 B3
@@ -198,13 +151,64 @@ function transform(m, type) {
               m[15], m[11], m[ 7], m[ 3]];
 
 
+    case "IT": // A1 A3 A2 A4 C1 C3 C2 C4 B1 B3 B2 B4 D1 D3 D2 D4
+      return [m[ 0], m[ 2], m[ 1], m[ 3],
+              m[ 8], m[10], m[ 9], m[11],
+              m[ 4], m[ 6], m[ 5], m[ 7],
+              m[12], m[14], m[13], m[15]];
+    case "EX": // D4 D2 D3 D1 B4 B2 B3 B1 C4 C2 C3 C1 A4 A2 A3 A1
+      return [m[15], m[13], m[14], m[12],
+              m[ 7], m[ 5], m[ 6], m[ 4],
+              m[11], m[ 9], m[10], m[ 8],
+              m[ 3], m[ 1], m[ 2], m[ 0]];
+    case "M": // A1 C1 B1 D1 A3 C3 B3 D3 A2 C2 B2 D2 A4 C4 B4 D4
+      return [m[ 0], m[ 8], m[ 4], m[12],
+              m[ 2], m[10], m[ 6], m[14],
+              m[ 1], m[ 9], m[ 5], m[13],
+              m[ 3], m[11], m[ 7], m[15]];
+    case "N": // D4 B4 C4 A4 D2 B2 C2 A2 D3 B3 C3 A3 D1 B1 C1 A1
+      return [m[15], m[ 7], m[11], m[ 3],
+              m[13], m[ 5], m[ 9], m[ 1],
+              m[14], m[ 6], m[10], m[ 2],
+              m[12], m[ 4], m[ 8], m[ 0]];
+    case "X": // A4 A2 A3 A1 C4 C2 C3 C1 B4 B2 B3 B1 D4 D2 D3 D1
+      return [m[ 3], m[ 1], m[ 2], m[ 0],
+              m[11], m[ 9], m[10], m[ 8],
+              m[ 7], m[ 5], m[ 6], m[ 4],
+              m[15], m[13], m[14], m[12]];
+    case "Y": // D1 D3 D2 D4 B1 B3 B2 B4 C1 C3 C2 C4 A1 A3 A2 A4
+      return [m[12], m[14], m[13], m[15],
+              m[ 4], m[ 6], m[ 5], m[ 7],
+              m[ 8], m[10], m[ 9], m[11],
+              m[ 0], m[ 2], m[ 1], m[ 3]];
+    case "Z": // A4 C4 B4 D4 A2 C2 B2 D2 A3 C3 B3 D3 A1 C1 B1 D1
+      return [m[ 3], m[11], m[ 7], m[15],
+              m[ 1], m[ 9], m[ 5], m[13],
+              m[ 2], m[10], m[ 6], m[14],
+              m[ 0], m[ 8], m[ 4], m[12]];
+    case "T": // D1 B1 C1 A1 D3 B3 C3 A3 D2 B2 C2 A2 D4 B4 C4 A4
+      return [m[12], m[ 4], m[ 8], m[ 0],
+              m[14], m[ 6], m[10], m[ 2],
+              m[13], m[ 5], m[ 9], m[ 1],
+              m[15], m[ 7], m[11], m[ 3]];
+
+
+
+
+
+    // case "": 
+    //   return [m[], m[], m[], m[],
+    //           m[], m[], m[], m[],
+    //           m[], m[], m[], m[],
+    //           m[], m[], m[], m[]];
 
     default: return m;
   }
 }
 
 
-const types = ["I","V","H","G","D","R1","R2","R3"];
+const types = ["I","V","H","G","D","R1","R2","R3",
+               "IT","EX","M","N","X","Y","Z","T"];
 for (let i=0; i<4; i++) {
   console.log(`Transforming square #${i+1}:`);
   for (let t in types) {
