@@ -199,11 +199,11 @@ const types = ["I","V","H","G","D","R1","R2","R3",
                "A","V*A","H*A","G*A","D*A","R1*A","R2*A","R3*A",
                "IT*A","EX*A","M*A","N*A","X*A","Y*A","Z*A","T*A",
                "REmirrorLR"];
-for (let i=0; i<1; i++) {
-  console.log(`Transforming square #${i+1}:`);
-  for (let t in types) {
-    const trans = transform( index4[i].numbers.array, types[t] );
-    console.log(`${types[t]} = ${trans.join(" ")}`);
-    drawTransforms(4, trans, types[t])
-  }
-}
+// for (let i=0; i<1; i++) {
+//   console.log(`Transforming square #${i+1}:`);
+//   for (let t in types) {
+//     const trans = transform( index4[i].numbers.array, types[t] );
+//     console.log(`${types[t]} = ${trans.join(" ")}`);
+//     drawTransforms(4, trans, types[t])
+//   }
+// }
