@@ -1,0 +1,25 @@
+	Tue Mar 10 14:28 2020 Time and Allocation Profiling Report  (Final)
+
+	   magic.exe +RTS -p -RTS
+
+	total time  =        9.63 secs   (9635 ticks @ 1000 us, 1 processor)
+	total alloc = 4,668,246,720 bytes  (excludes profiling overheads)
+
+COST CENTRE MODULE    SRC                     %time %alloc
+
+order4x     Main      magic.hs:(73,1)-(97,3)  100.0  100.0
+
+
+                                                                                   individual      inherited
+COST CENTRE  MODULE                   SRC                       no.     entries  %time %alloc   %time %alloc
+
+MAIN         MAIN                     <built-in>                 39          0    0.0    0.0   100.0  100.0
+ CAF         GHC.IO.Encoding.CodePage <entire-module>            63          0    0.0    0.0     0.0    0.0
+ CAF         GHC.IO.Encoding          <entire-module>            61          0    0.0    0.0     0.0    0.0
+ CAF         GHC.TopHandler           <entire-module>            54          0    0.0    0.0     0.0    0.0
+ CAF         GHC.IO.Handle.FD         <entire-module>            53          0    0.0    0.0     0.0    0.0
+ CAF         GHC.IO.Exception         <entire-module>            48          0    0.0    0.0     0.0    0.0
+ CAF         Main                     <entire-module>            46          0    0.0    0.0   100.0  100.0
+  main       Main                     magic.hs:(102,1)-(104,15)  78          1    0.0    0.0     0.0    0.0
+  order4x    Main                     magic.hs:(73,1)-(97,3)     80          1  100.0  100.0   100.0  100.0
+ main        Main                     magic.hs:(102,1)-(104,15)  79          0    0.0    0.0     0.0    0.0
