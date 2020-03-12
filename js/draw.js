@@ -29,6 +29,19 @@ function drawAllStyles(order, valuesString, id) {
 }
 
 
+function drawOurOwn(order, valuesArray, id) {
+  const coordsObject = getCoords(order,valuesArray);
+  magicConstant(order,valuesArray);
+  let text = `
+    <div>
+      ${prepareSVG("numbers",coordsObject,id)}
+      ${prepareSVG("quadvertex",coordsObject,id)}
+    </div>
+  `;
+  drawSquare(text);
+}
+
+
 function drawTransforms(order, valuesArray, transType) {
   const coordsObject = getCoords(order,valuesArray);
   magicConstant(order,valuesArray);

@@ -25,24 +25,24 @@ function generateSquares(n) {
 // console.log( generateSquares(3) );     
 
 
-  let square = [];
-  for (let i=1; i<=3*3; i++) {
-    square.push(i);
-  }
-  console.log(square);
+//   let square = [];
+//   for (let i=1; i<=3*3; i++) {
+//     square.push(i);
+//   }
+//   console.log(square);
 
 
 
 
-let values = [];
-for (let x = 0; x < 10; x++) {
- values.push([
-  2 ** x,
-  2 * x ** 2
- ])
-}
-console.table(values);
-console.log(values);
+// let values = [];
+// for (let x = 0; x < 10; x++) {
+//  values.push([
+//   2 ** x,
+//   2 * x ** 2
+//  ])
+// }
+// console.table(values);
+// console.log(values);
 
 
 

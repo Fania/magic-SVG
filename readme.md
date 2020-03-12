@@ -351,16 +351,63 @@ OUR SET OF TRANSFORMATIONS
 - identity
 - mirrorLR
 - mirrorUD
+- mirrorDiag1
+- mirrorDiag2
 - rotate90
 - rotate-90
-- rotate 180
+- rotate180
+
+
 - rotate-90+mirrorLR
 - rotate90+mirrorLR
 - rotate90+mirrorUD
 
+id
+A1 A2 A3 A4
+B1 B2 B3 B4
+C1 C2 C3 C4
+D1 D2 D3 D4
+rot90+mUD == mirrorDiag2
+D4 C4 B4 A4
+D3 C3 B3 A3
+D2 C2 B2 A2
+D1 C1 B1 A1
+rot-90+mLR == mirrorDiag2
+D4 C4 B4 A4   
+D3 C3 B3 A3   
+D2 C2 B2 A2   
+D1 C1 B1 A1   
+rot90+mLR == mirrorDiag1
+A1 B1 C1 D1
+A2 B2 C2 D2
+A3 B3 C3 D3
+A4 B4 C4 D4
+rot90
+D1 C1 B1 A1
+D2 C2 B2 A2
+D3 C3 B3 A3
+D4 C4 B4 A4
+rot-90
+A4 B4 C4 D4
+A3 B3 C3 D3
+A2 B2 C2 D2
+A1 B1 C1 D1
 
 
 1 15 24 8 17 23 7 16 5 14 20 4 13 22 6 12 21 10 19 3 9 18 2 11 25
+
+
+
+
+
+
+	Wed Mar 11 09:41 2020 Time and Allocation Profiling Report  (Final)
+
+	   magic.exe +RTS -p -RTS
+
+	total time  =     5812.00 secs   (5812004 ticks @ 1000 us, 1 processor)
+	total alloc = 11,027,078,141,904 bytes  (excludes profiling overheads)
+
 
 
 

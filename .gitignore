@@ -1,0 +1,4 @@
+/haskell/*.exe
+# /haskell/magic.prof
+/haskell/*.hi
+/haskell/*.o
