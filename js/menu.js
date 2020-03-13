@@ -8,28 +8,28 @@ function updateMenuStates() {
   style==="numbers" ? clearFill.disabled=true : clearFill.disabled=false;
   fillColour.disabled = clearFill.checked;
   style==="numbers" ? strokeColour.disabled=true : strokeColour.disabled=false;
-  type==="orderGroups" && style==="numbers" || type==="singleInput"
+  type==="orderGroups" && style==="numbers" || type==="singleInput" || type==="dataSets"
     ? textColour.disabled=false : textColour.disabled=true;
   type==="orderGroups" && style==="arc" || type==="singleInput" 
-    || type==="filterGroups" 
+    || type==="filterGroups" || type==="dataSets"
     ? padding.disabled=true : padding.disabled=false;
-  // type==="filterGroups"
-  //   ? lenFilter.disabled=false : lenFilter.disabled=true;
+  type==="orderGroups" || type==="filterGroups" || type==="singleInput" 
+    ? datasetOptions.disabled=true : datasetOptions.disabled=false;
   type==="filterGroups"
     ? lenOptions.disabled=false : lenOptions.disabled=true;
-  type==="filterGroups"
+  type==="filterGroups" || type==="dataSets"
     ? animateOut.disabled=true : animateOut.disabled=false;
-  style==="numbers"
+  style==="numbers" || type==="dataSets"
     ? animate.disabled=true : animate.disabled=false;
-  // type==="singleInput" 
-  //   ? noAnimate.disabled=true : noAnimate.disabled=false;
+  type==="dataSets"
+    ? noAnimate.disabled=true : noAnimate.disabled=false;
   type==="orderGroups" || type==="filterGroups"
     ? styleOptions.disabled=false : styleOptions.disabled=true;
-  // type==="orderGroups" || type==="filterGroups"
-  //   ? orderOptions.disabled=false : orderOptions.disabled=true;
-  type==="orderGroups" || type==="filterGroups"
+  type==="dataSets"
+    ? orderOptions.disabled=true : orderOptions.disabled=false;
+  type==="orderGroups" || type==="filterGroups" || type==="dataSets"
     ? values.disabled=true : values.disabled=false;
-  type==="orderGroups" || type==="filterGroups"
+  type==="orderGroups" || type==="filterGroups" || type==="dataSets"
     ? search.disabled=true : search.disabled=false;
   // type==="orderGroups" || type==="filterGroups"
   //   ? searchOrder.disabled=true : searchOrder.disabled=false;
@@ -37,7 +37,8 @@ function updateMenuStates() {
   //   : svgGrid.classList.remove("single");
   // type==="orderGroups"
   //   ? datasetOptions.disabled=false : datasetOptions.disabled=true;
-
+  // type==="dataSets"
+  //   ? datasetOptions.disabled=false : datasetOptions.disabled=true;
 
   if(type==="singleInput" || type==="filterGroups" ) padding.checked=true;
   let state = padding.checked ? "add" : "remove";
@@ -45,15 +46,34 @@ function updateMenuStates() {
 }
 
 
+
+
+
 const pageType = document.getElementsByName("pageType");
 pageType.forEach(type => type.addEventListener("change", ()=> load(type.id)));
+
+
+styleOptions.addEventListener("change", ()=> load(getCurrent("pageType")));
+orderOptions.addEventListener("change", ()=> load(getCurrent("pageType")));
+datasetOptions.addEventListener("change", ()=> load(getCurrent("pageType")));
+// lenFilter.addEventListener("change", ()=> load(getCurrent("pageType")()));
+
+let selectedLenIndex = 0;
+lenOptions.addEventListener("change", ()=> {
+  selectedLenIndex = getCurrent("length");
+  load("filterGroups");
+});
+
 
 
 function updateBodyClasses(type, order) {
   document.body.classList = [];
   document.body.classList.add(type);
-  document.body.classList.add(`order${order}`);
+  if (type != "dataSets") document.body.classList.add(`order${order}`);
 }
+
+
+
 
 
 // update when user inputs manual magic square numbers

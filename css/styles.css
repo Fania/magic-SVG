@@ -31,6 +31,8 @@ body {
 }
 #settings .tabs fieldset label {
   cursor: pointer;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 #settings fieldset,
 #settings .tabs fieldset {
@@ -49,6 +51,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 0;
+  text-align: right;
 }
 
 #settings .options {
@@ -165,12 +168,13 @@ input:disabled ~ span, select:disabled ~ span {
   text-decoration: line-through;
 }
 
-#orderGroups, #singleInput, #filterGroups {
+#orderGroups, #singleInput, #filterGroups, #dataSets {
   display: none;
 }
 #orderGroups:checked + span, 
 #filterGroups:checked + span,
-#singleInput:checked + span {
+#singleInput:checked + span,
+#dataSets:checked + span {
   text-decoration: underline;
 }
 

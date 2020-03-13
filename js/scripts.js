@@ -49,6 +49,11 @@ const orderIndex = {
   "20": index20
 }
 
+const datasetIndex = {
+  "agrippa": agrippa,
+  "suzuki": suzuki
+}
+
 // const orderPNGs = {
 //   // "3": pngs3,
 //   "4": pngs4
@@ -70,6 +75,8 @@ function getCurrent(thing) {
       return styleOptions[styleOptions.selectedIndex].value;
     case "order":
       return size;
+    case "dataSet":
+      return datasetIndex[datasetOptions[datasetOptions.selectedIndex].value];
     case "pageType":
       return document.querySelector('input[name="pageType"]:checked').id;
     case "length":
@@ -79,16 +86,6 @@ function getCurrent(thing) {
 
 
 
-styleOptions.addEventListener("change", ()=> load(getCurrent("pageType")));
-orderOptions.addEventListener("change", ()=> load(getCurrent("pageType")));
-// datasetOptions.addEventListener("change", ()=> load(getCurrent("pageType")));
-// lenFilter.addEventListener("change", ()=> load(getCurrent("pageType")()));
-
-let selectedLenIndex = 0;
-lenOptions.addEventListener("change", ()=> {
-  selectedLenIndex = getCurrent("length");
-  load("filterGroups");
-});
 
 
 
@@ -107,7 +104,7 @@ function load(pageType) {
 
   if (pageType === "orderGroups") {
     index.forEach(idx => drawSquare(idx[style]["svg"]));
-    svgGrid.classList.remove("filter", "search", "single");
+    svgGrid.classList.remove("filter", "search", "single", "dataSet");
   } // end orderGroups
 
 
@@ -132,7 +129,7 @@ function load(pageType) {
       drawSquare(text);
     }
     svgGrid.classList.add("filter");
-    svgGrid.classList.remove("search", "single");
+    svgGrid.classList.remove("search", "single", "dataSet");
   } // end filterGroups
 
 
@@ -154,7 +151,7 @@ function load(pageType) {
       } else {
         drawAllStyles(size, valuesString, id);
         svgGrid.classList.add("single");
-        svgGrid.classList.remove("search", "filter");
+        svgGrid.classList.remove("search", "filter", "dataSet");
         values.classList.add("current");
         search.classList.remove("current");
       }
@@ -175,11 +172,27 @@ function load(pageType) {
         }
       }
       svgGrid.classList.add("search");
-      svgGrid.classList.remove("filter", "single");
+      svgGrid.classList.remove("filter", "single", "dataSet");
       values.classList.remove("current");
       search.classList.add("current");
     }
   } // end singleInput
+
+
+  if (pageType === "dataSets") {
+    const chosenDataSet = getCurrent("dataSet");
+    for (let i in chosenDataSet) {
+      let square = chosenDataSet[i];
+      let order = Math.sqrt(square.length);
+      drawAllStyles(order,square.join(" "),0)
+    }
+    svgGrid.classList.add("dataSet");
+    svgGrid.classList.remove("search", "single", "filter");
+  } // end dataSets
+
+
+
+
 
 
   updateColours();
