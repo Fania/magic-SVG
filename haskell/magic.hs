@@ -167,7 +167,36 @@ reduceD4 [] = []
 reduceD4 (n:ns) = n : reduceD4 (ns \\ (tail $ transform n))
 
 
-main = do
+
+
+
+
+
+-- compareMS :: [[Int]] -> [[Int]] -> [([Int],String,[Int])]
+-- compareMS [] _ = []
+-- compareMS (m:ms) ns = (m,s,n) : compareMS ms ns
+--   where n = 
+
+
+
+  
+  
+--   [ (x,s,y) | x <- ms, 
+--                             let y = fromJust $ elemIndex (ms !! x) ns,
+--                             let s = 
+--                                     if (y == mirrorLR x) then "mirrorLR" else
+--                                     if (y == mirrorUD x) then "mirrorUD" else
+--                                     if (y == mirrorD1 x) then "mirrorD1" else
+--                                     if (y == mirrorD2 x) then "mirrorD2" else
+--                                     if (y == rotate90 x) then "rotate90" else
+--                                     if (y == rotate180 x) then "rotate180" else
+--                                     if (y == rotateM90 x) then "rotateM90" else "id"]
+
+
+
+
+
+-- main = do
   -- print $ length order4
   -- print order4x
   -- print $ transform $ head order4x
@@ -175,4 +204,8 @@ main = do
   -- print $ transform3 $ head order3x
   -- print $ reduceD43 order3x
   -- print $ length $ reduceD4 ORDER4.order4s
-  print $ reduced == (sort suzuki)
+  -- print $ reduced == (sort suzuki)
+  -- print $ sort suzuki
+  -- print $ intersect reduced suzuki
+  -- print $ reduced \\ suzuki
+  -- print $ compareMS reduced suzuki

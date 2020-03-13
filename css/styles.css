@@ -368,6 +368,13 @@ footer.dayMode,
 
 
 
+.ours svg {
+  stroke: rgb(233, 147, 250);
+}
+.suzuki svg {
+  stroke: rgb(90, 187, 252);
+}
+
 
 
 /* and (orientation: landscape) */

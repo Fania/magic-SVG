@@ -344,11 +344,29 @@ function testPrints(input) {
   for (let i=0; i<input.length; i++) {
     drawOurOwn(o, input[i], i+1);
   }
-
 }
 // testPrints(ourown);
 // testPrints(order4headTransformed);
-testPrints(order3all);
+// testPrints(order3all);
 
-console.log(suzuki.length, order4rOUR.length);
-console.log(suzuki.sort() == order4rOUR.sort());
+
+
+
+function testPrintsCompare(ours,suzi) {
+  svgGrid.innerHTML = "";
+  let o = Math.sqrt(ours[0].length);
+  for (let i=0; i<ours.length; i++) {
+    let text = `
+      <div class="" title="Our=${i} (${ours[i]})\nSuzuki=${i} (${suzi[i]})">
+        <span class="ours">${prepareSVG("quadvertex",getCoords(o,ours[i]),i+1)}</span>
+        <span class="suzuki">${prepareSVG("quadvertex",getCoords(o,suzi[i]),i+1)}</span>
+      </div>
+    `;
+    drawSquare(text);
+    // drawOurOwn(o, ours[i], i+1);
+  }
+}
+testPrintsCompare(order4rOUR.sort(),suzuki.sort());
+
+// console.log(suzuki.length, order4rOUR.length);
+// console.log(suzuki.sort() == order4rOUR.sort());
