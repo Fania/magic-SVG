@@ -30,8 +30,8 @@ const squareOrder = {
 const orderIndex = {
   "3": index3,
   "4": index4,
-  "4m": index4mini,
-  "4m2": index4mini2,
+  // "4m": index4mini,
+  // "4m2": index4mini2,
   "5": index5,
   "6": index6,
   "7": index7,
@@ -81,6 +81,7 @@ function getCurrent(thing) {
 
 styleOptions.addEventListener("change", ()=> load(getCurrent("pageType")));
 orderOptions.addEventListener("change", ()=> load(getCurrent("pageType")));
+// datasetOptions.addEventListener("change", ()=> load(getCurrent("pageType")));
 // lenFilter.addEventListener("change", ()=> load(getCurrent("pageType")()));
 
 let selectedLenIndex = 0;

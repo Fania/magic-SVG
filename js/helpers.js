@@ -366,7 +366,54 @@ function testPrintsCompare(ours,suzi) {
     // drawOurOwn(o, ours[i], i+1);
   }
 }
-testPrintsCompare(order4rOUR.sort(),suzuki.sort());
+// testPrintsCompare(order4rOUR.sort(),suzuki.sort());
 
 // console.log(suzuki.length, order4rOUR.length);
 // console.log(suzuki.sort() == order4rOUR.sort());
+
+
+
+function testAgrippa(input) {
+  svgGrid.innerHTML = "";
+  for (let i in input) {
+    let o = Math.sqrt(input[i].length);
+    let text = `
+      <div class="agrippa">
+        ${prepareSVG("numbers",getCoords(o,input[i]),0)}
+        <p>${i}</p>
+      </div>
+    `;
+    drawSquare(text);
+  }
+  for (let i in input) {
+    let o = Math.sqrt(input[i].length);
+    let text = `
+      <div class="agrippa">
+        ${prepareSVG("quadvertex",getCoords(o,input[i]),0)}
+        <p>${i}</p>
+      </div>
+    `;
+    drawSquare(text);
+  }
+  for (let i in input) {
+    let o = Math.sqrt(input[i].length);
+    let text = `
+      <div class="agrippa">
+        ${prepareSVG("straight",getCoords(o,input[i]),0)}
+        <p>${i}</p>
+      </div>
+    `;
+    drawSquare(text);
+  }
+  for (let i in input) {
+    let o = Math.sqrt(input[i].length);
+    let text = `
+      <div class="agrippa">
+        ${prepareSVG("quadline",getCoords(o,input[i]),0)}
+        <p>${i}</p>
+      </div>
+    `;
+    drawSquare(text);
+  }
+}
+testAgrippa(agrippa);

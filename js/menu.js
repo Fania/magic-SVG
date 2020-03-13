@@ -35,6 +35,10 @@ function updateMenuStates() {
   //   ? searchOrder.disabled=true : searchOrder.disabled=false;
   // type==="singleInput" ? svgGrid.classList.add("single") 
   //   : svgGrid.classList.remove("single");
+  // type==="orderGroups"
+  //   ? datasetOptions.disabled=false : datasetOptions.disabled=true;
+
+
   if(type==="singleInput" || type==="filterGroups" ) padding.checked=true;
   let state = padding.checked ? "add" : "remove";
   changePadding(state);

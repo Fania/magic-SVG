@@ -55,6 +55,8 @@
       </label>
       <label for="orderOptions">
         <select id="orderOptions">
+          <option value="0" >Agrippa</option>
+          <option value="4s" >Suzuki order 4</option>
           <option value="3" selected>Order 3</option>
           <option value="4" >Order 4</option>
           <!-- <option value="4.0">Order 4 (unique)</option> -->
@@ -77,6 +79,14 @@
         </select>
         <span>Order</span>
       </label>
+      <!-- <label for="datasetOptions">
+        <select id="datasetOptions">
+          <option value="default" >Default</option>
+          <option value="agrippa" >Agrippa</option>
+          <option value="suzuki" >Suzuki</option>
+        </select>
+        <span>Data Set</span>
+      </label> -->
       <label for="lenOptions">
         <select id="lenOptions"></select>
         <span>Length</span>
@@ -166,46 +176,38 @@
 <!-- <script src="js/rembrandt.min.js"></script> -->
 <!-- <script src="js/load-image.all.min.js"></script> -->
 
-<script src="squares/suzuki.js"></script>
-<script src="squares/order4OUR.js"></script>
-<script src="squares/order4rOUR.js"></script>
-<script src="squares/order3.js"></script> 
-<script src="squares/order4.js"></script>
-<script src="squares/order5.js"></script>
-<script src="squares/order6.js"></script>
-<script src="squares/order7.js"></script>
-<script src="squares/order8.js"></script>
-<script src="squares/order9.js"></script>
-<script src="squares/order10-20.js"></script>
-<script src="squares/index3.js"></script>
-<script src="squares/index4.js"></script>
-<script src="squares/index4mini.js"></script>
-<script src="squares/index4mini2.js"></script>
-<script src="squares/index5.js"></script>
-<script src="squares/index6.js"></script>
-<script src="squares/index7.js"></script>
-<script src="squares/index8.js"></script>
-<script src="squares/index9.js"></script>
-<script src="squares/index10.js"></script>
-<script src="squares/index11.js"></script>
-<script src="squares/index12.js"></script>
-<script src="squares/index13.js"></script>
-<script src="squares/index14.js"></script>
-<script src="squares/index15.js"></script>
-<script src="squares/index17.js"></script>
-<script src="squares/index18.js"></script>
-<script src="squares/index19.js"></script>
-<script src="squares/index20.js"></script>
-<!-- <script src="squares/pngs4.js"></script> -->
-<!-- <script src="squares/jpegs4.js"></script>
-<script src="squares/jpegs4rot90.js"></script>
-<script src="squares/jpegs4mirrorLR.js"></script> -->
-<!-- <script src="squares/old/deletables.js"></script> -->
-<!-- <script src="squares/old/reducedOrder4.js"></script> -->
-<!-- <script src="squares/old/svgStringsquadvertex4.js"></script> -->
-<!-- <script src="squares/old/quadvertex4PNGs.js"></script> -->
-<!-- <script src="squares/old/quadvertex4PNGsROTATED90.js"></script> -->
-<!-- <script src="squares/old/quadvertex4PNGsROTATED180.js"></script> -->
+<script src="data/agrippa.js"></script>
+<script src="data/suzuki.js"></script>
+<script src="data/order4OUR.js"></script>
+<script src="data/order4rOUR.js"></script>
+<script src="data/order3.js"></script> 
+<script src="data/order4.js"></script>
+<script src="data/order5.js"></script>
+<script src="data/order6.js"></script>
+<script src="data/order7.js"></script>
+<script src="data/order8.js"></script>
+<script src="data/order9.js"></script>
+<script src="data/order10-20.js"></script>
+<script src="data/index3.js"></script>
+<script src="data/index4.js"></script>
+<!-- <script src="data/index4mini.js"></script>
+<script src="data/index4mini2.js"></script> -->
+<script src="data/index5.js"></script>
+<script src="data/index6.js"></script>
+<script src="data/index7.js"></script>
+<script src="data/index8.js"></script>
+<script src="data/index9.js"></script>
+<script src="data/index10.js"></script>
+<script src="data/index11.js"></script>
+<script src="data/index12.js"></script>
+<script src="data/index13.js"></script>
+<script src="data/index14.js"></script>
+<script src="data/index15.js"></script>
+<script src="data/index17.js"></script>
+<script src="data/index18.js"></script>
+<script src="data/index19.js"></script>
+<script src="data/index20.js"></script>
+
 <script src="js/errors.js"></script>
 <script src="js/colours.js"></script>
 <script src="js/draw.js"></script>
@@ -216,6 +218,7 @@
 <script src="js/scripts.js"></script>
 <script src="js/helpers.js"></script>
 <script src="js/transformations.js"></script>
-<script src="other/generate.js"></script>
+
+<!-- <script src="other/generate.js"></script> -->
 </body>
 </html>
