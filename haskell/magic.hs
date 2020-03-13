@@ -136,6 +136,13 @@ rotate180 [a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,d1,d2,d3,d4] =
 rotateM90 [a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,d1,d2,d3,d4] = 
           [a4,b4,c4,d4,a3,b3,c3,d3,a2,b2,c2,d2,a1,b1,c1,d1]
 
+
+cmpl n x = ((n^2) + 1) - x
+complement ns = map (cmpl 4) ns
+
+-- complement $ order4s !! 0
+
+
 transform3 :: [Int] -> [[Int]]
 transform3 ns = [ns,
                 mirrorLR3 ns,

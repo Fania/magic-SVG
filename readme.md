@@ -68,6 +68,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] fix arc size to match natural size
 - [ ] add our own transformations
 - [ ] add data set option
+- [ ] add options for (odd, even, odd-even) sets
 
 ## URGENT
 
@@ -97,6 +98,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - http://recmath.org/Magic%20Squares/
 - http://www.magic-squares.net/order4listc.htm
 - http://www.magic-squares.net/downloads.htm
+- https://archive.org/details/mathematicalrecr0000krai/page/10#maincontent
 
 
 
