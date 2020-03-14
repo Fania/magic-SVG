@@ -178,6 +178,10 @@ input:disabled ~ span, select:disabled ~ span {
   text-decoration: underline;
 }
 
+.dataSet div p {
+  max-width: 1000px;
+}
+
 .error {
   text-align: center;
   width: 80%;
