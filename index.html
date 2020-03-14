@@ -36,10 +36,10 @@
   <div class="tabs">
     <img src="imgs/logo.svg" alt="logo" width="100">
     <fieldset>
-      <label for="orderGroups"><input type="radio" id="orderGroups" name="pageType" ><span>ORDER-GROUPS</span></label>
+      <label for="orderGroups"><input type="radio" id="orderGroups" name="pageType" checked><span>ORDER-GROUPS</span></label>
       <label for="filterGroups"><input type="radio" id="filterGroups" name="pageType"><span>FILTER-GROUPS</span></label>
       <label for="singleInput"><input type="radio" id="singleInput" name="pageType"><span>SINGLE-INPUT</span></label>
-      <label for="dataSets"><input type="radio" id="dataSets" name="pageType" checked><span>DATA-SETS</span></label>
+      <label for="dataSets"><input type="radio" id="dataSets" name="pageType"><span>DATA-SETS</span></label>
     </fieldset>
   </div>
   <div class="options">
@@ -58,6 +58,9 @@
         <select id="orderOptions">
           <option value="3" selected>Order 3</option>
           <option value="4" >Order 4</option>
+          <option value="4FA" >Order 4 Fania All (7040)</option>
+          <option value="4FNC" >Order 4 Fania No Complements (3520)</option>
+          <option value="4FR" >Order 4 Fania Reduced (880)</option>
           <!-- <option value="4.0">Order 4 (unique)</option> -->
           <option value="5">Order 5</option>
           <option value="6">Order 6</option>
@@ -177,8 +180,9 @@
 
 <script src="data/agrippa.js"></script>
 <script src="data/suzuki.js"></script>
-<script src="data/order4OUR.js"></script>
-<script src="data/order4rOUR.js"></script>
+<script src="data/fania880.js"></script>
+<script src="data/fania3520.js"></script>
+<script src="data/fania7040.js"></script>
 <script src="data/order3.js"></script> 
 <script src="data/order4.js"></script>
 <script src="data/order5.js"></script>
@@ -189,6 +193,9 @@
 <script src="data/order10-20.js"></script>
 <script src="data/index3.js"></script>
 <script src="data/index4.js"></script>
+<script src="data/indexFania880.js"></script>
+<script src="data/indexFania3520.js"></script>
+<script src="data/indexFania7040.js"></script>
 <!-- <script src="data/index4mini.js"></script>
 <script src="data/index4mini2.js"></script> -->
 <script src="data/index5.js"></script>

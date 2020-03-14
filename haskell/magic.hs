@@ -84,7 +84,7 @@ order3x = [
 -- run:
 -- ./magic -RTS
 
-
+-- 7040
 order4x = [ 
   [a1,b1,c1,d1, 
    a2,b2,c2,d2, 
@@ -136,8 +136,24 @@ rotate180 [a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,d1,d2,d3,d4] =
 rotateM90 [a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,d1,d2,d3,d4] = 
           [a4,b4,c4,d4,a3,b3,c3,d3,a2,b2,c2,d2,a1,b1,c1,d1]
 
+-- XrefV(9,13)
+xMV1 [a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,d1,d2,d3,d4] = 
+     [a2,a1,a4,a3,b2,b1,b4,b3,d2,d1,d4,d3,c2,c1,c4,c3]
+-- XrefV(308,317)
+xMV2 [a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,d1,d2,d3,d4] = 
+     [c1,c2,c3,c4,d1,d2,d3,d4,a1,a2,a3,a4,b1,b2,b3,b4]
+-- XrefV(418,808)
+xMV3 [a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,d1,d2,d3,d4] = 
+     [b4,d3,d2,b1,a4,c3,c2,a1,d4,b3,b2,d1,c4,a3,a2,c1]
 
+
+-- cmpl order num
+-- e.g. cmpl 4 1 = 16
+cmpl :: Int -> Int -> Int
 cmpl n x = ((n^2) + 1) - x
+
+-- complement square -> square
+complement :: [Int] -> [Int]
 complement ns = map (cmpl 4) ns
 
 -- complement $ order4s !! 0
@@ -164,19 +180,28 @@ transform ns = [ns,
                 rotateM90 ns]
 
 
+transformExtras ns = [ns,
+                xMV1 ns,
+                xMV2 ns,
+                xMV3 ns]
+
 reduceD43 :: [[Int]] -> [[Int]]
 reduceD43 [] = []
 reduceD43 (n:ns) = n : reduceD43 (ns \\ (tail $ transform3 n))
 
-
+-- /8
 reduceD4 :: [[Int]] -> [[Int]]
 reduceD4 [] = []
 reduceD4 (n:ns) = n : reduceD4 (ns \\ (tail $ transform n))
 
+-- /2
+removeCompls :: [[Int]] -> [[Int]]
+removeCompls [] = []
+removeCompls (n:ns) = n : removeCompls (delete (complement n) ns)
 
 
-
-
+-- getCompls :: [[Int]] -> [[Int]]
+-- getCompls (n:ns) = takeWhile (_ == complement n) ns
 
 
 -- compareMS :: [[Int]] -> [[Int]] -> [([Int],String,[Int])]
@@ -203,16 +228,21 @@ reduceD4 (n:ns) = n : reduceD4 (ns \\ (tail $ transform n))
 
 
 
--- main = do
-  -- print $ length order4
+main = do
+  -- print $ length order4s
   -- print order4x
   -- print $ transform $ head order4x
   -- print $ order3x
   -- print $ transform3 $ head order3x
   -- print $ reduceD43 order3x
+  print $ length $ removeCompls $ reduceD4 fania7040
+  print $ length $ reduceD4 fania7040
+  print $ length $ removeCompls fania7040
   -- print $ length $ reduceD4 ORDER4.order4s
   -- print $ reduced == (sort suzuki)
   -- print $ sort suzuki
   -- print $ intersect reduced suzuki
   -- print $ reduced \\ suzuki
   -- print $ compareMS reduced suzuki
+  -- print $ transformExtras $ [2,1,15,16,14,13,3,4,11,8,10,5,7,12,6,9]
+  -- print $ removeCompls order4x

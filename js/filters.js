@@ -3,6 +3,7 @@
 
 
 function populateOptions(order,style) {
+  // console.log(order, style);
   lenOptions.innerHTML = "";
   if(style !== "numbers") {
     const allLengths = orderIndex[order].map(o => `${Object.keys(o[style])[0]} (${o[style][Object.keys(o[style])[0]].length + 1})`);

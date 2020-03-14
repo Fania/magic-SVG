@@ -7,6 +7,9 @@
 const squareOrder = {
   "3": order3,
   "4": order4,
+  "4FA": fania7040,
+  "4FNC": fania3520,
+  "4FR": fania880,
   // "4.0": reduced4,
   "5": order5,
   "6": order6,
@@ -30,6 +33,9 @@ const squareOrder = {
 const orderIndex = {
   "3": index3,
   "4": index4,
+  "4FA": indexFania7040,
+  "4FNC": indexFania3520,
+  "4FR": indexFania880,
   // "4m": index4mini,
   // "4m2": index4mini2,
   "5": index5,
@@ -67,7 +73,8 @@ const datasetIndex = {
 
 
 function getCurrent(thing) {
-  let size = parseInt(orderOptions[orderOptions.selectedIndex].value);
+  // let size = parseInt(orderOptions[orderOptions.selectedIndex].value);
+  let size = orderOptions[orderOptions.selectedIndex].value;
   switch (thing) {
     case "index": 
       return orderIndex[size];
@@ -99,6 +106,7 @@ function load(pageType) {
   const style = getCurrent("style");
   const order = getCurrent("order");
   const index = getCurrent("index");
+  // console.log(style, order);
 
   updateBodyClasses(getCurrent("pageType"), getCurrent("order"));
 

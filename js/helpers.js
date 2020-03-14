@@ -11,9 +11,12 @@ function generateInitialIndex(order) {
   let output = `[`;
   let lengths = {};
   for (let i=0; i < source.length; i++) {
-    let valuesArray = source[i].split(" ").map(Number);
+    let valuesArray = ["4FA","4FNC","4FR"].includes(order)
+                      ? source[i] 
+                      : source[i].split(" ").map(Number);
     for (let j=0; j < styles.length; j++) {
-      let coordsObject = getCoords(order,valuesArray);
+      let o = (typeof order)=="number" ? order : 4;
+      let coordsObject = getCoords(o,valuesArray);
       let svgString = prepareSVG(styles[j],coordsObject,i+1);
       let svg = new DOMParser().parseFromString(svgString, 'text/html');
       let len = Math.ceil(svg.querySelector(".lines").getTotalLength());
@@ -89,11 +92,16 @@ function generateSVGs(index) {
 // GENERATE NEW INDEX HERE IN ONE COMMAND
 // let final = generateSVGs(
 //               generateSharedLengths(
-//                 generateInitialIndex(19)
+//                 generateInitialIndex(3)
 //               )
 //             );
 // console.log(final);
-
+// let final = generateSVGs(
+//               generateSharedLengths(
+//                 generateInitialIndex("4FA")
+//               )
+//             );
+// console.log(final);
 
 
 
@@ -348,6 +356,7 @@ function testPrints(input) {
 // testPrints(ourown);
 // testPrints(order4headTransformed);
 // testPrints(order3all);
+// testPrints(faniaNoCompls);
 
 
 
@@ -417,3 +426,63 @@ function testAgrippa(input) {
   }
 }
 // testAgrippa(agrippa);
+
+
+
+
+
+const n13t = [
+  [2,1,15,16,14,13,3,4,11,8,10,5,7,12,6,9], // ID
+  [7,11,14,2,12,8,13,1,6,10,3,15,9,5,4,16], // R1
+  [9,6,12,7,5,10,8,11,4,3,13,14,16,15,1,2], // R2
+  [16,4,5,9,15,3,10,6,1,13,8,12,2,14,11,7], // R3
+  [16,15,1,2,4,3,13,14,5,10,8,11,9,6,12,7], // MV
+  [7,12,6,9,11,8,10,5,14,13,3,4,2,1,15,16], // MH
+  [2,14,11,7,1,13,8,12,15,3,10,6,16,4,5,9], // MD1
+  [9,5,4,16,6,10,3,15,12,8,13,1,7,11,14,2]  // MD2
+];
+const ts = ["ID","R1","R2","R3","MV","MH","MD1","MD2"];
+const xt1 = [[2,1,15,16,14,13,3,4,11,8,10,5,7,12,6,9],[1,2,16,15,13,14,4,3,12,7,9,6,8,11,5,10],[11,8,10,5,7,12,6,9,2,1,15,16,14,13,3,4],[4,6,12,14,16,10,8,2,9,3,13,7,5,15,1,11]];
+
+function testTrans(input, input2) {
+  svgGrid.innerHTML = "";
+  for (let i in input) {
+    let o = Math.sqrt(input[i].length);
+    let text = `
+      <div class="agrippa">
+        ${prepareSVG("numbers",getCoords(o,input[i]),0)}
+        <p>${ts[i]}</p>
+      </div>
+    `;
+    drawSquare(text);
+  }
+  for (let i in input) {
+    let o = Math.sqrt(input[i].length);
+    let text = `
+      <div class="agrippa">
+        ${prepareSVG("quadvertex",getCoords(o,input[i]),0)}
+        <p>${ts[i]}</p>
+      </div>
+    `;
+    drawSquare(text);
+  }
+  for (let i in input2) {
+    let o = Math.sqrt(input2[i].length);
+    let text = `
+      <div class="agrippa">
+        ${prepareSVG("numbers",getCoords(o,input2[i]),0)}
+      </div>
+    `;
+    drawSquare(text);
+  }
+  for (let i in input2) {
+    let o = Math.sqrt(input2[i].length);
+    let text = `
+      <div class="agrippa">
+        ${prepareSVG("quadvertex",getCoords(o,input2[i]),0)}
+      </div>
+    `;
+    drawSquare(text);
+  }
+}
+// testTrans(n13t, xt1);
