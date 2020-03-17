@@ -17,6 +17,7 @@ function populateOptions(order,style) {
       // opt.value = list[l].slice(0,4);
       opt.value = list[l].match(/\d+/);
       opt.innerText = list[l];
+      // console.log(list[l]);
       lenOptions.appendChild(opt);
     }
   } else {

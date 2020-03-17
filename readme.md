@@ -68,7 +68,8 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] fix arc size to match natural size
 - [ ] add our own transformations
 - [ ] add data set option
-- [ ] add options for (odd, even, odd-even) sets
+- [ ] add options for (odd, even, odd-even) classes
+- [ ] add option for groups (I-XII)
 - [ ] run line length filter on full set of 7040 squares
 
 
@@ -103,6 +104,9 @@ Frénicle established two simple rules to determine the [standard position](http
 - http://www.magic-squares.net/order4listc.htm
 - http://www.magic-squares.net/downloads.htm
 - https://archive.org/details/mathematicalrecr0000krai/page/10#maincontent
+https://archive.org/details/DeOccultaPhilosophiaLoc1533/page/n163/mode/2up
+http://esotericarchives.com/agrippa/agrippa2.htm#contents
+(H.E. Dudeney "Amusements in Mathematics" 1917)[https://www.gutenberg.org/files/16713/16713-h/16713-h.htm]
 
 
 
@@ -374,6 +378,54 @@ OUR SET OF TRANSFORMATIONS
 
 	total time  =     5812.00 secs   (5812004 ticks @ 1000 us, 1 processor)
 	total alloc = 11,027,078,141,904 bytes  (excludes profiling overheads)
+
+
+
+
+## Classification
+
+Moran, J. (1982) The Wonders of Magic Squares. New York: Random House.
+
+Lines join complementary numbers.
+
+
+**6 Purebred & fertile**:
+
+!(Hera: Group I)[C:\Users\Fania\Dropbox\us\magic-square-art\EVA2020\images\groupI.svg]
+
+!(Asteria: Group II)[C:\Users\Fania\Dropbox\us\magic-square-art\EVA2020\images\groupII.svg]
+
+!(Niobe: Group III)[C:\Users\Fania\Dropbox\us\magic-square-art\EVA2020\images\groupIII.svg]
+
+!(Elara: Group IV)[C:\Users\Fania\Dropbox\us\magic-square-art\EVA2020\images\groupIV.svg]
+
+!(Hestia: Group V)[C:\Users\Fania\Dropbox\us\magic-square-art\EVA2020\images\groupV.svg]
+
+!(Demeter: Group VI)[C:\Users\Fania\Dropbox\us\magic-square-art\EVA2020\images\groupVI.svg]
+
+
+
+**6 Hybrid & sterile**:
+
+!(Arges: Group VII)[C:\Users\Fania\Dropbox\us\magic-square-art\EVA2020\images\groupVII.svg]
+
+!(Moros: Group VIII)[C:\Users\Fania\Dropbox\us\magic-square-art\EVA2020\images\groupVIII.svg]
+
+!(Thaumas: Group IX)[C:\Users\Fania\Dropbox\us\magic-square-art\EVA2020\images\groupIX.svg]
+
+!(Nemesis: Group X)[C:\Users\Fania\Dropbox\us\magic-square-art\EVA2020\images\groupX.svg]
+
+!(Cottus: Group XI)[C:\Users\Fania\Dropbox\us\magic-square-art\EVA2020\images\groupXI.svg]
+
+!(Eris: Group XII)[C:\Users\Fania\Dropbox\us\magic-square-art\EVA2020\images\groupXII.svg]
+
+
+
+
+
+
+
+
 
 
 

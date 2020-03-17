@@ -235,12 +235,16 @@ main = do
   -- print $ order3x
   -- print $ transform3 $ head order3x
   -- print $ reduceD43 order3x
-  print $ length $ removeCompls $ reduceD4 fania7040
-  print $ length $ reduceD4 fania7040
-  print $ length $ removeCompls fania7040
+
+  -- print $ length fania7040
+  -- print $ length $ removeCompls fania7040
+  -- print $ length $ reduceD4 fania7040
+  -- print $ length $ removeCompls $ reduceD4 fania7040
+  -- print $ length $ reduceD4 $ removeCompls fania7040
+
   -- print $ length $ reduceD4 ORDER4.order4s
   -- print $ reduced == (sort suzuki)
-  -- print $ sort suzuki
+  print $ sort suzuki
   -- print $ intersect reduced suzuki
   -- print $ reduced \\ suzuki
   -- print $ compareMS reduced suzuki

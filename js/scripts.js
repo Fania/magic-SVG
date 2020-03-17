@@ -7,6 +7,7 @@
 const squareOrder = {
   "3": order3,
   "4": order4,
+  "4s": suzukiSorted,
   "4FA": fania7040,
   "4FNC": fania3520,
   "4FR": fania880,
@@ -33,6 +34,7 @@ const squareOrder = {
 const orderIndex = {
   "3": index3,
   "4": index4,
+  "4s": index4sorted,
   "4FA": indexFania7040,
   "4FNC": indexFania3520,
   "4FR": indexFania880,
@@ -82,6 +84,8 @@ function getCurrent(thing) {
       return styleOptions[styleOptions.selectedIndex].value;
     case "order":
       return size;
+    case "group":
+      return groupOptions[groupOptions.selectedIndex].value;
     case "dataSet":
       return datasetIndex[datasetOptions[datasetOptions.selectedIndex].value];
     case "pageType":
@@ -105,14 +109,23 @@ function load(pageType) {
 
   const style = getCurrent("style");
   const order = getCurrent("order");
+  const group = getCurrent("group");
   const index = getCurrent("index");
   // console.log(style, order);
 
   updateBodyClasses(getCurrent("pageType"), getCurrent("order"));
 
   if (pageType === "orderGroups") {
-    index.forEach(idx => drawSquare(idx[style]["svg"]));
-    svgGrid.classList.remove("filter", "search", "single", "dataSet");
+
+    // console.log(group);
+    if (group == "0") {
+      index.forEach(idx => drawSquare(idx[style]["svg"]));
+      svgGrid.classList.remove("filter", "search", "single", "dataSet");
+    } else {
+      console.log(group);
+
+
+    }
   } // end orderGroups
 
 
