@@ -117,17 +117,13 @@ function generateSVGs(index) {
 
 // STEP 4
 // add similarity data from manual list
-const duplicates = {
-  209: "MV",
-  10: "identity"
-};
 function markDups(index, dups) {
   index.forEach(i => {
-    i["sim"] = dups[i.id];
+    i["sim"] = dups[i.id -1][1];
   });
   return index;
 }
-console.log( markDups(indexFania880, duplicates) );
+// console.log( markDups(indexFania880, duplicatesSorted) );
 
 
 

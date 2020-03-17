@@ -110,5 +110,15 @@
     font-size: 2em;
   }
 
+  body.uniques {  /* 32 */
+    --size: calc((100vw - 80px) / 27);
+    --marg: calc( ( 100vh - ( var(--size) * 15 ) ) / 2 );
+  }
+  body.uniques  p {
+    display: none;
+  }
+
+
+
 
 }

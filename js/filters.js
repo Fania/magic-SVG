@@ -281,3 +281,54 @@ let testsvg6 = "<svg id='quadvertex-4-69' class='order-x pad' viewbox='-2 -2 304
 // transformPng(testpng, "mirrorLR").then((data)=>{ 
 //   document.body.insertAdjacentHTML("beforeend", `<img src="${data}">`);
 // });
+
+
+
+
+const classes = {
+  "Hera":    ["A","B","C","D",
+              "E","F","G","H",
+              "C","D","A","B",
+              "G","H","E","F"],
+  "Asteria": ["A","B","C","D",
+              "B","A","D","C",
+              "E","F","G","H",
+              "F","E","H","G"],
+  "Niobe":   ["A","B","C","D",
+              "E","F","G","H",
+              "H","G","F","E",
+              "D","C","B","A"],
+  "Elara":   ["A","B","C","D",
+              "A","B","C","D",
+              "E","F","G","H",
+              "E","F","G","H"],
+  "Hestia":  ["A","B","C","D",
+              "E","F","G","H",
+              "A","B","C","D",
+              "E","F","G","H"],
+  "Demeter": ["A","B","C","D",
+              "E","F","G","H",
+              "E","F","G","H",
+              "A","B","C","D"],
+  "Arges":   ["A","B","C","D",
+              "E","B","C","H",
+              "E","F","G","H",
+              "A","F","G","D"],
+  "Moros":   ["A","B","C","D"],
+  "Thaumas": ["A","B","C","D"],
+  "Nemesis": ["A","B","C","D"],
+  "Cottus":  ["A","B","C","D"],
+  "Eris":    ["A","B","C","D"]
+};
+
+// function classify(index) {
+//   switch(type) {
+//     // 8 D4 transformations (using Gaspalou naming)
+//     case "I":  // A1 A2 A3 A4 B1 B2 B3 B4 C1 C2 C3 C4 D1 D2 D3 D4
+//       // return m;
+//       return [m[ 0], m[ 1], m[ 2], m[ 3],
+//               m[ 4], m[ 5], m[ 6], m[ 7],
+//               m[ 8], m[ 9], m[10], m[11],
+//               m[12], m[13], m[14], m[15]];
+
+

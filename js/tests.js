@@ -173,7 +173,25 @@ function testUnique(input) {
   }
 
 }
-testUnique(indexFania880);
+// testUnique(indexFania880);
 
 
 
+
+
+
+
+
+
+
+function testTrulyUnique(input) {
+  svgGrid.innerHTML = "";
+  let uniques = input.filter(i => 
+    i["sim"] === "unique" || i["sim"] === "identity"
+  );
+  console.log(uniques);
+  for (let u in uniques) {
+    drawSquare( uniques[u]["quadvertex"]["svg"] );
+  }
+}
+testTrulyUnique(indexFania880);

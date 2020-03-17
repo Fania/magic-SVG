@@ -42,7 +42,8 @@ const indexFania880 = [
     "quadline": {
       "1918": [],
       "svg": "<svg id='quadline-4-1' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-1' class='lines' d='M 0,0 Q 100,0 200,100 Q 300,200 300,100 Q 200,300 100,200 Q 0,300 300,300 Q 200,200 100,300 Q 0,100 0,200 Q 100,100 200,0 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 2,
@@ -88,7 +89,8 @@ const indexFania880 = [
     "quadline": {
       "1857": [],
       "svg": "<svg id='quadline-4-2' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-2' class='lines' d='M 0,0 Q 100,0 200,100 Q 300,100 300,200 Q 200,300 100,200 Q 0,300 300,300 Q 200,200 100,300 Q 0,200 0,100 Q 100,100 200,0 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 3,
@@ -136,7 +138,8 @@ const indexFania880 = [
     "quadline": {
       "2055": [],
       "svg": "<svg id='quadline-4-3' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-3' class='lines' d='M 0,0 Q 100,0 300,100 Q 200,100 200,300 Q 300,200 100,200 Q 0,300 200,200 Q 300,300 100,300 Q 0,200 0,100 Q 100,100 300,0 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 4,
@@ -186,7 +189,8 @@ const indexFania880 = [
         740
       ],
       "svg": "<svg id='quadline-4-4' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-4' class='lines' d='M 0,0 Q 300,200 100,0 Q 200,100 200,300 Q 100,200 300,100 Q 0,300 300,300 Q 0,100 200,200 Q 100,300 100,100 Q 200,0 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 5,
@@ -236,7 +240,8 @@ const indexFania880 = [
         721
       ],
       "svg": "<svg id='quadline-4-5' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-5' class='lines' d='M 0,0 Q 300,200 100,0 Q 200,100 300,100 Q 0,300 200,300 Q 100,200 200,200 Q 100,300 300,300 Q 0,100 100,100 Q 200,0 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 6,
@@ -280,7 +285,8 @@ const indexFania880 = [
     "quadline": {
       "2190": [],
       "svg": "<svg id='quadline-4-6' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-6' class='lines' d='M 0,0 Q 300,100 100,0 Q 200,100 200,300 Q 100,200 300,200 Q 0,300 300,300 Q 0,200 200,200 Q 100,300 100,100 Q 200,0 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 7,
@@ -327,7 +333,8 @@ const indexFania880 = [
     "quadline": {
       "2096": [],
       "svg": "<svg id='quadline-4-7' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-7' class='lines' d='M 0,0 Q 300,100 100,0 Q 200,100 300,200 Q 0,300 200,300 Q 100,200 200,200 Q 100,300 300,300 Q 0,200 100,100 Q 200,0 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 8,
@@ -380,7 +387,8 @@ const indexFania880 = [
         605
       ],
       "svg": "<svg id='quadline-4-8' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-8' class='lines' d='M 0,0 Q 200,100 100,0 Q 300,200 200,300 Q 100,200 300,300 Q 0,100 300,100 Q 100,300 200,200 Q 0,300 0,200 Q 300,0 100,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 9,
@@ -433,7 +441,8 @@ const indexFania880 = [
         410
       ],
       "svg": "<svg id='quadline-4-9' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-9' class='lines' d='M 0,0 Q 200,100 100,0 Q 300,200 300,100 Q 100,300 200,200 Q 0,300 200,300 Q 100,200 300,300 Q 0,100 0,200 Q 300,0 100,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 10,
@@ -485,7 +494,8 @@ const indexFania880 = [
         607
       ],
       "svg": "<svg id='quadline-4-10' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-10' class='lines' d='M 0,0 Q 200,100 100,0 Q 300,100 200,300 Q 100,200 300,300 Q 0,200 300,200 Q 100,300 200,200 Q 0,300 0,100 Q 300,0 100,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 11,
@@ -535,7 +545,8 @@ const indexFania880 = [
         412
       ],
       "svg": "<svg id='quadline-4-11' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-11' class='lines' d='M 0,0 Q 200,100 100,0 Q 300,100 300,200 Q 100,300 200,200 Q 0,300 200,300 Q 100,200 300,300 Q 0,200 0,100 Q 300,0 100,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 12,
@@ -588,7 +599,8 @@ const indexFania880 = [
         878
       ],
       "svg": "<svg id='quadline-4-12' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-12' class='lines' d='M 0,0 Q 300,200 200,100 Q 100,0 100,200 Q 200,300 300,300 Q 0,100 300,100 Q 0,300 100,300 Q 200,200 200,0 Q 100,100 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 13,
@@ -644,7 +656,8 @@ const indexFania880 = [
         743
       ],
       "svg": "<svg id='quadline-4-13' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-13' class='lines' d='M 0,0 Q 200,100 300,200 Q 100,0 100,200 Q 300,300 200,300 Q 0,100 300,100 Q 100,300 0,300 Q 200,200 200,0 Q 0,200 100,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 14,
@@ -695,7 +708,8 @@ const indexFania880 = [
         430
       ],
       "svg": "<svg id='quadline-4-14' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-14' class='lines' d='M 0,0 Q 300,200 200,100 Q 100,0 300,100 Q 0,300 100,300 Q 200,200 100,200 Q 200,300 300,300 Q 0,100 200,0 Q 100,100 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 15,
@@ -753,7 +767,8 @@ const indexFania880 = [
         791
       ],
       "svg": "<svg id='quadline-4-15' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-15' class='lines' d='M 0,0 Q 200,100 300,200 Q 100,0 300,100 Q 100,300 0,300 Q 200,200 100,200 Q 300,300 200,300 Q 0,100 200,0 Q 0,200 100,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 16,
@@ -804,7 +819,8 @@ const indexFania880 = [
         435
       ],
       "svg": "<svg id='quadline-4-16' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-16' class='lines' d='M 0,0 Q 200,100 300,100 Q 100,0 100,200 Q 300,300 200,300 Q 0,200 300,200 Q 100,300 0,300 Q 200,200 200,0 Q 0,100 100,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 17,
@@ -867,7 +883,8 @@ const indexFania880 = [
         608
       ],
       "svg": "<svg id='quadline-4-17' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-17' class='lines' d='M 0,0 Q 200,100 300,100 Q 100,0 300,200 Q 100,300 0,300 Q 200,200 100,200 Q 300,300 200,300 Q 0,200 200,0 Q 0,100 100,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 18,
@@ -931,7 +948,8 @@ const indexFania880 = [
         226
       ],
       "svg": "<svg id='quadline-4-18' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-18' class='lines' d='M 0,0 Q 300,100 200,100 Q 100,0 100,200 Q 200,300 300,300 Q 0,200 300,200 Q 0,300 100,300 Q 200,200 200,0 Q 100,100 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 19,
@@ -986,7 +1004,8 @@ const indexFania880 = [
         433
       ],
       "svg": "<svg id='quadline-4-19' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-19' class='lines' d='M 0,0 Q 300,100 200,100 Q 100,0 300,200 Q 0,300 100,300 Q 200,200 100,200 Q 200,300 300,300 Q 0,200 200,0 Q 100,100 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 20,
@@ -1061,7 +1080,8 @@ const indexFania880 = [
         403
       ],
       "svg": "<svg id='quadline-4-20' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-20' class='lines' d='M 0,0 Q 300,200 200,300 Q 100,0 100,200 Q 200,100 300,100 Q 0,300 0,100 Q 300,300 200,200 Q 100,100 100,300 Q 200,0 300,0 Q 0,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 21,
@@ -1120,7 +1140,8 @@ const indexFania880 = [
         591
       ],
       "svg": "<svg id='quadline-4-21' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-21' class='lines' d='M 0,0 Q 200,100 300,100 Q 100,0 100,200 Q 300,300 200,300 Q 0,200 100,300 Q 300,200 200,200 Q 0,300 0,100 Q 200,0 300,0 Q 100,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 22,
@@ -1186,7 +1207,8 @@ const indexFania880 = [
         612
       ],
       "svg": "<svg id='quadline-4-22' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-22' class='lines' d='M 0,0 Q 200,100 300,100 Q 100,0 100,300 Q 300,200 200,200 Q 0,300 100,200 Q 300,300 200,300 Q 0,200 0,100 Q 200,0 300,0 Q 100,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 23,
@@ -1245,7 +1267,8 @@ const indexFania880 = [
         631
       ],
       "svg": "<svg id='quadline-4-23' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-23' class='lines' d='M 0,0 Q 300,100 200,300 Q 100,0 200,100 Q 100,200 300,200 Q 0,300 0,200 Q 300,300 100,100 Q 200,200 100,300 Q 200,0 300,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 24,
@@ -1300,7 +1323,8 @@ const indexFania880 = [
         216
       ],
       "svg": "<svg id='quadline-4-24' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-24' class='lines' d='M 0,0 Q 300,100 200,100 Q 100,0 200,300 Q 100,200 0,200 Q 300,300 300,200 Q 0,300 100,300 Q 200,200 100,100 Q 200,0 300,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 25,
@@ -1355,7 +1379,8 @@ const indexFania880 = [
         590
       ],
       "svg": "<svg id='quadline-4-25' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-25' class='lines' d='M 0,0 Q 300,100 200,100 Q 100,0 300,200 Q 0,300 100,300 Q 200,200 200,300 Q 100,200 0,200 Q 300,300 100,100 Q 200,0 300,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 26,
@@ -1421,7 +1446,8 @@ const indexFania880 = [
         699
       ],
       "svg": "<svg id='quadline-4-26' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-26' class='lines' d='M 0,0 Q 200,300 300,200 Q 100,0 100,200 Q 300,100 200,100 Q 0,300 0,100 Q 200,200 300,300 Q 100,100 100,300 Q 300,0 200,0 Q 0,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 27,
@@ -1478,7 +1504,8 @@ const indexFania880 = [
         583
       ],
       "svg": "<svg id='quadline-4-27' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-27' class='lines' d='M 0,0 Q 300,100 200,100 Q 100,0 100,200 Q 200,300 300,300 Q 0,200 100,300 Q 200,200 300,200 Q 0,300 0,100 Q 300,0 200,0 Q 100,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 28,
@@ -1533,7 +1560,8 @@ const indexFania880 = [
         422
       ],
       "svg": "<svg id='quadline-4-28' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-28' class='lines' d='M 0,0 Q 300,100 200,100 Q 100,0 100,300 Q 200,200 300,200 Q 0,300 100,200 Q 200,300 300,300 Q 0,200 0,100 Q 300,0 200,0 Q 100,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 29,
@@ -1581,7 +1609,8 @@ const indexFania880 = [
     "quadline": {
       "2164": [],
       "svg": "<svg id='quadline-4-29' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-29' class='lines' d='M 0,0 Q 200,300 300,100 Q 100,0 200,100 Q 300,200 100,200 Q 0,300 0,200 Q 100,100 300,300 Q 200,200 100,300 Q 300,0 200,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 30,
@@ -1639,7 +1668,8 @@ const indexFania880 = [
         419
       ],
       "svg": "<svg id='quadline-4-30' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-30' class='lines' d='M 0,0 Q 200,100 300,100 Q 100,0 200,300 Q 0,200 100,200 Q 300,300 300,200 Q 100,300 0,300 Q 200,200 100,100 Q 300,0 200,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 31,
@@ -1690,7 +1720,8 @@ const indexFania880 = [
         582
       ],
       "svg": "<svg id='quadline-4-31' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-31' class='lines' d='M 0,0 Q 200,100 300,100 Q 100,0 300,200 Q 100,300 0,300 Q 200,200 200,300 Q 0,200 100,200 Q 300,300 100,100 Q 300,0 200,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 32,
@@ -1747,7 +1778,8 @@ const indexFania880 = [
         577
       ],
       "svg": "<svg id='quadline-4-32' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-32' class='lines' d='M 0,0 Q 300,100 200,100 Q 100,0 200,300 Q 100,200 0,200 Q 300,300 100,300 Q 200,200 300,200 Q 0,300 300,0 Q 0,100 100,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 33,
@@ -1809,7 +1841,8 @@ const indexFania880 = [
         578
       ],
       "svg": "<svg id='quadline-4-33' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-33' class='lines' d='M 0,0 Q 300,100 200,100 Q 100,0 100,300 Q 200,200 300,200 Q 0,300 200,300 Q 100,200 0,200 Q 300,300 300,0 Q 0,100 100,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 34,
@@ -1868,7 +1901,8 @@ const indexFania880 = [
         612
       ],
       "svg": "<svg id='quadline-4-34' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-34' class='lines' d='M 0,0 Q 200,100 300,100 Q 100,0 200,300 Q 0,200 100,200 Q 300,300 100,300 Q 300,200 200,200 Q 0,300 300,0 Q 100,100 0,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 35,
@@ -1923,7 +1957,8 @@ const indexFania880 = [
         576
       ],
       "svg": "<svg id='quadline-4-35' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-35' class='lines' d='M 0,0 Q 200,100 300,100 Q 100,0 100,300 Q 300,200 200,200 Q 0,300 200,300 Q 0,200 100,200 Q 300,300 300,0 Q 100,100 0,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 36,
@@ -1985,7 +2020,8 @@ const indexFania880 = [
         822
       ],
       "svg": "<svg id='quadline-4-36' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-36' class='lines' d='M 0,0 Q 300,200 200,300 Q 100,200 100,0 Q 200,100 300,100 Q 0,300 300,300 Q 0,100 100,100 Q 200,0 200,200 Q 100,300 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 37,
@@ -2059,7 +2095,8 @@ const indexFania880 = [
         771
       ],
       "svg": "<svg id='quadline-4-37' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-37' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 100,0 Q 200,100 200,300 Q 100,200 200,200 Q 100,300 100,100 Q 200,0 300,300 Q 0,100 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 38,
@@ -2113,7 +2150,8 @@ const indexFania880 = [
         655
       ],
       "svg": "<svg id='quadline-4-38' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-38' class='lines' d='M 0,0 Q 300,100 200,300 Q 100,200 100,0 Q 200,100 300,200 Q 0,300 300,300 Q 0,200 100,100 Q 200,0 200,200 Q 100,300 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 39,
@@ -2162,7 +2200,8 @@ const indexFania880 = [
     "quadline": {
       "2537": [],
       "svg": "<svg id='quadline-4-39' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-39' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 100,0 Q 200,100 200,300 Q 100,200 200,200 Q 100,300 100,100 Q 200,0 300,300 Q 0,200 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 40,
@@ -2227,7 +2266,8 @@ const indexFania880 = [
         637
       ],
       "svg": "<svg id='quadline-4-40' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-40' class='lines' d='M 0,0 Q 200,300 200,100 Q 100,200 100,0 Q 300,300 300,200 Q 0,100 300,100 Q 0,200 100,300 Q 300,0 200,200 Q 100,100 0,300 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 41,
@@ -2290,7 +2330,8 @@ const indexFania880 = [
         687
       ],
       "svg": "<svg id='quadline-4-41' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-41' class='lines' d='M 0,0 Q 200,300 200,100 Q 100,200 100,0 Q 300,300 300,100 Q 0,200 300,200 Q 0,100 100,300 Q 300,0 200,200 Q 100,100 0,300 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 42,
@@ -2353,7 +2394,8 @@ const indexFania880 = [
         719
       ],
       "svg": "<svg id='quadline-4-42' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-42' class='lines' d='M 0,0 Q 300,200 200,100 Q 100,300 100,0 Q 200,200 300,100 Q 0,300 200,300 Q 0,100 100,200 Q 300,0 300,300 Q 100,100 0,200 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 43,
@@ -2402,7 +2444,8 @@ const indexFania880 = [
         686
       ],
       "svg": "<svg id='quadline-4-43' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-43' class='lines' d='M 0,0 Q 300,100 200,100 Q 100,300 100,0 Q 200,200 300,200 Q 0,300 200,300 Q 0,200 100,200 Q 300,0 300,300 Q 100,100 0,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 44,
@@ -2452,7 +2495,8 @@ const indexFania880 = [
         595
       ],
       "svg": "<svg id='quadline-4-44' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-44' class='lines' d='M 0,0 Q 200,100 300,200 Q 100,200 300,300 Q 100,0 0,100 Q 200,300 100,300 Q 300,100 200,0 Q 0,300 200,200 Q 0,200 100,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 45,
@@ -2513,7 +2557,8 @@ const indexFania880 = [
         876
       ],
       "svg": "<svg id='quadline-4-45' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-45' class='lines' d='M 0,0 Q 300,200 100,200 Q 200,300 200,100 Q 100,0 300,300 Q 0,100 300,100 Q 0,300 200,0 Q 100,100 100,300 Q 200,200 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 46,
@@ -2567,7 +2612,8 @@ const indexFania880 = [
         756
       ],
       "svg": "<svg id='quadline-4-46' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-46' class='lines' d='M 0,0 Q 200,100 100,200 Q 300,300 300,200 Q 100,0 200,300 Q 0,100 300,100 Q 100,300 200,0 Q 0,200 0,300 Q 200,200 100,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 47,
@@ -2616,7 +2662,8 @@ const indexFania880 = [
         718
       ],
       "svg": "<svg id='quadline-4-47' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-47' class='lines' d='M 0,0 Q 200,300 100,200 Q 300,200 300,100 Q 100,0 200,100 Q 0,300 300,300 Q 100,100 200,0 Q 0,100 0,200 Q 200,200 100,300 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 48,
@@ -2669,7 +2716,8 @@ const indexFania880 = [
         763
       ],
       "svg": "<svg id='quadline-4-48' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-48' class='lines' d='M 0,0 Q 200,100 100,200 Q 300,300 300,100 Q 100,0 200,300 Q 0,200 300,200 Q 100,300 200,0 Q 0,100 0,300 Q 200,200 100,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 49,
@@ -2756,7 +2804,8 @@ const indexFania880 = [
         691
       ],
       "svg": "<svg id='quadline-4-49' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-49' class='lines' d='M 0,0 Q 200,100 300,200 Q 100,300 300,100 Q 100,0 0,300 Q 200,200 100,200 Q 300,300 200,0 Q 0,100 200,300 Q 0,200 100,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 50,
@@ -2821,7 +2870,8 @@ const indexFania880 = [
         685
       ],
       "svg": "<svg id='quadline-4-50' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-50' class='lines' d='M 0,0 Q 200,300 100,200 Q 300,100 300,200 Q 100,0 200,100 Q 0,300 300,300 Q 100,100 200,0 Q 0,200 0,100 Q 200,200 100,300 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 51,
@@ -2881,7 +2931,8 @@ const indexFania880 = [
         840
       ],
       "svg": "<svg id='quadline-4-51' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-51' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 200,100 Q 100,0 100,300 Q 200,200 100,200 Q 200,300 200,0 Q 100,100 300,300 Q 0,100 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 52,
@@ -2945,7 +2996,8 @@ const indexFania880 = [
         777
       ],
       "svg": "<svg id='quadline-4-52' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-52' class='lines' d='M 0,0 Q 200,100 300,100 Q 100,200 300,300 Q 100,0 0,200 Q 200,300 100,300 Q 300,200 200,0 Q 0,300 200,200 Q 0,100 100,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 53,
@@ -3000,7 +3052,8 @@ const indexFania880 = [
         258
       ],
       "svg": "<svg id='quadline-4-53' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-53' class='lines' d='M 0,0 Q 200,100 300,100 Q 100,300 300,200 Q 100,0 0,300 Q 200,200 100,200 Q 300,300 200,0 Q 0,200 200,300 Q 0,100 100,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 54,
@@ -3061,7 +3114,8 @@ const indexFania880 = [
         660
       ],
       "svg": "<svg id='quadline-4-54' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-54' class='lines' d='M 0,0 Q 300,100 100,200 Q 200,300 200,100 Q 100,0 300,300 Q 0,200 300,200 Q 0,300 200,0 Q 100,100 100,300 Q 200,200 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 55,
@@ -3116,7 +3170,8 @@ const indexFania880 = [
         761
       ],
       "svg": "<svg id='quadline-4-55' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-55' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 200,100 Q 100,0 100,300 Q 200,200 100,200 Q 200,300 200,0 Q 100,100 300,300 Q 0,200 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 56,
@@ -3187,7 +3242,8 @@ const indexFania880 = [
         818
       ],
       "svg": "<svg id='quadline-4-56' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-56' class='lines' d='M 0,0 Q 200,100 100,200 Q 300,300 300,100 Q 100,0 200,300 Q 0,200 100,300 Q 300,200 0,100 Q 200,0 200,200 Q 0,300 300,0 Q 100,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 57,
@@ -3274,7 +3330,8 @@ const indexFania880 = [
         837
       ],
       "svg": "<svg id='quadline-4-57' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-57' class='lines' d='M 0,0 Q 200,100 100,300 Q 300,200 300,100 Q 100,0 200,200 Q 0,300 100,200 Q 300,300 0,100 Q 200,0 200,300 Q 0,200 300,0 Q 100,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 58,
@@ -3324,7 +3381,8 @@ const indexFania880 = [
     "quadline": {
       "2543": [],
       "svg": "<svg id='quadline-4-58' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-58' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 200,300 Q 100,0 100,200 Q 200,100 200,200 Q 100,100 100,300 Q 200,0 0,100 Q 300,300 300,0 Q 0,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 59,
@@ -3380,7 +3438,8 @@ const indexFania880 = [
         635
       ],
       "svg": "<svg id='quadline-4-59' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-59' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 200,300 Q 100,0 200,100 Q 100,200 100,100 Q 200,200 100,300 Q 200,0 0,200 Q 300,300 300,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 60,
@@ -3442,7 +3501,8 @@ const indexFania880 = [
         727
       ],
       "svg": "<svg id='quadline-4-60' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-60' class='lines' d='M 0,0 Q 300,100 200,300 Q 100,200 200,100 Q 100,0 0,200 Q 300,300 300,200 Q 0,300 100,100 Q 200,0 100,300 Q 200,200 300,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 61,
@@ -3493,7 +3553,8 @@ const indexFania880 = [
         817
       ],
       "svg": "<svg id='quadline-4-61' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-61' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 200,100 Q 100,0 100,300 Q 200,200 200,300 Q 100,200 100,100 Q 200,0 0,200 Q 300,300 300,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 62,
@@ -3568,7 +3629,8 @@ const indexFania880 = [
         678
       ],
       "svg": "<svg id='quadline-4-62' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-62' class='lines' d='M 0,0 Q 300,100 100,200 Q 200,300 200,100 Q 100,0 300,300 Q 0,200 100,300 Q 200,200 0,100 Q 300,0 300,200 Q 0,300 200,0 Q 100,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 63,
@@ -3625,7 +3687,8 @@ const indexFania880 = [
         849
       ],
       "svg": "<svg id='quadline-4-63' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-63' class='lines' d='M 0,0 Q 300,100 100,300 Q 200,200 200,100 Q 100,0 300,200 Q 0,300 100,200 Q 200,300 0,100 Q 300,0 300,300 Q 0,200 200,0 Q 100,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 64,
@@ -3683,7 +3746,8 @@ const indexFania880 = [
         681
       ],
       "svg": "<svg id='quadline-4-64' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-64' class='lines' d='M 0,0 Q 200,100 200,300 Q 0,200 300,100 Q 100,0 100,200 Q 300,300 300,200 Q 100,300 100,100 Q 300,0 0,300 Q 200,200 200,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 65,
@@ -3748,7 +3812,8 @@ const indexFania880 = [
         682
       ],
       "svg": "<svg id='quadline-4-65' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-65' class='lines' d='M 0,0 Q 200,100 300,200 Q 100,300 300,100 Q 100,0 0,300 Q 200,200 200,300 Q 0,200 100,100 Q 300,0 100,200 Q 300,300 200,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 66,
@@ -3812,7 +3877,8 @@ const indexFania880 = [
         695
       ],
       "svg": "<svg id='quadline-4-66' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-66' class='lines' d='M 0,0 Q 300,100 200,300 Q 100,200 200,100 Q 100,0 0,200 Q 300,300 100,300 Q 200,200 300,0 Q 0,100 300,200 Q 0,300 100,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 67,
@@ -3873,7 +3939,8 @@ const indexFania880 = [
         512
       ],
       "svg": "<svg id='quadline-4-67' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-67' class='lines' d='M 0,0 Q 300,100 100,300 Q 200,200 200,100 Q 100,0 300,200 Q 0,300 200,300 Q 100,200 300,0 Q 0,100 0,200 Q 300,300 100,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 68,
@@ -3930,7 +3997,8 @@ const indexFania880 = [
         635
       ],
       "svg": "<svg id='quadline-4-68' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-68' class='lines' d='M 0,0 Q 200,100 200,300 Q 0,200 300,100 Q 100,0 100,200 Q 300,300 100,300 Q 300,200 300,0 Q 100,100 200,200 Q 0,300 0,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 69,
@@ -3998,7 +4066,8 @@ const indexFania880 = [
         789
       ],
       "svg": "<svg id='quadline-4-69' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-69' class='lines' d='M 0,0 Q 200,100 100,300 Q 300,200 300,100 Q 100,0 200,200 Q 0,300 200,300 Q 0,200 300,0 Q 100,100 100,200 Q 300,300 0,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 70,
@@ -4046,7 +4115,8 @@ const indexFania880 = [
         452
       ],
       "svg": "<svg id='quadline-4-70' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-70' class='lines' d='M 0,0 Q 100,200 300,200 Q 200,300 200,100 Q 300,300 100,0 Q 0,100 300,100 Q 200,0 0,300 Q 100,100 100,300 Q 0,200 200,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 71,
@@ -4103,7 +4173,8 @@ const indexFania880 = [
         769
       ],
       "svg": "<svg id='quadline-4-71' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-71' class='lines' d='M 0,0 Q 100,200 200,100 Q 300,300 300,200 Q 200,300 100,0 Q 0,100 300,100 Q 200,0 100,300 Q 0,200 0,300 Q 100,100 200,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 72,
@@ -4172,7 +4243,8 @@ const indexFania880 = [
         724
       ],
       "svg": "<svg id='quadline-4-72' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-72' class='lines' d='M 0,0 Q 300,200 200,300 Q 100,200 300,100 Q 0,300 100,0 Q 200,100 100,100 Q 200,0 300,300 Q 0,100 200,200 Q 100,300 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 73,
@@ -4225,7 +4297,8 @@ const indexFania880 = [
         844
       ],
       "svg": "<svg id='quadline-4-73' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-73' class='lines' d='M 0,0 Q 100,200 200,100 Q 300,300 300,100 Q 200,300 100,0 Q 0,200 300,200 Q 200,0 100,300 Q 0,100 0,300 Q 100,100 200,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 74,
@@ -4295,7 +4368,8 @@ const indexFania880 = [
         794
       ],
       "svg": "<svg id='quadline-4-74' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-74' class='lines' d='M 0,0 Q 300,200 200,100 Q 100,300 300,100 Q 0,300 100,0 Q 200,200 100,200 Q 200,0 300,300 Q 0,100 200,300 Q 100,100 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 75,
@@ -4340,7 +4414,8 @@ const indexFania880 = [
     "quadline": {
       "2357": [],
       "svg": "<svg id='quadline-4-75' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-75' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 200,300 Q 100,200 100,0 Q 200,100 100,100 Q 200,0 200,200 Q 100,300 300,300 Q 0,100 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 76,
@@ -4397,7 +4472,8 @@ const indexFania880 = [
         677
       ],
       "svg": "<svg id='quadline-4-76' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-76' class='lines' d='M 0,0 Q 100,200 300,100 Q 200,300 200,100 Q 300,300 100,0 Q 0,200 300,200 Q 200,0 0,300 Q 100,100 100,300 Q 0,100 200,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 77,
@@ -4462,7 +4538,8 @@ const indexFania880 = [
         771
       ],
       "svg": "<svg id='quadline-4-77' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-77' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 200,100 Q 100,300 100,0 Q 200,200 100,200 Q 200,0 200,300 Q 100,100 300,300 Q 0,100 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 78,
@@ -4527,7 +4604,8 @@ const indexFania880 = [
         808
       ],
       "svg": "<svg id='quadline-4-78' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-78' class='lines' d='M 0,0 Q 300,100 200,300 Q 100,200 300,200 Q 0,300 100,0 Q 200,100 100,100 Q 200,0 300,300 Q 0,200 200,200 Q 100,300 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 79,
@@ -4584,7 +4662,8 @@ const indexFania880 = [
     "quadline": {
       "2284": [],
       "svg": "<svg id='quadline-4-79' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-79' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 200,300 Q 100,200 100,0 Q 200,100 100,100 Q 200,0 200,200 Q 100,300 300,300 Q 0,200 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 80,
@@ -4642,7 +4721,8 @@ const indexFania880 = [
         772
       ],
       "svg": "<svg id='quadline-4-80' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-80' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 200,100 Q 100,300 100,0 Q 200,200 100,200 Q 200,0 200,300 Q 100,100 300,300 Q 0,200 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 81,
@@ -4703,7 +4783,8 @@ const indexFania880 = [
         742
       ],
       "svg": "<svg id='quadline-4-81' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-81' class='lines' d='M 0,0 Q 300,100 200,100 Q 100,300 300,200 Q 0,300 100,0 Q 200,200 100,200 Q 200,0 300,300 Q 0,200 200,300 Q 100,100 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 82,
@@ -4776,7 +4857,8 @@ const indexFania880 = [
         844
       ],
       "svg": "<svg id='quadline-4-82' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-82' class='lines' d='M 0,0 Q 100,200 200,100 Q 300,300 300,100 Q 200,300 100,0 Q 0,200 100,300 Q 0,100 300,200 Q 200,0 200,200 Q 300,0 0,300 Q 100,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 83,
@@ -4850,7 +4932,8 @@ const indexFania880 = [
         716
       ],
       "svg": "<svg id='quadline-4-83' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-83' class='lines' d='M 0,0 Q 100,300 200,100 Q 300,200 300,100 Q 200,200 100,0 Q 0,300 100,200 Q 0,100 300,300 Q 200,0 200,300 Q 300,0 0,200 Q 100,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 84,
@@ -4918,7 +5001,8 @@ const indexFania880 = [
         637
       ],
       "svg": "<svg id='quadline-4-84' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-84' class='lines' d='M 0,0 Q 200,300 300,100 Q 100,200 200,100 Q 0,200 100,0 Q 300,300 300,200 Q 100,100 0,300 Q 200,0 100,300 Q 300,0 200,200 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 85,
@@ -4988,7 +5072,8 @@ const indexFania880 = [
         843
       ],
       "svg": "<svg id='quadline-4-85' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-85' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 200,100 Q 100,300 100,0 Q 200,200 200,300 Q 100,100 100,200 Q 200,0 0,200 Q 300,0 300,300 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 86,
@@ -5038,7 +5123,8 @@ const indexFania880 = [
         615
       ],
       "svg": "<svg id='quadline-4-86' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-86' class='lines' d='M 0,0 Q 200,100 200,300 Q 100,200 300,300 Q 300,200 100,0 Q 0,100 0,200 Q 100,300 300,100 Q 300,0 100,100 Q 200,0 200,200 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 87,
@@ -5101,7 +5187,8 @@ const indexFania880 = [
         739
       ],
       "svg": "<svg id='quadline-4-87' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-87' class='lines' d='M 0,0 Q 100,200 200,300 Q 200,100 300,300 Q 300,100 100,0 Q 0,200 0,100 Q 100,300 300,200 Q 300,0 200,200 Q 200,0 100,100 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 88,
@@ -5157,7 +5244,8 @@ const indexFania880 = [
         725
       ],
       "svg": "<svg id='quadline-4-88' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-88' class='lines' d='M 0,0 Q 100,300 300,200 Q 200,100 200,200 Q 300,100 100,0 Q 0,300 0,100 Q 100,200 200,300 Q 300,0 300,300 Q 200,0 100,100 Q 0,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 89,
@@ -5240,7 +5328,8 @@ const indexFania880 = [
         823
       ],
       "svg": "<svg id='quadline-4-89' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-89' class='lines' d='M 0,0 Q 100,200 300,100 Q 200,300 200,100 Q 300,300 100,0 Q 0,200 100,300 Q 0,100 200,200 Q 300,0 300,200 Q 200,0 0,300 Q 100,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 90,
@@ -5295,7 +5384,8 @@ const indexFania880 = [
         662
       ],
       "svg": "<svg id='quadline-4-90' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-90' class='lines' d='M 0,0 Q 100,300 300,100 Q 200,200 200,100 Q 300,200 100,0 Q 0,300 100,200 Q 0,100 200,300 Q 300,0 300,300 Q 200,0 0,200 Q 100,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 91,
@@ -5359,7 +5449,8 @@ const indexFania880 = [
         667
       ],
       "svg": "<svg id='quadline-4-91' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-91' class='lines' d='M 0,0 Q 200,100 200,300 Q 100,200 300,300 Q 0,200 100,0 Q 300,100 300,200 Q 100,300 0,100 Q 300,0 100,100 Q 200,0 200,200 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 92,
@@ -5420,7 +5511,8 @@ const indexFania880 = [
         663
       ],
       "svg": "<svg id='quadline-4-92' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-92' class='lines' d='M 0,0 Q 200,300 200,100 Q 0,200 300,100 Q 100,200 100,0 Q 300,300 300,200 Q 100,100 100,300 Q 300,0 0,300 Q 200,0 200,200 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 93,
@@ -5487,7 +5579,8 @@ const indexFania880 = [
         664
       ],
       "svg": "<svg id='quadline-4-93' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-93' class='lines' d='M 0,0 Q 300,200 200,100 Q 100,300 300,100 Q 0,300 100,0 Q 200,200 200,300 Q 100,100 0,200 Q 300,0 100,200 Q 200,0 300,300 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 94,
@@ -5537,7 +5630,8 @@ const indexFania880 = [
         706
       ],
       "svg": "<svg id='quadline-4-94' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-94' class='lines' d='M 0,0 Q 100,300 300,200 Q 200,100 200,200 Q 300,100 100,0 Q 0,300 200,300 Q 300,0 0,100 Q 100,200 100,100 Q 0,200 300,300 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 95,
@@ -5599,7 +5693,8 @@ const indexFania880 = [
         710
       ],
       "svg": "<svg id='quadline-4-95' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-95' class='lines' d='M 0,0 Q 200,300 300,100 Q 100,200 200,100 Q 0,200 100,0 Q 300,300 100,300 Q 300,0 200,200 Q 0,100 300,200 Q 100,100 0,300 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 96,
@@ -5658,7 +5753,8 @@ const indexFania880 = [
         329
       ],
       "svg": "<svg id='quadline-4-96' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-96' class='lines' d='M 0,0 Q 100,300 300,100 Q 200,200 200,100 Q 300,200 100,0 Q 0,300 200,300 Q 300,0 100,200 Q 0,100 0,200 Q 100,100 300,300 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 97,
@@ -5714,7 +5810,8 @@ const indexFania880 = [
         872
       ],
       "svg": "<svg id='quadline-4-97' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-97' class='lines' d='M 0,0 Q 200,300 200,100 Q 0,200 300,100 Q 100,200 100,0 Q 300,300 100,300 Q 300,0 300,200 Q 100,100 200,200 Q 0,100 0,300 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 98,
@@ -5784,7 +5881,8 @@ const indexFania880 = [
         723
       ],
       "svg": "<svg id='quadline-4-98' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-98' class='lines' d='M 0,0 Q 100,300 200,100 Q 300,200 300,100 Q 200,200 100,0 Q 0,300 200,300 Q 300,0 0,200 Q 100,100 100,200 Q 0,100 300,300 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 99,
@@ -5839,7 +5937,8 @@ const indexFania880 = [
         534
       ],
       "svg": "<svg id='quadline-4-99' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-99' class='lines' d='M 0,0 Q 100,300 300,100 Q 200,100 200,200 Q 300,200 100,0 Q 0,300 200,300 Q 300,0 0,200 Q 100,200 100,100 Q 0,100 300,300 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 100,
@@ -5889,7 +5988,8 @@ const indexFania880 = [
         617
       ],
       "svg": "<svg id='quadline-4-100' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-100' class='lines' d='M 0,0 Q 100,200 300,100 Q 200,100 300,300 Q 200,300 0,200 Q 100,0 200,0 Q 300,200 100,300 Q 0,300 100,100 Q 0,100 200,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 101,
@@ -5961,7 +6061,8 @@ const indexFania880 = [
         796
       ],
       "svg": "<svg id='quadline-4-101' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-101' class='lines' d='M 0,0 Q 300,200 100,300 Q 200,100 300,100 Q 0,300 200,200 Q 100,0 100,200 Q 200,0 0,100 Q 300,300 200,300 Q 100,100 300,0 Q 0,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 102,
@@ -6019,7 +6120,8 @@ const indexFania880 = [
         828
       ],
       "svg": "<svg id='quadline-4-102' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-102' class='lines' d='M 0,0 Q 100,200 200,100 Q 300,300 200,300 Q 300,100 0,200 Q 100,0 300,200 Q 200,0 100,300 Q 0,100 100,100 Q 0,300 300,0 Q 200,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 103,
@@ -6091,7 +6193,8 @@ const indexFania880 = [
         827
       ],
       "svg": "<svg id='quadline-4-103' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-103' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 100,300 Q 200,100 200,200 Q 100,0 100,200 Q 200,0 200,300 Q 100,100 0,100 Q 300,300 300,0 Q 0,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 104,
@@ -6159,7 +6262,8 @@ const indexFania880 = [
         623
       ],
       "svg": "<svg id='quadline-4-104' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-104' class='lines' d='M 0,0 Q 100,200 200,300 Q 300,100 200,100 Q 300,300 0,200 Q 100,0 300,200 Q 200,0 100,100 Q 0,300 100,300 Q 0,100 300,0 Q 200,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 105,
@@ -6216,7 +6320,8 @@ const indexFania880 = [
         588
       ],
       "svg": "<svg id='quadline-4-105' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-105' class='lines' d='M 0,0 Q 300,100 200,100 Q 100,200 0,200 Q 300,300 200,300 Q 100,0 100,300 Q 200,0 300,200 Q 0,300 100,100 Q 200,200 300,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 106,
@@ -6284,7 +6389,8 @@ const indexFania880 = [
         715
       ],
       "svg": "<svg id='quadline-4-106' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-106' class='lines' d='M 0,0 Q 100,300 300,200 Q 200,100 300,100 Q 200,200 0,300 Q 100,0 100,200 Q 0,100 200,0 Q 300,300 200,300 Q 300,0 100,100 Q 0,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 107,
@@ -6341,7 +6447,8 @@ const indexFania880 = [
         839
       ],
       "svg": "<svg id='quadline-4-107' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-107' class='lines' d='M 0,0 Q 200,100 100,200 Q 300,300 200,300 Q 0,200 300,100 Q 100,0 300,200 Q 100,300 200,0 Q 0,100 100,100 Q 300,0 0,300 Q 200,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 108,
@@ -6405,7 +6512,8 @@ const indexFania880 = [
         838
       ],
       "svg": "<svg id='quadline-4-108' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-108' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 100,300 Q 200,200 200,100 Q 100,0 100,200 Q 200,300 200,0 Q 100,100 0,100 Q 300,0 300,300 Q 0,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 109,
@@ -6470,7 +6578,8 @@ const indexFania880 = [
         621
       ],
       "svg": "<svg id='quadline-4-109' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-109' class='lines' d='M 0,0 Q 200,300 100,200 Q 300,100 200,100 Q 0,200 300,300 Q 100,0 300,200 Q 100,100 200,0 Q 0,300 100,300 Q 300,0 0,100 Q 200,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 110,
@@ -6542,7 +6651,8 @@ const indexFania880 = [
         791
       ],
       "svg": "<svg id='quadline-4-110' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-110' class='lines' d='M 0,0 Q 100,200 200,100 Q 300,300 200,300 Q 300,100 0,200 Q 100,0 100,300 Q 0,100 300,200 Q 200,0 300,0 Q 200,200 100,100 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 111,
@@ -6609,7 +6719,8 @@ const indexFania880 = [
         792
       ],
       "svg": "<svg id='quadline-4-111' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-111' class='lines' d='M 0,0 Q 200,100 100,200 Q 300,300 200,300 Q 0,200 300,100 Q 100,0 100,300 Q 300,200 0,100 Q 200,0 300,0 Q 100,100 200,200 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 112,
@@ -6668,7 +6779,8 @@ const indexFania880 = [
         789
       ],
       "svg": "<svg id='quadline-4-112' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-112' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 100,300 Q 200,200 200,100 Q 100,0 200,300 Q 100,200 100,100 Q 200,0 300,0 Q 0,100 0,200 Q 300,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 113,
@@ -6721,7 +6833,8 @@ const indexFania880 = [
         790
       ],
       "svg": "<svg id='quadline-4-113' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-113' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 100,300 Q 200,100 200,200 Q 100,0 200,300 Q 100,100 100,200 Q 200,0 300,0 Q 0,200 0,100 Q 300,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 114,
@@ -6782,7 +6895,8 @@ const indexFania880 = [
         642
       ],
       "svg": "<svg id='quadline-4-114' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-114' class='lines' d='M 0,0 Q 100,300 300,100 Q 200,200 300,200 Q 200,100 0,300 Q 100,0 100,200 Q 0,100 200,300 Q 300,0 200,0 Q 300,300 100,100 Q 0,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 115,
@@ -6848,7 +6962,8 @@ const indexFania880 = [
         640
       ],
       "svg": "<svg id='quadline-4-115' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-115' class='lines' d='M 0,0 Q 300,100 100,300 Q 200,200 300,200 Q 0,300 200,100 Q 100,0 100,200 Q 200,300 0,100 Q 300,0 200,0 Q 100,100 300,300 Q 0,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 116,
@@ -6901,7 +7016,8 @@ const indexFania880 = [
         747
       ],
       "svg": "<svg id='quadline-4-116' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-116' class='lines' d='M 0,0 Q 200,100 200,300 Q 0,200 100,200 Q 300,300 300,100 Q 100,0 300,200 Q 100,300 100,100 Q 300,0 200,0 Q 0,100 0,300 Q 200,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 117,
@@ -6972,7 +7088,8 @@ const indexFania880 = [
         646
       ],
       "svg": "<svg id='quadline-4-117' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-117' class='lines' d='M 0,0 Q 200,300 200,100 Q 0,200 100,200 Q 300,100 300,300 Q 100,0 300,200 Q 100,100 100,300 Q 300,0 200,0 Q 0,300 0,100 Q 200,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 118,
@@ -7027,7 +7144,8 @@ const indexFania880 = [
         644
       ],
       "svg": "<svg id='quadline-4-118' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-118' class='lines' d='M 0,0 Q 200,100 0,200 Q 200,300 300,100 Q 100,200 300,300 Q 100,0 100,300 Q 300,200 100,100 Q 300,0 200,0 Q 0,300 200,200 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 119,
@@ -7102,7 +7220,8 @@ const indexFania880 = [
         723
       ],
       "svg": "<svg id='quadline-4-119' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-119' class='lines' d='M 0,0 Q 100,200 200,300 Q 300,100 200,100 Q 300,300 0,200 Q 100,0 100,300 Q 0,100 300,0 Q 200,200 300,200 Q 200,0 100,100 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 120,
@@ -7178,7 +7297,8 @@ const indexFania880 = [
         827
       ],
       "svg": "<svg id='quadline-4-120' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-120' class='lines' d='M 0,0 Q 300,100 100,300 Q 200,200 300,200 Q 0,300 200,100 Q 100,0 200,300 Q 100,200 300,0 Q 0,100 100,100 Q 200,0 0,200 Q 300,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 121,
@@ -7246,7 +7366,8 @@ const indexFania880 = [
         713
       ],
       "svg": "<svg id='quadline-4-121' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-121' class='lines' d='M 0,0 Q 200,100 200,300 Q 0,200 100,200 Q 300,300 300,100 Q 100,0 100,300 Q 300,200 300,0 Q 100,100 0,100 Q 200,0 200,200 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 122,
@@ -7302,7 +7423,8 @@ const indexFania880 = [
         649
       ],
       "svg": "<svg id='quadline-4-122' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-122' class='lines' d='M 0,0 Q 300,200 100,300 Q 200,100 300,100 Q 0,300 200,200 Q 100,0 200,300 Q 100,100 300,0 Q 0,200 100,200 Q 200,0 0,100 Q 300,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 123,
@@ -7366,7 +7488,8 @@ const indexFania880 = [
         713
       ],
       "svg": "<svg id='quadline-4-123' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-123' class='lines' d='M 0,0 Q 200,300 100,200 Q 300,100 200,100 Q 0,200 300,300 Q 100,0 100,300 Q 300,0 0,100 Q 200,200 300,200 Q 100,100 200,0 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 124,
@@ -7431,7 +7554,8 @@ const indexFania880 = [
         596
       ],
       "svg": "<svg id='quadline-4-124' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-124' class='lines' d='M 0,0 Q 100,300 300,100 Q 200,200 300,200 Q 200,100 0,300 Q 100,0 200,300 Q 300,0 100,200 Q 0,100 100,100 Q 0,200 200,0 Q 300,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 125,
@@ -7499,7 +7623,8 @@ const indexFania880 = [
         696
       ],
       "svg": "<svg id='quadline-4-125' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-125' class='lines' d='M 0,0 Q 200,300 200,100 Q 0,200 100,200 Q 300,100 300,300 Q 100,0 100,300 Q 300,0 300,200 Q 100,100 0,100 Q 200,200 200,0 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 126,
@@ -7561,7 +7686,8 @@ const indexFania880 = [
         822
       ],
       "svg": "<svg id='quadline-4-126' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-126' class='lines' d='M 0,0 Q 100,300 300,200 Q 200,100 300,100 Q 200,200 0,300 Q 100,0 200,300 Q 300,0 100,100 Q 0,200 100,200 Q 0,100 200,0 Q 300,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 127,
@@ -7617,7 +7743,8 @@ const indexFania880 = [
         739
       ],
       "svg": "<svg id='quadline-4-127' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-127' class='lines' d='M 0,0 Q 200,100 300,100 Q 100,200 300,300 Q 100,300 0,200 Q 200,0 100,0 Q 300,200 200,300 Q 0,300 200,200 Q 0,100 100,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 128,
@@ -7681,7 +7808,8 @@ const indexFania880 = [
         880
       ],
       "svg": "<svg id='quadline-4-128' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-128' class='lines' d='M 0,0 Q 200,300 300,100 Q 0,200 200,100 Q 100,200 100,300 Q 300,0 100,0 Q 300,300 200,200 Q 100,100 300,200 Q 0,100 0,300 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 129,
@@ -7733,7 +7861,8 @@ const indexFania880 = [
         813
       ],
       "svg": "<svg id='quadline-4-129' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-129' class='lines' d='M 0,0 Q 300,100 200,300 Q 0,200 200,100 Q 100,300 100,200 Q 300,0 100,0 Q 200,200 300,300 Q 100,100 300,200 Q 0,300 0,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 130,
@@ -7790,7 +7919,8 @@ const indexFania880 = [
         803
       ],
       "svg": "<svg id='quadline-4-130' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-130' class='lines' d='M 0,0 Q 300,200 100,200 Q 200,300 300,100 Q 0,300 200,0 Q 100,100 200,100 Q 100,0 300,300 Q 0,100 100,300 Q 200,200 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 131,
@@ -7843,7 +7973,8 @@ const indexFania880 = [
         689
       ],
       "svg": "<svg id='quadline-4-131' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-131' class='lines' d='M 0,0 Q 300,200 100,300 Q 200,100 300,100 Q 0,300 200,0 Q 100,200 200,200 Q 100,0 300,300 Q 0,100 100,100 Q 200,300 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 132,
@@ -7895,7 +8026,8 @@ const indexFania880 = [
         813
       ],
       "svg": "<svg id='quadline-4-132' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-132' class='lines' d='M 0,0 Q 200,100 100,200 Q 300,300 300,100 Q 100,300 200,0 Q 0,200 300,200 Q 100,0 200,300 Q 0,100 0,300 Q 200,200 100,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 133,
@@ -7952,7 +8084,8 @@ const indexFania880 = [
         801
       ],
       "svg": "<svg id='quadline-4-133' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-133' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 100,200 Q 200,300 200,0 Q 100,100 200,100 Q 100,0 100,300 Q 200,200 300,300 Q 0,100 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 134,
@@ -8001,7 +8134,8 @@ const indexFania880 = [
         644
       ],
       "svg": "<svg id='quadline-4-134' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-134' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 100,300 Q 200,100 200,0 Q 100,200 200,200 Q 100,0 100,100 Q 200,300 300,300 Q 0,100 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 135,
@@ -8055,7 +8189,8 @@ const indexFania880 = [
         547
       ],
       "svg": "<svg id='quadline-4-135' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-135' class='lines' d='M 0,0 Q 200,100 300,100 Q 100,300 100,200 Q 300,300 200,0 Q 0,200 300,200 Q 100,0 0,300 Q 200,200 200,300 Q 0,100 100,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 136,
@@ -8136,7 +8271,8 @@ const indexFania880 = [
         716
       ],
       "svg": "<svg id='quadline-4-136' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-136' class='lines' d='M 0,0 Q 300,100 100,200 Q 200,300 300,200 Q 0,300 200,0 Q 100,100 200,100 Q 100,0 300,300 Q 0,200 100,300 Q 200,200 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 137,
@@ -8191,7 +8327,8 @@ const indexFania880 = [
         806
       ],
       "svg": "<svg id='quadline-4-137' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-137' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 100,200 Q 200,300 200,0 Q 100,100 200,100 Q 100,0 100,300 Q 200,200 300,300 Q 0,200 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 138,
@@ -8242,7 +8379,8 @@ const indexFania880 = [
         531
       ],
       "svg": "<svg id='quadline-4-138' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-138' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 100,300 Q 200,100 200,0 Q 100,200 200,200 Q 100,0 100,100 Q 200,300 300,300 Q 0,200 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 139,
@@ -8303,7 +8441,8 @@ const indexFania880 = [
         735
       ],
       "svg": "<svg id='quadline-4-139' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-139' class='lines' d='M 0,0 Q 300,100 100,300 Q 200,100 300,200 Q 0,300 200,0 Q 100,200 200,200 Q 100,0 300,300 Q 0,200 100,100 Q 200,300 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 140,
@@ -8370,7 +8509,8 @@ const indexFania880 = [
         715
       ],
       "svg": "<svg id='quadline-4-140' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-140' class='lines' d='M 0,0 Q 300,100 200,300 Q 100,200 300,200 Q 0,300 100,100 Q 200,0 200,100 Q 100,0 0,200 Q 300,300 100,300 Q 200,200 300,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 141,
@@ -8432,7 +8572,8 @@ const indexFania880 = [
         854
       ],
       "svg": "<svg id='quadline-4-141' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-141' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 200,300 Q 100,200 100,100 Q 200,0 200,100 Q 100,0 100,300 Q 200,200 0,200 Q 300,300 300,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 142,
@@ -8493,7 +8634,8 @@ const indexFania880 = [
         758
       ],
       "svg": "<svg id='quadline-4-142' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-142' class='lines' d='M 0,0 Q 300,100 200,100 Q 100,200 0,200 Q 300,300 100,300 Q 200,0 200,300 Q 100,0 300,200 Q 0,300 100,100 Q 200,200 300,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 143,
@@ -8558,7 +8700,8 @@ const indexFania880 = [
         827
       ],
       "svg": "<svg id='quadline-4-143' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-143' class='lines' d='M 0,0 Q 200,300 300,100 Q 100,200 0,200 Q 200,100 100,300 Q 300,0 300,300 Q 100,0 200,200 Q 0,100 100,100 Q 300,200 200,0 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 144,
@@ -8604,7 +8747,8 @@ const indexFania880 = [
         479
       ],
       "svg": "<svg id='quadline-4-144' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-144' class='lines' d='M 0,0 Q 200,300 0,200 Q 200,100 300,100 Q 100,200 100,300 Q 300,0 300,300 Q 100,0 100,100 Q 300,200 200,200 Q 0,100 200,0 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 145,
@@ -8668,7 +8812,8 @@ const indexFania880 = [
         750
       ],
       "svg": "<svg id='quadline-4-145' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-145' class='lines' d='M 0,0 Q 200,300 200,100 Q 300,200 0,200 Q 100,100 100,300 Q 300,0 300,100 Q 100,0 100,200 Q 0,300 300,300 Q 200,200 200,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 146,
@@ -8722,7 +8867,8 @@ const indexFania880 = [
         722
       ],
       "svg": "<svg id='quadline-4-146' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-146' class='lines' d='M 0,0 Q 200,100 200,300 Q 0,200 300,200 Q 100,300 100,100 Q 300,0 300,100 Q 100,0 100,200 Q 300,300 0,300 Q 200,200 200,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 147,
@@ -8777,7 +8923,8 @@ const indexFania880 = [
         636
       ],
       "svg": "<svg id='quadline-4-147' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-147' class='lines' d='M 0,0 Q 200,100 300,200 Q 100,300 200,300 Q 0,200 100,100 Q 300,0 300,100 Q 100,0 0,300 Q 200,200 100,200 Q 300,300 200,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 148,
@@ -8839,7 +8986,8 @@ const indexFania880 = [
         720
       ],
       "svg": "<svg id='quadline-4-148' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-148' class='lines' d='M 0,0 Q 200,100 200,300 Q 0,200 100,300 Q 300,200 300,0 Q 100,100 300,100 Q 100,0 100,200 Q 300,300 200,200 Q 0,300 0,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 149,
@@ -8918,7 +9066,8 @@ const indexFania880 = [
         721
       ],
       "svg": "<svg id='quadline-4-149' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-149' class='lines' d='M 0,0 Q 200,100 100,300 Q 300,200 200,300 Q 0,200 300,0 Q 100,100 300,100 Q 100,0 200,200 Q 0,300 100,200 Q 300,300 0,100 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 150,
@@ -8989,7 +9138,8 @@ const indexFania880 = [
         724
       ],
       "svg": "<svg id='quadline-4-150' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-150' class='lines' d='M 0,0 Q 100,200 300,200 Q 200,300 300,100 Q 200,0 0,300 Q 100,100 200,100 Q 300,300 100,0 Q 0,100 100,300 Q 0,200 200,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 151,
@@ -9049,7 +9199,8 @@ const indexFania880 = [
         816
       ],
       "svg": "<svg id='quadline-4-151' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-151' class='lines' d='M 0,0 Q 100,200 200,100 Q 300,300 300,100 Q 200,0 100,300 Q 0,200 300,200 Q 200,300 100,0 Q 0,100 0,300 Q 100,100 200,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 152,
@@ -9112,7 +9263,8 @@ const indexFania880 = [
         693
       ],
       "svg": "<svg id='quadline-4-152' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-152' class='lines' d='M 0,0 Q 100,300 200,100 Q 300,200 300,100 Q 200,0 100,200 Q 0,300 300,300 Q 200,200 100,0 Q 0,100 0,200 Q 100,100 200,300 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 153,
@@ -9162,7 +9314,8 @@ const indexFania880 = [
     "quadline": {
       "2413": [],
       "svg": "<svg id='quadline-4-153' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-153' class='lines' d='M 0,0 Q 100,300 200,100 Q 300,100 300,200 Q 200,0 100,200 Q 0,300 300,300 Q 200,200 100,0 Q 0,200 0,100 Q 100,100 200,300 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 154,
@@ -9251,7 +9404,8 @@ const indexFania880 = [
         837
       ],
       "svg": "<svg id='quadline-4-154' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-154' class='lines' d='M 0,0 Q 100,200 300,100 Q 200,300 300,200 Q 200,0 0,300 Q 100,100 200,100 Q 300,300 100,0 Q 0,200 100,300 Q 0,100 200,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 155,
@@ -9318,7 +9472,8 @@ const indexFania880 = [
         802
       ],
       "svg": "<svg id='quadline-4-155' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-155' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 100,200 Q 200,0 200,300 Q 100,100 200,100 Q 100,300 100,0 Q 200,200 300,300 Q 0,100 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 156,
@@ -9368,7 +9523,8 @@ const indexFania880 = [
         751
       ],
       "svg": "<svg id='quadline-4-156' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-156' class='lines' d='M 0,0 Q 100,200 300,100 Q 200,100 300,300 Q 200,0 0,200 Q 100,300 200,300 Q 300,200 100,0 Q 0,300 100,100 Q 0,100 200,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 157,
@@ -9422,7 +9578,8 @@ const indexFania880 = [
         807
       ],
       "svg": "<svg id='quadline-4-157' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-157' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 100,200 Q 200,0 200,300 Q 100,100 200,100 Q 100,300 100,0 Q 200,200 300,300 Q 0,200 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 158,
@@ -9475,7 +9632,8 @@ const indexFania880 = [
         383
       ],
       "svg": "<svg id='quadline-4-158' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-158' class='lines' d='M 0,0 Q 300,100 200,100 Q 100,300 100,200 Q 200,0 300,300 Q 0,200 300,200 Q 0,300 100,0 Q 200,200 200,300 Q 100,100 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 159,
@@ -9547,7 +9705,8 @@ const indexFania880 = [
         796
       ],
       "svg": "<svg id='quadline-4-159' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-159' class='lines' d='M 0,0 Q 200,300 300,100 Q 100,200 300,200 Q 100,100 0,300 Q 200,0 200,100 Q 0,200 100,0 Q 300,300 100,300 Q 300,0 200,200 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 160,
@@ -9616,7 +9775,8 @@ const indexFania880 = [
         876
       ],
       "svg": "<svg id='quadline-4-160' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-160' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 200,300 Q 100,100 100,200 Q 200,0 200,100 Q 100,300 100,0 Q 200,200 0,200 Q 300,0 300,300 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 161,
@@ -9674,7 +9834,8 @@ const indexFania880 = [
         403
       ],
       "svg": "<svg id='quadline-4-161' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-161' class='lines' d='M 0,0 Q 300,200 200,300 Q 200,100 100,100 Q 100,300 0,200 Q 300,0 300,100 Q 0,300 100,0 Q 100,200 200,200 Q 200,0 300,300 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 162,
@@ -9734,7 +9895,8 @@ const indexFania880 = [
         712
       ],
       "svg": "<svg id='quadline-4-162' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-162' class='lines' d='M 0,0 Q 200,300 200,100 Q 0,200 300,200 Q 100,100 100,300 Q 300,0 300,100 Q 100,200 100,0 Q 300,300 0,300 Q 200,0 200,200 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 163,
@@ -9792,7 +9954,8 @@ const indexFania880 = [
         663
       ],
       "svg": "<svg id='quadline-4-163' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-163' class='lines' d='M 0,0 Q 300,200 200,100 Q 100,300 200,300 Q 100,100 0,200 Q 300,0 300,100 Q 0,300 100,0 Q 200,200 100,200 Q 200,0 300,300 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 164,
@@ -9862,7 +10025,8 @@ const indexFania880 = [
         709
       ],
       "svg": "<svg id='quadline-4-164' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-164' class='lines' d='M 0,0 Q 200,300 200,100 Q 0,200 100,300 Q 300,0 300,200 Q 100,100 300,100 Q 100,200 100,0 Q 300,300 200,200 Q 0,100 0,300 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 165,
@@ -9948,7 +10112,8 @@ const indexFania880 = [
         710
       ],
       "svg": "<svg id='quadline-4-165' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-165' class='lines' d='M 0,0 Q 100,300 200,100 Q 300,200 200,300 Q 300,0 0,200 Q 100,100 300,100 Q 200,200 100,0 Q 0,300 100,200 Q 0,100 300,300 Q 200,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 166,
@@ -10000,7 +10165,8 @@ const indexFania880 = [
         506
       ],
       "svg": "<svg id='quadline-4-166' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-166' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 200,0 Q 100,200 100,300 Q 200,100 100,100 Q 200,300 200,200 Q 100,0 300,300 Q 0,100 0,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 167,
@@ -10058,7 +10224,8 @@ const indexFania880 = [
         681
       ],
       "svg": "<svg id='quadline-4-167' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-167' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 200,0 Q 100,200 100,300 Q 200,100 100,100 Q 200,300 200,200 Q 100,0 300,300 Q 0,200 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 168,
@@ -10111,7 +10278,8 @@ const indexFania880 = [
         816
       ],
       "svg": "<svg id='quadline-4-168' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-168' class='lines' d='M 0,0 Q 300,100 100,300 Q 200,100 200,0 Q 100,200 300,200 Q 0,300 300,300 Q 0,200 200,200 Q 100,0 100,100 Q 200,300 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 169,
@@ -10176,7 +10344,8 @@ const indexFania880 = [
         852
       ],
       "svg": "<svg id='quadline-4-169' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-169' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 100,200 Q 200,0 200,300 Q 100,100 100,300 Q 200,100 200,200 Q 100,0 0,100 Q 300,300 300,0 Q 0,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 170,
@@ -10223,7 +10392,8 @@ const indexFania880 = [
         556
       ],
       "svg": "<svg id='quadline-4-170' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-170' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 100,300 Q 200,0 100,200 Q 200,100 200,200 Q 100,100 200,300 Q 100,0 0,100 Q 300,300 300,0 Q 0,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 171,
@@ -10311,7 +10481,8 @@ const indexFania880 = [
         691
       ],
       "svg": "<svg id='quadline-4-171' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-171' class='lines' d='M 0,0 Q 100,200 200,300 Q 300,100 300,200 Q 200,0 100,100 Q 0,300 200,100 Q 300,300 0,200 Q 100,0 100,300 Q 0,100 300,0 Q 200,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 172,
@@ -10359,7 +10530,8 @@ const indexFania880 = [
         452
       ],
       "svg": "<svg id='quadline-4-172' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-172' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 100,300 Q 200,0 200,100 Q 100,200 100,100 Q 200,200 200,300 Q 100,0 0,200 Q 300,300 300,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 173,
@@ -10417,7 +10589,8 @@ const indexFania880 = [
         853
       ],
       "svg": "<svg id='quadline-4-173' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-173' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 100,200 Q 200,300 200,0 Q 100,100 100,300 Q 200,200 200,100 Q 100,0 0,100 Q 300,0 300,300 Q 0,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 174,
@@ -10486,7 +10659,8 @@ const indexFania880 = [
         794
       ],
       "svg": "<svg id='quadline-4-174' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-174' class='lines' d='M 0,0 Q 200,300 100,200 Q 300,100 300,200 Q 100,100 200,0 Q 0,300 200,100 Q 0,200 300,300 Q 100,0 100,300 Q 300,0 0,100 Q 200,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 175,
@@ -10544,7 +10718,8 @@ const indexFania880 = [
         803
       ],
       "svg": "<svg id='quadline-4-175' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-175' class='lines' d='M 0,0 Q 300,100 300,200 Q 0,300 200,300 Q 100,200 100,100 Q 200,0 100,300 Q 200,200 200,100 Q 100,0 300,0 Q 0,100 0,200 Q 300,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 176,
@@ -10602,7 +10777,8 @@ const indexFania880 = [
         808
       ],
       "svg": "<svg id='quadline-4-176' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-176' class='lines' d='M 0,0 Q 300,200 300,100 Q 0,300 200,300 Q 100,100 100,200 Q 200,0 100,300 Q 200,100 200,200 Q 100,0 300,0 Q 0,200 0,100 Q 300,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 177,
@@ -10678,7 +10854,8 @@ const indexFania880 = [
         724
       ],
       "svg": "<svg id='quadline-4-177' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-177' class='lines' d='M 0,0 Q 200,100 200,300 Q 0,200 300,200 Q 100,300 100,100 Q 300,0 100,200 Q 300,300 300,100 Q 100,0 200,0 Q 0,100 0,300 Q 200,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 178,
@@ -10737,7 +10914,8 @@ const indexFania880 = [
         536
       ],
       "svg": "<svg id='quadline-4-178' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-178' class='lines' d='M 0,0 Q 200,300 200,100 Q 0,200 300,200 Q 100,100 100,300 Q 300,0 100,200 Q 300,100 300,300 Q 100,0 200,0 Q 0,300 0,100 Q 200,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 179,
@@ -10784,7 +10962,8 @@ const indexFania880 = [
     "quadline": {
       "2290": [],
       "svg": "<svg id='quadline-4-179' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-179' class='lines' d='M 0,0 Q 0,200 200,100 Q 200,300 100,300 Q 300,100 100,200 Q 300,0 300,300 Q 100,100 300,200 Q 100,0 200,0 Q 200,200 0,100 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 180,
@@ -10833,7 +11012,8 @@ const indexFania880 = [
         551
       ],
       "svg": "<svg id='quadline-4-180' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-180' class='lines' d='M 0,0 Q 200,100 0,200 Q 200,300 100,300 Q 300,200 100,100 Q 300,0 300,100 Q 100,200 300,300 Q 100,0 200,0 Q 0,300 200,200 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 181,
@@ -10885,7 +11065,8 @@ const indexFania880 = [
         618
       ],
       "svg": "<svg id='quadline-4-181' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-181' class='lines' d='M 0,0 Q 0,200 200,300 Q 200,100 300,100 Q 100,300 100,200 Q 300,0 100,100 Q 300,300 300,200 Q 100,0 200,0 Q 200,200 0,300 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 182,
@@ -10947,7 +11128,8 @@ const indexFania880 = [
         699
       ],
       "svg": "<svg id='quadline-4-182' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-182' class='lines' d='M 0,0 Q 200,100 200,300 Q 0,200 100,300 Q 300,200 300,0 Q 100,100 100,200 Q 300,300 300,100 Q 100,0 0,100 Q 200,0 200,200 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 183,
@@ -11006,7 +11188,8 @@ const indexFania880 = [
         657
       ],
       "svg": "<svg id='quadline-4-183' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-183' class='lines' d='M 0,0 Q 300,200 100,300 Q 200,100 200,300 Q 100,100 300,0 Q 0,200 300,100 Q 0,300 200,200 Q 100,0 100,200 Q 200,0 0,100 Q 300,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 184,
@@ -11076,7 +11259,8 @@ const indexFania880 = [
         534
       ],
       "svg": "<svg id='quadline-4-184' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-184' class='lines' d='M 0,0 Q 200,300 200,100 Q 0,200 100,300 Q 300,0 300,200 Q 100,100 100,200 Q 300,100 300,300 Q 100,0 0,100 Q 200,200 200,0 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 185,
@@ -11145,7 +11329,8 @@ const indexFania880 = [
         834
       ],
       "svg": "<svg id='quadline-4-185' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-185' class='lines' d='M 0,0 Q 100,300 300,200 Q 200,100 200,300 Q 300,0 100,100 Q 0,200 300,100 Q 200,200 0,300 Q 100,0 100,200 Q 0,100 200,0 Q 300,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 186,
@@ -11204,7 +11389,8 @@ const indexFania880 = [
         823
       ],
       "svg": "<svg id='quadline-4-186' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-186' class='lines' d='M 0,0 Q 200,300 0,200 Q 200,100 100,300 Q 300,0 300,100 Q 100,200 100,100 Q 300,200 300,300 Q 100,0 200,200 Q 0,100 200,0 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 187,
@@ -11262,7 +11448,8 @@ const indexFania880 = [
         394
       ],
       "svg": "<svg id='quadline-4-187' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-187' class='lines' d='M 0,0 Q 100,200 300,100 Q 200,0 300,200 Q 200,300 0,300 Q 100,100 200,100 Q 300,300 100,300 Q 0,200 100,0 Q 0,100 200,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 188,
@@ -11309,7 +11496,8 @@ const indexFania880 = [
         574
       ],
       "svg": "<svg id='quadline-4-188' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-188' class='lines' d='M 0,0 Q 100,200 300,100 Q 200,0 200,100 Q 300,300 100,300 Q 0,200 300,200 Q 200,300 0,300 Q 100,100 100,0 Q 0,100 200,200 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 189,
@@ -11357,7 +11545,8 @@ const indexFania880 = [
         726
       ],
       "svg": "<svg id='quadline-4-189' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-189' class='lines' d='M 0,0 Q 300,100 100,200 Q 200,0 300,200 Q 0,300 200,300 Q 100,100 200,100 Q 100,300 300,300 Q 0,200 100,0 Q 200,200 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 190,
@@ -11408,7 +11597,8 @@ const indexFania880 = [
         398
       ],
       "svg": "<svg id='quadline-4-190' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-190' class='lines' d='M 0,0 Q 300,100 100,200 Q 200,0 200,100 Q 100,300 300,300 Q 0,200 300,200 Q 0,300 200,300 Q 100,100 100,0 Q 200,200 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 191,
@@ -11469,7 +11659,8 @@ const indexFania880 = [
         735
       ],
       "svg": "<svg id='quadline-4-191' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-191' class='lines' d='M 0,0 Q 200,300 300,200 Q 100,100 300,100 Q 100,200 0,300 Q 200,0 200,100 Q 0,200 100,300 Q 300,0 100,0 Q 300,300 200,200 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 192,
@@ -11524,7 +11715,8 @@ const indexFania880 = [
         734
       ],
       "svg": "<svg id='quadline-4-192' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-192' class='lines' d='M 0,0 Q 300,200 200,300 Q 100,100 300,100 Q 0,300 100,200 Q 200,0 200,100 Q 100,300 0,200 Q 300,0 100,0 Q 200,200 300,300 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 193,
@@ -11580,7 +11772,8 @@ const indexFania880 = [
         790
       ],
       "svg": "<svg id='quadline-4-193' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-193' class='lines' d='M 0,0 Q 200,100 0,200 Q 100,300 300,100 Q 100,200 300,300 Q 200,0 200,300 Q 300,200 100,100 Q 300,0 100,0 Q 0,300 200,200 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 194,
@@ -11634,7 +11827,8 @@ const indexFania880 = [
         444
       ],
       "svg": "<svg id='quadline-4-194' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-194' class='lines' d='M 0,0 Q 0,200 200,100 Q 100,300 200,300 Q 300,100 100,200 Q 300,0 300,300 Q 100,100 300,200 Q 200,0 100,0 Q 200,200 0,100 Q 0,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 195,
@@ -11687,7 +11881,8 @@ const indexFania880 = [
         569
       ],
       "svg": "<svg id='quadline-4-195' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-195' class='lines' d='M 0,0 Q 200,300 300,200 Q 100,100 200,100 Q 0,200 100,300 Q 300,0 300,100 Q 100,200 0,300 Q 200,0 100,0 Q 300,300 200,200 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 196,
@@ -11745,7 +11940,8 @@ const indexFania880 = [
         850
       ],
       "svg": "<svg id='quadline-4-196' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-196' class='lines' d='M 0,0 Q 300,200 200,300 Q 100,100 200,100 Q 100,300 0,200 Q 300,0 300,100 Q 0,300 100,200 Q 200,0 100,0 Q 200,200 300,300 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 197,
@@ -11804,7 +12000,8 @@ const indexFania880 = [
         563
       ],
       "svg": "<svg id='quadline-4-197' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-197' class='lines' d='M 0,0 Q 200,100 0,200 Q 100,300 200,300 Q 300,200 100,100 Q 300,0 300,100 Q 100,200 300,300 Q 200,0 100,0 Q 0,300 200,200 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 198,
@@ -11854,7 +12051,8 @@ const indexFania880 = [
     "quadline": {
       "2281": [],
       "svg": "<svg id='quadline-4-198' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-198' class='lines' d='M 0,0 Q 300,100 200,0 Q 100,200 300,200 Q 0,300 100,300 Q 200,100 100,100 Q 200,300 300,300 Q 0,200 200,200 Q 100,0 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 199,
@@ -11909,7 +12107,8 @@ const indexFania880 = [
         750
       ],
       "svg": "<svg id='quadline-4-199' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-199' class='lines' d='M 0,0 Q 300,100 200,0 Q 100,200 100,300 Q 200,100 300,200 Q 0,300 300,300 Q 0,200 100,100 Q 200,300 200,200 Q 100,0 0,100 Q 300,0 0,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 200,
@@ -11966,7 +12165,8 @@ const indexFania880 = [
         840
       ],
       "svg": "<svg id='quadline-4-200' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-200' class='lines' d='M 0,0 Q 300,100 100,300 Q 200,0 200,100 Q 100,200 300,200 Q 0,300 0,200 Q 300,300 100,100 Q 200,200 200,300 Q 100,0 300,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 201,
@@ -12023,7 +12223,8 @@ const indexFania880 = [
         748
       ],
       "svg": "<svg id='quadline-4-201' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-201' class='lines' d='M 0,0 Q 200,300 300,200 Q 100,100 100,200 Q 300,100 200,0 Q 0,300 200,100 Q 0,200 100,300 Q 300,0 300,300 Q 100,0 0,100 Q 200,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 202,
@@ -12104,7 +12305,8 @@ const indexFania880 = [
         724
       ],
       "svg": "<svg id='quadline-4-202' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-202' class='lines' d='M 0,0 Q 200,300 300,100 Q 100,200 100,100 Q 300,200 200,0 Q 0,300 0,200 Q 200,100 100,300 Q 300,0 300,300 Q 100,0 200,200 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 203,
@@ -12158,7 +12360,8 @@ const indexFania880 = [
         571
       ],
       "svg": "<svg id='quadline-4-203' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-203' class='lines' d='M 0,0 Q 300,200 200,300 Q 100,100 300,100 Q 0,300 100,200 Q 200,0 100,300 Q 200,100 300,0 Q 0,200 200,200 Q 100,0 0,100 Q 300,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 204,
@@ -12218,7 +12421,8 @@ const indexFania880 = [
         744
       ],
       "svg": "<svg id='quadline-4-204' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-204' class='lines' d='M 0,0 Q 200,300 300,200 Q 100,100 200,100 Q 0,200 100,300 Q 300,0 100,200 Q 300,100 200,0 Q 0,300 300,300 Q 100,0 0,100 Q 200,200 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 205,
@@ -12277,7 +12481,8 @@ const indexFania880 = [
         707
       ],
       "svg": "<svg id='quadline-4-205' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-205' class='lines' d='M 0,0 Q 300,200 100,300 Q 200,100 100,100 Q 200,300 0,200 Q 300,0 300,100 Q 0,300 200,0 Q 100,200 200,200 Q 100,0 300,300 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 206,
@@ -12328,7 +12533,8 @@ const indexFania880 = [
         395
       ],
       "svg": "<svg id='quadline-4-206' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-206' class='lines' d='M 0,0 Q 300,200 200,300 Q 100,100 100,300 Q 200,100 300,0 Q 0,200 300,100 Q 0,300 100,200 Q 200,0 200,200 Q 100,0 0,100 Q 300,300 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 207,
@@ -12379,7 +12585,8 @@ const indexFania880 = [
     "quadline": {
       "1996": [],
       "svg": "<svg id='quadline-4-207' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-207' class='lines' d='M 0,0 Q 100,300 300,100 Q 200,0 200,100 Q 300,200 100,200 Q 0,300 0,200 Q 100,100 300,300 Q 200,200 200,300 Q 300,0 100,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 208,
@@ -12439,7 +12646,8 @@ const indexFania880 = [
         711
       ],
       "svg": "<svg id='quadline-4-208' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-208' class='lines' d='M 0,0 Q 100,300 200,100 Q 300,200 0,200 Q 100,100 200,300 Q 300,0 300,100 Q 200,0 100,200 Q 0,300 300,300 Q 200,200 100,0 Q 0,100 0,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 209,
@@ -12484,7 +12692,8 @@ const indexFania880 = [
     "quadline": {
       "1920": [],
       "svg": "<svg id='quadline-4-209' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-209' class='lines' d='M 100,0 Q 0,0 200,100 Q 300,100 300,200 Q 200,300 0,300 Q 100,200 300,300 Q 200,200 0,200 Q 100,300 100,100 Q 0,100 200,0 Q 300,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 210,
@@ -12533,7 +12742,8 @@ const indexFania880 = [
     "quadline": {
       "2166": [],
       "svg": "<svg id='quadline-4-210' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-210' class='lines' d='M 100,0 Q 0,0 300,200 Q 200,100 200,300 Q 300,100 0,300 Q 100,200 200,200 Q 300,300 0,100 Q 100,300 100,100 Q 0,200 300,0 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 211,
@@ -12584,7 +12794,8 @@ const indexFania880 = [
     "quadline": {
       "2010": [],
       "svg": "<svg id='quadline-4-211' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-211' class='lines' d='M 100,0 Q 0,0 300,100 Q 200,100 200,300 Q 300,200 0,300 Q 100,200 200,200 Q 300,300 0,200 Q 100,300 100,100 Q 0,100 300,0 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 212,
@@ -12659,7 +12870,8 @@ const indexFania880 = [
     "quadline": {
       "2566": [],
       "svg": "<svg id='quadline-4-212' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-212' class='lines' d='M 300,200 Q 0,0 100,0 Q 200,300 200,100 Q 100,200 0,300 Q 300,100 300,300 Q 0,100 100,100 Q 200,200 200,0 Q 100,300 0,200 Q 300,0 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 213,
@@ -12723,7 +12935,8 @@ const indexFania880 = [
         445
       ],
       "svg": "<svg id='quadline-4-213' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-213' class='lines' d='M 200,100 Q 0,0 100,0 Q 300,100 300,300 Q 100,200 0,200 Q 200,300 300,200 Q 100,300 0,300 Q 200,200 200,0 Q 0,100 100,100 Q 300,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 214,
@@ -12794,7 +13007,8 @@ const indexFania880 = [
         612
       ],
       "svg": "<svg id='quadline-4-214' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-214' class='lines' d='M 200,100 Q 0,0 100,0 Q 300,100 300,200 Q 100,300 0,300 Q 200,200 300,300 Q 100,200 0,200 Q 200,300 200,0 Q 0,100 100,100 Q 300,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 215,
@@ -12851,7 +13065,8 @@ const indexFania880 = [
     "quadline": {
       "2321": [],
       "svg": "<svg id='quadline-4-215' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-215' class='lines' d='M 300,100 Q 0,0 100,0 Q 200,300 100,200 Q 200,100 0,300 Q 300,200 300,300 Q 0,200 200,200 Q 100,100 200,0 Q 100,300 0,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 216,
@@ -12906,7 +13121,8 @@ const indexFania880 = [
         24
       ],
       "svg": "<svg id='quadline-4-216' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-216' class='lines' d='M 300,100 Q 0,0 100,0 Q 200,100 100,200 Q 200,300 300,300 Q 0,200 0,300 Q 300,200 200,200 Q 100,300 200,0 Q 100,100 0,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 217,
@@ -12964,7 +13180,8 @@ const indexFania880 = [
         444
       ],
       "svg": "<svg id='quadline-4-217' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-217' class='lines' d='M 300,100 Q 0,0 100,0 Q 200,100 0,300 Q 300,200 200,200 Q 100,300 100,200 Q 200,300 300,300 Q 0,200 200,0 Q 100,100 0,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 218,
@@ -13026,7 +13243,8 @@ const indexFania880 = [
         878
       ],
       "svg": "<svg id='quadline-4-218' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-218' class='lines' d='M 300,200 Q 0,0 100,0 Q 200,100 200,300 Q 100,200 0,100 Q 300,300 0,300 Q 300,100 200,200 Q 100,300 100,100 Q 200,0 300,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 219,
@@ -13081,7 +13299,8 @@ const indexFania880 = [
         593
       ],
       "svg": "<svg id='quadline-4-219' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-219' class='lines' d='M 200,100 Q 0,0 100,0 Q 300,200 300,300 Q 100,200 0,100 Q 200,300 100,300 Q 300,100 200,200 Q 0,300 0,200 Q 200,0 300,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 220,
@@ -13131,7 +13350,8 @@ const indexFania880 = [
         755
       ],
       "svg": "<svg id='quadline-4-220' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-220' class='lines' d='M 200,100 Q 0,0 100,0 Q 300,300 100,200 Q 300,200 200,300 Q 0,100 300,100 Q 100,300 0,200 Q 200,200 0,300 Q 200,0 300,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 221,
@@ -13186,7 +13406,8 @@ const indexFania880 = [
         597
       ],
       "svg": "<svg id='quadline-4-221' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-221' class='lines' d='M 300,200 Q 0,0 100,0 Q 200,100 0,300 Q 300,100 200,200 Q 100,300 200,300 Q 100,200 0,100 Q 300,300 100,100 Q 200,0 300,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 222,
@@ -13247,7 +13468,8 @@ const indexFania880 = [
         829
       ],
       "svg": "<svg id='quadline-4-222' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-222' class='lines' d='M 200,100 Q 0,0 100,0 Q 300,300 100,200 Q 300,100 200,300 Q 0,200 300,200 Q 100,300 0,100 Q 200,200 0,300 Q 200,0 300,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 223,
@@ -13307,7 +13529,8 @@ const indexFania880 = [
         791
       ],
       "svg": "<svg id='quadline-4-223' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-223' class='lines' d='M 200,100 Q 0,0 100,0 Q 300,200 100,300 Q 300,100 200,200 Q 0,300 300,300 Q 100,200 0,100 Q 200,300 0,200 Q 200,0 300,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 224,
@@ -13363,7 +13586,8 @@ const indexFania880 = [
         603
       ],
       "svg": "<svg id='quadline-4-224' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-224' class='lines' d='M 200,100 Q 0,0 100,0 Q 300,100 300,300 Q 100,200 0,200 Q 200,300 100,300 Q 300,200 200,200 Q 0,300 0,100 Q 200,0 300,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 225,
@@ -13425,7 +13649,8 @@ const indexFania880 = [
         608
       ],
       "svg": "<svg id='quadline-4-225' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-225' class='lines' d='M 200,100 Q 0,0 100,0 Q 300,100 100,300 Q 300,200 200,200 Q 0,300 300,300 Q 100,200 0,200 Q 200,300 0,100 Q 200,0 300,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 226,
@@ -13489,7 +13714,8 @@ const indexFania880 = [
         18
       ],
       "svg": "<svg id='quadline-4-226' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-226' class='lines' d='M 300,100 Q 0,0 100,0 Q 200,100 200,300 Q 100,200 0,200 Q 300,300 0,300 Q 300,200 200,200 Q 100,300 100,100 Q 200,0 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 227,
@@ -13544,7 +13770,8 @@ const indexFania880 = [
         600
       ],
       "svg": "<svg id='quadline-4-227' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-227' class='lines' d='M 300,100 Q 0,0 100,0 Q 200,100 0,300 Q 300,200 200,200 Q 100,300 200,300 Q 100,200 0,200 Q 300,300 100,100 Q 200,0 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 228,
@@ -13603,7 +13830,8 @@ const indexFania880 = [
         426
       ],
       "svg": "<svg id='quadline-4-228' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-228' class='lines' d='M 300,100 Q 0,0 100,0 Q 200,100 100,200 Q 200,300 300,300 Q 0,200 200,200 Q 100,300 0,300 Q 300,200 0,100 Q 300,0 200,0 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 229,
@@ -13661,7 +13889,8 @@ const indexFania880 = [
         426
       ],
       "svg": "<svg id='quadline-4-229' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-229' class='lines' d='M 300,100 Q 0,0 100,0 Q 200,100 200,200 Q 100,300 0,300 Q 300,200 100,200 Q 200,300 300,300 Q 0,200 0,100 Q 300,0 200,0 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 230,
@@ -13712,7 +13941,8 @@ const indexFania880 = [
         423
       ],
       "svg": "<svg id='quadline-4-230' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-230' class='lines' d='M 200,100 Q 0,0 100,0 Q 300,100 0,200 Q 200,300 300,300 Q 100,200 300,200 Q 100,300 0,300 Q 200,200 100,100 Q 300,0 200,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 231,
@@ -13763,7 +13993,8 @@ const indexFania880 = [
         424
       ],
       "svg": "<svg id='quadline-4-231' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-231' class='lines' d='M 200,100 Q 0,0 100,0 Q 300,100 300,200 Q 100,300 0,300 Q 200,200 0,200 Q 200,300 300,300 Q 100,200 100,100 Q 300,0 200,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 232,
@@ -13820,7 +14051,8 @@ const indexFania880 = [
         874
       ],
       "svg": "<svg id='quadline-4-232' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-232' class='lines' d='M 200,300 Q 0,0 100,0 Q 300,200 300,100 Q 100,200 0,300 Q 200,100 200,200 Q 0,100 100,100 Q 300,300 300,0 Q 100,300 0,200 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 233,
@@ -13878,7 +14110,8 @@ const indexFania880 = [
         421
       ],
       "svg": "<svg id='quadline-4-233' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-233' class='lines' d='M 300,100 Q 0,0 100,0 Q 200,100 200,300 Q 100,200 0,200 Q 300,300 200,200 Q 100,300 0,300 Q 300,200 300,0 Q 0,100 100,100 Q 200,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 234,
@@ -13933,7 +14166,8 @@ const indexFania880 = [
         584
       ],
       "svg": "<svg id='quadline-4-234' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-234' class='lines' d='M 300,100 Q 0,0 100,0 Q 200,100 200,200 Q 100,300 0,300 Q 300,200 200,300 Q 100,200 0,200 Q 300,300 300,0 Q 0,100 100,100 Q 200,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 235,
@@ -13987,7 +14221,8 @@ const indexFania880 = [
         547
       ],
       "svg": "<svg id='quadline-4-235' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-235' class='lines' d='M 200,300 Q 0,0 100,0 Q 300,100 300,200 Q 200,100 0,300 Q 100,200 100,100 Q 0,200 200,200 Q 300,300 300,0 Q 100,300 0,100 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 236,
@@ -14038,7 +14273,8 @@ const indexFania880 = [
         581
       ],
       "svg": "<svg id='quadline-4-236' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-236' class='lines' d='M 200,100 Q 0,0 100,0 Q 300,100 0,200 Q 200,300 300,300 Q 100,200 100,300 Q 300,200 200,200 Q 0,300 300,0 Q 100,100 0,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 237,
@@ -14095,7 +14331,8 @@ const indexFania880 = [
         641
       ],
       "svg": "<svg id='quadline-4-237' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-237' class='lines' d='M 200,100 Q 0,0 100,0 Q 300,100 100,300 Q 300,200 200,200 Q 0,300 0,200 Q 200,300 300,300 Q 100,200 300,0 Q 100,100 0,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 238,
@@ -14146,7 +14383,8 @@ const indexFania880 = [
         415
       ],
       "svg": "<svg id='quadline-4-238' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-238' class='lines' d='M 300,100 Q 0,0 200,100 Q 100,0 100,200 Q 300,300 0,200 Q 200,300 100,300 Q 200,200 0,300 Q 300,200 200,0 Q 0,100 300,0 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 239,
@@ -14203,7 +14441,8 @@ const indexFania880 = [
         720
       ],
       "svg": "<svg id='quadline-4-239' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-239' class='lines' d='M 300,100 Q 0,0 200,100 Q 100,0 100,300 Q 200,200 0,300 Q 300,200 100,200 Q 300,300 0,200 Q 200,300 200,0 Q 0,100 300,0 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 240,
@@ -14254,7 +14493,8 @@ const indexFania880 = [
         413
       ],
       "svg": "<svg id='quadline-4-240' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-240' class='lines' d='M 200,100 Q 0,0 300,100 Q 100,0 0,200 Q 300,300 100,200 Q 200,300 100,300 Q 300,200 0,300 Q 200,200 200,0 Q 100,100 300,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 241,
@@ -14308,7 +14548,8 @@ const indexFania880 = [
         720
       ],
       "svg": "<svg id='quadline-4-241' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-241' class='lines' d='M 200,100 Q 0,0 300,100 Q 100,0 100,300 Q 300,200 0,300 Q 200,200 0,200 Q 300,300 100,200 Q 200,300 200,0 Q 100,100 300,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 242,
@@ -14363,7 +14604,8 @@ const indexFania880 = [
         409
       ],
       "svg": "<svg id='quadline-4-242' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-242' class='lines' d='M 300,200 Q 0,0 200,100 Q 100,0 0,100 Q 200,300 100,200 Q 300,300 100,300 Q 200,200 0,300 Q 300,100 300,0 Q 100,100 200,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 243,
@@ -14418,7 +14660,8 @@ const indexFania880 = [
         606
       ],
       "svg": "<svg id='quadline-4-243' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-243' class='lines' d='M 300,200 Q 0,0 200,100 Q 100,0 100,300 Q 200,200 0,300 Q 300,100 0,100 Q 200,300 100,200 Q 300,300 300,0 Q 100,100 200,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 244,
@@ -14475,7 +14718,8 @@ const indexFania880 = [
         411
       ],
       "svg": "<svg id='quadline-4-244' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-244' class='lines' d='M 300,100 Q 0,0 200,100 Q 100,0 0,200 Q 200,300 100,200 Q 300,300 100,300 Q 200,200 0,300 Q 300,200 300,0 Q 100,100 200,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 245,
@@ -14534,7 +14778,8 @@ const indexFania880 = [
         608
       ],
       "svg": "<svg id='quadline-4-245' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-245' class='lines' d='M 300,100 Q 0,0 200,100 Q 100,0 100,300 Q 200,200 0,300 Q 300,200 0,200 Q 200,300 100,200 Q 300,300 300,0 Q 100,100 200,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 246,
@@ -14602,7 +14847,8 @@ const indexFania880 = [
         768
       ],
       "svg": "<svg id='quadline-4-246' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-246' class='lines' d='M 200,100 Q 0,0 300,300 Q 100,200 100,0 Q 300,100 0,200 Q 200,300 300,200 Q 100,300 200,0 Q 0,100 0,300 Q 200,200 100,100 Q 300,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 247,
@@ -14694,7 +14940,8 @@ const indexFania880 = [
         837
       ],
       "svg": "<svg id='quadline-4-247' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-247' class='lines' d='M 200,100 Q 0,0 300,200 Q 100,300 100,0 Q 300,100 0,300 Q 200,200 300,300 Q 100,200 200,0 Q 0,100 0,200 Q 200,300 100,100 Q 300,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 248,
@@ -14751,7 +14998,8 @@ const indexFania880 = [
     "quadline": {
       "2653": [],
       "svg": "<svg id='quadline-4-248' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-248' class='lines' d='M 300,200 Q 0,0 0,300 Q 300,100 100,0 Q 200,300 200,100 Q 100,200 100,100 Q 200,200 200,0 Q 100,300 300,300 Q 0,100 0,200 Q 300,0 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 249,
@@ -14804,7 +15052,8 @@ const indexFania880 = [
     "quadline": {
       "2643": [],
       "svg": "<svg id='quadline-4-249' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-249' class='lines' d='M 300,100 Q 0,0 0,300 Q 300,200 100,0 Q 200,300 100,200 Q 200,100 200,200 Q 100,100 200,0 Q 100,300 300,300 Q 0,200 0,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 250,
@@ -14866,7 +15115,8 @@ const indexFania880 = [
         727
       ],
       "svg": "<svg id='quadline-4-250' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-250' class='lines' d='M 300,100 Q 0,0 100,200 Q 200,300 100,0 Q 200,100 300,300 Q 0,200 0,300 Q 300,200 200,0 Q 100,100 200,200 Q 100,300 0,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 251,
@@ -14924,7 +15174,8 @@ const indexFania880 = [
         766
       ],
       "svg": "<svg id='quadline-4-251' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-251' class='lines' d='M 300,100 Q 0,0 0,300 Q 300,200 100,0 Q 200,100 200,200 Q 100,300 100,200 Q 200,300 200,0 Q 100,100 300,300 Q 0,200 0,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 252,
@@ -14988,7 +15239,8 @@ const indexFania880 = [
         876
       ],
       "svg": "<svg id='quadline-4-252' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-252' class='lines' d='M 300,200 Q 0,0 200,300 Q 100,200 100,0 Q 200,100 0,100 Q 300,300 0,300 Q 300,100 100,100 Q 200,0 200,200 Q 100,300 300,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 253,
@@ -15052,7 +15304,8 @@ const indexFania880 = [
         876
       ],
       "svg": "<svg id='quadline-4-253' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-253' class='lines' d='M 200,100 Q 0,0 300,300 Q 100,200 100,0 Q 300,200 0,100 Q 200,300 100,300 Q 300,100 0,200 Q 200,0 200,200 Q 0,300 300,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 254,
@@ -15096,7 +15349,8 @@ const indexFania880 = [
     "quadline": {
       "2736": [],
       "svg": "<svg id='quadline-4-254' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-254' class='lines' d='M 200,300 Q 0,0 300,200 Q 100,200 100,0 Q 300,100 0,300 Q 200,100 100,100 Q 300,300 0,100 Q 200,0 200,200 Q 0,200 300,0 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 255,
@@ -15151,7 +15405,8 @@ const indexFania880 = [
         824
       ],
       "svg": "<svg id='quadline-4-255' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-255' class='lines' d='M 200,100 Q 0,0 300,300 Q 100,200 100,0 Q 300,100 0,200 Q 200,300 100,300 Q 300,200 0,100 Q 200,0 200,200 Q 0,300 300,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 256,
@@ -15238,7 +15493,8 @@ const indexFania880 = [
         691
       ],
       "svg": "<svg id='quadline-4-256' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-256' class='lines' d='M 200,100 Q 0,0 100,300 Q 300,200 100,0 Q 300,100 200,200 Q 0,300 300,300 Q 100,200 0,100 Q 200,0 0,200 Q 200,300 300,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 257,
@@ -15293,7 +15549,8 @@ const indexFania880 = [
         846
       ],
       "svg": "<svg id='quadline-4-257' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-257' class='lines' d='M 300,200 Q 0,0 0,300 Q 300,100 100,0 Q 200,100 200,200 Q 100,300 200,300 Q 100,200 100,100 Q 200,0 0,100 Q 300,300 300,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 258,
@@ -15342,7 +15599,8 @@ const indexFania880 = [
         53
       ],
       "svg": "<svg id='quadline-4-258' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-258' class='lines' d='M 200,100 Q 0,0 100,300 Q 300,100 100,0 Q 300,200 200,200 Q 0,300 300,300 Q 100,200 0,200 Q 200,0 0,100 Q 200,300 300,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 259,
@@ -15403,7 +15661,8 @@ const indexFania880 = [
         494
       ],
       "svg": "<svg id='quadline-4-259' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-259' class='lines' d='M 200,300 Q 0,0 300,100 Q 100,200 100,0 Q 300,200 0,300 Q 200,100 100,100 Q 300,300 0,200 Q 200,0 200,200 Q 0,100 300,0 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 260,
@@ -15454,7 +15713,8 @@ const indexFania880 = [
         805
       ],
       "svg": "<svg id='quadline-4-260' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-260' class='lines' d='M 300,100 Q 0,0 200,100 Q 100,300 100,0 Q 200,200 0,300 Q 300,200 100,200 Q 300,300 0,200 Q 200,0 200,300 Q 0,100 300,0 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 261,
@@ -15515,7 +15775,8 @@ const indexFania880 = [
         660
       ],
       "svg": "<svg id='quadline-4-261' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-261' class='lines' d='M 300,100 Q 0,0 200,300 Q 100,200 100,0 Q 200,100 0,200 Q 300,300 0,300 Q 300,200 100,100 Q 200,0 200,200 Q 100,300 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 262,
@@ -15578,7 +15839,8 @@ const indexFania880 = [
         822
       ],
       "svg": "<svg id='quadline-4-262' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-262' class='lines' d='M 300,100 Q 0,0 0,300 Q 300,200 100,0 Q 200,100 200,200 Q 100,300 200,300 Q 100,200 100,100 Q 200,0 0,200 Q 300,300 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 263,
@@ -15626,7 +15888,8 @@ const indexFania880 = [
         805
       ],
       "svg": "<svg id='quadline-4-263' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-263' class='lines' d='M 200,100 Q 0,0 300,100 Q 100,300 100,0 Q 300,200 0,300 Q 200,200 0,200 Q 300,300 100,200 Q 200,0 200,300 Q 100,100 300,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 264,
@@ -15693,7 +15956,8 @@ const indexFania880 = [
         834
       ],
       "svg": "<svg id='quadline-4-264' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-264' class='lines' d='M 300,100 Q 0,0 100,200 Q 200,300 100,0 Q 200,100 300,300 Q 0,200 200,200 Q 100,300 0,100 Q 300,0 0,300 Q 300,200 200,0 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 265,
@@ -15750,7 +16014,8 @@ const indexFania880 = [
         880
       ],
       "svg": "<svg id='quadline-4-265' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-265' class='lines' d='M 300,100 Q 0,0 200,200 Q 100,300 100,0 Q 200,100 0,300 Q 300,200 100,200 Q 200,300 0,100 Q 300,0 300,300 Q 0,200 200,0 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 266,
@@ -15805,7 +16070,8 @@ const indexFania880 = [
         676
       ],
       "svg": "<svg id='quadline-4-266' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-266' class='lines' d='M 200,100 Q 0,0 0,200 Q 200,300 100,0 Q 300,100 300,300 Q 100,200 300,200 Q 100,300 100,100 Q 300,0 0,300 Q 200,200 200,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 267,
@@ -15866,7 +16132,8 @@ const indexFania880 = [
         677
       ],
       "svg": "<svg id='quadline-4-267' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-267' class='lines' d='M 200,100 Q 0,0 300,200 Q 100,300 100,0 Q 300,100 0,300 Q 200,200 0,200 Q 200,300 100,100 Q 300,0 300,300 Q 100,200 200,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 268,
@@ -15923,7 +16190,8 @@ const indexFania880 = [
         660
       ],
       "svg": "<svg id='quadline-4-268' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-268' class='lines' d='M 200,100 Q 0,0 200,300 Q 300,200 100,0 Q 300,300 100,200 Q 0,100 0,200 Q 100,300 300,0 Q 100,100 300,100 Q 200,200 0,300 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 269,
@@ -16005,7 +16273,8 @@ const indexFania880 = [
         710
       ],
       "svg": "<svg id='quadline-4-269' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-269' class='lines' d='M 300,100 Q 0,0 200,300 Q 100,200 100,0 Q 200,100 0,200 Q 300,300 200,200 Q 100,300 300,0 Q 0,100 0,300 Q 300,200 100,100 Q 200,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 270,
@@ -16066,7 +16335,8 @@ const indexFania880 = [
         506
       ],
       "svg": "<svg id='quadline-4-270' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-270' class='lines' d='M 300,100 Q 0,0 200,200 Q 100,300 100,0 Q 200,100 0,300 Q 300,200 200,300 Q 100,200 300,0 Q 0,100 0,200 Q 300,300 100,100 Q 200,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 271,
@@ -16129,7 +16399,8 @@ const indexFania880 = [
         696
       ],
       "svg": "<svg id='quadline-4-271' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-271' class='lines' d='M 200,100 Q 0,0 200,300 Q 0,200 100,0 Q 300,300 100,200 Q 300,100 300,200 Q 100,300 300,0 Q 100,100 0,100 Q 200,200 0,300 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 272,
@@ -16191,7 +16462,8 @@ const indexFania880 = [
         837
       ],
       "svg": "<svg id='quadline-4-272' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-272' class='lines' d='M 200,300 Q 0,0 200,100 Q 0,200 100,0 Q 300,100 100,200 Q 300,300 300,200 Q 100,100 300,0 Q 100,300 0,300 Q 200,200 0,100 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 273,
@@ -16247,7 +16519,8 @@ const indexFania880 = [
         868
       ],
       "svg": "<svg id='quadline-4-273' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-273' class='lines' d='M 200,100 Q 0,0 0,200 Q 200,300 100,0 Q 300,100 300,300 Q 100,200 100,300 Q 300,200 300,0 Q 100,100 200,200 Q 0,300 0,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 274,
@@ -16314,7 +16587,8 @@ const indexFania880 = [
         623
       ],
       "svg": "<svg id='quadline-4-274' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-274' class='lines' d='M 200,100 Q 0,0 100,300 Q 300,200 100,0 Q 300,100 200,200 Q 0,300 0,200 Q 200,300 300,0 Q 100,100 300,300 Q 100,200 0,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 275,
@@ -16373,7 +16647,8 @@ const indexFania880 = [
         437
       ],
       "svg": "<svg id='quadline-4-275' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-275' class='lines' d='M 200,300 Q 0,0 100,200 Q 200,100 300,300 Q 100,0 0,100 Q 300,200 0,200 Q 300,100 300,0 Q 100,300 100,100 Q 200,200 200,0 Q 0,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 276,
@@ -16434,7 +16709,8 @@ const indexFania880 = [
         753
       ],
       "svg": "<svg id='quadline-4-276' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-276' class='lines' d='M 200,300 Q 0,0 100,200 Q 200,100 300,300 Q 100,0 0,200 Q 300,100 0,100 Q 300,200 300,0 Q 100,300 100,100 Q 200,200 200,0 Q 0,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 277,
@@ -16490,7 +16766,8 @@ const indexFania880 = [
         545
       ],
       "svg": "<svg id='quadline-4-277' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-277' class='lines' d='M 300,200 Q 0,0 100,300 Q 200,100 200,200 Q 100,0 0,300 Q 300,100 0,100 Q 200,300 300,0 Q 100,200 100,100 Q 300,300 200,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 278,
@@ -16544,7 +16821,8 @@ const indexFania880 = [
         495
       ],
       "svg": "<svg id='quadline-4-278' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-278' class='lines' d='M 300,100 Q 0,0 100,300 Q 200,100 200,200 Q 100,0 0,300 Q 300,200 0,200 Q 200,300 300,0 Q 100,200 100,100 Q 300,300 200,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 279,
@@ -16602,7 +16880,8 @@ const indexFania880 = [
         785
       ],
       "svg": "<svg id='quadline-4-279' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-279' class='lines' d='M 100,200 Q 0,0 300,300 Q 200,100 300,100 Q 200,300 100,0 Q 0,200 200,0 Q 300,200 0,100 Q 100,300 0,300 Q 100,100 200,200 Q 300,0 100,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 280,
@@ -16672,7 +16951,8 @@ const indexFania880 = [
         796
       ],
       "svg": "<svg id='quadline-4-280' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-280' class='lines' d='M 300,200 Q 0,0 200,100 Q 100,300 0,300 Q 300,100 100,0 Q 200,200 200,0 Q 100,200 300,300 Q 0,100 100,100 Q 200,300 0,200 Q 300,0 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 281,
@@ -16740,7 +17020,8 @@ const indexFania880 = [
         682
       ],
       "svg": "<svg id='quadline-4-281' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-281' class='lines' d='M 100,200 Q 0,0 300,100 Q 200,300 300,300 Q 200,100 100,0 Q 0,200 200,0 Q 300,200 0,300 Q 100,100 0,100 Q 100,300 200,200 Q 300,0 100,200 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 282,
@@ -16811,7 +17092,8 @@ const indexFania880 = [
         827
       ],
       "svg": "<svg id='quadline-4-282' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-282' class='lines' d='M 300,200 Q 0,0 0,300 Q 300,100 200,100 Q 100,300 100,0 Q 200,200 200,0 Q 100,200 100,100 Q 200,300 300,300 Q 0,100 0,200 Q 300,0 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 283,
@@ -16868,7 +17150,8 @@ const indexFania880 = [
         442
       ],
       "svg": "<svg id='quadline-4-283' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-283' class='lines' d='M 300,100 Q 0,0 100,200 Q 200,100 300,300 Q 0,200 100,0 Q 200,300 200,0 Q 100,300 0,300 Q 300,200 200,200 Q 100,100 0,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 284,
@@ -16920,7 +17203,8 @@ const indexFania880 = [
         776
       ],
       "svg": "<svg id='quadline-4-284' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-284' class='lines' d='M 100,200 Q 0,0 200,300 Q 300,300 200,100 Q 300,200 100,0 Q 0,100 300,100 Q 200,0 0,200 Q 100,100 0,300 Q 100,300 300,0 Q 200,200 100,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 285,
@@ -16973,7 +17257,8 @@ const indexFania880 = [
         818
       ],
       "svg": "<svg id='quadline-4-285' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-285' class='lines' d='M 100,200 Q 0,0 200,300 Q 300,300 200,100 Q 300,100 100,0 Q 0,200 300,200 Q 200,0 0,100 Q 100,100 0,300 Q 100,300 300,0 Q 200,200 100,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 286,
@@ -17024,7 +17309,8 @@ const indexFania880 = [
         833
       ],
       "svg": "<svg id='quadline-4-286' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-286' class='lines' d='M 200,100 Q 0,0 300,300 Q 100,200 300,200 Q 200,300 100,0 Q 0,100 0,200 Q 100,300 200,0 Q 300,100 100,100 Q 300,0 0,300 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 287,
@@ -17094,7 +17380,8 @@ const indexFania880 = [
         836
       ],
       "svg": "<svg id='quadline-4-287' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-287' class='lines' d='M 100,200 Q 0,0 300,300 Q 200,100 300,100 Q 200,300 100,0 Q 0,200 0,100 Q 100,300 200,0 Q 300,200 200,200 Q 300,0 0,300 Q 100,100 100,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 288,
@@ -17181,7 +17468,8 @@ const indexFania880 = [
         837
       ],
       "svg": "<svg id='quadline-4-288' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-288' class='lines' d='M 200,100 Q 0,0 300,300 Q 100,200 0,200 Q 200,300 100,0 Q 300,100 300,200 Q 100,300 200,0 Q 0,100 100,100 Q 300,0 0,300 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 289,
@@ -17242,7 +17530,8 @@ const indexFania880 = [
         834
       ],
       "svg": "<svg id='quadline-4-289' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-289' class='lines' d='M 300,100 Q 0,0 0,300 Q 300,200 200,200 Q 100,300 100,0 Q 200,100 100,200 Q 200,300 200,0 Q 100,100 0,100 Q 300,0 300,300 Q 0,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 290,
@@ -17292,7 +17581,8 @@ const indexFania880 = [
         835
       ],
       "svg": "<svg id='quadline-4-290' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-290' class='lines' d='M 300,200 Q 0,0 0,300 Q 300,100 200,100 Q 100,300 100,0 Q 200,200 100,100 Q 200,300 200,0 Q 100,200 0,200 Q 300,0 300,300 Q 0,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 291,
@@ -17360,7 +17650,8 @@ const indexFania880 = [
         715
       ],
       "svg": "<svg id='quadline-4-291' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-291' class='lines' d='M 100,300 Q 0,0 200,100 Q 300,200 200,200 Q 300,100 100,0 Q 0,300 0,100 Q 100,200 300,300 Q 200,0 300,0 Q 200,300 0,200 Q 100,100 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 292,
@@ -17415,7 +17706,8 @@ const indexFania880 = [
         788
       ],
       "svg": "<svg id='quadline-4-292' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-292' class='lines' d='M 200,100 Q 0,0 300,300 Q 100,200 0,200 Q 200,300 100,0 Q 300,100 100,300 Q 300,200 0,100 Q 200,0 300,0 Q 100,100 200,200 Q 0,300 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 293,
@@ -17479,7 +17771,8 @@ const indexFania880 = [
         814
       ],
       "svg": "<svg id='quadline-4-293' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-293' class='lines' d='M 300,100 Q 0,0 0,300 Q 300,200 200,200 Q 100,300 100,0 Q 200,100 200,300 Q 100,200 100,100 Q 200,0 300,0 Q 0,100 0,200 Q 300,300 300,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 294,
@@ -17544,7 +17837,8 @@ const indexFania880 = [
         664
       ],
       "svg": "<svg id='quadline-4-294' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-294' class='lines' d='M 200,300 Q 0,0 300,100 Q 100,200 0,200 Q 200,100 100,0 Q 300,300 100,100 Q 300,200 0,300 Q 200,0 300,0 Q 100,300 200,200 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 295,
@@ -17593,7 +17887,8 @@ const indexFania880 = [
         634
       ],
       "svg": "<svg id='quadline-4-295' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-295' class='lines' d='M 200,100 Q 0,0 300,200 Q 200,300 300,300 Q 100,200 100,0 Q 0,100 0,200 Q 100,300 100,100 Q 300,0 200,0 Q 300,100 0,300 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 296,
@@ -17652,7 +17947,8 @@ const indexFania880 = [
         636
       ],
       "svg": "<svg id='quadline-4-296' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-296' class='lines' d='M 100,200 Q 0,0 300,100 Q 200,300 300,300 Q 200,100 100,0 Q 0,200 0,100 Q 100,300 200,200 Q 300,0 200,0 Q 300,200 0,300 Q 100,100 100,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 297,
@@ -17711,7 +18007,8 @@ const indexFania880 = [
         635
       ],
       "svg": "<svg id='quadline-4-297' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-297' class='lines' d='M 300,100 Q 0,0 200,200 Q 100,300 0,300 Q 300,200 100,0 Q 200,100 100,200 Q 200,300 0,100 Q 300,0 200,0 Q 100,100 300,300 Q 0,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 298,
@@ -17760,7 +18057,8 @@ const indexFania880 = [
         638
       ],
       "svg": "<svg id='quadline-4-298' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-298' class='lines' d='M 200,100 Q 0,0 0,200 Q 200,300 300,300 Q 100,200 100,0 Q 300,100 300,200 Q 100,300 100,100 Q 300,0 200,0 Q 0,100 0,300 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 299,
@@ -17828,7 +18126,8 @@ const indexFania880 = [
         637
       ],
       "svg": "<svg id='quadline-4-299' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-299' class='lines' d='M 300,200 Q 0,0 200,100 Q 100,300 0,300 Q 300,100 100,0 Q 200,200 100,100 Q 200,300 0,200 Q 300,0 200,0 Q 100,200 300,300 Q 0,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 300,
@@ -17881,7 +18180,8 @@ const indexFania880 = [
         879
       ],
       "svg": "<svg id='quadline-4-300' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-300' class='lines' d='M 200,300 Q 0,0 200,100 Q 300,200 100,200 Q 300,300 100,0 Q 0,100 0,200 Q 100,100 300,0 Q 100,300 300,100 Q 200,0 0,300 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 301,
@@ -17945,7 +18245,8 @@ const indexFania880 = [
         642
       ],
       "svg": "<svg id='quadline-4-301' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-301' class='lines' d='M 100,300 Q 0,0 200,200 Q 300,100 200,100 Q 300,200 100,0 Q 0,300 0,100 Q 100,200 300,0 Q 200,300 300,300 Q 200,0 0,200 Q 100,100 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 302,
@@ -18012,7 +18313,8 @@ const indexFania880 = [
         479
       ],
       "svg": "<svg id='quadline-4-302' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-302' class='lines' d='M 300,100 Q 0,0 200,200 Q 100,300 0,300 Q 300,200 100,0 Q 200,100 200,300 Q 100,200 300,0 Q 0,100 100,100 Q 200,0 0,200 Q 300,300 300,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 303,
@@ -18071,7 +18373,8 @@ const indexFania880 = [
         719
       ],
       "svg": "<svg id='quadline-4-303' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-303' class='lines' d='M 200,300 Q 0,0 200,100 Q 0,200 100,200 Q 300,300 100,0 Q 300,100 300,200 Q 100,100 300,0 Q 100,300 0,100 Q 200,0 0,300 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 304,
@@ -18126,7 +18429,8 @@ const indexFania880 = [
         485
       ],
       "svg": "<svg id='quadline-4-304' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-304' class='lines' d='M 200,100 Q 0,0 0,200 Q 200,300 300,300 Q 100,200 100,0 Q 300,100 100,300 Q 300,200 300,0 Q 100,100 0,100 Q 200,0 200,200 Q 0,300 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 305,
@@ -18199,7 +18503,8 @@ const indexFania880 = [
         483
       ],
       "svg": "<svg id='quadline-4-305' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-305' class='lines' d='M 200,300 Q 0,0 0,200 Q 200,100 300,100 Q 100,200 100,0 Q 300,300 100,100 Q 300,200 300,0 Q 100,300 0,300 Q 200,0 200,200 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 306,
@@ -18262,7 +18567,8 @@ const indexFania880 = [
         596
       ],
       "svg": "<svg id='quadline-4-306' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-306' class='lines' d='M 100,300 Q 0,0 200,200 Q 300,100 200,100 Q 300,200 100,0 Q 0,300 300,0 Q 200,300 0,100 Q 100,200 0,200 Q 100,100 300,300 Q 200,0 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 307,
@@ -18326,7 +18632,8 @@ const indexFania880 = [
         713
       ],
       "svg": "<svg id='quadline-4-307' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-307' class='lines' d='M 200,300 Q 0,0 300,100 Q 100,200 0,200 Q 200,100 100,0 Q 300,300 300,0 Q 100,300 200,200 Q 0,100 100,100 Q 300,200 0,300 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 308,
@@ -18388,7 +18695,8 @@ const indexFania880 = [
         822
       ],
       "svg": "<svg id='quadline-4-308' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-308' class='lines' d='M 100,300 Q 0,0 200,100 Q 300,200 200,200 Q 300,100 100,0 Q 0,300 300,0 Q 200,300 0,200 Q 100,100 0,100 Q 100,200 300,300 Q 200,0 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 309,
@@ -18456,7 +18764,8 @@ const indexFania880 = [
         696
       ],
       "svg": "<svg id='quadline-4-309' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-309' class='lines' d='M 200,300 Q 0,0 0,200 Q 200,100 300,100 Q 100,200 100,0 Q 300,300 300,0 Q 100,300 100,100 Q 300,200 200,200 Q 0,100 0,300 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 310,
@@ -18509,7 +18818,8 @@ const indexFania880 = [
         842
       ],
       "svg": "<svg id='quadline-4-310' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-310' class='lines' d='M 100,200 Q 0,0 300,300 Q 200,100 200,300 Q 300,100 0,200 Q 100,0 200,0 Q 300,200 0,100 Q 100,300 100,100 Q 0,300 300,0 Q 200,200 100,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 311,
@@ -18579,7 +18889,8 @@ const indexFania880 = [
         794
       ],
       "svg": "<svg id='quadline-4-311' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-311' class='lines' d='M 300,200 Q 0,0 100,300 Q 200,100 0,300 Q 300,100 200,200 Q 100,0 200,0 Q 100,200 0,100 Q 300,300 100,100 Q 200,300 300,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 312,
@@ -18647,7 +18958,8 @@ const indexFania880 = [
         789
       ],
       "svg": "<svg id='quadline-4-312' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-312' class='lines' d='M 100,200 Q 0,0 200,300 Q 300,100 300,300 Q 200,100 0,200 Q 100,0 200,0 Q 300,200 100,100 Q 0,300 0,100 Q 100,300 300,0 Q 200,200 100,200 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 313,
@@ -18713,7 +19025,8 @@ const indexFania880 = [
         840
       ],
       "svg": "<svg id='quadline-4-313' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-313' class='lines' d='M 300,200 Q 0,0 0,300 Q 300,100 100,300 Q 200,100 200,200 Q 100,0 200,0 Q 100,200 100,100 Q 200,300 0,100 Q 300,300 300,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 314,
@@ -18775,7 +19088,8 @@ const indexFania880 = [
         841
       ],
       "svg": "<svg id='quadline-4-314' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-314' class='lines' d='M 300,100 Q 0,0 0,300 Q 300,200 100,300 Q 200,100 200,200 Q 100,0 200,0 Q 100,200 100,100 Q 200,300 0,200 Q 300,300 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 315,
@@ -18856,7 +19170,8 @@ const indexFania880 = [
         724
       ],
       "svg": "<svg id='quadline-4-315' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-315' class='lines' d='M 300,100 Q 0,0 100,300 Q 200,100 0,300 Q 300,200 200,200 Q 100,0 200,0 Q 100,200 0,200 Q 300,300 100,100 Q 200,300 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 316,
@@ -18927,7 +19242,8 @@ const indexFania880 = [
         779
       ],
       "svg": "<svg id='quadline-4-316' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-316' class='lines' d='M 100,200 Q 0,0 300,300 Q 200,100 200,300 Q 300,100 0,200 Q 100,0 0,100 Q 100,300 200,0 Q 300,200 300,0 Q 200,200 100,100 Q 0,300 100,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 317,
@@ -19003,7 +19319,8 @@ const indexFania880 = [
         716
       ],
       "svg": "<svg id='quadline-4-317' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-317' class='lines' d='M 100,300 Q 0,0 300,200 Q 200,100 200,200 Q 300,100 0,300 Q 100,0 0,100 Q 100,200 200,0 Q 300,300 300,0 Q 200,300 100,100 Q 0,200 100,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 318,
@@ -19057,7 +19374,8 @@ const indexFania880 = [
         777
       ],
       "svg": "<svg id='quadline-4-318' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-318' class='lines' d='M 100,200 Q 0,0 300,100 Q 300,300 200,100 Q 200,300 0,200 Q 100,0 100,300 Q 0,100 200,0 Q 200,200 300,0 Q 300,200 0,300 Q 100,100 100,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 319,
@@ -19116,7 +19434,8 @@ const indexFania880 = [
         808
       ],
       "svg": "<svg id='quadline-4-319' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-319' class='lines' d='M 100,300 Q 0,0 300,100 Q 200,200 200,100 Q 300,200 0,300 Q 100,0 100,200 Q 0,100 200,0 Q 300,300 300,0 Q 200,300 0,200 Q 100,100 100,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 320,
@@ -19177,7 +19496,8 @@ const indexFania880 = [
         780
       ],
       "svg": "<svg id='quadline-4-320' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-320' class='lines' d='M 200,100 Q 0,0 0,200 Q 300,300 100,200 Q 200,300 300,100 Q 100,0 100,300 Q 300,200 200,0 Q 100,100 300,0 Q 0,100 0,300 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 321,
@@ -19233,7 +19553,8 @@ const indexFania880 = [
         649
       ],
       "svg": "<svg id='quadline-4-321' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-321' class='lines' d='M 200,300 Q 0,0 100,200 Q 300,100 0,200 Q 200,100 300,300 Q 100,0 100,100 Q 300,200 200,0 Q 0,300 300,0 Q 100,300 0,100 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 322,
@@ -19298,7 +19619,8 @@ const indexFania880 = [
         778
       ],
       "svg": "<svg id='quadline-4-322' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-322' class='lines' d='M 300,200 Q 0,0 0,300 Q 300,100 100,300 Q 200,100 200,200 Q 100,0 100,100 Q 200,300 200,0 Q 100,200 300,0 Q 0,200 0,100 Q 300,300 300,200 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 323,
@@ -19378,7 +19700,8 @@ const indexFania880 = [
         721
       ],
       "svg": "<svg id='quadline-4-323' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-323' class='lines' d='M 100,200 Q 0,0 200,300 Q 300,100 300,300 Q 200,100 0,200 Q 100,0 0,100 Q 100,300 300,0 Q 200,200 200,0 Q 300,200 100,100 Q 0,300 100,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 324,
@@ -19435,7 +19758,8 @@ const indexFania880 = [
         465
       ],
       "svg": "<svg id='quadline-4-324' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-324' class='lines' d='M 100,300 Q 0,0 200,200 Q 300,100 300,200 Q 200,100 0,300 Q 100,0 0,100 Q 100,200 300,0 Q 200,300 200,0 Q 300,300 100,100 Q 0,200 100,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 325,
@@ -19489,7 +19813,8 @@ const indexFania880 = [
         544
       ],
       "svg": "<svg id='quadline-4-325' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-325' class='lines' d='M 200,300 Q 0,0 0,200 Q 200,100 100,200 Q 300,100 300,300 Q 100,0 100,100 Q 300,200 300,0 Q 100,300 200,0 Q 0,300 0,100 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 326,
@@ -19556,7 +19881,8 @@ const indexFania880 = [
         621
       ],
       "svg": "<svg id='quadline-4-326' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-326' class='lines' d='M 300,200 Q 0,0 100,300 Q 200,100 0,300 Q 300,100 200,200 Q 100,0 100,100 Q 200,300 300,0 Q 0,200 200,0 Q 100,200 0,100 Q 300,300 300,200 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 327,
@@ -19611,7 +19937,8 @@ const indexFania880 = [
         534
       ],
       "svg": "<svg id='quadline-4-327' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-327' class='lines' d='M 100,300 Q 0,0 300,200 Q 200,200 200,100 Q 300,100 0,300 Q 100,0 300,0 Q 200,300 0,100 Q 100,100 100,200 Q 0,200 200,0 Q 300,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 328,
@@ -19674,7 +20001,8 @@ const indexFania880 = [
         710
       ],
       "svg": "<svg id='quadline-4-328' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-328' class='lines' d='M 200,300 Q 0,0 100,200 Q 300,100 0,200 Q 200,100 300,300 Q 100,0 300,0 Q 100,300 0,100 Q 200,200 100,100 Q 300,200 200,0 Q 0,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 329,
@@ -19734,7 +20062,8 @@ const indexFania880 = [
         96
       ],
       "svg": "<svg id='quadline-4-329' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-329' class='lines' d='M 100,300 Q 0,0 200,200 Q 300,100 300,200 Q 200,100 0,300 Q 100,0 300,0 Q 200,300 0,100 Q 100,200 100,100 Q 0,200 200,0 Q 300,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 330,
@@ -19790,7 +20119,8 @@ const indexFania880 = [
         872
       ],
       "svg": "<svg id='quadline-4-330' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-330' class='lines' d='M 200,300 Q 0,0 0,200 Q 200,100 100,200 Q 300,100 300,300 Q 100,0 300,0 Q 100,300 100,100 Q 300,200 0,100 Q 200,200 200,0 Q 0,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 331,
@@ -19851,7 +20181,8 @@ const indexFania880 = [
         723
       ],
       "svg": "<svg id='quadline-4-331' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-331' class='lines' d='M 100,300 Q 0,0 300,200 Q 200,100 200,200 Q 300,100 0,300 Q 100,0 300,0 Q 200,300 100,100 Q 0,200 0,100 Q 100,200 200,0 Q 300,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 332,
@@ -19904,7 +20235,8 @@ const indexFania880 = [
         706
       ],
       "svg": "<svg id='quadline-4-332' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-332' class='lines' d='M 100,300 Q 0,0 300,100 Q 200,200 200,100 Q 300,200 0,300 Q 100,0 300,0 Q 200,300 0,200 Q 100,100 100,200 Q 0,100 200,0 Q 300,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 333,
@@ -19971,7 +20303,8 @@ const indexFania880 = [
         715
       ],
       "svg": "<svg id='quadline-4-333' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-333' class='lines' d='M 300,100 Q 0,0 100,200 Q 200,300 0,300 Q 300,200 200,0 Q 100,100 100,0 Q 200,100 300,300 Q 0,200 200,200 Q 100,300 0,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 334,
@@ -20040,7 +20373,8 @@ const indexFania880 = [
         854
       ],
       "svg": "<svg id='quadline-4-334' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-334' class='lines' d='M 300,100 Q 0,0 0,300 Q 300,200 100,200 Q 200,300 200,0 Q 100,100 100,0 Q 200,100 200,200 Q 100,300 300,300 Q 0,200 0,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 335,
@@ -20104,7 +20438,8 @@ const indexFania880 = [
         568
       ],
       "svg": "<svg id='quadline-4-335' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-335' class='lines' d='M 300,100 Q 0,0 100,200 Q 200,100 300,300 Q 0,200 200,0 Q 100,300 100,0 Q 200,300 0,300 Q 300,200 200,200 Q 100,100 0,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 336,
@@ -20155,7 +20490,8 @@ const indexFania880 = [
         694
       ],
       "svg": "<svg id='quadline-4-336' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-336' class='lines' d='M 300,200 Q 0,0 200,300 Q 100,200 0,300 Q 300,100 100,100 Q 200,0 100,0 Q 200,100 0,100 Q 300,300 200,200 Q 100,300 300,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 337,
@@ -20206,7 +20542,8 @@ const indexFania880 = [
         862
       ],
       "svg": "<svg id='quadline-4-337' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-337' class='lines' d='M 200,100 Q 0,0 300,300 Q 100,200 100,300 Q 300,100 0,200 Q 200,0 100,0 Q 300,200 0,100 Q 200,300 200,200 Q 0,300 300,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 338,
@@ -20264,7 +20601,8 @@ const indexFania880 = [
         849
       ],
       "svg": "<svg id='quadline-4-338' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-338' class='lines' d='M 300,200 Q 0,0 0,300 Q 300,100 200,300 Q 100,200 100,100 Q 200,0 100,0 Q 200,100 200,200 Q 100,300 0,100 Q 300,300 300,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 339,
@@ -20317,7 +20655,8 @@ const indexFania880 = [
         718
       ],
       "svg": "<svg id='quadline-4-339' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-339' class='lines' d='M 200,100 Q 0,0 100,300 Q 300,100 300,300 Q 100,200 0,200 Q 200,0 100,0 Q 300,200 200,200 Q 0,300 0,100 Q 200,300 300,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 340,
@@ -20370,7 +20709,8 @@ const indexFania880 = [
         546
       ],
       "svg": "<svg id='quadline-4-340' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-340' class='lines' d='M 300,100 Q 0,0 200,100 Q 100,300 100,200 Q 300,300 0,200 Q 200,0 100,0 Q 200,200 0,300 Q 300,200 200,300 Q 0,100 300,0 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 341,
@@ -20451,7 +20791,8 @@ const indexFania880 = [
         716
       ],
       "svg": "<svg id='quadline-4-341' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-341' class='lines' d='M 300,100 Q 0,0 200,300 Q 100,200 0,300 Q 300,200 100,100 Q 200,0 100,0 Q 200,100 0,200 Q 300,300 200,200 Q 100,300 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 342,
@@ -20506,7 +20847,8 @@ const indexFania880 = [
         859
       ],
       "svg": "<svg id='quadline-4-342' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-342' class='lines' d='M 300,100 Q 0,0 0,300 Q 300,200 200,300 Q 100,200 100,100 Q 200,0 100,0 Q 200,100 200,200 Q 100,300 0,200 Q 300,300 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 343,
@@ -20562,7 +20904,8 @@ const indexFania880 = [
         544
       ],
       "svg": "<svg id='quadline-4-343' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-343' class='lines' d='M 200,100 Q 0,0 300,100 Q 100,300 0,200 Q 300,300 100,200 Q 200,0 100,0 Q 300,200 0,300 Q 200,200 200,300 Q 100,100 300,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 344,
@@ -20624,7 +20967,8 @@ const indexFania880 = [
         644
       ],
       "svg": "<svg id='quadline-4-344' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-344' class='lines' d='M 200,100 Q 0,0 0,200 Q 200,300 300,200 Q 100,300 100,100 Q 300,0 100,0 Q 300,100 300,300 Q 100,200 0,300 Q 200,200 200,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 345,
@@ -20705,7 +21049,8 @@ const indexFania880 = [
         823
       ],
       "svg": "<svg id='quadline-4-345' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-345' class='lines' d='M 200,100 Q 0,0 300,200 Q 100,300 0,200 Q 200,300 100,100 Q 300,0 100,0 Q 300,100 0,300 Q 200,200 300,300 Q 100,200 200,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 346,
@@ -20761,7 +21106,8 @@ const indexFania880 = [
         832
       ],
       "svg": "<svg id='quadline-4-346' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-346' class='lines' d='M 200,100 Q 0,0 200,300 Q 300,200 0,200 Q 100,300 300,0 Q 100,100 100,0 Q 300,300 100,200 Q 0,100 300,100 Q 200,200 0,300 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 347,
@@ -20815,7 +21161,8 @@ const indexFania880 = [
         709
       ],
       "svg": "<svg id='quadline-4-347' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-347' class='lines' d='M 200,100 Q 0,0 200,300 Q 0,200 300,200 Q 100,300 300,0 Q 100,100 100,0 Q 300,300 100,200 Q 300,100 0,100 Q 200,200 0,300 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 348,
@@ -20868,7 +21215,8 @@ const indexFania880 = [
         567
       ],
       "svg": "<svg id='quadline-4-348' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-348' class='lines' d='M 200,300 Q 0,0 300,200 Q 200,100 100,100 Q 0,200 300,0 Q 100,300 100,0 Q 300,100 0,300 Q 100,200 200,200 Q 300,300 0,100 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 349,
@@ -20917,7 +21265,8 @@ const indexFania880 = [
         701
       ],
       "svg": "<svg id='quadline-4-349' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-349' class='lines' d='M 200,300 Q 0,0 200,100 Q 0,200 300,200 Q 100,100 300,0 Q 100,300 100,0 Q 300,100 100,200 Q 300,300 0,300 Q 200,200 0,100 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 350,
@@ -20981,7 +21330,8 @@ const indexFania880 = [
         593
       ],
       "svg": "<svg id='quadline-4-350' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-350' class='lines' d='M 200,100 Q 0,0 0,200 Q 200,300 100,300 Q 300,200 300,0 Q 100,100 100,0 Q 300,100 300,300 Q 100,200 200,200 Q 0,300 0,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 351,
@@ -21052,7 +21402,8 @@ const indexFania880 = [
         723
       ],
       "svg": "<svg id='quadline-4-351' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-351' class='lines' d='M 200,100 Q 0,0 100,300 Q 300,200 0,200 Q 200,300 300,0 Q 100,100 100,0 Q 300,100 200,200 Q 0,300 300,300 Q 100,200 0,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 352,
@@ -21105,7 +21456,8 @@ const indexFania880 = [
         804
       ],
       "svg": "<svg id='quadline-4-352' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-352' class='lines' d='M 200,100 Q 0,0 100,300 Q 300,300 100,200 Q 300,100 200,0 Q 0,200 300,200 Q 100,0 0,100 Q 200,200 0,300 Q 200,300 300,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 353,
@@ -21165,7 +21517,8 @@ const indexFania880 = [
     "quadline": {
       "2569": [],
       "svg": "<svg id='quadline-4-353' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-353' class='lines' d='M 200,300 Q 0,0 0,200 Q 300,100 100,200 Q 200,100 300,0 Q 100,300 300,300 Q 100,0 100,100 Q 200,200 0,100 Q 300,200 200,0 Q 0,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 354,
@@ -21233,7 +21586,8 @@ const indexFania880 = [
         724
       ],
       "svg": "<svg id='quadline-4-354' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-354' class='lines' d='M 300,100 Q 0,0 0,200 Q 200,300 100,300 Q 200,100 300,0 Q 100,200 200,200 Q 100,0 100,100 Q 300,300 0,300 Q 300,200 200,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 355,
@@ -21316,7 +21670,8 @@ const indexFania880 = [
         691
       ],
       "svg": "<svg id='quadline-4-355' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-355' class='lines' d='M 100,200 Q 0,0 300,100 Q 200,300 200,0 Q 300,200 0,300 Q 100,100 300,300 Q 200,100 100,0 Q 0,200 0,100 Q 100,300 200,200 Q 300,0 100,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 356,
@@ -21388,7 +21743,8 @@ const indexFania880 = [
         797
       ],
       "svg": "<svg id='quadline-4-356' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-356' class='lines' d='M 300,200 Q 0,0 0,300 Q 300,100 200,0 Q 100,200 100,100 Q 200,300 200,100 Q 100,300 100,0 Q 200,200 300,300 Q 0,100 0,200 Q 300,0 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 357,
@@ -21438,7 +21794,8 @@ const indexFania880 = [
         850
       ],
       "svg": "<svg id='quadline-4-357' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-357' class='lines' d='M 300,200 Q 0,0 0,300 Q 300,100 200,0 Q 100,300 200,100 Q 100,200 100,100 Q 200,200 100,0 Q 200,300 300,300 Q 0,100 0,200 Q 300,0 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 358,
@@ -21492,7 +21849,8 @@ const indexFania880 = [
         710
       ],
       "svg": "<svg id='quadline-4-358' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-358' class='lines' d='M 300,100 Q 0,0 0,300 Q 300,200 200,0 Q 100,300 100,200 Q 200,100 200,200 Q 100,100 100,0 Q 200,300 300,300 Q 0,200 0,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 359,
@@ -21552,7 +21910,8 @@ const indexFania880 = [
         864
       ],
       "svg": "<svg id='quadline-4-359' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-359' class='lines' d='M 200,100 Q 0,0 300,300 Q 100,200 0,200 Q 100,300 200,0 Q 300,100 300,200 Q 200,300 100,0 Q 0,100 100,100 Q 300,0 0,300 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 360,
@@ -21613,7 +21972,8 @@ const indexFania880 = [
         850
       ],
       "svg": "<svg id='quadline-4-360' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-360' class='lines' d='M 300,100 Q 0,0 0,300 Q 300,200 100,200 Q 200,300 200,0 Q 100,100 200,200 Q 100,300 100,0 Q 200,100 0,100 Q 300,0 300,300 Q 0,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 361,
@@ -21665,7 +22025,8 @@ const indexFania880 = [
         860
       ],
       "svg": "<svg id='quadline-4-361' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-361' class='lines' d='M 300,200 Q 0,0 0,300 Q 300,100 100,100 Q 200,300 200,0 Q 100,200 200,100 Q 100,300 100,0 Q 200,200 0,200 Q 300,0 300,300 Q 0,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 362,
@@ -21720,7 +22081,8 @@ const indexFania880 = [
         798
       ],
       "svg": "<svg id='quadline-4-362' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-362' class='lines' d='M 300,100 Q 0,0 0,300 Q 300,200 200,300 Q 100,200 100,100 Q 200,0 200,200 Q 100,300 100,0 Q 200,100 300,0 Q 0,100 0,200 Q 300,300 300,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 363,
@@ -21775,7 +22137,8 @@ const indexFania880 = [
         815
       ],
       "svg": "<svg id='quadline-4-363' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-363' class='lines' d='M 200,100 Q 0,0 0,200 Q 300,300 100,200 Q 100,300 300,100 Q 200,0 200,300 Q 300,200 100,0 Q 100,100 300,0 Q 0,100 0,300 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 364,
@@ -21829,7 +22192,8 @@ const indexFania880 = [
         689
       ],
       "svg": "<svg id='quadline-4-364' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-364' class='lines' d='M 200,300 Q 0,0 300,200 Q 100,100 100,200 Q 300,100 0,300 Q 200,0 200,100 Q 0,200 100,0 Q 300,300 300,0 Q 100,300 0,100 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 365,
@@ -21903,7 +22267,8 @@ const indexFania880 = [
         794
       ],
       "svg": "<svg id='quadline-4-365' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-365' class='lines' d='M 200,300 Q 0,0 300,100 Q 100,200 100,100 Q 300,200 0,300 Q 200,0 0,200 Q 200,100 100,0 Q 300,300 300,0 Q 100,300 200,200 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 366,
@@ -21976,7 +22341,8 @@ const indexFania880 = [
         724
       ],
       "svg": "<svg id='quadline-4-366' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-366' class='lines' d='M 200,100 Q 0,0 300,200 Q 200,300 0,200 Q 100,300 100,100 Q 300,0 300,300 Q 100,200 100,0 Q 0,100 200,0 Q 300,100 0,300 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 367,
@@ -22038,7 +22404,8 @@ const indexFania880 = [
         699
       ],
       "svg": "<svg id='quadline-4-367' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-367' class='lines' d='M 200,100 Q 0,0 0,200 Q 200,300 300,200 Q 100,300 100,100 Q 300,0 300,300 Q 100,200 100,0 Q 300,100 200,0 Q 0,100 0,300 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 368,
@@ -22095,7 +22462,8 @@ const indexFania880 = [
         657
       ],
       "svg": "<svg id='quadline-4-368' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-368' class='lines' d='M 300,200 Q 0,0 200,100 Q 100,300 100,100 Q 200,300 0,200 Q 300,0 0,300 Q 300,100 100,0 Q 200,200 200,0 Q 100,200 300,300 Q 0,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 369,
@@ -22148,7 +22516,8 @@ const indexFania880 = [
         832
       ],
       "svg": "<svg id='quadline-4-369' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-369' class='lines' d='M 200,300 Q 0,0 200,100 Q 300,200 0,200 Q 100,100 300,0 Q 100,300 100,200 Q 300,300 100,0 Q 0,100 300,100 Q 200,0 0,300 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 370,
@@ -22205,7 +22574,8 @@ const indexFania880 = [
         531
       ],
       "svg": "<svg id='quadline-4-370' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-370' class='lines' d='M 300,100 Q 0,0 200,300 Q 100,200 0,200 Q 100,300 300,0 Q 200,100 200,200 Q 300,300 100,0 Q 0,100 100,100 Q 200,0 0,300 Q 300,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 371,
@@ -22257,7 +22627,8 @@ const indexFania880 = [
         709
       ],
       "svg": "<svg id='quadline-4-371' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-371' class='lines' d='M 200,300 Q 0,0 200,100 Q 0,200 300,200 Q 100,100 300,0 Q 100,300 100,200 Q 300,300 100,0 Q 300,100 0,100 Q 200,0 0,300 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 372,
@@ -22332,7 +22703,8 @@ const indexFania880 = [
         724
       ],
       "svg": "<svg id='quadline-4-372' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-372' class='lines' d='M 200,100 Q 0,0 0,200 Q 200,300 100,300 Q 300,200 300,0 Q 100,100 300,300 Q 100,200 100,0 Q 300,100 0,100 Q 200,0 200,200 Q 0,300 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 373,
@@ -22394,7 +22766,8 @@ const indexFania880 = [
         707
       ],
       "svg": "<svg id='quadline-4-373' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-373' class='lines' d='M 300,200 Q 0,0 200,300 Q 100,100 200,100 Q 100,300 300,0 Q 0,200 0,300 Q 300,100 100,0 Q 200,200 100,200 Q 200,0 0,100 Q 300,300 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 374,
@@ -22442,7 +22815,8 @@ const indexFania880 = [
         617
       ],
       "svg": "<svg id='quadline-4-374' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-374' class='lines' d='M 0,200 Q 0,0 200,100 Q 200,300 100,300 Q 300,100 300,0 Q 100,200 300,300 Q 100,100 100,0 Q 300,200 200,200 Q 200,0 0,100 Q 0,300 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 375,
@@ -22504,7 +22878,8 @@ const indexFania880 = [
         702
       ],
       "svg": "<svg id='quadline-4-375' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-375' class='lines' d='M 200,300 Q 0,0 0,200 Q 200,100 100,100 Q 300,200 300,0 Q 100,300 300,100 Q 100,200 100,0 Q 300,300 0,300 Q 200,0 200,200 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 376,
@@ -22552,7 +22927,8 @@ const indexFania880 = [
     "quadline": {
       "2319": [],
       "svg": "<svg id='quadline-4-376' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-376' class='lines' d='M 0,200 Q 0,0 200,300 Q 200,100 300,100 Q 100,300 300,0 Q 100,200 100,100 Q 300,300 100,0 Q 300,200 200,200 Q 200,0 0,300 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 377,
@@ -22619,7 +22995,8 @@ const indexFania880 = [
         695
       ],
       "svg": "<svg id='quadline-4-377' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-377' class='lines' d='M 100,300 Q 0,0 200,100 Q 300,200 300,0 Q 200,300 0,200 Q 100,100 200,200 Q 300,100 100,0 Q 0,300 0,100 Q 100,200 300,300 Q 200,0 100,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 378,
@@ -22693,7 +23070,8 @@ const indexFania880 = [
         696
       ],
       "svg": "<svg id='quadline-4-378' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-378' class='lines' d='M 200,300 Q 0,0 0,200 Q 200,100 300,0 Q 100,300 100,100 Q 300,200 300,100 Q 100,200 100,0 Q 300,300 200,200 Q 0,100 0,300 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 379,
@@ -22779,7 +23157,8 @@ const indexFania880 = [
         837
       ],
       "svg": "<svg id='quadline-4-379' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-379' class='lines' d='M 100,200 Q 0,0 200,300 Q 300,100 200,0 Q 300,200 100,100 Q 0,300 300,300 Q 200,100 0,200 Q 100,0 0,100 Q 100,300 300,0 Q 200,200 100,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 380,
@@ -22846,7 +23225,8 @@ const indexFania880 = [
         851
       ],
       "svg": "<svg id='quadline-4-380' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-380' class='lines' d='M 300,200 Q 0,0 0,300 Q 300,100 200,0 Q 100,200 100,100 Q 200,300 100,300 Q 200,100 200,200 Q 100,0 0,100 Q 300,300 300,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 381,
@@ -22898,7 +23278,8 @@ const indexFania880 = [
         656
       ],
       "svg": "<svg id='quadline-4-381' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-381' class='lines' d='M 100,300 Q 0,0 300,100 Q 200,100 200,0 Q 300,200 0,300 Q 100,200 200,200 Q 300,300 0,200 Q 100,0 100,100 Q 0,100 300,0 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 382,
@@ -22955,7 +23336,8 @@ const indexFania880 = [
         861
       ],
       "svg": "<svg id='quadline-4-382' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-382' class='lines' d='M 300,100 Q 0,0 0,300 Q 300,200 200,0 Q 100,200 100,100 Q 200,300 100,300 Q 200,100 200,200 Q 100,0 0,200 Q 300,300 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 383,
@@ -23008,7 +23390,8 @@ const indexFania880 = [
         158
       ],
       "svg": "<svg id='quadline-4-383' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-383' class='lines' d='M 300,100 Q 0,0 100,300 Q 200,100 200,0 Q 100,200 0,200 Q 300,300 0,300 Q 300,200 200,200 Q 100,0 100,100 Q 200,300 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 384,
@@ -23080,7 +23463,8 @@ const indexFania880 = [
         796
       ],
       "svg": "<svg id='quadline-4-384' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-384' class='lines' d='M 200,300 Q 0,0 100,200 Q 300,100 100,100 Q 300,200 200,0 Q 0,300 0,200 Q 200,100 300,300 Q 100,0 300,0 Q 100,300 0,100 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 385,
@@ -23144,7 +23528,8 @@ const indexFania880 = [
         810
       ],
       "svg": "<svg id='quadline-4-385' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-385' class='lines' d='M 300,200 Q 0,0 0,300 Q 300,100 100,100 Q 200,300 200,0 Q 100,200 100,300 Q 200,100 200,200 Q 100,0 300,0 Q 0,200 0,100 Q 300,300 300,200 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 386,
@@ -23204,7 +23589,8 @@ const indexFania880 = [
         527
       ],
       "svg": "<svg id='quadline-4-386' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-386' class='lines' d='M 200,300 Q 0,0 0,200 Q 200,100 100,100 Q 300,200 300,0 Q 100,300 100,200 Q 300,100 300,300 Q 100,0 200,0 Q 0,300 0,100 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 387,
@@ -23265,7 +23651,8 @@ const indexFania880 = [
         663
       ],
       "svg": "<svg id='quadline-4-387' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-387' class='lines' d='M 300,200 Q 0,0 100,300 Q 200,100 100,100 Q 200,300 300,0 Q 0,200 0,300 Q 300,100 200,200 Q 100,0 200,0 Q 100,200 0,100 Q 300,300 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 388,
@@ -23329,7 +23716,8 @@ const indexFania880 = [
         523
       ],
       "svg": "<svg id='quadline-4-388' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-388' class='lines' d='M 200,300 Q 0,0 0,200 Q 200,100 300,0 Q 100,300 100,100 Q 300,200 100,200 Q 300,100 300,300 Q 100,0 0,100 Q 200,200 200,0 Q 0,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 389,
@@ -23402,7 +23790,8 @@ const indexFania880 = [
         678
       ],
       "svg": "<svg id='quadline-4-389' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-389' class='lines' d='M 100,300 Q 0,0 300,200 Q 200,100 300,0 Q 200,300 100,100 Q 0,200 200,200 Q 300,100 0,300 Q 100,0 0,100 Q 100,200 200,0 Q 300,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 390,
@@ -23452,7 +23841,8 @@ const indexFania880 = [
     "quadline": {
       "2315": [],
       "svg": "<svg id='quadline-4-390' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-390' class='lines' d='M 300,100 Q 0,0 200,0 Q 100,300 100,200 Q 200,100 0,300 Q 300,200 300,300 Q 0,200 200,200 Q 100,100 100,0 Q 200,300 0,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 391,
@@ -23508,7 +23898,8 @@ const indexFania880 = [
         750
       ],
       "svg": "<svg id='quadline-4-391' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-391' class='lines' d='M 200,100 Q 0,0 0,200 Q 100,300 300,300 Q 100,200 200,0 Q 300,100 300,200 Q 200,300 100,100 Q 300,0 100,0 Q 0,100 0,300 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 392,
@@ -23559,7 +23950,8 @@ const indexFania880 = [
         746
       ],
       "svg": "<svg id='quadline-4-392' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-392' class='lines' d='M 300,200 Q 0,0 100,100 Q 200,300 0,300 Q 300,100 200,0 Q 100,200 200,100 Q 100,300 0,200 Q 300,0 100,0 Q 200,200 300,300 Q 0,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 393,
@@ -23616,7 +24008,8 @@ const indexFania880 = [
         845
       ],
       "svg": "<svg id='quadline-4-393' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-393' class='lines' d='M 200,300 Q 0,0 100,100 Q 300,200 300,100 Q 100,200 0,300 Q 200,0 0,200 Q 200,100 300,0 Q 100,300 100,0 Q 300,300 200,200 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 394,
@@ -23670,7 +24063,8 @@ const indexFania880 = [
         187
       ],
       "svg": "<svg id='quadline-4-394' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-394' class='lines' d='M 200,100 Q 0,0 0,200 Q 100,300 300,200 Q 200,300 100,100 Q 300,0 300,300 Q 100,200 200,0 Q 300,100 100,0 Q 0,100 0,300 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 395,
@@ -23719,7 +24113,8 @@ const indexFania880 = [
         206
       ],
       "svg": "<svg id='quadline-4-395' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-395' class='lines' d='M 300,200 Q 0,0 100,100 Q 200,300 200,100 Q 100,300 0,200 Q 300,0 0,300 Q 300,100 200,0 Q 100,200 100,0 Q 200,200 300,300 Q 0,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 396,
@@ -23785,7 +24180,8 @@ const indexFania880 = [
         568
       ],
       "svg": "<svg id='quadline-4-396' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-396' class='lines' d='M 200,300 Q 0,0 100,100 Q 300,200 0,200 Q 200,100 300,0 Q 100,300 300,100 Q 100,200 0,300 Q 200,0 100,0 Q 300,300 200,200 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 397,
@@ -23838,7 +24234,8 @@ const indexFania880 = [
         747
       ],
       "svg": "<svg id='quadline-4-397' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-397' class='lines' d='M 300,100 Q 0,0 200,0 Q 100,200 0,300 Q 300,200 100,100 Q 200,300 100,300 Q 200,100 0,200 Q 300,300 200,200 Q 100,0 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 398,
@@ -23895,7 +24292,8 @@ const indexFania880 = [
         190
       ],
       "svg": "<svg id='quadline-4-398' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-398' class='lines' d='M 300,100 Q 0,0 200,0 Q 100,200 100,300 Q 200,100 0,200 Q 300,300 0,300 Q 300,200 100,100 Q 200,300 200,200 Q 100,0 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 399,
@@ -23956,7 +24354,8 @@ const indexFania880 = [
         735
       ],
       "svg": "<svg id='quadline-4-399' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-399' class='lines' d='M 200,300 Q 0,0 100,100 Q 300,200 100,200 Q 300,100 200,0 Q 0,300 0,200 Q 200,100 300,0 Q 100,300 300,300 Q 100,0 0,100 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 400,
@@ -24015,7 +24414,8 @@ const indexFania880 = [
         843
       ],
       "svg": "<svg id='quadline-4-400' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-400' class='lines' d='M 300,200 Q 0,0 100,100 Q 200,300 0,300 Q 300,100 200,0 Q 100,200 100,300 Q 200,100 300,0 Q 0,200 200,200 Q 100,0 0,100 Q 300,300 300,200 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 401,
@@ -24066,7 +24466,8 @@ const indexFania880 = [
         731
       ],
       "svg": "<svg id='quadline-4-401' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-401' class='lines' d='M 200,300 Q 0,0 100,100 Q 300,200 0,200 Q 200,100 300,0 Q 100,300 100,200 Q 300,100 200,0 Q 0,300 300,300 Q 100,0 0,100 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 402,
@@ -24126,7 +24527,8 @@ const indexFania880 = [
         850
       ],
       "svg": "<svg id='quadline-4-402' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-402' class='lines' d='M 300,200 Q 0,0 100,100 Q 200,300 100,300 Q 200,100 300,0 Q 0,200 0,300 Q 300,100 200,0 Q 100,200 200,200 Q 100,0 0,100 Q 300,300 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 403,
@@ -24184,7 +24586,8 @@ const indexFania880 = [
         161
       ],
       "svg": "<svg id='quadline-4-403' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-403' class='lines' d='M 300,200 Q 0,0 100,300 Q 100,100 200,100 Q 200,300 300,0 Q 0,200 0,300 Q 300,100 200,0 Q 200,200 100,200 Q 100,0 0,100 Q 300,300 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 404,
@@ -24229,7 +24632,8 @@ const indexFania880 = [
         782
       ],
       "svg": "<svg id='quadline-4-404' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-404' class='lines' d='M 0,200 Q 0,0 100,300 Q 200,100 300,100 Q 200,300 300,0 Q 100,200 100,100 Q 300,300 200,0 Q 300,200 200,200 Q 100,0 0,300 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 405,
@@ -24289,7 +24693,8 @@ const indexFania880 = [
         841
       ],
       "svg": "<svg id='quadline-4-405' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-405' class='lines' d='M 300,100 Q 0,0 100,200 Q 200,0 200,300 Q 100,100 0,300 Q 300,200 0,200 Q 100,300 200,100 Q 300,300 300,0 Q 200,200 100,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 406,
@@ -24347,7 +24752,8 @@ const indexFania880 = [
         559
       ],
       "svg": "<svg id='quadline-4-406' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-406' class='lines' d='M 300,100 Q 0,0 100,200 Q 200,0 0,200 Q 100,300 200,100 Q 300,300 200,300 Q 100,100 0,300 Q 300,200 300,0 Q 200,200 100,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 407,
@@ -24399,7 +24805,8 @@ const indexFania880 = [
         526
       ],
       "svg": "<svg id='quadline-4-407' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-407' class='lines' d='M 300,100 Q 0,0 200,300 Q 100,200 100,100 Q 200,0 0,300 Q 300,200 0,200 Q 100,300 300,0 Q 200,100 200,200 Q 300,300 100,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 408,
@@ -24448,7 +24855,8 @@ const indexFania880 = [
     "quadline": {
       "2432": [],
       "svg": "<svg id='quadline-4-408' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-408' class='lines' d='M 300,100 Q 0,0 0,200 Q 100,300 200,300 Q 100,200 300,0 Q 200,100 100,100 Q 200,0 200,200 Q 300,300 0,300 Q 300,200 100,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 409,
@@ -24503,7 +24911,8 @@ const indexFania880 = [
         242
       ],
       "svg": "<svg id='quadline-4-409' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-409' class='lines' d='M 100,0 Q 200,100 0,0 Q 300,200 300,300 Q 100,200 200,300 Q 0,100 300,100 Q 0,300 200,200 Q 100,300 0,200 Q 200,0 100,100 Q 300,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 410,
@@ -24554,7 +24963,8 @@ const indexFania880 = [
         9
       ],
       "svg": "<svg id='quadline-4-410' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-410' class='lines' d='M 100,0 Q 200,100 0,0 Q 300,200 300,100 Q 0,300 200,200 Q 100,300 300,300 Q 100,200 200,300 Q 0,100 0,200 Q 200,0 100,100 Q 300,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 411,
@@ -24606,7 +25016,8 @@ const indexFania880 = [
         244
       ],
       "svg": "<svg id='quadline-4-411' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-411' class='lines' d='M 100,0 Q 200,100 0,0 Q 300,100 300,300 Q 100,200 200,300 Q 0,200 300,200 Q 0,300 200,200 Q 100,300 0,100 Q 200,0 100,100 Q 300,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 412,
@@ -24653,7 +25064,8 @@ const indexFania880 = [
         11
       ],
       "svg": "<svg id='quadline-4-412' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-412' class='lines' d='M 100,0 Q 200,100 0,0 Q 300,100 300,200 Q 0,300 200,200 Q 100,300 300,300 Q 100,200 200,300 Q 0,200 0,100 Q 200,0 100,100 Q 300,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 413,
@@ -24704,7 +25116,8 @@ const indexFania880 = [
         240
       ],
       "svg": "<svg id='quadline-4-413' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-413' class='lines' d='M 100,0 Q 300,100 0,0 Q 200,100 200,300 Q 100,200 300,300 Q 0,200 200,200 Q 0,300 300,200 Q 100,300 0,100 Q 300,0 100,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 414,
@@ -24751,7 +25164,8 @@ const indexFania880 = [
         416
       ],
       "svg": "<svg id='quadline-4-414' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-414' class='lines' d='M 100,0 Q 300,100 0,0 Q 200,100 200,200 Q 0,300 300,200 Q 100,300 200,300 Q 100,200 300,300 Q 0,200 0,100 Q 300,0 100,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 415,
@@ -24806,7 +25220,8 @@ const indexFania880 = [
         238
       ],
       "svg": "<svg id='quadline-4-415' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-415' class='lines' d='M 100,0 Q 200,100 0,0 Q 300,100 200,300 Q 0,200 300,300 Q 100,200 300,200 Q 0,300 200,200 Q 100,300 100,100 Q 300,0 0,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 416,
@@ -24853,7 +25268,8 @@ const indexFania880 = [
         414
       ],
       "svg": "<svg id='quadline-4-416' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-416' class='lines' d='M 100,0 Q 200,100 0,0 Q 300,100 300,200 Q 0,300 200,200 Q 100,300 200,300 Q 0,200 300,300 Q 100,200 100,100 Q 300,0 0,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 417,
@@ -24912,7 +25328,8 @@ const indexFania880 = [
     "quadline": {
       "2611": [],
       "svg": "<svg id='quadline-4-417' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-417' class='lines' d='M 300,200 Q 100,0 0,0 Q 200,300 200,100 Q 0,300 100,200 Q 300,100 300,300 Q 100,100 0,100 Q 200,200 200,0 Q 0,200 100,300 Q 300,0 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 418,
@@ -24966,7 +25383,8 @@ const indexFania880 = [
         839
       ],
       "svg": "<svg id='quadline-4-418' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-418' class='lines' d='M 300,100 Q 100,0 0,0 Q 200,300 100,200 Q 0,300 200,100 Q 300,200 300,300 Q 200,200 0,200 Q 100,100 200,0 Q 0,100 100,300 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 419,
@@ -25024,7 +25442,8 @@ const indexFania880 = [
         30
       ],
       "svg": "<svg id='quadline-4-419' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-419' class='lines' d='M 300,100 Q 100,0 0,0 Q 200,100 100,200 Q 300,300 200,300 Q 0,200 0,300 Q 200,200 300,200 Q 100,300 200,0 Q 0,100 100,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 420,
@@ -25079,7 +25498,8 @@ const indexFania880 = [
         641
       ],
       "svg": "<svg id='quadline-4-420' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-420' class='lines' d='M 300,100 Q 100,0 0,0 Q 200,100 0,300 Q 200,200 300,200 Q 100,300 100,200 Q 300,300 200,300 Q 0,200 200,0 Q 0,100 100,100 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 421,
@@ -25139,7 +25559,8 @@ const indexFania880 = [
         233
       ],
       "svg": "<svg id='quadline-4-421' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-421' class='lines' d='M 200,100 Q 100,0 0,0 Q 300,100 300,300 Q 0,200 100,200 Q 200,300 300,200 Q 0,300 100,300 Q 200,200 200,0 Q 100,100 0,100 Q 300,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 422,
@@ -25196,7 +25617,8 @@ const indexFania880 = [
         28
       ],
       "svg": "<svg id='quadline-4-422' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-422' class='lines' d='M 200,100 Q 100,0 0,0 Q 300,100 300,200 Q 0,300 100,300 Q 200,200 300,300 Q 0,200 100,200 Q 200,300 200,0 Q 100,100 0,100 Q 300,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 423,
@@ -25249,7 +25671,8 @@ const indexFania880 = [
         230
       ],
       "svg": "<svg id='quadline-4-423' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-423' class='lines' d='M 300,100 Q 100,0 0,0 Q 200,100 100,200 Q 300,300 200,300 Q 0,200 200,200 Q 0,300 100,300 Q 300,200 0,100 Q 200,0 300,0 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 424,
@@ -25304,7 +25727,8 @@ const indexFania880 = [
         231
       ],
       "svg": "<svg id='quadline-4-424' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-424' class='lines' d='M 300,100 Q 100,0 0,0 Q 200,100 200,200 Q 0,300 100,300 Q 300,200 100,200 Q 300,300 200,300 Q 0,200 0,100 Q 200,0 300,0 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 425,
@@ -25360,7 +25784,8 @@ const indexFania880 = [
         426
       ],
       "svg": "<svg id='quadline-4-425' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-425' class='lines' d='M 200,100 Q 100,0 0,0 Q 300,100 0,200 Q 300,300 200,300 Q 100,200 300,200 Q 0,300 100,300 Q 200,200 100,100 Q 200,0 300,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 426,
@@ -25420,7 +25845,8 @@ const indexFania880 = [
         425
       ],
       "svg": "<svg id='quadline-4-426' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-426' class='lines' d='M 200,100 Q 100,0 0,0 Q 300,100 300,200 Q 0,300 100,300 Q 200,200 0,200 Q 300,300 200,300 Q 100,200 100,100 Q 200,0 300,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 427,
@@ -25471,7 +25897,8 @@ const indexFania880 = [
         743
       ],
       "svg": "<svg id='quadline-4-427' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-427' class='lines' d='M 300,200 Q 100,0 0,0 Q 200,100 200,300 Q 0,100 100,200 Q 300,300 0,300 Q 200,200 300,100 Q 100,300 100,100 Q 300,0 200,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 428,
@@ -25528,7 +25955,8 @@ const indexFania880 = [
         720
       ],
       "svg": "<svg id='quadline-4-428' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-428' class='lines' d='M 200,100 Q 100,0 0,0 Q 300,200 300,300 Q 0,100 100,200 Q 200,300 100,300 Q 200,200 300,100 Q 0,300 0,200 Q 300,0 200,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 429,
@@ -25582,7 +26010,8 @@ const indexFania880 = [
         596
       ],
       "svg": "<svg id='quadline-4-429' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-429' class='lines' d='M 300,200 Q 100,0 0,0 Q 200,100 0,300 Q 200,200 300,100 Q 100,300 200,300 Q 0,100 100,200 Q 300,300 100,100 Q 300,0 200,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 430,
@@ -25637,7 +26066,8 @@ const indexFania880 = [
         14
       ],
       "svg": "<svg id='quadline-4-430' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-430' class='lines' d='M 200,100 Q 100,0 0,0 Q 300,200 100,300 Q 200,200 300,100 Q 0,300 300,300 Q 0,100 100,200 Q 200,300 0,200 Q 300,0 200,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 431,
@@ -25690,7 +26120,8 @@ const indexFania880 = [
         434
       ],
       "svg": "<svg id='quadline-4-431' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-431' class='lines' d='M 300,100 Q 100,0 0,0 Q 200,200 200,100 Q 0,300 100,300 Q 300,200 100,200 Q 200,300 300,300 Q 0,100 0,200 Q 300,0 200,0 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 432,
@@ -25749,7 +26180,8 @@ const indexFania880 = [
         599
       ],
       "svg": "<svg id='quadline-4-432' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-432' class='lines' d='M 200,100 Q 100,0 0,0 Q 300,100 300,300 Q 0,200 100,200 Q 200,300 100,300 Q 200,200 300,200 Q 0,300 0,100 Q 300,0 200,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 433,
@@ -25802,7 +26234,8 @@ const indexFania880 = [
         19
       ],
       "svg": "<svg id='quadline-4-433' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-433' class='lines' d='M 200,100 Q 100,0 0,0 Q 300,100 100,300 Q 200,200 300,200 Q 0,300 300,300 Q 0,200 100,200 Q 200,300 0,100 Q 300,0 200,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 434,
@@ -25851,7 +26284,8 @@ const indexFania880 = [
         431
       ],
       "svg": "<svg id='quadline-4-434' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-434' class='lines' d='M 200,100 Q 100,0 0,0 Q 300,200 300,100 Q 0,300 100,300 Q 200,200 0,200 Q 200,300 300,300 Q 100,100 100,200 Q 300,0 200,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 435,
@@ -25902,7 +26336,8 @@ const indexFania880 = [
         16
       ],
       "svg": "<svg id='quadline-4-435' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-435' class='lines' d='M 300,100 Q 100,0 0,0 Q 200,100 200,300 Q 0,200 100,200 Q 300,300 0,300 Q 200,200 300,200 Q 100,300 100,100 Q 300,0 200,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 436,
@@ -25965,7 +26400,8 @@ const indexFania880 = [
         608
       ],
       "svg": "<svg id='quadline-4-436' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-436' class='lines' d='M 300,100 Q 100,0 0,0 Q 200,100 0,300 Q 200,200 300,200 Q 100,300 200,300 Q 0,200 100,200 Q 300,300 100,100 Q 300,0 200,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 437,
@@ -26027,7 +26463,8 @@ const indexFania880 = [
         275
       ],
       "svg": "<svg id='quadline-4-437' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-437' class='lines' d='M 200,300 Q 100,0 0,0 Q 300,200 100,200 Q 200,100 0,100 Q 300,300 300,100 Q 0,300 200,200 Q 100,100 300,0 Q 0,200 100,300 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "MD1"
   },
   {
     "id": 438,
@@ -26085,7 +26522,8 @@ const indexFania880 = [
         758
       ],
       "svg": "<svg id='quadline-4-438' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-438' class='lines' d='M 200,100 Q 100,0 0,0 Q 300,300 200,300 Q 100,200 300,200 Q 0,100 0,200 Q 300,100 100,300 Q 200,200 300,0 Q 0,300 100,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 439,
@@ -26141,7 +26579,8 @@ const indexFania880 = [
         795
       ],
       "svg": "<svg id='quadline-4-439' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-439' class='lines' d='M 200,100 Q 100,0 0,0 Q 300,300 200,300 Q 100,200 0,200 Q 300,100 300,200 Q 0,100 100,300 Q 200,200 300,0 Q 0,300 100,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 440,
@@ -26212,7 +26651,8 @@ const indexFania880 = [
         663
       ],
       "svg": "<svg id='quadline-4-440' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-440' class='lines' d='M 200,300 Q 100,0 0,0 Q 300,200 300,100 Q 0,300 100,200 Q 200,100 200,200 Q 100,100 0,100 Q 300,300 300,0 Q 0,200 100,300 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 441,
@@ -26267,7 +26707,8 @@ const indexFania880 = [
         753
       ],
       "svg": "<svg id='quadline-4-441' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-441' class='lines' d='M 200,300 Q 100,0 0,0 Q 300,100 300,200 Q 0,300 200,100 Q 100,200 100,100 Q 200,200 0,200 Q 300,300 300,0 Q 0,100 100,300 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 442,
@@ -26322,7 +26763,8 @@ const indexFania880 = [
         283
       ],
       "svg": "<svg id='quadline-4-442' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-442' class='lines' d='M 200,300 Q 100,0 0,0 Q 300,100 200,100 Q 100,200 0,200 Q 300,300 300,200 Q 0,300 100,100 Q 200,200 300,0 Q 0,100 100,300 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 443,
@@ -26374,7 +26816,8 @@ const indexFania880 = [
         589
       ],
       "svg": "<svg id='quadline-4-443' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-443' class='lines' d='M 200,100 Q 100,0 0,0 Q 300,100 0,200 Q 300,300 200,300 Q 100,200 100,300 Q 200,200 300,200 Q 0,300 300,0 Q 0,100 100,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 444,
@@ -26430,7 +26873,8 @@ const indexFania880 = [
         217
       ],
       "svg": "<svg id='quadline-4-444' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-444' class='lines' d='M 200,100 Q 100,0 0,0 Q 300,100 100,300 Q 200,200 300,200 Q 0,300 0,200 Q 300,300 200,300 Q 100,200 300,0 Q 0,100 100,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 445,
@@ -26492,7 +26936,8 @@ const indexFania880 = [
         213
       ],
       "svg": "<svg id='quadline-4-445' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-445' class='lines' d='M 300,100 Q 100,0 0,0 Q 200,100 200,300 Q 0,200 100,200 Q 300,300 200,200 Q 0,300 100,300 Q 300,200 300,0 Q 100,100 0,100 Q 200,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 446,
@@ -26558,7 +27003,8 @@ const indexFania880 = [
         612
       ],
       "svg": "<svg id='quadline-4-446' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-446' class='lines' d='M 300,100 Q 100,0 0,0 Q 200,100 200,200 Q 0,300 100,300 Q 300,200 200,300 Q 0,200 100,200 Q 300,300 300,0 Q 100,100 0,100 Q 200,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 447,
@@ -26611,7 +27057,8 @@ const indexFania880 = [
         801
       ],
       "svg": "<svg id='quadline-4-447' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-447' class='lines' d='M 200,100 Q 300,200 0,0 Q 100,0 100,300 Q 0,100 300,300 Q 200,200 100,200 Q 0,300 300,100 Q 200,300 200,0 Q 300,0 0,200 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 448,
@@ -26660,7 +27107,8 @@ const indexFania880 = [
     "quadline": {
       "2181": [],
       "svg": "<svg id='quadline-4-448' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-448' class='lines' d='M 200,100 Q 300,100 0,0 Q 100,0 100,300 Q 0,200 300,300 Q 200,200 100,200 Q 0,300 300,200 Q 200,300 200,0 Q 300,0 0,100 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 449,
@@ -26716,7 +27164,8 @@ const indexFania880 = [
         720
       ],
       "svg": "<svg id='quadline-4-449' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-449' class='lines' d='M 300,100 Q 200,100 0,0 Q 100,0 100,300 Q 0,200 200,200 Q 300,300 100,200 Q 0,300 200,300 Q 300,200 300,0 Q 200,0 0,100 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 450,
@@ -26790,7 +27239,8 @@ const indexFania880 = [
         716
       ],
       "svg": "<svg id='quadline-4-450' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-450' class='lines' d='M 200,100 Q 300,200 0,0 Q 100,300 100,0 Q 0,300 300,100 Q 200,200 300,300 Q 200,0 100,200 Q 0,100 0,200 Q 100,100 200,300 Q 300,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 451,
@@ -26860,7 +27310,8 @@ const indexFania880 = [
         637
       ],
       "svg": "<svg id='quadline-4-451' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-451' class='lines' d='M 300,100 Q 100,200 0,0 Q 200,300 100,0 Q 300,300 200,100 Q 0,200 0,300 Q 200,0 300,200 Q 100,100 200,200 Q 0,100 100,300 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 452,
@@ -26908,7 +27359,8 @@ const indexFania880 = [
         172
       ],
       "svg": "<svg id='quadline-4-452' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-452' class='lines' d='M 300,200 Q 200,300 0,0 Q 100,200 100,0 Q 0,100 200,100 Q 300,300 0,300 Q 100,100 300,100 Q 200,0 200,200 Q 300,0 100,300 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 453,
@@ -26963,7 +27415,8 @@ const indexFania880 = [
         879
       ],
       "svg": "<svg id='quadline-4-453' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-453' class='lines' d='M 200,300 Q 100,200 0,0 Q 300,200 100,0 Q 0,100 300,300 Q 200,100 300,100 Q 0,300 100,100 Q 200,0 200,200 Q 300,0 0,200 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 454,
@@ -27019,7 +27472,8 @@ const indexFania880 = [
         526
       ],
       "svg": "<svg id='quadline-4-454' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-454' class='lines' d='M 200,100 Q 300,200 0,0 Q 100,300 100,0 Q 0,100 300,300 Q 200,200 100,200 Q 0,300 300,100 Q 200,0 200,300 Q 300,0 0,200 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 455,
@@ -27074,7 +27528,8 @@ const indexFania880 = [
         660
       ],
       "svg": "<svg id='quadline-4-455' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-455' class='lines' d='M 200,300 Q 300,200 0,0 Q 100,200 100,0 Q 200,100 300,300 Q 0,100 100,100 Q 0,300 300,100 Q 200,0 0,200 Q 300,0 200,200 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 456,
@@ -27143,7 +27598,8 @@ const indexFania880 = [
         794
       ],
       "svg": "<svg id='quadline-4-456' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-456' class='lines' d='M 200,100 Q 100,300 0,0 Q 300,200 100,0 Q 200,200 300,100 Q 0,300 300,300 Q 0,100 100,200 Q 200,0 0,200 Q 300,0 200,300 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 457,
@@ -27196,7 +27652,8 @@ const indexFania880 = [
         742
       ],
       "svg": "<svg id='quadline-4-457' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-457' class='lines' d='M 200,100 Q 100,300 0,0 Q 300,100 100,0 Q 200,200 300,200 Q 0,300 300,300 Q 0,200 100,200 Q 200,0 0,100 Q 300,0 200,300 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 458,
@@ -27252,7 +27709,8 @@ const indexFania880 = [
         635
       ],
       "svg": "<svg id='quadline-4-458' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-458' class='lines' d='M 200,100 Q 300,100 0,0 Q 100,300 100,0 Q 0,200 300,300 Q 200,200 100,200 Q 0,300 300,200 Q 200,0 200,300 Q 300,0 0,100 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 459,
@@ -27309,7 +27767,8 @@ const indexFania880 = [
         677
       ],
       "svg": "<svg id='quadline-4-459' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-459' class='lines' d='M 300,100 Q 200,300 0,0 Q 100,200 100,0 Q 0,200 200,100 Q 300,300 0,300 Q 100,100 300,200 Q 200,0 200,200 Q 300,0 100,300 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 460,
@@ -27367,7 +27826,8 @@ const indexFania880 = [
         657
       ],
       "svg": "<svg id='quadline-4-460' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-460' class='lines' d='M 300,100 Q 100,200 0,0 Q 200,300 100,0 Q 300,300 200,100 Q 0,200 200,200 Q 0,100 100,300 Q 300,0 0,300 Q 200,0 300,200 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 461,
@@ -27426,7 +27886,8 @@ const indexFania880 = [
         702
       ],
       "svg": "<svg id='quadline-4-461' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-461' class='lines' d='M 300,100 Q 200,200 0,0 Q 100,300 100,0 Q 0,300 200,100 Q 300,200 100,200 Q 0,100 200,300 Q 300,0 300,300 Q 200,0 0,200 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 462,
@@ -27480,7 +27941,8 @@ const indexFania880 = [
         772
       ],
       "svg": "<svg id='quadline-4-462' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-462' class='lines' d='M 200,100 Q 0,200 0,0 Q 200,300 100,0 Q 300,300 300,100 Q 100,200 300,200 Q 100,100 100,300 Q 300,0 0,300 Q 200,0 200,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 463,
@@ -27535,7 +27997,8 @@ const indexFania880 = [
         660
       ],
       "svg": "<svg id='quadline-4-463' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-463' class='lines' d='M 200,100 Q 300,200 0,0 Q 100,300 100,0 Q 0,300 300,100 Q 200,200 0,200 Q 100,100 200,300 Q 300,0 300,300 Q 200,0 100,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 464,
@@ -27614,7 +28077,8 @@ const indexFania880 = [
         721
       ],
       "svg": "<svg id='quadline-4-464' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-464' class='lines' d='M 300,100 Q 200,300 0,0 Q 100,200 100,0 Q 0,200 200,100 Q 300,300 200,200 Q 300,0 100,300 Q 0,100 0,300 Q 100,100 300,200 Q 200,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 465,
@@ -27671,7 +28135,8 @@ const indexFania880 = [
         324
       ],
       "svg": "<svg id='quadline-4-465' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-465' class='lines' d='M 300,100 Q 200,200 0,0 Q 100,300 100,0 Q 0,300 200,100 Q 300,200 200,300 Q 300,0 100,200 Q 0,100 0,200 Q 100,100 300,300 Q 200,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 466,
@@ -27724,7 +28189,8 @@ const indexFania880 = [
         544
       ],
       "svg": "<svg id='quadline-4-466' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-466' class='lines' d='M 200,100 Q 0,200 0,0 Q 200,300 100,0 Q 300,300 300,100 Q 100,200 100,300 Q 300,0 300,200 Q 100,100 200,200 Q 0,100 0,300 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 467,
@@ -27792,7 +28258,8 @@ const indexFania880 = [
         621
       ],
       "svg": "<svg id='quadline-4-467' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-467' class='lines' d='M 200,100 Q 100,300 0,0 Q 300,200 100,0 Q 200,200 300,100 Q 0,300 0,200 Q 300,0 200,300 Q 100,100 300,300 Q 0,100 100,200 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 468,
@@ -27859,7 +28326,8 @@ const indexFania880 = [
         715
       ],
       "svg": "<svg id='quadline-4-468' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-468' class='lines' d='M 300,200 Q 200,100 0,0 Q 100,300 0,300 Q 100,0 300,100 Q 200,200 200,0 Q 300,300 100,200 Q 0,100 100,100 Q 0,200 200,300 Q 300,0 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 469,
@@ -27926,7 +28394,8 @@ const indexFania880 = [
         664
       ],
       "svg": "<svg id='quadline-4-469' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-469' class='lines' d='M 100,200 Q 300,100 0,0 Q 200,300 300,300 Q 100,0 200,100 Q 0,200 200,0 Q 0,300 300,200 Q 100,100 0,100 Q 200,200 100,300 Q 300,0 100,200 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 470,
@@ -27985,7 +28454,8 @@ const indexFania880 = [
         757
       ],
       "svg": "<svg id='quadline-4-470' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-470' class='lines' d='M 200,300 Q 100,200 0,0 Q 300,300 200,100 Q 100,0 300,200 Q 0,100 0,200 Q 300,100 100,100 Q 200,0 300,0 Q 0,300 100,300 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 471,
@@ -28058,7 +28528,8 @@ const indexFania880 = [
         796
       ],
       "svg": "<svg id='quadline-4-471' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-471' class='lines' d='M 100,300 Q 200,100 0,0 Q 300,200 200,200 Q 100,0 300,100 Q 0,300 0,100 Q 300,300 100,200 Q 200,0 300,0 Q 0,200 200,300 Q 100,100 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 472,
@@ -28110,7 +28581,8 @@ const indexFania880 = [
         786
       ],
       "svg": "<svg id='quadline-4-472' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-472' class='lines' d='M 200,300 Q 100,200 0,0 Q 300,300 200,100 Q 100,0 0,200 Q 300,100 300,200 Q 0,100 100,100 Q 200,0 300,0 Q 0,300 100,300 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 473,
@@ -28178,7 +28650,8 @@ const indexFania880 = [
         682
       ],
       "svg": "<svg id='quadline-4-473' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-473' class='lines' d='M 200,300 Q 300,100 0,0 Q 100,200 0,200 Q 100,0 200,100 Q 300,300 100,100 Q 0,300 300,200 Q 200,0 300,0 Q 200,200 100,300 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 474,
@@ -28227,7 +28700,8 @@ const indexFania880 = [
         626
       ],
       "svg": "<svg id='quadline-4-474' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-474' class='lines' d='M 200,100 Q 300,200 0,0 Q 200,300 300,300 Q 100,0 100,200 Q 0,100 0,200 Q 100,100 100,300 Q 300,0 200,0 Q 0,300 300,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 475,
@@ -28288,7 +28762,8 @@ const indexFania880 = [
         663
       ],
       "svg": "<svg id='quadline-4-475' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-475' class='lines' d='M 100,200 Q 300,100 0,0 Q 200,300 300,300 Q 100,0 200,100 Q 0,200 0,100 Q 200,200 100,300 Q 300,0 200,0 Q 0,300 300,200 Q 100,100 100,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 476,
@@ -28344,7 +28819,8 @@ const indexFania880 = [
         804
       ],
       "svg": "<svg id='quadline-4-476' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-476' class='lines' d='M 300,100 Q 200,200 0,0 Q 100,300 0,300 Q 100,0 300,200 Q 200,100 100,200 Q 0,100 200,300 Q 300,0 200,0 Q 300,300 100,100 Q 0,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 477,
@@ -28398,7 +28874,8 @@ const indexFania880 = [
         687
       ],
       "svg": "<svg id='quadline-4-477' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-477' class='lines' d='M 200,100 Q 0,200 0,0 Q 200,300 300,300 Q 100,0 100,200 Q 300,100 300,200 Q 100,100 100,300 Q 300,0 200,0 Q 0,300 0,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 478,
@@ -28460,7 +28937,8 @@ const indexFania880 = [
         727
       ],
       "svg": "<svg id='quadline-4-478' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-478' class='lines' d='M 300,200 Q 200,100 0,0 Q 100,300 0,300 Q 100,0 300,100 Q 200,200 100,100 Q 0,200 200,300 Q 300,0 200,0 Q 300,300 100,200 Q 0,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 479,
@@ -28525,7 +29003,8 @@ const indexFania880 = [
         302
       ],
       "svg": "<svg id='quadline-4-479' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-479' class='lines' d='M 100,300 Q 200,200 0,0 Q 300,100 200,100 Q 100,0 300,200 Q 0,300 0,100 Q 300,0 100,200 Q 200,300 300,300 Q 0,200 200,0 Q 100,100 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 480,
@@ -28572,7 +29051,8 @@ const indexFania880 = [
         523
       ],
       "svg": "<svg id='quadline-4-480' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-480' class='lines' d='M 200,100 Q 200,300 0,0 Q 300,200 0,200 Q 100,0 300,300 Q 100,100 100,200 Q 300,0 100,300 Q 0,100 300,100 Q 0,300 200,0 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 481,
@@ -28636,7 +29116,8 @@ const indexFania880 = [
         642
       ],
       "svg": "<svg id='quadline-4-481' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-481' class='lines' d='M 300,100 Q 200,200 0,0 Q 100,300 0,300 Q 100,0 300,200 Q 200,100 200,300 Q 300,0 100,200 Q 0,100 100,100 Q 0,200 200,0 Q 300,300 300,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 482,
@@ -28682,7 +29163,8 @@ const indexFania880 = [
     "quadline": {
       "2575": [],
       "svg": "<svg id='quadline-4-482' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-482' class='lines' d='M 200,100 Q 200,300 0,0 Q 0,200 300,200 Q 100,0 300,300 Q 100,100 100,200 Q 300,0 100,300 Q 300,100 0,100 Q 0,300 200,0 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 483,
@@ -28755,7 +29237,8 @@ const indexFania880 = [
         305
       ],
       "svg": "<svg id='quadline-4-483' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-483' class='lines' d='M 200,100 Q 0,200 0,0 Q 200,300 300,300 Q 100,0 100,200 Q 300,100 100,300 Q 300,0 300,200 Q 100,100 0,100 Q 200,200 200,0 Q 0,300 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 484,
@@ -28814,7 +29297,8 @@ const indexFania880 = [
         707
       ],
       "svg": "<svg id='quadline-4-484' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-484' class='lines' d='M 200,300 Q 200,100 0,0 Q 0,200 300,200 Q 100,0 100,100 Q 300,300 100,200 Q 300,0 300,100 Q 100,300 0,300 Q 0,100 200,0 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 485,
@@ -28870,7 +29354,8 @@ const indexFania880 = [
         304
       ],
       "svg": "<svg id='quadline-4-485' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-485' class='lines' d='M 200,300 Q 0,200 0,0 Q 200,100 300,100 Q 100,0 100,200 Q 300,300 100,100 Q 300,0 300,200 Q 100,300 0,300 Q 200,200 200,0 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 486,
@@ -28929,7 +29414,8 @@ const indexFania880 = [
         719
       ],
       "svg": "<svg id='quadline-4-486' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-486' class='lines' d='M 0,200 Q 200,100 0,0 Q 200,300 300,100 Q 100,0 300,300 Q 100,200 100,300 Q 300,0 100,100 Q 300,200 200,200 Q 0,300 200,0 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 487,
@@ -29005,7 +29491,8 @@ const indexFania880 = [
         827
       ],
       "svg": "<svg id='quadline-4-487' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-487' class='lines' d='M 100,300 Q 200,200 0,0 Q 300,100 200,100 Q 100,0 300,200 Q 0,300 300,0 Q 0,100 200,300 Q 100,200 0,200 Q 300,300 100,100 Q 200,0 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 488,
@@ -29080,7 +29567,8 @@ const indexFania880 = [
         723
       ],
       "svg": "<svg id='quadline-4-488' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-488' class='lines' d='M 200,300 Q 300,100 0,0 Q 100,200 0,200 Q 100,0 200,100 Q 300,300 300,0 Q 200,200 100,300 Q 0,100 100,100 Q 0,300 300,200 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 489,
@@ -29141,7 +29629,8 @@ const indexFania880 = [
         649
       ],
       "svg": "<svg id='quadline-4-489' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-489' class='lines' d='M 100,300 Q 200,100 0,0 Q 300,200 200,200 Q 100,0 300,100 Q 0,300 300,0 Q 0,200 200,300 Q 100,100 0,100 Q 300,300 100,200 Q 200,0 100,300 '/></svg>"
-    }
+    },
+    "sim": "MD1"
   },
   {
     "id": 490,
@@ -29209,7 +29698,8 @@ const indexFania880 = [
         713
       ],
       "svg": "<svg id='quadline-4-490' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-490' class='lines' d='M 200,300 Q 0,200 0,0 Q 200,100 300,100 Q 100,0 100,200 Q 300,300 300,0 Q 100,100 100,300 Q 300,200 200,200 Q 0,300 0,100 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 491,
@@ -29278,7 +29768,8 @@ const indexFania880 = [
         876
       ],
       "svg": "<svg id='quadline-4-491' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-491' class='lines' d='M 300,100 Q 100,200 0,0 Q 300,300 200,100 Q 0,200 100,0 Q 200,300 100,300 Q 200,0 200,200 Q 0,100 0,300 Q 300,0 300,200 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 492,
@@ -29334,7 +29825,8 @@ const indexFania880 = [
         494
       ],
       "svg": "<svg id='quadline-4-492' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-492' class='lines' d='M 300,100 Q 100,300 0,0 Q 200,200 200,100 Q 0,300 100,0 Q 300,200 100,200 Q 200,0 300,300 Q 0,100 0,200 Q 300,0 200,300 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 493,
@@ -29403,7 +29895,8 @@ const indexFania880 = [
         753
       ],
       "svg": "<svg id='quadline-4-493' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-493' class='lines' d='M 200,100 Q 0,200 0,0 Q 300,300 300,100 Q 100,200 100,0 Q 200,300 100,300 Q 200,0 300,200 Q 100,100 0,300 Q 300,0 200,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 494,
@@ -29455,7 +29948,8 @@ const indexFania880 = [
         492
       ],
       "svg": "<svg id='quadline-4-494' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-494' class='lines' d='M 200,100 Q 100,300 0,0 Q 300,200 300,100 Q 0,300 100,0 Q 200,200 0,200 Q 200,0 300,300 Q 100,100 100,200 Q 300,0 200,300 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 495,
@@ -29510,7 +30004,8 @@ const indexFania880 = [
         278
       ],
       "svg": "<svg id='quadline-4-495' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-495' class='lines' d='M 300,200 Q 100,300 0,0 Q 200,200 200,100 Q 0,300 100,0 Q 300,100 0,100 Q 300,0 200,300 Q 100,100 100,200 Q 200,0 300,300 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 496,
@@ -29576,7 +30071,8 @@ const indexFania880 = [
         753
       ],
       "svg": "<svg id='quadline-4-496' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-496' class='lines' d='M 300,100 Q 0,200 0,0 Q 200,300 200,100 Q 100,200 100,0 Q 300,300 100,300 Q 300,0 200,200 Q 100,100 0,300 Q 200,0 300,200 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 497,
@@ -29631,7 +30127,8 @@ const indexFania880 = [
         545
       ],
       "svg": "<svg id='quadline-4-497' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-497' class='lines' d='M 300,100 Q 100,300 0,0 Q 200,200 200,100 Q 0,300 100,0 Q 300,200 0,200 Q 300,0 200,300 Q 100,100 100,200 Q 200,0 300,300 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 498,
@@ -29718,7 +30215,8 @@ const indexFania880 = [
         691
       ],
       "svg": "<svg id='quadline-4-498' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-498' class='lines' d='M 300,200 Q 100,300 0,0 Q 200,100 0,300 Q 200,200 300,100 Q 100,0 200,0 Q 0,100 100,200 Q 300,300 100,100 Q 300,0 200,300 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 499,
@@ -29783,7 +30281,8 @@ const indexFania880 = [
         723
       ],
       "svg": "<svg id='quadline-4-499' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-499' class='lines' d='M 100,200 Q 200,300 0,0 Q 300,100 300,300 Q 0,200 200,100 Q 100,0 200,0 Q 100,100 300,200 Q 0,300 0,100 Q 300,0 100,300 Q 200,200 100,200 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 500,
@@ -29840,7 +30339,8 @@ const indexFania880 = [
         838
       ],
       "svg": "<svg id='quadline-4-500' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-500' class='lines' d='M 100,300 Q 300,100 0,0 Q 200,100 200,200 Q 0,300 300,200 Q 100,0 200,0 Q 100,200 300,300 Q 0,200 0,100 Q 300,0 100,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 501,
@@ -29900,7 +30400,8 @@ const indexFania880 = [
         838
       ],
       "svg": "<svg id='quadline-4-501' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-501' class='lines' d='M 100,300 Q 200,100 0,0 Q 300,100 300,200 Q 0,300 200,200 Q 100,0 200,0 Q 0,200 300,300 Q 100,200 100,100 Q 300,0 0,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 502,
@@ -29954,7 +30455,8 @@ const indexFania880 = [
         673
       ],
       "svg": "<svg id='quadline-4-502' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-502' class='lines' d='M 300,100 Q 100,300 0,0 Q 200,100 0,300 Q 200,200 300,200 Q 100,0 200,0 Q 0,200 100,200 Q 300,300 100,100 Q 300,0 200,300 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 503,
@@ -30042,7 +30544,8 @@ const indexFania880 = [
         837
       ],
       "svg": "<svg id='quadline-4-503' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-503' class='lines' d='M 100,300 Q 300,200 0,0 Q 200,100 200,200 Q 0,300 300,100 Q 100,0 0,100 Q 200,0 100,200 Q 300,300 300,0 Q 100,100 200,300 Q 0,200 100,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 504,
@@ -30109,7 +30612,8 @@ const indexFania880 = [
         822
       ],
       "svg": "<svg id='quadline-4-504' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-504' class='lines' d='M 200,300 Q 100,200 0,0 Q 300,100 0,200 Q 300,300 200,100 Q 100,0 100,100 Q 200,0 300,200 Q 0,300 300,0 Q 0,100 100,300 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 505,
@@ -30192,7 +30696,8 @@ const indexFania880 = [
         710
       ],
       "svg": "<svg id='quadline-4-505' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-505' class='lines' d='M 100,200 Q 200,300 0,0 Q 300,100 300,300 Q 0,200 200,100 Q 100,0 0,100 Q 300,0 100,300 Q 200,200 200,0 Q 100,100 300,200 Q 0,300 100,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 506,
@@ -30253,7 +30758,8 @@ const indexFania880 = [
         270
       ],
       "svg": "<svg id='quadline-4-506' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-506' class='lines' d='M 100,300 Q 200,200 0,0 Q 300,100 300,200 Q 0,300 200,100 Q 100,0 0,100 Q 300,0 100,200 Q 200,300 200,0 Q 100,100 300,300 Q 0,200 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 507,
@@ -30310,7 +30816,8 @@ const indexFania880 = [
         868
       ],
       "svg": "<svg id='quadline-4-507' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-507' class='lines' d='M 200,300 Q 0,200 0,0 Q 200,100 100,200 Q 300,300 300,100 Q 100,0 100,100 Q 300,0 300,200 Q 100,300 200,0 Q 0,100 0,300 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 508,
@@ -30379,7 +30886,8 @@ const indexFania880 = [
         623
       ],
       "svg": "<svg id='quadline-4-508' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-508' class='lines' d='M 300,200 Q 100,300 0,0 Q 200,100 0,300 Q 200,200 300,100 Q 100,0 100,100 Q 300,0 200,300 Q 0,200 200,0 Q 0,100 100,200 Q 300,300 300,200 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 509,
@@ -30445,7 +30953,8 @@ const indexFania880 = [
         837
       ],
       "svg": "<svg id='quadline-4-509' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-509' class='lines' d='M 0,200 Q 200,100 0,0 Q 200,300 300,300 Q 100,200 300,100 Q 100,0 100,300 Q 300,0 100,100 Q 300,200 200,0 Q 0,100 200,200 Q 0,300 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 510,
@@ -30509,7 +31018,8 @@ const indexFania880 = [
         696
       ],
       "svg": "<svg id='quadline-4-510' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-510' class='lines' d='M 0,200 Q 200,300 0,0 Q 200,100 300,100 Q 100,200 300,300 Q 100,0 100,100 Q 300,0 100,300 Q 300,200 200,0 Q 0,300 200,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 511,
@@ -30572,7 +31082,8 @@ const indexFania880 = [
         695
       ],
       "svg": "<svg id='quadline-4-511' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-511' class='lines' d='M 200,300 Q 100,200 0,0 Q 300,100 0,200 Q 300,300 200,100 Q 100,0 300,0 Q 0,100 100,300 Q 200,200 100,100 Q 200,0 300,200 Q 0,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 512,
@@ -30633,7 +31144,8 @@ const indexFania880 = [
         67
       ],
       "svg": "<svg id='quadline-4-512' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-512' class='lines' d='M 100,300 Q 200,200 0,0 Q 300,100 300,200 Q 0,300 200,100 Q 100,0 300,0 Q 0,100 200,300 Q 100,200 100,100 Q 200,0 0,200 Q 300,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 513,
@@ -30690,7 +31202,8 @@ const indexFania880 = [
         635
       ],
       "svg": "<svg id='quadline-4-513' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-513' class='lines' d='M 200,300 Q 0,200 0,0 Q 200,100 100,200 Q 300,300 300,100 Q 100,0 300,0 Q 100,100 100,300 Q 300,200 0,100 Q 200,0 200,200 Q 0,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 514,
@@ -30761,7 +31274,8 @@ const indexFania880 = [
         789
       ],
       "svg": "<svg id='quadline-4-514' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-514' class='lines' d='M 100,300 Q 300,200 0,0 Q 200,100 200,200 Q 0,300 300,100 Q 100,0 300,0 Q 100,100 200,300 Q 0,200 0,100 Q 200,0 100,200 Q 300,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 515,
@@ -30831,7 +31345,8 @@ const indexFania880 = [
         796
       ],
       "svg": "<svg id='quadline-4-515' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-515' class='lines' d='M 300,100 Q 100,200 0,0 Q 200,300 0,300 Q 200,0 300,200 Q 100,100 100,0 Q 300,300 200,100 Q 0,200 200,200 Q 0,100 100,300 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 516,
@@ -30881,7 +31396,8 @@ const indexFania880 = [
         697
       ],
       "svg": "<svg id='quadline-4-516' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-516' class='lines' d='M 300,200 Q 200,300 0,0 Q 100,200 0,300 Q 100,100 300,100 Q 200,0 100,0 Q 0,100 200,100 Q 300,300 200,200 Q 300,0 100,300 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 517,
@@ -30943,7 +31459,8 @@ const indexFania880 = [
         618
       ],
       "svg": "<svg id='quadline-4-517' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-517' class='lines' d='M 200,300 Q 100,200 0,0 Q 300,200 300,100 Q 0,300 100,100 Q 200,0 100,0 Q 0,100 300,300 Q 200,100 200,200 Q 300,0 0,200 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 518,
@@ -31005,7 +31522,8 @@ const indexFania880 = [
         618
       ],
       "svg": "<svg id='quadline-4-518' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-518' class='lines' d='M 200,300 Q 300,200 0,0 Q 100,200 100,100 Q 0,300 300,100 Q 200,0 100,0 Q 200,100 300,300 Q 0,100 0,200 Q 300,0 200,200 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 519,
@@ -31060,7 +31578,8 @@ const indexFania880 = [
         814
       ],
       "svg": "<svg id='quadline-4-519' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-519' class='lines' d='M 300,100 Q 100,200 0,0 Q 300,300 200,100 Q 0,200 100,300 Q 200,0 100,0 Q 200,300 200,200 Q 0,100 0,300 Q 300,0 300,200 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 520,
@@ -31114,7 +31633,8 @@ const indexFania880 = [
         707
       ],
       "svg": "<svg id='quadline-4-520' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-520' class='lines' d='M 200,100 Q 100,300 0,0 Q 300,100 300,300 Q 0,200 100,200 Q 200,0 100,0 Q 200,200 300,200 Q 0,300 0,100 Q 300,0 200,300 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 521,
@@ -31203,7 +31723,8 @@ const indexFania880 = [
         837
       ],
       "svg": "<svg id='quadline-4-521' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-521' class='lines' d='M 300,100 Q 200,300 0,0 Q 100,200 0,300 Q 100,100 300,200 Q 200,0 100,0 Q 0,200 200,100 Q 300,300 200,200 Q 300,0 100,300 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 522,
@@ -31260,7 +31781,8 @@ const indexFania880 = [
         843
       ],
       "svg": "<svg id='quadline-4-522' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-522' class='lines' d='M 200,100 Q 0,200 0,0 Q 300,300 300,100 Q 100,200 100,300 Q 200,0 100,0 Q 200,300 300,200 Q 100,100 0,300 Q 300,0 200,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 523,
@@ -31324,7 +31846,8 @@ const indexFania880 = [
         480
       ],
       "svg": "<svg id='quadline-4-523' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-523' class='lines' d='M 200,100 Q 0,200 0,0 Q 200,300 300,200 Q 100,100 100,300 Q 300,0 100,0 Q 300,300 300,100 Q 100,200 0,300 Q 200,0 200,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 524,
@@ -31397,7 +31920,8 @@ const indexFania880 = [
         678
       ],
       "svg": "<svg id='quadline-4-524' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-524' class='lines' d='M 200,100 Q 300,200 0,0 Q 100,300 0,200 Q 100,100 200,300 Q 300,0 100,0 Q 0,300 300,100 Q 200,200 300,300 Q 200,0 100,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 525,
@@ -31454,7 +31978,8 @@ const indexFania880 = [
         531
       ],
       "svg": "<svg id='quadline-4-525' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-525' class='lines' d='M 200,100 Q 300,200 0,0 Q 100,300 200,300 Q 300,0 0,200 Q 100,100 100,0 Q 0,100 300,300 Q 200,200 100,200 Q 0,300 300,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 526,
@@ -31508,7 +32033,8 @@ const indexFania880 = [
         454
       ],
       "svg": "<svg id='quadline-4-526' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-526' class='lines' d='M 200,300 Q 300,200 0,0 Q 100,100 200,100 Q 300,0 0,200 Q 100,300 100,0 Q 0,300 300,100 Q 200,200 100,200 Q 0,100 300,300 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 527,
@@ -31563,7 +32089,8 @@ const indexFania880 = [
         386
       ],
       "svg": "<svg id='quadline-4-527' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-527' class='lines' d='M 200,100 Q 0,200 0,0 Q 200,300 100,300 Q 300,0 300,200 Q 100,100 100,0 Q 300,300 300,100 Q 100,200 200,200 Q 0,100 0,300 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 528,
@@ -31620,7 +32147,8 @@ const indexFania880 = [
         713
       ],
       "svg": "<svg id='quadline-4-528' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-528' class='lines' d='M 200,100 Q 100,300 0,0 Q 300,200 0,200 Q 300,0 200,300 Q 100,100 100,0 Q 200,200 300,100 Q 0,300 300,300 Q 0,100 100,200 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 529,
@@ -31674,7 +32202,8 @@ const indexFania880 = [
         564
       ],
       "svg": "<svg id='quadline-4-529' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-529' class='lines' d='M 200,100 Q 0,200 0,0 Q 100,300 200,300 Q 300,0 300,200 Q 100,100 100,0 Q 300,100 300,300 Q 200,200 100,200 Q 0,300 0,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 530,
@@ -31744,7 +32273,8 @@ const indexFania880 = [
         794
       ],
       "svg": "<svg id='quadline-4-530' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-530' class='lines' d='M 100,200 Q 300,100 0,0 Q 200,300 200,0 Q 0,300 300,200 Q 100,100 300,300 Q 100,0 200,100 Q 0,200 0,100 Q 200,200 100,300 Q 300,0 100,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 531,
@@ -31800,7 +32330,8 @@ const indexFania880 = [
         525
       ],
       "svg": "<svg id='quadline-4-531' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-531' class='lines' d='M 300,200 Q 200,300 0,0 Q 100,100 100,200 Q 0,300 200,0 Q 300,100 200,100 Q 100,0 300,300 Q 0,200 0,100 Q 300,0 100,300 Q 200,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 532,
@@ -31885,7 +32416,8 @@ const indexFania880 = [
         691
       ],
       "svg": "<svg id='quadline-4-532' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-532' class='lines' d='M 200,300 Q 300,100 0,0 Q 100,200 100,100 Q 0,300 300,200 Q 200,0 0,200 Q 100,0 200,100 Q 300,300 300,0 Q 200,200 100,300 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 533,
@@ -31940,7 +32472,8 @@ const indexFania880 = [
         803
       ],
       "svg": "<svg id='quadline-4-533' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-533' class='lines' d='M 200,100 Q 300,200 0,0 Q 200,300 0,200 Q 100,100 100,300 Q 300,0 300,300 Q 100,0 100,200 Q 0,100 200,0 Q 0,300 300,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 534,
@@ -32009,7 +32542,8 @@ const indexFania880 = [
         327
       ],
       "svg": "<svg id='quadline-4-534' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-534' class='lines' d='M 200,100 Q 0,200 0,0 Q 200,300 300,200 Q 100,100 100,300 Q 300,0 300,300 Q 100,0 100,200 Q 300,100 200,0 Q 0,300 0,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 535,
@@ -32073,7 +32607,8 @@ const indexFania880 = [
         834
       ],
       "svg": "<svg id='quadline-4-535' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-535' class='lines' d='M 300,200 Q 200,100 0,0 Q 100,300 100,100 Q 0,200 200,300 Q 300,0 0,300 Q 100,0 300,100 Q 200,200 200,0 Q 300,300 100,200 Q 0,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 536,
@@ -32132,7 +32667,8 @@ const indexFania880 = [
         178
       ],
       "svg": "<svg id='quadline-4-536' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-536' class='lines' d='M 200,100 Q 0,200 0,0 Q 200,300 100,300 Q 300,0 300,200 Q 100,100 300,300 Q 100,0 100,200 Q 300,100 0,100 Q 200,200 200,0 Q 0,300 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 537,
@@ -32208,7 +32744,8 @@ const indexFania880 = [
         724
       ],
       "svg": "<svg id='quadline-4-537' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-537' class='lines' d='M 200,300 Q 0,200 0,0 Q 200,100 100,100 Q 300,0 300,200 Q 100,300 300,100 Q 100,0 100,200 Q 300,300 0,300 Q 200,200 200,0 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 538,
@@ -32262,7 +32799,8 @@ const indexFania880 = [
         864
       ],
       "svg": "<svg id='quadline-4-538' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-538' class='lines' d='M 0,200 Q 200,100 0,0 Q 200,300 100,300 Q 300,0 100,100 Q 300,200 300,100 Q 100,0 300,300 Q 100,200 200,200 Q 0,300 200,0 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 539,
@@ -32322,7 +32860,8 @@ const indexFania880 = [
         710
       ],
       "svg": "<svg id='quadline-4-539' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-539' class='lines' d='M 100,300 Q 200,100 0,0 Q 300,200 300,0 Q 0,200 200,300 Q 100,100 200,200 Q 100,0 300,100 Q 0,300 0,100 Q 300,300 100,200 Q 200,0 100,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 540,
@@ -32384,7 +32923,8 @@ const indexFania880 = [
         699
       ],
       "svg": "<svg id='quadline-4-540' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-540' class='lines' d='M 200,300 Q 0,200 0,0 Q 200,100 300,0 Q 100,100 100,300 Q 300,200 300,100 Q 100,0 100,200 Q 300,300 200,200 Q 0,300 0,100 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 541,
@@ -32436,7 +32976,8 @@ const indexFania880 = [
         702
       ],
       "svg": "<svg id='quadline-4-541' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-541' class='lines' d='M 200,300 Q 0,200 0,0 Q 300,100 100,200 Q 300,0 200,100 Q 100,300 300,300 Q 100,100 100,0 Q 200,200 0,100 Q 200,0 300,200 Q 0,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 542,
@@ -32493,7 +33034,8 @@ const indexFania880 = [
         810
       ],
       "svg": "<svg id='quadline-4-542' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-542' class='lines' d='M 300,100 Q 0,200 0,0 Q 200,300 100,300 Q 300,0 200,100 Q 100,200 200,200 Q 100,100 100,0 Q 300,300 0,300 Q 200,0 300,200 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 543,
@@ -32570,7 +33112,8 @@ const indexFania880 = [
         716
       ],
       "svg": "<svg id='quadline-4-543' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-543' class='lines' d='M 100,200 Q 200,300 0,0 Q 300,100 200,0 Q 100,100 300,200 Q 0,300 300,300 Q 0,200 200,100 Q 100,0 0,100 Q 300,0 100,300 Q 200,200 100,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 544,
@@ -32628,7 +33171,8 @@ const indexFania880 = [
         466
       ],
       "svg": "<svg id='quadline-4-544' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-544' class='lines' d='M 100,300 Q 300,100 0,0 Q 200,100 200,0 Q 100,200 300,300 Q 0,200 200,200 Q 0,300 300,200 Q 100,0 0,100 Q 300,0 100,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 545,
@@ -32684,7 +33228,8 @@ const indexFania880 = [
         497
       ],
       "svg": "<svg id='quadline-4-545' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-545' class='lines' d='M 100,200 Q 300,100 0,0 Q 200,300 200,0 Q 0,200 300,300 Q 100,100 200,100 Q 0,300 300,200 Q 100,0 100,300 Q 300,0 0,100 Q 200,200 100,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 546,
@@ -32735,7 +33280,8 @@ const indexFania880 = [
         340
       ],
       "svg": "<svg id='quadline-4-546' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-546' class='lines' d='M 100,300 Q 200,100 0,0 Q 300,100 200,0 Q 0,200 300,300 Q 100,200 300,200 Q 0,300 200,200 Q 100,0 100,100 Q 300,0 0,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 547,
@@ -32796,7 +33342,8 @@ const indexFania880 = [
         235
       ],
       "svg": "<svg id='quadline-4-547' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-547' class='lines' d='M 300,100 Q 100,300 0,0 Q 200,100 200,0 Q 0,200 100,200 Q 300,300 0,300 Q 200,200 300,200 Q 100,0 100,100 Q 300,0 200,300 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 548,
@@ -32861,7 +33408,8 @@ const indexFania880 = [
         715
       ],
       "svg": "<svg id='quadline-4-548' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-548' class='lines' d='M 200,300 Q 100,200 0,0 Q 300,100 100,100 Q 200,0 300,200 Q 0,300 0,200 Q 300,300 200,100 Q 100,0 300,0 Q 0,100 100,300 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 549,
@@ -32921,7 +33469,8 @@ const indexFania880 = [
         593
       ],
       "svg": "<svg id='quadline-4-549' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-549' class='lines' d='M 200,300 Q 0,200 0,0 Q 200,100 100,100 Q 300,0 300,200 Q 100,300 100,200 Q 300,300 300,100 Q 100,0 200,0 Q 0,100 0,300 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 550,
@@ -32983,7 +33532,8 @@ const indexFania880 = [
         636
       ],
       "svg": "<svg id='quadline-4-550' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-550' class='lines' d='M 300,200 Q 100,300 0,0 Q 200,100 100,100 Q 300,0 200,300 Q 0,200 0,300 Q 200,200 300,100 Q 100,0 200,0 Q 0,100 100,200 Q 300,300 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 551,
@@ -33034,7 +33584,8 @@ const indexFania880 = [
         180
       ],
       "svg": "<svg id='quadline-4-551' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-551' class='lines' d='M 0,200 Q 200,100 0,0 Q 200,300 100,300 Q 300,0 100,100 Q 300,200 300,300 Q 100,200 300,100 Q 100,0 200,0 Q 0,100 200,200 Q 0,300 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 552,
@@ -33089,7 +33640,8 @@ const indexFania880 = [
         864
       ],
       "svg": "<svg id='quadline-4-552' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-552' class='lines' d='M 0,200 Q 200,300 0,0 Q 200,100 100,100 Q 300,0 100,300 Q 300,200 300,100 Q 100,200 300,300 Q 100,0 200,0 Q 0,300 200,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 553,
@@ -33157,7 +33709,8 @@ const indexFania880 = [
         644
       ],
       "svg": "<svg id='quadline-4-553' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-553' class='lines' d='M 200,300 Q 0,200 0,0 Q 200,100 300,0 Q 100,100 100,300 Q 300,200 100,200 Q 300,300 300,100 Q 100,0 0,100 Q 200,0 200,200 Q 0,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 554,
@@ -33238,7 +33791,8 @@ const indexFania880 = [
         823
       ],
       "svg": "<svg id='quadline-4-554' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-554' class='lines' d='M 100,300 Q 300,200 0,0 Q 200,100 300,0 Q 100,100 200,300 Q 0,200 200,200 Q 0,300 300,100 Q 100,0 0,100 Q 200,0 100,200 Q 300,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 555,
@@ -33291,7 +33845,8 @@ const indexFania880 = [
     "quadline": {
       "2243": [],
       "svg": "<svg id='quadline-4-555' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-555' class='lines' d='M 300,100 Q 200,0 0,0 Q 100,300 100,200 Q 0,300 200,100 Q 300,200 300,300 Q 200,200 0,200 Q 100,100 100,0 Q 0,100 200,300 Q 300,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 556,
@@ -33338,7 +33893,8 @@ const indexFania880 = [
         170
       ],
       "svg": "<svg id='quadline-4-556' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-556' class='lines' d='M 100,200 Q 300,100 0,0 Q 200,0 200,300 Q 0,200 300,300 Q 100,100 200,100 Q 0,300 300,200 Q 100,300 100,0 Q 300,0 0,100 Q 200,200 100,200 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 557,
@@ -33392,7 +33948,8 @@ const indexFania880 = [
         743
       ],
       "svg": "<svg id='quadline-4-557' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-557' class='lines' d='M 200,100 Q 0,200 0,0 Q 100,300 300,300 Q 200,0 100,200 Q 300,100 300,200 Q 100,100 200,300 Q 300,0 100,0 Q 0,300 0,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 558,
@@ -33456,7 +34013,8 @@ const indexFania880 = [
         834
       ],
       "svg": "<svg id='quadline-4-558' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-558' class='lines' d='M 300,200 Q 100,100 0,0 Q 200,300 0,300 Q 200,0 300,100 Q 100,200 200,100 Q 0,200 100,300 Q 300,0 100,0 Q 300,300 200,200 Q 0,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 559,
@@ -33512,7 +34070,8 @@ const indexFania880 = [
         406
       ],
       "svg": "<svg id='quadline-4-559' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-559' class='lines' d='M 0,200 Q 200,100 0,0 Q 100,300 300,300 Q 100,200 300,100 Q 200,0 200,300 Q 300,0 100,100 Q 300,200 100,0 Q 0,100 200,200 Q 0,300 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 560,
@@ -33578,7 +34137,8 @@ const indexFania880 = [
         568
       ],
       "svg": "<svg id='quadline-4-560' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-560' class='lines' d='M 200,300 Q 100,100 0,0 Q 300,200 300,100 Q 0,300 100,200 Q 200,0 0,200 Q 300,0 200,100 Q 100,300 100,0 Q 200,200 300,300 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 561,
@@ -33630,7 +34190,8 @@ const indexFania880 = [
         726
       ],
       "svg": "<svg id='quadline-4-561' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-561' class='lines' d='M 200,100 Q 0,200 0,0 Q 100,300 300,200 Q 100,100 200,300 Q 300,0 300,300 Q 200,0 100,200 Q 300,100 100,0 Q 0,300 0,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 562,
@@ -33682,7 +34243,8 @@ const indexFania880 = [
         571
       ],
       "svg": "<svg id='quadline-4-562' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-562' class='lines' d='M 300,200 Q 100,100 0,0 Q 200,300 200,100 Q 0,200 100,300 Q 300,0 0,300 Q 200,0 300,100 Q 100,200 100,0 Q 300,300 200,200 Q 0,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 563,
@@ -33741,7 +34303,8 @@ const indexFania880 = [
         197
       ],
       "svg": "<svg id='quadline-4-563' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-563' class='lines' d='M 0,200 Q 200,100 0,0 Q 100,300 200,300 Q 300,0 100,100 Q 300,200 300,300 Q 100,200 300,100 Q 200,0 100,0 Q 0,100 200,200 Q 0,300 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 564,
@@ -33791,7 +34354,8 @@ const indexFania880 = [
         529
       ],
       "svg": "<svg id='quadline-4-564' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-564' class='lines' d='M 200,300 Q 0,200 0,0 Q 100,100 200,100 Q 300,0 300,200 Q 100,300 100,200 Q 300,100 300,300 Q 200,0 100,0 Q 0,300 0,100 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 565,
@@ -33848,7 +34412,8 @@ const indexFania880 = [
         845
       ],
       "svg": "<svg id='quadline-4-565' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-565' class='lines' d='M 200,300 Q 100,100 0,0 Q 300,200 0,200 Q 300,0 200,100 Q 100,300 300,100 Q 0,300 100,200 Q 200,0 100,0 Q 200,200 300,300 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 566,
@@ -33901,7 +34466,8 @@ const indexFania880 = [
         730
       ],
       "svg": "<svg id='quadline-4-566' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-566' class='lines' d='M 300,200 Q 100,100 0,0 Q 200,300 200,0 Q 0,300 100,200 Q 300,100 200,100 Q 0,200 100,300 Q 300,0 300,300 Q 100,0 0,100 Q 200,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 567,
@@ -33952,7 +34518,8 @@ const indexFania880 = [
         348
       ],
       "svg": "<svg id='quadline-4-567' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-567' class='lines' d='M 300,100 Q 200,300 0,0 Q 100,100 100,200 Q 0,300 200,0 Q 300,200 0,200 Q 300,0 100,300 Q 200,200 200,100 Q 100,0 300,300 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 568,
@@ -34013,7 +34580,8 @@ const indexFania880 = [
         560
       ],
       "svg": "<svg id='quadline-4-568' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-568' class='lines' d='M 300,100 Q 0,200 0,0 Q 100,300 100,200 Q 200,100 200,0 Q 300,300 200,300 Q 300,0 100,100 Q 200,200 0,300 Q 100,0 300,200 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 569,
@@ -34066,7 +34634,8 @@ const indexFania880 = [
         195
       ],
       "svg": "<svg id='quadline-4-569' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-569' class='lines' d='M 200,300 Q 100,100 0,0 Q 300,200 300,100 Q 0,300 100,200 Q 200,0 300,0 Q 0,200 100,300 Q 200,100 200,200 Q 100,0 0,100 Q 300,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 570,
@@ -34125,7 +34694,8 @@ const indexFania880 = [
         843
       ],
       "svg": "<svg id='quadline-4-570' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-570' class='lines' d='M 300,200 Q 100,100 0,0 Q 200,300 200,100 Q 0,200 100,300 Q 300,0 200,0 Q 0,300 100,200 Q 300,100 300,300 Q 100,0 0,100 Q 200,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 571,
@@ -34173,7 +34743,8 @@ const indexFania880 = [
         562
       ],
       "svg": "<svg id='quadline-4-571' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-571' class='lines' d='M 300,100 Q 0,200 0,0 Q 100,300 200,300 Q 300,0 100,200 Q 200,100 100,100 Q 200,200 200,0 Q 300,300 0,300 Q 100,0 300,200 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 572,
@@ -34236,7 +34807,8 @@ const indexFania880 = [
         735
       ],
       "svg": "<svg id='quadline-4-572' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-572' class='lines' d='M 200,300 Q 100,100 0,0 Q 300,200 300,0 Q 0,200 100,300 Q 200,100 300,100 Q 0,300 100,200 Q 200,0 200,200 Q 100,0 0,100 Q 300,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 573,
@@ -34299,7 +34871,8 @@ const indexFania880 = [
         791
       ],
       "svg": "<svg id='quadline-4-573' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-573' class='lines' d='M 300,100 Q 200,0 0,0 Q 100,200 0,300 Q 100,100 300,200 Q 200,300 100,300 Q 0,200 200,100 Q 300,300 200,200 Q 300,0 100,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 574,
@@ -34348,7 +34921,8 @@ const indexFania880 = [
         188
       ],
       "svg": "<svg id='quadline-4-574' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-574' class='lines' d='M 300,100 Q 200,0 0,0 Q 100,200 100,300 Q 0,200 200,100 Q 300,300 0,300 Q 100,100 300,200 Q 200,300 200,200 Q 300,0 100,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 575,
@@ -34409,7 +34983,8 @@ const indexFania880 = [
         612
       ],
       "svg": "<svg id='quadline-4-575' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-575' class='lines' d='M 100,0 Q 300,100 200,100 Q 0,0 300,300 Q 100,200 0,200 Q 200,300 0,300 Q 200,200 300,200 Q 100,300 200,0 Q 0,100 100,100 Q 300,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 576,
@@ -34460,7 +35035,8 @@ const indexFania880 = [
         35
       ],
       "svg": "<svg id='quadline-4-576' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-576' class='lines' d='M 100,0 Q 300,100 200,100 Q 0,0 0,300 Q 200,200 300,200 Q 100,300 300,300 Q 100,200 0,200 Q 200,300 200,0 Q 0,100 100,100 Q 300,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 577,
@@ -34514,7 +35090,8 @@ const indexFania880 = [
         32
       ],
       "svg": "<svg id='quadline-4-577' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-577' class='lines' d='M 100,0 Q 200,100 300,100 Q 0,0 300,300 Q 0,200 100,200 Q 200,300 0,300 Q 300,200 200,200 Q 100,300 200,0 Q 100,100 0,100 Q 300,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 578,
@@ -34578,7 +35155,8 @@ const indexFania880 = [
         33
       ],
       "svg": "<svg id='quadline-4-578' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-578' class='lines' d='M 100,0 Q 200,100 300,100 Q 0,0 0,300 Q 300,200 200,200 Q 100,300 300,300 Q 0,200 100,200 Q 200,300 200,0 Q 100,100 0,100 Q 300,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 579,
@@ -34646,7 +35224,8 @@ const indexFania880 = [
         876
       ],
       "svg": "<svg id='quadline-4-579' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-579' class='lines' d='M 100,0 Q 300,200 200,300 Q 0,0 0,300 Q 200,100 300,100 Q 100,200 100,100 Q 300,300 200,200 Q 0,100 0,200 Q 200,0 300,0 Q 100,300 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 580,
@@ -34710,7 +35289,8 @@ const indexFania880 = [
         716
       ],
       "svg": "<svg id='quadline-4-580' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-580' class='lines' d='M 100,0 Q 300,100 200,300 Q 0,0 0,300 Q 100,200 300,200 Q 200,100 200,200 Q 300,300 100,100 Q 0,200 0,100 Q 200,0 300,0 Q 100,300 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 581,
@@ -34761,7 +35341,8 @@ const indexFania880 = [
         236
       ],
       "svg": "<svg id='quadline-4-581' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-581' class='lines' d='M 100,0 Q 300,100 200,100 Q 0,0 300,300 Q 100,200 0,200 Q 200,300 200,200 Q 0,300 100,300 Q 300,200 0,100 Q 200,0 300,0 Q 100,100 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 582,
@@ -34814,7 +35395,8 @@ const indexFania880 = [
         31
       ],
       "svg": "<svg id='quadline-4-582' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-582' class='lines' d='M 100,0 Q 300,100 200,100 Q 0,0 200,200 Q 0,300 100,300 Q 300,200 300,300 Q 100,200 0,200 Q 200,300 0,100 Q 200,0 300,0 Q 100,100 100,0 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 583,
@@ -34872,7 +35454,8 @@ const indexFania880 = [
         27
       ],
       "svg": "<svg id='quadline-4-583' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-583' class='lines' d='M 100,0 Q 200,100 300,100 Q 0,0 0,200 Q 300,300 200,300 Q 100,200 0,300 Q 300,200 200,200 Q 100,300 100,100 Q 200,0 300,0 Q 0,100 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 584,
@@ -34929,7 +35512,8 @@ const indexFania880 = [
         234
       ],
       "svg": "<svg id='quadline-4-584' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-584' class='lines' d='M 100,0 Q 200,100 300,100 Q 0,0 0,300 Q 300,200 200,200 Q 100,300 0,200 Q 300,300 200,300 Q 100,200 100,100 Q 200,0 300,0 Q 0,100 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 585,
@@ -34992,7 +35576,8 @@ const indexFania880 = [
         637
       ],
       "svg": "<svg id='quadline-4-585' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-585' class='lines' d='M 100,0 Q 200,300 300,200 Q 0,0 200,100 Q 100,200 300,300 Q 0,100 0,300 Q 300,100 100,100 Q 200,200 0,200 Q 300,0 200,0 Q 100,300 100,0 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 586,
@@ -35059,7 +35644,8 @@ const indexFania880 = [
         807
       ],
       "svg": "<svg id='quadline-4-586' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-586' class='lines' d='M 100,0 Q 200,300 300,200 Q 0,0 0,300 Q 300,100 200,100 Q 100,200 100,100 Q 200,200 300,300 Q 0,100 0,200 Q 300,0 200,0 Q 100,300 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 587,
@@ -35116,7 +35702,8 @@ const indexFania880 = [
         635
       ],
       "svg": "<svg id='quadline-4-587' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-587' class='lines' d='M 100,0 Q 200,300 300,100 Q 0,0 0,300 Q 300,200 100,200 Q 200,100 200,200 Q 100,100 300,300 Q 0,200 0,100 Q 300,0 200,0 Q 100,300 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 588,
@@ -35171,7 +35758,8 @@ const indexFania880 = [
         105
       ],
       "svg": "<svg id='quadline-4-588' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-588' class='lines' d='M 100,0 Q 200,300 300,100 Q 0,0 100,200 Q 200,100 300,300 Q 0,200 0,300 Q 300,200 200,200 Q 100,100 0,100 Q 300,0 200,0 Q 100,300 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 589,
@@ -35223,7 +35811,8 @@ const indexFania880 = [
         443
       ],
       "svg": "<svg id='quadline-4-589' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-589' class='lines' d='M 100,0 Q 200,100 300,100 Q 0,0 300,300 Q 0,200 100,200 Q 200,300 200,200 Q 100,300 0,300 Q 300,200 0,100 Q 300,0 200,0 Q 100,100 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 590,
@@ -35278,7 +35867,8 @@ const indexFania880 = [
         25
       ],
       "svg": "<svg id='quadline-4-590' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-590' class='lines' d='M 100,0 Q 200,100 300,100 Q 0,0 200,200 Q 100,300 0,300 Q 300,200 300,300 Q 0,200 100,200 Q 200,300 0,100 Q 300,0 200,0 Q 100,100 100,0 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 591,
@@ -35343,7 +35933,8 @@ const indexFania880 = [
         21
       ],
       "svg": "<svg id='quadline-4-591' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-591' class='lines' d='M 100,0 Q 300,100 200,100 Q 0,0 0,200 Q 200,300 300,300 Q 100,200 0,300 Q 200,200 300,200 Q 100,300 100,100 Q 300,0 200,0 Q 0,100 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 592,
@@ -35414,7 +36005,8 @@ const indexFania880 = [
         612
       ],
       "svg": "<svg id='quadline-4-592' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-592' class='lines' d='M 100,0 Q 300,100 200,100 Q 0,0 0,300 Q 200,200 300,200 Q 100,300 0,200 Q 200,300 300,300 Q 100,200 100,100 Q 300,0 200,0 Q 0,100 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 593,
@@ -35472,7 +36064,8 @@ const indexFania880 = [
         549
       ],
       "svg": "<svg id='quadline-4-593' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-593' class='lines' d='M 100,0 Q 300,200 200,100 Q 0,0 0,100 Q 200,300 300,300 Q 100,200 200,200 Q 0,300 100,300 Q 300,100 300,0 Q 100,100 0,200 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 594,
@@ -35530,7 +36123,8 @@ const indexFania880 = [
         720
       ],
       "svg": "<svg id='quadline-4-594' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-594' class='lines' d='M 100,0 Q 200,100 300,200 Q 0,0 0,100 Q 300,300 200,300 Q 100,200 200,200 Q 100,300 0,300 Q 300,100 300,0 Q 0,200 100,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 595,
@@ -35581,7 +36175,8 @@ const indexFania880 = [
         44
       ],
       "svg": "<svg id='quadline-4-595' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-595' class='lines' d='M 100,0 Q 300,200 200,300 Q 0,0 200,100 Q 0,100 100,200 Q 300,300 0,300 Q 200,200 300,100 Q 100,100 300,0 Q 100,300 0,200 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 596,
@@ -35637,7 +36232,8 @@ const indexFania880 = [
         429
       ],
       "svg": "<svg id='quadline-4-596' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-596' class='lines' d='M 100,0 Q 300,200 200,100 Q 0,0 200,200 Q 0,300 100,300 Q 300,100 0,100 Q 200,300 300,300 Q 100,200 300,0 Q 100,100 0,200 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 597,
@@ -35694,7 +36290,8 @@ const indexFania880 = [
         221
       ],
       "svg": "<svg id='quadline-4-597' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-597' class='lines' d='M 100,0 Q 200,100 300,200 Q 0,0 200,200 Q 100,300 0,300 Q 300,100 0,100 Q 300,300 200,300 Q 100,200 300,0 Q 0,200 100,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 598,
@@ -35747,7 +36344,8 @@ const indexFania880 = [
         601
       ],
       "svg": "<svg id='quadline-4-598' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-598' class='lines' d='M 100,0 Q 300,100 200,200 Q 0,0 0,300 Q 200,100 300,200 Q 100,300 200,300 Q 100,200 0,100 Q 300,300 300,0 Q 0,200 100,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 599,
@@ -35806,7 +36404,8 @@ const indexFania880 = [
         432
       ],
       "svg": "<svg id='quadline-4-599' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-599' class='lines' d='M 100,0 Q 200,100 300,100 Q 0,0 0,200 Q 300,300 200,300 Q 100,200 200,200 Q 100,300 0,300 Q 300,200 300,0 Q 0,100 100,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 600,
@@ -35859,7 +36458,8 @@ const indexFania880 = [
         227
       ],
       "svg": "<svg id='quadline-4-600' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-600' class='lines' d='M 100,0 Q 200,100 300,100 Q 0,0 200,200 Q 100,300 0,300 Q 300,200 0,200 Q 300,300 200,300 Q 100,200 300,0 Q 0,100 100,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 601,
@@ -35913,7 +36513,8 @@ const indexFania880 = [
         598
       ],
       "svg": "<svg id='quadline-4-601' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-601' class='lines' d='M 100,0 Q 200,100 300,200 Q 0,0 0,300 Q 300,100 200,200 Q 100,300 200,300 Q 0,200 100,100 Q 300,300 300,0 Q 100,200 0,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 602,
@@ -35974,7 +36575,8 @@ const indexFania880 = [
         777
       ],
       "svg": "<svg id='quadline-4-602' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-602' class='lines' d='M 100,0 Q 300,100 200,300 Q 0,0 200,100 Q 0,200 100,200 Q 300,300 0,300 Q 200,200 300,200 Q 100,100 300,0 Q 100,300 0,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 603,
@@ -36030,7 +36632,8 @@ const indexFania880 = [
         224
       ],
       "svg": "<svg id='quadline-4-603' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-603' class='lines' d='M 100,0 Q 300,100 200,100 Q 0,0 0,200 Q 200,300 300,300 Q 100,200 200,200 Q 0,300 100,300 Q 300,200 300,0 Q 100,100 0,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 604,
@@ -36092,7 +36695,8 @@ const indexFania880 = [
         608
       ],
       "svg": "<svg id='quadline-4-604' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-604' class='lines' d='M 100,0 Q 300,100 200,100 Q 0,0 200,200 Q 0,300 100,300 Q 300,200 0,200 Q 200,300 300,300 Q 100,200 300,0 Q 100,100 0,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 605,
@@ -36150,7 +36754,8 @@ const indexFania880 = [
         8
       ],
       "svg": "<svg id='quadline-4-605' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-605' class='lines' d='M 300,200 Q 100,0 200,100 Q 0,0 0,100 Q 300,300 100,200 Q 200,300 0,300 Q 200,200 100,300 Q 300,100 200,0 Q 100,100 300,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 606,
@@ -36207,7 +36812,8 @@ const indexFania880 = [
         243
       ],
       "svg": "<svg id='quadline-4-606' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-606' class='lines' d='M 300,200 Q 100,0 200,100 Q 0,0 0,300 Q 200,200 100,300 Q 300,100 0,100 Q 300,300 100,200 Q 200,300 200,0 Q 100,100 300,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 607,
@@ -36259,7 +36865,8 @@ const indexFania880 = [
         10
       ],
       "svg": "<svg id='quadline-4-607' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-607' class='lines' d='M 300,100 Q 100,0 200,100 Q 0,0 0,200 Q 300,300 100,200 Q 200,300 0,300 Q 200,200 100,300 Q 300,200 200,0 Q 100,100 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 608,
@@ -36314,7 +36921,8 @@ const indexFania880 = [
         604
       ],
       "svg": "<svg id='quadline-4-608' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-608' class='lines' d='M 300,100 Q 100,0 200,100 Q 0,0 0,300 Q 200,200 100,300 Q 300,200 0,200 Q 300,300 100,200 Q 200,300 200,0 Q 100,100 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 609,
@@ -36360,7 +36968,8 @@ const indexFania880 = [
     "quadline": {
       "2232": [],
       "svg": "<svg id='quadline-4-609' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-609' class='lines' d='M 200,100 Q 100,0 300,200 Q 0,0 0,100 Q 300,300 100,300 Q 200,200 100,200 Q 200,300 0,300 Q 300,100 300,0 Q 0,200 200,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 610,
@@ -36403,7 +37012,8 @@ const indexFania880 = [
     "quadline": {
       "2446": [],
       "svg": "<svg id='quadline-4-610' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-610' class='lines' d='M 200,100 Q 100,0 300,200 Q 0,0 100,300 Q 200,200 0,100 Q 300,300 0,300 Q 300,100 100,200 Q 200,300 300,0 Q 0,200 200,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 611,
@@ -36446,7 +37056,8 @@ const indexFania880 = [
     "quadline": {
       "2141": [],
       "svg": "<svg id='quadline-4-611' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-611' class='lines' d='M 200,100 Q 100,0 300,100 Q 0,0 0,200 Q 300,300 100,300 Q 200,200 100,200 Q 200,300 0,300 Q 300,200 300,0 Q 0,100 200,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 612,
@@ -36509,7 +37120,8 @@ const indexFania880 = [
         592
       ],
       "svg": "<svg id='quadline-4-612' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-612' class='lines' d='M 200,100 Q 100,0 300,100 Q 0,0 100,300 Q 200,200 0,200 Q 300,300 0,300 Q 300,200 100,200 Q 200,300 300,0 Q 0,100 200,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 613,
@@ -36557,7 +37169,8 @@ const indexFania880 = [
     "quadline": {
       "2085": [],
       "svg": "<svg id='quadline-4-613' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-613' class='lines' d='M 200,100 Q 300,100 100,0 Q 0,0 0,200 Q 100,300 300,300 Q 200,200 0,300 Q 100,200 300,200 Q 200,300 200,0 Q 300,0 100,100 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 614,
@@ -36602,7 +37215,8 @@ const indexFania880 = [
     "quadline": {
       "2091": [],
       "svg": "<svg id='quadline-4-614' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-614' class='lines' d='M 300,200 Q 200,100 100,0 Q 0,0 0,100 Q 100,300 200,200 Q 300,300 0,300 Q 100,200 200,300 Q 300,100 300,0 Q 200,0 100,100 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 615,
@@ -36653,7 +37267,8 @@ const indexFania880 = [
         86
       ],
       "svg": "<svg id='quadline-4-615' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-615' class='lines' d='M 200,300 Q 300,200 100,0 Q 0,0 100,200 Q 0,100 200,100 Q 300,300 0,300 Q 100,100 300,100 Q 200,200 300,0 Q 200,0 0,200 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 616,
@@ -36710,7 +37325,8 @@ const indexFania880 = [
         618
       ],
       "svg": "<svg id='quadline-4-616' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-616' class='lines' d='M 300,100 Q 200,200 100,0 Q 0,0 0,300 Q 100,300 200,100 Q 300,200 100,200 Q 0,100 200,300 Q 300,300 300,0 Q 200,0 0,200 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 617,
@@ -36760,7 +37376,8 @@ const indexFania880 = [
         374
       ],
       "svg": "<svg id='quadline-4-617' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-617' class='lines' d='M 200,300 Q 300,100 100,0 Q 0,0 100,200 Q 0,200 200,100 Q 300,300 0,300 Q 100,100 300,200 Q 200,200 300,0 Q 200,0 0,100 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 618,
@@ -36812,7 +37429,8 @@ const indexFania880 = [
         616
       ],
       "svg": "<svg id='quadline-4-618' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-618' class='lines' d='M 200,100 Q 300,200 100,0 Q 0,0 0,300 Q 100,300 300,100 Q 200,200 0,200 Q 100,100 200,300 Q 300,300 300,0 Q 200,0 100,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 619,
@@ -36861,7 +37479,8 @@ const indexFania880 = [
     "quadline": {
       "2039": [],
       "svg": "<svg id='quadline-4-619' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-619' class='lines' d='M 300,100 Q 200,100 100,0 Q 0,0 0,200 Q 100,300 200,200 Q 300,300 0,300 Q 100,200 200,300 Q 300,200 300,0 Q 200,0 100,100 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 620,
@@ -36931,7 +37550,8 @@ const indexFania880 = [
         715
       ],
       "svg": "<svg id='quadline-4-620' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-620' class='lines' d='M 200,100 Q 300,200 100,300 Q 0,0 100,0 Q 0,300 200,200 Q 300,100 300,300 Q 200,0 0,100 Q 100,200 0,200 Q 100,100 300,0 Q 200,300 200,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 621,
@@ -36994,7 +37614,8 @@ const indexFania880 = [
         467
       ],
       "svg": "<svg id='quadline-4-621' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-621' class='lines' d='M 300,100 Q 100,200 200,300 Q 0,0 100,0 Q 300,300 0,200 Q 200,100 0,300 Q 200,0 100,100 Q 300,200 200,200 Q 0,100 300,0 Q 100,300 300,100 '/></svg>"
-    }
+    },
+    "sim": "MD1"
   },
   {
     "id": 622,
@@ -37066,7 +37687,8 @@ const indexFania880 = [
         796
       ],
       "svg": "<svg id='quadline-4-622' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-622' class='lines' d='M 200,100 Q 100,300 300,200 Q 0,0 100,0 Q 200,200 0,300 Q 300,100 300,300 Q 0,100 200,0 Q 100,200 0,200 Q 300,0 100,100 Q 200,300 200,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 623,
@@ -37139,7 +37761,8 @@ const indexFania880 = [
         508
       ],
       "svg": "<svg id='quadline-4-623' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-623' class='lines' d='M 300,100 Q 200,300 100,200 Q 0,0 100,0 Q 0,200 300,300 Q 200,100 0,300 Q 100,100 200,0 Q 300,200 200,200 Q 300,0 0,100 Q 100,300 300,100 '/></svg>"
-    }
+    },
+    "sim": "MD1"
   },
   {
     "id": 624,
@@ -37219,7 +37842,8 @@ const indexFania880 = [
         724
       ],
       "svg": "<svg id='quadline-4-624' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-624' class='lines' d='M 200,100 Q 100,300 300,200 Q 0,0 100,0 Q 200,200 0,100 Q 300,300 0,300 Q 300,100 100,200 Q 200,0 300,0 Q 0,200 200,300 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 625,
@@ -37269,7 +37893,8 @@ const indexFania880 = [
     "quadline": {
       "2419": [],
       "svg": "<svg id='quadline-4-625' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-625' class='lines' d='M 200,100 Q 100,300 300,100 Q 0,0 100,0 Q 200,200 0,200 Q 300,300 0,300 Q 300,200 100,200 Q 200,0 300,0 Q 0,100 200,300 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 626,
@@ -37327,7 +37952,8 @@ const indexFania880 = [
         474
       ],
       "svg": "<svg id='quadline-4-626' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-626' class='lines' d='M 300,200 Q 200,100 200,300 Q 0,0 100,0 Q 300,300 0,100 Q 100,200 100,100 Q 0,200 300,0 Q 100,300 0,300 Q 200,0 200,200 Q 300,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 627,
@@ -37384,7 +38010,8 @@ const indexFania880 = [
         707
       ],
       "svg": "<svg id='quadline-4-627' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-627' class='lines' d='M 100,200 Q 300,100 200,300 Q 0,0 100,0 Q 300,300 0,100 Q 200,200 200,100 Q 0,200 300,0 Q 100,300 0,300 Q 200,0 300,200 Q 100,100 100,200 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 628,
@@ -37437,7 +38064,8 @@ const indexFania880 = [
         804
       ],
       "svg": "<svg id='quadline-4-628' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-628' class='lines' d='M 200,200 Q 300,100 100,300 Q 0,0 100,0 Q 0,300 200,100 Q 300,200 0,100 Q 100,200 300,0 Q 200,300 300,300 Q 200,0 0,200 Q 100,100 200,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 629,
@@ -37487,7 +38115,8 @@ const indexFania880 = [
     "quadline": {
       "2479": [],
       "svg": "<svg id='quadline-4-629' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-629' class='lines' d='M 200,100 Q 300,200 200,300 Q 0,0 100,0 Q 300,300 0,200 Q 100,100 100,200 Q 0,100 300,0 Q 100,300 0,300 Q 200,0 300,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 630,
@@ -37548,7 +38177,8 @@ const indexFania880 = [
         663
       ],
       "svg": "<svg id='quadline-4-630' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-630' class='lines' d='M 300,100 Q 100,200 200,300 Q 0,0 100,0 Q 300,300 0,200 Q 200,100 200,200 Q 0,100 300,0 Q 100,300 0,300 Q 200,0 100,100 Q 300,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 631,
@@ -37593,7 +38223,8 @@ const indexFania880 = [
         23
       ],
       "svg": "<svg id='quadline-4-631' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-631' class='lines' d='M 200,100 Q 0,200 200,300 Q 0,0 100,0 Q 300,300 300,200 Q 100,100 100,200 Q 300,100 300,0 Q 100,300 0,300 Q 200,0 0,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 632,
@@ -37655,7 +38286,8 @@ const indexFania880 = [
         727
       ],
       "svg": "<svg id='quadline-4-632' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-632' class='lines' d='M 200,100 Q 300,200 100,300 Q 0,0 100,0 Q 0,300 200,200 Q 300,100 0,200 Q 100,100 300,0 Q 200,300 300,300 Q 200,0 0,100 Q 100,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "MD1"
   },
   {
     "id": 633,
@@ -37709,7 +38341,8 @@ const indexFania880 = [
         687
       ],
       "svg": "<svg id='quadline-4-633' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-633' class='lines' d='M 0,200 Q 200,100 200,300 Q 0,0 100,0 Q 300,300 300,100 Q 100,200 100,100 Q 300,200 300,0 Q 100,300 0,300 Q 200,0 200,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 634,
@@ -37756,7 +38389,8 @@ const indexFania880 = [
         295
       ],
       "svg": "<svg id='quadline-4-634' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-634' class='lines' d='M 300,200 Q 200,300 200,100 Q 0,0 100,0 Q 0,100 300,300 Q 100,200 100,100 Q 300,0 0,200 Q 100,300 0,300 Q 200,200 200,0 Q 300,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 635,
@@ -37817,7 +38451,8 @@ const indexFania880 = [
         587
       ],
       "svg": "<svg id='quadline-4-635' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-635' class='lines' d='M 200,200 Q 100,300 300,100 Q 0,0 100,0 Q 200,100 0,300 Q 300,200 0,100 Q 300,0 100,200 Q 200,300 300,300 Q 0,200 200,0 Q 100,100 200,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 636,
@@ -37876,7 +38511,8 @@ const indexFania880 = [
         550
       ],
       "svg": "<svg id='quadline-4-636' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-636' class='lines' d='M 300,100 Q 200,300 100,200 Q 0,0 100,0 Q 0,200 300,300 Q 200,100 200,200 Q 300,0 0,100 Q 100,300 0,300 Q 100,100 200,0 Q 300,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 637,
@@ -37945,7 +38581,8 @@ const indexFania880 = [
         585
       ],
       "svg": "<svg id='quadline-4-637' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-637' class='lines' d='M 200,100 Q 100,300 300,200 Q 0,0 100,0 Q 200,200 0,300 Q 300,100 0,200 Q 300,0 100,100 Q 200,300 300,300 Q 0,100 200,0 Q 100,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 638,
@@ -37994,7 +38631,8 @@ const indexFania880 = [
         298
       ],
       "svg": "<svg id='quadline-4-638' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-638' class='lines' d='M 0,200 Q 200,300 200,100 Q 0,0 100,0 Q 300,100 300,300 Q 100,200 100,100 Q 300,0 300,200 Q 100,300 0,300 Q 200,200 200,0 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 639,
@@ -38057,7 +38695,8 @@ const indexFania880 = [
         711
       ],
       "svg": "<svg id='quadline-4-639' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-639' class='lines' d='M 200,300 Q 100,200 300,100 Q 0,0 100,0 Q 0,100 200,200 Q 300,300 300,0 Q 200,100 0,200 Q 100,300 0,300 Q 300,200 100,100 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 640,
@@ -38123,7 +38762,8 @@ const indexFania880 = [
         115
       ],
       "svg": "<svg id='quadline-4-640' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-640' class='lines' d='M 200,200 Q 100,300 300,100 Q 0,0 100,0 Q 200,100 0,300 Q 300,200 300,0 Q 0,100 200,300 Q 100,200 0,200 Q 300,300 100,100 Q 200,0 200,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 641,
@@ -38176,7 +38816,8 @@ const indexFania880 = [
         420
       ],
       "svg": "<svg id='quadline-4-641' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-641' class='lines' d='M 200,300 Q 200,100 300,200 Q 0,0 100,0 Q 0,200 100,100 Q 300,300 300,0 Q 100,200 0,100 Q 100,300 0,300 Q 300,100 200,200 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 642,
@@ -38240,7 +38881,8 @@ const indexFania880 = [
         481
       ],
       "svg": "<svg id='quadline-4-642' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-642' class='lines' d='M 200,200 Q 300,100 100,300 Q 0,0 100,0 Q 0,300 200,100 Q 300,200 300,0 Q 200,300 0,100 Q 100,200 0,200 Q 100,100 300,300 Q 200,0 200,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 643,
@@ -38291,7 +38933,8 @@ const indexFania880 = [
     "quadline": {
       "2490": [],
       "svg": "<svg id='quadline-4-643' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-643' class='lines' d='M 200,100 Q 200,300 0,200 Q 0,0 100,0 Q 300,200 300,300 Q 100,100 300,0 Q 100,200 100,300 Q 300,100 0,100 Q 0,300 200,200 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 644,
@@ -38346,7 +38989,8 @@ const indexFania880 = [
         553
       ],
       "svg": "<svg id='quadline-4-644' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-644' class='lines' d='M 200,300 Q 0,200 200,100 Q 0,0 100,0 Q 300,300 100,200 Q 300,100 300,0 Q 100,100 300,200 Q 100,300 0,100 Q 200,200 0,300 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 645,
@@ -38398,7 +39042,8 @@ const indexFania880 = [
         839
       ],
       "svg": "<svg id='quadline-4-645' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-645' class='lines' d='M 200,300 Q 200,100 0,200 Q 0,0 100,0 Q 300,200 100,100 Q 300,300 300,0 Q 100,200 300,100 Q 100,300 0,300 Q 0,100 200,200 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 646,
@@ -38473,7 +39118,8 @@ const indexFania880 = [
         117
       ],
       "svg": "<svg id='quadline-4-646' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-646' class='lines' d='M 0,200 Q 200,100 200,300 Q 0,0 100,0 Q 300,300 300,100 Q 100,200 300,0 Q 100,300 100,100 Q 300,200 200,200 Q 0,100 0,300 Q 200,0 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 647,
@@ -38528,7 +39174,8 @@ const indexFania880 = [
         747
       ],
       "svg": "<svg id='quadline-4-647' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-647' class='lines' d='M 0,200 Q 200,300 200,100 Q 0,0 100,0 Q 300,100 300,300 Q 100,200 300,0 Q 100,100 100,300 Q 300,200 200,200 Q 0,300 0,100 Q 200,0 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 648,
@@ -38605,7 +39252,8 @@ const indexFania880 = [
         716
       ],
       "svg": "<svg id='quadline-4-648' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-648' class='lines' d='M 300,200 Q 200,100 100,300 Q 0,0 0,300 Q 100,0 200,200 Q 300,100 200,0 Q 300,300 0,100 Q 100,200 100,100 Q 0,200 300,0 Q 200,300 300,200 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 649,
@@ -38661,7 +39309,8 @@ const indexFania880 = [
         489
       ],
       "svg": "<svg id='quadline-4-649' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-649' class='lines' d='M 100,200 Q 300,100 200,300 Q 0,0 300,300 Q 100,0 0,200 Q 200,100 200,0 Q 0,300 100,100 Q 300,200 0,100 Q 200,200 300,0 Q 100,300 100,200 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 650,
@@ -38723,7 +39372,8 @@ const indexFania880 = [
         808
       ],
       "svg": "<svg id='quadline-4-650' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-650' class='lines' d='M 200,100 Q 300,200 100,300 Q 0,0 0,300 Q 100,0 300,100 Q 200,200 200,0 Q 300,300 0,200 Q 100,100 100,200 Q 0,100 300,0 Q 200,300 200,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 651,
@@ -38792,7 +39442,8 @@ const indexFania880 = [
         794
       ],
       "svg": "<svg id='quadline-4-651' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-651' class='lines' d='M 100,300 Q 200,100 300,200 Q 0,0 200,200 Q 100,0 0,300 Q 300,100 0,100 Q 300,300 200,0 Q 100,200 300,0 Q 0,200 100,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 652,
@@ -38846,7 +39497,8 @@ const indexFania880 = [
         655
       ],
       "svg": "<svg id='quadline-4-652' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-652' class='lines' d='M 300,100 Q 200,200 100,300 Q 0,0 0,300 Q 100,0 200,100 Q 300,200 100,200 Q 0,100 200,0 Q 300,300 300,0 Q 200,300 0,200 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 653,
@@ -38921,7 +39573,8 @@ const indexFania880 = [
         724
       ],
       "svg": "<svg id='quadline-4-653' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-653' class='lines' d='M 100,300 Q 200,100 300,100 Q 0,0 200,200 Q 100,0 0,300 Q 300,200 0,200 Q 300,300 200,0 Q 100,200 300,0 Q 0,100 100,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 654,
@@ -38989,7 +39642,8 @@ const indexFania880 = [
         789
       ],
       "svg": "<svg id='quadline-4-654' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-654' class='lines' d='M 200,300 Q 300,100 100,200 Q 0,0 0,200 Q 100,0 300,300 Q 200,100 100,100 Q 0,300 200,0 Q 300,200 300,0 Q 200,200 0,100 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 655,
@@ -39042,7 +39696,8 @@ const indexFania880 = [
         652
       ],
       "svg": "<svg id='quadline-4-655' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-655' class='lines' d='M 200,100 Q 300,200 100,300 Q 0,0 0,300 Q 100,0 300,100 Q 200,200 0,200 Q 100,100 200,0 Q 300,300 300,0 Q 200,300 100,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 656,
@@ -39094,7 +39749,8 @@ const indexFania880 = [
         381
       ],
       "svg": "<svg id='quadline-4-656' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-656' class='lines' d='M 300,100 Q 200,100 100,300 Q 0,0 0,200 Q 100,0 200,200 Q 300,300 0,300 Q 100,200 200,0 Q 300,200 300,0 Q 200,300 100,100 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 657,
@@ -39151,7 +39807,8 @@ const indexFania880 = [
         460
       ],
       "svg": "<svg id='quadline-4-657' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-657' class='lines' d='M 100,200 Q 300,100 200,300 Q 0,0 300,300 Q 100,0 0,200 Q 200,100 0,100 Q 200,200 300,0 Q 100,300 200,0 Q 0,300 100,100 Q 300,200 100,200 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 658,
@@ -39207,7 +39864,8 @@ const indexFania880 = [
         702
       ],
       "svg": "<svg id='quadline-4-658' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-658' class='lines' d='M 200,200 Q 300,100 100,300 Q 0,0 0,300 Q 100,0 300,200 Q 200,100 0,100 Q 100,200 300,0 Q 200,300 200,0 Q 300,300 100,100 Q 0,200 200,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 659,
@@ -39261,7 +39919,8 @@ const indexFania880 = [
         772
       ],
       "svg": "<svg id='quadline-4-659' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-659' class='lines' d='M 0,200 Q 200,100 200,300 Q 0,0 300,300 Q 100,0 100,200 Q 300,100 100,100 Q 300,200 300,0 Q 100,300 200,0 Q 0,300 0,100 Q 200,200 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 660,
@@ -39316,7 +39975,8 @@ const indexFania880 = [
         463
       ],
       "svg": "<svg id='quadline-4-660' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-660' class='lines' d='M 300,200 Q 200,100 100,300 Q 0,0 0,300 Q 100,0 200,200 Q 300,100 100,100 Q 0,200 300,0 Q 200,300 200,0 Q 300,300 0,100 Q 100,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 661,
@@ -39394,7 +40054,8 @@ const indexFania880 = [
         823
       ],
       "svg": "<svg id='quadline-4-661' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-661' class='lines' d='M 200,300 Q 300,100 100,200 Q 0,0 0,200 Q 100,0 300,300 Q 200,100 300,0 Q 200,200 0,100 Q 100,300 100,100 Q 0,300 200,0 Q 300,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 662,
@@ -39449,7 +40110,8 @@ const indexFania880 = [
         90
       ],
       "svg": "<svg id='quadline-4-662' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-662' class='lines' d='M 200,200 Q 300,100 100,300 Q 0,0 0,300 Q 100,0 300,200 Q 200,100 300,0 Q 200,300 0,100 Q 100,200 100,100 Q 0,200 200,0 Q 300,300 200,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 663,
@@ -39507,7 +40169,8 @@ const indexFania880 = [
         630
       ],
       "svg": "<svg id='quadline-4-663' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-663' class='lines' d='M 0,200 Q 200,100 200,300 Q 0,0 300,300 Q 100,0 100,200 Q 300,100 300,0 Q 100,300 100,100 Q 300,200 0,100 Q 200,200 200,0 Q 0,300 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 664,
@@ -39570,7 +40233,8 @@ const indexFania880 = [
         469
       ],
       "svg": "<svg id='quadline-4-664' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-664' class='lines' d='M 100,300 Q 200,100 300,200 Q 0,0 200,200 Q 100,0 0,300 Q 300,100 300,0 Q 0,200 100,100 Q 200,300 0,100 Q 300,300 200,0 Q 100,200 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 665,
@@ -39636,7 +40300,8 @@ const indexFania880 = [
         739
       ],
       "svg": "<svg id='quadline-4-665' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-665' class='lines' d='M 300,100 Q 200,300 0,200 Q 0,0 100,200 Q 100,0 200,100 Q 300,300 300,0 Q 200,200 100,300 Q 100,100 0,300 Q 0,100 200,0 Q 300,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 666,
@@ -39692,7 +40357,8 @@ const indexFania880 = [
         725
       ],
       "svg": "<svg id='quadline-4-666' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-666' class='lines' d='M 300,100 Q 200,200 100,300 Q 0,0 0,300 Q 100,0 200,100 Q 300,200 300,0 Q 200,300 0,200 Q 100,100 100,200 Q 0,100 200,0 Q 300,300 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 667,
@@ -39756,7 +40422,8 @@ const indexFania880 = [
         91
       ],
       "svg": "<svg id='quadline-4-667' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-667' class='lines' d='M 0,200 Q 200,300 300,100 Q 0,0 200,100 Q 100,0 100,200 Q 300,300 300,0 Q 100,100 100,300 Q 200,200 0,300 Q 300,200 200,0 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 668,
@@ -39842,7 +40509,8 @@ const indexFania880 = [
         837
       ],
       "svg": "<svg id='quadline-4-668' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-668' class='lines' d='M 300,200 Q 100,300 200,100 Q 0,0 0,300 Q 200,200 100,0 Q 300,100 200,0 Q 0,100 300,300 Q 100,200 100,100 Q 300,0 0,200 Q 200,300 300,200 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 669,
@@ -39904,7 +40572,8 @@ const indexFania880 = [
         822
       ],
       "svg": "<svg id='quadline-4-669' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-669' class='lines' d='M 100,200 Q 200,300 300,100 Q 0,0 300,300 Q 0,200 100,0 Q 200,100 200,0 Q 100,100 0,300 Q 300,200 0,100 Q 300,0 200,200 Q 100,300 100,200 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 670,
@@ -39991,7 +40660,8 @@ const indexFania880 = [
         691
       ],
       "svg": "<svg id='quadline-4-670' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-670' class='lines' d='M 100,300 Q 300,200 200,100 Q 0,0 200,200 Q 0,300 100,0 Q 300,100 0,100 Q 200,0 300,300 Q 100,200 300,0 Q 100,100 0,200 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 671,
@@ -40056,7 +40726,8 @@ const indexFania880 = [
         723
       ],
       "svg": "<svg id='quadline-4-671' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-671' class='lines' d='M 200,300 Q 100,200 300,100 Q 0,0 0,200 Q 300,300 100,0 Q 200,100 100,100 Q 200,0 0,300 Q 300,200 300,0 Q 0,100 200,200 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 672,
@@ -40099,7 +40770,8 @@ const indexFania880 = [
     "quadline": {
       "2738": [],
       "svg": "<svg id='quadline-4-672' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-672' class='lines' d='M 200,100 Q 100,300 300,100 Q 0,0 0,200 Q 300,300 100,0 Q 200,200 100,200 Q 200,0 0,300 Q 300,200 300,0 Q 0,100 200,300 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 673,
@@ -40149,7 +40821,8 @@ const indexFania880 = [
         502
       ],
       "svg": "<svg id='quadline-4-673' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-673' class='lines' d='M 100,300 Q 300,100 200,100 Q 0,0 200,200 Q 0,300 100,0 Q 300,200 0,200 Q 200,0 300,300 Q 100,200 300,0 Q 100,100 0,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 674,
@@ -40218,7 +40891,8 @@ const indexFania880 = [
         834
       ],
       "svg": "<svg id='quadline-4-674' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-674' class='lines' d='M 100,200 Q 200,300 300,100 Q 0,0 300,300 Q 0,200 100,0 Q 200,100 0,100 Q 300,0 200,200 Q 100,300 200,0 Q 100,100 0,300 Q 300,200 100,200 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 675,
@@ -40277,7 +40951,8 @@ const indexFania880 = [
         880
       ],
       "svg": "<svg id='quadline-4-675' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-675' class='lines' d='M 200,200 Q 100,300 300,100 Q 0,0 0,300 Q 300,200 100,0 Q 200,100 0,100 Q 300,0 100,200 Q 200,300 200,0 Q 100,100 300,300 Q 0,200 200,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 676,
@@ -40332,7 +41007,8 @@ const indexFania880 = [
         266
       ],
       "svg": "<svg id='quadline-4-676' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-676' class='lines' d='M 0,200 Q 200,300 200,100 Q 0,0 300,300 Q 100,200 100,0 Q 300,100 100,100 Q 300,0 300,200 Q 100,300 200,0 Q 0,100 0,300 Q 200,200 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 677,
@@ -40391,7 +41067,8 @@ const indexFania880 = [
         459
       ],
       "svg": "<svg id='quadline-4-677' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-677' class='lines' d='M 300,200 Q 100,300 200,100 Q 0,0 0,300 Q 200,200 100,0 Q 300,100 100,100 Q 300,0 0,200 Q 200,300 200,0 Q 0,100 300,300 Q 100,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 678,
@@ -40464,7 +41141,8 @@ const indexFania880 = [
         524
       ],
       "svg": "<svg id='quadline-4-678' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-678' class='lines' d='M 200,300 Q 100,200 300,100 Q 0,0 0,200 Q 300,300 100,0 Q 200,100 300,0 Q 0,100 200,200 Q 100,300 100,100 Q 200,0 0,300 Q 300,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 679,
@@ -40526,7 +41204,8 @@ const indexFania880 = [
         849
       ],
       "svg": "<svg id='quadline-4-679' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-679' class='lines' d='M 200,200 Q 100,300 300,100 Q 0,0 0,300 Q 300,200 100,0 Q 200,100 300,0 Q 0,100 200,300 Q 100,200 100,100 Q 200,0 0,200 Q 300,300 200,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 680,
@@ -40581,7 +41260,8 @@ const indexFania880 = [
         739
       ],
       "svg": "<svg id='quadline-4-680' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-680' class='lines' d='M 200,100 Q 300,200 200,300 Q 0,0 0,200 Q 100,100 100,0 Q 300,300 300,0 Q 100,300 100,200 Q 0,100 0,300 Q 200,0 300,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 681,
@@ -40638,7 +41318,8 @@ const indexFania880 = [
         167
       ],
       "svg": "<svg id='quadline-4-681' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-681' class='lines' d='M 0,200 Q 200,300 200,100 Q 0,0 300,300 Q 100,200 100,0 Q 300,100 300,0 Q 100,100 100,300 Q 300,200 0,100 Q 200,0 200,200 Q 0,300 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 682,
@@ -40703,7 +41384,8 @@ const indexFania880 = [
         473
       ],
       "svg": "<svg id='quadline-4-682' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-682' class='lines' d='M 100,300 Q 300,200 200,100 Q 0,0 200,200 Q 0,300 100,0 Q 300,100 300,0 Q 100,100 0,200 Q 200,300 0,100 Q 200,0 300,300 Q 100,200 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 683,
@@ -40760,7 +41442,8 @@ const indexFania880 = [
     "quadline": {
       "2598": [],
       "svg": "<svg id='quadline-4-683' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-683' class='lines' d='M 200,100 Q 0,200 200,300 Q 0,0 300,200 Q 100,100 100,0 Q 300,300 300,0 Q 100,300 100,200 Q 300,100 0,300 Q 200,0 0,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 684,
@@ -40817,7 +41500,8 @@ const indexFania880 = [
         685
       ],
       "svg": "<svg id='quadline-4-684' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-684' class='lines' d='M 100,300 Q 300,100 200,200 Q 0,0 0,300 Q 200,100 300,200 Q 100,0 200,0 Q 100,200 0,100 Q 300,300 300,0 Q 0,200 100,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 685,
@@ -40873,7 +41557,8 @@ const indexFania880 = [
         684
       ],
       "svg": "<svg id='quadline-4-685' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-685' class='lines' d='M 100,300 Q 200,100 300,200 Q 0,0 0,300 Q 300,100 200,200 Q 100,0 200,0 Q 0,200 100,100 Q 300,300 300,0 Q 100,200 0,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 686,
@@ -40920,7 +41605,8 @@ const indexFania880 = [
         43
       ],
       "svg": "<svg id='quadline-4-686' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-686' class='lines' d='M 100,300 Q 300,200 200,200 Q 0,0 0,300 Q 200,100 300,100 Q 100,0 300,0 Q 0,100 100,100 Q 200,300 200,0 Q 100,200 0,200 Q 300,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 687,
@@ -40980,7 +41666,8 @@ const indexFania880 = [
         633
       ],
       "svg": "<svg id='quadline-4-687' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-687' class='lines' d='M 0,200 Q 300,100 200,300 Q 0,0 100,200 Q 200,100 300,300 Q 100,0 300,0 Q 100,300 100,100 Q 200,200 200,0 Q 0,300 0,100 Q 300,200 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 688,
@@ -41038,7 +41725,8 @@ const indexFania880 = [
         719
       ],
       "svg": "<svg id='quadline-4-688' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-688' class='lines' d='M 100,300 Q 300,100 200,200 Q 0,0 0,300 Q 200,100 300,200 Q 100,0 300,0 Q 0,200 100,100 Q 200,300 200,0 Q 100,200 0,100 Q 300,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 689,
@@ -41094,7 +41782,8 @@ const indexFania880 = [
         364
       ],
       "svg": "<svg id='quadline-4-689' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-689' class='lines' d='M 100,200 Q 300,100 200,300 Q 0,0 0,300 Q 200,0 300,200 Q 100,100 100,0 Q 300,300 0,100 Q 200,200 200,100 Q 0,200 300,0 Q 100,300 100,200 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 690,
@@ -41163,7 +41852,8 @@ const indexFania880 = [
         794
       ],
       "svg": "<svg id='quadline-4-690' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-690' class='lines' d='M 300,100 Q 100,200 200,300 Q 0,0 0,300 Q 200,0 100,100 Q 300,200 100,0 Q 300,300 0,200 Q 200,100 200,200 Q 0,100 300,0 Q 100,300 300,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 691,
@@ -41251,7 +41941,8 @@ const indexFania880 = [
         670
       ],
       "svg": "<svg id='quadline-4-691' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-691' class='lines' d='M 300,100 Q 200,300 100,200 Q 0,0 0,300 Q 100,100 200,0 Q 300,200 100,0 Q 0,200 300,300 Q 200,100 200,200 Q 300,0 0,100 Q 100,300 300,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 692,
@@ -41313,7 +42004,8 @@ const indexFania880 = [
         693
       ],
       "svg": "<svg id='quadline-4-692' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-692' class='lines' d='M 200,300 Q 100,200 300,100 Q 0,0 0,300 Q 300,200 100,100 Q 200,0 100,0 Q 0,100 200,200 Q 300,300 300,0 Q 200,100 0,200 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 693,
@@ -41375,7 +42067,8 @@ const indexFania880 = [
         692
       ],
       "svg": "<svg id='quadline-4-693' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-693' class='lines' d='M 200,300 Q 300,200 100,100 Q 0,0 0,300 Q 100,200 300,100 Q 200,0 100,0 Q 200,100 0,200 Q 300,300 300,0 Q 0,100 200,200 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 694,
@@ -41424,7 +42117,8 @@ const indexFania880 = [
         336
       ],
       "svg": "<svg id='quadline-4-694' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-694' class='lines' d='M 300,200 Q 200,100 200,300 Q 0,0 100,100 Q 0,200 300,0 Q 100,300 100,0 Q 300,300 0,100 Q 100,200 0,300 Q 200,0 200,200 Q 300,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 695,
@@ -41487,7 +42181,8 @@ const indexFania880 = [
         511
       ],
       "svg": "<svg id='quadline-4-695' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-695' class='lines' d='M 200,100 Q 300,200 100,300 Q 0,0 0,200 Q 100,100 300,0 Q 200,300 100,0 Q 0,300 200,200 Q 300,100 300,300 Q 200,0 0,100 Q 100,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "MD1"
   },
   {
     "id": 696,
@@ -41560,7 +42255,8 @@ const indexFania880 = [
         510
       ],
       "svg": "<svg id='quadline-4-696' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-696' class='lines' d='M 0,200 Q 200,100 200,300 Q 0,0 100,100 Q 300,200 300,0 Q 100,300 100,0 Q 300,300 300,100 Q 100,200 0,300 Q 200,0 200,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 697,
@@ -41612,7 +42308,8 @@ const indexFania880 = [
         516
       ],
       "svg": "<svg id='quadline-4-697' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-697' class='lines' d='M 300,200 Q 200,300 200,100 Q 0,0 100,100 Q 300,0 0,200 Q 100,300 100,0 Q 0,100 300,300 Q 100,200 0,300 Q 200,200 200,0 Q 300,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 698,
@@ -41672,7 +42369,8 @@ const indexFania880 = [
         710
       ],
       "svg": "<svg id='quadline-4-698' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-698' class='lines' d='M 200,100 Q 100,300 300,200 Q 0,0 0,200 Q 300,0 100,100 Q 200,300 100,0 Q 200,200 0,300 Q 300,100 300,300 Q 0,100 200,0 Q 100,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "MD1"
   },
   {
     "id": 699,
@@ -41734,7 +42432,8 @@ const indexFania880 = [
         540
       ],
       "svg": "<svg id='quadline-4-699' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-699' class='lines' d='M 0,200 Q 200,300 200,100 Q 0,0 100,100 Q 300,0 300,200 Q 100,300 100,0 Q 300,100 300,300 Q 100,200 0,300 Q 200,200 200,0 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 700,
@@ -41803,7 +42502,8 @@ const indexFania880 = [
         827
       ],
       "svg": "<svg id='quadline-4-700' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-700' class='lines' d='M 200,100 Q 100,300 300,200 Q 0,0 300,0 Q 0,200 200,300 Q 100,100 100,0 Q 200,200 0,100 Q 300,300 0,300 Q 300,100 100,200 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 701,
@@ -41852,7 +42552,8 @@ const indexFania880 = [
         349
       ],
       "svg": "<svg id='quadline-4-701' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-701' class='lines' d='M 200,300 Q 0,200 200,100 Q 0,0 300,0 Q 100,100 300,200 Q 100,300 100,0 Q 300,300 100,200 Q 300,100 0,100 Q 200,200 0,300 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 702,
@@ -41914,7 +42615,8 @@ const indexFania880 = [
         658
       ],
       "svg": "<svg id='quadline-4-702' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-702' class='lines' d='M 0,200 Q 200,100 200,300 Q 0,0 300,0 Q 100,300 100,100 Q 300,200 100,0 Q 300,300 300,100 Q 100,200 200,200 Q 0,100 0,300 Q 200,0 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 703,
@@ -41966,7 +42668,8 @@ const indexFania880 = [
         738
       ],
       "svg": "<svg id='quadline-4-703' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-703' class='lines' d='M 200,100 Q 100,300 0,200 Q 0,0 300,0 Q 300,200 200,300 Q 100,100 100,0 Q 200,200 300,100 Q 300,300 0,300 Q 0,100 100,200 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 704,
@@ -42041,7 +42744,8 @@ const indexFania880 = [
         724
       ],
       "svg": "<svg id='quadline-4-704' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-704' class='lines' d='M 0,200 Q 200,300 200,100 Q 0,0 300,0 Q 100,100 100,300 Q 300,200 100,0 Q 300,100 300,300 Q 100,200 200,200 Q 0,300 0,100 Q 200,0 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 705,
@@ -42115,7 +42819,8 @@ const indexFania880 = [
         796
       ],
       "svg": "<svg id='quadline-4-705' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-705' class='lines' d='M 100,200 Q 300,100 200,300 Q 0,0 200,0 Q 0,300 100,100 Q 300,200 300,300 Q 100,0 0,200 Q 200,100 0,100 Q 200,200 300,0 Q 100,300 100,200 '/></svg>"
-    }
+    },
+    "sim": "MD1"
   },
   {
     "id": 706,
@@ -42168,7 +42873,8 @@ const indexFania880 = [
         332
       ],
       "svg": "<svg id='quadline-4-706' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-706' class='lines' d='M 100,200 Q 200,300 300,100 Q 0,0 0,200 Q 300,300 200,0 Q 100,100 200,100 Q 100,0 0,300 Q 300,200 300,0 Q 0,100 100,300 Q 200,200 100,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 707,
@@ -42225,7 +42931,8 @@ const indexFania880 = [
         627
       ],
       "svg": "<svg id='quadline-4-707' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-707' class='lines' d='M 100,300 Q 200,100 300,100 Q 0,0 0,200 Q 300,300 200,0 Q 100,200 200,200 Q 100,0 0,300 Q 300,200 300,0 Q 0,100 100,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 708,
@@ -42313,7 +43020,8 @@ const indexFania880 = [
         837
       ],
       "svg": "<svg id='quadline-4-708' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-708' class='lines' d='M 200,300 Q 300,100 100,200 Q 0,0 100,100 Q 0,300 200,0 Q 300,200 0,200 Q 100,0 300,300 Q 200,100 300,0 Q 200,200 0,100 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 709,
@@ -42383,7 +43091,8 @@ const indexFania880 = [
         371
       ],
       "svg": "<svg id='quadline-4-709' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-709' class='lines' d='M 0,200 Q 200,100 200,300 Q 0,0 100,100 Q 300,200 300,0 Q 100,300 300,300 Q 100,0 100,200 Q 300,100 200,0 Q 0,300 0,100 Q 200,200 0,200 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 710,
@@ -42469,7 +43178,8 @@ const indexFania880 = [
         698
       ],
       "svg": "<svg id='quadline-4-710' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-710' class='lines' d='M 300,200 Q 200,100 100,300 Q 0,0 100,100 Q 0,200 300,0 Q 200,300 0,300 Q 100,0 200,200 Q 300,100 200,0 Q 300,300 0,100 Q 100,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MD1"
   },
   {
     "id": 711,
@@ -42526,7 +43236,8 @@ const indexFania880 = [
         639
       ],
       "svg": "<svg id='quadline-4-711' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-711' class='lines' d='M 300,200 Q 200,300 100,100 Q 0,0 300,0 Q 200,100 100,300 Q 0,200 0,300 Q 100,0 200,200 Q 300,100 0,100 Q 100,200 200,0 Q 300,300 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 712,
@@ -42581,7 +43292,8 @@ const indexFania880 = [
         162
       ],
       "svg": "<svg id='quadline-4-712' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-712' class='lines' d='M 0,200 Q 200,100 200,300 Q 0,0 300,0 Q 100,300 100,100 Q 300,200 300,300 Q 100,0 100,200 Q 300,100 0,100 Q 200,200 200,0 Q 0,300 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 713,
@@ -42641,7 +43353,8 @@ const indexFania880 = [
         528
       ],
       "svg": "<svg id='quadline-4-713' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-713' class='lines' d='M 100,300 Q 200,100 300,200 Q 0,0 300,0 Q 0,200 100,100 Q 200,300 200,200 Q 100,0 0,300 Q 300,100 0,100 Q 300,300 200,0 Q 100,200 100,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 714,
@@ -42703,7 +43416,8 @@ const indexFania880 = [
         749
       ],
       "svg": "<svg id='quadline-4-714' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-714' class='lines' d='M 0,200 Q 200,100 100,300 Q 0,0 300,0 Q 200,300 100,100 Q 300,200 300,100 Q 100,0 200,200 Q 300,300 0,300 Q 100,200 200,0 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 715,
@@ -42770,7 +43484,8 @@ const indexFania880 = [
         620
       ],
       "svg": "<svg id='quadline-4-715' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-715' class='lines' d='M 100,200 Q 200,300 300,100 Q 0,0 200,0 Q 100,100 0,300 Q 300,200 300,300 Q 0,200 100,0 Q 200,100 0,100 Q 300,0 200,200 Q 100,300 100,200 '/></svg>"
-    }
+    },
+    "sim": "MD1"
   },
   {
     "id": 716,
@@ -42847,7 +43562,8 @@ const indexFania880 = [
         648
       ],
       "svg": "<svg id='quadline-4-716' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-716' class='lines' d='M 200,300 Q 100,200 300,100 Q 0,0 100,100 Q 200,0 0,300 Q 300,200 0,200 Q 300,300 100,0 Q 200,100 300,0 Q 0,100 200,200 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 717,
@@ -42912,7 +43628,8 @@ const indexFania880 = [
         827
       ],
       "svg": "<svg id='quadline-4-717' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-717' class='lines' d='M 300,200 Q 100,100 200,300 Q 0,0 0,300 Q 200,0 100,200 Q 300,100 200,100 Q 0,200 100,0 Q 300,300 300,0 Q 100,300 0,100 Q 200,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 718,
@@ -42961,7 +43678,8 @@ const indexFania880 = [
         339
       ],
       "svg": "<svg id='quadline-4-718' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-718' class='lines' d='M 100,300 Q 300,100 200,100 Q 0,0 0,200 Q 200,0 300,300 Q 100,200 200,200 Q 0,300 100,0 Q 300,200 300,0 Q 100,100 0,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 719,
@@ -43023,7 +43741,8 @@ const indexFania880 = [
         688
       ],
       "svg": "<svg id='quadline-4-719' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-719' class='lines' d='M 300,100 Q 100,200 200,300 Q 0,0 0,200 Q 200,0 100,100 Q 300,300 0,300 Q 200,100 100,0 Q 300,200 300,0 Q 100,300 200,200 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 720,
@@ -43088,7 +43807,8 @@ const indexFania880 = [
         594
       ],
       "svg": "<svg id='quadline-4-720' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-720' class='lines' d='M 0,200 Q 200,300 200,100 Q 0,0 100,100 Q 300,0 300,200 Q 100,300 300,300 Q 100,200 100,0 Q 300,100 200,0 Q 0,100 0,300 Q 200,200 0,200 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 721,
@@ -43165,7 +43885,8 @@ const indexFania880 = [
         464
       ],
       "svg": "<svg id='quadline-4-721' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-721' class='lines' d='M 300,200 Q 100,300 200,100 Q 0,0 100,100 Q 300,0 0,200 Q 200,300 0,300 Q 200,200 100,0 Q 300,100 200,0 Q 0,100 300,300 Q 100,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MD1"
   },
   {
     "id": 722,
@@ -43223,7 +43944,8 @@ const indexFania880 = [
         146
       ],
       "svg": "<svg id='quadline-4-722' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-722' class='lines' d='M 0,200 Q 200,300 200,100 Q 0,0 300,0 Q 100,100 100,300 Q 300,200 300,300 Q 100,200 100,0 Q 300,100 0,100 Q 200,0 200,200 Q 0,300 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 723,
@@ -43297,7 +44019,8 @@ const indexFania880 = [
         671
       ],
       "svg": "<svg id='quadline-4-723' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-723' class='lines' d='M 100,300 Q 300,200 200,100 Q 0,0 300,0 Q 100,100 0,200 Q 200,300 200,200 Q 0,300 100,0 Q 300,100 0,100 Q 200,0 300,300 Q 100,200 100,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 724,
@@ -43375,7 +44098,8 @@ const indexFania880 = [
         704
       ],
       "svg": "<svg id='quadline-4-724' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-724' class='lines' d='M 200,300 Q 100,100 300,200 Q 0,0 300,0 Q 0,200 200,100 Q 100,300 0,300 Q 300,100 100,0 Q 200,200 100,200 Q 200,0 0,100 Q 300,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 725,
@@ -43426,7 +44150,8 @@ const indexFania880 = [
         666
       ],
       "svg": "<svg id='quadline-4-725' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-725' class='lines' d='M 100,200 Q 200,300 300,100 Q 0,0 200,0 Q 100,100 0,200 Q 300,300 0,300 Q 300,200 200,100 Q 100,0 300,0 Q 0,100 100,300 Q 200,200 100,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 726,
@@ -43484,7 +44209,8 @@ const indexFania880 = [
         561
       ],
       "svg": "<svg id='quadline-4-726' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-726' class='lines' d='M 0,200 Q 200,300 300,100 Q 0,0 300,0 Q 100,200 100,300 Q 200,100 100,100 Q 300,300 200,200 Q 100,0 200,0 Q 0,100 0,300 Q 300,200 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 727,
@@ -43541,7 +44267,8 @@ const indexFania880 = [
         632
       ],
       "svg": "<svg id='quadline-4-727' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-727' class='lines' d='M 0,200 Q 300,100 200,300 Q 0,0 300,0 Q 100,300 100,200 Q 200,100 100,100 Q 200,200 300,300 Q 100,0 200,0 Q 0,300 0,100 Q 300,200 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 728,
@@ -43597,7 +44324,8 @@ const indexFania880 = [
         841
       ],
       "svg": "<svg id='quadline-4-728' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-728' class='lines' d='M 300,100 Q 200,0 100,200 Q 0,0 0,300 Q 100,100 200,300 Q 300,200 0,200 Q 300,300 200,100 Q 100,300 100,0 Q 200,200 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 729,
@@ -43661,7 +44389,8 @@ const indexFania880 = [
         790
       ],
       "svg": "<svg id='quadline-4-729' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-729' class='lines' d='M 300,100 Q 200,0 100,200 Q 0,0 0,200 Q 300,300 200,100 Q 100,300 0,300 Q 100,100 200,300 Q 300,200 100,0 Q 200,200 300,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 730,
@@ -43714,7 +44443,8 @@ const indexFania880 = [
         566
       ],
       "svg": "<svg id='quadline-4-730' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-730' class='lines' d='M 100,100 Q 300,200 200,300 Q 0,0 0,300 Q 200,0 300,100 Q 100,200 0,200 Q 200,100 300,0 Q 100,300 100,0 Q 300,300 200,200 Q 0,100 100,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 731,
@@ -43768,7 +44498,8 @@ const indexFania880 = [
         401
       ],
       "svg": "<svg id='quadline-4-731' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-731' class='lines' d='M 100,100 Q 200,300 300,200 Q 0,0 0,300 Q 300,100 200,0 Q 100,200 0,200 Q 300,0 200,100 Q 100,300 100,0 Q 200,200 300,300 Q 0,100 100,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 732,
@@ -43827,7 +44558,8 @@ const indexFania880 = [
         750
       ],
       "svg": "<svg id='quadline-4-732' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-732' class='lines' d='M 200,300 Q 300,100 100,100 Q 0,0 0,300 Q 100,200 300,200 Q 200,0 300,0 Q 0,200 200,200 Q 100,300 100,0 Q 200,100 0,100 Q 300,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 733,
@@ -43890,7 +44622,8 @@ const indexFania880 = [
         758
       ],
       "svg": "<svg id='quadline-4-733' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-733' class='lines' d='M 0,200 Q 300,100 100,300 Q 0,0 200,100 Q 100,200 300,300 Q 200,0 300,0 Q 200,300 200,200 Q 100,100 100,0 Q 0,300 0,100 Q 300,200 0,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 734,
@@ -43945,7 +44678,8 @@ const indexFania880 = [
         192
       ],
       "svg": "<svg id='quadline-4-734' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-734' class='lines' d='M 100,100 Q 300,200 200,300 Q 0,0 0,200 Q 200,100 300,0 Q 100,300 0,300 Q 200,0 300,100 Q 100,200 100,0 Q 300,300 200,200 Q 0,100 100,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 735,
@@ -44006,7 +44740,8 @@ const indexFania880 = [
         572
       ],
       "svg": "<svg id='quadline-4-735' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-735' class='lines' d='M 100,100 Q 200,300 300,200 Q 0,0 0,200 Q 300,0 200,100 Q 100,300 0,300 Q 300,100 200,0 Q 100,200 100,0 Q 200,200 300,300 Q 0,100 100,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 736,
@@ -44057,7 +44792,8 @@ const indexFania880 = [
     "quadline": {
       "2202": [],
       "svg": "<svg id='quadline-4-736' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-736' class='lines' d='M 0,200 Q 100,300 300,100 Q 0,0 300,0 Q 200,100 200,300 Q 100,200 200,200 Q 300,300 100,100 Q 200,0 100,0 Q 0,100 0,300 Q 300,200 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 737,
@@ -44102,7 +44838,8 @@ const indexFania880 = [
     "quadline": {
       "2460": [],
       "svg": "<svg id='quadline-4-737' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-737' class='lines' d='M 0,200 Q 300,100 100,300 Q 0,0 300,0 Q 200,300 200,100 Q 100,200 200,200 Q 100,100 300,300 Q 200,0 100,0 Q 0,300 0,100 Q 300,200 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 738,
@@ -44151,7 +44888,8 @@ const indexFania880 = [
         703
       ],
       "svg": "<svg id='quadline-4-738' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-738' class='lines' d='M 300,200 Q 100,100 200,0 Q 0,0 0,300 Q 200,300 100,200 Q 300,100 200,100 Q 0,200 100,300 Q 300,300 300,0 Q 100,0 0,100 Q 200,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 739,
@@ -44206,7 +44944,8 @@ const indexFania880 = [
         680
       ],
       "svg": "<svg id='quadline-4-739' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-739' class='lines' d='M 100,300 Q 300,100 200,0 Q 0,0 200,100 Q 0,200 100,200 Q 300,300 0,300 Q 200,200 300,200 Q 100,100 300,0 Q 100,0 0,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 740,
@@ -44260,7 +44999,8 @@ const indexFania880 = [
         4
       ],
       "svg": "<svg id='quadline-4-740' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-740' class='lines' d='M 300,100 Q 100,200 200,0 Q 0,0 0,200 Q 200,300 100,100 Q 300,300 0,300 Q 200,100 100,300 Q 300,200 300,0 Q 100,0 200,200 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 741,
@@ -44324,7 +45064,8 @@ const indexFania880 = [
         834
       ],
       "svg": "<svg id='quadline-4-741' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-741' class='lines' d='M 100,100 Q 300,200 200,300 Q 0,0 200,0 Q 0,300 100,200 Q 300,100 0,200 Q 200,100 300,0 Q 100,300 300,300 Q 100,0 0,100 Q 200,200 100,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 742,
@@ -44377,7 +45118,8 @@ const indexFania880 = [
         457
       ],
       "svg": "<svg id='quadline-4-742' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-742' class='lines' d='M 200,100 Q 0,200 100,300 Q 0,0 200,0 Q 300,300 300,200 Q 100,100 100,200 Q 300,100 300,0 Q 200,300 0,300 Q 100,0 0,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 743,
@@ -44431,7 +45173,8 @@ const indexFania880 = [
         557
       ],
       "svg": "<svg id='quadline-4-743' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-743' class='lines' d='M 0,200 Q 200,100 100,300 Q 0,0 200,0 Q 300,300 300,100 Q 100,200 100,100 Q 300,200 300,0 Q 200,300 0,300 Q 100,0 200,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 744,
@@ -44490,7 +45233,8 @@ const indexFania880 = [
         204
       ],
       "svg": "<svg id='quadline-4-744' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-744' class='lines' d='M 100,100 Q 200,300 300,200 Q 0,0 0,300 Q 300,100 200,0 Q 100,200 300,0 Q 0,200 100,300 Q 200,100 200,200 Q 100,0 0,100 Q 300,300 100,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 745,
@@ -44541,7 +45285,8 @@ const indexFania880 = [
         818
       ],
       "svg": "<svg id='quadline-4-745' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-745' class='lines' d='M 200,100 Q 0,200 100,300 Q 0,0 300,200 Q 100,100 200,0 Q 300,300 300,0 Q 200,300 100,200 Q 300,100 0,300 Q 100,0 0,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 746,
@@ -44594,7 +45339,8 @@ const indexFania880 = [
         392
       ],
       "svg": "<svg id='quadline-4-746' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-746' class='lines' d='M 100,100 Q 300,200 200,300 Q 0,0 0,200 Q 200,100 300,0 Q 100,300 200,0 Q 0,300 100,200 Q 300,100 300,300 Q 100,0 0,100 Q 200,200 100,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 747,
@@ -44647,7 +45393,8 @@ const indexFania880 = [
         647
       ],
       "svg": "<svg id='quadline-4-747' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-747' class='lines' d='M 0,200 Q 200,100 100,300 Q 0,0 100,100 Q 300,200 300,0 Q 200,300 200,0 Q 300,300 300,100 Q 100,200 0,300 Q 100,0 200,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 748,
@@ -44712,7 +45459,8 @@ const indexFania880 = [
         201
       ],
       "svg": "<svg id='quadline-4-748' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-748' class='lines' d='M 100,100 Q 200,300 300,200 Q 0,0 300,0 Q 0,200 100,300 Q 200,100 0,300 Q 300,100 200,0 Q 100,200 200,200 Q 100,0 0,100 Q 300,300 100,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 749,
@@ -44774,7 +45522,8 @@ const indexFania880 = [
         714
       ],
       "svg": "<svg id='quadline-4-749' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-749' class='lines' d='M 0,200 Q 200,300 100,100 Q 0,0 300,0 Q 200,100 100,300 Q 300,200 300,100 Q 100,200 200,0 Q 300,300 0,300 Q 100,0 200,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 750,
@@ -44827,7 +45576,8 @@ const indexFania880 = [
         732
       ],
       "svg": "<svg id='quadline-4-750' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-750' class='lines' d='M 0,200 Q 100,300 200,100 Q 0,0 200,0 Q 300,100 300,300 Q 100,200 100,100 Q 300,0 300,200 Q 200,300 0,300 Q 200,200 100,0 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 751,
@@ -44876,7 +45626,8 @@ const indexFania880 = [
         156
       ],
       "svg": "<svg id='quadline-4-751' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-751' class='lines' d='M 0,200 Q 100,300 300,100 Q 0,0 200,100 Q 200,0 100,200 Q 300,300 300,0 Q 100,100 200,300 Q 200,200 0,300 Q 300,200 100,0 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 752,
@@ -44933,7 +45684,8 @@ const indexFania880 = [
         791
       ],
       "svg": "<svg id='quadline-4-752' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-752' class='lines' d='M 0,200 Q 100,300 200,100 Q 0,0 100,100 Q 300,0 300,200 Q 200,300 200,0 Q 300,100 300,300 Q 100,200 0,300 Q 200,200 100,0 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 753,
@@ -44993,7 +45745,8 @@ const indexFania880 = [
         496
       ],
       "svg": "<svg id='quadline-4-753' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-753' class='lines' d='M 100,0 Q 200,300 300,100 Q 100,200 0,0 Q 300,300 200,100 Q 0,200 200,200 Q 0,100 0,300 Q 300,0 300,200 Q 100,100 100,300 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 754,
@@ -45060,7 +45813,8 @@ const indexFania880 = [
         876
       ],
       "svg": "<svg id='quadline-4-754' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-754' class='lines' d='M 100,0 Q 200,300 200,100 Q 0,200 0,0 Q 300,300 300,100 Q 100,200 300,200 Q 100,100 0,300 Q 300,0 200,200 Q 0,100 100,300 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 755,
@@ -45109,7 +45863,8 @@ const indexFania880 = [
         220
       ],
       "svg": "<svg id='quadline-4-755' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-755' class='lines' d='M 300,200 Q 100,0 0,100 Q 200,100 0,0 Q 200,300 300,300 Q 100,200 200,200 Q 0,300 100,300 Q 300,0 100,100 Q 300,100 200,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 756,
@@ -45163,7 +45918,8 @@ const indexFania880 = [
         46
       ],
       "svg": "<svg id='quadline-4-756' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-756' class='lines' d='M 300,200 Q 100,0 200,300 Q 0,100 0,0 Q 200,100 100,200 Q 300,300 0,300 Q 200,200 100,100 Q 300,0 300,100 Q 100,300 200,0 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 757,
@@ -45219,7 +45975,8 @@ const indexFania880 = [
         470
       ],
       "svg": "<svg id='quadline-4-757' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-757' class='lines' d='M 200,300 Q 100,0 100,200 Q 0,100 0,0 Q 300,300 300,200 Q 200,100 300,100 Q 200,200 0,300 Q 300,0 100,100 Q 0,200 200,0 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 758,
@@ -45278,7 +46035,8 @@ const indexFania880 = [
         733
       ],
       "svg": "<svg id='quadline-4-758' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-758' class='lines' d='M 200,300 Q 100,0 300,200 Q 200,100 0,0 Q 300,300 100,200 Q 0,100 100,100 Q 0,200 0,300 Q 300,0 300,100 Q 200,200 200,0 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 759,
@@ -45331,7 +46089,8 @@ const indexFania880 = [
         810
       ],
       "svg": "<svg id='quadline-4-759' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-759' class='lines' d='M 300,100 Q 100,0 100,200 Q 200,300 0,0 Q 200,200 300,300 Q 0,100 200,100 Q 0,300 0,200 Q 300,0 100,300 Q 300,200 200,0 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 760,
@@ -45391,7 +46150,8 @@ const indexFania880 = [
         840
       ],
       "svg": "<svg id='quadline-4-760' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-760' class='lines' d='M 200,100 Q 100,0 100,300 Q 200,200 0,0 Q 300,200 300,100 Q 0,300 300,300 Q 0,100 0,200 Q 300,0 100,200 Q 200,300 200,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 761,
@@ -45448,7 +46208,8 @@ const indexFania880 = [
         55
       ],
       "svg": "<svg id='quadline-4-761' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-761' class='lines' d='M 200,100 Q 100,0 100,300 Q 200,200 0,0 Q 300,100 300,200 Q 0,300 300,300 Q 0,200 0,100 Q 300,0 100,200 Q 200,300 200,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 762,
@@ -45508,7 +46269,8 @@ const indexFania880 = [
         812
       ],
       "svg": "<svg id='quadline-4-762' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-762' class='lines' d='M 200,100 Q 100,0 0,200 Q 200,300 0,0 Q 300,200 300,300 Q 100,100 300,100 Q 0,300 100,200 Q 300,0 100,300 Q 200,200 200,0 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 763,
@@ -45561,7 +46323,8 @@ const indexFania880 = [
         48
       ],
       "svg": "<svg id='quadline-4-763' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-763' class='lines' d='M 300,100 Q 100,0 200,300 Q 0,200 0,0 Q 200,100 100,200 Q 300,300 0,300 Q 200,200 100,100 Q 300,0 300,200 Q 100,300 200,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 764,
@@ -45624,7 +46387,8 @@ const indexFania880 = [
         829
       ],
       "svg": "<svg id='quadline-4-764' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-764' class='lines' d='M 300,100 Q 100,0 0,200 Q 200,100 0,0 Q 200,300 300,300 Q 100,200 200,200 Q 0,300 100,300 Q 300,0 100,100 Q 300,200 200,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 765,
@@ -45673,7 +46437,8 @@ const indexFania880 = [
         801
       ],
       "svg": "<svg id='quadline-4-765' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-765' class='lines' d='M 200,100 Q 100,0 300,200 Q 0,100 0,0 Q 300,300 100,300 Q 200,200 200,300 Q 100,200 300,0 Q 0,300 0,200 Q 300,100 100,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 766,
@@ -45727,7 +46492,8 @@ const indexFania880 = [
         251
       ],
       "svg": "<svg id='quadline-4-766' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-766' class='lines' d='M 200,100 Q 100,0 100,300 Q 200,200 0,0 Q 300,100 300,200 Q 0,300 0,200 Q 300,300 300,0 Q 0,100 200,300 Q 100,200 100,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 767,
@@ -45774,7 +46540,8 @@ const indexFania880 = [
         856
       ],
       "svg": "<svg id='quadline-4-767' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-767' class='lines' d='M 200,100 Q 100,0 0,200 Q 300,100 0,0 Q 300,300 100,300 Q 200,200 200,300 Q 100,200 300,0 Q 0,300 300,200 Q 0,100 100,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 768,
@@ -45844,7 +46611,8 @@ const indexFania880 = [
         246
       ],
       "svg": "<svg id='quadline-4-768' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-768' class='lines' d='M 300,100 Q 100,0 200,300 Q 0,200 0,0 Q 200,100 100,200 Q 300,300 200,200 Q 0,300 300,0 Q 100,100 100,300 Q 300,200 0,100 Q 200,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 769,
@@ -45901,7 +46669,8 @@ const indexFania880 = [
         71
       ],
       "svg": "<svg id='quadline-4-769' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-769' class='lines' d='M 300,200 Q 200,300 100,0 Q 0,100 0,0 Q 100,200 200,100 Q 300,300 0,300 Q 100,100 200,200 Q 300,0 300,100 Q 200,0 100,300 Q 0,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 770,
@@ -45956,7 +46725,8 @@ const indexFania880 = [
     "quadline": {
       "2530": [],
       "svg": "<svg id='quadline-4-770' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-770' class='lines' d='M 300,100 Q 100,200 100,0 Q 200,300 0,0 Q 300,300 200,200 Q 0,100 200,100 Q 0,200 0,300 Q 300,0 100,300 Q 200,0 300,200 Q 100,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 771,
@@ -46022,7 +46792,8 @@ const indexFania880 = [
         77
       ],
       "svg": "<svg id='quadline-4-771' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-771' class='lines' d='M 200,100 Q 100,300 100,0 Q 200,200 0,0 Q 300,200 300,100 Q 0,300 300,300 Q 0,100 0,200 Q 300,0 100,200 Q 200,0 200,300 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 772,
@@ -46078,7 +46849,8 @@ const indexFania880 = [
         659
       ],
       "svg": "<svg id='quadline-4-772' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-772' class='lines' d='M 200,100 Q 100,300 100,0 Q 200,200 0,0 Q 300,100 300,200 Q 0,300 300,300 Q 0,200 0,100 Q 300,0 100,200 Q 200,0 200,300 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 773,
@@ -46142,7 +46914,8 @@ const indexFania880 = [
         827
       ],
       "svg": "<svg id='quadline-4-773' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-773' class='lines' d='M 200,100 Q 0,200 100,0 Q 200,300 0,0 Q 300,300 300,200 Q 100,100 300,100 Q 100,200 0,300 Q 300,0 100,300 Q 200,0 200,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 774,
@@ -46196,7 +46969,8 @@ const indexFania880 = [
         844
       ],
       "svg": "<svg id='quadline-4-774' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-774' class='lines' d='M 300,100 Q 200,300 100,0 Q 0,200 0,0 Q 100,200 200,100 Q 300,300 0,300 Q 100,100 200,200 Q 300,0 300,200 Q 200,0 100,300 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 775,
@@ -46254,7 +47028,8 @@ const indexFania880 = [
     "quadline": {
       "1968": [],
       "svg": "<svg id='quadline-4-775' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-775' class='lines' d='M 200,100 Q 300,200 100,0 Q 0,100 0,0 Q 100,300 300,300 Q 200,200 200,300 Q 300,0 100,200 Q 0,300 0,200 Q 100,100 300,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 776,
@@ -46305,7 +47080,8 @@ const indexFania880 = [
         284
       ],
       "svg": "<svg id='quadline-4-776' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-776' class='lines' d='M 200,300 Q 300,200 100,0 Q 200,100 0,0 Q 0,100 300,300 Q 100,200 100,100 Q 300,0 0,200 Q 0,300 200,200 Q 100,300 300,100 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 777,
@@ -46356,7 +47132,8 @@ const indexFania880 = [
         602
       ],
       "svg": "<svg id='quadline-4-777' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-777' class='lines' d='M 200,300 Q 300,100 100,0 Q 100,200 0,0 Q 0,200 300,300 Q 200,100 200,200 Q 300,0 0,100 Q 0,300 100,100 Q 100,300 300,200 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 778,
@@ -46417,7 +47194,8 @@ const indexFania880 = [
         322
       ],
       "svg": "<svg id='quadline-4-778' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-778' class='lines' d='M 200,100 Q 100,300 100,0 Q 200,200 0,0 Q 300,200 300,100 Q 0,300 0,200 Q 300,0 300,300 Q 0,100 200,300 Q 100,100 100,200 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 779,
@@ -46484,7 +47262,8 @@ const indexFania880 = [
         316
       ],
       "svg": "<svg id='quadline-4-779' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-779' class='lines' d='M 300,100 Q 200,300 100,0 Q 0,200 0,0 Q 100,200 200,100 Q 300,300 200,200 Q 300,0 0,300 Q 100,100 100,300 Q 0,100 300,200 Q 200,0 300,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 780,
@@ -46543,7 +47322,8 @@ const indexFania880 = [
         320
       ],
       "svg": "<svg id='quadline-4-780' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-780' class='lines' d='M 200,300 Q 0,200 100,0 Q 200,100 0,0 Q 300,100 300,300 Q 100,200 100,100 Q 300,0 300,200 Q 0,300 200,200 Q 100,300 0,100 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 781,
@@ -46594,7 +47374,8 @@ const indexFania880 = [
     "quadline": {
       "2336": [],
       "svg": "<svg id='quadline-4-781' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-781' class='lines' d='M 200,100 Q 0,200 100,0 Q 300,100 0,0 Q 100,300 300,300 Q 200,200 200,300 Q 300,0 100,200 Q 0,300 300,200 Q 100,100 0,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 782,
@@ -46641,7 +47422,8 @@ const indexFania880 = [
         404
       ],
       "svg": "<svg id='quadline-4-782' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-782' class='lines' d='M 300,200 Q 200,100 200,300 Q 100,0 0,0 Q 300,300 100,100 Q 0,200 100,200 Q 0,100 0,300 Q 300,0 200,0 Q 100,300 300,100 Q 200,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 783,
@@ -46690,7 +47472,8 @@ const indexFania880 = [
     "quadline": {
       "2217": [],
       "svg": "<svg id='quadline-4-783' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-783' class='lines' d='M 300,200 Q 200,300 200,100 Q 100,0 0,0 Q 100,100 300,300 Q 0,200 100,200 Q 0,300 0,100 Q 300,0 200,0 Q 300,100 100,300 Q 200,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 784,
@@ -46759,7 +47542,8 @@ const indexFania880 = [
         827
       ],
       "svg": "<svg id='quadline-4-784' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-784' class='lines' d='M 100,300 Q 200,100 200,200 Q 100,0 0,0 Q 300,200 300,100 Q 0,300 0,100 Q 300,300 300,0 Q 0,200 100,200 Q 200,0 200,300 Q 100,100 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 785,
@@ -46814,7 +47598,8 @@ const indexFania880 = [
         279
       ],
       "svg": "<svg id='quadline-4-785' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-785' class='lines' d='M 200,300 Q 300,100 0,200 Q 100,0 0,0 Q 100,200 200,100 Q 300,300 100,100 Q 0,300 300,0 Q 200,200 300,200 Q 200,0 100,300 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 786,
@@ -46868,7 +47653,8 @@ const indexFania880 = [
         472
       ],
       "svg": "<svg id='quadline-4-786' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-786' class='lines' d='M 0,200 Q 300,100 200,100 Q 100,0 0,0 Q 300,300 200,300 Q 100,200 100,300 Q 200,200 300,0 Q 0,300 100,100 Q 200,0 300,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 787,
@@ -46932,7 +47718,8 @@ const indexFania880 = [
         814
       ],
       "svg": "<svg id='quadline-4-787' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-787' class='lines' d='M 100,300 Q 200,200 200,100 Q 100,0 0,0 Q 300,100 300,200 Q 0,300 0,100 Q 300,0 300,300 Q 0,200 100,200 Q 200,300 200,0 Q 100,100 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 788,
@@ -46991,7 +47778,8 @@ const indexFania880 = [
         292
       ],
       "svg": "<svg id='quadline-4-788' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-788' class='lines' d='M 200,300 Q 0,200 300,100 Q 100,0 0,0 Q 200,100 100,200 Q 300,300 100,100 Q 300,0 0,300 Q 200,200 300,200 Q 100,300 200,0 Q 0,100 200,300 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 789,
@@ -47050,7 +47838,8 @@ const indexFania880 = [
         654
       ],
       "svg": "<svg id='quadline-4-789' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-789' class='lines' d='M 100,300 Q 200,200 200,100 Q 100,0 0,0 Q 300,100 300,200 Q 0,300 300,0 Q 0,100 0,200 Q 300,300 200,300 Q 100,200 100,100 Q 200,0 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 790,
@@ -47104,7 +47893,8 @@ const indexFania880 = [
         729
       ],
       "svg": "<svg id='quadline-4-790' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-790' class='lines' d='M 100,300 Q 200,100 200,200 Q 100,0 0,0 Q 300,200 300,100 Q 0,300 300,0 Q 0,200 0,100 Q 300,300 200,300 Q 100,100 100,200 Q 200,0 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 791,
@@ -47176,7 +47966,8 @@ const indexFania880 = [
         752
       ],
       "svg": "<svg id='quadline-4-791' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-791' class='lines' d='M 200,300 Q 300,100 0,200 Q 100,0 0,0 Q 100,200 200,100 Q 300,300 300,0 Q 200,200 100,100 Q 0,300 100,300 Q 0,100 300,200 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 792,
@@ -47243,7 +48034,8 @@ const indexFania880 = [
         111
       ],
       "svg": "<svg id='quadline-4-792' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-792' class='lines' d='M 200,300 Q 0,200 300,100 Q 100,0 0,0 Q 200,100 100,200 Q 300,300 300,0 Q 100,100 200,200 Q 0,300 100,300 Q 300,200 0,100 Q 200,0 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 793,
@@ -47294,7 +48086,8 @@ const indexFania880 = [
         818
       ],
       "svg": "<svg id='quadline-4-793' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-793' class='lines' d='M 300,100 Q 200,300 0,200 Q 100,200 0,0 Q 100,0 300,300 Q 200,100 100,100 Q 0,300 200,0 Q 300,0 200,200 Q 300,200 100,300 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 794,
@@ -47352,7 +48145,8 @@ const indexFania880 = [
         690
       ],
       "svg": "<svg id='quadline-4-794' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-794' class='lines' d='M 100,300 Q 200,100 300,100 Q 0,200 0,0 Q 300,300 200,200 Q 100,0 100,200 Q 200,0 300,0 Q 0,300 0,100 Q 300,200 200,300 Q 100,100 100,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 795,
@@ -47404,7 +48198,8 @@ const indexFania880 = [
         439
       ],
       "svg": "<svg id='quadline-4-795' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-795' class='lines' d='M 0,200 Q 300,100 200,300 Q 100,200 0,0 Q 300,300 200,100 Q 100,0 100,100 Q 200,0 300,0 Q 0,300 100,300 Q 200,200 300,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 796,
@@ -47478,7 +48273,8 @@ const indexFania880 = [
         705
       ],
       "svg": "<svg id='quadline-4-796' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-796' class='lines' d='M 100,300 Q 300,100 200,100 Q 0,200 0,0 Q 200,200 300,300 Q 100,0 100,200 Q 300,0 200,0 Q 0,300 0,100 Q 200,300 300,200 Q 100,100 100,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 797,
@@ -47545,7 +48341,8 @@ const indexFania880 = [
         356
       ],
       "svg": "<svg id='quadline-4-797' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-797' class='lines' d='M 200,100 Q 0,200 300,200 Q 100,100 0,0 Q 200,300 100,300 Q 300,0 100,0 Q 300,300 0,300 Q 200,0 300,100 Q 100,200 200,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 798,
@@ -47600,7 +48397,8 @@ const indexFania880 = [
         362
       ],
       "svg": "<svg id='quadline-4-798' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-798' class='lines' d='M 200,100 Q 300,200 0,200 Q 100,100 0,0 Q 100,300 200,300 Q 300,0 100,0 Q 0,300 300,300 Q 200,0 300,100 Q 200,200 100,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 799,
@@ -47649,7 +48447,8 @@ const indexFania880 = [
     "quadline": {
       "2265": [],
       "svg": "<svg id='quadline-4-799' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-799' class='lines' d='M 200,300 Q 100,200 0,200 Q 300,100 0,0 Q 300,300 100,100 Q 200,0 200,100 Q 100,0 300,0 Q 0,300 300,200 Q 0,100 100,300 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 800,
@@ -47707,7 +48506,8 @@ const indexFania880 = [
         843
       ],
       "svg": "<svg id='quadline-4-800' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-800' class='lines' d='M 300,100 Q 0,200 100,300 Q 200,100 0,0 Q 300,300 100,200 Q 200,0 200,200 Q 100,0 300,0 Q 0,300 200,300 Q 100,100 0,100 Q 300,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 801,
@@ -47762,7 +48562,8 @@ const indexFania880 = [
         765
       ],
       "svg": "<svg id='quadline-4-801' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-801' class='lines' d='M 200,100 Q 300,200 0,200 Q 100,100 0,0 Q 200,300 100,300 Q 300,0 300,300 Q 100,0 200,0 Q 0,300 100,200 Q 0,100 300,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 802,
@@ -47827,7 +48628,8 @@ const indexFania880 = [
         155
       ],
       "svg": "<svg id='quadline-4-802' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-802' class='lines' d='M 200,100 Q 0,200 300,200 Q 100,100 0,0 Q 200,300 100,300 Q 300,0 300,300 Q 100,0 200,0 Q 0,300 100,200 Q 300,100 0,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 803,
@@ -47880,7 +48682,8 @@ const indexFania880 = [
         533
       ],
       "svg": "<svg id='quadline-4-803' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-803' class='lines' d='M 300,200 Q 200,100 100,100 Q 0,200 0,0 Q 100,300 200,300 Q 300,0 0,300 Q 100,0 200,0 Q 300,300 300,100 Q 200,200 100,200 Q 0,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 804,
@@ -47933,7 +48736,8 @@ const indexFania880 = [
         628
       ],
       "svg": "<svg id='quadline-4-804' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-804' class='lines' d='M 300,100 Q 100,300 0,200 Q 200,100 0,0 Q 200,0 300,300 Q 100,200 200,200 Q 0,300 100,0 Q 300,0 100,100 Q 300,200 200,300 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 805,
@@ -47988,7 +48792,8 @@ const indexFania880 = [
         263
       ],
       "svg": "<svg id='quadline-4-805' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-805' class='lines' d='M 200,300 Q 0,200 100,200 Q 300,100 0,0 Q 100,100 300,300 Q 200,0 200,100 Q 300,0 100,0 Q 0,300 300,200 Q 100,300 0,100 Q 200,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 806,
@@ -48043,7 +48848,8 @@ const indexFania880 = [
         137
       ],
       "svg": "<svg id='quadline-4-806' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-806' class='lines' d='M 200,100 Q 300,200 0,200 Q 100,100 0,0 Q 100,300 200,300 Q 300,0 300,300 Q 200,0 100,0 Q 0,300 100,200 Q 0,100 300,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 807,
@@ -48097,7 +48903,8 @@ const indexFania880 = [
         586
       ],
       "svg": "<svg id='quadline-4-807' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-807' class='lines' d='M 200,100 Q 0,200 300,200 Q 100,100 0,0 Q 100,300 200,300 Q 300,0 300,300 Q 200,0 100,0 Q 0,300 100,200 Q 300,100 0,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 808,
@@ -48150,7 +48957,8 @@ const indexFania880 = [
         650
       ],
       "svg": "<svg id='quadline-4-808' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-808' class='lines' d='M 300,200 Q 100,100 200,100 Q 0,200 0,0 Q 200,300 100,300 Q 300,0 0,300 Q 200,0 100,0 Q 300,300 300,100 Q 100,200 200,200 Q 0,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 809,
@@ -48212,7 +49020,8 @@ const indexFania880 = [
         854
       ],
       "svg": "<svg id='quadline-4-809' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-809' class='lines' d='M 300,200 Q 200,100 100,100 Q 0,200 0,0 Q 100,300 200,300 Q 300,0 200,0 Q 300,300 0,300 Q 100,0 100,200 Q 0,100 300,100 Q 200,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 810,
@@ -48273,7 +49082,8 @@ const indexFania880 = [
         759
       ],
       "svg": "<svg id='quadline-4-810' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-810' class='lines' d='M 300,200 Q 100,100 200,100 Q 0,200 0,0 Q 200,300 100,300 Q 300,0 200,0 Q 0,300 300,300 Q 100,0 100,200 Q 300,100 0,100 Q 200,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 811,
@@ -48325,7 +49135,8 @@ const indexFania880 = [
     "quadline": {
       "2589": [],
       "svg": "<svg id='quadline-4-811' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-811' class='lines' d='M 200,100 Q 0,200 100,300 Q 200,0 0,0 Q 300,300 300,200 Q 100,100 300,100 Q 100,200 0,300 Q 300,0 100,0 Q 200,300 200,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 812,
@@ -48390,7 +49201,8 @@ const indexFania880 = [
         762
       ],
       "svg": "<svg id='quadline-4-812' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-812' class='lines' d='M 200,100 Q 100,300 0,200 Q 200,0 0,0 Q 300,200 300,300 Q 100,100 300,100 Q 0,300 100,200 Q 300,0 100,0 Q 200,200 200,300 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 813,
@@ -48442,7 +49254,8 @@ const indexFania880 = [
         132
       ],
       "svg": "<svg id='quadline-4-813' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-813' class='lines' d='M 300,100 Q 100,300 200,0 Q 0,200 0,0 Q 200,100 100,200 Q 300,300 0,300 Q 200,200 100,100 Q 300,0 300,200 Q 100,0 200,300 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 814,
@@ -48497,7 +49310,8 @@ const indexFania880 = [
         787
       ],
       "svg": "<svg id='quadline-4-814' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-814' class='lines' d='M 300,100 Q 0,200 100,200 Q 200,0 0,0 Q 300,300 100,300 Q 200,100 200,300 Q 100,100 300,0 Q 0,300 200,200 Q 100,0 0,100 Q 300,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 815,
@@ -48552,7 +49366,8 @@ const indexFania880 = [
         363
       ],
       "svg": "<svg id='quadline-4-815' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-815' class='lines' d='M 300,100 Q 200,0 0,200 Q 100,200 0,0 Q 100,300 300,300 Q 200,100 100,100 Q 0,300 200,300 Q 300,0 200,200 Q 300,200 100,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 816,
@@ -48612,7 +49427,8 @@ const indexFania880 = [
         168
       ],
       "svg": "<svg id='quadline-4-816' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-816' class='lines' d='M 300,100 Q 200,0 100,300 Q 0,200 0,0 Q 100,200 200,100 Q 300,300 0,300 Q 100,100 200,200 Q 300,0 300,200 Q 200,300 100,0 Q 0,100 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 817,
@@ -48665,7 +49481,8 @@ const indexFania880 = [
         61
       ],
       "svg": "<svg id='quadline-4-817' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-817' class='lines' d='M 100,0 Q 200,100 200,200 Q 100,300 300,100 Q 0,0 0,300 Q 300,200 300,300 Q 0,200 0,100 Q 300,0 100,200 Q 200,300 200,0 Q 100,100 100,0 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 818,
@@ -48738,7 +49555,8 @@ const indexFania880 = [
         793
       ],
       "svg": "<svg id='quadline-4-818' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-818' class='lines' d='M 100,0 Q 300,100 0,200 Q 200,300 200,100 Q 0,0 300,300 Q 100,200 0,300 Q 200,200 100,100 Q 300,0 300,200 Q 100,300 200,0 Q 0,100 100,0 '/></svg>"
-    }
+    },
+    "sim": "Mh"
   },
   {
     "id": 819,
@@ -48802,7 +49620,8 @@ const indexFania880 = [
         876
       ],
       "svg": "<svg id='quadline-4-819' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-819' class='lines' d='M 100,0 Q 300,200 0,100 Q 200,300 200,100 Q 0,0 300,300 Q 100,200 200,200 Q 0,300 300,0 Q 100,100 100,300 Q 300,100 0,200 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 820,
@@ -48847,7 +49666,8 @@ const indexFania880 = [
     "quadline": {
       "2441": [],
       "svg": "<svg id='quadline-4-820' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-820' class='lines' d='M 100,0 Q 300,100 200,300 Q 100,200 200,200 Q 0,0 0,100 Q 300,300 0,300 Q 200,100 300,0 Q 0,200 300,200 Q 100,300 100,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 821,
@@ -48902,7 +49722,8 @@ const indexFania880 = [
         846
       ],
       "svg": "<svg id='quadline-4-821' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-821' class='lines' d='M 100,0 Q 200,100 200,200 Q 100,300 300,200 Q 0,0 0,300 Q 300,100 0,100 Q 300,300 300,0 Q 0,200 200,300 Q 100,200 100,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 822,
@@ -48967,7 +49788,8 @@ const indexFania880 = [
         669
       ],
       "svg": "<svg id='quadline-4-822' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-822' class='lines' d='M 100,0 Q 200,100 200,200 Q 100,300 300,100 Q 0,0 0,300 Q 300,200 0,200 Q 300,300 300,0 Q 0,100 200,300 Q 100,200 100,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 823,
@@ -49018,7 +49840,8 @@ const indexFania880 = [
         661
       ],
       "svg": "<svg id='quadline-4-823' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-823' class='lines' d='M 100,0 Q 200,100 200,300 Q 0,200 300,200 Q 0,0 100,100 Q 300,300 0,300 Q 300,100 300,0 Q 100,200 200,200 Q 100,300 0,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 824,
@@ -49073,7 +49896,8 @@ const indexFania880 = [
         255
       ],
       "svg": "<svg id='quadline-4-824' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-824' class='lines' d='M 100,0 Q 300,100 0,200 Q 200,300 200,100 Q 0,0 300,300 Q 100,200 200,200 Q 0,300 300,0 Q 100,100 100,300 Q 300,200 0,100 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 825,
@@ -49122,7 +49946,8 @@ const indexFania880 = [
         879
       ],
       "svg": "<svg id='quadline-4-825' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-825' class='lines' d='M 200,100 Q 100,0 100,300 Q 200,200 300,200 Q 0,0 0,100 Q 300,300 0,300 Q 300,100 300,0 Q 0,200 100,200 Q 200,300 200,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 826,
@@ -49179,7 +50004,8 @@ const indexFania880 = [
     "quadline": {
       "2542": [],
       "svg": "<svg id='quadline-4-826' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-826' class='lines' d='M 200,100 Q 100,0 100,300 Q 200,200 300,100 Q 0,0 0,200 Q 300,300 0,300 Q 300,200 300,0 Q 0,100 100,200 Q 200,300 200,0 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 827,
@@ -49251,7 +50077,8 @@ const indexFania880 = [
         784
       ],
       "svg": "<svg id='quadline-4-827' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-827' class='lines' d='M 200,100 Q 100,300 100,0 Q 200,200 300,200 Q 0,0 0,300 Q 300,100 300,300 Q 0,100 0,200 Q 300,0 200,0 Q 100,200 100,100 Q 200,300 200,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 828,
@@ -49310,7 +50137,8 @@ const indexFania880 = [
         102
       ],
       "svg": "<svg id='quadline-4-828' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-828' class='lines' d='M 300,100 Q 200,300 100,0 Q 0,200 100,200 Q 0,0 300,300 Q 200,100 0,300 Q 100,100 200,200 Q 300,0 200,0 Q 300,200 0,100 Q 100,300 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 829,
@@ -49362,7 +50190,8 @@ const indexFania880 = [
         764
       ],
       "svg": "<svg id='quadline-4-829' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-829' class='lines' d='M 200,300 Q 100,200 100,0 Q 0,100 300,100 Q 0,0 200,200 Q 300,300 0,300 Q 300,200 300,0 Q 200,100 100,100 Q 200,0 0,200 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 830,
@@ -49414,7 +50243,8 @@ const indexFania880 = [
     "quadline": {
       "2635": [],
       "svg": "<svg id='quadline-4-830' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-830' class='lines' d='M 200,100 Q 100,300 100,0 Q 200,200 300,200 Q 0,0 0,100 Q 300,300 0,300 Q 300,100 300,0 Q 0,200 100,200 Q 200,0 200,300 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 831,
@@ -49463,7 +50293,8 @@ const indexFania880 = [
     "quadline": {
       "2177": [],
       "svg": "<svg id='quadline-4-831' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-831' class='lines' d='M 200,300 Q 300,200 100,0 Q 200,100 100,100 Q 0,0 0,200 Q 300,300 0,300 Q 100,200 300,0 Q 0,100 300,100 Q 200,0 200,200 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 832,
@@ -49512,7 +50343,8 @@ const indexFania880 = [
         369
       ],
       "svg": "<svg id='quadline-4-832' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-832' class='lines' d='M 200,100 Q 100,300 100,0 Q 200,200 300,100 Q 0,0 0,200 Q 300,300 0,300 Q 300,200 300,0 Q 0,100 100,200 Q 200,0 200,300 Q 100,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 833,
@@ -49563,7 +50395,8 @@ const indexFania880 = [
         286
       ],
       "svg": "<svg id='quadline-4-833' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-833' class='lines' d='M 300,200 Q 200,300 100,0 Q 0,100 200,100 Q 0,0 300,300 Q 100,200 100,100 Q 300,0 0,300 Q 200,200 0,200 Q 100,300 200,0 Q 300,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "MB"
   },
   {
     "id": 834,
@@ -49624,7 +50457,8 @@ const indexFania880 = [
         741
       ],
       "svg": "<svg id='quadline-4-834' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-834' class='lines' d='M 200,200 Q 100,300 100,0 Q 200,100 300,100 Q 0,0 0,300 Q 300,200 0,100 Q 300,0 300,300 Q 0,200 100,200 Q 200,300 200,0 Q 100,100 200,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 835,
@@ -49675,7 +50509,8 @@ const indexFania880 = [
         290
       ],
       "svg": "<svg id='quadline-4-835' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-835' class='lines' d='M 200,100 Q 100,300 100,0 Q 200,200 300,200 Q 0,0 0,300 Q 300,100 0,200 Q 300,0 300,300 Q 0,100 100,100 Q 200,300 200,0 Q 100,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 836,
@@ -49745,7 +50580,8 @@ const indexFania880 = [
         287
       ],
       "svg": "<svg id='quadline-4-836' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-836' class='lines' d='M 300,100 Q 200,300 100,0 Q 0,200 100,200 Q 0,0 300,300 Q 200,100 200,200 Q 300,0 0,300 Q 100,100 0,100 Q 100,300 200,0 Q 300,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 837,
@@ -49832,7 +50668,8 @@ const indexFania880 = [
         708
       ],
       "svg": "<svg id='quadline-4-837' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-837' class='lines' d='M 0,200 Q 200,300 100,0 Q 300,100 200,100 Q 0,0 300,300 Q 100,200 100,100 Q 300,0 0,300 Q 200,200 300,200 Q 100,300 200,0 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 838,
@@ -49898,7 +50735,8 @@ const indexFania880 = [
         501
       ],
       "svg": "<svg id='quadline-4-838' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-838' class='lines' d='M 200,200 Q 100,300 100,0 Q 200,100 300,100 Q 0,0 0,300 Q 300,200 300,0 Q 0,100 0,200 Q 300,300 200,300 Q 100,200 100,100 Q 200,0 200,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 839,
@@ -49959,7 +50797,8 @@ const indexFania880 = [
         645
       ],
       "svg": "<svg id='quadline-4-839' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-839' class='lines' d='M 0,200 Q 200,300 100,0 Q 300,100 200,100 Q 0,0 300,300 Q 100,200 300,0 Q 100,100 200,200 Q 0,300 100,300 Q 300,200 0,100 Q 200,0 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 840,
@@ -50026,7 +50865,8 @@ const indexFania880 = [
         760
       ],
       "svg": "<svg id='quadline-4-840' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-840' class='lines' d='M 100,300 Q 200,100 200,200 Q 100,0 300,200 Q 0,0 0,300 Q 300,100 0,100 Q 300,300 300,0 Q 0,200 200,0 Q 100,200 100,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 841,
@@ -50086,7 +50926,8 @@ const indexFania880 = [
         728
       ],
       "svg": "<svg id='quadline-4-841' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-841' class='lines' d='M 100,300 Q 200,100 200,200 Q 100,0 300,100 Q 0,0 0,300 Q 300,200 0,200 Q 300,300 300,0 Q 0,100 200,0 Q 100,200 100,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 842,
@@ -50140,7 +50981,8 @@ const indexFania880 = [
         310
       ],
       "svg": "<svg id='quadline-4-842' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-842' class='lines' d='M 200,300 Q 300,100 0,200 Q 100,0 100,200 Q 0,0 300,300 Q 200,100 100,100 Q 0,300 300,0 Q 200,200 200,0 Q 300,200 0,100 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 843,
@@ -50205,7 +51047,8 @@ const indexFania880 = [
         800
       ],
       "svg": "<svg id='quadline-4-843' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-843' class='lines' d='M 100,300 Q 200,100 200,200 Q 100,0 300,200 Q 0,0 0,300 Q 300,100 300,0 Q 0,200 0,100 Q 300,300 100,100 Q 200,300 200,0 Q 100,200 100,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 844,
@@ -50277,7 +51120,8 @@ const indexFania880 = [
         774
       ],
       "svg": "<svg id='quadline-4-844' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-844' class='lines' d='M 200,300 Q 300,100 0,200 Q 100,0 100,200 Q 0,0 300,300 Q 200,100 300,0 Q 200,200 100,100 Q 0,300 0,100 Q 100,300 200,0 Q 300,200 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 845,
@@ -50335,7 +51179,8 @@ const indexFania880 = [
         565
       ],
       "svg": "<svg id='quadline-4-845' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-845' class='lines' d='M 0,200 Q 200,100 300,100 Q 100,0 100,300 Q 0,0 200,200 Q 300,300 300,0 Q 200,300 0,300 Q 100,200 100,100 Q 300,200 200,0 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 846,
@@ -50389,7 +51234,8 @@ const indexFania880 = [
         821
       ],
       "svg": "<svg id='quadline-4-846' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-846' class='lines' d='M 200,100 Q 300,200 0,200 Q 100,100 200,300 Q 0,0 100,0 Q 300,300 300,0 Q 100,300 0,300 Q 200,0 100,200 Q 0,100 300,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 847,
@@ -50449,7 +51295,8 @@ const indexFania880 = [
     "quadline": {
       "2574": [],
       "svg": "<svg id='quadline-4-847' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-847' class='lines' d='M 300,100 Q 100,300 0,200 Q 200,100 200,200 Q 0,0 100,0 Q 300,300 300,0 Q 100,200 0,300 Q 200,0 200,300 Q 0,100 100,100 Q 300,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 848,
@@ -50505,7 +51352,8 @@ const indexFania880 = [
     "quadline": {
       "2590": [],
       "svg": "<svg id='quadline-4-848' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-848' class='lines' d='M 200,100 Q 0,200 300,200 Q 100,100 200,300 Q 0,0 100,0 Q 300,300 300,0 Q 100,300 0,300 Q 200,0 100,200 Q 300,100 0,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 849,
@@ -50561,7 +51409,8 @@ const indexFania880 = [
         679
       ],
       "svg": "<svg id='quadline-4-849' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-849' class='lines' d='M 300,200 Q 200,100 100,100 Q 0,200 200,300 Q 0,0 300,0 Q 100,300 100,0 Q 300,300 0,300 Q 200,0 0,100 Q 100,200 200,200 Q 300,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 850,
@@ -50619,7 +51468,8 @@ const indexFania880 = [
         402
       ],
       "svg": "<svg id='quadline-4-850' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-850' class='lines' d='M 200,100 Q 300,200 0,200 Q 100,100 100,300 Q 0,0 300,0 Q 200,300 100,0 Q 0,300 300,300 Q 200,0 200,200 Q 300,100 0,100 Q 100,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 851,
@@ -50684,7 +51534,8 @@ const indexFania880 = [
         380
       ],
       "svg": "<svg id='quadline-4-851' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-851' class='lines' d='M 0,200 Q 200,100 100,100 Q 300,200 200,300 Q 0,0 300,0 Q 100,300 100,0 Q 300,300 0,300 Q 200,0 300,100 Q 100,200 200,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 852,
@@ -50751,7 +51602,8 @@ const indexFania880 = [
         169
       ],
       "svg": "<svg id='quadline-4-852' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-852' class='lines' d='M 0,200 Q 200,100 100,100 Q 300,200 200,300 Q 0,0 300,0 Q 100,300 300,300 Q 100,0 200,0 Q 0,300 100,200 Q 300,100 0,100 Q 200,200 0,200 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 853,
@@ -50809,7 +51661,8 @@ const indexFania880 = [
         173
       ],
       "svg": "<svg id='quadline-4-853' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-853' class='lines' d='M 300,200 Q 200,100 100,100 Q 0,200 100,300 Q 0,0 300,0 Q 200,300 0,300 Q 100,0 200,0 Q 300,300 200,200 Q 300,100 0,100 Q 100,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 854,
@@ -50874,7 +51727,8 @@ const indexFania880 = [
         809
       ],
       "svg": "<svg id='quadline-4-854' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-854' class='lines' d='M 200,100 Q 300,200 0,200 Q 100,100 100,300 Q 0,0 300,0 Q 200,300 300,300 Q 200,0 100,0 Q 0,300 0,100 Q 100,200 200,200 Q 300,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "MD2"
   },
   {
     "id": 855,
@@ -50943,7 +51797,8 @@ const indexFania880 = [
         876
       ],
       "svg": "<svg id='quadline-4-855' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-855' class='lines' d='M 100,100 Q 300,200 0,200 Q 200,100 200,300 Q 0,0 300,0 Q 100,300 0,300 Q 200,0 100,0 Q 300,300 300,100 Q 100,200 200,200 Q 0,100 100,100 '/></svg>"
-    }
+    },
+    "sim": "R2"
   },
   {
     "id": 856,
@@ -50997,7 +51852,8 @@ const indexFania880 = [
         767
       ],
       "svg": "<svg id='quadline-4-856' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-856' class='lines' d='M 200,100 Q 300,200 0,200 Q 100,100 100,300 Q 0,0 200,0 Q 300,300 300,0 Q 200,300 0,300 Q 100,0 100,200 Q 0,100 300,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 857,
@@ -51043,7 +51899,8 @@ const indexFania880 = [
     "quadline": {
       "2592": [],
       "svg": "<svg id='quadline-4-857' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-857' class='lines' d='M 200,100 Q 0,200 300,200 Q 100,100 100,300 Q 0,0 200,0 Q 300,300 300,0 Q 200,300 0,300 Q 100,0 100,200 Q 300,100 0,100 Q 200,200 200,100 '/></svg>"
-    }
+    },
+    "sim": "unique"
   },
   {
     "id": 858,
@@ -51090,7 +51947,8 @@ const indexFania880 = [
     "quadline": {
       "2344": [],
       "svg": "<svg id='quadline-4-858' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-858' class='lines' d='M 0,200 Q 200,300 300,100 Q 100,200 100,100 Q 0,0 200,0 Q 300,300 300,0 Q 200,100 0,300 Q 100,0 100,300 Q 300,200 200,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 859,
@@ -51145,7 +52003,8 @@ const indexFania880 = [
         342
       ],
       "svg": "<svg id='quadline-4-859' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-859' class='lines' d='M 300,200 Q 200,100 100,100 Q 0,200 100,300 Q 0,0 300,0 Q 200,300 200,0 Q 300,300 0,300 Q 100,0 0,100 Q 100,200 200,200 Q 300,100 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 860,
@@ -51196,7 +52055,8 @@ const indexFania880 = [
         361
       ],
       "svg": "<svg id='quadline-4-860' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-860' class='lines' d='M 100,100 Q 300,200 0,200 Q 200,100 200,300 Q 0,0 300,0 Q 100,300 200,0 Q 0,300 300,300 Q 100,0 100,200 Q 300,100 0,100 Q 200,200 100,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 861,
@@ -51253,7 +52113,8 @@ const indexFania880 = [
         382
       ],
       "svg": "<svg id='quadline-4-861' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-861' class='lines' d='M 0,200 Q 200,100 100,100 Q 300,200 100,300 Q 0,0 300,0 Q 200,300 200,0 Q 300,300 0,300 Q 100,0 300,100 Q 100,200 200,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 862,
@@ -51304,7 +52165,8 @@ const indexFania880 = [
         337
       ],
       "svg": "<svg id='quadline-4-862' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-862' class='lines' d='M 100,300 Q 300,100 0,200 Q 200,0 200,100 Q 0,0 300,300 Q 100,200 200,200 Q 0,300 300,0 Q 100,100 100,0 Q 300,200 0,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 863,
@@ -51366,7 +52228,8 @@ const indexFania880 = [
     "quadline": {
       "2605": [],
       "svg": "<svg id='quadline-4-863' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-863' class='lines' d='M 100,300 Q 200,100 200,0 Q 0,200 300,200 Q 0,0 100,100 Q 300,300 0,300 Q 300,100 300,0 Q 100,200 200,200 Q 100,0 0,100 Q 200,300 100,300 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 864,
@@ -51426,7 +52289,8 @@ const indexFania880 = [
         552
       ],
       "svg": "<svg id='quadline-4-864' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-864' class='lines' d='M 0,200 Q 100,300 200,0 Q 300,100 200,100 Q 0,0 300,300 Q 100,200 100,100 Q 300,0 0,300 Q 200,200 300,200 Q 200,300 100,0 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 865,
@@ -51476,7 +52340,8 @@ const indexFania880 = [
     "quadline": {
       "2586": [],
       "svg": "<svg id='quadline-4-865' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-865' class='lines' d='M 100,0 Q 200,300 300,100 Q 100,200 200,200 Q 0,100 0,0 Q 300,300 0,300 Q 300,0 200,100 Q 0,200 300,200 Q 100,100 100,300 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 866,
@@ -51528,7 +52393,8 @@ const indexFania880 = [
     "quadline": {
       "2609": [],
       "svg": "<svg id='quadline-4-866' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-866' class='lines' d='M 100,0 Q 200,300 200,100 Q 0,200 300,200 Q 100,100 0,0 Q 300,300 0,300 Q 300,0 300,100 Q 100,200 200,200 Q 0,100 100,300 Q 200,0 100,0 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 867,
@@ -51582,7 +52448,8 @@ const indexFania880 = [
     "quadline": {
       "2617": [],
       "svg": "<svg id='quadline-4-867' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-867' class='lines' d='M 200,300 Q 100,0 100,200 Q 0,100 300,100 Q 200,200 0,0 Q 300,300 0,300 Q 300,0 300,200 Q 200,100 100,100 Q 0,200 200,0 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 868,
@@ -51632,7 +52499,8 @@ const indexFania880 = [
         507
       ],
       "svg": "<svg id='quadline-4-868' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-868' class='lines' d='M 200,300 Q 100,0 300,200 Q 200,100 100,100 Q 0,200 0,0 Q 300,300 0,300 Q 300,0 100,200 Q 0,100 300,100 Q 200,200 200,0 Q 100,300 200,300 '/></svg>"
-    }
+    },
+    "sim": "MV"
   },
   {
     "id": 869,
@@ -51683,7 +52551,8 @@ const indexFania880 = [
         870
       ],
       "svg": "<svg id='quadline-4-869' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-869' class='lines' d='M 200,100 Q 100,0 100,300 Q 200,200 300,200 Q 0,100 0,0 Q 300,300 300,0 Q 0,300 0,200 Q 300,100 200,300 Q 100,200 100,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 870,
@@ -51736,7 +52605,8 @@ const indexFania880 = [
         869
       ],
       "svg": "<svg id='quadline-4-870' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-870' class='lines' d='M 200,100 Q 100,0 100,300 Q 200,200 0,200 Q 300,100 0,0 Q 300,300 300,0 Q 0,300 300,200 Q 0,100 200,300 Q 100,200 100,100 Q 200,0 200,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 871,
@@ -51796,7 +52666,8 @@ const indexFania880 = [
     "quadline": {
       "2506": [],
       "svg": "<svg id='quadline-4-871' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-871' class='lines' d='M 100,300 Q 200,100 200,200 Q 100,0 0,100 Q 300,200 0,0 Q 300,300 300,0 Q 0,300 300,100 Q 0,200 100,200 Q 200,0 200,300 Q 100,100 100,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 872,
@@ -51850,7 +52721,8 @@ const indexFania880 = [
         330
       ],
       "svg": "<svg id='quadline-4-872' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-872' class='lines' d='M 100,300 Q 200,100 200,200 Q 100,0 300,100 Q 0,200 0,0 Q 300,300 300,0 Q 0,300 0,100 Q 300,200 100,200 Q 200,0 200,300 Q 100,100 100,300 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 873,
@@ -51901,7 +52773,8 @@ const indexFania880 = [
     "quadline": {
       "2641": [],
       "svg": "<svg id='quadline-4-873' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-873' class='lines' d='M 0,200 Q 300,100 200,100 Q 100,0 100,300 Q 200,200 0,0 Q 300,300 300,0 Q 0,300 200,300 Q 100,200 100,100 Q 200,0 300,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 874,
@@ -51965,7 +52838,8 @@ const indexFania880 = [
         232
       ],
       "svg": "<svg id='quadline-4-874' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-874' class='lines' d='M 200,100 Q 0,200 300,200 Q 100,100 100,0 Q 200,300 0,0 Q 300,300 0,300 Q 300,0 100,300 Q 200,0 300,100 Q 100,200 200,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 875,
@@ -52013,7 +52887,8 @@ const indexFania880 = [
     "quadline": {
       "2466": [],
       "svg": "<svg id='quadline-4-875' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-875' class='lines' d='M 300,200 Q 200,100 100,100 Q 0,200 200,300 Q 100,0 0,0 Q 300,300 0,300 Q 300,0 200,0 Q 100,300 100,200 Q 0,100 300,100 Q 200,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 876,
@@ -52077,7 +52952,8 @@ const indexFania880 = [
         855
       ],
       "svg": "<svg id='quadline-4-876' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-876' class='lines' d='M 300,100 Q 0,200 100,300 Q 200,100 200,200 Q 100,0 0,0 Q 300,300 300,0 Q 0,300 100,200 Q 200,0 200,300 Q 100,100 0,100 Q 300,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "identity"
   },
   {
     "id": 877,
@@ -52126,7 +53002,8 @@ const indexFania880 = [
     "quadline": {
       "2647": [],
       "svg": "<svg id='quadline-4-877' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-877' class='lines' d='M 200,100 Q 0,200 300,200 Q 100,100 100,300 Q 200,0 0,0 Q 300,300 0,300 Q 300,0 100,0 Q 200,300 300,100 Q 100,200 200,200 Q 0,100 200,100 '/></svg>"
-    }
+    },
+    "sim": "R1"
   },
   {
     "id": 878,
@@ -52181,7 +53058,8 @@ const indexFania880 = [
         218
       ],
       "svg": "<svg id='quadline-4-878' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-878' class='lines' d='M 300,200 Q 200,100 100,100 Q 0,200 200,0 Q 100,300 0,0 Q 300,300 0,300 Q 300,0 200,300 Q 100,0 100,200 Q 0,100 300,100 Q 200,200 300,200 '/></svg>"
-    }
+    },
+    "sim": "R3"
   },
   {
     "id": 879,
@@ -52233,7 +53111,8 @@ const indexFania880 = [
         825
       ],
       "svg": "<svg id='quadline-4-879' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-879' class='lines' d='M 0,200 Q 300,100 200,300 Q 100,200 100,100 Q 200,0 0,0 Q 300,300 300,0 Q 0,300 200,100 Q 100,0 100,300 Q 200,200 300,200 Q 0,100 0,200 '/></svg>"
-    }
+    },
+    "sim": "MH"
   },
   {
     "id": 880,
@@ -52293,6 +53172,7 @@ const indexFania880 = [
         675
       ],
       "svg": "<svg id='quadline-4-880' class='order-x pad' viewbox='-2 -2 304 304'><path id='square-880' class='lines' d='M 300,100 Q 0,200 100,200 Q 200,0 200,300 Q 100,100 0,0 Q 300,300 300,0 Q 0,300 100,300 Q 200,100 200,200 Q 100,0 0,100 Q 300,200 300,100 '/></svg>"
-    }
+    },
+    "sim": "MH"
   }
 ]
