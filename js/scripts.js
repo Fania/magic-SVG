@@ -183,7 +183,7 @@ function load(pageType) {
       const inputString = document.getElementById("search");
       const inputArray = inputString.value.split(",").map(Number);
       for (let i in inputArray) {
-        const size = getCurrent("order");
+        const size = parseInt(getCurrent("order"));
         const square = inputArray[i];
         if (!index[square - 1]) {
           errorMsg.innerHTML += `#${square} doesn't exist for order ${size}. `;

@@ -189,6 +189,19 @@ input:disabled ~ span, select:disabled ~ span {
   color: rgb(250, 124, 124)
 }
 
+
+/* .svgGrid:before {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.2em;
+  line-height: 1em;
+  padding-left: 2em;
+  color: #666;
+  content: "Fania Raczinski & Dave Everitt\Asquares.cubelife.org";
+  white-space: pre;
+  text-align: right;
+} */
+
+
 .pad {
   padding: 16px;
 }

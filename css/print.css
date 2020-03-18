@@ -1,11 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Bellota|Dancing+Script|Liu+Jian+Mao+Cao|Marck+Script|Poiret+One|Sacramento&display=swap');
+
+
 @media print {
 
   @page {
     margin: 0;
     size: A4 landscape;
   }
-
 
   /* h1 { 
     string-set: doctitle content(); 
@@ -15,7 +17,6 @@
       content: string(doctitle);
     }
   } */
-
 
   /* size = how many columns */
   /* marg = how many rows */
@@ -110,14 +111,33 @@
     font-size: 2em;
   }
 
-  body.uniques {  /* 32 */
-    --size: calc((100vw - 80px) / 27);
+  body.uniques {  /* 398 */
+    --size: calc((100vw - 80px) / 26);
     --marg: calc( ( 100vh - ( var(--size) * 15 ) ) / 2 );
   }
-  body.uniques  p {
+  body.uniques p {
     display: none;
   }
-
+  body.uniques .svgGrid {
+    justify-content: start;
+  }
+  body.uniques .svgGrid:after {
+    /* font-family: Tahoma, Geneva, sans-serif; */
+    /* font-family: 'Liu Jian Mao Cao', cursive; */
+    /* font-family: 'Bellota', cursive; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Sacramento', cursive; */
+    /* font-family: 'Poiret One', cursive; */
+    /* font-family: 'Marck Script', cursive; */
+    font-size: 1.2em;
+    line-height: 1em;
+    padding-left: 2em;
+    color: #666;
+    content: "Fania Raczinski & Dave Everitt\Asquares.cubelife.org";
+    white-space: pre;
+    text-align: right;
+  }
 
 
 

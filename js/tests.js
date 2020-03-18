@@ -194,4 +194,7 @@ function testTrulyUnique(input) {
     drawSquare( uniques[u]["quadvertex"]["svg"] );
   }
 }
-testTrulyUnique(indexFania880);
+// testTrulyUnique(indexFania880);
+
+
+
