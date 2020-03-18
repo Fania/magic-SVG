@@ -189,12 +189,13 @@ function testTrulyUnique(input) {
   let uniques = input.filter(i => 
     i["sim"] === "unique" || i["sim"] === "identity"
   );
-  console.log(uniques);
+  // console.log(uniques);
+  // console.log(uniques.length);
   for (let u in uniques) {
     drawSquare( uniques[u]["quadvertex"]["svg"] );
   }
 }
-// testTrulyUnique(indexFania880);
+testTrulyUnique(indexFania880);
 
 
 

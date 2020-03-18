@@ -127,18 +127,6 @@ http://esotericarchives.com/agrippa/agrippa2.htm#contents
 
 or taken from https://www.gaspalou.fr/magic-squares/order-4.htm#1
 
-
-1. I identity
-2. R1 rotation 90° anticlockwise
-3. R2 rotation 180°
-4. R3 rotation 90° clockwise
-5. V vertical symmetry
-6. H horizontal symmetry
-7. G symmetry about the first diagonal
-8. D symmetry about the second diagonal
-
-
-
 ### Gaspalou's 32 transformations
 
 I: 
