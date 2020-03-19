@@ -55,14 +55,15 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] broken filter for order >= 7
 - [x] fix print styles for all orders
 - [x] check animation for >= order 7
-- [ ] give choice of print sizes
+- [x] run line length filter on full set of 7040 squares
+- [x] give choice of print sizes
+- [x] not super happy with print styles
+- [x] check mobile styles (reduce margins)
 - [ ] set fill-opacity/stroke-opacity="0.0" - "1.0"
 - [ ] loop through colour change
 - [ ] progress bar (loading) for animate
 - [ ] clean up unused stuff
 - [ ] refactor for node ?
-- [ ] not super happy with print styles
-- [ ] check mobile styles (reduce margins)
 - [ ] add settings to localstorage
 - [ ] change font size for larger order squares
 - [ ] fix arc size to match natural size
@@ -70,8 +71,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] add data set option
 - [ ] add options for (odd, even, odd-even) classes
 - [ ] add option for groups (I-XII)
-- [ ] run line length filter on full set of 7040 squares
-
+- [ ] regenerate arcs in new style/ both styles?
 
 
 

@@ -22,10 +22,11 @@ function generateInitialIndex(order) {
       let len = Math.ceil(svg.querySelector(".lines").getTotalLength());
       lengths[styles[j]] = len;
     }
+    const str = typeof source[i] !== "string" ? source[i].join(" ") : source[i];
     let txt = `
     {
       "id": ${i + 1},
-      "numbers": { "string": "${source[i]}", "array": [${valuesArray}] },
+      "numbers": { "string": "${str}", "array": [${valuesArray}] },
       "quadvertex": { "${lengths.quadvertex}": [] },
       "straight": { "${lengths.straight}": [] },
       "arc": { "${lengths.arc}": [] },
@@ -37,7 +38,6 @@ function generateInitialIndex(order) {
   ]`;
   return JSON.parse(output);
 }
-
 
 
 
@@ -102,7 +102,7 @@ function generateSVGs(index) {
 // console.log(final);
 // let final = generateSVGs(
 //               generateSharedLengths(
-//                 generateInitialIndex("4s")
+//                 generateInitialIndex("4FA")
 //               )
 //             );
 // console.log(final);

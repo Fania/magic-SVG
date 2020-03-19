@@ -171,11 +171,14 @@ function createArc(coordsObject, id) {
   let s = getSize(coordsObject);
   let w = s * sizeInc;
   let coords = `M${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;
-  for (let a=2; a <= (Object.keys(coordsObject).length - 1); a = a+2) {
+  // for (let a=2; a <= (Object.keys(coordsObject).length - 1); a = a+2) {
+  for (let a=1; a <= (Object.keys(coordsObject).length); a++) {
     // https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Arcs
-    coords += `A 10,10 0 1 1 ${coordsObject[a][0] * sizeInc},${coordsObject[a][1] * sizeInc} `;
+    // coords += `A 10,10 0 1 1 ${coordsObject[a][0] * sizeInc},${coordsObject[a][1] * sizeInc} `;
+    coords += `A 50,50 0 1 1 ${coordsObject[a][0] * sizeInc},${coordsObject[a][1] * sizeInc} `;
   }
-  coords += `A 10,10 0 1 1 ${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;
+  coords += `A 50,50 0 1 1 ${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;
+  // coords += `A 10,10 0 1 1 ${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;
   // drawSquare(`<svg class="order-x" style="fill: ${svgFill}; stroke: ${svgStroke}" viewbox="${-pad} ${-pad} ${w-sizeInc+pad+pad} ${w-sizeInc+pad+pad}"><path id="square-${counter}" class="lines" d="${coords}"/></svg>`);
   return `<svg id='arc-${s}-${id}' class='order-x' viewbox='${-200} ${-170} ${w-sizeInc+380} ${w-sizeInc+380}'><path id='square-${id}' class='lines arc' d='${coords}'/></svg>`;
 }

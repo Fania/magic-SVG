@@ -189,6 +189,7 @@ function load(pageType) {
           errorMsg.innerHTML += `#${square} doesn't exist for order ${size}. `;
         } else {
           const valuesString = index[square - 1]["numbers"]["string"];
+          // console.log(size, valuesString, square);
           drawAllStyles(size, valuesString, square);
         }
       }
