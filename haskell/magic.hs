@@ -236,15 +236,21 @@ main = do
   -- print $ transform3 $ head order3x
   -- print $ reduceD43 order3x
 
-  -- print $ length fania7040
-  -- print $ length $ removeCompls fania7040
-  -- print $ length $ reduceD4 fania7040
-  -- print $ length $ removeCompls $ reduceD4 fania7040
-  -- print $ length $ reduceD4 $ removeCompls fania7040
+  print $ length fania7040                           -- 7040
+  print $ length $ reduceD4 fania7040                -- 880
+  print $ length $ removeCompls fania7040            -- 3520
+  print $ length $ removeCompls $ reduceD4 fania7040 -- 880
+  print $ length $ reduceD4 $ removeCompls fania7040 -- 880
+
+  print $ length suzuki                              -- 880
+  print $ length $ reduceD4 suzuki                   -- 880
+  print $ length $ removeCompls suzuki               -- 748
+  print $ length $ reduceD4 $ removeCompls suzuki    -- 748
+  print $ length $ removeCompls $ reduceD4 suzuki    -- 748
 
   -- print $ length $ reduceD4 ORDER4.order4s
   -- print $ reduced == (sort suzuki)
-  print $ sort suzuki
+  -- print $ sort suzuki
   -- print $ intersect reduced suzuki
   -- print $ reduced \\ suzuki
   -- print $ compareMS reduced suzuki

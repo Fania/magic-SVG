@@ -111,7 +111,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - rotate the square until the smallest number in any corner is top left
 - the second number in the top row must be lower than the first number in the second row
 
-This is different to the order we employ which is normal numerical order given by the generation algorithm in Haskell.
+This is the normal numerical order given by the generation algorithm in Haskell.
 
 
 ## Classification

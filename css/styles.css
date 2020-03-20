@@ -355,6 +355,10 @@ footer img {
   display: none;
 }
 
+.white {
+  color: white;
+  stroke: white;
+}
 
 #info::before,
 #night::before,

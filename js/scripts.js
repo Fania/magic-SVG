@@ -224,22 +224,15 @@ function load(pageType) {
 
 // modals for all images
 function addModalListeners() {
-  const images = document.getElementsByTagName("svg");
-  // console.log(images);
-  for(let i=0; i < images.length; i++){
-    images[i].addEventListener("click", () => toggleModal(images[i]));
-  }
+  const [...images] = document.getElementsByTagName("svg");
+  images.forEach( i => i.addEventListener("click", () => toggleModal(i)) );
 }
 function toggleModal(image) {
-  // console.log("clicked", image);
-  // console.dir(event.target);
   let modal = document.createElement("div");
   document.body.appendChild(modal);
   modal.id = "modal";
-  // let imageSVG = event.srcElement.cloneNode();
   let clone = image.cloneNode(true);
+  clone.classList.add("white");
   modal.appendChild(clone);
-  modal.addEventListener("click", () => {
-    document.body.removeChild(modal);
-  });
+  modal.addEventListener("click", () => document.body.removeChild(modal) );
 }
