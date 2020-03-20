@@ -271,6 +271,7 @@ input:disabled ~ span, select:disabled ~ span {
 
 .agrippa {
   display: flex;
+  flex-direction: column;
 }
 .agrippa div {
   display: flex;
@@ -353,9 +354,6 @@ footer img {
 .mouseInstructions {
   display: none;
 }
-/* .touchInstructions {
-  display: block;
-} */
 
 
 #info::before,
@@ -460,6 +458,10 @@ footer.dayMode,
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .allStyles {
+    flex-direction: row;
   }
 
   #settings .tabs {

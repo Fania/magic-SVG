@@ -68,8 +68,8 @@ function getCurrent(thing) {
       return styleOptions[styleOptions.selectedIndex].value;
     case "order":
       return size;
-    case "group":
-      return groupOptions[groupOptions.selectedIndex].value;
+    // case "group":
+    //   return groupOptions[groupOptions.selectedIndex].value;
     case "dataset":
       return sources[datasetOptions[datasetOptions.selectedIndex].value];
     case "pageType":
@@ -93,23 +93,20 @@ function load(pageType) {
 
   const style = getCurrent("style");
   const order = getCurrent("order");
-  const group = getCurrent("group");
+  // const group = getCurrent("group");
   const index = getCurrent("index");
   // console.log(style, order);
 
   updateBodyClasses(getCurrent("pageType"), getCurrent("order"));
 
   if (pageType === "orderGroups") {
-
     // console.log(group);
-    if (group == "0") {
+    // if (group == "0") {
       index.forEach(idx => drawSquare(idx[style]["svg"]));
       svgGrid.classList.remove("filter", "search", "single", "dataSet");
-    } else {
-      console.log(group);
-
-
-    }
+    // } else {
+      // console.log(group);
+    // }
   } // end orderGroups
 
 
@@ -145,10 +142,19 @@ function load(pageType) {
 
 
   if (pageType === "singleInput") {
-    // DISPLAY BY NUMBER VALUES
+    // DISPLAY BY NUMBER SEQUENCE
     if (event.type === "change" || event.target.id === "values") {
       const valuesString = document.getElementById("values").value;
       // CLEAN INPUT AND CHECK
+
+
+// const test = '1 2 3 4 5 ';
+// console.log(test);
+// const re = /(,|\s)*/;
+// const nameList = test.split(re);
+// console.log(nameList);
+
+      
       const valuesArray = valuesString.split(" ").map(Number);
       const size = Math.sqrt(valuesArray.length);
       const source = indices[size] ? indices[size] : [];

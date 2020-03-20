@@ -15,8 +15,8 @@ function updateMenuStates() {
     ? padding.disabled=true : padding.disabled=false;
   type==="orderGroups" || type==="filterGroups" || type==="singleInput" 
     ? datasetOptions.disabled=true : datasetOptions.disabled=false;
-  type==="orderGroups"
-    ? groupOptions.disabled=true : groupOptions.disabled=true;
+  // type==="orderGroups"
+  //   ? groupOptions.disabled=true : groupOptions.disabled=true;
   type==="filterGroups"
     ? lenOptions.disabled=false : lenOptions.disabled=true;
   type==="filterGroups" || type==="dataSets"
