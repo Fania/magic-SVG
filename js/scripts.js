@@ -205,8 +205,35 @@ function load(pageType) {
 
 
 
-
+  addModalListeners();
   updateColours();
   updateMenuStates();
 }
 
+
+
+
+
+
+
+// modals for all images
+function addModalListeners() {
+  const images = document.getElementsByTagName("svg");
+  // console.log(images);
+  for(let i=0; i < images.length; i++){
+    images[i].addEventListener("click", () => toggleModal(images[i]));
+  }
+}
+function toggleModal(image) {
+  console.log("clicked", image);
+  // console.dir(event.target);
+  let modal = document.createElement("div");
+  document.body.appendChild(modal);
+  modal.id = "modal";
+  // let imageSVG = event.srcElement.cloneNode();
+  let clone = image.cloneNode(true);
+  modal.appendChild(clone);
+  modal.addEventListener("click", () => {
+    document.body.removeChild(modal);
+  });
+}
