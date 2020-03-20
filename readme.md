@@ -1,9 +1,10 @@
-# Draw the magic line of magic squares
+# Drawing the magic line of magic squares
 
 Uses SVG to draw the [magic line](http://recmath.org/Magic%20Squares/transform.htm#Magic%20Lines) traced by joining the integers of a magic square of order `n` in a sequence from `0-(n^2)-1`.
 
 - accepts a string of numbers only if separated by **single spaces** (not double)
 - accepts magic square strings where the lowest integer is either `0` or `1`
+
 
 ## TODO: magic square checking
 
@@ -17,10 +18,6 @@ Use code from the [magic square checker](https://github.com/DaveEveritt/magic-sq
 - [ ] finish adding and checking pandiagonal order 5 set
 - [ ] if contains '0' `arr.map(x => x + 1)`
 
-Frénicle established two simple rules to determine the [standard position](http://recmath.org/Magic%20Squares/transform.htm#Normalized%20position%20&%20Magic%20Lines) or order 4 squares, which can be used for any order:
-
-- rotate the square until the smallest number in any corner is top left
-- the second number in the top row must be lower than the first number in the second row
 
 ## TODO: interface
 
@@ -78,7 +75,6 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] resize number svgs to fit properly
 
 
-
 ## URGENT
 
 - [ ] allow comma separated strings for single-input
@@ -89,15 +85,7 @@ Frénicle established two simple rules to determine the [standard position](http
 
 
 
-## References
-
-- [SVG Fills and Strokes (MDN)](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes)
-- Possible use: [SVG++ library documentation](http://svgpp.org/index.html)
-
-
-
-
-## Theory
+# Theory
 
 
 - http://www.multimagie.com/
@@ -111,15 +99,40 @@ Frénicle established two simple rules to determine the [standard position](http
 - http://www.magic-squares.net/order4listc.htm
 - http://www.magic-squares.net/downloads.htm
 - https://archive.org/details/mathematicalrecr0000krai/page/10#maincontent
-https://archive.org/details/DeOccultaPhilosophiaLoc1533/page/n163/mode/2up
-http://esotericarchives.com/agrippa/agrippa2.htm#contents
-(H.E. Dudeney "Amusements in Mathematics" 1917)[https://www.gutenberg.org/files/16713/16713-h/16713-h.htm]
+- https://archive.org/details/DeOccultaPhilosophiaLoc1533/page/n163/mode/2up
+- http://esotericarchives.com/agrippa/agrippa2.htm#contents
+- (H.E. Dudeney "Amusements in Mathematics" 1917)[https://www.gutenberg.org/files/16713/16713-h/16713-h.htm]
 
 
+## Order
 
-**Dihedral Group D4**
+Frénicle established two simple rules to determine the [standard position](http://recmath.org/Magic%20Squares/transform.htm#Normalized%20position%20&%20Magic%20Lines) or order 4 squares, which can be used for any order:
 
-**8 transformations**
+- rotate the square until the smallest number in any corner is top left
+- the second number in the top row must be lower than the first number in the second row
+
+This is different to the order we employ which is normal numerical order given by the generation algorithm in Haskell.
+
+
+## Classification
+
+- **Semi-magic**: rows & columns = magic constant
+- **Simple** rows & columns & two diagonals = magic constant
+- **Self-complementary** complementary = rotated / reflected copy
+- **Associative/symmetric** every number added to the number equidistant, in a straight line, from the center gives n2 + 1. Do not exist for squares of singly even order. All associated magic squares are self-complementary magic squares as well.
+- **Pandiagonal/panmagic/perfect** rows & columns & two diagonals & broken diagonals = magic constant. Do not exist for singly even orders.
+- **Ultra** associative and pandiagonal. Only for orders n ≥ 5.
+- **Bordered** remains magic when the rows and columns at the outer edge is removed. They are also called concentric bordered magic squares if removing a border of a square gives another smaller bordered magic square. Only for orders  n ≥ 5.
+- **Composite** can be partitioned into smaller magic subsquares, wholly or partly, which may or may not overlap with each other. By this definition, bordered magic squares are also composite magic squares.
+- **Most-perfect** magic square when it is a pandiagonal magic square with two further properties (i) each 2×2 subsquare add to 1/k of the magic constant where n = 4k, and (ii) all pairs of integers distant n/2 along any diagonal (major or broken) are complementary (i.e. they sum to n2 + 1). Only for squares of doubly even order. All pandiagonal squares of order 4 are also most perfect.
+- **Multimagic** remains magic even if all its numbers are replaced by their k-th power for 1 ≤ k ≤ P. They are also known as P-multimagic square or satanic squares. They are also referred to as bimagic squares, trimagic squares, tetramagic squares, pentamagic squares when the value of P is 2, 3, 4, and 5 respectively.
+
+
+## Transformation
+
+D4 rotations and reflections are considered trivial.
+
+**Dihedral Group D4 / Octic Group**
 
 1. R0 identity
 2. R1 rotation 90° anticlockwise
@@ -132,9 +145,8 @@ http://esotericarchives.com/agrippa/agrippa2.htm#contents
 
 
 
-or taken from https://www.gaspalou.fr/magic-squares/order-4.htm#1
-
 ### Gaspalou's 32 transformations
+https://www.gaspalou.fr/magic-squares/order-4.htm#1
 
 I: 
 A1 A2 A3 A4 
