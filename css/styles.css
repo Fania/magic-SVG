@@ -421,6 +421,25 @@ footer.dayMode,
 
 
 
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.9);
+}
+#modal svg {
+  width: 90vw;
+  height: 90vh;
+}
+
+
+
+
 /* and (orientation: landscape) */
 @media screen and (min-width: 500px) {
   #single-x {
@@ -495,23 +514,6 @@ footer.dayMode,
   .search .allStyles .order-x, .search .allStyles .order-xt,
   .single .allStyles .order-x, .single .allStyles .order-xt {
     width: calc(95vw / 3);
-  }
-
-
-  #modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0,0,0,0.9);
-  }
-  #modal svg {
-    width: 90vw;
-    height: 90vh;
   }
 
 }

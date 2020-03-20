@@ -225,7 +225,7 @@ function addModalListeners() {
   }
 }
 function toggleModal(image) {
-  console.log("clicked", image);
+  // console.log("clicked", image);
   // console.dir(event.target);
   let modal = document.createElement("div");
   document.body.appendChild(modal);
