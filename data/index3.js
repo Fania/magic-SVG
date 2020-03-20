@@ -3,17 +3,7 @@ const index3 = [
     "id": 1,
     "numbers": {
       "string": "4 9 2 3 5 7 8 1 6",
-      "array": [
-        4,
-        9,
-        2,
-        3,
-        5,
-        7,
-        8,
-        1,
-        6
-      ],
+      "array": [4,9,2,3,5,7,8,1,6],
       "svg": "<svg id='numbers-3-1' class='order-xt pad' viewbox='0 -50 280 270'>undefined<text x='100' y='200'>01</text><text x='200' y='0'>02</text><text x='0' y='100'>03</text><text x='0' y='0'>04</text><text x='100' y='100'>05</text><text x='200' y='200'>06</text><text x='200' y='100'>07</text><text x='0' y='200'>08</text><text x='100' y='0'>09</text></svg>"
     },
     "quadvertex": {

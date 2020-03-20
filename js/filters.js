@@ -6,7 +6,7 @@ function populateOptions(order,style) {
   // console.log(order, style);
   lenOptions.innerHTML = "";
   if(style !== "numbers") {
-    const allLengths = orderIndex[order].map(o => `${Object.keys(o[style])[0]} (${o[style][Object.keys(o[style])[0]].length + 1})`);
+    const allLengths = indices[order].map(o => `${Object.keys(o[style])[0]} (${o[style][Object.keys(o[style])[0]].length + 1})`);
     const list = [...new Set(allLengths.sort())];
     lenOptions.disabled = false;
     for (let l in list) {

@@ -9,7 +9,7 @@ Uses SVG to draw the [magic line](http://recmath.org/Magic%20Squares/transform.h
 
 Use code from the [magic square checker](https://github.com/DaveEveritt/magic-square) for the following:
 
-- [ ] remove non-numeric characters
+- [x] remove non-numeric characters
 - [ ] remove returns, line feeds
 - [ ] remove duplicate spaces
 - [ ] fix errors caused by strings without a single space separating numbers
@@ -72,7 +72,7 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] add options for (odd, even, odd-even) classes
 - [ ] add option for groups (I-XII)
 - [ ] regenerate arcs in new style/ both styles?
-
+- [ ] allow comma separated strings for single-input
 
 
 ## URGENT

@@ -7,7 +7,7 @@ const styles = ["quadvertex", "straight", "arc", "quadline"];
 // STEP 1
 // create master index
 function generateInitialIndex(order) {
-  const source = squareOrder[order];
+  const source = sources[order];
   let output = `[`;
   let lengths = {};
   for (let i=0; i < source.length; i++) {
@@ -222,7 +222,7 @@ function showAllPNGs(index,style) {
 // generate animation CSS
 function generateAnimationCSS(order, style, sync) {
   let output = `/* Order-${order} ${style} ${sync ? "lengths" : "speeds"} */`;
-  const index = orderIndex[order];
+  const index = indices[order];
   for (let i=0; i < index.length; i++) {
     const len = Object.keys(index[i][style])[0];
     const lengths = `
@@ -302,7 +302,7 @@ function comparePNGs(i, pngA, pngB) {
 
 
 function generateSimilaritiesX(order,style) {
-  const index = orderIndex[order];
+  const index = indices[order];
   // const pngs = orderPNGs[order];
   const similarities = [];
   index.forEach( (idx, i) => {

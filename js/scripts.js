@@ -3,15 +3,14 @@
 
 
 
-// see squares folder
-const squareOrder = {
+// see data folder
+const sources = {
+  "agrippa": agrippa,
   "3": order3,
-  "4": order4,
-  "4s": suzukiSorted,
-  "4FA": fania7040,
-  "4FNC": fania3520,
+  "4": suzuki,
   "4FR": fania880,
-  // "4.0": reduced4,
+  "4FNC": fania3520,
+  "4FA": fania7040,
   "5": order5,
   "6": order6,
   "7": order7,
@@ -23,23 +22,21 @@ const squareOrder = {
   "13": order13,
   "14": order14,
   "15": order15,
-  // "16": order16,
+  "16": order16,
   "17": order17,
   "18": order18,
   "19": order19,
   "20": order20
 }
 
-// without png data
-const orderIndex = {
+// see data folder
+const indices = {
   "3": index3,
   "4": index4,
   "4s": index4sorted,
-  "4FA": indexFania7040,
-  "4FNC": indexFania3520,
   "4FR": indexFania880,
-  // "4m": index4mini,
-  // "4m2": index4mini2,
+  "4FNC": indexFania3520,
+  "4FA": indexFania7040,
   "5": index5,
   "6": index6,
   "7": index7,
@@ -57,20 +54,7 @@ const orderIndex = {
   "20": index20
 }
 
-const datasetIndex = {
-  "agrippa": agrippa,
-  "suzuki": suzuki
-}
 
-// const orderPNGs = {
-//   // "3": pngs3,
-//   "4": pngs4
-//   // "5": pngs5,
-//   // "6": pngs6,
-//   // "7": pngs7,
-//   // "8": pngs8,
-//   // "9": pngs9
-// }
 
 
 
@@ -79,15 +63,15 @@ function getCurrent(thing) {
   let size = orderOptions[orderOptions.selectedIndex].value;
   switch (thing) {
     case "index": 
-      return orderIndex[size];
+      return indices[size];
     case "style":
       return styleOptions[styleOptions.selectedIndex].value;
     case "order":
       return size;
     case "group":
       return groupOptions[groupOptions.selectedIndex].value;
-    case "dataSet":
-      return datasetIndex[datasetOptions[datasetOptions.selectedIndex].value];
+    case "dataset":
+      return sources[datasetOptions[datasetOptions.selectedIndex].value];
     case "pageType":
       return document.querySelector('input[name="pageType"]:checked').id;
     case "length":
@@ -109,7 +93,7 @@ function load(pageType) {
 
   const style = getCurrent("style");
   const order = getCurrent("order");
-  const group = getCurrent("group");
+  // const group = getCurrent("group");
   const index = getCurrent("index");
   // console.log(style, order);
 
@@ -162,7 +146,7 @@ function load(pageType) {
       const valuesString = document.getElementById("values").value;
       const valuesArray = valuesString.split(" ").map(Number);
       const size = Math.sqrt(valuesArray.length);
-      const source = orderIndex[size] ? orderIndex[size] : [];
+      const source = indices[size] ? indices[size] : [];
       const match = source.find(i => i.numbers.string === valuesString);
       const id = match ? match.id : 0;
 
@@ -202,7 +186,7 @@ function load(pageType) {
 
 
   if (pageType === "dataSets") {
-    const chosenDataSet = getCurrent("dataSet");
+    const chosenDataSet = getCurrent("dataset");
     for (let i in chosenDataSet) {
       let square = chosenDataSet[i];
       let order = Math.sqrt(square.length);
