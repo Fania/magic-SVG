@@ -111,6 +111,16 @@
     font-size: 2em;
   }
 
+
+
+  .dataSet .allStyles .order-x, .dataSet .allStyles .order-xt,
+  .search .allStyles .order-x, .search .allStyles .order-xt,
+  .single .allStyles .order-x, .single .allStyles .order-xt {
+    width: calc(95vw / 3);
+  }
+
+
+
   body.uniques {  /* 398 */
     --size: calc((100vw - 80px) / 26);
     --marg: calc( ( 100vh - ( var(--size) * 15 ) ) / 2 );
@@ -138,6 +148,9 @@
     white-space: pre;
     text-align: right;
   }
+
+
+
 
 
 

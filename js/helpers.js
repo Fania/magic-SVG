@@ -2,7 +2,7 @@
 
 
 const styles = ["numbers", "straight", "quadvertex", "quadline", "arc", "altarc"];
-
+const orders = ["3","4","4R","4RA","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
 
 // STEP 1
 // create master index with lengths and svg data
@@ -89,7 +89,7 @@ function printNewIndex(order) {
   download.setAttribute('download', `index${order}.js`);
 }
 
-// printNewIndex( "20" );
+// printNewIndex( "4RA" );
 
 
 
@@ -105,7 +105,7 @@ function printNewIndex(order) {
 function generateSimilarities(index) {
   // console.log(index);
   index.forEach(idx => {
-    console.log(idx);
+    // console.log(idx);
     idx["simQuadVertex"] = duplicatesSorted[idx.id -1][1];
   });
   return index;
@@ -167,6 +167,53 @@ function makeTextFile(text) {
 
 
 
+
+
+
+// GENERATE ANIMATION CSS
+function printNewAnimCSS(style, sync) {
+  let output = "";
+  orders.forEach( order => {
+    output += `\n\n/* Order-${order} ${style} ${sync ? "lengths" : "speeds"} */`;
+    const index = indices[order];
+    index.forEach( idx => {
+      const len = Object.keys(idx[style])[0];
+      if (sync) {
+        const lengths = `
+#${style}-${order}-${idx.id} .lines { stroke-dasharray: ${len}; stroke-dashoffset: ${len}; }`;
+        output += lengths;
+      } else {
+        const speeds = `
+#${style}-${order}-${idx.id} .lines { animation: dash ${len/1000 * 2}s ease-in-out alternate infinite; }`;
+        output += speeds;
+      }
+    });
+  });
+  download.href = makeTextFile( output );
+  download.innerText = `Download css for ${style} ${sync ? "lengths" : "speeds"}`;
+  download.setAttribute('download', `${style}${sync ? "Lengths" : "Speeds"}.css`);
+}
+
+// printNewAnimCSS( "altarc", false );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // generate separate index for png data
 function generatePNGs(index, transformation, degree) {
   let pngIndex = [];
@@ -211,37 +258,6 @@ function showAllPNGs(index,style) {
 // showAllPNGs(jpegs4rot90,"quadvertex");
 // showAllPNGs("straight");
 // showAllPNGs("quadline");
-
-
-
-
-
-
-
-
-
-// generate animation CSS
-function generateAnimationCSS(order, style, sync) {
-  let output = `/* Order-${order} ${style} ${sync ? "lengths" : "speeds"} */`;
-  const index = indices[order];
-  for (let i=0; i < index.length; i++) {
-    const len = Object.keys(index[i][style])[0];
-    const lengths = `
-#${style}-${order}-${i + 1} .lines { stroke-dasharray: ${len}; stroke-dashoffset: ${len}; }`;
-    const speeds = `
-#${style}-${order}-${i + 1} .lines { animation: dash ${len/1000 * 2}s ease-in-out alternate infinite; }`;
-    output += sync ? lengths : speeds;
-  }
-  return output;
-}
-// console.log( generateAnimationCSS( 3, "quadvertex", false ) );
-// console.log( generateAnimationCSS( 4, "quadvertex", false ) );
-// console.log( generateAnimationCSS( 5, "quadvertex", false ) );
-// console.log( generateAnimationCSS( 6, "quadvertex", false ) );
-// console.log( generateAnimationCSS( 7, "quadvertex", false ) );
-// console.log( generateAnimationCSS( 8, "quadvertex", false ) );
-// console.log( generateAnimationCSS( 9, "quadvertex", false ) );
-
 
 
 

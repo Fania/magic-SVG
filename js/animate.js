@@ -25,7 +25,7 @@ noAnimate.addEventListener("change", () => {
 function startAnimatingAll(sync) {
   const pageType = getCurrent("pageType");
   const styles = pageType === "singleInput" 
-                  ? ["quadvertex", "quadline", "arc", "straight"] 
+                  ? ["straight", "quadvertex", "quadline", "arc", "altarc"] 
                   : [getCurrent("style")];
   stopAnimatingAll();  // remove old styles  
   styles.forEach(st => {
@@ -51,4 +51,7 @@ function stopAnimatingAll() {
   styleFiles.forEach(sf => { if (sf) document.head.removeChild(sf) });
   svgGrid.classList.remove("animateEvenly");
 }
+
+
+
 
