@@ -18,12 +18,12 @@ function drawAllStyles(order, valuesArray, id) {
   let str = valuesArray.join(" ");
   let text = `
     <div class="allStyles">
-      ${prepareSVG("numbers",coordsObject,id)}
-      ${prepareSVG("straight",coordsObject,id)}
-      ${prepareSVG("quadvertex",coordsObject,id)}
-      ${prepareSVG("quadline",coordsObject,id)}
-      ${prepareSVG("arc",coordsObject,id)}
-      ${prepareSVG("altarc",coordsObject,id)}
+      ${prepareSVG(order,"numbers",coordsObject,id)}
+      ${prepareSVG(order,"straight",coordsObject,id)}
+      ${prepareSVG(order,"quadvertex",coordsObject,id)}
+      ${prepareSVG(order,"quadline",coordsObject,id)}
+      ${prepareSVG(order,"arc",coordsObject,id)}
+      ${prepareSVG(order,"altarc",coordsObject,id)}
       <p>Order ${order} <strong>#${id}</strong>: ${str}</p>
     </div>
   `;
@@ -36,8 +36,8 @@ function drawOurOwn(order, valuesArray, id) {
   magicConstant(order,valuesArray);
   let text = `
     <div>
-      ${prepareSVG("numbers",coordsObject,id)}
-      ${prepareSVG("quadvertex",coordsObject,id)}
+      ${prepareSVG(order,"numbers",coordsObject,id)}
+      ${prepareSVG(order,"quadvertex",coordsObject,id)}
     </div>
   `;
   drawSquare(text);
@@ -51,10 +51,30 @@ function drawTransforms(order, valuesArray, transType) {
     <div class="transDiv">
       <div>
         <div>${transType}</div>
-        ${prepareSVG("numbers",coordsObject, 0)}
-        ${prepareSVG("quadvertex",coordsObject, 0)}
+        ${prepareSVG(order,"numbers",coordsObject, 0)}
+        ${prepareSVG(order,"quadvertex",coordsObject, 0)}
       </div>
       <p>${valuesArray.join(" ")}</p>
+    </div>
+  `;
+  drawSquare(text);
+}
+
+
+function drawAgrippa(order, valuesArray, name) {
+  const coordsObject = getCoords(order,valuesArray);
+  let str = valuesArray.join(" ");
+  let text = `
+    <div class="agrippa">
+      <p>${name}</p>
+      <div>
+        ${prepareSVG(order,"numbers",coordsObject,0)}
+        ${prepareSVG(order,"straight",coordsObject,0)}
+        ${prepareSVG(order,"quadvertex",coordsObject,0)}
+        ${prepareSVG(order,"quadline",coordsObject,0)}
+        ${prepareSVG(order,"arc",coordsObject,0)}
+        ${prepareSVG(order,"altarc",coordsObject,0)}
+      </div>
     </div>
   `;
   drawSquare(text);
@@ -89,35 +109,33 @@ function getCoords(order, valuesArray) {
 
 
 // style, coordsObject, id
-function prepareSVG(style, coordsObject, id) {
+function prepareSVG(order, style, coordsObject, id) {
   // console.log(`preparing ${style} SVG for square ${c}`);
   switch(style) {
     case "numbers":
-      return createNumberSVGs(coordsObject, id);
+      return createNumberSVGs(order, coordsObject, id);
     case "straight":
-      return createPolyline(coordsObject, id);
+      return createPolyline(order, coordsObject, id);
     case "quadvertex":
-      return createQuadraticCurveVertices(coordsObject, id);
+      return createQuadraticCurveVertices(order, coordsObject, id);
     case "quadline":
-      return createQuadraticCurveLines(coordsObject, id);
+      return createQuadraticCurveLines(order, coordsObject, id);
     case "arc":
-      return createArc(coordsObject, id);
+      return createArc(order, coordsObject, id);
     case "altarc":
-      return createArcAlt(coordsObject, id);
+      return createArcAlt(order, coordsObject, id);
     default:
-      return createQuadraticCurveVertices(coordsObject, id);
+      return createQuadraticCurveVertices(order, coordsObject, id);
   }
 }
 
 
 
 
-function createNumberSVGs(coordsObject, id) {
+function createNumberSVGs(order, coordsObject, id) {
   // console.log(`preparing number matrix svg for square ${counter}`);
   let texts;
-  // let s = getSize(coordsObject);
-  const order = getCurrent("order");
-  let w = order * sizeInc;
+  let w = parseInt(order) * sizeInc;
   for (let a in coordsObject) {
     texts += `<text x='${coordsObject[a][0] * 100}' y='${coordsObject[a][1] * 100}'>${a.padStart(2, '0')}</text>`;
   }
@@ -126,11 +144,9 @@ function createNumberSVGs(coordsObject, id) {
 }
 
 
-function createPolyline(coordsObject, id) {
+function createPolyline(order,coordsObject, id) {
   // console.log(`preparing straight polyline svg for square ${counter}`);
-  // let s = getSize(coordsObject);
-  const order = getCurrent("order");
-  let w = order * sizeInc;
+  let w = parseInt(order) * sizeInc;
   let coords = "M";
   for (let i in coordsObject) {
     coords += `${coordsObject[i][0] * sizeInc},${coordsObject[i][1] * sizeInc} `;
@@ -141,11 +157,10 @@ function createPolyline(coordsObject, id) {
 }
 
 
-function createQuadraticCurveVertices(coordsObject, id) {
+function createQuadraticCurveVertices(order, coordsObject, id) {
   // console.log(`preparing quadratic curve on vertices svg for square ${counter}`);
-  // let s = getSize(coordsObject);
-  const order = getCurrent("order");
-  let w = order * sizeInc;
+  let w = parseInt(order) * sizeInc;
+  // console.log(order, parseInt(order), w);
 
   let fstx = coordsObject[1][0] * sizeInc;
   let fsty = coordsObject[1][1] * sizeInc;
@@ -196,11 +211,9 @@ function createQuadraticCurveVertices(coordsObject, id) {
 }
 
 
-function createQuadraticCurveLines(coordsObject, id) {
+function createQuadraticCurveLines(order,coordsObject, id) {
   // console.log(`preparing quadratic curve on lines svg for square ${counter}`);
-  // let s = getSize(coordsObject);
-  const order = getCurrent("order");
-  let w = order * sizeInc;
+  let w = parseInt(order) * sizeInc;
   let len = Object.keys(coordsObject).length;
   let coords = `M ${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;
   // for (let a=2; a <= (len - 1); a = a+2) {
@@ -213,11 +226,9 @@ function createQuadraticCurveLines(coordsObject, id) {
 }
 
 
-function createArc(coordsObject, id) {
+function createArc(order,coordsObject, id) {
   // console.log(`preparing arc experiment svg for square ${counter}`);
-  // let s = getSize(coordsObject);
-  const order = getCurrent("order");
-  let w = order * sizeInc;
+  let w = parseInt(order) * sizeInc;
   let coords = `M${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;
   for (let a=1; a <= (Object.keys(coordsObject).length); a++) {
     // https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Arcs
@@ -228,11 +239,9 @@ function createArc(coordsObject, id) {
 }
 
 
-function createArcAlt(coordsObject, id) {
+function createArcAlt(order,coordsObject, id) {
   // console.log(`preparing arc experiment svg for square ${counter}`);
-  // let s = getSize(coordsObject);
-  const order = getCurrent("order");
-  let w = order * sizeInc;
+  let w = parseInt(order) * sizeInc;
   let coords = `M${coordsObject[1][0] * sizeInc},${coordsObject[1][1] * sizeInc} `;
   for (let a=2; a <= (Object.keys(coordsObject).length - 1); a = a+2) {
     // https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Arcs

@@ -196,7 +196,7 @@ function load(pageType) {
     for (let i in chosenDataSet) {
       let square = chosenDataSet[i];
       let order = Math.sqrt(square.length);
-      drawAllStyles(order,square,0)
+      drawAgrippa(order,square,i)
     }
     svgGrid.classList.add("dataSet");
     svgGrid.classList.remove("search", "single", "filter");

@@ -269,13 +269,16 @@ input:disabled ~ span, select:disabled ~ span {
 }
 
 
-.agrippa svg {
-  width: 100%;
-  height: 100%;
+.agrippa {
+  display: flex;
+}
+.agrippa div {
+  display: flex;
+  flex-wrap: wrap;
 }
 .agrippa p {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 

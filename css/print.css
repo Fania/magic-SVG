@@ -31,6 +31,10 @@
     --size: calc((100vw - 80px) / 40);
     --marg: calc( ( 100vh - ( var(--size) * 22 ) ) / 2 );
   }
+  body.orderGroups.order4R {  /* 880 */
+    --size: calc((100vw - 80px) / 40);
+    --marg: calc( ( 100vh - ( var(--size) * 22 ) ) / 2 );
+  }
   body.orderGroups.order5 {  /* 23 */
     --size: calc((100vw - 80px) / 6);
     --marg: calc( ( 100vh - ( var(--size) * 4 ) ) / 2 );

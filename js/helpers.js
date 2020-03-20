@@ -16,7 +16,7 @@ function generateInitialIndex(order) {
     styles.forEach( style => {
       const size = parseInt(order);
       const coordsObject = getCoords(size,valuesArray);
-      const svgString = prepareSVG(style,coordsObject,i+1);
+      const svgString = prepareSVG(order,style,coordsObject,i+1);
       const svg = new DOMParser().parseFromString(svgString, 'text/html');
       const len = style == "numbers" ? 0
                   : Math.ceil(svg.querySelector(".lines").getTotalLength());
@@ -82,14 +82,14 @@ function printNewIndex(order) {
   let final = generateSharedLengths(
                 generateInitialIndex(order)
               );
-  if(order === "4R" || order === "4") final = generateSimilarities(final);
+  if(order === "4R") final = generateSimilarities(final);
   const fullText = `const index${order} = ${JSON.stringify(final)};`;
   download.href = makeTextFile( fullText );
   download.innerText = `Download index for order ${order}`;
   download.setAttribute('download', `index${order}.js`);
 }
 
-// printNewIndex( "4RA" );
+// printNewIndex( "4" );
 
 
 

@@ -59,6 +59,9 @@ Frénicle established two simple rules to determine the [standard position](http
 - [x] give choice of print sizes
 - [x] not super happy with print styles
 - [x] check mobile styles (reduce margins)
+- [x] regenerate arcs in new style/ both styles?
+- [x] fix single input for squares not already catalogued
+- [x] generate animations for larger orders 10 - 20
 - [ ] set fill-opacity/stroke-opacity="0.0" - "1.0"
 - [ ] loop through colour change
 - [ ] progress bar (loading) for animate
@@ -72,40 +75,15 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] allow ranges in single input
 - [ ] add options for (odd, even, odd-even) classes
 - [ ] add option for groups (I-XII)
-- [ ] allow comma separated strings for single-input
+- [ ] resize number svgs to fit properly
+
 
 
 ## URGENT
 
-- [ ] regenerate arcs in new style/ both styles?
-- [ ] fix single input for squares not already catalogued
-- [ ] generate animations for larger orders 10 - 20
+- [ ] allow comma separated strings for single-input
 
 
-
-- [ ] order 3
-- [ ] order 4 suzuki
-- [ ] order 4 fania 7040
-- [ ] order 4 fania 3520
-- [x] order 4 fania 880
-- [ ] order 5
-- [ ] order 6
-- [ ] order 7
-- [ ] order 8
-- [ ] order 9
-- [ ] order 10
-- [ ] order 11
-- [ ] order 12
-- [ ] order 13
-- [ ] order 14
-- [ ] order 15
-- [ ] order 16
-- [ ] order 17
-- [ ] order 18
-- [ ] order 19
-- [ ] order 20
-
-- [ ] anim
 
 
 
