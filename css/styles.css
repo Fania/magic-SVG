@@ -488,4 +488,10 @@ footer.dayMode,
     height: calc(95vw / 5);
   }
 
+  .dataSet .allStyles .order-x, .dataSet .allStyles .order-xt,
+  .search .allStyles .order-x, .search .allStyles .order-xt,
+  .single .allStyles .order-x, .single .allStyles .order-xt {
+    width: calc(95vw / 3);
+  }
+
 }

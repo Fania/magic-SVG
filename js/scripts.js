@@ -5,38 +5,38 @@
 
 // see data folder
 const sources = {
-  "agrippa": agrippa,
-  "3": order3,
-  "4": suzuki,
-  "4FR": fania880,
-  "4FNC": fania3520,
-  "4FA": fania7040,
-  "5": order5,
-  "6": order6,
-  "7": order7,
-  "8": order8,
-  "9": order9,
-  "10": order10,
-  "11": order11,
-  "12": order12,
-  "13": order13,
-  "14": order14,
-  "15": order15,
-  "16": order16,
-  "17": order17,
-  "18": order18,
-  "19": order19,
-  "20": order20
+  "agrippa": sourceAgrippa,
+  "3": sourceOrder3,
+  "4": sourceSuzuki,
+  "4R": sourceRaczinski880,
+  "4RNC": sourceRaczinski3520,
+  "4RA": sourceRaczinski7040,
+  "5": sourceOrder5,
+  "6": sourceOrder6,
+  "7": sourceOrder7,
+  "8": sourceOrder8,
+  "9": sourceOrder9,
+  "10": sourceOrder10,
+  "11": sourceOrder11,
+  "12": sourceOrder12,
+  "13": sourceOrder13,
+  "14": sourceOrder14,
+  "15": sourceOrder15,
+  "16": sourceOrder16,
+  "17": sourceOrder17,
+  "18": sourceOrder18,
+  "19": sourceOrder19,
+  "20": sourceOrder20
 }
 
 // see data folder
 const indices = {
   "3": index3,
   "4": index4,
-  "4s": index4sorted,
-  "4FR": index4FR,
-  "4FNC": indexFania3520,
-  "4FA": indexFania7040,
+  // "4s": index4sorted,
+  "4R": index4R,
+  "4RNC": index4RNC,
+  "4RA": index4RA,
   "5": index5,
   "6": index6,
   "7": index7,
@@ -48,6 +48,7 @@ const indices = {
   "13": index13,
   "14": index14,
   "15": index15,
+  "16": index16,
   "17": index17,
   "18": index18,
   "19": index19,
@@ -114,7 +115,8 @@ function load(pageType) {
 
 
 
-  if (pageType === "filterGroups") {
+  if (pageType === "filterGroups" && style !== "numbers") {
+    errorMsg.innerText = "";
     populateOptions(order,style);
     // make sure appropriate length is selected
     if (selectedLenIndex > lenOptions.options.length) { selectedLenIndex = 0; }
@@ -124,11 +126,12 @@ function load(pageType) {
       Object.keys(i[style])[0] === chosenLength);
     for (let i in allPerChosenLength) {
       let square = allPerChosenLength[i];
+      let str = (square.numbers.array).join(" ");
       let text = `
         <div>
           ${square[style]["svg"]}
           ${square["numbers"]["svg"]}
-          <p><strong>#${square.id}:</strong> ${square.numbers.string}</p>
+          <p><strong>#${square.id}:</strong> ${str}</p>
         </div>
       `;
       drawSquare(text);
@@ -136,7 +139,9 @@ function load(pageType) {
     svgGrid.classList.add("filter");
     svgGrid.classList.remove("search", "single", "dataSet");
   } // end filterGroups
-
+  if (pageType === "filterGroups" && style == "numbers") {
+    errorMsg.innerText = "Can't select length filter for number style.";
+  }
 
 
 
@@ -144,6 +149,7 @@ function load(pageType) {
     // DISPLAY BY NUMBER VALUES
     if (event.type === "change" || event.target.id === "values") {
       const valuesString = document.getElementById("values").value;
+      // CLEAN INPUT AND CHECK
       const valuesArray = valuesString.split(" ").map(Number);
       const size = Math.sqrt(valuesArray.length);
       const source = indices[size] ? indices[size] : [];
@@ -154,7 +160,7 @@ function load(pageType) {
         errorMsg.innerHTML = errorChecks(valuesArray)[1];
         // call other input checks with 'valuesArray' here
       } else {
-        drawAllStyles(size, valuesString, id);
+        drawAllStyles(size, valuesArray, id);
         svgGrid.classList.add("single");
         svgGrid.classList.remove("search", "filter", "dataSet");
         values.classList.add("current");
@@ -172,9 +178,9 @@ function load(pageType) {
         if (!index[square - 1]) {
           errorMsg.innerHTML += `#${square} doesn't exist for order ${size}. `;
         } else {
-          const valuesString = index[square - 1]["numbers"]["string"];
+          const valuesArray = index[square - 1]["numbers"]["array"];
           // console.log(size, valuesString, square);
-          drawAllStyles(size, valuesString, square);
+          drawAllStyles(size, valuesArray, square);
         }
       }
       svgGrid.classList.add("search");
@@ -190,7 +196,7 @@ function load(pageType) {
     for (let i in chosenDataSet) {
       let square = chosenDataSet[i];
       let order = Math.sqrt(square.length);
-      drawAllStyles(order,square.join(" "),0)
+      drawAllStyles(order,square,0)
     }
     svgGrid.classList.add("dataSet");
     svgGrid.classList.remove("search", "single", "filter");

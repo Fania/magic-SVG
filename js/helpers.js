@@ -1,7 +1,7 @@
 "use strict";
 
 
-const styles = ["numbers", "straight", "quadvertex", "quadline", "arc"];
+const styles = ["numbers", "straight", "quadvertex", "quadline", "arc", "altarc"];
 
 
 // STEP 1
@@ -33,7 +33,9 @@ function generateInitialIndex(order) {
       "quadline":   { "${lengths.quadline[0]}": [], 
                       "svg": "${lengths.quadline[1]}" },
       "arc":        { "${lengths.arc[0]}": [], 
-                      "svg": "${lengths.arc[1]}" }
+                      "svg": "${lengths.arc[1]}" },
+      "altarc":     { "${lengths.altarc[0]}": [], 
+                      "svg": "${lengths.altarc[1]}" }
     }${ (i!==(source.length -1)) ? "," : "" }`;
     output += txt;
   });
@@ -74,12 +76,37 @@ function generateSharedLengths(index) {
 
 
 
-
 // STEP 3
+// GENERATE NEW INDEX HERE IN ONE COMMAND
+function printNewIndex(order) {
+  let final = generateSharedLengths(
+                generateInitialIndex(order)
+              );
+  if(order === "4R" || order === "4") final = generateSimilarities(final);
+  const fullText = `const index${order} = ${JSON.stringify(final)};`;
+  download.href = makeTextFile( fullText );
+  download.innerText = `Download index for order ${order}`;
+  download.setAttribute('download', `index${order}.js`);
+}
+
+// printNewIndex( "20" );
+
+
+
+
+
+
+
+
+
+
+// STEP 4
 // add similarity data from manual list
 function generateSimilarities(index) {
+  // console.log(index);
   index.forEach(idx => {
-    idx["sim"] = duplicatesSorted[idx.id -1][1];
+    console.log(idx);
+    idx["simQuadVertex"] = duplicatesSorted[idx.id -1][1];
   });
   return index;
 }
@@ -90,19 +117,8 @@ function generateSimilarities(index) {
 
 
 
-// GENERATE NEW INDEX HERE IN ONE COMMAND
-function printNewIndex(order) {
-  const final = generateSimilarities( 
-                  generateSharedLengths(
-                    generateInitialIndex(order)
-                  )
-                );
-  const fullText = `const index${order} = ${JSON.stringify(final)};`;
-  download.href = makeTextFile( fullText );
-  download.innerText = "Download";
-}
 
-// printNewIndex( "4FR" );
+
 
 
 

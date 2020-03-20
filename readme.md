@@ -83,6 +83,34 @@ Frénicle established two simple rules to determine the [standard position](http
 
 
 
+- [ ] order 3
+- [ ] order 4 suzuki
+- [ ] order 4 fania 7040
+- [ ] order 4 fania 3520
+- [x] order 4 fania 880
+- [ ] order 5
+- [ ] order 6
+- [ ] order 7
+- [ ] order 8
+- [ ] order 9
+- [ ] order 10
+- [ ] order 11
+- [ ] order 12
+- [ ] order 13
+- [ ] order 14
+- [ ] order 15
+- [ ] order 16
+- [ ] order 17
+- [ ] order 18
+- [ ] order 19
+- [ ] order 20
+
+- [ ] anim
+
+
+
+
+
 ## References
 
 - [SVG Fills and Strokes (MDN)](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes)
