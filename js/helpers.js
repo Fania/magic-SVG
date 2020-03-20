@@ -1,39 +1,42 @@
 "use strict";
 
 
-const styles = ["quadvertex", "straight", "arc", "quadline"];
+const styles = ["numbers", "straight", "quadvertex", "quadline", "arc"];
 
 
 // STEP 1
-// create master index
+// create master index with lengths and svg data
 function generateInitialIndex(order) {
   const source = sources[order];
+  // console.log(source);
   let output = `[`;
   let lengths = {};
-  for (let i=0; i < source.length; i++) {
-    let valuesArray = ["4FA","4FNC","4FR","4s"].includes(order)
-                      ? source[i] 
-                      : source[i].split(" ").map(Number);
-    for (let j=0; j < styles.length; j++) {
-      let o = (typeof order)=="number" ? order : 4;
-      let coordsObject = getCoords(o,valuesArray);
-      let svgString = prepareSVG(styles[j],coordsObject,i+1);
-      let svg = new DOMParser().parseFromString(svgString, 'text/html');
-      let len = Math.ceil(svg.querySelector(".lines").getTotalLength());
-      lengths[styles[j]] = len;
-    }
-    const str = typeof source[i] !== "string" ? source[i].join(" ") : source[i];
-    let txt = `
-    {
-      "id": ${i + 1},
-      "numbers": { "string": "${str}", "array": [${valuesArray}] },
-      "quadvertex": { "${lengths.quadvertex}": [] },
-      "straight": { "${lengths.straight}": [] },
-      "arc": { "${lengths.arc}": [] },
-      "quadline": { "${lengths.quadline}": [] }
+  source.forEach( (valuesArray,i) => {
+    // console.log(i, valuesArray);
+    styles.forEach( style => {
+      const size = parseInt(order);
+      const coordsObject = getCoords(size,valuesArray);
+      const svgString = prepareSVG(style,coordsObject,i+1);
+      const svg = new DOMParser().parseFromString(svgString, 'text/html');
+      const len = style == "numbers" ? 0
+                  : Math.ceil(svg.querySelector(".lines").getTotalLength());
+      lengths[style] = [len,svgString];
+    });
+    const txt = `
+    { "id":         ${i + 1},
+      "numbers":    { "array": [${valuesArray}],
+                      "svg": "${lengths.numbers[1]}" },
+      "straight":   { "${lengths.straight[0]}": [], 
+                      "svg": "${lengths.straight[1]}" },
+      "quadvertex": { "${lengths.quadvertex[0]}": [], 
+                      "svg": "${lengths.quadvertex[1]}" },
+      "quadline":   { "${lengths.quadline[0]}": [], 
+                      "svg": "${lengths.quadline[1]}" },
+      "arc":        { "${lengths.arc[0]}": [], 
+                      "svg": "${lengths.arc[1]}" }
     }${ (i!==(source.length -1)) ? "," : "" }`;
     output += txt;
-  }
+  });
   output += `
   ]`;
   return JSON.parse(output);
@@ -41,24 +44,23 @@ function generateInitialIndex(order) {
 
 
 
-
-
 // STEP 2
 // add shared lengths into master index
 function generateSharedLengths(index) {
-  styles.forEach(style => {
-    const lengths = index.map(i => Object.keys(i[style])[0]);
-    let output = {};
-    lengths.forEach(len => {
-      let matches = index.filter(i => Object.keys(i[style])[0] == len);
-      let matchList = matches.map(m => m.id);
-      output[len] = matchList;
-    });
-    // add shared lengths into index
-    for(let j in index) {
-      let x = index[j][style];
-      let l = Object.keys(x)[0];
-      x[l] = output[l].filter(o => o !== (parseInt(j)+1));  // remove self
+  styles.forEach( style => {
+    if (style != "numbers") {
+      const lengths = index.map(i => Object.keys(i[style])[0]);
+      let output = {};
+      lengths.forEach( len => {
+        const matches = index.filter(i => Object.keys(i[style])[0] == len);
+        const similarIDs = matches.map(m => m.id);
+        output[len] = similarIDs;
+      });
+      // add shared lengths into index
+      index.forEach( idx => {
+        const l = Object.keys( idx[style] )[0];
+        idx[style][l] = output[l].filter(o => o !== idx.id);  // remove self
+      });
     }
   });
   return index;
@@ -69,24 +71,19 @@ function generateSharedLengths(index) {
 
 
 
+
+
+
+
 // STEP 3
-// add SVG data into master index
-function generateSVGs(index) {
-  for (let idx in index) {
-    let id = parseInt(idx) + 1;
-    let valuesArray = index[idx]["numbers"]["array"];
-    let order = Math.sqrt(valuesArray.length);
-    index[idx]["numbers"]["svg"] = prepareSVG("numbers",getCoords(order,valuesArray),id);
-    styles.forEach(style => {
-      let mysvg = prepareSVG(style,getCoords(order,valuesArray),id);
-      index[idx][style]["svg"] = mysvg;
-    });
-  }
+// add similarity data from manual list
+function generateSimilarities(index) {
+  index.forEach(idx => {
+    idx["sim"] = duplicatesSorted[idx.id -1][1];
+  });
   return index;
 }
-
-
-
+// console.log( generateSimilarities(indexFania880) );
 
 
 
@@ -94,46 +91,34 @@ function generateSVGs(index) {
 
 
 // GENERATE NEW INDEX HERE IN ONE COMMAND
-// let final = generateSVGs(
-//               generateSharedLengths(
-//                 generateInitialIndex(3)
-//               )
-//             );
-// console.log(final);
-// let final = generateSVGs(
-//               generateSharedLengths(
-//                 generateInitialIndex("4FA")
-//               )
-//             );
-// console.log(final);
-
-
-
-
-
-
-
-
-
-// STEP 4
-// add similarity data from manual list
-function markDups(index, dups) {
-  index.forEach(i => {
-    i["sim"] = dups[i.id -1][1];
-  });
-  return index;
+function printNewIndex(order) {
+  const final = generateSimilarities( 
+                  generateSharedLengths(
+                    generateInitialIndex(order)
+                  )
+                );
+  const fullText = `const index${order} = ${JSON.stringify(final)};`;
+  download.href = makeTextFile( fullText );
+  download.innerText = "Download";
 }
-// console.log( markDups(indexFania880, duplicatesSorted) );
+
+// printNewIndex( "4FR" );
 
 
 
 
 
 
-
-
-
-
+// DOWNLOAD FILE
+function makeTextFile(text) {
+  let textFile = null;
+  const data = new Blob([text], {type: 'text/plain'});
+  // If replacing a previously generated file
+  // manually revoke object URL to avoid memory leaks.
+  textFile !== null ? window.URL.revokeObjectURL(textFile)
+                    : textFile = window.URL.createObjectURL(data);
+  return textFile;
+}
 
 
 

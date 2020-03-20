@@ -335,7 +335,8 @@ footer {
   background: #111;
   padding: 1em;
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
+  justify-content: space-between;
 }
 footer a, footer p {
   color: #666;

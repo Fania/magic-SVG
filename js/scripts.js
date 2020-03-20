@@ -34,7 +34,7 @@ const indices = {
   "3": index3,
   "4": index4,
   "4s": index4sorted,
-  "4FR": indexFania880,
+  "4FR": index4FR,
   "4FNC": indexFania3520,
   "4FA": indexFania7040,
   "5": index5,
@@ -93,7 +93,7 @@ function load(pageType) {
 
   const style = getCurrent("style");
   const order = getCurrent("order");
-  // const group = getCurrent("group");
+  const group = getCurrent("group");
   const index = getCurrent("index");
   // console.log(style, order);
 
@@ -205,41 +205,3 @@ function load(pageType) {
   updateMenuStates();
 }
 
-
-
-
-
-
-
-// order, valuesArray
-function getCoords(order, valuesArray) {
-  // console.log(`creating coordinate system for square ${c}`);
-  const coordsObject = {};
-  let offset = 0;
-  for (let row=0; row < order; row++) {
-    for (let col=0; col < order; col++) {
-      coordsObject[valuesArray[col+offset]] = [col,row];  // x,y
-    }
-    offset += order;  // increase offset by one row every 4(order) columns
-  }
-  return coordsObject;
-}
-
-// style, coordsObject, id
-function prepareSVG(style, coordsObject, id) {
-  // console.log(`preparing ${style} SVG for square ${c}`);
-  switch(style) {
-    case "straight":
-      return createPolyline(coordsObject, id);
-    case "quadvertex":
-      return createQuadraticCurveVertices(coordsObject, id);
-    case "quadline":
-      return createQuadraticCurveLines(coordsObject, id);
-    case "arc":
-      return createArc(coordsObject, id);
-    case "numbers":
-      return createNumberSVGs(coordsObject, id);
-    default:
-      return createQuadraticCurveVertices(coordsObject, id);
-  }
-}

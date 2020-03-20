@@ -60,9 +60,51 @@ function drawTransforms(order, valuesArray, transType) {
 
 
 
+
+
 function getSize(coordsObject) {
   return Math.sqrt(Object.keys(coordsObject).length);
 }
+
+
+
+
+
+// order, valuesArray
+function getCoords(order, valuesArray) {
+  // console.log(`creating coordinate system for square ${c}`);
+  const coordsObject = {};
+  let offset = 0;
+  for (let row=0; row < order; row++) {
+    for (let col=0; col < order; col++) {
+      coordsObject[valuesArray[col+offset]] = [col,row];  // x,y
+    }
+    offset += order;  // increase offset by one row every 4(order) columns
+  }
+  return coordsObject;
+}
+
+
+
+// style, coordsObject, id
+function prepareSVG(style, coordsObject, id) {
+  // console.log(`preparing ${style} SVG for square ${c}`);
+  switch(style) {
+    case "numbers":
+      return createNumberSVGs(coordsObject, id);
+    case "straight":
+      return createPolyline(coordsObject, id);
+    case "quadvertex":
+      return createQuadraticCurveVertices(coordsObject, id);
+    case "quadline":
+      return createQuadraticCurveLines(coordsObject, id);
+    case "arc":
+      return createArc(coordsObject, id);
+    default:
+      return createQuadraticCurveVertices(coordsObject, id);
+  }
+}
+
 
 
 
@@ -77,9 +119,6 @@ function createNumberSVGs(coordsObject, id) {
   // 0 -50 380 370 for order 4
   return `<svg id='numbers-${s}-${id}' class='order-xt pad' viewbox='${0} ${-50} ${w-sizeInc+50+30} ${w-sizeInc+50+20}'>${texts}</svg>`;
 }
-
-
-
 
 
 function createPolyline(coordsObject, id) {

@@ -1,6 +1,6 @@
 // Collection of order n magic square sequences from various sources
 
-const order3 = [4,9,2,3,5,7,8,1,6];
+const order3 = [[4,9,2,3,5,7,8,1,6]];
 
 // order4 = see suzuki.js or fania.js
 

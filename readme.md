@@ -68,15 +68,16 @@ Frénicle established two simple rules to determine the [standard position](http
 - [ ] change font size for larger order squares
 - [ ] fix arc size to match natural size
 - [ ] add our own transformations
-- [ ] add data set option
+- [ ] add dataset option
+- [ ] allow ranges in single input
 - [ ] add options for (odd, even, odd-even) classes
 - [ ] add option for groups (I-XII)
-- [ ] regenerate arcs in new style/ both styles?
 - [ ] allow comma separated strings for single-input
 
 
 ## URGENT
 
+- [ ] regenerate arcs in new style/ both styles?
 - [ ] fix single input for squares not already catalogued
 - [ ] generate animations for larger orders 10 - 20
 
