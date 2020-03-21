@@ -236,17 +236,17 @@ main = do
   -- print $ transform3 $ head order3x
   -- print $ reduceD43 order3x
 
-  print $ length fania7040                           -- 7040
-  print $ length $ reduceD4 fania7040                -- 880
-  print $ length $ removeCompls fania7040            -- 3520
-  print $ length $ removeCompls $ reduceD4 fania7040 -- 880
-  print $ length $ reduceD4 $ removeCompls fania7040 -- 880
+  -- print $ length fania7040                           -- 7040
+  -- print $ length $ reduceD4 fania7040                -- 880
+  -- print $ length $ removeCompls fania7040            -- 3520
+  -- print $ length $ removeCompls $ reduceD4 fania7040 -- 880
+  -- print $ length $ reduceD4 $ removeCompls fania7040 -- 880
 
-  print $ length suzuki                              -- 880
-  print $ length $ reduceD4 suzuki                   -- 880
-  print $ length $ removeCompls suzuki               -- 748
-  print $ length $ reduceD4 $ removeCompls suzuki    -- 748
-  print $ length $ removeCompls $ reduceD4 suzuki    -- 748
+  -- print $ length suzuki                              -- 880
+  -- print $ length $ reduceD4 suzuki                   -- 880
+  -- print $ length $ removeCompls suzuki               -- 748
+  -- print $ length $ reduceD4 $ removeCompls suzuki    -- 748
+  -- print $ length $ removeCompls $ reduceD4 suzuki    -- 748
 
   -- print $ length $ reduceD4 ORDER4.order4s
   -- print $ reduced == (sort suzuki)
@@ -255,4 +255,5 @@ main = do
   -- print $ reduced \\ suzuki
   -- print $ compareMS reduced suzuki
   -- print $ transformExtras $ [2,1,15,16,14,13,3,4,11,8,10,5,7,12,6,9]
+  print $ transformExtras $ [1,2,16,15,13,14,4,3,12,7,9,6,8,11,5,10]
   -- print $ removeCompls order4x

@@ -209,3 +209,26 @@ const types = ["I","V","H","G","D","R1","R2","R3",
 //     drawTransforms(4, trans, types[t])
 //   }
 // }
+
+
+  const coordsObject1 = getCoords(4,[1,2,16,15,13,14,4,3,12,7,9,6,8,11,5,10]);
+  const coordsObject2 = getCoords(4,[2,1,15,16,14,13,3,4,11,8,10,5,7,12,6,9]);
+  const coordsObject3 = getCoords(4,[12,7,9,6,8,11,5,10,1,2,16,15,13,14,4,3]);
+  const coordsObject4 = getCoords(4,[3,5,11,13,15,9,7,1,10,4,14,8,6,16,2,12]);
+  let text = `
+    <div>
+      ${prepareSVG(4,"quadvertex",coordsObject1, 1)}
+      ${prepareSVG(4,"quadvertex",coordsObject2, 1)}
+      ${prepareSVG(4,"quadvertex",coordsObject3, 1)}
+      ${prepareSVG(4,"quadvertex",coordsObject4, 1)}
+    </div>
+  `;
+  // drawSquare(text);
+
+// drawTransforms("4", [1,2,16,15,13,14,4,3,12,7,9,6,8,11,5,10], "ID")
+// drawTransforms("4", [2,1,15,16,14,13,3,4,11,8,10,5,7,12,6,9], "XMV1")
+// drawTransforms("4", [12,7,9,6,8,11,5,10,1,2,16,15,13,14,4,3], "XMV2")
+// drawTransforms("4", [3,5,11,13,15,9,7,1,10,4,14,8,6,16,2,12], "XMV3")
+
+
+// [[1,2,16,15,13,14,4,3,12,7,9,6,8,11,5,10],[2,1,15,16,14,13,3,4,11,8,10,5,7,12,6,9],[12,7,9,6,8,11,5,10,1,2,16,15,13,14,4,3],[3,5,11,13,15,9,7,1,10,4,14,8,6,16,2,12]]

@@ -51,8 +51,8 @@ function drawTransforms(order, valuesArray, transType) {
     <div class="transDiv">
       <div>
         <div>${transType}</div>
-        ${prepareSVG(order,"numbers",coordsObject, 0)}
-        ${prepareSVG(order,"quadvertex",coordsObject, 0)}
+        ${prepareSVG(order,"numbers",coordsObject, 1)}
+        ${prepareSVG(order,"quadvertex",coordsObject, 1)}
       </div>
       <p>${valuesArray.join(" ")}</p>
     </div>
