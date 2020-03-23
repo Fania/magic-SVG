@@ -78,6 +78,8 @@ Use code from the [magic square checker](https://github.com/DaveEveritt/magic-sq
 ## URGENT
 
 - [ ] allow comma separated strings for single-input
+- [ ] allow query parameters
+- [ ] fix colours in modal
 
 
 

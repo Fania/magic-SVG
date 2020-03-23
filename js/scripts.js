@@ -229,10 +229,17 @@ function addModalListeners() {
 }
 function toggleModal(image) {
   let modal = document.createElement("div");
-  document.body.appendChild(modal);
+  // document.body.appendChild(modal);
+  extra_colour_styles.insertAdjacentElement("beforebegin", modal);
   modal.id = "modal";
   let clone = image.cloneNode(true);
+  // if ( extra_colour_styles.innerHTML.includes("stroke: #000000") ) {
+  //   console.log("black");
+  // } else {
+  //   console.log("white");
+  // }
   clone.classList.add("white");
+
   modal.appendChild(clone);
   modal.addEventListener("click", () => document.body.removeChild(modal) );
 }
