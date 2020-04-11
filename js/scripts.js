@@ -215,7 +215,7 @@ function load(pageType) {
 
 
 
-
+  toggleDayNight();
   addModalListeners();
   updateColours();
   updateMenuStates();

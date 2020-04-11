@@ -108,21 +108,34 @@ function getDigitalRoot(n) {
 
 
 
-night.addEventListener("click", () => toggleDayNight(true) );
-day.addEventListener("click", () => toggleDayNight(false) );
+night.addEventListener("click", () => toggleDayNight() );
+day.addEventListener("click", () => toggleDayNight() );
 
-function toggleDayNight(dark) {
-  night.classList.toggle("active");
-  day.classList.toggle("active");
-  settings.classList.toggle("dayMode");
-  document.querySelector(".instructions").classList.toggle("dayMode");
-  document.querySelector("footer").classList.toggle("dayMode");
-  document.querySelector("body").classList.toggle("dayMode");
-  about.classList.toggle("dayMode");
-  backColour.value = dark ? "#222222" : "#ffffff";
-  strokeColour.value = dark ? "#ffffff" : "#000000";
-  textColour.value = dark ? "#ffffff" : "#000000";
-  const logo = document.querySelector("[alt='logo']");
-  logo.src = dark ? "imgs/logo.svg" : "imgs/logo-dark.svg";
+function toggleDayNight() {
+  if (night.checked) {
+    settings.classList.remove("dayMode");
+    document.querySelector(".instructions").classList.remove("dayMode");
+    document.querySelector("footer").classList.remove("dayMode");
+    document.querySelector("body").classList.remove("dayMode");
+    about.classList.remove("dayMode");
+    nightLabel.innerHTML = "<i class='fas fa-moon'></i>";
+    dayLabel.innerHTML = "<i class='far fa-sun'></i>";
+    backColour.value = "#222222";
+    strokeColour.value = "#ffffff";
+    textColour.value = "#ffffff";
+    document.querySelector("[alt='logo']").src = "imgs/logo.svg";
+  } else {
+    settings.classList.add("dayMode");
+    document.querySelector(".instructions").classList.add("dayMode");
+    document.querySelector("footer").classList.add("dayMode");
+    document.querySelector("body").classList.add("dayMode");
+    about.classList.add("dayMode");
+    nightLabel.innerHTML = "<i class='far fa-moon'></i>";
+    dayLabel.innerHTML = "<i class='fas fa-sun'></i>";
+    backColour.value = "#ffffff";
+    strokeColour.value = "#000000";
+    textColour.value = "#000000";
+    document.querySelector("[alt='logo']").src = "imgs/logo-dark.svg";
+  }
   updateColours();
 }

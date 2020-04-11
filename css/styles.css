@@ -334,6 +334,9 @@ option:focus {
   color: #111;
 }
 
+
+
+
 footer {
   margin-top: 3em;
   background: #111;
@@ -360,35 +363,21 @@ footer img {
   stroke: white;
 }
 
-#info::before,
-#night::before,
-#day::before {
-  font-family: "Font Awesome 5 Free"; 
-  font-weight: 400; 
-  padding: .5em;
+
+input#night, input#day {
+  display: none;
+}
+#info {
+  font-size: 28px;
   cursor: pointer;
 }
-#info::before {
-  content: "\f059";
+label[for='night'], label[for='day'] {
+  font-size: 25px;
 }
-#night::before {
-  content: "\f186";
-}
-#day::before { 
-  content: "\f185";
-}
-#info.active::before,
-#day.active::before,
-#night.active::before {
-  font-weight: 900;
-  color: white;
-}
-.instructions.dayMode #info.active::before,
-.instructions.dayMode #day.active::before,
-.instructions.dayMode #night.active::before {
-  font-weight: 900;
-  color: black;
-}
+
+
+
+
 #about.dayMode,
 #about.dayMode a {
   color: black;

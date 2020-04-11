@@ -143,8 +143,14 @@
     </label>
   </fieldset>
   <div class="instructions">
-    <p><span id="info"></span></p>
-    <p><span id="night" class="active"></span><span id="day"></span></p>
+    <p><i id="info" class="far fa-question-circle"></i></p>
+    <p>
+      <input type="radio" name="lighting" id="night" checked>
+      <label id="nightLabel" for="night"><i class="fas fa-moon"></i></label>
+      <input type="radio" name="lighting" id="day">
+      <label id="dayLabel" for="day"><i class="far fa-sun"></i></label>
+      <!-- <span id="night" class="active"></span><span id="day"></span> -->
+    </p>
   </div>
 </form>
 

@@ -145,6 +145,8 @@ document.addEventListener("keydown", event => {
 info.addEventListener("click", () => toggleAbout() );
 function toggleAbout() {
   info.classList.toggle("active");
+  if(info.classList.contains("far")) info.classList.replace("far", "fas")
+    else info.classList.replace("fas", "far");
   const settingPanels = document.querySelectorAll(".options, .userInput");
   settingPanels.forEach(panel => panel.classList.toggle("showAbout"));
   about.classList.toggle("hide");
