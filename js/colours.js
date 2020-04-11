@@ -100,6 +100,14 @@ function getDigitalRoot(n) {
 
 
 
+
+
+
+
+
+
+
+
 night.addEventListener("click", () => toggleDayNight(true) );
 day.addEventListener("click", () => toggleDayNight(false) );
 

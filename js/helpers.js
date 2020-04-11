@@ -79,9 +79,7 @@ function generateSharedLengths(index) {
 // STEP 3
 // GENERATE NEW INDEX HERE IN ONE COMMAND
 function printNewIndex(order) {
-  let final = generateSharedLengths(
-                generateInitialIndex(order)
-              );
+  let final = generateSharedLengths( generateInitialIndex(order) );
   if(order === "4R") final = generateSimilarities(final);
   const fullText = `const index${order} = ${JSON.stringify(final)};`;
   download.href = makeTextFile( fullText );

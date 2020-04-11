@@ -159,6 +159,44 @@ function testTrans(input, input2) {
 
 
 
+
+
+
+
+
+
+
+function testRaczinskiUniques(input) {
+  svgGrid.innerHTML = "";
+  // console.log(Object.entries(i["quadvertex"])[0][1].length === 0);
+  let uniques = input.filter(i => 
+    i["simQuadVertex"] === "unique" || i["simQuadVertex"] === "identity"
+  );
+  // console.log(uniques);
+  // console.log(uniques.length);
+  for (let u in uniques) {
+    drawSquare( uniques[u]["quadvertex"]["svg"] );
+  }
+
+}
+// testRaczinskiUniques(index4R);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function testUnique(input) {
   svgGrid.innerHTML = "";
 

@@ -35,6 +35,10 @@
     --size: calc((100vw - 80px) / 40);
     --marg: calc( ( 100vh - ( var(--size) * 22 ) ) / 2 );
   }
+  body.orderGroups.order4RU {  /* 383 */
+    --size: calc((100vw - 80px) / 24);
+    --marg: calc( ( 100vh - ( var(--size) * 16 ) ) / 2 );
+  }
   body.orderGroups.order5 {  /* 23 */
     --size: calc((100vw - 80px) / 6);
     --marg: calc( ( 100vh - ( var(--size) * 4 ) ) / 2 );
@@ -125,34 +129,39 @@
 
 
 
-  body.uniques {  /* 398 */
-    --size: calc((100vw - 80px) / 26);
-    --marg: calc( ( 100vh - ( var(--size) * 15 ) ) / 2 );
-  }
-  body.uniques p {
+
+  body.orderGroups.order4RU p {
     display: none;
   }
-  body.uniques .svgGrid {
+  body.orderGroups.order4RU .svgGrid {
     justify-content: start;
   }
-  body.uniques .svgGrid:after {
-    /* font-family: Tahoma, Geneva, sans-serif; */
-    /* font-family: 'Liu Jian Mao Cao', cursive; */
-    /* font-family: 'Bellota', cursive; */
-    /* font-family: 'Dancing Script', cursive; */
-    font-family: 'Amatic SC', cursive;
-    /* font-family: 'Sacramento', cursive; */
-    /* font-family: 'Poiret One', cursive; */
-    /* font-family: 'Marck Script', cursive; */
-    font-size: 1.2em;
-    line-height: 1em;
-    padding-left: 2em;
-    color: #666;
-    content: "Fania Raczinski & Dave Everitt\Asquares.cubelife.org";
-    white-space: pre;
-    text-align: right;
+  body.orderGroups.order4RU.dayMode .svgGrid:after {
+    /* font-family: 'Amatic SC', cursive; */
+    /* font-size: 1.2em; */
+    /* line-height: 4em; */
+    /* padding-left: 2em; */
+    /* color: #666; */
+    /* content: "Fania Raczinski & Dave Everitt © 2020 (squares.cubelife.org)"; */
+    content: url(../imgs/logo-dark.svg);
+    /* white-space: pre; */
+    /* text-align: right; */
+    width: calc( var(--size) - 2px );
+    height: calc( var(--size) - 2px );
   }
-
+  body.orderGroups.order4RU:not(.dayMode) .svgGrid:after {
+    /* font-family: 'Amatic SC', cursive; */
+    /* font-size: 1.2em; */
+    /* line-height: 4em; */
+    /* padding-left: 2em; */
+    /* color: #666; */
+    /* content: "Fania Raczinski & Dave Everitt © 2020 (squares.cubelife.org)"; */
+    content: url(../imgs/logo.svg);
+    /* white-space: pre; */
+    /* text-align: right; */
+    width: calc( var(--size) - 2px );
+    height: calc( var(--size) - 2px );
+  }
 
 
 

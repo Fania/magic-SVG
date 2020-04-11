@@ -28,6 +28,10 @@ const sources = {
 //   "20": sourceOrder20
 }
 
+const index4FU = index4R.filter(i => 
+  i["simQuadVertex"] === "unique" || i["simQuadVertex"] === "identity");
+// console.log(index4FU.length);
+
 // see data folder
 const indices = {
   "3": index3,
@@ -36,6 +40,7 @@ const indices = {
   "4R": index4R,
   // "4RNC": index4RNC,
   "4RA": index4RA,
+  "4RU": index4FU,
   "5": index5,
   "6": index6,
   "7": index7,
